@@ -160,48 +160,48 @@
         <item name="blog.entry.unsetAsFeatured"><![CDATA[حذف مقالات انتخاب شده]]></item>
         <item name="blog.entry.userEntries"><![CDATA[مقالات وبلاگ با {$user->username}]]></item>
         <item name="blog.entry.views"><![CDATA[نمایش ها]]></item>
-        <item name="blog.entry.views.count"><![CDATA[{plural value=$entry->views one='# time' other='# times'} read]]></item>
-        <item name="blog.entry.watchedEntries"><![CDATA[Watched Blog Articles]]></item>
-        <item name="blog.entry.watchedEntries.noEntries"><![CDATA[You are not watching any blog articles at the moment.]]></item>
+        <item name="blog.entry.views.count"><![CDATA[{plural value=$entry->views one='# time' other='# times'} خوادن]]></item>
+        <item name="blog.entry.watchedEntries"><![CDATA[مشاهده مقالات وبلاگ]]></item>
+        <item name="blog.entry.watchedEntries.noEntries"><![CDATA[شما در حال حاضر هیچ بلاگی را مشاهده نمیکنید.]]></item>
     </category>
     <category name="blog.index">
-        <item name="blog.index.stats"><![CDATA[Statistics]]></item>
+        <item name="blog.index.stats"><![CDATA[آمار]]></item>
         <item name="blog.index.stats.detail"><![CDATA[<ul class="inlineList dotSeparated">
-<li>{plural value=$stats[authors] one='# Author' other='# Authors'}</li>
-<li>{plural value=$stats[entries] one='# Article' other='# Articles'} ({plural value=$stats[entriesPerDay] one='# Article' other='# Articles'} per Day)</li>
-<li>{plural value=$stats[comments] one='# Comment' other='# Comments'}</li>
+<li>{plural value=$stats[نویسندگان] one='# Author' other='# Authors'}</li>
+<li>{plural value=$stats[ورودی ها] one='# Article' other='# Articles'} ({plural value=$stats[ورودی های هر روز] one='# Article' other='# Articles'} per Day)</li>
+<li>{plural value=$stats[نظرات] one='# Comment' other='# Comments'}</li>
 </ul>]]></item>
     </category>
     <category name="calendar.acp.event">
-        <item name="calendar.acp.event.option.add"><![CDATA[Add Option Field]]></item>
-        <item name="calendar.acp.event.option.availability"><![CDATA[Availability]]></item>
-        <item name="calendar.acp.event.option.categoryIDs"><![CDATA[Categories]]></item>
-        <item name="calendar.acp.event.option.categoryIDs.description"><![CDATA[The option field is only available for events in the selected categories. If no category is selected, the option field is available in all categories. After saving, selected categories cannot be unselected anymore.]]></item>
-        <item name="calendar.acp.event.option.edit"><![CDATA[Edit Option Field]]></item>
-        <item name="calendar.acp.event.option.list"><![CDATA[Option Fields]]></item>
+        <item name="calendar.acp.event.option.add"><![CDATA[افزودن فیلد گزینه ها]]></item>
+        <item name="calendar.acp.event.option.availability"><![CDATA[دسترسی]]></item>
+        <item name="calendar.acp.event.option.categoryIDs"><![CDATA[دسته بندی ها]]></item>
+        <item name="calendar.acp.event.option.categoryIDs.description"><![CDATA[فیلد گزینه ها فقط برای رویداد های انتخاب شده در دسته بندی ها قابل دسترس است. اگر هیچ دسته بندی انتخاب نشده بود.فیلد گزینه ها در تمامی دسته بندی هادر دسترس است .بعد از دخیره کردن   نمیتوان دسته یندی های انتخاب شده را لغو کردن]]></item>
+        <item name="calendar.acp.event.option.edit"><![CDATA[ویرایش فیلد گزینه]]></item>
+        <item name="calendar.acp.event.option.list"><![CDATA[فیلد گزینه ها]]></item>
     </category>
     <category name="calendar.acp.eventImport">
-        <item name="calendar.acp.eventImport.add"><![CDATA[Add Event Import]]></item>
-        <item name="calendar.acp.eventImport.category.description"><![CDATA[Events will be created in the selected category.]]></item>
-        <item name="calendar.acp.eventImport.description"><![CDATA[External calendars are periodically fetched and new content will be posted as events.]]></item>
+        <item name="calendar.acp.eventImport.add"><![CDATA[اضافه کردن رویداد ]]></item>
+        <item name="calendar.acp.eventImport.category.description"><![CDATA[رویداد ها ایجاد میشوند در دسته بندی های انتخاب شده.]]></item>
+        <item name="calendar.acp.eventImport.description"><![CDATA[تقویم های خارجی به صورت دوره ای رفت و آمد می شوند و محتوای جدید به عنوان رویداد پست می شود.]]></item>
         <item name="calendar.acp.eventImport.edit"><![CDATA[Edit Event Import]]></item>
         <item name="calendar.acp.eventImport.error.noCategories"><![CDATA[You must <a href="{link controller='CategoryAdd' application='calendar'}{/link}">create at least one category</a> before you are able to add event imports.]]></item>
-        <item name="calendar.acp.eventImport.errorMessage"><![CDATA[An error occurred during the last run.]]></item>
-        <item name="calendar.acp.eventImport.errorMessage.info"><![CDATA[The following error occurred during the last run:]]></item>
-        <item name="calendar.acp.eventImport.language.description"><![CDATA[Events will be created with the selected language.]]></item>
-        <item name="calendar.acp.eventImport.lastRun"><![CDATA[Last Checked]]></item>
-        <item name="calendar.acp.eventImport.list"><![CDATA[Event Imports]]></item>
-        <item name="calendar.acp.eventImport.url"><![CDATA[URL]]></item>
-        <item name="calendar.acp.eventImport.url.description"><![CDATA[Enter the event import URL here.]]></item>
-        <item name="calendar.acp.eventImport.username.description"><![CDATA[Events will be created using the entered author.]]></item>
+        <item name="calendar.acp.eventImport.errorMessage"><![CDATA[در آخرین اجرا خطایی رخ داد.]]></item>
+        <item name="calendar.acp.eventImport.errorMessage.info"><![CDATA[خطای زیر در آخرین اجرا رخ داد:]]></item>
+        <item name="calendar.acp.eventImport.language.description"><![CDATA[رویدادها با زبان انتخاب شده ایجاد خواهند شد.]]></item>
+        <item name="calendar.acp.eventImport.lastRun"><![CDATA[آخرین بررسی]]></item>
+        <item name="calendar.acp.eventImport.list"><![CDATA[ورود رویداد ها]]></item>
+        <item name="calendar.acp.eventImport.url"><![CDATA[آدرس اینترنتی]]></item>
+        <item name="calendar.acp.eventImport.url.description"><![CDATA[وارد کنید ورودی آدرس اینترنتی را در اینجا.]]></item>
+        <item name="calendar.acp.eventImport.username.description"><![CDATA[رویدادها با استفاده از نویسنده وارد شده ایجاد خواهند شد.]]></item>
     </category>
     <category name="calendar.acp.menu">
-        <item name="calendar.acp.menu.link.calendar"><![CDATA[Calendar]]></item>
-        <item name="calendar.acp.menu.link.calendar.category.add"><![CDATA[Add Category]]></item>
-        <item name="calendar.acp.menu.link.calendar.category.list"><![CDATA[Categories]]></item>
-        <item name="calendar.acp.menu.link.calendar.event.option.add"><![CDATA[Add Option Field]]></item>
-        <item name="calendar.acp.menu.link.calendar.event.option.list"><![CDATA[Option Fields]]></item>
-        <item name="calendar.acp.menu.link.calendar.eventImport.add"><![CDATA[Add Event Import]]></item>
+        <item name="calendar.acp.menu.link.calendar"><![CDATA[تقویم]]></item>
+        <item name="calendar.acp.menu.link.calendar.category.add"><![CDATA[اضافه کردن دسته بندی ها]]></item>
+        <item name="calendar.acp.menu.link.calendar.category.list"><![CDATA[دسته بندی ها]]></item>
+        <item name="calendar.acp.menu.link.calendar.event.option.add"><![CDATA[اضافه کردن فیلد گزینه]]></item>
+        <item name="calendar.acp.menu.link.calendar.event.option.list"><![CDATA[فیلد گزینه ها]]></item>
+        <item name="calendar.acp.menu.link.calendar.eventImport.add"><![CDATA[اضافه کردن رویداد واردات]]></item>
         <item name="calendar.acp.menu.link.calendar.eventImport.list"><![CDATA[Event Imports]]></item>
     </category>
     <category name="calendar.category">
