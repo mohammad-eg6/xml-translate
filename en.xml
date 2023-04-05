@@ -338,11 +338,11 @@
         <item name="calendar.event.date.participation.notification.title"><![CDATA[شرکت کننده جدید]]></item>
         <item name="calendar.event.date.participation.notification.title.stacked"><![CDATA[{#$count} شرکت کنندگان جدید]]></item>
         <item name="calendar.event.date.participation.participate"><![CDATA[مشارکت]]></item>
-        <item name="calendar.event.date.participation.removeParticipant"><![CDATA[Remove Participant]]></item>
-        <item name="calendar.event.date.participation.removeParticipant.confirmMessage"><![CDATA[Do you really want to remove <span class="confirmationObject">{$participant->username}</span> from this event?]]></item>
-        <item name="calendar.event.date.participation.user"><![CDATA[Participants]]></item>
-        <item name="calendar.event.date.participation.user.description"><![CDATA[You can add additional users by specifying their username and selecting an option below.]]></item>
-        <item name="calendar.event.date.participation.user.error.alreadyParticipating"><![CDATA[“{$participant->username}” has already decided to participate.]]></item>
+        <item name="calendar.event.date.participation.removeParticipant"><![CDATA[حذف مشارکت]]></item>
+        <item name="calendar.event.date.participation.removeParticipant.confirmMessage"><![CDATA[ایا واقعا می خواهید حذف شود <span class="confirmationObject">{$participant->username}</span> از این رویداد?]]></item>
+        <item name="calendar.event.date.participation.user"><![CDATA[مشارکت ها]]></item>
+        <item name="calendar.event.date.participation.user.description"><![CDATA[شما می توانید کاربران بیشتری را با تایین نام کاربری و انتخاب گذینه ها اضافه کنید .]]></item>
+        <item name="calendar.event.date.participation.user.error.alreadyParticipating"><![CDATA[“{$participant->username}” .]]></item>
         <item name="calendar.event.date.previous"><![CDATA[Previous Repetition]]></item>
         <item name="calendar.event.date.repeat.byDay"><![CDATA[Day of Week]]></item>
         <item name="calendar.event.date.repeat.byMonthDay"><![CDATA[Day of Month]]></item>
