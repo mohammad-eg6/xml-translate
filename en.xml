@@ -404,29 +404,29 @@
         <item name="calendar.event.featured"><![CDATA[دراینده]]></item>
         <item name="calendar.event.generalInformation"><![CDATA[عمومی]]></item>
         <item name="calendar.event.import"><![CDATA[واردات رویداد ]]></item>
-        <item name="calendar.event.import.description"><![CDATA[Supports import of events using the vCalendar or iCalendar exchange format.]]></item>
-        <item name="calendar.event.import.importURL"><![CDATA[Download File (URL)]]></item>
-        <item name="calendar.event.import.importURL.error.downloadFailed"><![CDATA[An unknown error occurred during the download.]]></item>
-        <item name="calendar.event.import.success"><![CDATA[{#$success} event{if $success != 1}s{/if} {if $success == 1}has{else}have{/if} been imported.]]></item>
-        <item name="calendar.event.import.upload"><![CDATA[Upload file]]></item>
-        <item name="calendar.event.import.upload.error.uploadFailed"><![CDATA[An unknown error occurred during the upload.]]></item>
-        <item name="calendar.event.information"><![CDATA[Details]]></item>
-        <item name="calendar.event.invitedParticipants"><![CDATA[Invited Participants]]></item>
-        <item name="calendar.event.invitedParticipants.description"><![CDATA[These users have been invited:]]></item>
-        <item name="calendar.event.like.notification.message"><![CDATA[<strong>{$author}</strong> reacted to your event <strong>{$event->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
-        <item name="calendar.event.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} reacted to your event <strong>{$event->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
-        <item name="calendar.event.like.notification.title"><![CDATA[Reaction to your event]]></item>
-        <item name="calendar.event.like.notification.title.stacked"><![CDATA[{#$count} users reacted to your event]]></item>
-        <item name="calendar.event.log.trash.summary"><![CDATA[Event was deleted by {if $userID}<a href="{link controller='User' id=$userID title=$username}{/link}" class="userLink" data-user-id="{@$userID}">{$username}</a>{else}{$username}{/if} {if $additionalData[reason]}for the following reason: {$additionalData[reason]}{/if}. ({@$time|time})]]></item>
-        <item name="calendar.event.map"><![CDATA[Location]]></item>
-        <item name="calendar.event.message"><![CDATA[Description]]></item>
-        <item name="calendar.event.moderation.info"><![CDATA[Newly created events will remain inaccessible until approved by a moderator.]]></item>
-        <item name="calendar.event.moderation.redirect"><![CDATA[Your event has been created and will be displayed once approved.]]></item>
-        <item name="calendar.event.monthlyView"><![CDATA[Month View]]></item>
-        <item name="calendar.event.noParticipants"><![CDATA[Non-Participants]]></item>
-        <item name="calendar.event.noParticipants.description"><![CDATA[These users are definitely not participating:]]></item>
-        <item name="calendar.event.notification.mail.html"><![CDATA[<p><strong>{$author}</strong> created the event <a href="{$eventDate->getLink()}">{$eventDate->getTitle()}</a> ({$eventDate->getFormattedTimeFrame()}):</p>]]></item>
-        <item name="calendar.event.notification.mail.plaintext"><![CDATA[{@$author} created the event “{@$eventDate->getTitle()}” ({$eventDate->getFormattedTimeFrame()}) [URL:{@$eventDate->getLink()}]:]]></item>
+        <item name="calendar.event.import.description"><![CDATA[از ورود رویداد ها با فرمت vcalender و icalender پشتسبانی میکند.]]></item>
+        <item name="calendar.event.import.importURL"><![CDATA[nhkg,n thdg (,fgh')]]></item>
+        <item name="calendar.event.import.importURL.error.downloadFailed"><![CDATA[در حین دانلود خطایی ناشناخته رخ داده است .]]></item>
+        <item name="calendar.event.import.success"><![CDATA[{#$success} رویداد{if $success != 1}s{/if} {if $success == 1}در حال{else}have{/if} وارد شدن است.]]></item>
+        <item name="calendar.event.import.upload"><![CDATA[اپلود فایل]]></item>
+        <item name="calendar.event.import.upload.error.uploadFailed"><![CDATA[در حین اپلود خطایی ناشناخته رخ داده است.]]></item>
+        <item name="calendar.event.information"><![CDATA[جزئیات]]></item>
+        <item name="calendar.event.invitedParticipants"><![CDATA[دعوت از مشارکت کنندگان]]></item>
+        <item name="calendar.event.invitedParticipants.description"><![CDATA[این کاربر دعوت شده است:]]></item>
+        <item name="calendar.event.like.notification.message"><![CDATA[<strong>{$author}</strong> به رویداد شما واکنش نشان داده شد <strong>{$event->getTitle()}</strong> ({@$__wcf->getReactionHandler()->رندر لیست درون خطی($reactions)}).]]></item>
+        <item name="calendar.event.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} به رویداد شما واکنش نشان داده شد <strong>{$event->getTitle()}</strong> ({@$__wcf->کنترل گر واکنش را دریافت کنید()->رندر لیست درون خطی($reactions)}).]]></item>
+        <item name="calendar.event.like.notification.title"><![CDATA[واکنش به رویداد شما]]></item>
+        <item name="calendar.event.like.notification.title.stacked"><![CDATA[{#$count} کاربران به رویداد شما واکنش نشان دادند ]]></item>
+        <item name="calendar.event.log.trash.summary"><![CDATA[رویداد حذف شد توسط {if $userID}<a href="{link controller='User' id=$userID title=$username}{/link}" class="userLink" data-user-id="{@$userID}">{$username}</a>{else}{$username}{/if} {if $additionalData[دلیل]}به این دلیل: {$additionalData[دلیل]}{/if}. ({@$time|time})]]></item>
+        <item name="calendar.event.map"><![CDATA[محل]]></item>
+        <item name="calendar.event.message"><![CDATA[توضیح]]></item>
+        <item name="calendar.event.moderation.info"><![CDATA[رویدادی که به تازگی ایجاد شده است تا زمانی که توسط ناظر تایید نشود غیر قابل دسترسی است.]]></item>
+        <item name="calendar.event.moderation.redirect"><![CDATA[رویداد شما ایجاد شده است و پس از تایید نمایش داده خواهد شد .]]></item>
+        <item name="calendar.event.monthlyView"><![CDATA[دیدار در ماه]]></item>
+        <item name="calendar.event.noParticipants"><![CDATA[هیچ کس شرکت نکرده است]]></item>
+        <item name="calendar.event.noParticipants.description"><![CDATA[این کاربران اصلا شرکت نمیکنند:]]></item>
+        <item name="calendar.event.notification.mail.html"><![CDATA[<p><strong>{$author}</strong> رویداد ایجاد شد <a href="{$eventDate->getLink()}">{$eventDate->getTitle()}</a> ({$eventDate->چهار چوب زمانی را دریافت کنید ()}):</p>]]></item>
+        <item name="calendar.event.notification.mail.plaintext"><![CDATA[{@$author} رویداد ایجاد شد “{@$eventDate->getTitle()}” ({$eventDate->چهارچوب زمانی را دریافت کنید()}) [وبلاگ:{@$eventDate->getLink()}]:]]></item>
         <item name="calendar.event.notification.message"><![CDATA[<strong>{$author}</strong> created the event <strong>{$event->subject}</strong> ({$event->getFirstEventDate()->getFormattedTimeFrame()}).]]></item>
         <item name="calendar.event.notification.title"><![CDATA[New Event]]></item>
         <item name="calendar.event.options"><![CDATA[Additional Information]]></item>
