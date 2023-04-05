@@ -201,103 +201,103 @@
         <item name="calendar.acp.menu.link.calendar.category.list"><![CDATA[دسته بندی ها]]></item>
         <item name="calendar.acp.menu.link.calendar.event.option.add"><![CDATA[اضافه کردن فیلد گزینه]]></item>
         <item name="calendar.acp.menu.link.calendar.event.option.list"><![CDATA[فیلد گزینه ها]]></item>
-        <item name="calendar.acp.menu.link.calendar.eventImport.add"><![CDATA[اضافه کردن رویداد واردات]]></item>
-        <item name="calendar.acp.menu.link.calendar.eventImport.list"><![CDATA[Event Imports]]></item>
+        <item name="calendar.acp.menu.link.calendar.eventImport.add"><![CDATA[ضافه کردن رویداد وارد شده]]></item>
+        <item name="calendar.acp.menu.link.calendar.eventImport.list"><![CDATA[وارد کردن رویداد]]></item>
     </category>
     <category name="calendar.category">
-        <item name="calendar.category.button.export"><![CDATA[Export Events (iCal)]]></item>
-        <item name="calendar.category.delete.sure"><![CDATA[Do you really want to delete this category? All child categories of this category will be moved to this category’s parent category. Events which are only in this category will be deleted.]]></item>
+        <item name="calendar.category.button.export"><![CDATA[صادر کردن رویداد (iCal)]]></item>
+        <item name="calendar.category.delete.sure"><![CDATA[آیا میخواهید واقعا میخواهید این دسته بندی حذف شود؟تمام دسته بندی های کودکان را از این دسته بندی به دسته بندی والدین منتقل خواهد شد.رویداد هایی که فقط در این دسته قرار میگیرند حذف خواهند شد.]]></item>
         <item name="calendar.category.eventColor"><![CDATA[Color]]></item>
-        <item name="calendar.category.eventColor.button.reset"><![CDATA[Reset Color]]></item>
-        <item name="calendar.category.export.download"><![CDATA[Download as File]]></item>
-        <item name="calendar.category.export.url"><![CDATA[URL]]></item>
-        <item name="calendar.category.export.url.description"><![CDATA[You can use this URL to subscribe with your favorite calendar software.]]></item>
-        <item name="calendar.category.export.url.participant"><![CDATA[URL (Participating Events Only)]]></item>
-        <item name="calendar.category.export.url.participant.description"><![CDATA[Restricts list to events that you (may) participate in.]]></item>
+        <item name="calendar.category.eventColor.button.reset"><![CDATA[بازنشانی رنگ]]></item>
+        <item name="calendar.category.export.download"><![CDATA[دانلود به صورت فایل]]></item>
+        <item name="calendar.category.export.url"><![CDATA[وبلاگ]]></item>
+        <item name="calendar.category.export.url.description"><![CDATA[شما میتوانید استفاده کنید از این وبلاگ همراه با برنامه تقوم مورد علاقه تان.]]></item>
+        <item name="calendar.category.export.url.participant"><![CDATA[وبلاگ (Participating Events Only)]]></item>
+        <item name="calendar.category.export.url.participant.description"><![CDATA[لیست را به رویدادهایی که شما (ممکن است) در آن شرکت کنید محدود می کند.]]></item>
     </category>
     <category name="calendar.date">
-        <item name="calendar.date.birthday.count"><![CDATA[{#$day->getBirthdayCount()} birthday{if $day->getBirthdayCount() != 1}s{/if}]]></item>
-        <item name="calendar.date.birthday.title"><![CDATA[Birthdays on {@$day->getFormattedDate()}]]></item>
-        <item name="calendar.date.birthdays"><![CDATA[Birthdays]]></item>
+        <item name="calendar.date.birthday.count"><![CDATA[{#$day->getBirthdayCount()} تاریخ تولد{if $day->getBirthdayCount() != 1}s{/if}]]></item>
+        <item name="calendar.date.birthday.title"><![CDATA[روز تولد  {@$day->getFormattedDate()}]]></item>
+        <item name="calendar.date.birthdays"><![CDATA[تولد ها]]></item>
         <item name="calendar.date.dateFormat"><![CDATA[D, M jS Y]]></item>
-        <item name="calendar.date.fullDay"><![CDATA[full-day]]></item>
+        <item name="calendar.date.fullDay"><![CDATA[کل روز]]></item>
         <item name="calendar.date.time.from"><![CDATA[{@$startTime}]]></item>
         <item name="calendar.date.time.fromTo"><![CDATA[{@$startTime} - {@$endTime}]]></item>
-        <item name="calendar.date.time.to"><![CDATA[Until {@$endTime}]]></item>
-        <item name="calendar.date.today"><![CDATA[Today]]></item>
-        <item name="calendar.date.week.weekNumber"><![CDATA[Week {@$weekNumber}]]></item>
+        <item name="calendar.date.time.to"><![CDATA[تا {@$endTime}]]></item>
+        <item name="calendar.date.today"><![CDATA[امروز]]></item>
+        <item name="calendar.date.week.weekNumber"><![CDATA[هفته {@$weekNumber}]]></item>
     </category>
     <category name="calendar.event">
-        <item name="calendar.event.add"><![CDATA[Create Event]]></item>
-        <item name="calendar.event.bbcode.type"><![CDATA[Event]]></item>
-        <item name="calendar.event.button.export"><![CDATA[Export Event]]></item>
-        <item name="calendar.event.button.jumpToEventThread"><![CDATA[Discussion Thread]]></item>
-        <item name="calendar.event.categories"><![CDATA[Categories]]></item>
-        <item name="calendar.event.categorizedEvents"><![CDATA[Events in category “{$category->getTitle()}”]]></item>
-        <item name="calendar.event.category"><![CDATA[Category]]></item>
-        <item name="calendar.event.category.error.invalid"><![CDATA[The selected category is invalid.]]></item>
-        <item name="calendar.event.comment"><![CDATA[Event Comment]]></item>
-        <item name="calendar.event.commentResponse"><![CDATA[Reply to Event Comment]]></item>
-        <item name="calendar.event.comments"><![CDATA[Comments]]></item>
-        <item name="calendar.event.condition.activeUserIsParticipant"><![CDATA[Active user is participant]]></item>
-        <item name="calendar.event.condition.category"><![CDATA[Category]]></item>
-        <item name="calendar.event.condition.isFeatured"><![CDATA[Featured events only]]></item>
-        <item name="calendar.event.coordinates"><![CDATA[Coordinates]]></item>
-        <item name="calendar.event.coordinates.customLocation"><![CDATA[Event Location]]></item>
-        <item name="calendar.event.coordinates.description"><![CDATA[You can specify a location for this event.]]></item>
-        <item name="calendar.event.coordinates.enable"><![CDATA[Specify Event Location]]></item>
-        <item name="calendar.event.coordinates.location"><![CDATA[Location]]></item>
-        <item name="calendar.event.coordinates.location.description"><![CDATA[Type in the location and select a result from the suggestions.]]></item>
-        <item name="calendar.event.coordinates.locationSearch"><![CDATA[Search Location]]></item>
-        <item name="calendar.event.coordinates.map.enable"><![CDATA[Enable Map]]></item>
-        <item name="calendar.event.dailyView"><![CDATA[Day View]]></item>
-        <item name="calendar.event.date"><![CDATA[Date]]></item>
-        <item name="calendar.event.date.cancel"><![CDATA[Cancel Date]]></item>
-        <item name="calendar.event.date.cancel.confirmMessage"><![CDATA[Do you really want to cancel this date? This action cannot be undone!]]></item>
-        <item name="calendar.event.date.cancel.reason"><![CDATA[Reason (optional)]]></item>
-        <item name="calendar.event.date.canceled"><![CDATA[Date has been canceled]]></item>
-        <item name="calendar.event.date.canceled.detail"><![CDATA[This date has been canceled {if $eventDate->canceledByUsername}by {if $eventDate->canceledByUserID}<a href="{link controller='User' id=$eventDate->canceledByUserID title=$eventDate->canceledByUsername}{/link}" class="userLink" data-user-id="{@$eventDate->canceledByUserID}">{$eventDate->canceledByUsername}</a>{else}{$eventDate->canceledByUsername}{/if} {/if}on {@$eventDate->cancelTime|plainTime}{if $eventDate->cancelReason} for the following reason: {$eventDate->cancelReason}{/if}.]]></item>
+        <item name="calendar.event.add"><![CDATA[ایجاد رویداد]]></item>
+        <item name="calendar.event.bbcode.type"><![CDATA[رویداد]]></item>
+        <item name="calendar.event.button.export"><![CDATA[صادر کردن رویداد]]></item>
+        <item name="calendar.event.button.jumpToEventThread"><![CDATA[موضوع گفتگو]]></item>
+        <item name="calendar.event.categories"><![CDATA[دسته بندی ها]]></item>
+        <item name="calendar.event.categorizedEvents"><![CDATA[رویدادهای در این دسته بندی“{$category->getTitle()}”]]></item>
+        <item name="calendar.event.category"><![CDATA[دسته بندی]]></item>
+        <item name="calendar.event.category.error.invalid"><![CDATA[دسته بندی انتخاب شده نامعتبر است.]]></item>
+        <item name="calendar.event.comment"><![CDATA[نظر رویداد]]></item>
+        <item name="calendar.event.commentResponse"><![CDATA[پاسخ به نظر رویداد]]></item>
+        <item name="calendar.event.comments"><![CDATA[نظرات]]></item>
+        <item name="calendar.event.condition.activeUserIsParticipant"><![CDATA[کاربر فعال شرکت کننده است]]></item>
+        <item name="calendar.event.condition.category"><![CDATA[دسته بندی]]></item>
+        <item name="calendar.event.condition.isFeatured"><![CDATA[فقط رویدادهای مهم]]></item>
+        <item name="calendar.event.coordinates"><![CDATA[مختصات]]></item>
+        <item name="calendar.event.coordinates.customLocation"><![CDATA[محل رویداد]]></item>
+        <item name="calendar.event.coordinates.description"><![CDATA[می توانید محلی را برای این رویداد مشخص کنید.]]></item>
+        <item name="calendar.event.coordinates.enable"><![CDATA[محل رویداد را مشخص کنید]]></item>
+        <item name="calendar.event.coordinates.location"><![CDATA[محل]]></item>
+        <item name="calendar.event.coordinates.location.description"><![CDATA[محل را تایپ کنید و نتیجه ای را از بین پیشنهادات انتخاب کنید.]]></item>
+        <item name="calendar.event.coordinates.locationSearch"><![CDATA[جستجوی محل]]></item>
+        <item name="calendar.event.coordinates.map.enable"><![CDATA[نقشه را فعال کنید]]></item>
+        <item name="calendar.event.dailyView"><![CDATA[روز ملاقات ]]></item>
+        <item name="calendar.event.date"><![CDATA[ملاقات ]]></item>
+        <item name="calendar.event.date.cancel"><![CDATA[روز دیدار]]></item>
+        <item name="calendar.event.date.cancel.confirmMessage"><![CDATA[!آیا واقعاً می خواهید این ملاقات را لغو کنید؟ این عمل قابل لغو نیست]]></item>
+        <item name="calendar.event.date.cancel.reason"><![CDATA[دلیل (optional)]]></item>
+        <item name="calendar.event.date.canceled"><![CDATA[ملاقات لغو شده است]]></item>
+        <item name="calendar.event.date.canceled.detail"><![CDATA[این ملاقات لغو شده است {if $eventDate->canceledByUsername}همراه با {if $eventDate->canceledByUserID}<a href="{link controller='User' id=$eventDate->canceledByUserID title=$eventDate->canceledByUsername}{/link}" class="userLink" data-user-id="{@$eventDate->canceledByUserID}">{$eventDate->canceledByUsername}</a>{else}{$eventDate->canceledByUsername}{/if} {/if}on {@$eventDate->cancelTime|plainTime}{if $eventDate->cancelReason} به این دلیل: {$eventDate->cancelReason}{/if}.]]></item>
         <item name="calendar.event.date.canceled.notification.mail.html"><![CDATA[<p>The event <a href="{$eventDate->getLink()}">{$eventDate->getTitle()}</a> by <strong>{$author}</strong> on {@$eventDate->getFormattedStartTime()} was canceled{if $eventDate->cancelReason} for the following reason: {$eventDate->cancelReason}{/if}.</p>]]></item>
-        <item name="calendar.event.date.canceled.notification.mail.plaintext"><![CDATA[The event “{@$eventDate->getTitle()}” [URL:{@$eventDate->getLink()}] by {@$author} on {@$eventDate->getFormattedStartTime()} was canceled{if $eventDate->cancelReason} for the following reason: {@$eventDate->cancelReason}{/if}.]]></item>
-        <item name="calendar.event.date.canceled.notification.message"><![CDATA[The event <strong>{$eventDate->getTitle()}</strong> on {@$eventDate->getFormattedStartTime()} was canceled{if $eventDate->cancelReason} for the following reason: {$eventDate->cancelReason}{/if}.]]></item>
-        <item name="calendar.event.date.canceled.notification.title"><![CDATA[Event Canceled]]></item>
-        <item name="calendar.event.date.change.notification.mail.html"><![CDATA[<p>The event <a href="{$eventDate->getLink()}">{$eventDate->getTitle()}</a> by <strong>{$author}</strong> has been rescheduled to: {@$eventDate->getFormattedTimeFrame()}</p>]]></item>
-        <item name="calendar.event.date.change.notification.mail.plaintext"><![CDATA[The event “{@$eventDate->getTitle()}” [URL:{@$eventDate->getLink()}] by {@$author} has been rescheduled to: {@$eventDate->getFormattedTimeFrame()}]]></item>
-        <item name="calendar.event.date.change.notification.message"><![CDATA[The event <strong>{$eventDate->getTitle()}</strong> has been rescheduled to: {@$eventDate->getFormattedTimeFrame()}]]></item>
-        <item name="calendar.event.date.change.notification.title"><![CDATA[Event Rescheduled]]></item>
-        <item name="calendar.event.date.changeTime"><![CDATA[Change Time]]></item>
-        <item name="calendar.event.date.changeTime.info"><![CDATA[You are editing the time of an individual event of an event series. The times of all the other events are unchanged.]]></item>
-        <item name="calendar.event.date.comment.like.notification.message"><![CDATA[<strong>{$author}</strong> reacted to your comment on the event <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}) ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
-        <item name="calendar.event.date.comment.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} reacted to your comment on the event <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}) ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
-        <item name="calendar.event.date.comment.like.notification.title"><![CDATA[Reaction to a comment (Event)]]></item>
-        <item name="calendar.event.date.comment.like.notification.title.stacked"><![CDATA[{#$count} users reacted to your comment (Event)]]></item>
-        <item name="calendar.event.date.comment.notification.mail.html"><![CDATA[<p>{@$authorList} commented on your event <a href="{$eventDate->getLink()}#comment{@$commentID}">{$eventDate->getTitle()}</a> ({@$eventDate->getFormattedTimeFrame()}):</p>]]></item>
-        <item name="calendar.event.date.comment.notification.mail.plaintext"><![CDATA[{@$authorList} commented on your event “{@$eventDate->getTitle()}” [URL:{@$eventDate->getLink()}#comment{@$commentID}] ({@$eventDate->getFormattedTimeFrame()}){if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
-        <item name="calendar.event.date.comment.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A guest{/if} commented on your event <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}).]]></item>
-        <item name="calendar.event.date.comment.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} commented on your event <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}).]]></item>
-        <item name="calendar.event.date.comment.notification.title"><![CDATA[New Comment (Event)]]></item>
-        <item name="calendar.event.date.comment.notification.title.stacked"><![CDATA[{#$timesTriggered} new Comments (Event)]]></item>
-        <item name="calendar.event.date.commentResponse.like.notification.message"><![CDATA[<strong>{$author}</strong> reacted to your reply to a comment on the event <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}) ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
-        <item name="calendar.event.date.commentResponse.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} reacted to your reply to a comment on the event <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}) ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
-        <item name="calendar.event.date.commentResponse.like.notification.title"><![CDATA[Reaction to your reply to a comment (Event)]]></item>
-        <item name="calendar.event.date.commentResponse.like.notification.title.stacked"><![CDATA[{#$count} users reacted to your reply to a comment (Event)]]></item>
-        <item name="calendar.event.date.commentResponse.notification.mail.html"><![CDATA[<p>{@$authorList} replied to your comment on the event <a href="{$eventDate->getLink()}#comment{@$commentID}/response{@$responseID}">{$eventDate->getTitle()}</a> ({@$eventDate->getFormattedTimeFrame()}):</p>]]></item>
-        <item name="calendar.event.date.commentResponse.notification.mail.plaintext"><![CDATA[{@$authorList} replied to your comment on the event “{@$eventDate->getTitle()}” [URL:{@$eventDate->getLink()}#comment{@$commentID}/response{@$responseID}] ({@$eventDate->getFormattedTimeFrame()}){if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
-        <item name="calendar.event.date.commentResponse.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A guest{/if} replied to your comment on the event <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}).]]></item>
-        <item name="calendar.event.date.commentResponse.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} replied to your comment on the event <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}).]]></item>
-        <item name="calendar.event.date.commentResponse.notification.title"><![CDATA[New Reply (Event)]]></item>
-        <item name="calendar.event.date.commentResponse.notification.title.stacked"><![CDATA[{#$timesTriggered} new Replies (Event)]]></item>
-        <item name="calendar.event.date.commentResponseOwner.notification.mail.html"><![CDATA[<p>{@$authorList} replied to {$commentAuthor}’s comment on your event <a href="{$eventDate->getLink()}#comment{@$commentID}/response{@$responseID}">{$eventDate->getTitle()}</a> ({@$eventDate->getFormattedTimeFrame()}):</p>]]></item>
-        <item name="calendar.event.date.commentResponseOwner.notification.mail.plaintext"><![CDATA[{@$authorList} replied to {@$commentAuthor}’s comment on your event “{@$eventDate->getTitle()}” [URL:{@$eventDate->getLink()}#comment{@$commentID}/response{@$responseID}] ({@$eventDate->getFormattedTimeFrame()}){if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
-        <item name="calendar.event.date.commentResponseOwner.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A guest{/if} replied to a comment by <strong>{$commentAuthor}</strong> on your event <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}).]]></item>
-        <item name="calendar.event.date.commentResponseOwner.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} replied to a comment by <strong>{$author}</strong> on your event <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}).]]></item>
-        <item name="calendar.event.date.commentResponseOwner.notification.title"><![CDATA[New Reply (Event)]]></item>
-        <item name="calendar.event.date.commentResponseOwner.notification.title.stacked"><![CDATA[{#$timesTriggered} new Replies (Event)]]></item>
-        <item name="calendar.event.date.end"><![CDATA[End]]></item>
-        <item name="calendar.event.date.end.error.endsAfterNextEventDate"><![CDATA[This repetition of the event cannot end after the start of the next repetition.]]></item>
-        <item name="calendar.event.date.end.error.invalid"><![CDATA[The entered end date is invalid. It must be after the start date.]]></item>
-        <item name="calendar.event.date.end.error.tooLong"><![CDATA[Your event has exceeded the maximum time period, an event can only take place up to {#CALENDAR_MAX_EVENT_LENGTH} successive days.]]></item>
-        <item name="calendar.event.date.end.local"><![CDATA[End (Local Time)]]></item>
+        <item name="calendar.event.date.canceled.notification.mail.plaintext"><![CDATA[رویداد “{@$eventDate->getTitle()}” [URL:{@$eventDate->getLink()}] by {@$author} on {@$eventDate->getFormattedStartTime()}کنسل شده است{if $eventDate->cancelReason} به این دلیل: {@$eventDate->cancelReason}{/if}.]]></item>
+        <item name="calendar.event.date.canceled.notification.message"><![CDATA[رویداد <strong>{$eventDate->getTitle()}</strong> on {@$eventDate->getFormattedStartTime()}کنسل شده است{if $eventDate->cancelReason} به این دلیل: {$eventDate->cancelReason}{/if}.]]></item>
+        <item name="calendar.event.date.canceled.notification.title"><![CDATA[رویداد کنسل شده است]]></item>
+        <item name="calendar.event.date.change.notification.mail.html"><![CDATA[<p>رویداد <a href="{$eventDate->getLink()}">{$eventDate->getTitle()}</a> by <strong>{$author}</strong> موکول شده به: {@$eventDate->getFormattedTimeFrame()}</p>]]></item>
+        <item name="calendar.event.date.change.notification.mail.plaintext"><![CDATA[رویداد “{@$eventDate->getTitle()}” [URL:{@$eventDate->getLink()}] by {@$author} موکول شده به: {@$eventDate->getFormattedTimeFrame()}]]></item>
+        <item name="calendar.event.date.change.notification.message"><![CDATA[رویدا <strong>{$eventDate->getTitle()}</strong> موکول شده به: {@$eventDate->getFormattedTimeFrame()}]]></item>
+        <item name="calendar.event.date.change.notification.title"><![CDATA[رویداد موکول شده به]]></item>
+        <item name="calendar.event.date.changeTime"><![CDATA[تغییر زمان]]></item>
+        <item name="calendar.event.date.changeTime.info"><![CDATA[شما در حال ویرایش زمان یک رویداد جداگانه از یک مجموعه رویداد هستید. زمان همه رویدادهای دیگر بدون تغییر است]]></item>
+        <item name="calendar.event.date.comment.like.notification.message"><![CDATA[<strong>{$author}</strong> به نظر شما در این رویداد واکنش نشان داد <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}) ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+        <item name="calendar.event.date.comment.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} به نظر شما در این رویداد واکنش نشان داد <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}) ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+        <item name="calendar.event.date.comment.like.notification.title"><![CDATA[واکنش به یک نظر (Event)]]></item>
+        <item name="calendar.event.date.comment.like.notification.title.stacked"><![CDATA[{#$count} کاربران به نظر شما واکنش نشان دادند (Event)]]></item>
+        <item name="calendar.event.date.comment.notification.mail.html"><![CDATA[<p>{@$authorList} در مورد رویداد شما نظر داد <a href="{$eventDate->getLink()}#comment{@$commentID}">{$eventDate->getTitle()}</a> ({@$eventDate->getFormattedTimeFrame()}):</p>]]></item>
+        <item name="calendar.event.date.comment.notification.mail.plaintext"><![CDATA[{@$authorList} در مورد رویداد شما نظر داد “{@$eventDate->getTitle()}” [URL:{@$eventDate->getLink()}#comment{@$commentID}] ({@$eventDate->getFormattedTimeFrame()}){if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+        <item name="calendar.event.date.comment.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A guest{/if} در مورد رویداد شما نظر داد <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}).]]></item>
+        <item name="calendar.event.date.comment.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} در مورد رویداد شما نظر داد <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}).]]></item>
+        <item name="calendar.event.date.comment.notification.title"><![CDATA[نظر جدید (Event)]]></item>
+        <item name="calendar.event.date.comment.notification.title.stacked"><![CDATA[{#$timesTriggered} نظرات جدید (Event)]]></item>
+        <item name="calendar.event.date.commentResponse.like.notification.message"><![CDATA[<strong>{$author}</strong> به پاسخ شما به نظری در مورد این رویداد واکنش نشان داد <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}) ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+        <item name="calendar.event.date.commentResponse.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} به پاسخ شما به نظری در مورد این رویداد واکنش نشان داد <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}) ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+        <item name="calendar.event.date.commentResponse.like.notification.title"><![CDATA[به پاسخ شما به نظری در مورد این رویداد واکنش نشان داد (Event)]]></item>
+        <item name="calendar.event.date.commentResponse.like.notification.title.stacked"><![CDATA[{#$count} کاربران به پاسخ شما به یک نظر واکنش نشان دادند (Event)]]></item>
+        <item name="calendar.event.date.commentResponse.notification.mail.html"><![CDATA[<p>{@$authorList} به نظر شما در مورد این رویداد پاسخ داد <a href="{$eventDate->getLink()}#comment{@$commentID}/response{@$responseID}">{$eventDate->getTitle()}</a> ({@$eventDate->getFormattedTimeFrame()}):</p>]]></item>
+        <item name="calendar.event.date.commentResponse.notification.mail.plaintext"><![CDATA[{@$authorList} به نظر شما در مورد این رویداد پاسخ داد “{@$eventDate->getTitle()}” [URL:{@$eventDate->getLink()}#comment{@$commentID}/response{@$responseID}] ({@$eventDate->getFormattedTimeFrame()}){if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+        <item name="calendar.event.date.commentResponse.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A guest{/if} به نظر شما در مورد این رویداد پاسخ داد <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}).]]></item>
+        <item name="calendar.event.date.commentResponse.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} به نظر شما در مورد این رویداد پاسخ داد <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}).]]></item>
+        <item name="calendar.event.date.commentResponse.notification.title"><![CDATA[پاسخ جدید (Event)]]></item>
+        <item name="calendar.event.date.commentResponse.notification.title.stacked"><![CDATA[{#$timesTriggered} پاسخ های جدید (Event)]]></item>
+        <item name="calendar.event.date.commentResponseOwner.notification.mail.html"><![CDATA[<p>{@$authorList} پاسخ داد به {$commentAuthor}’s در مورد رویداد خود نظر دهید<a href="{$eventDate->getLink()}#comment{@$commentID}/response{@$responseID}">{$eventDate->getTitle()}</a> ({@$eventDate->getFormattedTimeFrame()}):</p>]]></item>
+        <item name="calendar.event.date.commentResponseOwner.notification.mail.plaintext"><![CDATA[{@$authorList} replied to {@$commentAuthor}’s در مورد رویداد خود نظر دهید “{@$eventDate->getTitle()}” [URL:{@$eventDate->getLink()}#comment{@$commentID}/response{@$responseID}] ({@$eventDate->getFormattedTimeFrame()}){if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+        <item name="calendar.event.date.commentResponseOwner.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A guest{/if} پاسخ دادن به نظر با <strong>{$commentAuthor}</strong> on your event <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}).]]></item>
+        <item name="calendar.event.date.commentResponseOwner.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} پاسخ دادن به نظر با <strong>{$author}</strong> on your event <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}).]]></item>
+        <item name="calendar.event.date.commentResponseOwner.notification.title"><![CDATA[پاسخ جدید (Event)]]></item>
+        <item name="calendar.event.date.commentResponseOwner.notification.title.stacked"><![CDATA[{#$timesTriggered} پاسخ های جدید (Event)]]></item>
+        <item name="calendar.event.date.end"><![CDATA[پایان]]></item>
+        <item name="calendar.event.date.end.error.endsAfterNextEventDate"><![CDATA[این تکرار رویداد نمی تواند پس از شروع تکرار بعدی به پایان برسد.]]></item>
+        <item name="calendar.event.date.end.error.invalid"><![CDATA[تاریخ پایان وارد شده نامعتبر است. باید بعد از تاریخ شروع باشد.]]></item>
+        <item name="calendar.event.date.end.error.tooLong"><![CDATA[رویداد شما از حداکثر دوره زمانی فراتر رفته است، یک رویداد فقط تا حداکثر می تواند برگزار شود{#CALENDAR_MAX_EVENT_LENGTH} روزهای متوالی.]]></item>
+        <item name="calendar.event.date.end.local"><![CDATA[پایان(Local Time)]]></item>
         <item name="calendar.event.date.invite.notification.mail.html"><![CDATA[<p><strong>{$author}</strong> invited you to the event <a href="{$eventDate->getLink()}">{$eventDate->getTitle()}</a> ({@$eventDate->getFormattedTimeFrame()}):</p>]]></item>
         <item name="calendar.event.date.invite.notification.mail.plaintext"><![CDATA[{@$author} invited you to the event “{@$eventDate->getTitle()}” [URL:{@$eventDate->getLink()}] ({@$eventDate->getFormattedTimeFrame()}):]]></item>
         <item name="calendar.event.date.invite.notification.message"><![CDATA[<strong>{$author}</strong> invited you to the event <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}).]]></item>
