@@ -298,46 +298,46 @@
         <item name="calendar.event.date.end.error.invalid"><![CDATA[تاریخ پایان وارد شده نامعتبر است. باید بعد از تاریخ شروع باشد.]]></item>
         <item name="calendar.event.date.end.error.tooLong"><![CDATA[رویداد شما از حداکثر دوره زمانی فراتر رفته است، یک رویداد فقط تا حداکثر می تواند برگزار شود{#CALENDAR_MAX_EVENT_LENGTH} روزهای متوالی.]]></item>
         <item name="calendar.event.date.end.local"><![CDATA[پایان(Local Time)]]></item>
-        <item name="calendar.event.date.invite.notification.mail.html"><![CDATA[<p><strong>{$author}</strong> invited you to the event <a href="{$eventDate->getLink()}">{$eventDate->getTitle()}</a> ({@$eventDate->getFormattedTimeFrame()}):</p>]]></item>
-        <item name="calendar.event.date.invite.notification.mail.plaintext"><![CDATA[{@$author} invited you to the event “{@$eventDate->getTitle()}” [URL:{@$eventDate->getLink()}] ({@$eventDate->getFormattedTimeFrame()}):]]></item>
-        <item name="calendar.event.date.invite.notification.message"><![CDATA[<strong>{$author}</strong> invited you to the event <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}).]]></item>
-        <item name="calendar.event.date.invite.notification.title"><![CDATA[Event-Invitation]]></item>
-        <item name="calendar.event.date.isFullDay"><![CDATA[Full-day]]></item>
-        <item name="calendar.event.date.isParticipant"><![CDATA[You do participate in this event.]]></item>
-        <item name="calendar.event.date.isParticipant.invited"><![CDATA[You have been invited to participate in this event.]]></item>
-        <item name="calendar.event.date.isParticipant.maybe"><![CDATA[You have not fully committed to participate in this event yet.]]></item>
-        <item name="calendar.event.date.isParticipant.no"><![CDATA[You have declined to participate in this event.]]></item>
-        <item name="calendar.event.date.local"><![CDATA[Local Time]]></item>
-        <item name="calendar.event.date.next"><![CDATA[Next Repetition]]></item>
-        <item name="calendar.event.date.notification.mail.html"><![CDATA[<p>The event <a href="{$eventDate->getLink()}">{$eventDate->getTitle()}</a> by <strong>{$author}</strong> {if $eventDate->startTime < TIME_NOW}started{else}starts{/if} {dateInterval end=$eventDate->startTime full=true format='sentence'}:</p>]]></item>
-        <item name="calendar.event.date.notification.mail.plaintext"><![CDATA[The event “{@$eventDate->getTitle()}” [URL:{@$eventDate->getLink()}] by {@$author} {if $eventDate->startTime < TIME_NOW}started{else}starts{/if} {dateInterval end=$eventDate->startTime full=true format='sentence'}:]]></item>
-        <item name="calendar.event.date.notification.message"><![CDATA[Event <strong>{$eventDate->getTitle()}</strong> {if $eventDate->startTime < TIME_NOW}started{else}starts{/if} {dateInterval end=$eventDate->startTime full=true format='sentence'}.]]></item>
-        <item name="calendar.event.date.notification.title"><![CDATA[Event Reminder]]></item>
-        <item name="calendar.event.date.overlapping"><![CDATA[These events take place during this period:]]></item>
-        <item name="calendar.event.date.participation"><![CDATA[Manage Participation]]></item>
-        <item name="calendar.event.date.participation.companions"><![CDATA[Companions]]></item>
-        <item name="calendar.event.date.participation.companions.error.exceededMaxCompanions"><![CDATA[You have exceeded the maximum number of companions.]]></item>
-        <item name="calendar.event.date.participation.decision"><![CDATA[Participation]]></item>
-        <item name="calendar.event.date.participation.decision.maybe"><![CDATA[Maybe]]></item>
-        <item name="calendar.event.date.participation.decision.no"><![CDATA[No]]></item>
-        <item name="calendar.event.date.participation.decision.yes"><![CDATA[Yes{if !$canParticipate} (not possible){/if}]]></item>
-        <item name="calendar.event.date.participation.invite"><![CDATA[Invite]]></item>
-        <item name="calendar.event.date.participation.invite.description"><![CDATA[You can invite additional users to this event. Separate multiple users with a comma.]]></item>
-        <item name="calendar.event.date.participation.invite.errors"><![CDATA[{if $errors[unknown]|count}The following users are unknown: {implode from=$errors[unknown] item=user}{$user}{/implode}.{/if}{if $errors[unknown]|count && $errors[participant]|count}<br />{/if}{if $errors[participant]|count}The following users are already participants: {implode from=$errors[participant] item=user}{$user}{/implode}.{/if}]]></item>
-        <item name="calendar.event.date.participation.inviteUserGroup"><![CDATA[Invite User Group]]></item>
-        <item name="calendar.event.date.participation.inviteUserGroup.description"><![CDATA[You can only invite user groups with up to {#CALENDAR_EVENT_INVITE_GROUP_MAX_SIZE} members.]]></item>
-        <item name="calendar.event.date.participation.inviteUsers"><![CDATA[Invite Users]]></item>
-        <item name="calendar.event.date.participation.inviteUsers.error.notFound"><![CDATA[The following users were not found: {implode from=$unknownUsers item=unknownUser}{$unknownUser}{/implode}]]></item>
-        <item name="calendar.event.date.participation.message"><![CDATA[Comment]]></item>
-        <item name="calendar.event.date.participation.message.description"><![CDATA[Optionally, you can type in a comment that will be displayed on the participants list.]]></item>
-        <item name="calendar.event.date.participation.notChangeable"><![CDATA[This event does not allow you to change your decision.]]></item>
-        <item name="calendar.event.date.participation.notification.mail.html"><![CDATA[<p>{@$authorList} now {if $count == 1 && $guestTimesTriggered < 2 && (!$event->getAuthor()->userID || $guestTimesTriggered == 0)}participates{else}participate{/if} in the event <a href="{$eventDate->getLink()}">{$eventDate->getTitle()}</a> ({@$eventDate->getFormattedTimeFrame()}):</p>]]></item>
-        <item name="calendar.event.date.participation.notification.mail.plaintext"><![CDATA[{@$authorList} now {if $count == 1 && $guestTimesTriggered < 2 && (!$event->getAuthor()->userID || $guestTimesTriggered == 0)}participates{else}participate{/if} in the event “{@$eventDate->getTitle()}” [URL:{@$eventDate->getLink()}] ({@$eventDate->getFormattedTimeFrame()}){if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
-        <item name="calendar.event.date.participation.notification.message"><![CDATA[<strong>{$author}</strong> now participates in the event <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}).]]></item>
-        <item name="calendar.event.date.participation.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} now participate in the event <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}).]]></item>
-        <item name="calendar.event.date.participation.notification.title"><![CDATA[New Participant]]></item>
-        <item name="calendar.event.date.participation.notification.title.stacked"><![CDATA[{#$count} new Participants]]></item>
-        <item name="calendar.event.date.participation.participate"><![CDATA[Participate]]></item>
+        <item name="calendar.event.date.invite.notification.mail.html"><![CDATA[<p><strong>{$author}</strong> شما را به این رویداد دعوت شده اید <a href="{$eventDate->getLink()}">{$eventDate->getTitle()}</a> ({@$eventDate->getFormattedTimeFrame()}):</p>]]></item>
+        <item name="calendar.event.date.invite.notification.mail.plaintext"><![CDATA[{@$author} شما را به این رویداد دعوت شده اید “{@$eventDate->getTitle()}” [URL:{@$eventDate->getLink()}] ({@$eventDate->getFormattedTimeFrame()}):]]></item>
+        <item name="calendar.event.date.invite.notification.message"><![CDATA[<strong>{$author}</strong> شما را به این رویداد دعوت شده اید <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}).]]></item>
+        <item name="calendar.event.date.invite.notification.title"><![CDATA[دعوت به رویداد]]></item>
+        <item name="calendar.event.date.isFullDay"><![CDATA[تمام روز]]></item>
+        <item name="calendar.event.date.isParticipant"><![CDATA[شما در این رویداد شرکت می کنید.]]></item>
+        <item name="calendar.event.date.isParticipant.invited"><![CDATA[از شما برای شرکت در این رویداد دعوت شده است.]]></item>
+        <item name="calendar.event.date.isParticipant.maybe"><![CDATA[شما هنوز به طور کامل به شرکت در این رویداد متعهد نشده اید.]]></item>
+        <item name="calendar.event.date.isParticipant.no"><![CDATA[شما شرکت در این رویداد را نپذیرفته اید.]]></item>
+        <item name="calendar.event.date.local"><![CDATA[زمان محلی]]></item>
+        <item name="calendar.event.date.next"><![CDATA[تکرار بعدی]]></item>
+        <item name="calendar.event.date.notification.mail.html"><![CDATA[<p>رویداد <a href="{$eventDate->getLink()}">{$eventDate->getTitle()}</a> همراه با <strong>{$author}</strong> {if $eventDate->startTime < TIME_NOW}started{else}starts{/if} {dateInterval end=$eventDate->startTime full=true format='sentence'}:</p>]]></item>
+        <item name="calendar.event.date.notification.mail.plaintext"><![CDATA[رویداد “{@$eventDate->getTitle()}” [وبلاگ:{@$eventDate->getLink()}] همراه با {@$author} {if $eventDate->startTime < TIME_NOW}started{else}starts{/if} {dateInterval end=$eventDate->startTime full=true format='sentence'}:]]></item>
+        <item name="calendar.event.date.notification.message"><![CDATA[رویداد <strong>{$eventDate->getTitle()}</strong> {if $eventDate->startTime < TIME_NOW}started{else}starts{/if} {dateInterval end=$eventDate->startTime full=true format='sentence'}.]]></item>
+        <item name="calendar.event.date.notification.title"><![CDATA[یادآوری رویداد]]></item>
+        <item name="calendar.event.date.overlapping"><![CDATA[این اتفاقات در این دوره رخ می دهد:]]></item>
+        <item name="calendar.event.date.participation"><![CDATA[مدیریت مشارکت]]></item>
+        <item name="calendar.event.date.participation.companions"><![CDATA[همراهان]]></item>
+        <item name="calendar.event.date.participation.companions.error.exceededMaxCompanions"><![CDATA[ظرفیت تعداد همراهان تکمیل است.]]></item>
+        <item name="calendar.event.date.participation.decision"><![CDATA[مشارکت]]></item>
+        <item name="calendar.event.date.participation.decision.maybe"><![CDATA[شاید]]></item>
+        <item name="calendar.event.date.participation.decision.no"><![CDATA[خیر]]></item>
+        <item name="calendar.event.date.participation.decision.yes"><![CDATA[بله{if !$canParticipate} (not possible){/if}]]></item>
+        <item name="calendar.event.date.participation.invite"><![CDATA[دعوت]]></item>
+        <item name="calendar.event.date.participation.invite.description"><![CDATA[می توانید کاربران بیشتری را به این رویداد دعوت کنید. هر کاربر را با کاما جدا کنید.]]></item>
+        <item name="calendar.event.date.participation.invite.errors"><![CDATA[{if $errors[unknown]|count}کاربران زیر ناشناخته هستند: {implode from=$errors[unknown] item=user}{$user}{/implode}.{/if}{if $errors[unknown]|count && $errors[participant]|count}<br />{/if}{if $errors[participant]|count}کاربران زیر قبلاً شرکت کرده اند: {implode from=$errors[participant] item=user}{$user}{/implode}.{/if}]]></item>
+        <item name="calendar.event.date.participation.inviteUserGroup"><![CDATA[دعوت از گروه کاربر]]></item>
+        <item name="calendar.event.date.participation.inviteUserGroup.description"><![CDATA[شما نمیتوانید بیشتر از حد مجاز کاربر غوت کنید {#CALENDAR_EVENT_INVITE_GROUP_MAX_SIZE} اعضا.]]></item>
+        <item name="calendar.event.date.participation.inviteUsers"><![CDATA[دعوت از کاربران]]></item>
+        <item name="calendar.event.date.participation.inviteUsers.error.notFound"><![CDATA[کاربران زیر یافت نشدند: {implode from=$unknownUsers item=unknownUser}{$unknownUser}{/implode}]]></item>
+        <item name="calendar.event.date.participation.message"><![CDATA[نظر]]></item>
+        <item name="calendar.event.date.participation.message.description"><![CDATA[به صورت اختیاری، می توانید نظری را تایپ کنید که در لیست شرکت کنندگان نمایش داده می شود.]]></item>
+        <item name="calendar.event.date.participation.notChangeable"><![CDATA[این رویداد به شما اجازه نمی دهد تصمیم خود را تغییر دهید.]]></item>
+        <item name="calendar.event.date.participation.notification.mail.html"><![CDATA[<p>{@$authorList} اکنون {if $count == 1 && $guestTimesTriggered < 2 && (!$event->getAuthor()->userID || $guestTimesTriggered == 0)}participates{else} مشارکت ها{/if} در این رویداد <a href="{$eventDate->getLink()}">{$eventDate->getTitle()}</a> ({@$eventDate->getFormattedTimeFrame()}):</p>]]></item>
+        <item name="calendar.event.date.participation.notification.mail.plaintext"><![CDATA[{@$authorList} اکنون {if $count == 1 && $guestTimesTriggered < 2 && (!$event->getAuthor()->userID || $guestTimesTriggered == 0)}participates{else}مشارکت{/if}در این رویداد “{@$eventDate->getTitle()}” [URL:{@$eventDate->getLink()}] ({@$eventDate->getFormattedTimeFrame()}){if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+        <item name="calendar.event.date.participation.notification.message"><![CDATA[<strong>{$author}</strong> اکنون در این رویداد شرکت می کند <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}).]]></item>
+        <item name="calendar.event.date.participation.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} اکنون در این رویداد شرکت می کند <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}).]]></item>
+        <item name="calendar.event.date.participation.notification.title"><![CDATA[شرکت کننده جدید]]></item>
+        <item name="calendar.event.date.participation.notification.title.stacked"><![CDATA[{#$count} شرکت کنندگان جدید]]></item>
+        <item name="calendar.event.date.participation.participate"><![CDATA[مشارکت]]></item>
         <item name="calendar.event.date.participation.removeParticipant"><![CDATA[Remove Participant]]></item>
         <item name="calendar.event.date.participation.removeParticipant.confirmMessage"><![CDATA[Do you really want to remove <span class="confirmationObject">{$participant->username}</span> from this event?]]></item>
         <item name="calendar.event.date.participation.user"><![CDATA[Participants]]></item>
