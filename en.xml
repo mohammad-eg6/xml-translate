@@ -812,7 +812,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="filebase.file.review.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}مهمان {/if} added the review <strong>{$review->getTitle()}</strong> to your file <strong>{$review->getViewableFile()->getTitle()}</strong>.]]></item>
         <item name="filebase.file.review.notification.title"><![CDATA[New Review]]></item>
         <item name="filebase.file.review.rating"><![CDATA[{plural value=$rating one='# Star' other='# Stars'}{if !$numberOfRatings|empty}; {plural value=$numberOfRatings one='# Review' other='# Reviews'}{/if}]]></item>
-        <item name="filebase.file.review.recentActivity.title"><![CDATA[Added the review <a href="{$review->getLink()}">{$review->getTitle()}</a> to the file {if $review->getViewableFile()->hasLabels()}<ul class="labelList">{foreach from=$review->getViewableFile()->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}{anchor object=$review->getViewableFile() class='filebaseFileLink'}.]]></item>
+        <item name="filebase.file.review.recentActivity.title"><![CDATA[مرور اضافه شد  <a href="{$review->getLink()}">{$review->getTitle()}</a> to the file {if $review->getViewableFile()->hasLabels()}<ul class="labelList">{foreach from=$review->getViewableFile()->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}{anchor object=$review->getViewableFile() class='filebaseFileLink'}.]]></item>
         <item name="filebase.file.review.response.add"><![CDATA[پاسخ]]></item>
         <item name="filebase.file.review.response.delete"><![CDATA[حذف پاسخ]]></item>
         <item name="filebase.file.review.response.delete.confirmMessage"><![CDATA[ایا واقعا میخواهید این پاسخ را حذف کنید ?]]></item>
@@ -832,74 +832,74 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
 <li>{plural value=$stats[authors] 1='1 Author' other='# Authors'}</li>
 <li>{plural value=$stats[files] 1='1 File' other='# Files'}</li>
 <li>{$stats[size]|filesize} Total File Size</li>
-<li>{plural value=$stats[downloads] 1='1 Download' other='# Downloads'}{if $stats[downloads] > 0} ({plural value=$stats[downloadsPerDay] 1='1 Download' other='# Downloads'} per Day){/if}</li>
+<li>{plural value=$stats[downloads] 1='1 Download' other='# Downloads'}{if $stats[downloads] > 0} ({plural value=$stats[دانلود در هر روز ] 1='1 Download' other='# Downloads'} per Day){/if}</li>
 <li>{plural value=$stats[comments] 1='1 Comment' other='# Comments'}</li>
 </ul>]]></item>
     </category>
     <category name="filebase.license">
-        <item name="filebase.license.license"><![CDATA[License]]></item>
-        <item name="filebase.license.licenseAgreement"><![CDATA[License Agreement]]></item>
-        <item name="filebase.license.licenseAgreement.confirm"><![CDATA[Do you accept the license agreement above? You are required to accept it in order to download or purchase the product.]]></item>
-        <item name="filebase.license.licenseAgreement.confirm.missingConfirmation"><![CDATA[You are required to accept the license agreement.]]></item>
-        <item name="filebase.license.licenseAgreement.description"><![CDATA[Please read the license agreement carefully.]]></item>
-        <item name="filebase.license.licenseAgreement.fileLicense"><![CDATA[License Agreement “{$license->licenseName}”]]></item>
+        <item name="filebase.license.license"><![CDATA[مجوز ]]></item>
+        <item name="filebase.license.licenseAgreement"><![CDATA[توافق نامه مجوز ]]></item>
+        <item name="filebase.license.licenseAgreement.confirm"><![CDATA[ایا توافق نامه مجوز بالا را قبول دارید ? برای دانلود یا خرید محصول ملزم به پذیرش ان هستید .]]></item>
+        <item name="filebase.license.licenseAgreement.confirm.missingConfirmation"><![CDATA[شما ملزم به پذیرش قرارداد مجوز هستید .]]></item>
+        <item name="filebase.license.licenseAgreement.description"><![CDATA[لطفا توافق نامه مجوز را با دقط مطالعه کنید .]]></item>
+        <item name="filebase.license.licenseAgreement.fileLicense"><![CDATA[توافق نامه مجوز  “{$license->licenseName}”]]></item>
         <item name="filebase.license.licenseAgreement.inputDescription"><![CDATA[Provide the license agreement for this product.{if FILEBASE_ENABLE_LICENSE_CONFIRMATION} Users must accept this agreement in order to download or purchase the product.{/if}]]></item>
-        <item name="filebase.license.licenseName"><![CDATA[License Name]]></item>
-        <item name="filebase.license.licenseText"><![CDATA[License Text]]></item>
-        <item name="filebase.license.licenseType"><![CDATA[License Type]]></item>
-        <item name="filebase.license.licenseType.custom"><![CDATA[Provide your own license]]></item>
-        <item name="filebase.license.licenseType.predefined"><![CDATA[Use pre-defined license]]></item>
-        <item name="filebase.license.licenseType.text"><![CDATA[Provide your own license text]]></item>
-        <item name="filebase.license.licenseType.url"><![CDATA[Provide your own license URL]]></item>
-        <item name="filebase.license.licenseURL"><![CDATA[License URL]]></item>
+        <item name="filebase.license.licenseName"><![CDATA[ اسم مجوز ]]></item>
+        <item name="filebase.license.licenseText"><![CDATA[متن مجوز ]]></item>
+        <item name="filebase.license.licenseType"><![CDATA[نوع مجوز ]]></item>
+        <item name="filebase.license.licenseType.custom"><![CDATA[مجوز خود را ارائه دهید ]]></item>
+        <item name="filebase.license.licenseType.predefined"><![CDATA[از مجوز پیش فرض استفاده کنید ]]></item>
+        <item name="filebase.license.licenseType.text"><![CDATA[متن مجوز خود را ارائه دهید ]]></item>
+        <item name="filebase.license.licenseType.url"><![CDATA[وبلاگ مجوز خود را ارائه دهید ]]></item>
+        <item name="filebase.license.licenseURL"><![CDATA[وبلاگ مجوز]]></item>
     </category>
     <category name="filebase.user.condition">
-        <item name="filebase.user.condition.filebaseCustomerFileID"><![CDATA[Bought File]]></item>
-        <item name="filebase.user.condition.filebaseCustomerFileID.description"><![CDATA[The user has bought the file with the given ID or is its author.]]></item>
+        <item name="filebase.user.condition.filebaseCustomerFileID"><![CDATA[فایل خریداری شده ]]></item>
+        <item name="filebase.user.condition.filebaseCustomerFileID.description"><![CDATA[کاربر  فایل را با شناسه داده شده خریداری کرده است یا نویسنده ان است .]]></item>
     </category>
     <category name="gallery.acp.image">
-        <item name="gallery.acp.image.bulkProcessing"><![CDATA[Bulk Processing of Images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and Videos{/if}]]></item>
-        <item name="gallery.acp.image.bulkProcessing.action"><![CDATA[Action]]></item>
-        <item name="gallery.acp.image.bulkProcessing.conditions"><![CDATA[Conditions]]></item>
-        <item name="gallery.acp.image.bulkProcessing.delete"><![CDATA[Delete]]></item>
-        <item name="gallery.acp.image.bulkProcessing.disable"><![CDATA[Disable]]></item>
-        <item name="gallery.acp.image.bulkProcessing.disableComments"><![CDATA[Disable Comments]]></item>
-        <item name="gallery.acp.image.bulkProcessing.enable"><![CDATA[Enable]]></item>
-        <item name="gallery.acp.image.bulkProcessing.enableComments"><![CDATA[Enable Comments]]></item>
-        <item name="gallery.acp.image.bulkProcessing.restore"><![CDATA[Restore]]></item>
-        <item name="gallery.acp.image.bulkProcessing.setCategories"><![CDATA[Set Categories]]></item>
-        <item name="gallery.acp.image.bulkProcessing.setCategories.categories"><![CDATA[Categories]]></item>
-        <item name="gallery.acp.image.bulkProcessing.setCategories.categories.description"><![CDATA[Existing categories will be overwritten with the selected categories.]]></item>
-        <item name="gallery.acp.image.bulkProcessing.success"><![CDATA[The selected action has been executed and affected {#$affectedObjectCount} image{if $affectedObjectCount != 1}s{/if}{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/video{if $affectedObjectCount != 1}s{/if}{/if}.{if $affectedObjectCount > 0}<br>Please make sure to <a href="{link controller='RebuildData'}{/link}">“Verify Integrity”</a> afterwards.{/if}]]></item>
-        <item name="gallery.acp.image.bulkProcessing.trash"><![CDATA[Move to Trash Bin]]></item>
+        <item name="gallery.acp.image.bulkProcessing"><![CDATA[پردازش انبوه تصاویر {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و فیلم ها {/if}]]></item>
+        <item name="gallery.acp.image.bulkProcessing.action"><![CDATA[عمل]]></item>
+        <item name="gallery.acp.image.bulkProcessing.conditions"><![CDATA[شرایط ]]></item>
+        <item name="gallery.acp.image.bulkProcessing.delete"><![CDATA[حذف ]]></item>
+        <item name="gallery.acp.image.bulkProcessing.disable"><![CDATA[غیر فعال کردن ]]></item>
+        <item name="gallery.acp.image.bulkProcessing.disableComments"><![CDATA[غیر فعال کردن نظرات ]]></item>
+        <item name="gallery.acp.image.bulkProcessing.enable"><![CDATA[فعال کردن ]]></item>
+        <item name="gallery.acp.image.bulkProcessing.enableComments"><![CDATA[فعال کردن نظرات ]]></item>
+        <item name="gallery.acp.image.bulkProcessing.restore"><![CDATA[بازگردانی ]]></item>
+        <item name="gallery.acp.image.bulkProcessing.setCategories"><![CDATA[تنظیم دسته بندی ها ]]></item>
+        <item name="gallery.acp.image.bulkProcessing.setCategories.categories"><![CDATA[دسته بندی ها ]]></item>
+        <item name="gallery.acp.image.bulkProcessing.setCategories.categories.description"><![CDATA[دسته های موجود با دسته های انتخابی بازنویسی میشوند s.]]></item>
+        <item name="gallery.acp.image.bulkProcessing.success"><![CDATA[عمل انتخاب شده اجرا شده و تحت تاثیر قرار گرفته است  {#$affectedObjectCount} تصویر {if $affectedObjectCount != 1}s{/if}{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/فیلم{if $affectedObjectCount != 1}ها{/if}{/if}.{if $affectedObjectCount > 0}<br>لطفا مطمئن شوید  <a href="{link controller='RebuildData'}{/link}">“Verify Integrity”</a> afterwards.{/if}]]></item>
+        <item name="gallery.acp.image.bulkProcessing.trash"><![CDATA[انتقال به سظل اشغال ]]></item>
     </category>
     <category name="gallery.acp.menu">
-        <item name="gallery.acp.menu.link.gallery"><![CDATA[Gallery]]></item>
-        <item name="gallery.acp.menu.link.gallery.category.add"><![CDATA[Add Category]]></item>
-        <item name="gallery.acp.menu.link.gallery.category.list"><![CDATA[Categories]]></item>
-        <item name="gallery.acp.menu.link.gallery.imageBulkProcessing"><![CDATA[Bulk Processing of Images]]></item>
+        <item name="gallery.acp.menu.link.gallery"><![CDATA[البوم عکس]]></item>
+        <item name="gallery.acp.menu.link.gallery.category.add"><![CDATA[افزودن دسته بندی ]]></item>
+        <item name="gallery.acp.menu.link.gallery.category.list"><![CDATA[دسته بندی ها ]]></item>
+        <item name="gallery.acp.menu.link.gallery.imageBulkProcessing"><![CDATA[پردازش انبوه تصاویر ]]></item>
     </category>
     <category name="gallery.album">
-        <item name="gallery.album.accessLevel"><![CDATA[Can View Album]]></item>
-        <item name="gallery.album.accessLevel.description"><![CDATA[This album and its images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and videos{/if} should be accessible for the selected users only.{if $album|isset} Please be aware that changes are immediately applied to all contained images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and videos{/if}.{/if}]]></item>
-        <item name="gallery.album.accessLevel.everyone"><![CDATA[Everyone]]></item>
-        <item name="gallery.album.accessLevel.following"><![CDATA[Followed Users]]></item>
-        <item name="gallery.album.accessLevel.info"><![CDATA[{if $album->hasRegisteredAccessLevel()}Access only for Registered Users{elseif $album->hasFollowingAccessLevel()}Access only for Followed Users{elseif $album->hasOwnerAccessLevel()}Private album{/if}]]></item>
-        <item name="gallery.album.accessLevel.owner"><![CDATA[Just Me]]></item>
-        <item name="gallery.album.accessLevel.registered"><![CDATA[Registered Users]]></item>
-        <item name="gallery.album.add"><![CDATA[Create Album]]></item>
-        <item name="gallery.album.albums"><![CDATA[Albums]]></item>
-        <item name="gallery.album.button.add"><![CDATA[Create New Album]]></item>
-        <item name="gallery.album.delete"><![CDATA[Delete]]></item>
-        <item name="gallery.album.delete.confirmMessage"><![CDATA[Do you really want to delete this album?]]></item>
-        <item name="gallery.album.delete.success"><![CDATA[The album has been deleted.]]></item>
-        <item name="gallery.album.displayOptions"><![CDATA[Display Options]]></item>
-        <item name="gallery.album.edit"><![CDATA[Edit Album]]></item>
-        <item name="gallery.album.info"><![CDATA[<li>Last update: {@$album->lastUpdateTime|time}</li>{if $album->images}<li>{#$album->images} image{if $album->images != 1}s{/if}</li>{/if}{if $album->videos}<li>{#$album->videos} video{if $album->videos != 1}s{/if}</li>{/if}{if $album->hasRegisteredAccessLevel()}<li>Access only for registered users</li>{elseif $album->hasFollowingAccessLevel()}<li>Access only for Followed Users</li>{elseif $album->hasOwnerAccessLevel()}<li>Private album</li>{/if}]]></item>
-        <item name="gallery.album.lastUpdateTime"><![CDATA[Last update]]></item>
-        <item name="gallery.album.map"><![CDATA[Map]]></item>
-        <item name="gallery.album.moreAlbums"><![CDATA[More Albums]]></item>
-        <item name="gallery.album.moreAlbums.images"><![CDATA[{if $albumItem->images}{#$albumItem->images} image{if $albumItem->images != 1}s{/if}{/if}{if $albumItem->videos}{if $albumItem->images} and {/if}{#$albumItem->videos} video{if $albumItem->videos != 1}s{/if}{/if}]]></item>
+        <item name="gallery.album.accessLevel"><![CDATA[می توانید البوم را مشاهده کنید ]]></item>
+        <item name="gallery.album.accessLevel.description"><![CDATA[این البوم و تصاویر {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و فیلم ها {/if} باید فقط برای کاربران انتخاب شده قابل دسترسی باشد .{if $album|isset} لطفا توجه داشته باشید که تغییرات فورا در همه موارد اعمال میشود{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو ها {/if}.{/if}]]></item>
+        <item name="gallery.album.accessLevel.everyone"><![CDATA[هر کس]]></item>
+        <item name="gallery.album.accessLevel.following"><![CDATA[کاربران دنبال شده]]></item>
+        <item name="gallery.album.accessLevel.info"><![CDATA[{if $album->hasRegisteredAccessLevel()}دسترسی فقط برای کاربران ثبت نام شده {elseif $album->hasFollowingAccessLevel()}دسترسی فقط برای کاربران دنبال شده{elseif $album->hasOwnerAccessLevel()}البوم خصوصی {/if}]]></item>
+        <item name="gallery.album.accessLevel.owner"><![CDATA[ فقط من ]]></item>
+        <item name="gallery.album.accessLevel.registered"><![CDATA[کاربران ثبت نام شده ]]></item>
+        <item name="gallery.album.add"><![CDATA[ایجاد البوم ]]></item>
+        <item name="gallery.album.albums"><![CDATA[البوم ها ]]></item>
+        <item name="gallery.album.button.add"><![CDATA[ایجاد البقوم جدید ]]></item>
+        <item name="gallery.album.delete"><![CDATA[حذف ]]></item>
+        <item name="gallery.album.delete.confirmMessage"><![CDATA[ایا واقعا میخواهید این البوم را حذف کنید ?]]></item>
+        <item name="gallery.album.delete.success"><![CDATA[البوم حذف شد .]]></item>
+        <item name="gallery.album.displayOptions"><![CDATA[گذینه هاب نمایش ]]></item>
+        <item name="gallery.album.edit"><![CDATA[ویرایش البوم ]]></item>
+        <item name="gallery.album.info"><![CDATA[<li>اخرین به روزرسانی : {@$album->lastUpdateTime|time}</li>{if $album->images}<li>{#$album->images} image{if $album->images != 1}s{/if}</li>{/if}{if $album->videos}<li>{#$album->videos} video{if $album->videos != 1}s{/if}</li>{/if}{if $album->hasRegisteredAccessLevel()}<li>Access only for registered users</li>{elseif $album->hasFollowingAccessLevel()}<li>Access only for Followed Users</li>{elseif $album->hasOwnerAccessLevel()}<li>Private album</li>{/if}]]></item>
+        <item name="gallery.album.lastUpdateTime"><![CDATA[اخرین به روز رسانی ]]></item>
+        <item name="gallery.album.map"><![CDATA[نقشه]]></item>
+        <item name="gallery.album.moreAlbums"><![CDATA[البوم های بیشتر ]]></item>
+        <item name="gallery.album.moreAlbums.images"><![CDATA[{if $albumItem->images}{#$albumItem->images} تصویر {if $albumItem->images != 1}ها{/if}{/if}{if $albumItem->videos}{if $albumItem->images} و {/if}{#$albumItem->videos} فیلم{if $albumItem->videos != 1}ها{/if}{/if}]]></item>
         <item name="gallery.album.ownerImageModerationWarning"><![CDATA[Since new images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and videos{/if} uploaded by you require approval, you cannot upload further images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} or videos{/if} into this private album.]]></item>
         <item name="gallery.album.search"><![CDATA[Album Search]]></item>
         <item name="gallery.album.search.results"><![CDATA[Search Results]]></item>
