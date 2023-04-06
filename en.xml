@@ -552,45 +552,45 @@
         <item name="filebase.file.averageRating"><![CDATA[بررسی ها]]></item>
         <item name="filebase.file.averageRatingFiles"><![CDATA[بررسی های برتر]]></item>
         <item name="filebase.file.bestSellingFiles"><![CDATA[پرفروش ترین]]></item>
-        <item name="filebase.file.button.download"><![CDATA[Download]]></item>
-        <item name="filebase.file.button.jumpToSupportThread"><![CDATA[Support Thread]]></item>
-        <item name="filebase.file.button.markAll"><![CDATA[Mark All]]></item>
-        <item name="filebase.file.button.purchase"><![CDATA[Buy Now]]></item>
-        <item name="filebase.file.categorizedFiles"><![CDATA[Files in category “{$category->getTitle()}”]]></item>
-        <item name="filebase.file.categorizedUnreadFiles"><![CDATA[New Files in category “{$category->getTitle()}”]]></item>
-        <item name="filebase.file.category"><![CDATA[Category]]></item>
-        <item name="filebase.file.category.moderation.info"><![CDATA[Newly uploaded files in this category will remain inaccessible for others until approved by a moderator.]]></item>
-        <item name="filebase.file.comment"><![CDATA[File Comment]]></item>
-        <item name="filebase.file.comment.like.notification.message"><![CDATA[<strong>{$author}</strong> reacted to your comment on the file <strong>{$file->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
-        <item name="filebase.file.comment.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} reacted to your comment on the file <strong>{$file->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
-        <item name="filebase.file.comment.like.notification.title"><![CDATA[Reaction to a comment (File)]]></item>
-        <item name="filebase.file.comment.like.notification.title.stacked"><![CDATA[{#$count} users reacted to your comment (File)]]></item>
-        <item name="filebase.file.comment.notification.mail.html"><![CDATA[<p>{@$authorList} commented on your file <a href="{$file->getLink()}#comments/comment{@$commentID}">{$file->getSubject()}</a>:</p>]]></item>
-        <item name="filebase.file.comment.notification.mail.plaintext"><![CDATA[{@$authorList} commented on your file “{@$file->getSubject()}” [URL:{@$file->getLink()}#comments/comment{@$commentID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
-        <item name="filebase.file.comment.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A guest{/if} commented on your file <strong>{$file->getTitle()}</strong>.]]></item>
-        <item name="filebase.file.comment.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} commented on your file <strong>{$file->getTitle()}</strong>.]]></item>
-        <item name="filebase.file.comment.notification.title"><![CDATA[New Comment (File)]]></item>
-        <item name="filebase.file.comment.notification.title.stacked"><![CDATA[{#$timesTriggered} new Comments (File)]]></item>
-        <item name="filebase.file.commentResponse"><![CDATA[Reply to File Comment]]></item>
-        <item name="filebase.file.commentResponse.like.notification.message"><![CDATA[<strong>{$author}</strong> reacted to your reply to a comment on the file <strong>{$file->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
-        <item name="filebase.file.commentResponse.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} reacted to your reply to a comment on the file <strong>{$file->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
-        <item name="filebase.file.commentResponse.like.notification.title"><![CDATA[Reaction to your reply to a comment (File)]]></item>
-        <item name="filebase.file.commentResponse.like.notification.title.stacked"><![CDATA[{#$count} users reacted to your reply to a comment (File)]]></item>
-        <item name="filebase.file.commentResponse.notification.mail.html"><![CDATA[<p>{@$authorList} replied to your comment on the file <a href="{$file->getLink()}#comments/comment{@$commentID}/response{@$responseID}">{$file->getSubject()}</a>:</p>]]></item>
-        <item name="filebase.file.commentResponse.notification.mail.plaintext"><![CDATA[{@$authorList} replied to your comment on the file “{@$file->getSubject()}” [URL:{@$file->getLink()}#comments/comment{@$commentID}/response{@$responseID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
-        <item name="filebase.file.commentResponse.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A guest{/if} replied to your comment on the file <strong>{$file->getTitle()}</strong>.]]></item>
-        <item name="filebase.file.commentResponse.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} replied to your comment on the file <strong>{$file->getSubject()}</strong>.]]></item>
-        <item name="filebase.file.commentResponse.notification.title"><![CDATA[New Reply (File)]]></item>
-        <item name="filebase.file.commentResponse.notification.title.stacked"><![CDATA[{#$timesTriggered} new Replies (File)]]></item>
-        <item name="filebase.file.commentResponseOwner.notification.mail.html"><![CDATA[<p>{@$authorList} replied to <strong>{$commentAuthor}</strong>’s comment on your file <a href="{$file->getLink()}#comments/comment{@$commentID}/response{@$responseID}">{$file->getSubject()}</a>:</p>]]></item>
-        <item name="filebase.file.commentResponseOwner.notification.mail.plaintext"><![CDATA[{@$authorList} replied to {@$commentAuthor}’s comment on your file “{@$file->getSubject()}” [URL:{@$file->getLink()}#comments/comment{@$commentID}/response{@$responseID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
-        <item name="filebase.file.commentResponseOwner.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A guest{/if} replied to a comment by <strong>{$commentAuthor}</strong> on your file <strong>{$file->getTitle()}</strong>.]]></item>
-        <item name="filebase.file.commentResponseOwner.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} replied to a comment by <strong>{$author}</strong> on your file <strong>{$file->getSubject()}</strong>.]]></item>
-        <item name="filebase.file.commentResponseOwner.notification.title"><![CDATA[New Reply (File)]]></item>
-        <item name="filebase.file.commentResponseOwner.notification.title.stacked"><![CDATA[{#$timesTriggered} new Replies (File)]]></item>
-        <item name="filebase.file.comments"><![CDATA[Comments]]></item>
-        <item name="filebase.file.commercial"><![CDATA[Commercial]]></item>
-        <item name="filebase.file.condition.isFeatured"><![CDATA[Featured files only]]></item>
+        <item name="filebase.file.button.download"><![CDATA[دانلود]]></item>
+        <item name="filebase.file.button.jumpToSupportThread"><![CDATA[موضوع پشتیبانی]]></item>
+        <item name="filebase.file.button.markAll"><![CDATA[علامت گذاری همه]]></item>
+        <item name="filebase.file.button.purchase"><![CDATA[ اکنون خریداری کنید]]></item>
+        <item name="filebase.file.categorizedFiles"><![CDATA[فایل ها در دسته بندی “{$category->getTitle()}”]]></item>
+        <item name="filebase.file.categorizedUnreadFiles"><![CDATA[فایل های جدید در دسته بندی “{$category->getTitle()}”]]></item>
+        <item name="filebase.file.category"><![CDATA[دسته بندی]]></item>
+        <item name="filebase.file.category.moderation.info"><![CDATA[فایل‌های تازه آپلود شده در این دسته تا زمانی که توسط ناظر تأیید نشود، برای دیگران غیرقابل دسترسی باقی می‌ماند.]]></item>
+        <item name="filebase.file.comment"><![CDATA[نظر فایل]]></item>
+        <item name="filebase.file.comment.like.notification.message"><![CDATA[<strong>{$author}</strong> به نظر شما در مورد فایل واکنش نشان داد <strong>{$file->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+        <item name="filebase.file.comment.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} به نظر شما در مورد فایل واکنش نشان داد <strong>{$file->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+        <item name="filebase.file.comment.like.notification.title"><![CDATA[واکنش به یک نظر (فایل)]]></item>
+        <item name="filebase.file.comment.like.notification.title.stacked"><![CDATA[{#$count} کاربران به نظر شما واکنش نشان دادند (فایل)]]></item>
+        <item name="filebase.file.comment.notification.mail.html"><![CDATA[<p>{@$authorList}در مورد فایل شما نظر داد <a href="{$file->getLink()}#comments/comment{@$commentID}">{$file->getSubject()}</a>:</p>]]></item>
+        <item name="filebase.file.comment.notification.mail.plaintext"><![CDATA[{@$authorList} در مورد فایل شما نظر داد “{@$file->getSubject()}” [URL:{@$file->getLink()}#comments/comment{@$commentID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+        <item name="filebase.file.comment.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A guest{/if} در مورد فایل شما نظر داد <strong>{$file->getTitle()}</strong>.]]></item>
+        <item name="filebase.file.comment.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} در مورد فایل شما نظر داد <strong>{$file->getTitle()}</strong>.]]></item>
+        <item name="filebase.file.comment.notification.title"><![CDATA[نظر جدید (فایل)]]></item>
+        <item name="filebase.file.comment.notification.title.stacked"><![CDATA[{#$timesTriggered} نظرات جدید (فایل)]]></item>
+        <item name="filebase.file.commentResponse"><![CDATA[پاسخ به نظر فایل]]></item>
+        <item name="filebase.file.commentResponse.like.notification.message"><![CDATA[<strong>{$author}</strong> به پاسخ شما به نظری در مورد فایل واکنش نشان داد <strong>{$file->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+        <item name="filebase.file.commentResponse.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} به پاسخ شما به نظری در مورد فایل واکنش نشان داد <strong>{$file->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+        <item name="filebase.file.commentResponse.like.notification.title"><![CDATA[واکنش به پاسخ شما به یک نظر (فایل)]]></item>
+        <item name="filebase.file.commentResponse.like.notification.title.stacked"><![CDATA[{#$count} کاربران به پاسخ شما به یک نظر واکنش نشان دادند (فایل)]]></item>
+        <item name="filebase.file.commentResponse.notification.mail.html"><![CDATA[<p>{@$authorList} به نظر شما در مورد فایل پاسخ داد <a href="{$file->getLink()}#comments/comment{@$commentID}/response{@$responseID}">{$file->getSubject()}</a>:</p>]]></item>
+        <item name="filebase.file.commentResponse.notification.mail.plaintext"><![CDATA[{@$authorList} به نظر شما در مورد فایل پاسخ داد “{@$file->getSubject()}” [URL:{@$file->getLink()}#comments/comment{@$commentID}/response{@$responseID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+        <item name="filebase.file.commentResponse.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A guest{/if} به نظر شما در مورد فایل پاسخ داد <strong>{$file->getTitle()}</strong>.]]></item>
+        <item name="filebase.file.commentResponse.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} به نظر شما در مورد فایل پاسخ داد <strong>{$file->getSubject()}</strong>.]]></item>
+        <item name="filebase.file.commentResponse.notification.title"><![CDATA[پاسخ جدید (فایل)]]></item>
+        <item name="filebase.file.commentResponse.notification.title.stacked"><![CDATA[{#$timesTriggered} پاسخ های جدید (فایل)]]></item>
+        <item name="filebase.file.commentResponseOwner.notification.mail.html"><![CDATA[<p>{@$authorList} در پاسخ به <strong>{$commentAuthor}</strong>’s  فایل خود نظر دهید <a href="{$file->getLink()}#comments/comment{@$commentID}/response{@$responseID}">{$file->getSubject()}</a>:</p>]]></item>
+        <item name="filebase.file.commentResponseOwner.notification.mail.plaintext"><![CDATA[{@$authorList} در پاسخ به {@$commentAuthor}’s  فایل خود نظر دهید “{@$file->getSubject()}” [URL:{@$file->getLink()}#comments/comment{@$commentID}/response{@$responseID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+        <item name="filebase.file.commentResponseOwner.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A guest{/if} پاسخ داد به نظری توسط <strong>{$commentAuthor}</strong> روی فایل شما <strong>{$file->getTitle()}</strong>.]]></item>
+        <item name="filebase.file.commentResponseOwner.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} پاسخ داد به نظری توسط <strong>{$author}</strong> روی فایل شما <strong>{$file->getSubject()}</strong>.]]></item>
+        <item name="filebase.file.commentResponseOwner.notification.title"><![CDATA[پاسخ جدید(فایل)]]></item>
+        <item name="filebase.file.commentResponseOwner.notification.title.stacked"><![CDATA[{#$timesTriggered} پاسخ های جدید(فایل)]]></item>
+        <item name="filebase.file.comments"><![CDATA[نظرات]]></item>
+        <item name="filebase.file.commercial"><![CDATA[تجاری]]></item>
+        <item name="filebase.file.condition.isFeatured"><![CDATA[فقط فایل های ویژه]]></item>
         <item name="filebase.file.confirmDelete"><![CDATA[Do you really want to delete this file?]]></item>
         <item name="filebase.file.confirmTrash"><![CDATA[Do you really want to move this file to the trash?]]></item>
         <item name="filebase.file.confirmTrash.reason"><![CDATA[Reason (optional)]]></item>
