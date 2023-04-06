@@ -547,11 +547,11 @@
         <item name="filebase.file.add"><![CDATA[آپلود فایل]]></item>
         <item name="filebase.file.author"><![CDATA[نویسنده]]></item>
         <item name="filebase.file.authors"><![CDATA[نویسندگان بیشتر]]></item>
-        <item name="filebase.file.authors.description"><![CDATA[Optional: You can add additional users that can edit this file and add new versions. Separate multiple users with a comma.]]></item>
-        <item name="filebase.file.authors.error.notFound"><![CDATA[The username “{$errorData[username]}” does not exist.]]></item>
-        <item name="filebase.file.averageRating"><![CDATA[Reviews]]></item>
-        <item name="filebase.file.averageRatingFiles"><![CDATA[Top Reviews]]></item>
-        <item name="filebase.file.bestSellingFiles"><![CDATA[Best Selling]]></item>
+        <item name="filebase.file.authors.description"><![CDATA[اختیاری: می‌توانید کاربران دیگری اضافه کنید که می‌توانند این فایل را ویرایش کنند و نسخه‌های جدیدی اضافه کنند. هر کاربر را با کاما جدا کنید.]]></item>
+        <item name="filebase.file.authors.error.notFound"><![CDATA[نام کاربری “{$errorData[username]}” وجود ندارد.]]></item>
+        <item name="filebase.file.averageRating"><![CDATA[بررسی ها]]></item>
+        <item name="filebase.file.averageRatingFiles"><![CDATA[بررسی های برتر]]></item>
+        <item name="filebase.file.bestSellingFiles"><![CDATA[پرفروش ترین]]></item>
         <item name="filebase.file.button.download"><![CDATA[Download]]></item>
         <item name="filebase.file.button.jumpToSupportThread"><![CDATA[Support Thread]]></item>
         <item name="filebase.file.button.markAll"><![CDATA[Mark All]]></item>
