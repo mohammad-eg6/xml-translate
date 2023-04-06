@@ -427,23 +427,23 @@
         <item name="calendar.event.noParticipants.description"><![CDATA[این کاربران اصلا شرکت نمیکنند:]]></item>
         <item name="calendar.event.notification.mail.html"><![CDATA[<p><strong>{$author}</strong> رویداد ایجاد شد <a href="{$eventDate->getLink()}">{$eventDate->getTitle()}</a> ({$eventDate->چهار چوب زمانی را دریافت کنید ()}):</p>]]></item>
         <item name="calendar.event.notification.mail.plaintext"><![CDATA[{@$author} رویداد ایجاد شد “{@$eventDate->getTitle()}” ({$eventDate->چهارچوب زمانی را دریافت کنید()}) [وبلاگ:{@$eventDate->getLink()}]:]]></item>
-        <item name="calendar.event.notification.message"><![CDATA[<strong>{$author}</strong> created the event <strong>{$event->subject}</strong> ({$event->getFirstEventDate()->getFormattedTimeFrame()}).]]></item>
-        <item name="calendar.event.notification.title"><![CDATA[New Event]]></item>
-        <item name="calendar.event.options"><![CDATA[Additional Information]]></item>
-        <item name="calendar.event.participant.count"><![CDATA[{#$participants} People]]></item>
-        <item name="calendar.event.participants"><![CDATA[Participants]]></item>
-        <item name="calendar.event.participants.description"><![CDATA[These users have confirmed their participation:]]></item>
-        <item name="calendar.event.participants.summary"><![CDATA[{#$calendarEventDateParticipation[yes]} participant{if $calendarEventDateParticipation[yes] != 1}s{/if}, {#$calendarEventDateParticipation[maybe]} undecided and {#$calendarEventDateParticipation[no]} do{if $calendarEventDateParticipation[no] == 1}es{/if} not participate]]></item>
-        <item name="calendar.event.participation"><![CDATA[Participation]]></item>
-        <item name="calendar.event.participation.description"><![CDATA[Allows users to participate in this event.]]></item>
-        <item name="calendar.event.participation.enable"><![CDATA[Enable Participation]]></item>
-        <item name="calendar.event.participation.endTime"><![CDATA[Closing Date]]></item>
-        <item name="calendar.event.participation.endTime.expired"><![CDATA[The closing date for this event has passed.]]></item>
-        <item name="calendar.event.participation.endTime.info"><![CDATA[{if $eventDate->getParticipationEndTime() > TIME_NOW}Closing date {$eventDate->getParticipationEndTime()|dateDiff|lcfirst}{else}Closing date has passed{/if}]]></item>
+        <item name="calendar.event.notification.message"><![CDATA[<strong>{$author}</strong> رویداد ایجاد شده است  <strong>{$event->subject}</strong> ({$event->getFirstEventDate()->چهارچوب زمانی را دریافت کنید..()}).]]></item>
+        <item name="calendar.event.notification.title"><![CDATA[رویداد جدید ]]></item>
+        <item name="calendar.event.options"><![CDATA[اطلاعات اضافی]]></item>
+        <item name="calendar.event.participant.count"><![CDATA[{#$participants} مردم]]></item>
+        <item name="calendar.event.participants"><![CDATA[شرکت کنندگان]]></item>
+        <item name="calendar.event.participants.description"><![CDATA[این کاربر مشارکت را پذیرفته است:]]></item>
+        <item name="calendar.event.participants.summary"><![CDATA[{#$calendarEventDateParticipation[بله]} شرکت کننده{if $calendarEventDateParticipation[بله] != 1}s{/if}, {#$calendarEventDateParticipation[شاید]} تصمیم نگرفته و {#$calendarEventDateParticipation[خیر]} انجام داد{if $calendarEventDateParticipation[خیر] == 1}es{/if} شرکت نکرده است]]></item>
+        <item name="calendar.event.participation"><![CDATA[مشارکت]]></item>
+        <item name="calendar.event.participation.description"><![CDATA[به کاربران اجازه دهبد تا مشارکت کنند .]]></item>
+        <item name="calendar.event.participation.enable"><![CDATA[فعال کردن مشارکت]]></item>
+        <item name="calendar.event.participation.endTime"><![CDATA[تاریخ پایان]]></item>
+        <item name="calendar.event.participation.endTime.expired"><![CDATA[تاریخ پایان رویداد به اتمام رسیده است.]]></item>
+        <item name="calendar.event.participation.endTime.info"><![CDATA[{if $eventDate->getParticipationEndTime() > TIME_NOW}تاریخ پایان {$eventDate->getParticipationEndTime()|dateDiff|lcfirst}{else}تاریخ پایان به اتمام رسیده است {/if}]]></item>
         <item name="calendar.event.participation.endTime.value"><![CDATA[{@$eventDate->getParticipationEndTime()|plainTime}{if $eventDate->getParticipationEndTime() < TIME_NOW}<br>(Expired){/if}]]></item>
-        <item name="calendar.event.participation.inviteOnly"><![CDATA[Invitation only]]></item>
-        <item name="calendar.event.participation.inviteOnly.description"><![CDATA[Only users invited to this event can participate in this event.]]></item>
-        <item name="calendar.event.participation.isChangeable"><![CDATA[Participants can change their decision]]></item>
+        <item name="calendar.event.participation.inviteOnly"><![CDATA[فقط دعوت شدگان]]></item>
+        <item name="calendar.event.participation.inviteOnly.description"><![CDATA[فقط کاربران دعوت شده میتوانند در این رویداد مشارکت کنند.]]></item>
+        <item name="calendar.event.participation.isChangeable"><![CDATA[شرکت کنندگان میتوانند نظر خود را تغییر بدهند ]]></item>
         <item name="calendar.event.participation.isChangeable.description"><![CDATA[The participants can change their decision at any time.]]></item>
         <item name="calendar.event.participation.isPublic"><![CDATA[Public list of participants]]></item>
         <item name="calendar.event.participation.isPublic.description"><![CDATA[The list of participants will be visible for everyone.]]></item>
