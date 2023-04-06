@@ -900,76 +900,76 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="gallery.album.map"><![CDATA[نقشه]]></item>
         <item name="gallery.album.moreAlbums"><![CDATA[البوم های بیشتر ]]></item>
         <item name="gallery.album.moreAlbums.images"><![CDATA[{if $albumItem->images}{#$albumItem->images} تصویر {if $albumItem->images != 1}ها{/if}{/if}{if $albumItem->videos}{if $albumItem->images} و {/if}{#$albumItem->videos} فیلم{if $albumItem->videos != 1}ها{/if}{/if}]]></item>
-        <item name="gallery.album.ownerImageModerationWarning"><![CDATA[Since new images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and videos{/if} uploaded by you require approval, you cannot upload further images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} or videos{/if} into this private album.]]></item>
-        <item name="gallery.album.search"><![CDATA[Album Search]]></item>
-        <item name="gallery.album.search.results"><![CDATA[Search Results]]></item>
-        <item name="gallery.album.showAll"><![CDATA[Display All Albums]]></item>
-        <item name="gallery.album.sortBy"><![CDATA[Sort by]]></item>
-        <item name="gallery.album.sortField.images"><![CDATA[Number of Images]]></item>
-        <item name="gallery.album.sortField.lastUpdateTime"><![CDATA[Time of Last Update]]></item>
-        <item name="gallery.album.sortField.time"><![CDATA[Time of Creation]]></item>
-        <item name="gallery.album.sortField.videos"><![CDATA[Number of Videos]]></item>
-        <item name="gallery.album.sortImages"><![CDATA[Sort Images]]></item>
-        <item name="gallery.album.sortImages.loadMoreImages"><![CDATA[More Images]]></item>
-        <item name="gallery.album.sortImagesAutomatically"><![CDATA[Sort Automatically]]></item>
-        <item name="gallery.album.sortImagesAutomatically.info"><![CDATA[All images in the album will be sorted according the selected settings below. Prior manual sorting of the images will be overwritten.]]></item>
-        <item name="gallery.album.unreadAlbums"><![CDATA[New Albums]]></item>
-        <item name="gallery.album.userAlbums"><![CDATA[Albums of {$user->username}]]></item>
-    </category>
+        <item name="gallery.album.ownerImageModerationWarning"><![CDATA[از عکس های جدید {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو های {/if} اپلود شده توسط شما نیاز به تایید دارد ,شما نمیتوانید تصاویر بیشتری را اپلود کنید {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} یا فیلم ها {/if} در این البوم خصوصی .]]></item>
+        <item name="gallery.album.search"><![CDATA[جست و جوی البوم ]]></item>
+        <item name="gallery.album.search.results"><![CDATA[نتایج جست و جو ]]></item>
+        <item name="gallery.album.showAll"><![CDATA[نمایش همه البوم ها ]]></item>
+        <item name="gallery.album.sortBy"><![CDATA[مرتب سازی بر اساس ]]></item>
+        <item name="gallery.album.sortField.images"><![CDATA[تعداد تصاویر ]]></item>
+        <item name="gallery.album.sortField.lastUpdateTime"><![CDATA[زمان اخرین بروزرسانی ]]></item>
+        <item name="gallery.album.sortField.time"><![CDATA[زمان ایجاد ]]></item>
+        <item name="gallery.album.sortField.videos"><![CDATA[تعداد فیلم ها ]]></item>
+        <item name="gallery.album.sortImages"><![CDATA[مرتب کردن تصاویر ]]></item>
+        <item name="gallery.album.sortImages.loadMoreImages"><![CDATA[تصاویر بیشتر ]]></item>
+        <item name="gallery.album.sortImagesAutomatically"><![CDATA[مرتب سازی خودکار ]]></item>
+        <item name="gallery.album.sortImagesAutomatically.info"><![CDATA[.همه تصاویر در البوم بر اساس تنظیمات انتخاب شده در زیر مرتب خواهند شد . تنظیمات دستی قبل از تصاویر بازنویسی خواهند شد ]]></item>
+        <item name="gallery.album.unreadAlbums"><![CDATA[البوم های جدید]]></item>
+        <item name="gallery.album.userAlbums"><![CDATA[البوم از  {$user->username}]]></item>
+    </category>   
     <category name="gallery.category">
-        <item name="gallery.category.delete.sure"><![CDATA[Do you really want to delete this category? All child categories of this category will be moved to this category’s parent category. Images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and videos{/if} which are only in this category will be deleted.]]></item>
+        <item name="gallery.category.delete.sure"><![CDATA[ایا واقعا میخواهید این دسته بندی را حذف کنید ? همه دسته های فرزند این دسته به دسته بندی والدین منتقل میشود . تصاویر {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و فیلم ها {/if} که فقط در این دسته هستند حذف خواهند شد .]]></item>
     </category>
     <category name="gallery.image">
-        <item name="gallery.image.add.button.nextImage"><![CDATA[Next image{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/video{/if}]]></item>
-        <item name="gallery.image.add.button.previousImage"><![CDATA[Previous image{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/video{/if}]]></item>
-        <item name="gallery.image.albumID"><![CDATA[Album]]></item>
-        <item name="gallery.image.albumID.error.cannotAddToPrivateAlbumDueToModeration"><![CDATA[As new images need to be approved by moderators, you are not allowed to upload new images into private albums.]]></item>
+        <item name="gallery.image.add.button.nextImage"><![CDATA[تصویر بعدی {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/فیلم{/if}]]></item>
+        <item name="gallery.image.add.button.previousImage"><![CDATA[تصویر قبلی {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/فیلم {/if}]]></item>
+        <item name="gallery.image.albumID"><![CDATA[البوم ]]></item>
+        <item name="gallery.image.albumID.error.cannotAddToPrivateAlbumDueToModeration"><![CDATA[از انجایی که تصویر جدید باید توسط نعدیل کنندگان تایید شود شما مجاز به اپلود تصویر جدی در البوم خصوصی نیستید .]]></item>
         <item name="gallery.image.albumID.overwrite.confirmMessage"><![CDATA[Do you really want to assign all the other uploaded images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and videos{/if} to this album?]]></item>
-        <item name="gallery.image.albumImage"><![CDATA[{if $image->isImage()}Image{else}Video{/if} {#$albumImage} of {if $albumImageCount|isset}{#$albumImageCount}{else}{#($image->getAlbum()->images + $image->getAlbum()->videos)}{/if}]]></item>
-        <item name="gallery.image.boxList.description.comments"><![CDATA[{#$image->comments} Comment{if $image->comments != 1}s{/if}]]></item>
+        <item name="gallery.image.albumImage"><![CDATA[{if $image->isImage()}تصویر {else}Video{/if} {#$albumImage} of {if $albumImageCount|isset}{#$albumImageCount}{else}{#($image->getAlbum()->images + $image->getAlbum()->videos)}{/if}]]></item>
+        <item name="gallery.image.boxList.description.comments"><![CDATA[{#$image->comments} نظر {if $image->comments != 1}ها{/if}]]></item>
         <item name="gallery.image.boxList.description.cumulativeLikes"><![CDATA[{include file='__topReaction' cachedReactions=$image->cachedReactions render='full'}]]></item>
-        <item name="gallery.image.boxList.description.favorites"><![CDATA[Favorites: {#$image->favorites}]]></item>
-        <item name="gallery.image.boxList.description.views"><![CDATA[{#$image->views} View{if $image->views != 1}s{/if}]]></item>
+        <item name="gallery.image.boxList.description.favorites"><![CDATA[مورد علاقه ها : {#$image->favorites}]]></item>
+        <item name="gallery.image.boxList.description.views"><![CDATA[{#$image->views} بازدید {if $image->views != 1}s{/if}]]></item>
         <item name="gallery.image.browser"><![CDATA[Gallery]]></item>
-        <item name="gallery.image.browser.image.list"><![CDATA[All]]></item>
-        <item name="gallery.image.browser.image.search"><![CDATA[Search]]></item>
-        <item name="gallery.image.browser.image.search.description"><![CDATA[Type in at least 3 characters to start searching.]]></item>
-        <item name="gallery.image.browser.imagesAndVideos"><![CDATA[Images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and Videos{/if}]]></item>
-        <item name="gallery.image.browser.insert"><![CDATA[Insert Into Message]]></item>
-        <item name="gallery.image.browser.insert.large"><![CDATA[Large ({$dimensions[width]} × {$dimensions[height]})]]></item>
-        <item name="gallery.image.browser.insert.medium"><![CDATA[Medium ({$dimensions[width]} × {$dimensions[height]})]]></item>
-        <item name="gallery.image.browser.insert.original"><![CDATA[Original ({$dimensions[width]} × {$dimensions[height]})]]></item>
-        <item name="gallery.image.browser.insert.small"><![CDATA[Small ({$dimensions[width]} × {$dimensions[height]})]]></item>
-        <item name="gallery.image.browser.insert.tiny"><![CDATA[Tiny ({$dimensions[width]} × {$dimensions[height]})]]></item>
-        <item name="gallery.image.browser.noAlbums"><![CDATA[You currently have no albums with visible images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} or videos{/if}.]]></item>
-        <item name="gallery.image.browser.noImages"><![CDATA[You currently have no visible images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} or videos{/if}.]]></item>
+        <item name="gallery.image.browser.image.list"><![CDATA[همه]]></item>
+        <item name="gallery.image.browser.image.search"><![CDATA[جست و جو ]]></item>
+        <item name="gallery.image.browser.image.search.description"><![CDATA[برای شروع جست و جو حداقل 3 کاراکتر را تایپ کنید .]]></item>
+        <item name="gallery.image.browser.imagesAndVideos"><![CDATA[تصاویر {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و فیلم ها {/if}]]></item>
+        <item name="gallery.image.browser.insert"><![CDATA[درج در تصویر ]]></item>
+        <item name="gallery.image.browser.insert.large"><![CDATA[بزرگ  ({$dimensions[عرض ]} × {$dimensions[بلندی ]})]]></item>
+        <item name="gallery.image.browser.insert.medium"><![CDATA[متوسط  ({$dimensions[عرض ]} × {$dimensions[بلندی ]})]]></item>
+        <item name="gallery.image.browser.insert.original"><![CDATA[اصلی  ({$dimensions[عرض ]} × {$dimensions[بلندی ]})]]></item>
+        <item name="gallery.image.browser.insert.small"><![CDATA[کوچک ({$dimensions[عرض ]} × {$dimensions[بلندی ]})]]></item>
+        <item name="gallery.image.browser.insert.tiny"><![CDATA[خیلی کوچک ({$dimensions[عرض ]} × {$dimensions[بلندی ]})]]></item>
+        <item name="gallery.image.browser.noAlbums"><![CDATA[شما در حال حاضر هیچ البومی با تصویر قابل مشاهده ندارید {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} یا فیلم ها {/if}.]]></item>
+        <item name="gallery.image.browser.noImages"><![CDATA[شما در حال حاضر هیچ تصویر قابل مشاهده ای ندارید {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} یا فیلم ها {/if}.]]></item>
         <item name="gallery.image.button.markAll"><![CDATA[Mark All]]></item>
-        <item name="gallery.image.button.overwrite"><![CDATA[Apply to other images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and videos{/if}]]></item>
-        <item name="gallery.image.button.overwriteAll"><![CDATA[Apply to all]]></item>
-        <item name="gallery.image.button.selectThumbnailArea"><![CDATA[Select Thumbnail Area]]></item>
-        <item name="gallery.image.button.sort"><![CDATA[Sort]]></item>
-        <item name="gallery.image.button.upload"><![CDATA[Upload]]></item>
-        <item name="gallery.image.camera"><![CDATA[Camera]]></item>
+        <item name="gallery.image.button.overwrite"><![CDATA[اعمال شود برای سایر تصاویر {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و فیلم ها {/if}]]></item>
+        <item name="gallery.image.button.overwriteAll"><![CDATA[اعمال برای همه ]]></item>
+        <item name="gallery.image.button.selectThumbnailArea"><![CDATA[ناحیه تصویر کوچک را مشخص کنید ]]></item>
+        <item name="gallery.image.button.sort"><![CDATA[مرتب سازی ]]></item>
+        <item name="gallery.image.button.upload"><![CDATA[اپلود ]]></item>
+        <item name="gallery.image.camera"><![CDATA[دوربین ]]></item>
         <item name="gallery.image.categories"><![CDATA[Categories]]></item>
-        <item name="gallery.image.categorizedImages"><![CDATA[Images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and videos{/if} in category “{$category->getTitle()}”]]></item>
-        <item name="gallery.image.categoryIDs.error.tooMany"><![CDATA[You have selected too many categories. You can select up to {@GALLERY_IMAGE_MAX_CATEGORIES} {if GALLERY_IMAGE_MAX_CATEGORIES == 1}category{else}categories{/if}.]]></item>
-        <item name="gallery.image.categoryIDs.overwrite.confirmMessage"><![CDATA[Do you really want to assign all the other uploaded images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and videos{/if} to the selected categories?]]></item>
-        <item name="gallery.image.comment"><![CDATA[Gallery Comment]]></item>
-        <item name="gallery.image.comment.like.notification.message"><![CDATA[<strong>{$author}</strong> reacted to your comment on the {if $image->isImage()}image{else}video{/if} <strong>{$image->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
-        <item name="gallery.image.comment.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} reacted to your comment on the {if $image->isImage()}image{else}video{/if} <strong>{$image->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
-        <item name="gallery.image.comment.like.notification.title"><![CDATA[Reaction to a comment ({if $image->isImage()}Image{else}Video{/if})]]></item>
-        <item name="gallery.image.comment.like.notification.title.stacked"><![CDATA[{#$count} users reacted to your comment ({if $image->isImage()}image{else}video{/if})]]></item>
-        <item name="gallery.image.comment.notification.mail.html"><![CDATA[<p>{@$authorList} commented on your {if $image->isImage()}image{else}video{/if} <a href="{$image->getLink()}#comment{@$commentID}">{$image->getTitle()}</a>:</p>]]></item>
-        <item name="gallery.image.comment.notification.mail.plaintext"><![CDATA[{@$authorList} commented on your {if $image->isImage()}image{else}video{/if} “{@$image->getTitle()}” [URL:{@$image->getLink()}#comment{@$commentID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
-        <item name="gallery.image.comment.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A guest{/if} commented on your {if $image->isImage()}image{else}video{/if} <strong>{$image->getTitle()}</strong>.]]></item>
-        <item name="gallery.image.comment.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} commented on your {if $image->isImage()}image{else}video{/if} <strong>{$image->getTitle()}</strong>.]]></item>
-        <item name="gallery.image.comment.notification.title"><![CDATA[New Comment ({if $image->isImage()}Image{else}Video{/if})]]></item>
-        <item name="gallery.image.comment.notification.title.stacked"><![CDATA[{#$timesTriggered} new Comments ({if $image->isImage()}Image{else}Video{/if})]]></item>
-        <item name="gallery.image.commentResponse"><![CDATA[Reply to Gallery Comment]]></item>
-        <item name="gallery.image.commentResponse.like.notification.message"><![CDATA[<strong>{$author}</strong> reacted to your reply to a comment on the {if $image->isImage()}image{else}video{/if} <strong>{$image->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
-        <item name="gallery.image.commentResponse.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} reacted to your reply to a comment on the {if $image->isImage()}image{else}video{/if} <strong>{$image->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
-        <item name="gallery.image.commentResponse.like.notification.title"><![CDATA[Reaction to your reply to a comment ({if $image->isImage()}Image{else}Video{/if})]]></item>
-        <item name="gallery.image.commentResponse.like.notification.title.stacked"><![CDATA[{#$count} users reacted to your reply to a comment ({if $image->isImage()}Image{else}Video{/if})]]></item>
+        <item name="gallery.image.categorizedImages"><![CDATA[تصاویر {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و فیلم ها {/if} در دسته بندی ها  “{$category->getTitle()}”]]></item>
+        <item name="gallery.image.categoryIDs.error.tooMany"><![CDATA[شما دسته بندی های زیادی را انتخاب کرده اید . شما حداکثر میتوانید  {@GALLERY_IMAGE_MAX_CATEGORIES} {if GALLERY_IMAGE_MAX_CATEGORIES == 1}دسته بندی را {else}  دسته بندی هارا انتخاب کنید  {/if}.]]></item>
+        <item name="gallery.image.categoryIDs.overwrite.confirmMessage"><![CDATA[ایا واقعا میخواهید همه تصاویر اپلود شده را اختضاض دهید به {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و فیلم ها {/if}برای دسته بندی های انتخاب شده?]]></item>
+        <item name="gallery.image.comment"><![CDATA[نظرات گالری ]]></item>
+        <item name="gallery.image.comment.like.notification.message"><![CDATA[<strong>{$author}</strong> واکنش نشان داده شد به نظر شما در  {if $image->isImage()}image{else}video{/if} <strong>{$image->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+        <item name="gallery.image.comment.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language}واکنش نشان داده شد به نظر شما در  {if $image->isImage()}image{else}video{/if} <strong>{$image->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+        <item name="gallery.image.comment.like.notification.title"><![CDATA[واکنش به نظر  ({if $image->isImage()}تصویر {else}فیلم {/if})]]></item>
+        <item name="gallery.image.comment.like.notification.title.stacked"><![CDATA[{#$count} کاربران واکنش نشان دادند به نظر شما  ({if $image->isImage()}image{else}video{/if})]]></item>
+        <item name="gallery.image.comment.notification.mail.html"><![CDATA[<p>{@$authorList} نظر داده شد درمورد  شما  {if $image->isImage()}image{else}video{/if} <a href="{$image->getLink()}#comment{@$commentID}">{$image->getTitle()}</a>:</p>]]></item>
+        <item name="gallery.image.comment.notification.mail.plaintext"><![CDATA[{@$authorList} نظر داده شد در مورد شما  {if $image->isImage()}image{else}video{/if} “{@$image->getTitle()}” [وبلاگ:{@$image->getLink()}#comment{@$commentID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+        <item name="gallery.image.comment.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}مهمان {/if} نظر داد در مورد شما  {if $image->isImage()}image{else}video{/if} <strong>{$image->getTitle()}</strong>.]]></item>
+        <item name="gallery.image.comment.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} نظر داده شد در مورد شما  {if $image->isImage()}image{else}video{/if} <strong>{$image->getTitle()}</strong>.]]></item>
+        <item name="gallery.image.comment.notification.title"><![CDATA[نظر جدید  ({if $image->isImage()}Image{else}Video{/if})]]></item>
+        <item name="gallery.image.comment.notification.title.stacked"><![CDATA[{#$timesTriggered} نظرات جدید  ({if $image->isImage()}Image{else}Video{/if})]]></item>
+        <item name="gallery.image.commentResponse"><![CDATA[پاسخ به نظر گالری]]></item>
+        <item name="gallery.image.commentResponse.like.notification.message"><![CDATA[<strong>{$author}</strong> واکنش نشان داده شد به پاسخ شما در مورد نظر  {if $image->isImage()}image{else}video{/if} <strong>{$image->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+        <item name="gallery.image.commentResponse.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} واکنش نشان داده شد به پاسخ شما درمورد نظر  {if $image->isImage()}image{else}video{/if} <strong>{$image->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+        <item name="gallery.image.commentResponse.like.notification.title"><![CDATA[واکنش نشان داده شد به پاسخ شما در مورد نظر  ({if $image->isImage()}Image{else}Video{/if})]]></item>
+        <item name="gallery.image.commentResponse.like.notification.title.stacked"><![CDATA[{#$count} کاربران واکنش نشان دادند به پاسخ شما درمورد نظر  ({if $image->isImage()}Image{else}Video{/if})]]></item>
         <item name="gallery.image.commentResponse.notification.mail.html"><![CDATA[<p>{@$authorList} replied to your comment on the {if $image->isImage()}image{else}video{/if} <a href="{$image->getLink()}#comment{@$commentID}/response{@$responseID}">{$image->getTitle()}</a>:</p>]]></item>
         <item name="gallery.image.commentResponse.notification.mail.plaintext"><![CDATA[{@$authorList} replied to your comment on the {if $image->isImage()}image{else}video{/if} “{@$image->getTitle()}” [URL:{@$image->getLink()}#comment{@$commentID}/response{@$responseID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
         <item name="gallery.image.commentResponse.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A guest{/if} replied to your comment on the {if $image->isImage()}image{else}video{/if} <strong>{$image->getTitle()}</strong>.]]></item>
