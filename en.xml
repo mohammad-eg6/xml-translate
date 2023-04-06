@@ -612,22 +612,22 @@
         <item name="filebase.file.edit.unsetAsFeatured"><![CDATA[برداشتن ستاره]]></item>
         <item name="filebase.file.editReason"><![CDATA[دلیل ویرایش (اختیاری)]]></item>
         <item name="filebase.file.enableComments"><![CDATA[فعال کردن نظرات]]></item>
-        <item name="filebase.file.enableComments.description"><![CDATA[Allows users to comment on this file.]]></item>
-        <item name="filebase.file.enableReviews"><![CDATA[Enable reviews]]></item>
-        <item name="filebase.file.enableReviews.description"><![CDATA[Allows users to create reviews on this file.]]></item>
-        <item name="filebase.file.externalURL"><![CDATA[External URL]]></item>
-        <item name="filebase.file.featured"><![CDATA[Featured]]></item>
-        <item name="filebase.file.featuredFiles"><![CDATA[Featured Files]]></item>
-        <item name="filebase.file.file"><![CDATA[File]]></item>
-        <item name="filebase.file.fileComments"><![CDATA[{@$file->comments|shortUnit} Comment{if $file->comments != 1}s{/if}]]></item>
-        <item name="filebase.file.fileDownloads"><![CDATA[{@$file->downloads|shortUnit} Download{if $file->downloads != 1}s{/if}]]></item>
-        <item name="filebase.file.fileID.error.invalidCommerical"><![CDATA[There is no paid file with the given ID.]]></item>
-        <item name="filebase.file.filePurchases"><![CDATA[{@$file->purchases|shortUnit} Purchase{if $file->purchases != 1}s{/if}]]></item>
-        <item name="filebase.file.files"><![CDATA[Files]]></item>
-        <item name="filebase.file.filterByPrice"><![CDATA[Filter by Price]]></item>
-        <item name="filebase.file.filterByPrice.all"><![CDATA[Both]]></item>
-        <item name="filebase.file.filterByPrice.free"><![CDATA[Free]]></item>
-        <item name="filebase.file.filterByPrice.paid"><![CDATA[Paid]]></item>
+        <item name="filebase.file.enableComments.description"><![CDATA[به کاربران اجازه می دهد تا در مورد این فایل نظر دهند.]]></item>
+        <item name="filebase.file.enableReviews"><![CDATA[بررسی ها را فعال کنید]]></item>
+        <item name="filebase.file.enableReviews.description"><![CDATA[به کاربران اجازه می دهد تا در مورد این فایل نظر ایجاد کنند.]]></item>
+        <item name="filebase.file.externalURL"><![CDATA[وبلاگ خارجی]]></item>
+        <item name="filebase.file.featured"><![CDATA[ویژه]]></item>
+        <item name="filebase.file.featuredFiles"><![CDATA[فایل های ویژه]]></item>
+        <item name="filebase.file.file"><![CDATA[فایل]]></item>
+        <item name="filebase.file.fileComments"><![CDATA[{@$file->comments|shortUnit} نظر{if $file->comments != 1}s{/if}]]></item>
+        <item name="filebase.file.fileDownloads"><![CDATA[{@$file->downloads|shortUnit} دانلود{if $file->downloads != 1}s{/if}]]></item>
+        <item name="filebase.file.fileID.error.invalidCommerical"><![CDATA[هیچ فایل پولی با شناسه داده شده وجود ندارد.]]></item>
+        <item name="filebase.file.filePurchases"><![CDATA[{@$file->purchases|shortUnit} خرید{if $file->purchases != 1}s{/if}]]></item>
+        <item name="filebase.file.files"><![CDATA[فایل ها]]></item>
+        <item name="filebase.file.filterByPrice"><![CDATA[فیلتر بر اساس قیمت]]></item>
+        <item name="filebase.file.filterByPrice.all"><![CDATA[هر دو]]></item>
+        <item name="filebase.file.filterByPrice.free"><![CDATA[رایگان]]></item>
+        <item name="filebase.file.filterByPrice.paid"><![CDATA[پرداخت شده]]></item>
         <item name="filebase.file.hasOldVersions"><![CDATA[Older Versions]]></item>
         <item name="filebase.file.icon"><![CDATA[Icon]]></item>
         <item name="filebase.file.icon.delete"><![CDATA[Delete Icon]]></item>
