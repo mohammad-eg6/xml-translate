@@ -728,63 +728,63 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="filebase.file.version"><![CDATA[Version]]></item>
         <item name="filebase.file.version.add"><![CDATA[Add Version]]></item>
         <item name="filebase.file.version.confirmDelete"><![CDATA[Do you really want to delete this version?]]></item>
-        <item name="filebase.file.version.confirmTrash"><![CDATA[Do you really want to delete this version?]]></item>
-        <item name="filebase.file.version.confirmTrash.reason"><![CDATA[Reason (optional)]]></item>
-        <item name="filebase.file.version.deleted"><![CDATA[This version was deleted {if $version->userID == $version->getLogEntry()->userID}by the author themselves{else}by <a href="{link controller='User' id=$version->getLogEntry()->userID title=$version->getLogEntry()->username}{/link}" class="userLink" data-object-id="{@$version->getLogEntry()->userID}">{$version->getLogEntry()->username}</a>{/if}{if $version->getLogEntry()->reason}: {$version->getLogEntry()->reason}{/if} ({@$version->getLogEntry()->time|time}).]]></item>
-        <item name="filebase.file.version.description"><![CDATA[Description]]></item>
-        <item name="filebase.file.version.edit"><![CDATA[Edit Version]]></item>
-        <item name="filebase.file.version.edit.delete"><![CDATA[Delete]]></item>
-        <item name="filebase.file.version.edit.disable"><![CDATA[Disable]]></item>
-        <item name="filebase.file.version.edit.enable"><![CDATA[Approve]]></item>
-        <item name="filebase.file.version.edit.restore"><![CDATA[Restore]]></item>
-        <item name="filebase.file.version.edit.trash"><![CDATA[Move to Trash]]></item>
-        <item name="filebase.file.version.information"><![CDATA[Details]]></item>
-        <item name="filebase.file.version.isDeleted"><![CDATA[Deleted]]></item>
-        <item name="filebase.file.version.isDisabled"><![CDATA[Disabled]]></item>
-        <item name="filebase.file.version.like.notification.message"><![CDATA[<strong>{$author}</strong> reacted to {if $version->versionNumber}version {$version->versionNumber}{else} a version{/if} of your file <strong>{$file->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
-        <item name="filebase.file.version.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} reacted to {if $version->versionNumber}version {$version->versionNumber}{else} a version{/if} of your file <strong>{$file->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
-        <item name="filebase.file.version.like.notification.title"><![CDATA[Reaction to a version your file]]></item>
-        <item name="filebase.file.version.like.notification.title.stacked"><![CDATA[{#$count} users reacted to a version your file]]></item>
-        <item name="filebase.file.version.moderation.disabledVersion"><![CDATA[This version will remain inaccessible for others until approved by a moderator.]]></item>
-        <item name="filebase.file.version.more"><![CDATA[{literal}{if $count == 1}One older file{else}{#$count} older files{/if}{/literal}]]></item>
-        <item name="filebase.file.version.notification.mail.html"><![CDATA[<p><strong>{$author}</strong> added {if $version->versionNumber}the version “{$version->versionNumber}”{else}a new version{/if} to the file <a href="{$file->getLink()}">{$file->getTitle()}</a>:</p>]]></item>
-        <item name="filebase.file.version.notification.mail.plaintext"><![CDATA[{@$author} added {if $version->versionNumber}the version “{@$version->versionNumber}”{else}a new version{/if} to the file “{@$file->getTitle()}” [URL:{@$file->getLink()}]:]]></item>
-        <item name="filebase.file.version.notification.message"><![CDATA[<strong>{$author}</strong> added {if $version->versionNumber}the version {$version->versionNumber}{else}a new version{/if} to the file <strong>{$version->getFile()->getTitle()}</strong>.]]></item>
-        <item name="filebase.file.version.notification.moderation.enable.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A moderator{/if} enabled a version of your file <strong>{$version->getFile()->getTitle()}</strong>.]]></item>
-        <item name="filebase.file.version.notification.moderation.enable.notification.title"><![CDATA[A version of you file has been enabled]]></item>
-        <item name="filebase.file.version.notification.moderation.trash.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A moderator{/if} trashed a version of your file <strong>{$version->getFile()->getTitle()}</strong>{if !$userNotificationObject->getDecoratedObject()->__get('reason')|empty} for the reason “{$userNotificationObject->getDecoratedObject()->reason|truncate:255:'…'}”{/if}.]]></item>
-        <item name="filebase.file.version.notification.moderation.trash.notification.title"><![CDATA[A version of you file has been trashed]]></item>
-        <item name="filebase.file.version.notification.title"><![CDATA[New File Version]]></item>
-        <item name="filebase.file.version.upload"><![CDATA[Upload Version]]></item>
-        <item name="filebase.file.version.versionDownloads"><![CDATA[{@$version->downloads|shortUnit} Download{if $version->downloads != 1}s{/if}]]></item>
-        <item name="filebase.file.versionNumber"><![CDATA[Version Number]]></item>
-        <item name="filebase.file.versionNumber.error.notUnique"><![CDATA[This version number is already in use.]]></item>
-        <item name="filebase.file.versions"><![CDATA[Versions]]></item>
-        <item name="filebase.file.watchedFiles"><![CDATA[Watched Files]]></item>
-        <item name="filebase.file.watchedFiles.stopWatchingAll"><![CDATA[Stop watching files]]></item>
-        <item name="filebase.file.watchedFiles.stopWatchingAll.confirmMessage"><![CDATA[Do you really want to stop watching all files?]]></item>
-        <item name="filebase.file.watchedFiles.stopWatchingMarked"><![CDATA[{literal}Stop watching marked file{if $count > 1}s{/if}{if $count > 1} ({#$count}){/if}{/literal}]]></item>
-        <item name="filebase.file.watchedFiles.stopWatchingMarked.confirmMessage"><![CDATA[Do you really want to stop watching all the marked files?]]></item>
-        <item name="filebase.file.website"><![CDATA[Website]]></item>
-        <item name="filebase.file.website.description"><![CDATA[Optional: Website (URL) with further details on this file.]]></item>
-        <item name="filebase.file.website.error.invalid"><![CDATA[The entered link is invalid.]]></item>
+        <item name="filebase.file.version.confirmTrash"><![CDATA[آیا واقعاً می خواهید این نسخه را حذف کنید؟]]></item>
+        <item name="filebase.file.version.confirmTrash.reason"><![CDATA[دلیل (اختیاری)]]></item>
+        <item name="filebase.file.version.deleted"><![CDATA[این نسخه حذف شد {if $version->userID == $version->getLogEntry()->userID}توسط خود نویسنده{else}by <a href="{link controller='User' id=$version->getLogEntry()->userID title=$version->getLogEntry()->username}{/link}" class="userLink" data-object-id="{@$version->getLogEntry()->userID}">{$version->getLogEntry()->username}</a>{/if}{if $version->getLogEntry()->reason}: {$version->getLogEntry()->reason}{/if} ({@$version->getLogEntry()->time|time}).]]></item>
+        <item name="filebase.file.version.description"><![CDATA[شرح]]></item>
+        <item name="filebase.file.version.edit"><![CDATA[ویرایش نسخه]]></item>
+        <item name="filebase.file.version.edit.delete"><![CDATA[حذف]]></item>
+        <item name="filebase.file.version.edit.disable"><![CDATA[غیر فعال کردن]]></item>
+        <item name="filebase.file.version.edit.enable"><![CDATA[تایید]]></item>
+        <item name="filebase.file.version.edit.restore"><![CDATA[بازگرداندن]]></item>
+        <item name="filebase.file.version.edit.trash"><![CDATA[انتقال به سطل اشغال]]></item>
+        <item name="filebase.file.version.information"><![CDATA[جزئیات]]></item>
+        <item name="filebase.file.version.isDeleted"><![CDATA[حذف شده]]></item>
+        <item name="filebase.file.version.isDisabled"><![CDATA[غیر فعال کردن]]></item>
+        <item name="filebase.file.version.like.notification.message"><![CDATA[<strong>{$author}</strong> واکنش نشان داد {if $version->versionNumber}نسخه {$version->versionNumber}{else} یک نسخه{/if}از فایل شما <strong>{$file->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+        <item name="filebase.file.version.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} reacted to {if $version->versionNumber}version {$version->versionNumber}{else} یک نسخه{/if} از فایل شما <strong>{$file->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+        <item name="filebase.file.version.like.notification.title"><![CDATA[واکنش به نسخه فایل شما]]></item>
+        <item name="filebase.file.version.like.notification.title.stacked"><![CDATA[{#$count} کاربران به نسخه ای از فایل شما واکنش نشان دادند]]></item>
+        <item name="filebase.file.version.moderation.disabledVersion"><![CDATA[این نسخه تا زمانی که توسط ناظم تایید نشود، برای دیگران غیرقابل دسترسی خواهد بود.]]></item>
+        <item name="filebase.file.version.more"><![CDATA[{literal}{if $count == 1}یک فایل قدیمی{else}{#$count} فایل های قدیمی{/if}{/literal}]]></item>
+        <item name="filebase.file.version.notification.mail.html"><![CDATA[<p><strong>{$author}</strong> اضافه شده {if $version->versionNumber}نسخه “{$version->versionNumber}”{else}یک نسخه جدید{/if} به فایل <a href="{$file->getLink()}">{$file->getTitle()}</a>:</p>]]></item>
+        <item name="filebase.file.version.notification.mail.plaintext"><![CDATA[{@$author} اضافه شده {if $version->versionNumber}نسخه “{@$version->versionNumber}”{else}یک نسخه جدید{/if} به فایل “{@$file->getTitle()}” [وبلاگ:{@$file->getLink()}]:]]></item>
+        <item name="filebase.file.version.notification.message"><![CDATA[<strong>{$author}</strong> اضافه شده {if $version->versionNumber}نسخه {$version->versionNumber}{else}یک نسخه جدید{/if} به فایل<strong>{$version->getFile()->getTitle()}</strong>.]]></item>
+        <item name="filebase.file.version.notification.moderation.enable.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}یک تعدیل کننده{/if} یک نسخه از فایل شما را فعال کرد <strong>{$version->getFile()->getTitle()}</strong>.]]></item>
+        <item name="filebase.file.version.notification.moderation.enable.notification.title"><![CDATA[نسخه ای از فایل شما فعال شده است]]></item>
+        <item name="filebase.file.version.notification.moderation.trash.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}یک تعدیل کننده{/if} نسخه ای از فایل شما را حذف کرده است <strong>{$version->getFile()->getTitle()}</strong>{if !$userNotificationObject->getDecoratedObject()->__get('reason')|empty} به این دلیل “{$userNotificationObject->getDecoratedObject()->reason|truncate:255:'…'}”{/if}.]]></item>
+        <item name="filebase.file.version.notification.moderation.trash.notification.title"><![CDATA[نسخه ای از فایل شما حذف شده است]]></item>
+        <item name="filebase.file.version.notification.title"><![CDATA[نسخه جدید فایل]]></item>
+        <item name="filebase.file.version.upload"><![CDATA[آپلود نسخه]]></item>
+        <item name="filebase.file.version.versionDownloads"><![CDATA[{@$version->downloads|shortUnit} دانلود{if $version->downloads != 1}s{/if}]]></item>
+        <item name="filebase.file.versionNumber"><![CDATA[شماره نسخه]]></item>
+        <item name="filebase.file.versionNumber.error.notUnique"><![CDATA[این شماره نسخه در حال حاضر در حال استفاده است.]]></item>
+        <item name="filebase.file.versions"><![CDATA[نسخه ها]]></item>
+        <item name="filebase.file.watchedFiles"><![CDATA[فایل های تماشا شده]]></item>
+        <item name="filebase.file.watchedFiles.stopWatchingAll"><![CDATA[تماشای فایل ها را متوقف کنید]]></item>
+        <item name="filebase.file.watchedFiles.stopWatchingAll.confirmMessage"><![CDATA[آیا واقعاً می‌خواهید تماشای همه فایل‌ها را متوقف کنید؟]]></item>
+        <item name="filebase.file.watchedFiles.stopWatchingMarked"><![CDATA[{literal}تماشای فایل علامت‌گذاری شده را متوقف کنید{if $count > 1}s{/if}{if $count > 1} ({#$count}){/if}{/literal}]]></item>
+        <item name="filebase.file.watchedFiles.stopWatchingMarked.confirmMessage"><![CDATA[آیا واقعاً می خواهید تماشای همه فایل های علامت گذاری شده را متوقف کنید؟]]></item>
+        <item name="filebase.file.website"><![CDATA[وب سایت]]></item>
+        <item name="filebase.file.website.description"><![CDATA[اختیاری: وب سایت (وبلاگ) با جزئیات بیشتر در مورد این فایل.]]></item>
+        <item name="filebase.file.website.error.invalid"><![CDATA[لینک وارد شده نامعتبر است.]]></item>
     </category>
     <category name="filebase.file.log">
-        <item name="filebase.file.log"><![CDATA[Log]]></item>
-        <item name="filebase.file.log.file.delete"><![CDATA[Deleted the file.]]></item>
-        <item name="filebase.file.log.file.disable"><![CDATA[Disabled the file.]]></item>
-        <item name="filebase.file.log.file.edit"><![CDATA[Edited the file.]]></item>
-        <item name="filebase.file.log.file.enable"><![CDATA[Approved the file.]]></item>
-        <item name="filebase.file.log.file.restore"><![CDATA[Restored the file.]]></item>
-        <item name="filebase.file.log.file.setLabel"><![CDATA[{if $additionalData[label]|empty}Removed the Label <span class="badge label{if $additionalData[oldLabel]->cssClassName} {$additionalData[oldLabel]->cssClassName}{/if}">{$additionalData[oldLabel]->getTitle()}</span>{elseif $additionalData[oldLabel]|empty}Added the Label <span class="badge label{if $additionalData[label]->cssClassName} {$additionalData[label]->cssClassName}{/if}">{$additionalData[label]->getTitle()}</span>{else}Set the Label from <span class="badge label{if $additionalData[oldLabel]->cssClassName} {$additionalData[oldLabel]->cssClassName}{/if}">{$additionalData[oldLabel]->getTitle()}</span> to <span class="badge label{if $additionalData[label]->cssClassName} {$additionalData[label]->cssClassName}{/if}">{$additionalData[label]->getTitle()}</span>{/if}]]></item>
-        <item name="filebase.file.log.file.trash"><![CDATA[Moved the file to the trash{if $additionalData[reason]}: {$additionalData[reason]} {/if}.]]></item>
-        <item name="filebase.file.log.file.trash.summary"><![CDATA[File was deleted by {$username}{if $additionalData[reason]} for the following reason: {$additionalData[reason]}{/if}. ({@$time|time}).]]></item>
-        <item name="filebase.file.log.file.version.delete"><![CDATA[Deleted a Version.]]></item>
-        <item name="filebase.file.log.file.version.disable"><![CDATA[Disabled the version{if $version->versionNumber} {$version->versionNumber}{/if}.]]></item>
-        <item name="filebase.file.log.file.version.enable"><![CDATA[Approved the version{if $version->versionNumber} {$version->versionNumber}{/if}.]]></item>
-        <item name="filebase.file.log.file.version.restore"><![CDATA[Restored the version{if $version->versionNumber} {$version->versionNumber}{/if}.]]></item>
-        <item name="filebase.file.log.file.version.trash"><![CDATA[Moved the version{if $version->versionNumber} {$version->versionNumber}{/if} to the trash{if $additionalData[reason]}: {$additionalData[reason]} {/if}.]]></item>
-        <item name="filebase.file.log.noEntries"><![CDATA[There are no log entries for this file.]]></item>
+        <item name="filebase.file.log"><![CDATA[ورود]]></item>
+        <item name="filebase.file.log.file.delete"><![CDATA[فایل را حذف کرد.]]></item>
+        <item name="filebase.file.log.file.disable"><![CDATA[فایل را غیرفعال کرد.]]></item>
+        <item name="filebase.file.log.file.edit"><![CDATA[فایل را ویرایش کرد.]]></item>
+        <item name="filebase.file.log.file.enable"><![CDATA[فایل را تایید کرد.]]></item>
+        <item name="filebase.file.log.file.restore"><![CDATA[فایل را بازیابی کرد.]]></item>
+        <item name="filebase.file.log.file.setLabel"><![CDATA[{if $additionalData[label]|empty}برچسب را حذف کرد <span class="badge label{if $additionalData[oldLabel]->cssClassName} {$additionalData[oldLabel]->cssClassName}{/if}">{$additionalData[oldLabel]->getTitle()}</span>{elseif $additionalData[oldLabel]|empty}برچسب را اضافه کرد <span class="badge label{if $additionalData[label]->cssClassName} {$additionalData[label]->cssClassName}{/if}">{$additionalData[label]->getTitle()}</span>{else}برچسب را از <span class="badge label{if $additionalData[oldLabel]->cssClassName} {$additionalData[oldLabel]->cssClassName}{/if}">{$additionalData[oldLabel]->getTitle()}</span> به <span class="badge label{if $additionalData[label]->cssClassName} {$additionalData[label]->cssClassName}{/if}">{$additionalData[label]->getTitle()}</span>{/if}]]></item>
+        <item name="filebase.file.log.file.trash"><![CDATA[فایل حذف شده توسط{if $additionalData[reason]}: {$additionalData[reason]} {/if}.]]></item>
+        <item name="filebase.file.log.file.trash.summary"><![CDATA[فایل حذف شده توسط {$username}{if $additionalData[reason]} به دلیل زیر: {$additionalData[reason]}{/if}. ({@$time|time}).]]></item>
+        <item name="filebase.file.log.file.version.delete"><![CDATA[یک نسخه را حذف کرد.]]></item>
+        <item name="filebase.file.log.file.version.disable"><![CDATA[نسخه را غیرفعال کرد{if $version->versionNumber} {$version->versionNumber}{/if}.]]></item>
+        <item name="filebase.file.log.file.version.enable"><![CDATA[نسخه را تایید کزد{if $version->versionNumber} {$version->versionNumber}{/if}.]]></item>
+        <item name="filebase.file.log.file.version.restore"><![CDATA[نسخه را بازیابی کرد{if $version->versionNumber} {$version->versionNumber}{/if}.]]></item>
+        <item name="filebase.file.log.file.version.trash"><![CDATA[نسخه را منتقل کرد{if $version->versionNumber} {$version->versionNumber}{/if} به سطل اشغال{if $additionalData[reason]}: {$additionalData[reason]} {/if}.]]></item>
+        <item name="filebase.file.log.noEntries"><![CDATA[هیچ ورودی برای این فایل وجود ندارد.]]></item>
     </category>
     <category name="filebase.file.review">
         <item name="filebase.file.review"><![CDATA[Review]]></item>
