@@ -530,23 +530,23 @@
         <item name="filebase.acp.license.list"><![CDATA[مجوز ها]]></item>
     </category>
     <category name="filebase.acp.menu">
-        <item name="filebase.acp.menu.link.filebase"><![CDATA[Filebase]]></item>
-        <item name="filebase.acp.menu.link.filebase.category.add"><![CDATA[Add Category]]></item>
-        <item name="filebase.acp.menu.link.filebase.category.list"><![CDATA[Categories]]></item>
-        <item name="filebase.acp.menu.link.filebase.file.option.add"><![CDATA[Add Option Fields]]></item>
-        <item name="filebase.acp.menu.link.filebase.file.option.list"><![CDATA[Option Fields]]></item>
-        <item name="filebase.acp.menu.link.filebase.license.add"><![CDATA[Add License]]></item>
-        <item name="filebase.acp.menu.link.filebase.license.list"><![CDATA[Licenses]]></item>
-        <item name="filebase.acp.menu.link.filebase.paymentLog.list"><![CDATA[Transactions]]></item>
+        <item name="filebase.acp.menu.link.filebase"><![CDATA[پایگاه فایل]]></item>
+        <item name="filebase.acp.menu.link.filebase.category.add"><![CDATA[اضافه کردن دسته بندی]]></item>
+        <item name="filebase.acp.menu.link.filebase.category.list"><![CDATA[دسته بندی ها]]></item>
+        <item name="filebase.acp.menu.link.filebase.file.option.add"><![CDATA[فیلدهای گزینه را اضافه کنید]]></item>
+        <item name="filebase.acp.menu.link.filebase.file.option.list"><![CDATA[فیلدهای گزینه]]></item>
+        <item name="filebase.acp.menu.link.filebase.license.add"><![CDATA[مجوز اضافه کنید]]></item>
+        <item name="filebase.acp.menu.link.filebase.license.list"><![CDATA[مجوز ها]]></item>
+        <item name="filebase.acp.menu.link.filebase.paymentLog.list"><![CDATA[معاملات]]></item>
     </category>
     <category name="filebase.category">
-        <item name="filebase.category.categories"><![CDATA[Categories]]></item>
-        <item name="filebase.category.delete.sure"><![CDATA[Do you really want to delete this category? All child categories of this category will be moved to this category’s parent category. Files that are only in this category and file options that are only available for this category will be deleted.]]></item>
+        <item name="filebase.category.categories"><![CDATA[دسته بندی ها]]></item>
+        <item name="filebase.category.delete.sure"><![CDATA[آیا واقعاً می خواهید این دسته را حذف کنید؟ همه دسته‌های فرزند این دسته به دسته والدین این دسته منتقل خواهند شد. فایل هایی که فقط در این دسته هستند و گزینه های فایلی که فقط برای این دسته در دسترس هستند حذف می شوند.]]></item>
     </category>
     <category name="filebase.file">
-        <item name="filebase.file.add"><![CDATA[Upload File]]></item>
-        <item name="filebase.file.author"><![CDATA[Author]]></item>
-        <item name="filebase.file.authors"><![CDATA[Additional Authors]]></item>
+        <item name="filebase.file.add"><![CDATA[آپلود فایل]]></item>
+        <item name="filebase.file.author"><![CDATA[نویسنده]]></item>
+        <item name="filebase.file.authors"><![CDATA[نویسندگان بیشتر]]></item>
         <item name="filebase.file.authors.description"><![CDATA[Optional: You can add additional users that can edit this file and add new versions. Separate multiple users with a comma.]]></item>
         <item name="filebase.file.authors.error.notFound"><![CDATA[The username “{$errorData[username]}” does not exist.]]></item>
         <item name="filebase.file.averageRating"><![CDATA[Reviews]]></item>
