@@ -672,58 +672,58 @@
         <item name="filebase.file.notification.mail.html"><![CDATA[<p><strong>{$author}</strong> فایل اضافه شد  <a href="{$file->getLink()}">{$file->getTitle()}</a>:</p>]]></item>
         <item name="filebase.file.notification.mail.plaintext"><![CDATA[{@$author} فایل اضافه شد “{@$file->getTitle()}” [وبلاگ:{@$file->getLink()}]:]]></item>
         <item name="filebase.file.notification.message"><![CDATA[<strong>{$author}</strong> فایل اضافه شد <strong>{$file->getTitle()}</strong>.]]></item>
-        <item name="filebase.file.notification.moderation.enable.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A moderator{/if} enabled your file <strong>{$file->getTitle()}</strong>.]]></item>
-        <item name="filebase.file.notification.moderation.enable.notification.title"><![CDATA[Your file has been enabled]]></item>
-        <item name="filebase.file.notification.moderation.setLabel.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A moderator{/if} has {if $wasRemoved}removed{else}added{/if} the label {@$label->render()} {if $wasRemoved}from{else}to{/if} your file <strong>{$file->getTitle()}</strong>.]]></item>
-        <item name="filebase.file.notification.moderation.setLabel.notification.title"><![CDATA[A label has been added to your file]]></item>
-        <item name="filebase.file.notification.moderation.trash.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A moderator{/if} trashed your file <strong>{$file->getTitle()}</strong>{if !$userNotificationObject->getDecoratedObject()->reason|empty} for the reason “{$userNotificationObject->getDecoratedObject()->__get('reason')|truncate:255:'…'}”{/if}]]></item>
-        <item name="filebase.file.notification.moderation.trash.notification.title"><![CDATA[Your file has been trashed]]></item>
-        <item name="filebase.file.notification.title"><![CDATA[New File]]></item>
-        <item name="filebase.file.option.error.validationFailed"><![CDATA[The entered value is invalid.]]></item>
-        <item name="filebase.file.options"><![CDATA[Additional Information]]></item>
-        <item name="filebase.file.overview"><![CDATA[Overview]]></item>
-        <item name="filebase.file.price"><![CDATA[Price]]></item>
-        <item name="filebase.file.price.error.invalid"><![CDATA[The entered price is invalid.]]></item>
-        <item name="filebase.file.purchase"><![CDATA[Purchase]]></item>
-        <item name="filebase.file.purchase.returnMessage"><![CDATA[Thank you for your payment, the transaction has been completed. Access to the purchased file is granted as soon as the payment has been processed by us.]]></item>
-        <item name="filebase.file.purchaseInfo"><![CDATA[{if $customerList->getObjects()|count > 1}You have purchased this file {#$customerList->getObjects()|count}×, last time {@$customerList->current()->purchaseDate|date}.{else}You have purchased this file on {@$customerList->current()->purchaseDate|date}.{/if}]]></item>
+        <item name="filebase.file.notification.moderation.enable.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}تعدیل کننده{/if} فایل شما فعال شد  <strong>{$file->getTitle()}</strong>.]]></item>
+        <item name="filebase.file.notification.moderation.enable.notification.title"><![CDATA[فایل شما فعال شده است ]]></item>
+        <item name="filebase.file.notification.moderation.setLabel.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}تعدیل کننده {/if} دارد {if $wasRemoved}حذف میشود{else}افزوده شد{/if} برچسب {@$label->render()} {if $wasRemoved}از{else}to{/if}فایل شما <strong>{$file->getTitle()}</strong>.]]></item>
+        <item name="filebase.file.notification.moderation.setLabel.notification.title"><![CDATA[برچسب به فایل شما اضافه شد ]]></item>
+        <item name="filebase.file.notification.moderation.trash.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}تعدیل کننده{/if} فایل شما به سظل اشغال انتقال داده شد  <strong>{$file->getTitle()}</strong>{if !$userNotificationObject->getDecoratedObject()->reason|empty}به این دلیل  “{$userNotificationObject->getDecoratedObject()->__get('reason')|truncate:255:'…'}”{/if}]]></item>
+        <item name="filebase.file.notification.moderation.trash.notification.title"><![CDATA[فایل شما به سطل اشغال انتقال داده شد ]]></item>
+        <item name="filebase.file.notification.title"><![CDATA[فایل جدید ]]></item>
+        <item name="filebase.file.option.error.validationFailed"><![CDATA[مقدار وارد  شده نامعتبر  است .]]></item>
+        <item name="filebase.file.options"><![CDATA[اطلاعات بیشتر]]></item>
+        <item name="filebase.file.overview"><![CDATA[بررسی کلی ]]></item>
+        <item name="filebase.file.price"><![CDATA[قیمت]]></item>
+        <item name="filebase.file.price.error.invalid"><![CDATA[قیمت وارد شده اشتباه است .]]></item>
+        <item name="filebase.file.purchase"><![CDATA[خرید]]></item>
+        <item name="filebase.file.purchase.returnMessage"><![CDATA[ممنون بابت پرداخت شما, تراکنش انجام شد . دسترسی به فایل خرید به محض پردازش پرداخت توسط ما امکان پذیر است .]]></item>
+        <item name="filebase.file.purchaseInfo"><![CDATA[{if $customerList->getObjects()|count > 1}شما این فایل را خریداری کردید  {#$customerList->getObjects()|count}×, اخرین بار  {@$customerList->current()->purchaseDate|date}.{else}You have purchased this file on {@$customerList->current()->purchaseDate|date}.{/if}]]></item>
         <item name="filebase.file.purchased"><![CDATA[Purchased{if $file->getNumberOfPurchases() > 1} ({#$file->getNumberOfPurchases()}×){/if}]]></item>
-        <item name="filebase.file.purchasedFiles"><![CDATA[Purchased Files]]></item>
-        <item name="filebase.file.purchases"><![CDATA[Purchases]]></item>
-        <item name="filebase.file.random"><![CDATA[Random]]></item>
-        <item name="filebase.file.recentActivity.file"><![CDATA[Added the {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}file {anchor object=$file class='filebaseFileLink'}.]]></item>
-        <item name="filebase.file.recentActivity.fileComment"><![CDATA[Commented on the file {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}<a href="{$file->getLink()}#comments/comment{@$commentID}" class="filebaseFileLink" data-object-id="{@$file->fileID}">{$file->getTitle()}</a>.]]></item>
-        <item name="filebase.file.recentActivity.fileCommentResponse"><![CDATA[Replied to a comment by {user object=$commentAuthor} on the file {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}<a href="{$file->getLink()}#comments/comment{@$commentID}/response{@$responseID}" class="filebaseFileLink" data-object-id="{@$file->fileID}">{$file->getTitle()}</a>.]]></item>
-        <item name="filebase.file.recentActivity.likedFile"><![CDATA[Reacted with <span title="{$reactionType->getTitle()}" class="jsTooltip">{@$reactionType->renderIcon()}</span> to the file {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}<a href="{$file->getLink()}" class="filebaseFileLink" data-object-id="{@$file->fileID}">{$file->getTitle()}</a>.]]></item>
-        <item name="filebase.file.recentActivity.likedReview"><![CDATA[Reacted with <span title="{$reactionType->getTitle()}" class="jsTooltip">{@$reactionType->renderIcon()}</span> to the review <a href="{$review->getLink()}">{$review->getTitle()}</a> for the file {if $review->getViewableFile()->hasLabels()}<ul class="labelList">{foreach from=$review->getViewableFile()->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}{anchor object=$review->getViewableFile() class='filebaseFileLink'}.]]></item>
-        <item name="filebase.file.recentActivity.version"><![CDATA[Added {if $version->versionNumber}the version {$version->versionNumber}{else}a new version{/if} of the file {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}{anchor object=$version->getFile() class='filebaseFileLink'}.]]></item>
-        <item name="filebase.file.searchFiles"><![CDATA[Search Files]]></item>
-        <item name="filebase.file.size"><![CDATA[File Size]]></item>
-        <item name="filebase.file.subscribed"><![CDATA[Watched File]]></item>
-        <item name="filebase.file.supportThread.boardID"><![CDATA[Forum]]></item>
-        <item name="filebase.file.supportThread.boardID.description"><![CDATA[Support and discussion threads will be created in the selected forum.]]></item>
-        <item name="filebase.file.supportThread.info"><![CDATA[{#$supportThread->replies} {if $supportThread->replies == 1}reply{else}replies{/if}{if $supportThread->replies > 0}, last: {@$supportThread->lastPostTime|time}{/if}]]></item>
-        <item name="filebase.file.supportThread.message"><![CDATA[<p>{@$file->username} added a new file:<br>[file]{@$file->fileID}[/file]</p>
+        <item name="filebase.file.purchasedFiles"><![CDATA[فایل های خریداری شده ]]></item>
+        <item name="filebase.file.purchases"><![CDATA[خرید ها]]></item>
+        <item name="filebase.file.random"><![CDATA[تصادفی]]></item>
+        <item name="filebase.file.recentActivity.file"><![CDATA[اضافه کردن  {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}file {anchor object=$file class='filebaseFileLink'}.]]></item>
+        <item name="filebase.file.recentActivity.fileComment"><![CDATA[نظر داده شد به فایل شما {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}<a href="{$file->getLink()}#comments/comment{@$commentID}" class="filebaseFileLink" data-object-id="{@$file->fileID}">{$file->getTitle()}</a>.]]></item>
+        <item name="filebase.file.recentActivity.fileCommentResponse"><![CDATA[پاسخ داده شد به نظر توسط  {user object=$commentAuthor} به فایل  {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}<a href="{$file->getLink()}#comments/comment{@$commentID}/response{@$responseID}" class="filebaseFileLink" data-object-id="{@$file->fileID}">{$file->getTitle()}</a>.]]></item>
+        <item name="filebase.file.recentActivity.likedFile"><![CDATA[واکنش نشان داد با  <span title="{$reactionType->getTitle()}" class="jsTooltip">{@$reactionType->renderIcon()}</span> به فایل  {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}<a href="{$file->getLink()}" class="filebaseFileLink" data-object-id="{@$file->fileID}">{$file->getTitle()}</a>.]]></item>
+        <item name="filebase.file.recentActivity.likedReview"><![CDATA[واکنش نشان داد <span title="{$reactionType->getTitle()}" class="jsTooltip">{@$reactionType->renderIcon()}</span> به بررسی <a href="{$review->getLink()}">{$review->getTitle()}</a> برای فایل  {if $review->getViewableFile()->hasLabels()}<ul class="labelList">{foreach from=$review->getViewableFile()->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}{anchor object=$review->getViewableFile() class='filebaseFileLink'}.]]></item>
+        <item name="filebase.file.recentActivity.version"><![CDATA[افزوده شد  {if $version->versionNumber}نسخه {$version->versionNumber}{else}نسخه جدید{/if} به فایل {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}{anchor object=$version->getFile() class='filebaseFileLink'}.]]></item>
+        <item name="filebase.file.searchFiles"><![CDATA[جست و جوی فایل ها ]]></item>
+        <item name="filebase.file.size"><![CDATA[اندازه فایل ]]></item>
+        <item name="filebase.file.subscribed"><![CDATA[فایل های دیده شده ]]></item>
+        <item name="filebase.file.supportThread.boardID"><![CDATA[انجمن ]]></item>
+        <item name="filebase.file.supportThread.boardID.description"><![CDATA[پیشنهادات پشتیبانی و بحث در انحمن انتخاب شده ایجاد خواهد شد .]]></item>
+        <item name="filebase.file.supportThread.info"><![CDATA[{#$supportThread->replies} {if $supportThread->replies == 1}پاسخ{else}replies{/if}{if $supportThread->replies > 0}, last: {@$supportThread->lastPostTime|time}{/if}]]></item>
+        <item name="filebase.file.supportThread.message"><![CDATA[<p>{@$file->username}افزودن فایل جدید:<br>[file]{@$file->fileID}[/file]</p>
 <woltlab-quote>{@$fileContent->getMessage()}</woltlab-quote>]]></item>
         <item name="filebase.file.supportThread.subject"><![CDATA[{@$fileContent->getSubject()}]]></item>
-        <item name="filebase.file.supportThread.versionMessage"><![CDATA[<p>{@$version->getFile()->username} added a new version:<br>[fileversion]{@$version->versionID}[/fileversion]</p>
+        <item name="filebase.file.supportThread.versionMessage"><![CDATA[<p>{@$version->getFile()->username} اضافه کردن یک نقطه جدید :<br>[fileversion]{@$version->versionID}[/fileversion]</p>
 <woltlab-quote>{@$versionContent->getDescription()}</woltlab-quote>]]></item>
-        <item name="filebase.file.teaser"><![CDATA[Teaser]]></item>
-        <item name="filebase.file.teaser.description"><![CDATA[Enter a short description of your file, it must not exceed {#FILEBASE_MAX_TEASER_LENGTH} characters.]]></item>
-        <item name="filebase.file.time"><![CDATA[Uploaded]]></item>
-        <item name="filebase.file.topFiles"><![CDATA[Most Reactions]]></item>
-        <item name="filebase.file.topGrossingFiles"><![CDATA[Top Grossing]]></item>
-        <item name="filebase.file.totalRevenue"><![CDATA[Revenue]]></item>
-        <item name="filebase.file.unreadFiles"><![CDATA[New Files]]></item>
-        <item name="filebase.file.upload"><![CDATA[Upload File]]></item>
-        <item name="filebase.file.upload.confirmOverwrite"><![CDATA[You have already uploaded a file, continuing will overwrite the existing one.]]></item>
-        <item name="filebase.file.upload.error.invalidExtension"><![CDATA[The file extension is invalid.]]></item>
+        <item name="filebase.file.teaser"><![CDATA[تیزر]]></item>
+        <item name="filebase.file.teaser.description"><![CDATA[توضیحات کوتاه فایل را وارد کنید , نباید تجاوز کنید  {#FILEBASE_MAX_TEASER_LENGTH} characters.]]></item>
+        <item name="filebase.file.time"><![CDATA[اپلود شد]]></item>
+        <item name="filebase.file.topFiles"><![CDATA[بیشترین واکنش ها ]]></item>
+        <item name="filebase.file.topGrossingFiles"><![CDATA[پر فروشترین]]></item>
+        <item name="filebase.file.totalRevenue"><![CDATA[درامد]]></item>
+        <item name="filebase.file.unreadFiles"><![CDATA[فایل جدید ]]></item>
+        <item name="filebase.file.upload"><![CDATA[اپلود فایل ]]></item>
+        <item name="filebase.file.upload.confirmOverwrite"><![CDATA[شما قبلا فایل را اپلود کردید , در ادامه مورد را بازنویسی کنید .]]></item>
+        <item name="filebase.file.upload.error.invalidExtension"><![CDATA[پسوند فایل نا معتبر است .]]></item>
         <item name="filebase.file.upload.error.quotaExceeded"><![CDATA[You have exceeded your storage limit and cannot upload new files.]]></item>
-        <item name="filebase.file.upload.error.tooLarge"><![CDATA[The file is too big]]></item>
-        <item name="filebase.file.upload.error.uploadFailed"><![CDATA[An unknown error occurred during the upload.]]></item>
-        <item name="filebase.file.upload.limits"><![CDATA[Maximum file size: {@$__wcf->session->getPermission('user.filebase.maxFileSize')|filesize}<br>
+        <item name="filebase.file.upload.error.tooLarge"><![CDATA[این فایل خیلی بزرگ است ]]></item>
+        <item name="filebase.file.upload.error.uploadFailed"><![CDATA[خطایی ناشناخته در حین اپلود رخ داده است .]]></item>
+        <item name="filebase.file.upload.limits"><![CDATA[حداکثر اندازه فایل : {@$__wcf->session->getPermission('user.filebase.maxFileSize')|filesize}<br>
 Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
-        <item name="filebase.file.userFileCounter"><![CDATA[{#$activeAuthor->filebaseFiles} file{if $activeAuthor->filebaseFiles != 1}s{/if}]]></item>
+        <item name="filebase.file.userFileCounter"><![CDATA[{#$activeAuthor->filebaseFiles} فایل{if $activeAuthor->filebaseFiles != 1}s{/if}]]></item>
         <item name="filebase.file.userFiles"><![CDATA[Files by {$user->username}]]></item>
         <item name="filebase.file.version"><![CDATA[Version]]></item>
         <item name="filebase.file.version.add"><![CDATA[Add Version]]></item>
