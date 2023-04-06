@@ -787,47 +787,47 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="filebase.file.log.noEntries"><![CDATA[هیچ ورودی برای این فایل وجود ندارد.]]></item>
     </category>
     <category name="filebase.file.review">
-        <item name="filebase.file.review"><![CDATA[Review]]></item>
-        <item name="filebase.file.review.add"><![CDATA[Create Review]]></item>
-        <item name="filebase.file.review.allVersions"><![CDATA[All Versions]]></item>
-        <item name="filebase.file.review.alreadyReviewed"><![CDATA[You have already reviewed this file.]]></item>
-        <item name="filebase.file.review.delete.confirmMessage"><![CDATA[Do you really want to delete the review?]]></item>
-        <item name="filebase.file.review.edit"><![CDATA[Edit Review]]></item>
+        <item name="filebase.file.review"><![CDATA[مرور]]></item>
+        <item name="filebase.file.review.add"><![CDATA[ایجاد مرور ]]></item>
+        <item name="filebase.file.review.allVersions"><![CDATA[تمام نسخه ها ]]></item>
+        <item name="filebase.file.review.alreadyReviewed"><![CDATA[شما قبلا این فایل را مرور کردید .]]></item>
+        <item name="filebase.file.review.delete.confirmMessage"><![CDATA[ایا واقعا می خواهید این مرور را پاک کنید ?]]></item>
+        <item name="filebase.file.review.edit"><![CDATA[ویرایش مرور ]]></item>
         <item name="filebase.file.review.ipAddress"><![CDATA[IP: {$review->getIpAddress()}]]></item>
-        <item name="filebase.file.review.ipAddress.author"><![CDATA[IP Address for {$review->username}]]></item>
-        <item name="filebase.file.review.ipAddress.hostname"><![CDATA[Hostname]]></item>
-        <item name="filebase.file.review.ipAddress.otherUsers"><![CDATA[Other Users for IP Address {$review->getIpAddress()}]]></item>
-        <item name="filebase.file.review.ipAddress.review"><![CDATA[Review]]></item>
-        <item name="filebase.file.review.ipAddress.title"><![CDATA[IP Address]]></item>
-        <item name="filebase.file.review.like.notification.message"><![CDATA[<strong>{$author}</strong> reacted to your file review <strong>{$review->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
-        <item name="filebase.file.review.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} reacted to your file review <strong>{$review->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
-        <item name="filebase.file.review.like.notification.title"><![CDATA[Reaction to your file review]]></item>
-        <item name="filebase.file.review.like.notification.title.stacked"><![CDATA[{#$count} users reacted to your file review]]></item>
-        <item name="filebase.file.review.moderation.info"><![CDATA[Newly created reviews will remain inaccessible for others until approved by a moderator.]]></item>
-        <item name="filebase.file.review.more"><![CDATA[More Reviews]]></item>
-        <item name="filebase.file.review.noReview"><![CDATA[No review has yet been written.]]></item>
-        <item name="filebase.file.review.noReviewVersion"><![CDATA[No review for this version has been written yet.]]></item>
-        <item name="filebase.file.review.notification.mail.html"><![CDATA[<p>{if $event->getAuthor()->userID}<a href="{link controller='User' object=$event->getAuthor() isHtmlEmail=true}{/link}">{$event->getAuthor()->username}</a>{else}A guest{/if} added the review <a href="{link application='filebase' controller='File' object=$event->getUserNotificationObject()->getViewableFile() isHtmlEmail=true}#reviews{/link}">{$event->getUserNotificationObject()->getTitle()}</a> to your file <a href="{link application='filebase' controller='File' object=$event->getUserNotificationObject()->getViewableFile() isHtmlEmail=true}{/link}">{$event->getUserNotificationObject()->getViewableFile()->getTitle()}</a>.]]></item>
-        <item name="filebase.file.review.notification.mail.plaintext"><![CDATA[{if $event->getAuthor()->userID}{@$event->getAuthor()->username} [URL:{link controller='User' object=$event->getAuthor() isEmail=true}{/link}]{else}A guest{/if} added the review “{@$event->getUserNotificationObject()->getTitle()}” [URL:{link application='filebase' controller='File' object=$event->getUserNotificationObject()->getViewableFile() isEmail=true}#reviews{/link}] to your file “{@$event->getUserNotificationObject()->getViewableFile()->getTitle()}”:]]></item>
-        <item name="filebase.file.review.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A guest{/if} added the review <strong>{$review->getTitle()}</strong> to your file <strong>{$review->getViewableFile()->getTitle()}</strong>.]]></item>
+        <item name="filebase.file.review.ipAddress.author"><![CDATA[برای IP ادرس  {$review->username}]]></item>
+        <item name="filebase.file.review.ipAddress.hostname"><![CDATA[اسم میزبان]]></item>
+        <item name="filebase.file.review.ipAddress.otherUsers"><![CDATA[بقیه کاربران  برای  IP ادرس {$review->getIpAddress()}]]></item>
+        <item name="filebase.file.review.ipAddress.review"><![CDATA[مرور]]></item>
+        <item name="filebase.file.review.ipAddress.title"><![CDATA[IP ادرس]]></item>
+        <item name="filebase.file.review.like.notification.message"><![CDATA[<strong>{$author}</strong> به مرور فایل شما واکنش نشان داده شد  <strong>{$review->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+        <item name="filebase.file.review.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} به مرور فایل شما واکنش نشان داده شد  <strong>{$review->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+        <item name="filebase.file.review.like.notification.title"><![CDATA[واکنش به فایل مرور شما]]></item>
+        <item name="filebase.file.review.like.notification.title.stacked"><![CDATA[{#$count} کاربران به فایل مرور شما واکنش نشان دادند ]]></item>
+        <item name="filebase.file.review.moderation.info"><![CDATA[نظرات جدید ایجاد شده تا زماانی که توسط تعدیل کننده تایید نشوند برای سایرین در دسترس خواهد بود .]]></item>
+        <item name="filebase.file.review.more"><![CDATA[مرور های بیشتر]]></item>
+        <item name="filebase.file.review.noReview"><![CDATA[تا به حال هیچ مروری نوشته نشده .]]></item>
+        <item name="filebase.file.review.noReviewVersion"><![CDATA[ هنوز هیچ مروری برای این نسخه نوشته نشده است .]]></item>
+        <item name="filebase.file.review.notification.mail.html"><![CDATA[<p>{if $event->getAuthor()->userID}<a href="{link controller='User' object=$event->getAuthor() isHtmlEmail=true}{/link}">{$event->getAuthor()->username}</a>{else}میهمان{/if} مرور هارا اضافه میکند  <a href="{link application='filebase' controller='File' object=$event->getUserNotificationObject()->getViewableFile() isHtmlEmail=true}#reviews{/link}">{$event->getUserNotificationObject()->getTitle()}</a> برای فایل شما  <a href="{link application='filebase' controller='File' object=$event->getUserNotificationObject()->getViewableFile() isHtmlEmail=true}{/link}">{$event->getUserNotificationObject()->getViewableFile()->getTitle()}</a>.]]></item>
+        <item name="filebase.file.review.notification.mail.plaintext"><![CDATA[{if $event->getAuthor()->userID}{@$event->getAuthor()->username} [وبلاگ:{link controller='User' object=$event->getAuthor() isEmail=true}{/link}]{else}مهمان{/if} مرور را اضافه کرد  “{@$event->getUserNotificationObject()->getTitle()}” [وبلاگ:{link application='filebase' controller='File' object=$event->getUserNotificationObject()->getViewableFile() isEmail=true}#reviews{/link}] به فایل شما  “{@$event->getUserNotificationObject()->getViewableFile()->getTitle()}”:]]></item>
+        <item name="filebase.file.review.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}مهمان {/if} added the review <strong>{$review->getTitle()}</strong> to your file <strong>{$review->getViewableFile()->getTitle()}</strong>.]]></item>
         <item name="filebase.file.review.notification.title"><![CDATA[New Review]]></item>
         <item name="filebase.file.review.rating"><![CDATA[{plural value=$rating one='# Star' other='# Stars'}{if !$numberOfRatings|empty}; {plural value=$numberOfRatings one='# Review' other='# Reviews'}{/if}]]></item>
         <item name="filebase.file.review.recentActivity.title"><![CDATA[Added the review <a href="{$review->getLink()}">{$review->getTitle()}</a> to the file {if $review->getViewableFile()->hasLabels()}<ul class="labelList">{foreach from=$review->getViewableFile()->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}{anchor object=$review->getViewableFile() class='filebaseFileLink'}.]]></item>
-        <item name="filebase.file.review.response.add"><![CDATA[Reply]]></item>
-        <item name="filebase.file.review.response.delete"><![CDATA[Delete Reply]]></item>
-        <item name="filebase.file.review.response.delete.confirmMessage"><![CDATA[Do you really want to delete the reply?]]></item>
-        <item name="filebase.file.review.response.edit"><![CDATA[Edit Reply]]></item>
-        <item name="filebase.file.review.response.headline"><![CDATA[Reply from {user object=$response->getUserProfile()} ({@$response->time|time}):]]></item>
+        <item name="filebase.file.review.response.add"><![CDATA[پاسخ]]></item>
+        <item name="filebase.file.review.response.delete"><![CDATA[حذف پاسخ]]></item>
+        <item name="filebase.file.review.response.delete.confirmMessage"><![CDATA[ایا واقعا میخواهید این پاسخ را حذف کنید ?]]></item>
+        <item name="filebase.file.review.response.edit"><![CDATA[ویرایش پاسخ ]]></item>
+        <item name="filebase.file.review.response.headline"><![CDATA[پاسخ از طرف  {user object=$response->getUserProfile()} ({@$response->time|time}):]]></item>
         <item name="filebase.file.review.response.notification.mail.html"><![CDATA[<p>{if $event->getAuthor()->userID}<a href="{link controller='User' object=$event->getAuthor() isHtmlEmail=true}{/link}">{$event->getAuthor()->username}</a>{else}A guest{/if} replied to your review <a href="{link application='filebase' controller='File' object=$event->getUserNotificationObject()->getReview()->getViewableFile() isHtmlEmail=true}#reviews{/link}">{$event->getUserNotificationObject()->getReview()->getTitle()}</a>.]]></item>
         <item name="filebase.file.review.response.notification.mail.plaintext"><![CDATA[{if $event->getAuthor()->userID}{@$event->getAuthor()->username} [URL:{link controller='User' object=$event->getAuthor() isEmail=true}{/link}]{else}A guest{/if} replied to your review “{@$event->getUserNotificationObject()->getReview()->getTitle()}” [URL:{link application='filebase' controller='File' object=$event->getUserNotificationObject()->getReview()->getViewableFile() isEmail=true}#reviews{/link}]:]]></item>
         <item name="filebase.file.review.response.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A guest{/if} replied to your review <strong>{$response->getReview()->getTitle()}</strong>.]]></item>
-        <item name="filebase.file.review.response.notification.title"><![CDATA[New Reply to your Review]]></item>
-        <item name="filebase.file.review.reviewBy"><![CDATA[Review by {$review->username}]]></item>
-        <item name="filebase.file.review.reviews"><![CDATA[Reviews]]></item>
-        <item name="filebase.file.review.version.notUnique"><![CDATA[You have already written a review for this version.]]></item>
+        <item name="filebase.file.review.response.notification.title"><![CDATA[پاسخ جدید به مرور شما ]]></item>
+        <item name="filebase.file.review.reviewBy"><![CDATA[مرور توسط  {$review->username}]]></item>
+        <item name="filebase.file.review.reviews"><![CDATA[مرور ها ]]></item>
+        <item name="filebase.file.review.version.notUnique"><![CDATA[شما قبلا برای این نسخه مرور نوشته اید .]]></item>
     </category>
     <category name="filebase.index">
-        <item name="filebase.index.stats"><![CDATA[Statistics]]></item>
+        <item name="filebase.index.stats"><![CDATA[امار]]></item>
         <item name="filebase.index.stats.detail"><![CDATA[<ul class="inlineList dotSeparated">
 <li>{plural value=$stats[authors] 1='1 Author' other='# Authors'}</li>
 <li>{plural value=$stats[files] 1='1 File' other='# Files'}</li>
