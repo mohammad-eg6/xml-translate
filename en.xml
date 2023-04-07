@@ -1499,13 +1499,13 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wbb.board.watchedBoards.unmarkAll"><![CDATA[Unmark All]]></item>
     </category>
     <category name="wbb.condition">
-        <item name="wbb.condition.page.board"><![CDATA[Requested Forums]]></item>
-        <item name="wbb.condition.page.board.description"><![CDATA[The notice will only display if the active user is in one of the selected forums. Multiple items can be selected by holding the “Ctrl/Shift” key (Windows) or “Command” (Mac OS) key and clicking on the desired items.]]></item>
+        <item name="wbb.condition.page.board"><![CDATA[انجمن های درخواستی]]></item>
+        <item name="wbb.condition.page.board.description"><![CDATA[اخطار فقط در صورتی نمایش داده می شود که کاربر فعال در یکی از انجمن های انتخاب شده باشد. چند مورد را می توان با نگه داشتن دکمه انتخاب کرد “Ctrl/Shift” کلید (Windows) یا “Command” (Mac OS) را کلید زده و روی موارد مورد نظر کلیک کنید.]]></item>
     </category>
     <category name="wbb.index">
-        <item name="wbb.index.ignoreBoards"><![CDATA[Ignore Boards]]></item>
-        <item name="wbb.index.selectForumForNewThread"><![CDATA[Select Forum for New Thread]]></item>
-        <item name="wbb.index.stats"><![CDATA[Statistics]]></item>
+        <item name="wbb.index.ignoreBoards"><![CDATA[تابلوها را نادیده بگیرید]]></item>
+        <item name="wbb.index.selectForumForNewThread"><![CDATA[انجمن را برای موضوع جدید انتخاب کنید]]></item>
+        <item name="wbb.index.stats"><![CDATA[آمار]]></item>
         <item name="wbb.index.stats.detail"><![CDATA[<ul class="inlineList dotSeparated">
 <li>{#$stats[members]} Member{if $stats.members != 1}s{/if}</li>
 <li>{#$stats[threads]} Thread{if $stats[threads] != 1}s{/if}</li>
@@ -1514,90 +1514,90 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
 {if $stats[newestMember]}<p>Latest Member: {user object=$stats[newestMember]}.</p>{/if}]]></item>
     </category>
     <category name="wbb.post">
-        <item name="wbb.post.add"><![CDATA[Reply to Thread]]></item>
-        <item name="wbb.post.bbcode.type"><![CDATA[Post]]></item>
-        <item name="wbb.post.button.add"><![CDATA[Reply]]></item>
-        <item name="wbb.post.closed"><![CDATA[Post Editing Has Been Prohibited]]></item>
-        <item name="wbb.post.condition.board"><![CDATA[Forum]]></item>
-        <item name="wbb.post.condition.state"><![CDATA[State]]></item>
-        <item name="wbb.post.condition.state.isClosed"><![CDATA[Closed]]></item>
-        <item name="wbb.post.condition.state.isClosed.error.conflict"><![CDATA[“Closed” and “Open” cannot be selected at the same time.]]></item>
-        <item name="wbb.post.condition.state.isDeleted"><![CDATA[In Trash Bin]]></item>
-        <item name="wbb.post.condition.state.isDeleted.error.conflict"><![CDATA[“In Trash Bin” and “Not in Trash Bin” cannot be selected at the same time.]]></item>
+        <item name="wbb.post.add"><![CDATA[پاسخ به موضوع]]></item>
+        <item name="wbb.post.bbcode.type"><![CDATA[پست]]></item>
+        <item name="wbb.post.button.add"><![CDATA[پاسخ]]></item>
+        <item name="wbb.post.closed"><![CDATA[ویرایش پست ممنوع شده است]]></item>
+        <item name="wbb.post.condition.board"><![CDATA[انجمن]]></item>
+        <item name="wbb.post.condition.state"><![CDATA[حالت]]></item>
+        <item name="wbb.post.condition.state.isClosed"><![CDATA[بسته شد]]></item>
+        <item name="wbb.post.condition.state.isClosed.error.conflict"><![CDATA[“Closed” و “Open” نمی توان همزمان انتخاب کرد.]]></item>
+        <item name="wbb.post.condition.state.isDeleted"><![CDATA[در سطل اشغال]]></item>
+        <item name="wbb.post.condition.state.isDeleted.error.conflict"><![CDATA[“In Trash Bin” و “Not in Trash Bin” نمی توان همزمان انتخاب کرد.]]></item>
         <item name="wbb.post.condition.state.isDisabled"><![CDATA[Awaiting approval]]></item>
-        <item name="wbb.post.condition.state.isDisabled.error.conflict"><![CDATA[“Awaiting approval” and “Approved” cannot be selected at the same time.]]></item>
-        <item name="wbb.post.condition.state.isEnabled"><![CDATA[Approved]]></item>
-        <item name="wbb.post.condition.state.isNotDeleted"><![CDATA[Not in Trash Bin]]></item>
-        <item name="wbb.post.condition.state.isOpen"><![CDATA[Open]]></item>
-        <item name="wbb.post.condition.time"><![CDATA[Date]]></item>
-        <item name="wbb.post.condition.username"><![CDATA[Created By]]></item>
-        <item name="wbb.post.condition.username.description"><![CDATA[Multiple users have to separated by commas.]]></item>
-        <item name="wbb.post.conditions"><![CDATA[Posts]]></item>
-        <item name="wbb.post.copy.title"><![CDATA[Copy Posts]]></item>
-        <item name="wbb.post.delayedPublication"><![CDATA[This post will be published on {@$post->enableTime|plainTime}.]]></item>
-        <item name="wbb.post.delete"><![CDATA[Delete post]]></item>
-        <item name="wbb.post.delete.sure"><![CDATA[Move this post to trash]]></item>
-        <item name="wbb.post.deleteReason"><![CDATA[Reason (optional)]]></item>
-        <item name="wbb.post.deleted"><![CDATA[This post was deleted {if $post->userID == $post->getLogEntry()->userID}by the author themselves{else}by {if $post->getLogEntry()->userID}<a href="{link controller='User' id=$post->getLogEntry()->userID title=$post->getLogEntry()->username}{/link}" class="userLink" data-object-id="{@$post->getLogEntry()->userID}">{$post->getLogEntry()->username}</a>{else}{$post->getLogEntry()->username}{/if}{/if}{if $post->getLogEntry()->reason}: {$post->getLogEntry()->reason}{/if} ({@$post->getLogEntry()->time|time}).]]></item>
-        <item name="wbb.post.deleted.noData"><![CDATA[The post was deleted, no further information is available.]]></item>
-        <item name="wbb.post.disablePost"><![CDATA[Delayed publishing]]></item>
-        <item name="wbb.post.disableThread"><![CDATA[Delayed publishing]]></item>
-        <item name="wbb.post.edit"><![CDATA[Edit Post]]></item>
-        <item name="wbb.post.edit.close"><![CDATA[Prohibit Editing]]></item>
-        <item name="wbb.post.edit.delete"><![CDATA[Delete]]></item>
-        <item name="wbb.post.edit.delete.confirmMessage"><![CDATA[Do you really want to delete this post?]]></item>
-        <item name="wbb.post.edit.disable"><![CDATA[Disable]]></item>
-        <item name="wbb.post.edit.enable"><![CDATA[Approve]]></item>
-        <item name="wbb.post.edit.merge"><![CDATA[Merge Posts]]></item>
-        <item name="wbb.post.edit.merge.description"><![CDATA[You can sort the posts by dragging and dropping them to determine the first post and merge order. All of the selected posts will be merged into the first post.]]></item>
-        <item name="wbb.post.edit.merge.reason"><![CDATA[Merged {if $postOrder|count == 1}a post{else}{#$postOrder|count} posts{/if} created by {implode from=$usernames item='username'}{$username}{/implode} into this post.]]></item>
-        <item name="wbb.post.edit.merge.success"><![CDATA[The posts have been merged.]]></item>
-        <item name="wbb.post.edit.open"><![CDATA[Allow Editing]]></item>
-        <item name="wbb.post.edit.restore"><![CDATA[Restore]]></item>
-        <item name="wbb.post.edit.trash"><![CDATA[Move to Trash]]></item>
-        <item name="wbb.post.edit.trash.confirmMessage"><![CDATA[Do you really want to move this post to the trash?]]></item>
-        <item name="wbb.post.edit.trash.reason"><![CDATA[Reason (optional)]]></item>
-        <item name="wbb.post.editNote"><![CDATA[{if $post->editCount}Edited {if $post->editCount == 1}once{else}{#$post->editCount} times{/if}, last by {if $post->editorID}<a href="{link controller='User' id=$post->editorID}{/link}" class="userLink" data-object-id="{@$post->editorID}">{$post->editor}</a>{else}{$post->editor}{/if}{if $post->editReason}: {$post->editReason}{/if} ({@$post->lastEditTime|time}).{/if}{if $thread->canEditPost($post->getDecoratedObject()) && $post->hasOldVersions()}{if $post->editCount} — {/if}<a href="{link controller='EditHistory' objectType='com.woltlab.wbb.post' objectID=$post->postID}{/link}">This post has previous versions that are saved.</a>{/if}]]></item>
-        <item name="wbb.post.editReason"><![CDATA[Edit Reason (optional)]]></item>
-        <item name="wbb.post.enableTime"><![CDATA[Publication Date]]></item>
-        <item name="wbb.post.enableTime.description"><![CDATA[Please specify a publishing date, the thread or post will remain disabled until then.]]></item>
-        <item name="wbb.post.enableTime.error.invalid"><![CDATA[The specified date is invalid, you must choose a future date.]]></item>
-        <item name="wbb.post.enableTime.now"><![CDATA[Publish now]]></item>
-        <item name="wbb.post.enableTime.nowAndUpdateTime"><![CDATA[Set the publication date to the current time]]></item>
-        <item name="wbb.post.error.floodControl"><![CDATA[You have already written a post within the last {if $__wcf->getSession()->getPermission('user.board.floodControlTime') > 1}{#$__wcf->getSession()->getPermission('user.board.floodControlTime')} seconds{else}second{/if}. You must wait at least {#$lastPostTime+$__wcf->getSession()->getPermission('user.board.floodControlTime')-TIME_NOW} second{if ($lastPostTime+$__wcf->getSession()->getPermission('user.board.floodControlTime')-TIME_NOW) != 1}s{/if} before attempting to write a new post.]]></item>
-        <item name="wbb.post.hiddenForGuests"><![CDATA[This threads contains {if $numberOfHiddenPosts == 1}one more post{else}{#$numberOfHiddenPosts} more posts{/if} that have been hidden for guests, please {if !REGISTER_DISABLED}<a href="{link controller='Register'}{/link}">register yourself</a> or {/if}<a href="{link controller='Login'}{/link}">log-in</a> to continue reading.]]></item>
-        <item name="wbb.post.ignoredUser"><![CDATA[The post by {$__ignoredUser->username} was hidden.]]></item>
-        <item name="wbb.post.information"><![CDATA[Information]]></item>
+        <item name="wbb.post.condition.state.isDisabled.error.conflict"><![CDATA[“Awaiting approval” و “Approved” نمی توان همزمان انتخاب کرد.]]></item>
+        <item name="wbb.post.condition.state.isEnabled"><![CDATA[تایید شده]]></item>
+        <item name="wbb.post.condition.state.isNotDeleted"><![CDATA[در سطل آشغال نیست]]></item>
+        <item name="wbb.post.condition.state.isOpen"><![CDATA[باز کن]]></item>
+        <item name="wbb.post.condition.time"><![CDATA[تاریخ]]></item>
+        <item name="wbb.post.condition.username"><![CDATA[درست شده توسط]]></item>
+        <item name="wbb.post.condition.username.description"><![CDATA[چند کاربر باید با کاما از هم جدا شوند.]]></item>
+        <item name="wbb.post.conditions"><![CDATA[پست ها]]></item>
+        <item name="wbb.post.copy.title"><![CDATA[کپی کردن پست ها]]></item>
+        <item name="wbb.post.delayedPublication"><![CDATA[ این پست در تاریخ منتشر خواهد شد {@$post->enableTime|plainTime}.]]></item>
+        <item name="wbb.post.delete"><![CDATA[حذف کردن پست]]></item>
+        <item name="wbb.post.delete.sure"><![CDATA[این پست را به سطل آشغال منتقل کنید]]></item>
+        <item name="wbb.post.deleteReason"><![CDATA[دلیل (اختیاری)]]></item>
+        <item name="wbb.post.deleted"><![CDATA[این پست حذف شد {if $post->userID == $post->getLogEntry()->userID}توسط خود نویسنده{else}توسط {if $post->getLogEntry()->userID}<a href="{link controller='User' id=$post->getLogEntry()->userID title=$post->getLogEntry()->username}{/link}" class="userLink" data-object-id="{@$post->getLogEntry()->userID}">{$post->getLogEntry()->username}</a>{else}{$post->getLogEntry()->username}{/if}{/if}{if $post->getLogEntry()->reason}: {$post->getLogEntry()->reason}{/if} ({@$post->getLogEntry()->time|time}).]]></item>
+        <item name="wbb.post.deleted.noData"><![CDATA[پست حذف شد, اطلاعات بیشتری در دسترس نیست.]]></item>
+        <item name="wbb.post.disablePost"><![CDATA[انتشار با تاخیر]]></item>
+        <item name="wbb.post.disableThread"><![CDATA[انتشار با تاخیر]]></item>
+        <item name="wbb.post.edit"><![CDATA[ویرایش پست]]></item>
+        <item name="wbb.post.edit.close"><![CDATA[ویرایش را ممنوع کنید]]></item>
+        <item name="wbb.post.edit.delete"><![CDATA[حذف کردن]]></item>
+        <item name="wbb.post.edit.delete.confirmMessage"><![CDATA[آیا واقعاً می خواهید این پست را حذف کنید؟]]></item>
+        <item name="wbb.post.edit.disable"><![CDATA[غیر فعال کردن]]></item>
+        <item name="wbb.post.edit.enable"><![CDATA[تایید کردن]]></item>
+        <item name="wbb.post.edit.merge"><![CDATA[ترکیب پست ها]]></item>
+        <item name="wbb.post.edit.merge.description"><![CDATA[برای تعیین اولین پست و ترتیب ترکیب، می توانید پست ها را با کشیدن و رها کردن مرتب کنید. همه پست های انتخاب شده در پست اول ترکیب می شوند.]]></item>
+        <item name="wbb.post.edit.merge.reason"><![CDATA[ترکیب شد {if $postOrder|count == 1}یک پست{else}{#$postOrder|count} پست ها{/if} درست شده توسط {implode from=$usernames item='username'}{$username}{/implode} در این پست.]]></item>
+        <item name="wbb.post.edit.merge.success"><![CDATA[پست ها ترکیب شدند.]]></item>
+        <item name="wbb.post.edit.open"><![CDATA[اجازه ویرایش]]></item>
+        <item name="wbb.post.edit.restore"><![CDATA[بازگرداندن]]></item>
+        <item name="wbb.post.edit.trash"><![CDATA[انتقال به سطل آشغال]]></item>
+        <item name="wbb.post.edit.trash.confirmMessage"><![CDATA[آیا واقعاً می خواهید این پست را به سطل آشغال منتقل کنید؟]]></item>
+        <item name="wbb.post.edit.trash.reason"><![CDATA[دلیل (اختیاری)]]></item>
+        <item name="wbb.post.editNote"><![CDATA[{if $post->editCount}ویرایش شده {if $post->editCount == 1}یک بار{else}{#$post->editCount} بارها{/if},آخرین توسط {if $post->editorID}<a href="{link controller='User' id=$post->editorID}{/link}" class="userLink" data-object-id="{@$post->editorID}">{$post->editor}</a>{else}{$post->editor}{/if}{if $post->editReason}: {$post->editReason}{/if} ({@$post->lastEditTime|time}).{/if}{if $thread->canEditPost($post->getDecoratedObject()) && $post->hasOldVersions()}{if $post->editCount} — {/if}<a href="{link controller='EditHistory' objectType='com.woltlab.wbb.post' objectID=$post->postID}{/link}">این پست دارای نسخه های قبلی است که ذخیره شده اند.</a>{/if}]]></item>
+        <item name="wbb.post.editReason"><![CDATA[دلیل ویرایش (اختیاری)]]></item>
+        <item name="wbb.post.enableTime"><![CDATA[تاریخ انتشار]]></item>
+        <item name="wbb.post.enableTime.description"><![CDATA[لطفا تاریخ انتشار را مشخص کنید، تاپیک یا پست تا آن زمان غیرفعال می‌ماند.]]></item>
+        <item name="wbb.post.enableTime.error.invalid"><![CDATA[تاریخ مشخص شده نامعتبر است، باید تاریخ آینده را انتخاب کنید.]]></item>
+        <item name="wbb.post.enableTime.now"><![CDATA[اکنون منتشر کنید]]></item>
+        <item name="wbb.post.enableTime.nowAndUpdateTime"><![CDATA[تاریخ انتشار را روی زمان فعلی تنظیم کنید]]></item>
+        <item name="wbb.post.error.floodControl"><![CDATA[شما قبلاً یک پست در آخرین پست نوشته اید {if $__wcf->getSession()->getPermission('user.board.floodControlTime') > 1}{#$__wcf->getSession()->getPermission('user.board.floodControlTime')} ثانیه ها{else}ثانیه{/if}. حداقل باید صبر کنی {#$lastPostTime+$__wcf->getSession()->getPermission('user.board.floodControlTime')-TIME_NOW} ثانیه{if ($lastPostTime+$__wcf->getSession()->getPermission('user.board.floodControlTime')-TIME_NOW) != 1}s{/if} قبل از تلاش برای نوشتن یک پست جدید.]]></item>
+        <item name="wbb.post.hiddenForGuests"><![CDATA[این موضوعات شامل {if $numberOfHiddenPosts == 1}یک پست بیشتر{else}{#$numberOfHiddenPosts} پست های بیشتر{/if} که برای مهمانان پنهان شده است، لطفا {if !REGISTER_DISABLED}<a href="{link controller='Register'}{/link}">خودت ثبت نام کن</a> یا{/if}<a href="{link controller='Login'}{/link}">وارد شدن</a> برای ادامه خواندن.]]></item>
+        <item name="wbb.post.ignoredUser"><![CDATA[پست توسط {$__ignoredUser->username} پنهان شده بود.]]></item>
+        <item name="wbb.post.information"><![CDATA[اطلاعات]]></item>
         <item name="wbb.post.ipAddress"><![CDATA[IP: {$post->getIpAddress()}]]></item>
-        <item name="wbb.post.ipAddress.author"><![CDATA[Other IP Addresses for {$post->username}]]></item>
-        <item name="wbb.post.ipAddress.hostname"><![CDATA[Hostname]]></item>
-        <item name="wbb.post.ipAddress.otherUsers"><![CDATA[Other Users for IP Address {$post->getIpAddress()}]]></item>
-        <item name="wbb.post.ipAddress.post"><![CDATA[IP Address for {$post->username}]]></item>
-        <item name="wbb.post.ipAddress.title"><![CDATA[IP Address]]></item>
-        <item name="wbb.post.like.notification.message"><![CDATA[<strong>{$author}</strong> reacted to your post in the thread <strong>{$thread->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
-        <item name="wbb.post.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} reacted to your post in the thread <strong>{$thread->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
-        <item name="wbb.post.like.notification.title"><![CDATA[Reaction to your post]]></item>
-        <item name="wbb.post.like.notification.title.stacked"><![CDATA[{#$count} users reacted to your post]]></item>
-        <item name="wbb.post.mention.notification.mail.html"><![CDATA[<p><strong>{$author}</strong> mentioned you in the thread <a href="{$post->getLink()}">{$thread->getTitle()}</a> in forum <a href="{$thread->getBoard()->getLink()}">{$thread->getBoard()->getTitle()}</a>{if WBB_POST_NOTIFICATION_MAIL_INCLUDE_MESSAGE}:{else}.{/if}</p>]]></item>
-        <item name="wbb.post.mention.notification.mail.plaintext"><![CDATA[{@$author} mentioned you in the thread “{@$thread->getTitle()}” [URL:{@$post->getLink()}] in forum “{@$thread->getBoard()->getTitle()}”{if WBB_POST_NOTIFICATION_MAIL_INCLUDE_MESSAGE}:{else}.{/if}]]></item>
-        <item name="wbb.post.mention.notification.mail.title"><![CDATA[You were mentioned in the thread "{@$userNotificationObject->getThread()->topic}"]]></item>
-        <item name="wbb.post.mention.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A guest{/if} mentioned you in the thread <strong>{$userNotificationObject->getThread()->getTitle()}</strong>.]]></item>
-        <item name="wbb.post.mention.notification.title"><![CDATA[You were mentioned]]></item>
-        <item name="wbb.post.message"><![CDATA[Message]]></item>
-        <item name="wbb.post.message.error.minCharLength"><![CDATA[The message is too short, it must contain at least {#$minCharLength} characters.]]></item>
-        <item name="wbb.post.message.error.minWordCount"><![CDATA[The message is too short, it must contain at least {#$minWordCount} words.]]></item>
-        <item name="wbb.post.moderation.disabledPost"><![CDATA[This post will remain inaccessible for others until approved by a moderator.]]></item>
-        <item name="wbb.post.moderation.info"><![CDATA[Newly created posts will remain inaccessible for others until approved by a moderator.]]></item>
-        <item name="wbb.post.moderation.redirect"><![CDATA[Your post will be displayed once approved.]]></item>
-        <item name="wbb.post.moveToNewThread"><![CDATA[Move Into a New Thread]]></item>
-        <item name="wbb.post.moveToNewThread.boardID"><![CDATA[Destination Forum]]></item>
-        <item name="wbb.post.notification.mail.html"><![CDATA[<p>{@$authorList} replied to the thread <a href="{$post->getLink()}">{$thread->getTitle()}</a> in forum <a href="{$thread->getBoard()->getLink()}">{$thread->getBoard()->getTitle()}</a>{if WBB_POST_NOTIFICATION_MAIL_INCLUDE_MESSAGE}:{else}.{/if}</p>]]></item>
-        <item name="wbb.post.notification.mail.plaintext"><![CDATA[{@$authorList} replied to the thread “{@$thread->getTitle()}” [URL:{@$post->getLink()}] in forum “{@$thread->getBoard()->getTitle()}”{if WBB_POST_NOTIFICATION_MAIL_INCLUDE_MESSAGE && $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
-        <item name="wbb.post.notification.mail.title"><![CDATA[New post in watched thread "{@$thread->getTitle()}"]]></item>
-        <item name="wbb.post.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A guest{/if} replied to the thread <strong>{$userNotificationObject->getThread()->getTitle()}</strong>.]]></item>
-        <item name="wbb.post.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} replied to the thread <strong>{$message->getThread()->getTitle()}</strong>.]]></item>
-        <item name="wbb.post.notification.moderate.close.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A moderator{/if} closed your post <strong>{$post->getTitle()}</strong>.]]></item>
-        <item name="wbb.post.notification.moderate.close.notification.title"><![CDATA[Your post has been closed]]></item>
+        <item name="wbb.post.ipAddress.author"><![CDATA[برای سایر آدرس های IP {$post->username}]]></item>
+        <item name="wbb.post.ipAddress.hostname"><![CDATA[نام میزبان]]></item>
+        <item name="wbb.post.ipAddress.otherUsers"><![CDATA[IPسایر کاربران برای آدرس  {$post->getIpAddress()}]]></item>
+        <item name="wbb.post.ipAddress.post"><![CDATA[برای IP آدرس {$post->username}]]></item>
+        <item name="wbb.post.ipAddress.title"><![CDATA[ IPآدرس های]]></item>
+        <item name="wbb.post.like.notification.message"><![CDATA[<strong>{$author}</strong>به پست شما در تاپیک واکنش نشان داد <strong>{$thread->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+        <item name="wbb.post.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} rبه پست شما در تاپیک واکنش نشان داد <strong>{$thread->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+        <item name="wbb.post.like.notification.title"><![CDATA[واکنش به پست شما]]></item>
+        <item name="wbb.post.like.notification.title.stacked"><![CDATA[{#$count} کاربران به پست شما واکنش نشان دادند]]></item>
+        <item name="wbb.post.mention.notification.mail.html"><![CDATA[<p><strong>{$author}</strong> از شما در تاپیک نام برد <a href="{$post->getLink()}">{$thread->getTitle()}</a>در انجمن <a href="{$thread->getBoard()->getLink()}">{$thread->getBoard()->getTitle()}</a>{if WBB_POST_NOTIFICATION_MAIL_INCLUDE_MESSAGE}:{else}.{/if}</p>]]></item>
+        <item name="wbb.post.mention.notification.mail.plaintext"><![CDATA[{@$author} از شما در تاپیک نام برد “{@$thread->getTitle()}” [URL:{@$post->getLink()}] در انجمن “{@$thread->getBoard()->getTitle()}”{if WBB_POST_NOTIFICATION_MAIL_INCLUDE_MESSAGE}:{else}.{/if}]]></item>
+        <item name="wbb.post.mention.notification.mail.title"><![CDATA[در تاپیک از شما نام برده شد "{@$userNotificationObject->getThread()->topic}"]]></item>
+        <item name="wbb.post.mention.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}یک مهمان{/if} از شما در تاپیک نام برد <strong>{$userNotificationObject->getThread()->getTitle()}</strong>.]]></item>
+        <item name="wbb.post.mention.notification.title"><![CDATA[به شما اشاره شد]]></item>
+        <item name="wbb.post.message"><![CDATA[پیام]]></item>
+        <item name="wbb.post.message.error.minCharLength"><![CDATA[پیام خیلی کوتاه است، حداقل باید حاوی {#$minCharLength} شخصیت ها باشد.]]></item>
+        <item name="wbb.post.message.error.minWordCount"><![CDATA[پیام خیلی کوتاه است، حداقل باید حاوی  {#$minWordCount} کلمات باشد.]]></item>
+        <item name="wbb.post.moderation.disabledPost"><![CDATA[این پست تا زمانی که توسط تعدیل کننده تایید نشود برای دیگران غیرقابل دسترسی خواهد بود.]]></item>
+        <item name="wbb.post.moderation.info"><![CDATA[پست‌های ایجاد شده جدید تا زمانی که توسط تعدیل کننده تایید نشود، برای دیگران غیرقابل دسترسی باقی می‌ماند.]]></item>
+        <item name="wbb.post.moderation.redirect"><![CDATA[پست شما پس از تایید نمایش داده می شود.]]></item>
+        <item name="wbb.post.moveToNewThread"><![CDATA[حرکت به یک موضوع جدید]]></item>
+        <item name="wbb.post.moveToNewThread.boardID"><![CDATA[انجمن مقصد]]></item>
+        <item name="wbb.post.notification.mail.html"><![CDATA[<p>{@$authorList} به تاپیک پاسخ داد <a href="{$post->getLink()}">{$thread->getTitle()}</a> در انجمن <a href="{$thread->getBoard()->getLink()}">{$thread->getBoard()->getTitle()}</a>{if WBB_POST_NOTIFICATION_MAIL_INCLUDE_MESSAGE}:{else}.{/if}</p>]]></item>
+        <item name="wbb.post.notification.mail.plaintext"><![CDATA[{@$authorList} به تاپیک پاسخ داد  “{@$thread->getTitle()}” [URL:{@$post->getLink()}] در انجمن “{@$thread->getBoard()->getTitle()}”{if WBB_POST_NOTIFICATION_MAIL_INCLUDE_MESSAGE && $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+        <item name="wbb.post.notification.mail.title"><![CDATA[پست جدید در تاپیک تماشا شده "{@$thread->getTitle()}"]]></item>
+        <item name="wbb.post.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}یک مهمان{/if} به تاپیک پاسخ داد <strong>{$userNotificationObject->getThread()->getTitle()}</strong>.]]></item>
+        <item name="wbb.post.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language}به تاپیک پاسخ داد <strong>{$message->getThread()->getTitle()}</strong>.]]></item>
+        <item name="wbb.post.notification.moderate.close.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}یک تعدیل کننده{/if} پستت را بست <strong>{$post->getTitle()}</strong>.]]></item>
+        <item name="wbb.post.notification.moderate.close.notification.title"><![CDATA[پست شما بسته شده است]]></item>
         <item name="wbb.post.notification.moderate.enable.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A moderator{/if} enabled your post <strong>{$post->getTitle()}</strong>.]]></item>
         <item name="wbb.post.notification.moderate.enable.notification.title"><![CDATA[Your post has been enabled]]></item>
         <item name="wbb.post.notification.moderate.move.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A moderator{/if} moved your post <strong>{$post->getTitle()}</strong>.]]></item>
