@@ -970,40 +970,40 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="gallery.image.commentResponse.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} واکنش نشان داده شد به پاسخ شما درمورد نظر  {if $image->isImage()}image{else}video{/if} <strong>{$image->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
         <item name="gallery.image.commentResponse.like.notification.title"><![CDATA[واکنش نشان داده شد به پاسخ شما در مورد نظر  ({if $image->isImage()}Image{else}Video{/if})]]></item>
         <item name="gallery.image.commentResponse.like.notification.title.stacked"><![CDATA[{#$count} کاربران واکنش نشان دادند به پاسخ شما درمورد نظر  ({if $image->isImage()}Image{else}Video{/if})]]></item>
-        <item name="gallery.image.commentResponse.notification.mail.html"><![CDATA[<p>{@$authorList} replied to your comment on the {if $image->isImage()}image{else}video{/if} <a href="{$image->getLink()}#comment{@$commentID}/response{@$responseID}">{$image->getTitle()}</a>:</p>]]></item>
-        <item name="gallery.image.commentResponse.notification.mail.plaintext"><![CDATA[{@$authorList} replied to your comment on the {if $image->isImage()}image{else}video{/if} “{@$image->getTitle()}” [URL:{@$image->getLink()}#comment{@$commentID}/response{@$responseID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
-        <item name="gallery.image.commentResponse.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A guest{/if} replied to your comment on the {if $image->isImage()}image{else}video{/if} <strong>{$image->getTitle()}</strong>.]]></item>
-        <item name="gallery.image.commentResponse.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} replied to your comment on the {if $image->isImage()}image{else}video{/if} <strong>{$image->getTitle()}</strong>.]]></item>
-        <item name="gallery.image.commentResponse.notification.title"><![CDATA[New Reply ({if $image->isImage()}Image{else}Video{/if})]]></item>
-        <item name="gallery.image.commentResponse.notification.title.stacked"><![CDATA[{#$timesTriggered} new Replies ({if $image->isImage()}Image{else}Video{/if})]]></item>
-        <item name="gallery.image.commentResponseOwner.notification.mail.html"><![CDATA[<p>{@$authorList} replied to <strong>{$commentAuthor}</strong>’s comment on your {if $image->isImage()}image{else}video{/if} <a href="{$image->getLink()}#comment{@$commentID}/response{@$responseID}">{$image->getTitle()}</a>:</p>]]></item>
-        <item name="gallery.image.commentResponseOwner.notification.mail.plaintext"><![CDATA[{@$authorList} replied to {@$commentAuthor}’s comment on your {if $image->isImage()}image{else}video{/if} “{@$image->getTitle()}” [URL:{@$image->getLink()}#comment{@$commentID}/response{@$responseID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
-        <item name="gallery.image.commentResponseOwner.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A guest{/if} replied to the comment by <strong>{$commentAuthor}</strong> on your {if $image->isImage()}image{else}video{/if} <strong>{$image->getTitle()}</strong>.]]></item>
-        <item name="gallery.image.commentResponseOwner.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} replied to a comment by <strong>{$author}</strong> on your {if $image->isImage()}image{else}video{/if} <strong>{$image->getTitle()}</strong>.]]></item>
-        <item name="gallery.image.commentResponseOwner.notification.title"><![CDATA[New Reply ({if $image->isImage()}Image{else}Video{/if})]]></item>
-        <item name="gallery.image.commentResponseOwner.notification.title.stacked"><![CDATA[{#$timesTriggered} new Replies ({if $image->isImage()}Image{else}Video{/if})]]></item>
-        <item name="gallery.image.comments"><![CDATA[Comments]]></item>
-        <item name="gallery.image.comments.count"><![CDATA[{#$image->comments} comment{if $image->comments != 1}s{/if}]]></item>
-        <item name="gallery.image.comments.label"><![CDATA[{#$comments} Comment{if $comments != 1}s{/if}]]></item>
-        <item name="gallery.image.condition.category"><![CDATA[Category]]></item>
-        <item name="gallery.image.condition.category.description"><![CDATA[Images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/Videos{/if} have to be in any of the selected categories. Multiple categories can be selected by holding the “Ctrl/Shift” key (Windows) or “Command” (Mac OS) key and clicking on the desired categories.]]></item>
-        <item name="gallery.image.condition.comments"><![CDATA[Comments]]></item>
-        <item name="gallery.image.condition.displayMode"><![CDATA[Display Mode]]></item>
+        <item name="gallery.image.commentResponse.notification.mail.html"><![CDATA[<p>{@$authorList} به نظرات شما پاسخ داد  {if $image->isImage()}image{else}video{/if} <a href="{$image->getLink()}#comment{@$commentID}/response{@$responseID}">{$image->getTitle()}</a>:</p>]]></item>
+        <item name="gallery.image.commentResponse.notification.mail.plaintext"><![CDATA[{@$authorList}  به نظرات شما پاسخ داد {if $image->isImage()}image{else}video{/if} “{@$image->getTitle()}” [URL:{@$image->getLink()}#comment{@$commentID}/response{@$responseID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+        <item name="gallery.image.commentResponse.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A guest{/if}  به نظرات شما پاسخ داد {if $image->isImage()}image{else}video{/if} <strong>{$image->getTitle()}</strong>.]]></item>
+        <item name="gallery.image.commentResponse.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language}  به نظرات شما پاسخ داد {if $image->isImage()}image{else}video{/if} <strong>{$image->getTitle()}</strong>.]]></item>
+        <item name="gallery.image.commentResponse.notification.title"><![CDATA[پاسخ جدید  ({if $image->isImage()}Image{else}Video{/if})]]></item>
+        <item name="gallery.image.commentResponse.notification.title.stacked"><![CDATA[{#$timesTriggered} پاسخ های جدید  ({if $image->isImage()}Image{else}Video{/if})]]></item>
+        <item name="gallery.image.commentResponseOwner.notification.mail.html"><![CDATA[<p>{@$authorList} پاسخ به  <strong>{$commentAuthor}</strong>’s نظر درمورد  شما{if $image->isImage()}image{else}video{/if} <a href="{$image->getLink()}#comment{@$commentID}/response{@$responseID}">{$image->getTitle()}</a>:</p>]]></item>
+        <item name="gallery.image.commentResponseOwner.notification.mail.plaintext"><![CDATA[{@$authorList} پاسخ به  {@$commentAuthor}’s نظر در مور شما {if $image->isImage()}image{else}video{/if} “{@$image->getTitle()}” [URL:{@$image->getLink()}#comment{@$commentID}/response{@$responseID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+        <item name="gallery.image.commentResponseOwner.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}مهمان {/if} پاسخ داده شد به نظر توسط  <strong>{$commentAuthor}</strong> به {if $image->isImage()}image{else}video{/if} <strong>{$image->getTitle()}</strong>.]]></item>
+        <item name="gallery.image.commentResponseOwner.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} پاسخ داده شد به نظر توسط  <strong>{$author}</strong> به {if $image->isImage()}image{else}video{/if} <strong>{$image->getTitle()}</strong>.]]></item>
+        <item name="gallery.image.commentResponseOwner.notification.title"><![CDATA[پاسخ جدید  ({if $image->isImage()}Image{else}Video{/if})]]></item>
+        <item name="gallery.image.commentResponseOwner.notification.title.stacked"><![CDATA[{#$timesTriggered} پاسخ های جدید  ({if $image->isImage()}Image{else}Video{/if})]]></item>
+        <item name="gallery.image.comments"><![CDATA[نظرات ]]></item>
+        <item name="gallery.image.comments.count"><![CDATA[{#$image->comments} نظر {if $image->comments != 1}ها {/if}]]></item>
+        <item name="gallery.image.comments.label"><![CDATA[{#$comments} نظر {if $comments != 1}ها {/if}]]></item>
+        <item name="gallery.image.condition.category"><![CDATA[دسته بندی ]]></item>
+        <item name="gallery.image.condition.category.description"><![CDATA[تصاویر {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/Videos{/if} have to be in any of the selected categories. Multiple categories can be selected by holding the “Ctrl/Shift” key (Windows) or “Command” (Mac OS) key and clicking on the desired categories.]]></item>
+        <item name="gallery.image.condition.comments"><![CDATA[نظرات ]]></item>
+        <item name="gallery.image.condition.displayMode"><![CDATA[حالت نمایش ]]></item>
         <item name="gallery.image.condition.displayMode.description"><![CDATA[This option is not applicable for boxes placed in the sidebars. For the “Images in Motion” option, at least two images larger than {#1200}&times;{#900} pixels have to be available.]]></item>
-        <item name="gallery.image.condition.displayMode.grid"><![CDATA[Grid]]></item>
-        <item name="gallery.image.condition.displayMode.masonry"><![CDATA[Masonry]]></item>
-        <item name="gallery.image.condition.displayMode.motion"><![CDATA[Images in Motion]]></item>
-        <item name="gallery.image.condition.state"><![CDATA[State]]></item>
-        <item name="gallery.image.condition.state.enableComments.error.conflict"><![CDATA[“Enabled Comments” and “Disabled Comments” cannot be selected at the same time.]]></item>
-        <item name="gallery.image.condition.state.hasDisabledComments"><![CDATA[Disabled Comments]]></item>
-        <item name="gallery.image.condition.state.hasEnabledComments"><![CDATA[Enabled Comments]]></item>
-        <item name="gallery.image.condition.state.isDeleted"><![CDATA[In Trash Bin]]></item>
-        <item name="gallery.image.condition.state.isDeleted.error.conflict"><![CDATA[“In Trash Bin” and “Not in Trash Bin” cannot be selected at the same time.]]></item>
-        <item name="gallery.image.condition.state.isDisabled"><![CDATA[Awaiting Approval]]></item>
-        <item name="gallery.image.condition.state.isDisabled.error.conflict"><![CDATA[“Awaiting Approval” and “Approved” cannot be selected at the same time.]]></item>
-        <item name="gallery.image.condition.state.isEnabled"><![CDATA[Approved]]></item>
-        <item name="gallery.image.condition.state.isNotDeleted"><![CDATA[Not in Trash Bin]]></item>
-        <item name="gallery.image.condition.timeFrame"><![CDATA[Age]]></item>
+        <item name="gallery.image.condition.displayMode.grid"><![CDATA[توری]]></item>
+        <item name="gallery.image.condition.displayMode.masonry"><![CDATA[سنگ تراشی]]></item>
+        <item name="gallery.image.condition.displayMode.motion"><![CDATA[تصویر در حرکت]]></item>
+        <item name="gallery.image.condition.state"><![CDATA[حالت ]]></item>
+        <item name="gallery.image.condition.state.enableComments.error.conflict"><![CDATA[“فعال کردن نظرات ” و “غیر فعال کردن نظرات ” نمیتوان به صورت همزمان انتخاب شوند .]]></item>
+        <item name="gallery.image.condition.state.hasDisabledComments"><![CDATA[غیر فعال کردن نظرات ]]></item>
+        <item name="gallery.image.condition.state.hasEnabledComments"><![CDATA[فعال کردن نظرات ]]></item>
+        <item name="gallery.image.condition.state.isDeleted"><![CDATA[در سطل زباله ]]></item>
+        <item name="gallery.image.condition.state.isDeleted.error.conflict"><![CDATA[“در سطل زباله ” و “به سطل زباله نرود ” نمیتوان به صورت همزمان انتخاب شوند .]]></item>
+        <item name="gallery.image.condition.state.isDisabled"><![CDATA[در انتظار تایید ]]></item>
+        <item name="gallery.image.condition.state.isDisabled.error.conflict"><![CDATA[“در انتظار تایید ” و  “تایید شد” نمیتوان به صورت همزمان انتخاب شوند .]]></item>
+        <item name="gallery.image.condition.state.isEnabled"><![CDATA[تایید شد ]]></item>
+        <item name="gallery.image.condition.state.isNotDeleted"><![CDATA[به سطل اشغال منتقل نشود ]]></item>
+        <item name="gallery.image.condition.timeFrame"><![CDATA[سن]]></item>
         <item name="gallery.image.condition.timeFrame.description"><![CDATA[This option sets the minimum and maximum age in days of the images shown in the box.]]></item>
         <item name="gallery.image.condition.type"><![CDATA[Type]]></item>
         <item name="gallery.image.condition.type.image"><![CDATA[Images]]></item>
