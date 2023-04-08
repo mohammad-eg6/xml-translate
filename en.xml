@@ -1598,81 +1598,81 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wbb.post.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language}به تاپیک پاسخ داد <strong>{$message->getThread()->getTitle()}</strong>.]]></item>
         <item name="wbb.post.notification.moderate.close.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}یک تعدیل کننده{/if} پستت را بست <strong>{$post->getTitle()}</strong>.]]></item>
         <item name="wbb.post.notification.moderate.close.notification.title"><![CDATA[پست شما بسته شده است]]></item>
-        <item name="wbb.post.notification.moderate.enable.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A moderator{/if} enabled your post <strong>{$post->getTitle()}</strong>.]]></item>
+        <item name="wbb.post.notification.moderate.enable.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{elseتعدیل کننده{/if} پست شما را فعال کرد <strong>{$post->getTitle()}</strong>.]]></item>
         <item name="wbb.post.notification.moderate.enable.notification.title"><![CDATA[Your post has been enabled]]></item>
-        <item name="wbb.post.notification.moderate.move.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A moderator{/if} moved your post <strong>{$post->getTitle()}</strong>.]]></item>
-        <item name="wbb.post.notification.moderate.move.notification.title"><![CDATA[Your post has been moved]]></item>
-        <item name="wbb.post.notification.moderate.trash.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A moderator{/if} trashed your post <strong>{$post->getTitle()}</strong>{if !$userNotificationObject->getDecoratedObject()->__get('reason')|empty} for the reason “{$userNotificationObject->getDecoratedObject()->reason|truncate:255:'…'}“{/if}.]]></item>
-        <item name="wbb.post.notification.moderate.trash.notification.title"><![CDATA[Your post has been trashed]]></item>
-        <item name="wbb.post.notification.title"><![CDATA[New post in watched thread]]></item>
-        <item name="wbb.post.notification.title.stacked"><![CDATA[{#$timesTriggered} new posts in watched thread]]></item>
-        <item name="wbb.post.official"><![CDATA[Official Post]]></item>
-        <item name="wbb.post.official.first"><![CDATA[1st Official Post]]></item>
-        <item name="wbb.post.official.next"><![CDATA[Next Official Post]]></item>
-        <item name="wbb.post.official.previous"><![CDATA[Previous Official Post]]></item>
-        <item name="wbb.post.option.closeThread"><![CDATA[Close thread]]></item>
-        <item name="wbb.post.option.closeThread.description"><![CDATA[Closes thread after your post has been created.]]></item>
-        <item name="wbb.post.option.markAsDone"><![CDATA[Mark as Resolved]]></item>
-        <item name="wbb.post.option.markAsDone.description"><![CDATA[Marks thread as resolved after post creation.]]></item>
-        <item name="wbb.post.option.markAsOfficial"><![CDATA[Mark as “Official”]]></item>
-        <item name="wbb.post.option.markAsOfficial.description"><![CDATA[Official posts will be marked up with a special formatting and can be found more easily.]]></item>
-        <item name="wbb.post.option.removeEditNote"><![CDATA[Remove the edit note]]></item>
-        <item name="wbb.post.option.removeEditNote.description"><![CDATA[Removes the “Post edited by …” note.]]></item>
-        <item name="wbb.post.option.showEditNote"><![CDATA[Display the edit note]]></item>
-        <item name="wbb.post.option.showEditNote.description"><![CDATA[Appends the “Post edited by …” note.]]></item>
-        <item name="wbb.post.posts"><![CDATA[Posts]]></item>
-        <item name="wbb.post.previousPosts"><![CDATA[Previous Post{if $items != 1}s{/if}]]></item>
-        <item name="wbb.post.quote.notification.mail.html"><![CDATA[<p><strong>{$author}</strong> quoted one of your posts in a reply to <a href="{@$post->getLink()}">{$thread->getTitle()}</a> in forum <a href="{$thread->getBoard()->getLink()}">{$thread->getBoard()->getTitle()}</a>{if WBB_POST_NOTIFICATION_MAIL_INCLUDE_MESSAGE}:{else}.{/if}</p>]]></item>
-        <item name="wbb.post.quote.notification.mail.plaintext"><![CDATA[{@$author} quoted one of your posts in a reply to “{@$thread->getTitle()}” [URL:{@$post->getLink()}] in forum “{@$thread->getBoard()->getTitle()}”{if WBB_POST_NOTIFICATION_MAIL_INCLUDE_MESSAGE}:{else}.{/if}]]></item>
-        <item name="wbb.post.quote.notification.mail.title"><![CDATA[You were quoted in thread "{@$userNotificationObject->getThread()->topic}"]]></item>
-        <item name="wbb.post.quote.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A guest{/if} quoted one of your posts in a reply to <strong>{$userNotificationObject->getThread()->getTitle()}</strong>.]]></item>
-        <item name="wbb.post.quote.notification.title"><![CDATA[You were quoted]]></item>
-        <item name="wbb.post.reported"><![CDATA[Post Has Been Reported]]></item>
-        <item name="wbb.post.subject"><![CDATA[Title]]></item>
-        <item name="wbb.post.subscribeThread"><![CDATA[Watch thread]]></item>
-        <item name="wbb.post.subscribeThread.description"><![CDATA[Adds thread to your watch list.]]></item>
-        <item name="wbb.post.summary"><![CDATA[Post by {user object=$post->getUserProfile()} ({@$post->time|time}).]]></item>
-        <item name="wbb.post.userPosts"><![CDATA[Posts by {$user->username}]]></item>
+        <item name="wbb.post.notification.moderate.move.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}تعدیل کننده{/if} پست شما را منتقل کرد <strong>{$post->getTitle()}</strong>.]]></item>
+        <item name="wbb.post.notification.moderate.move.notification.title"><![CDATA[پست شما منتقل شد]]></item>
+        <item name="wbb.post.notification.moderate.trash.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}تعدیل کننده{/if} پست شما را سطل اشغال کرد <strong>{$post->getTitle()}</strong>{if !$userNotificationObject->getDecoratedObject()->__get('reason')|empty} به این دلیل “{$userNotificationObject->getDecoratedObject()->reason|truncate:255:'…'}“{/if}.]]></item>
+        <item name="wbb.post.notification.moderate.trash.notification.title"><![CDATA[پست شما حذف شده است]]></item>
+        <item name="wbb.post.notification.title"><![CDATA[پست جدید در موضوع تماشا شده]]></item>
+        <item name="wbb.post.notification.title.stacked"><![CDATA[{#$timesTriggered} پست های جدید این موضوع تماشا شده ]]></item>
+        <item name="wbb.post.official"><![CDATA[پست رسمی]]></item>
+        <item name="wbb.post.official.first"><![CDATA[اولین پست رسمی]]></item>
+        <item name="wbb.post.official.next"><![CDATA[پست رسمی بعدی]]></item>
+        <item name="wbb.post.official.previous"><![CDATA[پست رسمی قبلی]]></item>
+        <item name="wbb.post.option.closeThread"><![CDATA[بستن موضوع]]></item>
+        <item name="wbb.post.option.closeThread.description"><![CDATA[پس از ایجاد پست شما، موضوع را می بندد.]]></item>
+        <item name="wbb.post.option.markAsDone"><![CDATA[علامت زدن به عنوان حل شده]]></item>
+        <item name="wbb.post.option.markAsDone.description"><![CDATA[علامت زدن به عنوان حلشده.]]></item>
+        <item name="wbb.post.option.markAsOfficial"><![CDATA[علامت گذاری به عنوان "رسمی"]]></item>
+        <item name="wbb.post.option.markAsOfficial.description"><![CDATA[پست‌های رسمی با قالب‌بندی خاصی علامت‌گذاری می‌شوند و راحت‌تر پیدا می‌شوند.]]></item>
+        <item name="wbb.post.option.removeEditNote"><![CDATA[ویرایش متن حدف کنید]]></item>
+        <item name="wbb.post.option.removeEditNote.description"><![CDATA[متن "پست ویرایش شده توسط ..." را حذف می کند.]]></item>
+        <item name="wbb.post.option.showEditNote"><![CDATA[نمایش متن ویرایش]]></item>
+        <item name="wbb.post.option.showEditNote.description"><![CDATA[یادداشت «پست ویرایش شده توسط …» را اضافه می کند.]]></item>
+        <item name="wbb.post.posts"><![CDATA[پست ها]]></item>
+        <item name="wbb.post.previousPosts"><![CDATA[پست قبلی{if $items != 1}s{/if}]]></item>
+        <item name="wbb.post.quote.notification.mail.html"><![CDATA[<p><strong>{$author}</strong> یکی از پست های شما را به عنوان پاسخ به نقل قول کرد <a href="{@$post->getLink()}">{$thread->getTitle()}</a> in forum <a href="{$thread->getBoard()->getLink()}">{$thread->getBoard()->getTitle()}</a>{if WBB_POST_NOTIFICATION_MAIL_INCLUDE_MESSAGE}:{else}.{/if}</p>]]></item>
+        <item name="wbb.post.quote.notification.mail.plaintext"><![CDATA[{@$author} یکی از پست های شما را به عنوان پاسخ به نقل قول کرد “{@$thread->getTitle()}” [URL:{@$post->getLink()}] در انجمن “{@$thread->getBoard()->getTitle()}”{if WBB_POST_NOTIFICATION_MAIL_INCLUDE_MESSAGE}:{else}.{/if}]]></item>
+        <item name="wbb.post.quote.notification.mail.title"><![CDATA[از شما در موضوع نقل قول شد "{@$userNotificationObject->getThread()->topic}"]]></item>
+        <item name="wbb.post.quote.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}مهمان{/if} یکی از پست های شما را به عنوان پاسخ به نقل قول کرد <strong>{$userNotificationObject->getThread()->getTitle()}</strong>.]]></item>
+        <item name="wbb.post.quote.notification.title"><![CDATA[از شما نقل قول شد]]></item>
+        <item name="wbb.post.reported"><![CDATA[پست گزارش شده است]]></item>
+        <item name="wbb.post.subject"><![CDATA[عنوان]]></item>
+        <item name="wbb.post.subscribeThread"><![CDATA[موضوع تماشا]]></item>
+        <item name="wbb.post.subscribeThread.description"><![CDATA[موضوع را به لیست تماشای شما اضافه می کند.]]></item>
+        <item name="wbb.post.summary"><![CDATA[ارسال توسط {user object=$post->getUserProfile()} ({@$post->time|time}).]]></item>
+        <item name="wbb.post.userPosts"><![CDATA[ارسال توسط {$user->username}]]></item>
     </category>
     <category name="wbb.search">
-        <item name="wbb.search.boards"><![CDATA[Search in Forums]]></item>
-        <item name="wbb.search.findAttachments"><![CDATA[Match only posts with attachments]]></item>
-        <item name="wbb.search.findFirstPosts"><![CDATA[Match only first posts]]></item>
-        <item name="wbb.search.findOfficialPosts"><![CDATA[Match only official posts]]></item>
-        <item name="wbb.search.findPolls"><![CDATA[Match only posts with polls]]></item>
-        <item name="wbb.search.findThreads"><![CDATA[Display results as threads]]></item>
-        <item name="wbb.search.findThreadsWithBestAnswer"><![CDATA[Match only threads that have a best answer]]></item>
-        <item name="wbb.search.searchedThread"><![CDATA[Only search thread {anchor object=$searchedThread class='wbbTopicLink'}]]></item>
+        <item name="wbb.search.boards"><![CDATA[جستجو در انجمن ها]]></item>
+        <item name="wbb.search.findAttachments"><![CDATA[فقط پست ها را با پیوست ها مطابقت دهید]]></item>
+        <item name="wbb.search.findFirstPosts"><![CDATA[فقط با اولین پست ها مطابقت داشته باشید]]></item>
+        <item name="wbb.search.findOfficialPosts"><![CDATA[فقط با پست های رسمی مطابقت دهید]]></item>
+        <item name="wbb.search.findPolls"><![CDATA[فقط پست ها را با نظرسنجی ها مطابقت دهید]]></item>
+        <item name="wbb.search.findThreads"><![CDATA[نمایش نتایج به صورت موضوعات]]></item>
+        <item name="wbb.search.findThreadsWithBestAnswer"><![CDATA[فقط موضوعاتی را که بهترین پاسخ را دارند مطابقت دهید]]></item>
+        <item name="wbb.search.searchedThread"><![CDATA[فقط موضوع جستجو {anchor object=$searchedThread class='wbbTopicLink'}]]></item>
     </category>
     <category name="wbb.thread">
-        <item name="wbb.thread.add"><![CDATA[Create Thread]]></item>
-        <item name="wbb.thread.announcement"><![CDATA[Announcement]]></item>
-        <item name="wbb.thread.article.joinTheDiscussion"><![CDATA[Join the discussion!]]></item>
-        <item name="wbb.thread.article.moreReplies"><![CDATA[{if $moreReplies == 1}One more reply{else}{#$moreReplies} more replies{/if}]]></item>
-        <item name="wbb.thread.article.replies"><![CDATA[{#$replies} {if $replies == 1}Reply{else}Replies{/if}]]></item>
-        <item name="wbb.thread.article.replies.title"><![CDATA[Replies]]></item>
-        <item name="wbb.thread.article.reply"><![CDATA[Write a reply…]]></item>
-        <item name="wbb.thread.articleThread.info"><![CDATA[{#$articleThread->replies} {if $articleThread->replies == 1}reply{else}replies{/if}{if $articleThread->replies > 0}, last: {@$articleThread->lastPostTime|time}{/if}]]></item>
-        <item name="wbb.thread.articleThread.message"><![CDATA[<p>Discussion of article <a href="{@$articleContent->getLink()}">{@$articleContent->getTitle()}</a>:</p>
+        <item name="wbb.thread.add"><![CDATA[ایجاد موضوع]]></item>
+        <item name="wbb.thread.announcement"><![CDATA[اعلامیه]]></item>
+        <item name="wbb.thread.article.joinTheDiscussion"><![CDATA[به بحث بپیوندید!]]></item>
+        <item name="wbb.thread.article.moreReplies"><![CDATA[{if $moreReplies == 1}یک پاسخ دیگر{else}{#$moreReplies} پاسخ های بیشتر{/if}]]></item>
+        <item name="wbb.thread.article.replies"><![CDATA[{#$replies} {if $replies == 1}پاسخ{else}پاسخ ها{/if}]]></item>
+        <item name="wbb.thread.article.replies.title"><![CDATA[پاسخ ها]]></item>
+        <item name="wbb.thread.article.reply"><![CDATA[نوشتن پاسخ…]]></item>
+        <item name="wbb.thread.articleThread.info"><![CDATA[{#$articleThread->replies} {if $articleThread->replies == 1}پاسخ{else}replies{/if}{if $articleThread->replies > 0}, last: {@$articleThread->lastPostTime|time}{/if}]]></item>
+        <item name="wbb.thread.articleThread.message"><![CDATA[<p>بحث مقاله <a href="{@$articleContent->getLink()}">{@$articleContent->getTitle()}</a>:</p>
 <woltlab-quote>{@$articleContent->getFormattedTeaser()}</woltlab-quote>]]></item>
         <item name="wbb.thread.articleThread.subject"><![CDATA[{@$articleContent->getTitle()}]]></item>
-        <item name="wbb.thread.attachments"><![CDATA[Thread Contains {#$thread->attachments} Attachment{if $thread->attachments != 1}s{/if}]]></item>
-        <item name="wbb.thread.bbcode.type"><![CDATA[Thread]]></item>
-        <item name="wbb.thread.bestAnswer"><![CDATA[Best Answer]]></item>
-        <item name="wbb.thread.boxList.description.activity"><![CDATA[{#$boxThread->replies} {if $boxThread->replies == 1}Reply{else}Replies{/if}]]></item>
+        <item name="wbb.thread.attachments"><![CDATA[موضوع شامل {#$thread->attachments} پیوست{if $thread->attachments != 1}s{/if}]]></item>
+        <item name="wbb.thread.bbcode.type"><![CDATA[موضوع]]></item>
+        <item name="wbb.thread.bestAnswer"><![CDATA[بهترین جواب]]></item>
+        <item name="wbb.thread.boxList.description.activity"><![CDATA[{#$boxThread->replies} {if $boxThread->replies == 1}پاسخ{else}پاسخ ها{/if}]]></item>
         <item name="wbb.thread.boxList.description.cumulativeLikes"><![CDATA[{include file='__topReaction' cachedReactions=$boxThread->cachedReactions render='full'}]]></item>
-        <item name="wbb.thread.boxList.description.hotness"><![CDATA[{#$boxThread->replies} {if $boxThread->replies == 1}Reply{else}Replies{/if}, {#$boxThread->views} View{if $boxThread->views != 1}s{/if}, {$boxThread->time|dateDiff}]]></item>
+        <item name="wbb.thread.boxList.description.hotness"><![CDATA[{#$boxThread->replies} {if $boxThread->replies == 1}پاسخ{else}پاسخ ها{/if}, {#$boxThread->views} بازدید{if $boxThread->views != 1}s{/if}, {$boxThread->time|dateDiff}]]></item>
         <item name="wbb.thread.boxList.description.lastPostTime"><![CDATA[{user object=$boxThread->getLastPosterProfile() tabindex='-1'} <span class="separatorLeft">{@$boxThread->lastPostTime|time}</span>]]></item>
-        <item name="wbb.thread.boxList.description.replies"><![CDATA[{#$boxThread->replies} {if $boxThread->replies == 1}Reply{else}Replies{/if}, last: {@$boxThread->lastPostTime|time}]]></item>
-        <item name="wbb.thread.boxList.description.views"><![CDATA[{#$boxThread->views} View{if $boxThread->views != 1}s{/if}]]></item>
-        <item name="wbb.thread.button.add"><![CDATA[Create Thread]]></item>
-        <item name="wbb.thread.button.jumpToArticleThread"><![CDATA[Discussion Thread]]></item>
-        <item name="wbb.thread.closed"><![CDATA[Closed]]></item>
-        <item name="wbb.thread.closedForNewReplies"><![CDATA[This thread has been closed by a moderator.]]></item>
-        <item name="wbb.thread.closedThread"><![CDATA[You are about to reply to a closed thread.]]></item>
-        <item name="wbb.thread.condition.age"><![CDATA[Age]]></item>
-        <item name="wbb.thread.condition.age.description"><![CDATA[Number of days since the creation of the thread]]></item>
-        <item name="wbb.thread.condition.board"><![CDATA[Forum]]></item>
+        <item name="wbb.thread.boxList.description.replies"><![CDATA[{#$boxThread->replies} {if $boxThread->replies == 1}پاسخ{else}پاسخ ها{/if}, اخر: {@$boxThread->lastPostTime|time}]]></item>
+        <item name="wbb.thread.boxList.description.views"><![CDATA[{#$boxThread->views} بازدید{if $boxThread->views != 1}s{/if}]]></item>
+        <item name="wbb.thread.button.add"><![CDATA[ایجاد موضوع]]></item>
+        <item name="wbb.thread.button.jumpToArticleThread"><![CDATA[موضوع گفتگو]]></item>
+        <item name="wbb.thread.closed"><![CDATA[بسته شده]]></item>
+        <item name="wbb.thread.closedForNewReplies"><![CDATA[این موضوع توسط تعدیل کننده بسته شده است.]]></item>
+        <item name="wbb.thread.closedThread"><![CDATA[شما در حال پاسخ دادن به یک موضوع بسته هستید.]]></item>
+        <item name="wbb.thread.condition.age"><![CDATA[سن]]></item>
+        <item name="wbb.thread.condition.age.description"><![CDATA[تعداد روزهایی که از ایجاد موضوع می گذرد]]></item>
+        <item name="wbb.thread.condition.board"><![CDATA[انجمن]]></item>
         <item name="wbb.thread.condition.currentBoard"><![CDATA[Restrict to Current Forum]]></item>
         <item name="wbb.thread.condition.currentBoard.description"><![CDATA[If the page belongs to a certain forum, only threads from this forum will be selected.]]></item>
         <item name="wbb.thread.condition.displayMode"><![CDATA[Display Mode]]></item>
