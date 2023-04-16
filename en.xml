@@ -4997,107 +4997,107 @@ If you have <strong>already bought the licenses for the listed apps</strong>, th
         <item name="wcf.acp.pip.box.identifier"><![CDATA[Box Identifier]]></item>
         <item name="wcf.acp.pip.box.identifier.description"><![CDATA[The box identifier is used to update boxes. The identifier consists of least four segments separated by dots. Each segment must not be empty and may only contain the following characters: <kbd>[A-z0-9-_]</kbd>. In general, the first part of the menu identifier is the package identifier. Example: <kbd>com.foo.bar.package.Box</kbd>]]></item>
         <item name="wcf.acp.pip.box.identifier.error.notUnique"><![CDATA[The entered identifier is already used by another box.]]></item>
-        <item name="wcf.acp.pip.box.identifier.error.tooFewSegments"><![CDATA[The identifier only contains {#$segmentCount} segment{if $segmentCount > 1}s{/if}.]]></item>
-        <item name="wcf.acp.pip.box.info"><![CDATA[The <kbd>box</kbd> package installation plugin installs new pre-configured boxes. You can find more information in the <a href="https://docs.woltlab.com/latest/package/pip/box/" class="externalURL">developer documentation</a>.]]></item>
-        <item name="wcf.acp.pip.box.name"><![CDATA[Name]]></item>
-        <item name="wcf.acp.pip.box.name.description"><![CDATA[The box name is displayed in the box list in the ACP.]]></item>
-        <item name="wcf.acp.pip.box.objectType"><![CDATA[Controller]]></item>
-        <item name="wcf.acp.pip.box.objectType.description"><![CDATA[The box controller provides the content of the box.]]></item>
-        <item name="wcf.acp.pip.box.position"><![CDATA[Position]]></item>
-        <item name="wcf.acp.pip.box.showHeader"><![CDATA[Show Header]]></item>
-        <item name="wcf.acp.pip.box.visibilityExceptions.hiddenEverywhere"><![CDATA[Pages on Which the Box Will be Explicitly <strong>Visible</strong>]]></item>
-        <item name="wcf.acp.pip.box.visibilityExceptions.visibleEverywhere"><![CDATA[Pages on Which the Box Will be Explicitly <strong>Hidden</strong>]]></item>
-        <item name="wcf.acp.pip.box.visibleEverywhere"><![CDATA[Box Visible Everywhere]]></item>
-        <item name="wcf.acp.pip.clipboardAction.actionClassName"><![CDATA[Clipboard Action Class Name]]></item>
-        <item name="wcf.acp.pip.clipboardAction.actionClassName.error.notUnique"><![CDATA[There is already a clipboard action with this action name for the entered action class.]]></item>
-        <item name="wcf.acp.pip.clipboardAction.actionName"><![CDATA[Clipboard Action Name]]></item>
-        <item name="wcf.acp.pip.clipboardAction.actionName.description"><![CDATA[Unique textual identifier (per clipboard action class) of the clipboard action that may only contain letters and must start with a lowercase letter.]]></item>
-        <item name="wcf.acp.pip.clipboardAction.actionName.error.format"><![CDATA[The entered name is invalid.]]></item>
-        <item name="wcf.acp.pip.clipboardAction.info"><![CDATA[The <kbd>clipboardAction</kbd> package installation plugin installs new clipboard actions that can be executed for multiple objects at once. You can find more information in the <a href="https://docs.woltlab.com/latest/package/pip/clipboard-action/" class="externalURL">developer documentation</a>.]]></item>
-        <item name="wcf.acp.pip.clipboardAction.pages"><![CDATA[Pages]]></item>
-        <item name="wcf.acp.pip.clipboardAction.pages.description"><![CDATA[The clipboard action is available on the entered pages.]]></item>
-        <item name="wcf.acp.pip.clipboardAction.showOrder.description"><![CDATA[The entered value determines in which order the clipboard actions for the same clipboard action class are shown.]]></item>
-        <item name="wcf.acp.pip.coreObject.info"><![CDATA[The <kbd>coreObject</kbd> package installation plugin installs new <kbd>wcf\system\SingletonFactory</kbd> objects that can be accessed in templates. You can find more information in the <a href="https://docs.woltlab.com/latest/package/pip/core-object/" class="externalURL">developer documentation</a>.]]></item>
-        <item name="wcf.acp.pip.coreObject.objectName.error.notUnique"><![CDATA[The entered class is already registered as a core object.]]></item>
-        <item name="wcf.acp.pip.cronjob.canBeDisabled"><![CDATA[Cronjob Can Be Disabled]]></item>
-        <item name="wcf.acp.pip.cronjob.canBeDisabled.description"><![CDATA[Users are able to disable the cronjob so that it will not be executed.]]></item>
-        <item name="wcf.acp.pip.cronjob.canBeEdited"><![CDATA[Cronjob Can Be Edited]]></item>
-        <item name="wcf.acp.pip.cronjob.canBeEdited.description"><![CDATA[Users are able to edit the cronjob to, for example, change the execution times.]]></item>
-        <item name="wcf.acp.pip.cronjob.cronjobName"><![CDATA[Cronjob Name]]></item>
-        <item name="wcf.acp.pip.cronjob.cronjobName.description"><![CDATA[The cronjob name generally consists of the package identifier and the unqualified class name beginning with a lowercase letter and without the “Cronjob” suffix (example: <kbd>com.woltlab.wcf.example.doStuff</kbd> is the name for the cronjob <kbd>wcf\system\cronjob\DoStuffCronjob</kbd> from the <kbd>com.woltlab.wcf.example</kbd> package).]]></item>
-        <item name="wcf.acp.pip.cronjob.description.description"><![CDATA[The description explains the functionality of the cronjob.]]></item>
-        <item name="wcf.acp.pip.cronjob.info"><![CDATA[The <kbd>cronjob</kbd> package installation plugin installs new cronjobs that are executed regularly in the background. You can find more information in the <a href="https://docs.woltlab.com/latest/package/pip/cronjob/" class="externalURL">developer documentation</a>.]]></item>
-        <item name="wcf.acp.pip.cronjob.isDisabled"><![CDATA[Disable Cronjob]]></item>
-        <item name="wcf.acp.pip.cronjob.isDisabled.description"><![CDATA[If the cronjob is disabled by default, users have to manually enable it after installing the package.]]></item>
-        <item name="wcf.acp.pip.cronjob.options.description"><![CDATA[At least one of the entered options has to be enabled for the cronjob to be executed. Options of non-required packages will be reported as non-existing.]]></item>
-        <item name="wcf.acp.pip.cronjob.startDom.error.format"><![CDATA[The entered format is invalid. You have to entered a valid day of month or a list of valid days of month.]]></item>
-        <item name="wcf.acp.pip.cronjob.startDow.error.format"><![CDATA[The entered format is invalid. You have to entered a valid weekday or a list of valid weekdays.]]></item>
-        <item name="wcf.acp.pip.cronjob.startHour.error.format"><![CDATA[The entered format is invalid. You have to entered a valid hour or a list of valid hours.]]></item>
-        <item name="wcf.acp.pip.cronjob.startMinute.error.format"><![CDATA[The entered format is invalid. You have to entered a valid minute or a list of valid minutes.]]></item>
-        <item name="wcf.acp.pip.cronjob.startMonth.error.format"><![CDATA[The entered format is invalid. You have to entered a valid month or a list of valid months.]]></item>
-        <item name="wcf.acp.pip.eventListener.environment"><![CDATA[Environment]]></item>
-        <item name="wcf.acp.pip.eventListener.environment.description"><![CDATA[The environment determines whether the event listener is executed in the frontend (<kbd>user</kbd>), the ACP (<kbd>admin</kbd>), or in both (<kbd>all</kbd>).]]></item>
-        <item name="wcf.acp.pip.eventListener.eventClassName"><![CDATA[PHP Event Class]]></item>
-        <item name="wcf.acp.pip.eventListener.eventClassName.description"><![CDATA[The entered class (without leading backslash) fires the event. Alternatively, the entered class inherits from the the class firing the event.]]></item>
-        <item name="wcf.acp.pip.eventListener.eventName"><![CDATA[Event Names]]></item>
-        <item name="wcf.acp.pip.eventListener.eventName.description"><![CDATA[Names of the event of the relevant class the event listener is listening to. Default value: <kbd>:default</kbd>]]></item>
-        <item name="wcf.acp.pip.eventListener.info"><![CDATA[The <kbd>eventListener</kbd> package installation plugin installs new event listeners. You can find more information in the <a href="https://docs.woltlab.com/latest/package/pip/event-listener/" class="externalURL">developer documentation</a>.]]></item>
-        <item name="wcf.acp.pip.eventListener.inherit"><![CDATA[Support Inheritance]]></item>
-        <item name="wcf.acp.pip.eventListener.inherit.description"><![CDATA[If inheritance is supported, the event listener is not only triggered if the event is fired by the class entered above, but it is also fired by classes inheriting from the entered class.]]></item>
-        <item name="wcf.acp.pip.eventListener.listenerClassName"><![CDATA[PHP Event Listener Class]]></item>
-        <item name="wcf.acp.pip.eventListener.listenerClassName.error.noCallable"><![CDATA[The class <kbd>{$listenerClassName}</kbd> does not have a <kbd>__invoke()</kbd> method.]]></item>
-        <item name="wcf.acp.pip.eventListener.listenerName"><![CDATA[Event Listener Identifier]]></item>
-        <item name="wcf.acp.pip.eventListener.listenerName.description"><![CDATA[Unique textual identifier of the event listener that may only contain letters and must start with a lowercase letter.]]></item>
-        <item name="wcf.acp.pip.eventListener.listenerName.error.format"><![CDATA[The entered identifier is invalid.]]></item>
-        <item name="wcf.acp.pip.eventListener.listenerName.error.notUnique"><![CDATA[The entered identifier is already used by another event listener.]]></item>
-        <item name="wcf.acp.pip.eventListener.niceValue"><![CDATA[Nice Value]]></item>
-        <item name="wcf.acp.pip.eventListener.niceValue.description"><![CDATA[The nice value is used to determine the order in which event listeners for the same event are executed. Event listeners with a lower nice value are executed first.]]></item>
-        <item name="wcf.acp.pip.eventListener.options.description"><![CDATA[At least one of the entered options has to be enabled for the event listener to be executed. Options of non-required packages will be reported as non-existing.]]></item>
-        <item name="wcf.acp.pip.eventListener.permissions.description"><![CDATA[The active user must be granted at least one of the entered permissions for the event listener to be executed. Permissions of non-required packages will be reported as non-existing.]]></item>
-        <item name="wcf.acp.pip.fileDelete.application"><![CDATA[App]]></item>
-        <item name="wcf.acp.pip.fileDelete.file"><![CDATA[File]]></item>
-        <item name="wcf.acp.pip.fileDelete.info"><![CDATA[The <kbd>fileDelete</kbd> package installation plugin installs deletes files installed with the <kbd>file</kbd> package installation plugin. You can find more information in the <a href="https://docs.woltlab.com/latest/package/pip/fileDelete/" class="externalURL">developer documentation</a>.]]></item>
-        <item name="wcf.acp.pip.language.info"><![CDATA[The <kbd>language</kbd> package installation plugin installs new language items. You can find more information in the <a href="https://docs.woltlab.com/latest/package/pip/language/" class="externalURL">developer documentation</a>.]]></item>
-        <item name="wcf.acp.pip.language.languageItemValue.de.description"><![CDATA[Helpful code fragments: <kbd>{literal}{if LANGUAGE_USE_INFORMAL_VARIANT}{else}{/if}{/literal}</kbd>, <kbd>„“</kbd>]]></item>
-        <item name="wcf.acp.pip.language.languageItemValue.en.description"><![CDATA[Helpful code fragments: <kbd>“”</kbd>]]></item>
-        <item name="wcf.acp.pip.mediaProvider.html"><![CDATA[HTML Code]]></item>
-        <item name="wcf.acp.pip.mediaProvider.html.description"><![CDATA[The html code is used to produce the rendered output of the linked media content. Every named group of the regular expression is accessible as <kbd>{literal}{$name}{/literal}</kbd> where <kbd>name</kbd> is the name of the group.]]></item>
-        <item name="wcf.acp.pip.mediaProvider.html.error.className"><![CDATA[You cannot enter HTML code if you have already provided a PHP class that handles the output.]]></item>
-        <item name="wcf.acp.pip.mediaProvider.html.error.noClassName"><![CDATA[You have to provide either HTML code or a PHP class that handles the output.]]></item>
-        <item name="wcf.acp.pip.mediaProvider.info"><![CDATA[The <kbd>mediaProvider</kbd> package installation plugin installs new media providers that automatically convert links to media websites. You can find more information in the <a href="https://docs.woltlab.com/latest/package/pip/media-provider/" class="externalURL">developer documentation</a>.]]></item>
-        <item name="wcf.acp.pip.mediaProvider.name"><![CDATA[Provider Name]]></item>
-        <item name="wcf.acp.pip.mediaProvider.name.description"><![CDATA[The name of the media provider may only contain letters, numbers and dashes and must begin with a lowercase letter.]]></item>
-        <item name="wcf.acp.pip.mediaProvider.name.error.format"><![CDATA[The entered name is invalid.]]></item>
-        <item name="wcf.acp.pip.mediaProvider.regex"><![CDATA[Regular Expressions]]></item>
-        <item name="wcf.acp.pip.mediaProvider.regex.description"><![CDATA[The entered regular expressions (without delimiters) are used to check if this media provider is responsible for a given link. Each line is treated as its own regular expression.]]></item>
-        <item name="wcf.acp.pip.menu.boxCssClassName"><![CDATA[Box CSS Classes]]></item>
-        <item name="wcf.acp.pip.menu.boxCssClassName.description"><![CDATA[The entered comma-separated CSS classes are assigned to the box containing the menu.]]></item>
-        <item name="wcf.acp.pip.menu.boxPosition"><![CDATA[Box Position]]></item>
-        <item name="wcf.acp.pip.menu.boxPosition.description"><![CDATA[Determines the position at which the box containing the menu will be shown.]]></item>
-        <item name="wcf.acp.pip.menu.boxShowHeader"><![CDATA[Show Box Header]]></item>
-        <item name="wcf.acp.pip.menu.boxVisibilityExceptions.hiddenEverywhere"><![CDATA[Pages on Which the Box Will be Explicitly <strong>Visible</strong>]]></item>
-        <item name="wcf.acp.pip.menu.boxVisibilityExceptions.visibleEverywhere"><![CDATA[Pages on Which the Box Will be Explicitly <strong>Hidden</strong>]]></item>
-        <item name="wcf.acp.pip.menu.boxVisibleEverywhere"><![CDATA[Box Visible Everywhere]]></item>
-        <item name="wcf.acp.pip.menu.createBox"><![CDATA[Automatically Create Box for Menu]]></item>
-        <item name="wcf.acp.pip.menu.createBox.description"><![CDATA[If selected, after creating the menu, a box for the menu will also be created.]]></item>
-        <item name="wcf.acp.pip.menu.identifier"><![CDATA[Menu Identifier]]></item>
-        <item name="wcf.acp.pip.menu.identifier.description"><![CDATA[The menu identifier is used to update menus and for menu-related language item names. The identifier consists of least four segments separated by dots. Each segment must not be empty and may only contain the following characters: <kbd>[A-z0-9-_]</kbd>. In general, the first part of the menu identifier is the package identifier. Example: <kbd>com.foo.bar.package.menu</kbd>]]></item>
-        <item name="wcf.acp.pip.menu.identifier.error.notUnique"><![CDATA[The entered identifier is already used by another menu.]]></item>
-        <item name="wcf.acp.pip.menu.identifier.error.tooFewSegments"><![CDATA[The entered menu identifier only contains {#$segmentCount} segment{if $segmentCount > 1}s{/if}.]]></item>
+        <item name="wcf.acp.pip.box.identifier.error.tooFewSegments"><![CDATA[شناسه فقط شامل {#$segmentCount} بخش{if $segmentCount > 1}s{/if}.]]></item>
+        <item name="wcf.acp.pip.box.info"><![CDATA[The <kbd>box</kbd> افزونه نصب بسته، بسته های از پیش پیکربندی شده جدیدی را نصب می کند. اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/box/" class="externalURL">developer documentation</a>.]]></item>
+        <item name="wcf.acp.pip.box.name"><![CDATA[اسم]]></item>
+        <item name="wcf.acp.pip.box.name.description"><![CDATA[نام جعبه در لیست جعبه در ACP نمایش داده می شود.]]></item>
+        <item name="wcf.acp.pip.box.objectType"><![CDATA[کنترل کننده]]></item>
+        <item name="wcf.acp.pip.box.objectType.description"><![CDATA[کنترکننده جعبه محتوای جعبه را فراهم می کند.]]></item>
+        <item name="wcf.acp.pip.box.position"><![CDATA[جایگاه]]></item>
+        <item name="wcf.acp.pip.box.showHeader"><![CDATA[نمایش سربرگ]]></item>
+        <item name="wcf.acp.pip.box.visibilityExceptions.hiddenEverywhere"><![CDATA[صفحاتی که جعبه به صراحت در آنها خواهد بود <strong>Visible</strong>]]></item>
+        <item name="wcf.acp.pip.box.visibilityExceptions.visibleEverywhere"><![CDATA[صفحاتی که جعبه به صراحت در آنها خواهد بود <strong>Hidden</strong>]]></item>
+        <item name="wcf.acp.pip.box.visibleEverywhere"><![CDATA[جعبه قابل مشاهده در همه جا]]></item>
+        <item name="wcf.acp.pip.clipboardAction.actionClassName"><![CDATA[نام کلاس اکشن کلیپ بورد]]></item>
+        <item name="wcf.acp.pip.clipboardAction.actionClassName.error.notUnique"><![CDATA[در حال حاضر یک عمل کلیپ بورد با این نام عمل برای کلاس اقدام وارد شده وجود دارد.]]></item>
+        <item name="wcf.acp.pip.clipboardAction.actionName"><![CDATA[نام عمل کلیشناسه متنی منحصر به فرد (در هر کلاس عملکرد کلیپ بورد) عملکرد کلیپ بورد که ممکن است فقط شامل حروف باشد و باید با یک حرف کوچک شروع شود. بورد]]></item>
+        <item name="wcf.acp.pip.clipboardAction.actionName.description"><![CDATA[شناسه متنی منحصر به فرد (در هر کلاس عملکرد کلیپ بورد) عملکرد کلیپ بورد که ممکن است فقط شامل حروف باشد و باید با یک حرف کوچک شروع شود.]]></item>
+        <item name="wcf.acp.pip.clipboardAction.actionName.error.format"><![CDATA[نام وارد شده نا معتبر است]]></item>
+        <item name="wcf.acp.pip.clipboardAction.info"><![CDATA[The <kbd>عمل کلیپ بورد.</kbd> افزونه نصب بسته، اقدامات جدید کلیپ بورد را نصب می کند که می تواند برای چندین شی به طور همزمان اجرا شود. اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/clipboard-action/" class="externalURL">developer documentation</a>.]]></item>
+        <item name="wcf.acp.pip.clipboardAction.pages"><![CDATA[صفحات]]></item>
+        <item name="wcf.acp.pip.clipboardAction.pages.description"><![CDATA[عملکرد کلیپ بورد در صفحات وارد شده در دسترس است.]]></item>
+        <item name="wcf.acp.pip.clipboardAction.showOrder.description"><![CDATA[مقدار وارد شده تعیین می کند که اقدامات کلیپ بورد برای همان کلاس عملکرد کلیپ بورد به چه ترتیبی نشان داده شود.]]></item>
+        <item name="wcf.acp.pip.coreObject.info"><![CDATA[The <kbd>coreObject</kbd> پلاگین نصب بسته جدید نصب می شود <kbd>wcf\system\SingletonFactory</kbd> اشیایی که در قالب ها قابل دسترسی هستند. اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/core-object/" class="externalURL">developer documentation</a>.]]></item>
+        <item name="wcf.acp.pip.coreObject.objectName.error.notUnique"><![CDATA[کلاس وارد شده قبلاً به عنوان یک شی اصلی ثبت شده است.]]></item>
+        <item name="wcf.acp.pip.cronjob.canBeDisabled"><![CDATA[Cronjob را می توان غیرفعال کرد]]></item>
+        <item name="wcf.acp.pip.cronjob.canBeDisabled.description"><![CDATA[کاربران می توانند cronjob را غیرفعال کنند تا اجرا نشود.]]></item>
+        <item name="wcf.acp.pip.cronjob.canBeEdited"><![CDATA[Cronjob قابل ویرایش است]]></item>
+        <item name="wcf.acp.pip.cronjob.canBeEdited.description"><![CDATA[کاربران می توانند cronjob را ویرایش کنند تا مثلا زمان اجرا را تغییر دهند.]]></item>
+        <item name="wcf.acp.pip.cronjob.cronjobName"><![CDATA[Cronjob اسم]]></item>
+        <item name="wcf.acp.pip.cronjob.cronjobName.description"><![CDATA[نام cronjob به طور کلی شامل شناسه بسته و نام کلاس ناموفق است که با یک حرف کوچک و بدون پسوند "Cronjob" شروع می شود. (example: <kbd>com.woltlab.wcf.example.doStuff</kbd> نام cronjob است <kbd>wcf\system\cronjob\DoStuffCronjob</kbd> from the <kbd>com.woltlab.wcf.example</kbd> package).]]></item>
+        <item name="wcf.acp.pip.cronjob.description.description"><![CDATA[توضیحات کارکرد cronjob را توضیح می دهد.]]></item>
+        <item name="wcf.acp.pip.cronjob.info"><![CDATA[The <kbd>cronjob</kbd> پلاگین نصب پکیج، cronjob های جدیدی را نصب می کند که به طور منظم در پس زمینه اجرا می شوند. اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/cronjob/" class="externalURL">developer documentation</a>.]]></item>
+        <item name="wcf.acp.pip.cronjob.isDisabled"><![CDATA[غیر فعال کردن Cronjob]]></item>
+        <item name="wcf.acp.pip.cronjob.isDisabled.description"><![CDATA[اگر cronjob به طور پیش فرض غیرفعال باشد، کاربران باید پس از نصب بسته، آن را به صورت دستی فعال کنند.]]></item>
+        <item name="wcf.acp.pip.cronjob.options.description"><![CDATA[حداقل یکی از گزینه های وارد شده باید فعال باشد تا cronjob اجرا شود. گزینه های بسته های غیر ضروری به عنوان غیرموجود گزارش می شود.]]></item>
+        <item name="wcf.acp.pip.cronjob.startDom.error.format"><![CDATA[قالب وارد شده نامعتبر است. شما باید یک روز معتبر از ماه یا لیست روزهای معتبر ماه را وارد کنید.]]></item>
+        <item name="wcf.acp.pip.cronjob.startDow.error.format"><![CDATA[قالب وارد شده نامعتبر است. شما باید یک روز هفته معتبر یا لیستی از روزهای هفته معتبر وارد کنید.]]></item>
+        <item name="wcf.acp.pip.cronjob.startHour.error.format"><![CDATA[قالب وارد شده نامعتبر است. شما باید یک ساعت معتبر یا لیستی از ساعات معتبر وارد کنید.]]></item>
+        <item name="wcf.acp.pip.cronjob.startMinute.error.format"><![CDATA[قالب وارد شده نامعتبر است. شما باید یک دقیقه معتبر یا لیستی از دقیقه های معتبر وارد کنید.]]></item>
+        <item name="wcf.acp.pip.cronjob.startMonth.error.format"><![CDATA[قالب وارد شده نامعتبر است. باید یک ماه معتبر یا لیستی از ماه های معتبر وارد کنید.]]></item>
+        <item name="wcf.acp.pip.eventListener.environment"><![CDATA[محیط]]></item>
+        <item name="wcf.acp.pip.eventListener.environment.description"><![CDATA[محیط تعیین می کند که آیا شنونده رویداد در فرانت اند اجرا شود یا خیر (<kbd>user</kbd>), the ACP (<kbd>admin</kbd>), یا در هر دو (<kbd>all</kbd>).]]></item>
+        <item name="wcf.acp.pip.eventListener.eventClassName"><![CDATA[PHP کلاس رویداد ]]></item>
+        <item name="wcf.acp.pip.eventListener.eventClassName.description"><![CDATA[کلاس وارد شده (بدون بک اسلش) رویداد را فعال می کند. از طرف دیگر، کلاس وارد شده از کلاسی که رویداد را اجرا می کند، ارث می برد.]]></item>
+        <item name="wcf.acp.pip.eventListener.eventName"><![CDATA[نام های رویداد]]></item>
+        <item name="wcf.acp.pip.eventListener.eventName.description"><![CDATA[نام رویداد کلاس مربوطه که شنونده رویداد به آن گوش می دهد. مقدار پیش فرض: <kbd>:default</kbd>]]></item>
+        <item name="wcf.acp.pip.eventListener.info"><![CDATA[The <kbd>رویدادListener</kbd> افزونه نصب بسته شنوندگان رویداد جدید را نصب می کند. اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/event-listener/" class="externalURL">developer documentation</a>.]]></item>
+        <item name="wcf.acp.pip.eventListener.inherit"><![CDATA[پشتیبانی از وراثت]]></item>
+        <item name="wcf.acp.pip.eventListener.inherit.description"><![CDATA[اگر وراثت پشتیبانی شود، شنونده رویداد نه تنها در صورتی فعال می‌شود که رویداد توسط کلاس وارد شده در بالا فعال شود، بلکه توسط کلاس‌هایی که از کلاس وارد شده به ارث می‌برند نیز فعال می‌شود.]]></item>
+        <item name="wcf.acp.pip.eventListener.listenerClassName"><![CDATA[کلاس شنونده رویداد PHP]]></item>
+        <item name="wcf.acp.pip.eventListener.listenerClassName.error.noCallable"><![CDATA[کلاس <kbd>{$listenerClassName}</kbd> ندارد <kbd>__invoke()</kbd> method.]]></item>
+        <item name="wcf.acp.pip.eventListener.listenerName"><![CDATA[شناسه شنونده رویداد]]></item>
+        <item name="wcf.acp.pip.eventListener.listenerName.description"><![CDATA[شناسه متنی منحصر به فرد شنونده رویداد که ممکن است فقط شامل حروف باشد و باید با یک حرف کوچک شروع شود.]]></item>
+        <item name="wcf.acp.pip.eventListener.listenerName.error.format"><![CDATA[شناسه وارد شده نامعتبر است.]]></item>
+        <item name="wcf.acp.pip.eventListener.listenerName.error.notUnique"><![CDATA[شناسه وارد شده قبلاً توسط شنونده رویداد دیگری استفاده شده است.]]></item>
+        <item name="wcf.acp.pip.eventListener.niceValue"><![CDATA[ارزش خوب]]></item>
+        <item name="wcf.acp.pip.eventListener.niceValue.description"><![CDATA[مقدار nice برای تعیین ترتیب اجرای شنوندگان رویداد برای همان رویداد استفاده می شود. شنوندگان رویداد با مقدار nice پایین‌تر ابتدا قربانی می‌شوند.]]></item>
+        <item name="wcf.acp.pip.eventListener.options.description"><![CDATA[حداقل یکی از گزینه های وارد شده باید فعال باشد تا شنونده رویداد اجرا شود. گزینه های بسته های غیر ضروری به عنوان غیرموجود گزارش می شود.]]></item>
+        <item name="wcf.acp.pip.eventListener.permissions.description"><![CDATA[کاربر فعال باید حداقل یکی از مجوزهای وارد شده برای شنونده رویداد را داشته باشد تا اجرا شود. مجوزهای بسته های غیر الزامی به عنوان غیرموجود گزارش می شود.]]></item>
+        <item name="wcf.acp.pip.fileDelete.application"><![CDATA[برنامه]]></item>
+        <item name="wcf.acp.pip.fileDelete.file"><![CDATA[فایل]]></item>
+        <item name="wcf.acp.pip.fileDelete.info"><![CDATA[The <kbd>حذف فایل</kbd> پلاگین نصب بسته نصب فایل های نصب شده با را حذف می کند <kbd>file</kbd> افزونه نصب پکیج اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/fileDelete/" class="externalURL">developer documentation</a>.]]></item>
+        <item name="wcf.acp.pip.language.info"><![CDATA[The <kbd>زبان</kbd> افزونه نصب بسته آیتم های زبان جدید را نصب می کند. اطلاعات بیشتر را می توانید در<a href="https://docs.woltlab.com/latest/package/pip/language/" class="externalURL">developer documentation</a>.]]></item>
+        <item name="wcf.acp.pip.language.languageItemValue.de.description"><![CDATA[قطعات کد مفید: <kbd>{literal}{if LANGUAGE_USE_INFORMAL_VARIANT}{else}{/if}{/literal}</kbd>, <kbd>„“</kbd>]]></item>
+        <item name="wcf.acp.pip.language.languageItemValue.en.description"><![CDATA[قطعات کد مفید: <kbd>“”</kbd>]]></item>
+        <item name="wcf.acp.pip.mediaProvider.html"><![CDATA[HTML کد]]></item>
+        <item name="wcf.acp.pip.mediaProvider.html.description"><![CDATA[کد html برای تولید خروجی رندر شده از محتوای رسانه پیوند شده استفاده می شود. هر گروه نامگذاری شده از عبارت منظم به عنوان قابل دسترسی است <kbd>{literal}{$name}{/literal}</kbd> where <kbd>name</kbd> is the name of the group.]]></item>
+        <item name="wcf.acp.pip.mediaProvider.html.error.className"><![CDATA[اگر قبلاً یک کلاس PHP ارائه کرده باشید که خروجی را مدیریت می کند، نمی توانید کد HTML را وارد کنید.]]></item>
+        <item name="wcf.acp.pip.mediaProvider.html.error.noClassName"><![CDATA[شما باید کد HTML یا کلاس PHP که خروجی را مدیریت می کند ارائه دهید.]]></item>
+        <item name="wcf.acp.pip.mediaProvider.info"><![CDATA[ <kbd>ارائه دهنده رسانه</kbd> افزونه نصب بسته، ارائه دهندگان رسانه جدیدی را نصب می کند که به طور خودکار لینک ها را به وب سایت های رسانه تبدیل می کنند. اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/media-provider/" class="externalURL">developer documentation</a>.]]></item>
+        <item name="wcf.acp.pip.mediaProvider.name"><![CDATA[نام ارائه دهنده]]></item>
+        <item name="wcf.acp.pip.mediaProvider.name.description"><![CDATA[نام ارائه دهنده رسانه ممکن است فقط شامل حروف، اعداد و خط تیره باشد و باید با یک حرف کوچک شروع شود.]]></item>
+        <item name="wcf.acp.pip.mediaProvider.name.error.format"><![CDATA[نام وارد شده نامعتبر است.]]></item>
+        <item name="wcf.acp.pip.mediaProvider.regex"><![CDATA[اصطلاحات معمول]]></item>
+        <item name="wcf.acp.pip.mediaProvider.regex.description"><![CDATA[عبارات منظم وارد شده (بدون جداکننده) برای بررسی اینکه آیا این ارائه دهنده رسانه مسئول پیوند داده شده است یا خیر استفاده می شود. هر خط به عنوان عبارت منظم خود در نظر گرفته می شود.]]></item>
+        <item name="wcf.acp.pip.menu.boxCssClassName"><![CDATA[کلاس های باکس CSS]]></item>
+        <item name="wcf.acp.pip.menu.boxCssClassName.description"><![CDATA[کلاس های CSS که با کاما از هم جدا شده اند به کادر حاوی منو اختصاص داده می شوند.]]></item>
+        <item name="wcf.acp.pip.menu.boxPosition"><![CDATA[جایگاه جعبه]></item>
+        <item name="wcf.acp.pip.menu.boxPosition.description"><![CDATA[موقعیتی را که کادر حاوی منو در آن نشان داده می شود را تعیین می کند.]]></item>
+        <item name="wcf.acp.pip.menu.boxShowHeader"><![CDATA[نمایش سرصفحه جعبه]]></item>
+        <item name="wcf.acp.pip.menu.boxVisibilityExceptions.hiddenEverywhere"><![CDATA[صفحاتی که جعبه به صراحت در آنها خواهد بود <strong>Visible</strong>]]></item>
+        <item name="wcf.acp.pip.menu.boxVisibilityExceptions.visibleEverywhere"><![CDATA[صفحاتی که جعبه به صراحت در آنها خواهد بود <strong>Hidden</strong>]]></item>
+        <item name="wcf.acp.pip.menu.boxVisibleEverywhere"><![CDATA[جعبه قابل مشاهده در همه جا]]></item>
+        <item name="wcf.acp.pip.menu.createBox"><![CDATA[ایجاد خودکار جعبه برای منو]]></item>
+        <item name="wcf.acp.pip.menu.createBox.description"><![CDATA[در صورت انتخاب، پس از ایجاد منو، کادری برای منو نیز ایجاد می شود.]]></item>
+        <item name="wcf.acp.pip.menu.identifier"><![CDATA[شناسه منو]]></item>
+        <item name="wcf.acp.pip.menu.identifier.description"><![CDATA[شناسه منو برای به روز رسانی منوها و برای نام آیتم های زبان مربوط به منو استفاده می شود. شناسه شامل حداقل چهار بخش است که با نقطه از هم جدا شده اند. هر بخش نباید خالی باشد و فقط ممکن است شامل کاراکترهای زیر باشد: <kbd>[A-z0-9-_]</kbd>. In general, the first part of the menu identifier is the package identifier. Example: <kbd>com.foo.bar.package.menu</kbd>]]></item>
+        <item name="wcf.acp.pip.menu.identifier.error.notUnique"><![CDATA[شناسه وارد شده قبلاً توسط منوی دیگری استفاده می شود.]]></item>
+        <item name="wcf.acp.pip.menu.identifier.error.tooFewSegments"><![CDATA[شناسه منوی وارد شده فقط شامل {#$segmentCount} بخش{if $segmentCount > 1}ها{/if}.]]></item>
         <item name="wcf.acp.pip.menu.info"><![CDATA[The <kbd>menu</kbd> package installation plugin installs new menus. You can find more information in the <a href="https://docs.woltlab.com/latest/package/pip/menu/" class="externalURL">developer documentation</a>.]]></item>
         <item name="wcf.acp.pip.menuItem.externalURL"><![CDATA[External URL]]></item>
-        <item name="wcf.acp.pip.menuItem.externalURL.description"><![CDATA[When clicking on the menu item, the user is redirected to the entered website.]]></item>
-        <item name="wcf.acp.pip.menuItem.identifier"><![CDATA[Menu Item Identifier]]></item>
-        <item name="wcf.acp.pip.menuItem.identifier.description"><![CDATA[The menu item identifier is used to update menu items and for menu item-related language item names. The identifier consists of least four segments separated by dots. Each segment must not be empty and may only contain the following characters: <kbd>[A-z0-9-_]</kbd>. In general, the first part of the menu identifier is the package identifier. Example: <kbd>com.foo.bar.package.menuItem</kbd>]]></item>
-        <item name="wcf.acp.pip.menuItem.identifier.error.notUnique"><![CDATA[The entered identifier is already used by another menu item.]]></item>
-        <item name="wcf.acp.pip.menuItem.identifier.error.tooFewSegments"><![CDATA[The identifier only contains {#$segmentCount} segment{if $segmentCount > 1}s{/if}.]]></item>
-        <item name="wcf.acp.pip.menuItem.info"><![CDATA[The <kbd>menuItem</kbd> package installation plugin installs new menu items for existing menus. You can find more information in the <a href="https://docs.woltlab.com/latest/package/pip/menu-item/" class="externalURL">developer documentation</a>.]]></item>
-        <item name="wcf.acp.pip.menuItem.linkType"><![CDATA[Menu Item Link Type]]></item>
-        <item name="wcf.acp.pip.menuItem.linkType.external"><![CDATA[External Link]]></item>
-        <item name="wcf.acp.pip.menuItem.linkType.internal"><![CDATA[Internal Link]]></item>
-        <item name="wcf.acp.pip.menuItem.menu"><![CDATA[Menu]]></item>
-        <item name="wcf.acp.pip.menuItem.menu.description"><![CDATA[The menu item will belong to the selected menu.]]></item>
-        <item name="wcf.acp.pip.menuItem.page"><![CDATA[Page]]></item>
+        <item name="wcf.acp.pip.menuItem.externalURL.description"><![CDATA[با کلیک بر روی آیتم منو، کاربر به وب سایت وارد شده هدایت می شود.]]></item>
+        <item name="wcf.acp.pip.menuItem.identifier"><![CDATA[شناسه آیتم منو]]></item>
+        <item name="wcf.acp.pip.menuItem.identifier.description"><![CDATA[شناسه آیتم منو برای به روز رسانی آیتم های منو و برای نام آیتم های زبان مربوط به آیتم های منو استفاده می شود. شناسه شامل حداقل چهار بخش است که با نقطه از هم جدا شده اند. هر بخش نباید خالی باشد و فقط ممکن است شامل کاراکترهای زیر باشد: <kbd>[A-z0-9-_]</kbd>. به طور کلی، اولین قسمت از شناسه منو، شناسه بسته است. مثال: <kbd>com.foo.bar.package.menuItem</kbd>]]></item>
+        <item name="wcf.acp.pip.menuItem.identifier.error.notUnique"><![CDATA[شناسه وارد شده قبلاً توسط یکی دیگر از موارد منو استفاده می شود.]]></item>
+        <item name="wcf.acp.pip.menuItem.identifier.error.tooFewSegments"><![CDATA[ شناسه فقط شامل{#$segmentCount} بخش{if $segmentCount > 1}ها{/if}.]]></item>
+        <item name="wcf.acp.pip.menuItem.info"><![CDATA[ <kbd>منو آیتم</kbd> افزونه نصب بسته آیتم های منوی جدید را برای منوهای موجود نصب می کند. اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/menu-item/" class="externalURL">developer documentation</a>.]]></item>
+        <item name="wcf.acp.pip.menuItem.linkType"><![CDATA[نوع پیوند ایتم منو]]></item>
+        <item name="wcf.acp.pip.menuItem.linkType.external"><![CDATA[لینک خارجی]]></item>
+        <item name="wcf.acp.pip.menuItem.linkType.internal"><![CDATA[لینک داخلی]]></item>
+        <item name="wcf.acp.pip.menuItem.menu"><![CDATA[منو]]></item>
+        <item name="wcf.acp.pip.menuItem.menu.description"><![CDATA[آیتم منو به منوی انتخاب شده تعلق خواهد داشت.]]></item>
+        <item name="wcf.acp.pip.menuItem.page"><![CDATA[صفحه]]></item>
         <item name="wcf.acp.pip.menuItem.page.description"><![CDATA[The menu item will link to the selected page.]]></item>
         <item name="wcf.acp.pip.menuItem.parentMenuItem"><![CDATA[Parent Menu Item]]></item>
         <item name="wcf.acp.pip.menuItem.showOrder.description"><![CDATA[The entered value determines in which order the menu items with the same parent are shown.]]></item>
