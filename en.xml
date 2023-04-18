@@ -5282,7 +5282,7 @@ If you have <strong>already bought the licenses for the listed apps</strong>, th
         <item name="wcf.acp.pip.objectType.definitionName.com.woltlab.wcf.user.recentActivityEvent.description"><![CDATA[این تعریف نوع شیء برای ثبت رویدادهایی استفاده می شود که می توان یک ورودی فعالیت اخیر برای آنها ایجاد کرد.]]></item>
         <item name="wcf.acp.pip.objectType.definitionName.com.woltlab.wcf.versionTracker.objectType.description"><![CDATA[این تعریف نوع شیء برای ثبت انواع اشیایی استفاده می شود که نسخه های مختلف آنها را می توان با استفاده از نسخه ردیاب API ردیابی کرد.]]></item>
         <item name="wcf.acp.pip.objectType.definitionName.com.woltlab.wcf.visitTracker.objectType.description"><![CDATA[این تعریف نوع شیء برای ثبت انواع اشیایی استفاده می‌شود که در صورت مشاهده یا دسترسی کاربران به آنها (آخرین بار) می‌توان آن‌ها را ردیابی کرد.]]></item>
-        <item name="wcf.acp.pip.objectType.info"><![CDATA[ <kbd>نوع شی</kbd> پلاگین نصب بسته انواع شی جدید را نصب می کند. اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/object-type/" class="externalURL">developer documentation</a>.]]></item>
+        <item name="wcf.acp.pip.objectType.info"><![CDATA[ <kbd> نوع شی </kbd> پلاگین نصب بسته انواع شی جدید را نصب می کند. اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/object-type/" class="externalURL">developer documentation</a>.]]></item>
         <item name="wcf.acp.pip.objectType.integerCondition.propertyName"><![CDATA[نام ویژگی شی]]></item>
         <item name="wcf.acp.pip.objectType.integerCondition.propertyName.description"><![CDATA[نام ویژگی شی و ستون از <kbd>{$tableName}</kbd> جدول پایگاه داده برای این شرایط استفاده می شود.]]></item>
         <item name="wcf.acp.pip.objectType.integerCondition.propertyName.error.noIntegerColumn"><![CDATA[ستون وارد شده از <kbd>{$tableName}</kbd> جدول پایگاه داده شماره  <kbd>INT</kbd> ستون نیست]]></item>
@@ -5298,106 +5298,106 @@ If you have <strong>already bought the licenses for the listed apps</strong>, th
         <item name="wcf.acp.pip.objectTypeDefinition.info"><![CDATA[ <kbd>تعریف نوع شی</kbd> پلاگین نصب بسته تعاریف جدید نوع شی را نصب می کند. اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/object-type-definition/" class="externalURL">developer documentation</a>.]]></item>
         <item name="wcf.acp.pip.objectTypeDefinition.interfaceName"><![CDATA[رابط پی اچ پی]]></item>
         <item name="wcf.acp.pip.objectTypeDefinition.interfaceName.description"><![CDATA[اگر یک رابط PHP وارد شود، هر نوع شی از این تعریف باید نام یک کلاس PHP را ارائه کند که این رابط را پیاده سازی می کند.]]></item>
-        <item name="wcf.acp.pip.objectTypeDefinition.interfaceName.error.nonExistent"><![CDATA[The entered interface does not exist.]]></item>
-        <item name="wcf.acp.pip.option.info"><![CDATA[The <kbd>option</kbd> package installation plugin installs new options. You can find more information in the <a href="https://docs.woltlab.com/latest/package/pip/option/" class="externalURL">developer documentation</a>.]]></item>
-        <item name="wcf.acp.pip.option.optionName.error.notLowercase"><![CDATA[The option name may not include uppercase letters.]]></item>
-        <item name="wcf.acp.pip.option.optionName.error.notUnique"><![CDATA[The entered option name is already used by another option.]]></item>
-        <item name="wcf.acp.pip.option.optionName.error.pattern"><![CDATA[The option name must consist of lowercase latin letters, digits and underscores only. The first and last character must be letters.]]></item>
-        <item name="wcf.acp.pip.option.options.hidden"><![CDATA[Hidden Option]]></item>
-        <item name="wcf.acp.pip.option.options.hidden.description"><![CDATA[The value of the option cannot be actively set by the administrator in the ACP.]]></item>
-        <item name="wcf.acp.pip.option.options.optionType.description"><![CDATA[The option type determines the interface with which the value of the option is set and which (types of) values the option may have.]]></item>
-        <item name="wcf.acp.pip.option.options.requireI18n"><![CDATA[Require Multilingual Input]]></item>
-        <item name="wcf.acp.pip.option.options.requireI18n.description"><![CDATA[If selected, the option’s value must be explicitly set for each available language.]]></item>
-        <item name="wcf.acp.pip.option.options.supportI18n"><![CDATA[Support Multilingual Input]]></item>
-        <item name="wcf.acp.pip.option.options.supportI18n.description"><![CDATA[If selected, the option supports different values for each available language.]]></item>
-        <item name="wcf.acp.pip.packageInstallationPlugin.info"><![CDATA[The <kbd>packageInstallationPlugin</kbd> package installation plugin installs new package installation plugins. You can find more information in the <a href="https://docs.woltlab.com/latest/package/pip/pip/" class="externalURL">developer documentation</a>.]]></item>
-        <item name="wcf.acp.pip.page.allowSpidersToIndex"><![CDATA[Allow search spiders to index this page]]></item>
-        <item name="wcf.acp.pip.page.availableDuringOfflineMode"><![CDATA[Page is available during maintenance mode]]></item>
-        <item name="wcf.acp.pip.page.content"><![CDATA[Page Contents]]></item>
-        <item name="wcf.acp.pip.page.contentContent"><![CDATA[Content]]></item>
-        <item name="wcf.acp.pip.page.contentCustomURL"><![CDATA[Custom URL]]></item>
-        <item name="wcf.acp.pip.page.contentMetaDescription"><![CDATA[Meta Description]]></item>
-        <item name="wcf.acp.pip.page.contentTitle"><![CDATA[Title]]></item>
-        <item name="wcf.acp.pip.page.controller"><![CDATA[Page Controller]]></item>
-        <item name="wcf.acp.pip.page.cssClassName"><![CDATA[CSS Classes]]></item>
-        <item name="wcf.acp.pip.page.cssClassName.description"><![CDATA[The entered comma-separated CSS classes are assigned to the <kbd>body</kbd> element.]]></item>
-        <item name="wcf.acp.pip.page.excludeFromLandingPage"><![CDATA[Page cannot be set as landing page]]></item>
-        <item name="wcf.acp.pip.page.handler"><![CDATA[Page Handler]]></item>
-        <item name="wcf.acp.pip.page.hasFixedParent"><![CDATA[Has Fixed Parent]]></item>
-        <item name="wcf.acp.pip.page.hasFixedParent.description"><![CDATA[Administrators are unable to change the page's parent page.]]></item>
-        <item name="wcf.acp.pip.page.identifier"><![CDATA[Page Identifier]]></item>
-        <item name="wcf.acp.pip.page.identifier.description"><![CDATA[The identifier consists of least four segments separated by dots. Each segment must not be empty and may only contain the following characters: <kbd>[A-z0-9-_]</kbd>. In general, the first part of the menu identifier is the package identifier and the second part is the unqualified controller class without the controller type suffixes <kbd>Form</kbd> and <kbd>Page</kbd>. Example: <kbd>com.foo.bar.package.Baz</kbd>]]></item>
-        <item name="wcf.acp.pip.page.identifier.error.notUnique"><![CDATA[The entered identifier is already used by another page.]]></item>
-        <item name="wcf.acp.pip.page.identifier.error.tooFewSegments"><![CDATA[The identifier only contains {#$segmentCount} segment{if $segmentCount > 1}s{/if}.]]></item>
-        <item name="wcf.acp.pip.page.info"><![CDATA[The <kbd>page</kbd> package installation plugin installs new pages. You can find more information in the <a href="https://docs.woltlab.com/latest/package/pip/page/" class="externalURL">developer documentation</a>.]]></item>
-        <item name="wcf.acp.pip.page.name"><![CDATA[Name]]></item>
-        <item name="wcf.acp.pip.page.name.description"><![CDATA[The page name is displayed in the ACP on the page list.]]></item>
-        <item name="wcf.acp.pip.page.options.description"><![CDATA[At least one of the entered options has to be enabled for <strong>menu items</strong> linking to this page to be visible. This option does control the accessibility of the page itself. Options of non-required packages will be reported as non-existing.]]></item>
-        <item name="wcf.acp.pip.page.pageType"><![CDATA[Page Type]]></item>
-        <item name="wcf.acp.pip.page.pageType.description"><![CDATA[The content of “text” pages can be edited by administrators using the built-in WYSIWYG editor. “html” pages addditionally allow HTML code and “tpl” pages also template scripting. The content of “system” pages cannot be edited by administrators as their content is provided by the pages' controller.]]></item>
-        <item name="wcf.acp.pip.page.parent"><![CDATA[Parent Page]]></item>
-        <item name="wcf.acp.pip.page.parent.error.selfParent"><![CDATA[You have selected the page itself as its parent page.]]></item>
-        <item name="wcf.acp.pip.page.permissions.description"><![CDATA[The active user must be granted at least one of the entered permissions in order to see <strong>menu items</strong> linking to this page. This option does not control the accessibility of the page itself. Permissions of non-required packages will be reported as non-existing.]]></item>
-        <item name="wcf.acp.pip.page.requireObjectID"><![CDATA[Requires Object ID]]></item>
-        <item name="wcf.acp.pip.page.requireObjectID.description"><![CDATA[The page requires an object id to be displayed.]]></item>
-        <item name="wcf.acp.pip.pip.pluginName"><![CDATA[Package Installation Plugin Name]]></item>
-        <item name="wcf.acp.pip.pip.pluginName.description"><![CDATA[The name of the package installation plugin is used as the value of the <kbd>type</kbd> attribute of <kbd>instruction</kbd> elements in a <kbd>package.xml</kbd> file. The name may only consist of letters and must begin with a lowercase letter.]]></item>
-        <item name="wcf.acp.pip.pip.pluginName.error.format"><![CDATA[The entered name is invalid.]]></item>
-        <item name="wcf.acp.pip.pip.pluginName.error.notUnique"><![CDATA[The entered name is already used by another package installation plugin.]]></item>
-        <item name="wcf.acp.pip.smiley.aliases"><![CDATA[Secondary Smiley Codes]]></item>
-        <item name="wcf.acp.pip.smiley.aliases.description"><![CDATA[The secondary codes are also converted into this smiley.]]></item>
-        <item name="wcf.acp.pip.smiley.aliases.error.notUnique"><![CDATA[The following aliases are already used by another smiley: {implode from=$notUniqueCodes item=notUniqueCode}<kbd>{$notUniqueCode}</kbd>{/implode}.]]></item>
+        <item name="wcf.acp.pip.objectTypeDefinition.interfaceName.error.nonExistent"><![CDATA[رابط وارد شده وجود ندارد.]]></item>
+        <item name="wcf.acp.pip.option.info"><![CDATA[ <kbd>گزینه</kbd> افزونه نصب بسته گزینه های جدیدی را نصب می کند. اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/option/" class="externalURL">developer documentation</a>.]]></item>
+        <item name="wcf.acp.pip.option.optionName.error.notLowercase"><![CDATA[نام گزینه ممکن است شامل حروف بزرگ نباشد.]]></item>
+        <item name="wcf.acp.pip.option.optionName.error.notUnique"><![CDATA[نام گزینه وارد شده قبلاً توسط گزینه دیگری استفاده شده است.]]></item>
+        <item name="wcf.acp.pip.option.optionName.error.pattern"><![CDATA[نام گزینه باید فقط از حروف کوچک لاتین، اعداد و زیرخط تشکیل شده باشد. اولین و آخرین کاراکتر باید حروف باشد.]]></item>
+        <item name="wcf.acp.pip.option.options.hidden"><![CDATA[گزینه پنهان]]></item>
+        <item name="wcf.acp.pip.option.options.hidden.description"><![CDATA[مقدار گزینه را نمی توان به طور فعال توسط مدیر در ACP تنظیم کرد.]]></item>
+        <item name="wcf.acp.pip.option.options.optionType.description"><![CDATA[نوع گزینه رابطی را که مقدار گزینه با آن تنظیم می شود و (انواع) مقادیری که گزینه ممکن است داشته باشد را تعیین می کند.]]></item>
+        <item name="wcf.acp.pip.option.options.requireI18n"><![CDATA[نیاز به ورودی چند زبانه]]></item>
+        <item name="wcf.acp.pip.option.options.requireI18n.description"><![CDATA[در صورت انتخاب، مقدار گزینه باید به صراحت برای هر زبان موجود تنظیم شود.]]></item>
+        <item name="wcf.acp.pip.option.options.supportI18n"><![CDATA[پشتیبانی از ورودی چند زبانه]]></item>
+        <item name="wcf.acp.pip.option.options.supportI18n.description"><![CDATA[در صورت انتخاب، این گزینه از مقادیر مختلف برای هر زبان موجود پشتیبانی می کند.]]></item>
+        <item name="wcf.acp.pip.packageInstallationPlugin.info"><![CDATA[ <kbd>پلاگین نصب بسته</kbd> پلاگین نصب بسته پلاگین های نصب بسته جدید را نصب می کند. اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/pip/" class="externalURL">developer documentation</a>.]]></item>
+        <item name="wcf.acp.pip.page.allowSpidersToIndex"><![CDATA[به عنکبوت های جستجو اجازه دهید این صفحه را فهرست کنند]]></item>
+        <item name="wcf.acp.pip.page.availableDuringOfflineMode"><![CDATA[صفحه در حالت نگهداری در دسترس است]]></item>
+        <item name="wcf.acp.pip.page.content"><![CDATA[محتویات صفحه]]></item>
+        <item name="wcf.acp.pip.page.contentContent"><![CDATA[محتوا]]></item>
+        <item name="wcf.acp.pip.page.contentCustomURL"><![CDATA[URL سفارشی]]></item>
+        <item name="wcf.acp.pip.page.contentMetaDescription"><![CDATA[توضیحات متا]]></item>
+        <item name="wcf.acp.pip.page.contentTitle"><![CDATA[عنوان]]></item>
+        <item name="wcf.acp.pip.page.controller"><![CDATA[کنترل کننده صفحه]]></item>
+        <item name="wcf.acp.pip.page.cssClassName"><![CDATA[کلاس های CSS]]></item>
+        <item name="wcf.acp.pip.page.cssClassName.description"><![CDATA[کلاس های CSS که با کاما از هم جدا شده اند به <kbd>بدنه</kbd> عنصر.]]></item>
+        <item name="wcf.acp.pip.page.excludeFromLandingPage"><![CDATA[صفحه را نمی توان به عنوان صفحه فرود تنظیم کرد]]></item>
+        <item name="wcf.acp.pip.page.handler"><![CDATA[صفحه گردان]]></item>
+        <item name="wcf.acp.pip.page.hasFixedParent"><![CDATA[دارای والد ثابت]]></item>
+        <item name="wcf.acp.pip.page.hasFixedParent.description"><![CDATA[مدیران نمی‌توانند صفحه اصلی صفحه را تغییر دهند.]]></item>
+        <item name="wcf.acp.pip.page.identifier"><![CDATA[شناسه صفحه]]></item>
+        <item name="wcf.acp.pip.page.identifier.description"><![CDATA[شناسه شامل حداقل چهار بخش است که با نقطه از هم جدا شده اند. هر بخش نباید خالی باشد و فقط ممکن است شامل کاراکترهای زیر باشد: <kbd>[A-z0-9-_]</kbd>. به طور کلی، اولین قسمت از شناسه منو، شناسه بسته و قسمت دوم، کلاس کنترل کننده ناموفق بدون پسوند نوع کنترلر است. <kbd>فرم</kbd> و <kbd>صفحه</kbd>. مثال: <kbd>com.foo.bar.package.Baz</kbd>]]></item>
+        <item name="wcf.acp.pip.page.identifier.error.notUnique"><![CDATA[شناسه وارد شده قبلاً توسط صفحه دیگری استفاده می شود.]]></item>
+        <item name="wcf.acp.pip.page.identifier.error.tooFewSegments"><![CDATA[شناسه فقط شامل {#$segmentCount} بخش{if $segmentCount > 1}ها{/if}.]]></item>
+        <item name="wcf.acp.pip.page.info"><![CDATA[ <kbd>صفحه</kbd> پلاگین نصب بسته صفحات جدید را نصب می کند. اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/page/" class="externalURL">مستندات توسعه دهنده</a>.]]></item>
+        <item name="wcf.acp.pip.page.name"><![CDATA[نام]]></item>
+        <item name="wcf.acp.pip.page.name.description"><![CDATA[نام صفحه در ACP در لیست صفحه نمایش داده می شود.]]></item>
+        <item name="wcf.acp.pip.page.options.description"><![CDATA[حداقل یکی از گزینه های وارد شده باید برای فعال باشد <strong>آیتم های منو</strong> پیوند دادن به این صفحه تا قابل مشاهده باشد. این گزینه دسترسی به خود صفحه را کنترل می کند. گزینه های بسته های غیر الزامی به عنوان غیرموجود گزارش می شود.]]></item>
+        <item name="wcf.acp.pip.page.pageType"><![CDATA[نوع صفحه]]></item>
+        <item name="wcf.acp.pip.page.pageType.description"><![CDATA[محتوای صفحات "متن" را می توان توسط مدیران با استفاده از ویرایشگر داخلی WYSIWYG ویرایش کرد. صفحات "html" علاوه بر این، به کد HTML و صفحات "tpl" نیز امکان اسکریپت نویسی قالب را می دهند. محتوای صفحات "سیستم" توسط مدیران قابل ویرایش نیست زیرا محتوای آنها توسط کنترل کننده صفحات ارائه می شود.]]></item>
+        <item name="wcf.acp.pip.page.parent"><![CDATA[صفحه والد]]></item>
+        <item name="wcf.acp.pip.page.parent.error.selfParent"><![CDATA[شما خود صفحه را به عنوان صفحه اصلی آن انتخاب کرده اید.]]></item>
+        <item name="wcf.acp.pip.page.permissions.description"><![CDATA[کاربر فعال باید حداقل یکی از مجوزهای وارد شده را داشته باشد تا ببیند <strong>آیتم های منو</strong> پیوند دادن به این صفحه این گزینه دسترسی به خود صفحه را کنترل نمی کند. مجوزهای بسته های غیر الزامی به عنوان غیرموجود گزارش می شود.]]></item>
+        <item name="wcf.acp.pip.page.requireObjectID"><![CDATA[به شناسه شی نیاز دارد]]></item>
+        <item name="wcf.acp.pip.page.requireObjectID.description"><![CDATA[صفحه برای نمایش به شناسه شی نیاز دارد.]]></item>
+        <item name="wcf.acp.pip.pip.pluginName"><![CDATA[نام پلاگین نصب بسته]]></item>
+        <item name="wcf.acp.pip.pip.pluginName.description"><![CDATA[نام افزونه نصب بسته به عنوان مقدار استفاده می شود<kbd>نوع</kbd> ویژگی از <kbd>instruction</kbd> عناصر در a <kbd>package.xml</kbd> فایل. نام ممکن است فقط از حروف تشکیل شده باشد و باید با یک حرف کوچک شروع شود.]]></item>
+        <item name="wcf.acp.pip.pip.pluginName.error.format"><![CDATA[نام وارد شده نامعتبر است.]]></item>
+        <item name="wcf.acp.pip.pip.pluginName.error.notUnique"><![CDATA[نام وارد شده قبلاً توسط افزونه نصب بسته دیگری استفاده شده است.]]></item>
+        <item name="wcf.acp.pip.smiley.aliases"><![CDATA[کدهای ثانویه شکلک]]></item>
+        <item name="wcf.acp.pip.smiley.aliases.description"><![CDATA[کدهای ثانویه نیز به این شکلک تبدیل می شوند.]]></item>
+        <item name="wcf.acp.pip.smiley.aliases.error.notUnique"><![CDATA[نام مستعار زیر قبلاً توسط شکلک دیگری استفاده شده است: {implode from=$notUniqueCodes item=notUniqueCode}<kbd>{$notUniqueCode}</kbd>{/implode}.]]></item>
         <item name="wcf.acp.pip.smiley.info"><![CDATA[The <kbd>smiley</kbd> package installation plugin installs new smileys. You can find more information in the <a href="https://docs.woltlab.com/latest/package/pip/smiley/" class="externalURL">developer documentation</a>.]]></item>
-        <item name="wcf.acp.pip.smiley.showOrder.description"><![CDATA[The entered value determines in which order the smilies are shown.]]></item>
-        <item name="wcf.acp.pip.smiley.smileyCode"><![CDATA[Primary Smiley Code]]></item>
-        <item name="wcf.acp.pip.smiley.smileyCode.description"><![CDATA[Primary code that is converted into this smiley.]]></item>
-        <item name="wcf.acp.pip.smiley.smileyCode.error.notUnique"><![CDATA[The entered smiley code is already used by another smiley.]]></item>
-        <item name="wcf.acp.pip.smiley.smileyPath"><![CDATA[Smiley Path]]></item>
-        <item name="wcf.acp.pip.smiley.smileyPath.description"><![CDATA[The entered path has to be relative to <kbd>{'WCF_DIR'|constant}</kbd>.]]></item>
-        <item name="wcf.acp.pip.smiley.smileyPath.error.fileDoesNotExist"><![CDATA[The entered file does not exist.]]></item>
-        <item name="wcf.acp.pip.smiley.smileyPath2x"><![CDATA[HD Smiley Path]]></item>
-        <item name="wcf.acp.pip.smiley.smileyPath2x.description"><![CDATA[The entered path has to be relative to <kbd>{'WCF_DIR'|constant}</kbd>.]]></item>
-        <item name="wcf.acp.pip.templateDelete.application"><![CDATA[App]]></item>
-        <item name="wcf.acp.pip.templateDelete.info"><![CDATA[The <kbd>templateDelete</kbd> package installation plugin installs deletes templates installed with the <kbd>template</kbd> package installation plugin. You can find more information in the <a href="https://docs.woltlab.com/latest/package/pip/templateDelete/" class="externalURL">developer documentation</a>.]]></item>
-        <item name="wcf.acp.pip.templateDelete.template"><![CDATA[Template]]></item>
-        <item name="wcf.acp.pip.templateDelete.template.error.tplSuffix"><![CDATA[Only enter the name of the template without the file extension <kbd>.tpl</kbd>.]]></item>
-        <item name="wcf.acp.pip.templateListener.environment"><![CDATA[Environment]]></item>
-        <item name="wcf.acp.pip.templateListener.environment.description"><![CDATA[The environment determines whether the template listener is executed in the frontend (<kbd>user</kbd>) or the ACP (<kbd>admin</kbd>).]]></item>
-        <item name="wcf.acp.pip.templateListener.eventName"><![CDATA[Event]]></item>
-        <item name="wcf.acp.pip.templateListener.eventName.description"><![CDATA[The selected event determines at which location in the template the template listeners’ code is inserted.]]></item>
-        <item name="wcf.acp.pip.templateListener.info"><![CDATA[The <kbd>templateListener</kbd> package installation plugin installs new template listeners. You can find more information in the <a href="https://docs.woltlab.com/latest/package/pip/template-listener/" class="externalURL">developer documentation</a>.]]></item>
-        <item name="wcf.acp.pip.templateListener.name"><![CDATA[Template Listener Name]]></item>
-        <item name="wcf.acp.pip.templateListener.name.description"><![CDATA[The name of the template listener may only contain letters and must begin with a lowercase letter.]]></item>
-        <item name="wcf.acp.pip.templateListener.name.error.format"><![CDATA[The entered name is invalid.]]></item>
-        <item name="wcf.acp.pip.templateListener.name.error.notUnique"><![CDATA[The entered name is already used by another template listener for the same event.]]></item>
-        <item name="wcf.acp.pip.templateListener.niceValue"><![CDATA[Nice Value]]></item>
-        <item name="wcf.acp.pip.templateListener.niceValue.description"><![CDATA[The nice value is used to determine the order in which template listeners for the same event are executed. Template listeners with a lower nice value are executed first.]]></item>
-        <item name="wcf.acp.pip.templateListener.options.description"><![CDATA[At least one of the entered options has to be enabled for the template listener’ code to be executed. The options are checked in the template by wrapping the template code in an if statement checking the options. Options of non-required packages will be reported as non-existing.]]></item>
-        <item name="wcf.acp.pip.templateListener.permissions.description"><![CDATA[The active user must be granted at least one of the entered permissions for the template listener’ code to be executed. The permissions are checked in the template by wrapping the template code in an if statement checking the permissions. Permissions of non-required packages will be reported as non-existing.]]></item>
-        <item name="wcf.acp.pip.templateListener.templateCode"><![CDATA[Template Code]]></item>
-        <item name="wcf.acp.pip.templateListener.templateCode.description"><![CDATA[The entered template code is inserted at the location of the selected event into the template.]]></item>
-        <item name="wcf.acp.pip.templateListener.templateName"><![CDATA[Template]]></item>
-        <item name="wcf.acp.pip.templateListener.templateName.description"><![CDATA[The template listeners’ code will be inserted into the selected template.]]></item>
-        <item name="wcf.acp.pip.userGroupOption.info"><![CDATA[The <kbd>userGroupOption</kbd> package installation plugin installs new user group options. You can find more information in the <a href="https://docs.woltlab.com/latest/package/pip/user-group-option/" class="externalURL">developer documentation</a>.]]></item>
-        <item name="wcf.acp.pip.userGroupOption.options.adminDefaultValue"><![CDATA[Administrator Default Value]]></item>
-        <item name="wcf.acp.pip.userGroupOption.options.adminDefaultValue.description"><![CDATA[The administrator default value is used for administrator user groups. Administrator user groups are user groups that can edit every user group.]]></item>
-        <item name="wcf.acp.pip.userGroupOption.options.excludedInTinyBuild"><![CDATA[Disable for Accelerated Guest View]]></item>
-        <item name="wcf.acp.pip.userGroupOption.options.excludedInTinyBuild.description"><![CDATA[If the accelared guest view is enabled, the user group option’s value is “Never” for guests regardless of the actual value set for the guests user group.]]></item>
-        <item name="wcf.acp.pip.userGroupOption.options.modDefaultValue"><![CDATA[Moderator Default Value]]></item>
-        <item name="wcf.acp.pip.userGroupOption.options.modDefaultValue.description"><![CDATA[The moderator default value is used for moderator user groups. Moderator user groups are user groups that can access the moderation.]]></item>
-        <item name="wcf.acp.pip.userGroupOption.options.optionType.description"><![CDATA[The option type determines the interface with which the value of the user group option is set and which (types of) values the option may have. Additionally, the option type also determines how the final option value is determined if a user is in multiple user groups with different option values.]]></item>
-        <item name="wcf.acp.pip.userGroupOption.options.userDefaultValue"><![CDATA[User Default Value]]></item>
-        <item name="wcf.acp.pip.userGroupOption.options.userDefaultValue.description"><![CDATA[The user default value is used for the user group containing all registered users.]]></item>
-        <item name="wcf.acp.pip.userGroupOption.options.usersOnly"><![CDATA[Members Only]]></item>
-        <item name="wcf.acp.pip.userGroupOption.options.usersOnly.description"><![CDATA[The user group option is only available for registered members-only user groups.]]></item>
-        <item name="wcf.acp.pip.userGroupOption.options.wildcard"><![CDATA[Wildcard]]></item>
-        <item name="wcf.acp.pip.userGroupOption.options.wildcard.description"><![CDATA[If a wildcard is specified and if one line of the user group option value only contains this wildcare, the entire option value will be replaced by the wildcard.]]></item>
-        <item name="wcf.acp.pip.userMenu.iconClassName"><![CDATA[Menu Item Icon]]></item>
-        <item name="wcf.acp.pip.userMenu.iconClassName.description"><![CDATA[Menu item icons is only available for menu items on the first level.]]></item>
-        <item name="wcf.acp.pip.userMenu.info"><![CDATA[The <kbd>userMenu</kbd> package installation plugin installs new menu items for the user menu. You can find more information in the <a href="https://docs.woltlab.com/latest/package/pip/user-menu/" class="externalURL">developer documentation</a>.]]></item>
-        <item name="wcf.acp.pip.userMenu.menuItem.description"><![CDATA[The menu item identifier must have the format <kbd>{literal}{app}.user.menu.{additionalIdentifiers}{/literal}</kbd> where <kbd>{literal}{app}{/literal}</kbd> and <kbd>{literal}{additionalIdentifiers}{/literal}</kbd> have to be replaced with the appropriate values. <kbd>{literal}{additionalIdentifiers}{/literal}</kbd> may only contain letters, numbers, and dots.]]></item>
-        <item name="wcf.acp.pip.userMenu.menuItem.error.format"><![CDATA[The entered identifier is invalid.]]></item>
-        <item name="wcf.acp.pip.userNotificationEvent.eventName"><![CDATA[Event Name]]></item>
+        <item name="wcf.acp.pip.smiley.showOrder.description"><![CDATA[مقدار وارد شده تعیین می کند که شکلک ها به چه ترتیبی نشان داده شوند.]]></item>
+        <item name="wcf.acp.pip.smiley.smileyCode"><![CDATA[کد اولیه شکلک]]></item>
+        <item name="wcf.acp.pip.smiley.smileyCode.description"><![CDATA[کد اصلی که به این شکلک تبدیل می شود.]]></item>
+        <item name="wcf.acp.pip.smiley.smileyCode.error.notUnique"><![CDATA[کد شکلک وارد شده قبلاً توسط شکلک دیگری استفاده شده است.]]></item>
+        <item name="wcf.acp.pip.smiley.smileyPath"><![CDATA[مسیر شکلک]]></item>
+        <item name="wcf.acp.pip.smiley.smileyPath.description"><![CDATA[Tمسیر وارد شده باید نسبت به <kbd>{'WCF_DIR'|constant}</kbd>.]]></item>
+        <item name="wcf.acp.pip.smiley.smileyPath.error.fileDoesNotExist"><![CDATA[فایل وارد شده وجود ندارد.]]></item>
+        <item name="wcf.acp.pip.smiley.smileyPath2x"><![CDATA[مسیر شکلک HD]]></item>
+        <item name="wcf.acp.pip.smiley.smileyPath2x.description"><![CDATA[مسیر وارد شده باید نسبت به <kbd>{'WCF_DIR'|constant}</kbd>.]]></item>
+        <item name="wcf.acp.pip.templateDelete.application"><![CDATA[برنامه]]></item>
+        <item name="wcf.acp.pip.templateDelete.info"><![CDATA[ <kbd>templateDelete</kbd> پلاگین نصب بسته نصب، قالب های نصب شده با را حذف می کند <kbd>قالب</kbd> افزونه نصب پکیج اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/templateDelete/" class="externalURL">مستندات توسعه دهنده</a>.]]></item>
+        <item name="wcf.acp.pip.templateDelete.template"><![CDATA[قالب]]></item>
+        <item name="wcf.acp.pip.templateDelete.template.error.tplSuffix"><![CDATA[فقط نام قالب را بدون پسوند فایل وارد کنید <kbd>.tpl</kbd>.]]></item>
+        <item name="wcf.acp.pip.templateListener.environment"><![CDATA[محیط]]></item>
+        <item name="wcf.acp.pip.templateListener.environment.description"><![CDATA[محیط تعیین می کند که آیا شنونده قالب در قسمت جلویی اجرا شود یا خیر (<kbd>user</kbd>) یا ACP (<kbd>admin</kbd>).]]></item>
+        <item name="wcf.acp.pip.templateListener.eventName"><![CDATA[رویداد]]></item>
+        <item name="wcf.acp.pip.templateListener.eventName.description"><![CDATA[رویداد انتخاب شده تعیین می کند که کد شنوندگان الگو در کدام مکان در قالب درج شود.]]></item>
+        <item name="wcf.acp.pip.templateListener.info"><![CDATA[ <kbd>شنونده قالب</kbd> پلاگین نصب بسته شنوندگان قالب جدید را نصب می کند. اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/template-listener/" class="externalURL">مستندات توسعه دهنده</a>.]]></item>
+        <item name="wcf.acp.pip.templateListener.name"><![CDATA[نام شنونده الگو]]></item>
+        <item name="wcf.acp.pip.templateListener.name.description"><![CDATA[نام شنونده الگو ممکن است فقط دارای حروف باشد و باید با یک حرف کوچک شروع شود.]]></item>
+        <item name="wcf.acp.pip.templateListener.name.error.format"><![CDATA[نام وارد شده نامعتبر است.]]></item>
+        <item name="wcf.acp.pip.templateListener.name.error.notUnique"><![CDATA[نام وارد شده قبلاً توسط شنونده الگوی دیگری برای همان رویداد استفاده شده است.]]></item>
+        <item name="wcf.acp.pip.templateListener.niceValue"><![CDATA[مقدار خوب]]></item>
+        <item name="wcf.acp.pip.templateListener.niceValue.description"><![CDATA[مقدار nice برای تعیین ترتیب اجرای شنوندگان قالب برای یک رویداد استفاده می شود. ابتدا شنوندگان قالب با مقدار nice کمتر اجرا می شوند.]]></item>
+        <item name="wcf.acp.pip.templateListener.options.description"><![CDATA[حداقل یکی از گزینه های وارد شده باید فعال باشد تا کد شنونده قالب اجرا شود. با قرار دادن کد قالب در یک عبارت if و بررسی گزینه ها، گزینه ها در قالب بررسی می شوند. گزینه های بسته های غیر الزامی به عنوان غیرموجود گزارش می شود.]]></item>
+        <item name="wcf.acp.pip.templateListener.permissions.description"><![CDATA[کاربر فعال باید حداقل یکی از مجوزهای وارد شده برای اجرای کد شنونده الگو را داشته باشد. مجوزها در قالب با قرار دادن کد قالب در یک عبارت if و بررسی مجوزها بررسی می شوند. مجوزهای بسته های غیر الزامی به عنوان غیرموجود گزارش می شود.]]></item>
+        <item name="wcf.acp.pip.templateListener.templateCode"><![CDATA[کد الگو]]></item>
+        <item name="wcf.acp.pip.templateListener.templateCode.description"><![CDATA[کد قالب وارد شده در محل رویداد انتخاب شده در قالب درج می شود.]]></item>
+        <item name="wcf.acp.pip.templateListener.templateName"><![CDATA[قالب]]></item>
+        <item name="wcf.acp.pip.templateListener.templateName.description"><![CDATA[کد شنوندگان قالب در قالب انتخاب شده درج می شود.]]></item>
+        <item name="wcf.acp.pip.userGroupOption.info"><![CDATA[ <kbd>گزینه گروه کاربر</kbd> افزونه نصب بسته گزینه های گروه کاربری جدید را نصب می کند. اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/user-group-option/" class="externalURL">developer documentation</a>.]]></item>
+        <item name="wcf.acp.pip.userGroupOption.options.adminDefaultValue"><![CDATA[مقدار پیش فرض مدیر]]></item>
+        <item name="wcf.acp.pip.userGroupOption.options.adminDefaultValue.description"><![CDATA[مقدار پیش‌ فرض administrator برای گروه‌های کاربری مدیر استفاده می‌شود. گروه های کاربری مدیر گروه های کاربری هستند که می توانند هر گروه کاربری را ویرایش کنند.]]></item>
+        <item name="wcf.acp.pip.userGroupOption.options.excludedInTinyBuild"><![CDATA[برای نمایش مهمان تسریع شده غیرفعال شود]]></item>
+        <item name="wcf.acp.pip.userGroupOption.options.excludedInTinyBuild.description"><![CDATA[اگر نمای مهمان تسریع شده فعال باشد، بدون در نظر گرفتن مقدار واقعی تنظیم شده برای گروه کاربر مهمان، مقدار گزینه گروه کاربر برای مهمانان «هرگز» است.]]></item>
+        <item name="wcf.acp.pip.userGroupOption.options.modDefaultValue"><![CDATA[مقدار پیش فرض تعدیل کنندهe]]></item>
+        <item name="wcf.acp.pip.userGroupOption.options.modDefaultValue.description"><![CDATA[مقدار پیش‌فرض مدیر برای گروه‌های کاربر تعدیل کننده استفاده می‌شود. گروه‌های کاربری ناظر، گروه‌های کاربری هستند که می‌توانند به تعدیل دسترسی داشته باشند.]]></item>
+        <item name="wcf.acp.pip.userGroupOption.options.optionType.description"><![CDATA[نوع گزینه رابطی را تعیین می کند که مقدار گزینه گروه کاربر با آن تنظیم می شود و (انواع) مقادیر ممکن است این گزینه داشته باشد. علاوه بر این، نوع گزینه همچنین تعیین می‌کند که اگر کاربر در چندین گروه کاربری با مقادیر گزینه‌های مختلف باشد، چگونه مقدار گزینه نهایی تعیین می‌شود.]]></item>
+        <item name="wcf.acp.pip.userGroupOption.options.userDefaultValue"><![CDATA[مقدار پیش فرض کاربر]]></item>
+        <item name="wcf.acp.pip.userGroupOption.options.userDefaultValue.description"><![CDATA[مقدار پیش فرض کاربر برای گروه کاربری که شامل همه کاربران ثبت نام شده است استفاده می شود.]]></item>
+        <item name="wcf.acp.pip.userGroupOption.options.usersOnly"><![CDATA[فقط اعضا]]></item>
+        <item name="wcf.acp.pip.userGroupOption.options.usersOnly.description"><![CDATA[گزینه گروه کاربر فقط برای گروه های کاربری فقط اعضای ثبت نام شده در دسترس است.]]></item>
+        <item name="wcf.acp.pip.userGroupOption.options.wildcard"><![CDATA[عام]]></item>
+        <item name="wcf.acp.pip.userGroupOption.options.wildcard.description"><![CDATA[اگر یک علامت عام مشخص شده باشد و اگر یک خط از مقدار گزینه گروه کاربر فقط حاوی این عام باشد، کل مقدار گزینه با علامت عام جایگزین می شود.]]></item>
+        <item name="wcf.acp.pip.userMenu.iconClassName"><![CDATA[نماد آیتم منو]]></item>
+        <item name="wcf.acp.pip.userMenu.iconClassName.description"><![CDATA[نمادهای آیتم های منو فقط برای آیتم های منو در سطح اول موجود است.]]></item>
+        <item name="wcf.acp.pip.userMenu.info"><![CDATA[ <kbd>منو کاربر</kbd> افزونه نصب بسته آیتم های منوی جدیدی را برای منوی کاربر نصب می کند. اطلاعات بیشتر را می توانید در<a href="https://docs.woltlab.com/latest/package/pip/user-menu/" class="externalURL">مستندات توسعه دهنده</a>.]]></item>
+        <item name="wcf.acp.pip.userMenu.menuItem.description"><![CDATA[شناسه آیتم منو باید فرمت داشته باشد <kbd>{literal}{app}.user.menu.{additionalIdentifiers}{/literal}</kbd> جایی که <kbd>{literal}{app}{/literal}</kbd> و<kbd>{literal}{additionalIdentifiers}{/literal}</kbd> باید با مقادیر مناسب جایگزین شوند. <kbd>{literal}{additionalIdentifiers}{/literal}</kbd> میتواند فقط شامل حروف اعداد و نقطه باشد]]></item>
+        <item name="wcf.acp.pip.userMenu.menuItem.error.format"><![CDATA[شناسه وارد شده نامعتبر است.]]></item>
+        <item name="wcf.acp.pip.userNotificationEvent.eventName"><![CDATA[نام رویداد]]></item>
         <item name="wcf.acp.pip.userNotificationEvent.eventName.description"><![CDATA[The name of the event may only contain letters and must begin with a lowercase letter.]]></item>
         <item name="wcf.acp.pip.userNotificationEvent.eventName.error.format"><![CDATA[The entered name is invalid.]]></item>
         <item name="wcf.acp.pip.userNotificationEvent.eventName.error.notUnique"><![CDATA[The entered name is already used by another event for the same event object type.]]></item>
