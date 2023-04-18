@@ -5398,12 +5398,12 @@ If you have <strong>already bought the licenses for the listed apps</strong>, th
         <item name="wcf.acp.pip.userMenu.menuItem.description"><![CDATA[شناسه آیتم منو باید فرمت داشته باشد <kbd>{literal}{app}.user.menu.{additionalIdentifiers}{/literal}</kbd> جایی که <kbd>{literal}{app}{/literal}</kbd> و<kbd>{literal}{additionalIdentifiers}{/literal}</kbd> باید با مقادیر مناسب جایگزین شوند. <kbd>{literal}{additionalIdentifiers}{/literal}</kbd> میتواند فقط شامل حروف اعداد و نقطه باشد]]></item>
         <item name="wcf.acp.pip.userMenu.menuItem.error.format"><![CDATA[شناسه وارد شده نامعتبر است.]]></item>
         <item name="wcf.acp.pip.userNotificationEvent.eventName"><![CDATA[نام رویداد]]></item>
-        <item name="wcf.acp.pip.userNotificationEvent.eventName.description"><![CDATA[The name of the event may only contain letters and must begin with a lowercase letter.]]></item>
-        <item name="wcf.acp.pip.userNotificationEvent.eventName.error.format"><![CDATA[The entered name is invalid.]]></item>
-        <item name="wcf.acp.pip.userNotificationEvent.eventName.error.notUnique"><![CDATA[The entered name is already used by another event for the same event object type.]]></item>
-        <item name="wcf.acp.pip.userNotificationEvent.info"><![CDATA[The <kbd>userNotificationEvent</kbd> package installation plugin installs new user notification events. You can find more information in the <a href="https://docs.woltlab.com/latest/package/pip/user-notification-event/" class="externalURL">developer documentation</a>.]]></item>
-        <item name="wcf.acp.pip.userNotificationEvent.objectType"><![CDATA[Event Object Type]]></item>
-        <item name="wcf.acp.pip.userNotificationEvent.objectType.description"><![CDATA[Determines the type of object the notification event belongs to.]]></item>
+        <item name="wcf.acp.pip.userNotificationEvent.eventName.description"><![CDATA[نام رویداد ممکن است فقط دارای حروف باشد و باید با یک حرف کوچک شروع شود.]]></item>
+        <item name="wcf.acp.pip.userNotificationEvent.eventName.error.format"><![CDATA[نام وارد شده نامعتبر است.]]></item>
+        <item name="wcf.acp.pip.userNotificationEvent.eventName.error.notUnique"><![CDATA[نام وارد شده قبلاً توسط رویداد دیگری برای همان نوع شی رویداد استفاده می شود.]]></item>
+        <item name="wcf.acp.pip.userNotificationEvent.info"><![CDATA[ <kbd>رویداد اطلاع رسانی کاربر</kbd> افزونه نصب بسته رویدادهای اعلان کاربر جدید را نصب می کند. اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/user-notification-event/" class="externalURL">developer documentation</a>.]]></item>
+        <item name="wcf.acp.pip.userNotificationEvent.objectType"><![CDATA[نوع شی رویداد]]></item>
+        <item name="wcf.acp.pip.userNotificationEvent.objectType.description"><![CDATA[نوع شیئی که رویداد اعلان به آن تعلق دارد را تعیین می کند.]]></item>
         <item name="wcf.acp.pip.userNotificationEvent.options.description"><![CDATA[At least one of the entered options has to be enabled for the event to be visible in users’ notification settings. Options of non-required packages will be reported as non-existing.]]></item>
         <item name="wcf.acp.pip.userNotificationEvent.permissions.description"><![CDATA[The active user must be granted at least one of the entered permissions in order to see the event in their notification settings. Permissions of non-required packages will be reported as non-existing.]]></item>
         <item name="wcf.acp.pip.userNotificationEvent.preset"><![CDATA[Enable By Default]]></item>
