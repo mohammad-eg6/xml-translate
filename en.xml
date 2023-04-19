@@ -5870,7 +5870,7 @@ If you have <strong>already bought the licenses for the listed apps</strong>, th
         <item name="wcf.acp.tag.add"><![CDATA[برچسب اضافه کنید]]></item>
         <item name="wcf.acp.tag.edit"><![CDATA[ویرایش برچسب]]></item>
         <item name="wcf.acp.tag.error.languageID.notFound"><![CDATA[زبان انتخابی نامعتبر است.]]></item>
-        <item name="wcf.acp.tag.error.name.duplicate"><![CDATA[این نام تگ در حال حاضر در حال استفاده است.]]></item>
+        <item name="wcf.acp.tag.error.name.duplicate"><![CDATA[این نام برچسب در حال حاضر در حال استفاده است.]]></item>
 	<item name="wcf.acp.tag.languageID"><![CDATA[زبان]]></item>
         <item name="wcf.acp.tag.list"><![CDATA[برچسب ها]]></item>
         <item name="wcf.acp.tag.list.search"><![CDATA[برچسب های جستجو]]></item>
@@ -5883,12 +5883,12 @@ If you have <strong>already bought the licenses for the listed apps</strong>, th
         <item name="wcf.acp.tag.usageCount"><![CDATA[استفاده می کند]]></item>
     </category>
     <category name="wcf.acp.template">
-        <item name="wcf.acp.template.add"><![CDATA[اضافه کردن الگو]]></item>
+        <item name="wcf.acp.template.add"><![CDATA[اضافه کردن قالب]]></item>
         <item name="wcf.acp.template.application"><![CDATA[برنامه]]></item>
-        <item name="wcf.acp.template.copy"><![CDATA[کپی الگو]]></item>
+        <item name="wcf.acp.template.copy"><![CDATA[کپی قالب]]></item>
         <item name="wcf.acp.template.diff"><![CDATA[نمایش تفاوت ها]]></item>
         <item name="wcf.acp.template.diff.compareWith"><![CDATA[مقایسه با]]></item>
-        <item name="wcf.acp.template.edit"><![CDATA[ویرایش الگو]></item>
+        <item name="wcf.acp.template.edit"><![CDATA[ویرایش قالب]></item>
         <item name="wcf.acp.template.error.noGroups"><![CDATA[شما باید یک <a href="{link controller='TemplateGroupAdd'}{/link}">template group</a> ابتدا ایجاد کنید.]]></item>
         <item name="wcf.acp.template.group"><![CDATA[گروه قالب]]></item>
         <item name="wcf.acp.template.group.add"><![CDATA[اضافه کردن گروه قالب]]></item>
