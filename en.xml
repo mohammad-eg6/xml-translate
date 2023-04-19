@@ -6149,63 +6149,61 @@ Your account on the website: {@PAGE_TITLE|phrase} [URL:{link isEmail=true}{/link
         <item name="wcf.acp.user.search.display.itemsPerPage"><![CDATA[کاربران در هر صفحه]]></item>
         <item name="wcf.acp.user.search.display.sort"><![CDATA[ترتیب مرتب سازی]]></item>
         <item name="wcf.acp.user.search.error.noMatches"><![CDATA[هیچ کاربری با معیارهای شما مطابقت نداشت.]]></item>
-        <item name="wcf.acp.user.security.multifactor"><![CDATA[Multi-factor authentication]]></item>
-        <item name="wcf.acp.user.security.multifactor.active"><![CDATA[Active]]></item>
-        <item name="wcf.acp.user.security.multifactor.active.description"><![CDATA[This user account is protected by a second factor.]]></item>
-        <item name="wcf.acp.user.security.multifactor.disable"><![CDATA[Completely Disable Multi-factor Authentication]]></item>
-        <item name="wcf.acp.user.security.multifactor.disable.description"><![CDATA[Completely disables multi-factor authentication for the account <strong>{$user->username}</strong>. The user will need to setup up multi-factor authentication from scratch if this checkbox is checked.<br>
-<strong>Attention</strong>: Multi-factor authentication is actively set up by users to better protect their accounts. Please make sure to properly authenticate the user before disabling multi-factor authentication for their account.]]></item>
-        <item name="wcf.acp.user.sendMail"><![CDATA[Send Email to Users]]></item>
-        <item name="wcf.acp.user.sendMail.all"><![CDATA[Email All Users]]></item>
-        <item name="wcf.acp.user.sendMail.enableHTML"><![CDATA[Enable HTML code in email message]]></item>
-        <item name="wcf.acp.user.sendMail.from"><![CDATA[Sender’s Email]]></item>
-        <item name="wcf.acp.user.sendMail.from.description"><![CDATA[Specify the sender’s email address.<br>
-You can define the default sender in “Configuration » Options » General » Emails“. The sender’s email must be known to the server if using SMTP, otherwise it would be rejected.]]></item>
-        <item name="wcf.acp.user.sendMail.fromName"><![CDATA[Sender’s Name]]></item>
-        <item name="wcf.acp.user.sendMail.group"><![CDATA[Email User Group]]></item>
-        <item name="wcf.acp.user.sendMail.groups"><![CDATA[Send email to members of the following user groups]]></item>
-        <item name="wcf.acp.user.sendMail.mail"><![CDATA[Email]]></item>
-        <item name="wcf.acp.user.sendMail.markedUsers"><![CDATA[Send email to following users]]></item>
-        <item name="wcf.acp.user.sendMail.subject"><![CDATA[Email Subject]]></item>
-        <item name="wcf.acp.user.sendMail.text"><![CDATA[Email Message]]></item>
-        <item name="wcf.acp.user.sendNewPassword.mail.html.headline"><![CDATA[Dear {$mailbox->getUser()->username},]]></item>
+        <item name="wcf.acp.user.security.multifactor"><![CDATA[احراز هویت چند عاملی]]></item>
+        <item name="wcf.acp.user.security.multifactor.active"><![CDATA[فعال]]></item>
+        <item name="wcf.acp.user.security.multifactor.active.description"><![CDATA[این حساب کاربری توسط یک عامل دوم محافظت می شود.]]></item>
+        <item name="wcf.acp.user.security.multifactor.disable"><![CDATA[احراز هویت چند عاملی را به طور کامل غیرفعال کنید]]></item>
+        <item name="wcf.acp.user.security.multifactor.disable.description"><![CDATA[احراز هویت چند مرحله ای حساب را به طور کامل غیرفعال می کند <strong>{$user->username}</strong>. اگر این چک باکس علامت زده شود، کاربر باید احراز هویت چند عاملی را از ابتدا تنظیم کند.<br>
+<strong>Attention</strong>: احراز هویت چند عاملی به طور فعال توسط کاربران برای محافظت بهتر از حساب های خود تنظیم می شود. لطفاً قبل از غیرفعال کردن احراز هویت چند عاملی برای حساب کاربری، مطمئن شوید که به درستی احراز هویت شده است.]]></item>
+        <item name="wcf.acp.user.sendMail"><![CDATA[ارسال ایمیل به کاربران]]></item>
+        <item name="wcf.acp.user.sendMail.all"><![CDATA[ارسال ایمیل به همه کاربران]]></item>
+        <item name="wcf.acp.user.sendMail.enableHTML"><![CDATA[کد HTML را در پیام ایمیل فعال کنید]]></item>
+        <item name="wcf.acp.user.sendMail.from"><![CDATA[ایمیل فرستنده]]></item>
+        <item name="wcf.acp.user.sendMail.from.description"><![CDATA[آدرس ایمیل فرستنده را مشخص کنید.<br>
+می توانید فرستنده پیش فرض را در آن تعریف کنید “Configuration » Options » General » Emails“. در صورت استفاده از SMTP، ایمیل فرستنده باید برای سرور شناخته شود، در غیر این صورت رد می شود.]]></item>
+        <item name="wcf.acp.user.sendMail.fromName"><![CDATA[نام فرستنده]]></item>
+        <item name="wcf.acp.user.sendMail.group"><![CDATA[گروه کاربری ایمیل]]></item>
+        <item name="wcf.acp.user.sendMail.groups"><![CDATA[برای اعضای گروه های کاربری زیر ایمیل بفرستید]]></item>
+        <item name="wcf.acp.user.sendMail.mail"><![CDATA[ایمیل]]></item>
+        <item name="wcf.acp.user.sendMail.markedUsers"><![CDATA[برای کاربران زیر ایمیل ارسال کنید]]></item>
+        <item name="wcf.acp.user.sendMail.subject"><![CDATA[موضوع ایمیل]]></item>
+        <item name="wcf.acp.user.sendMail.text"><![CDATA[پیام ایمیل]]></item>
+        <item name="wcf.acp.user.sendNewPassword.mail.html.headline"><![CDATA[عزیز {$mailbox->getUser()->username},]]></item>
         <item name="wcf.acp.user.sendNewPassword.mail.html.intro"><![CDATA[
-<p>An administrator has reset your password. You are now required to set a new password to be able to use your
-user account {$mailbox->getUser()->username} on the website <a href="{link isHtmlEmail=true}{/link}">{PAGE_TITLE|phrase}</a> again:</p>]]></item>
+<p>یک مدیر رمز عبور شما را بازنشانی کرده است. اکنون باید یک رمز عبور جدید تنظیم کنید تا بتوانید از حساب کاربری خود استفاده کنید
+ {$mailbox->getUser()->username} در وبسایت <a href="{link isHtmlEmail=true}{/link}">{PAGE_TITLE|phrase}</a> دوباره:</p>]]></item>
         <item name="wcf.acp.user.sendNewPassword.mail.html.outro"><![CDATA[
-<p>If you read this message after {$mailbox->getUser()->lastLostPasswordRequestTime+86400|plainTime} you’ll have to use
-the lost password form <a href="{link controller='LostPassword' isHtmlEmail=true}{/link}">lost password form</a> for security reasons.</p>]]></item>
-        <item name="wcf.acp.user.sendNewPassword.mail.html.reset"><![CDATA[Choose new password]]></item>
-        <item name="wcf.acp.user.sendNewPassword.mail.plaintext"><![CDATA[Dear {@$mailbox->getUser()->username},
+<p>اگر این پیام را بعد از آن بخوانید {$mailbox->getUser()->lastLostPasswordRequestTime+86400|plainTime} شما باید استفاده کنید
+فرم رمز عبور گم شده <a href="{link controller='LostPassword' isHtmlEmail=true}{/link}">فرم رمز عبور گمشده</a> به دلایل امنیتی.</p>]]></item>
+        <item name="wcf.acp.user.sendNewPassword.mail.html.reset"><![CDATA[رمز عبور جدید را انتخاب کنید]]></item>
+        <item name="wcf.acp.user.sendNewPassword.mail.plaintext"><![CDATA[عزیز {@$mailbox->getUser()->username},
 
-An administrator has reset your password. You are now required to set a new password to be able to use your
-user account {@$mailbox->getUser()->username} on the website {@PAGE_TITLE|phrase} [URL:{link isEmail=true}{/link}] again:
+یک مدیر رمز عبور شما را بازنشانی کرده است. اکنون باید یک رمز عبور جدید تنظیم کنید تا بتوانید از حساب کاربری خود استفاده کنید {@$mailbox->getUser()->username} در وب سایت {@PAGE_TITLE|phrase} [URL:{link isEmail=true}{/link}] دوباره :
 
     {link controller='NewPassword' object=$mailbox->getUser() isEmail=true}k={@$mailbox->getUser()->lostPasswordKey}{/link} {* this line ends with a space *}
 
-If you read this message after {@$mailbox->getUser()->lastLostPasswordRequestTime+86400|plainTime} you’ll have to use
-the lost password form [URL:{link controller='LostPassword' isEmail=true}{/link}] for security reasons.]]></item>
-        <item name="wcf.acp.user.sendNewPassword.mail.subject"><![CDATA[New Password for your Account for Website: {@PAGE_TITLE|phrase}]]></item>
-        <item name="wcf.acp.user.sendNewPassword.workerTitle"><![CDATA[Sending New Passwords]]></item>
-        <item name="wcf.acp.user.unban"><![CDATA[Unban]]></item>
-        <item name="wcf.acp.user.usersAwaitingApprovalInfo"><![CDATA[<a href="{link controller='UserQuickSearch'}mode=pendingActivation{/link}">{#$usersAwaitingApproval} User{if $usersAwaitingApproval != 1}s{/if}</a> {if $usersAwaitingApproval == 1}is{else}are{/if} awaiting your approval.]]></item>
+اگر این پیام را بعد از آن بخوانید {@$mailbox->getUser()->lastLostPasswordRequestTime+86400|plainTime} شما باید از فرم رمز عبور گم شده استفاده کنید [URL:{link controller='LostPassword' isEmail=true}{/link}] به دلایل امنیتی.]]></item>
+        <item name="wcf.acp.user.sendNewPassword.mail.subject"><![CDATA[رمز عبور جدید برای حساب شما برای وب سایت: {@PAGE_TITLE|phrase}]]></item>
+        <item name="wcf.acp.user.sendNewPassword.workerTitle"><![CDATA[ارسال رمزهای جدید]]></item>
+        <item name="wcf.acp.user.unban"><![CDATA[ان بن]]></item>
+        <item name="wcf.acp.user.usersAwaitingApprovalInfo"><![CDATA[<a href="{link controller='UserQuickSearch'}mode=pendingActivation{/link}">{#$usersAwaitingApproval} کاربر{if $usersAwaitingApproval != 1}s{/if}</a> {if $usersAwaitingApproval == 1}هست{else}هستند{/if} در انتظار تایید شما]]></item>
     </category>
     <category name="wcf.acp.worker">
-        <item name="wcf.acp.worker.abort.confirmMessage"><![CDATA[Do you really want to terminate the execution?]]></item>
-        <item name="wcf.acp.worker.success"><![CDATA[Task completed]]></item>
+        <item name="wcf.acp.worker.abort.confirmMessage"><![CDATA[آیا واقعاً می خواهید اجرا را خاتمه دهید؟]]></item>
+        <item name="wcf.acp.worker.success"><![CDATA[کار تکمیل شد]]></item>
     </category>
     <category name="wcf.ajax">
-        <item name="wcf.ajax.error.badRequest"><![CDATA[The server was unable to process your request due to an incomplete request.]]></item>
-        <item name="wcf.ajax.error.illegalLink"><![CDATA[The server was unable to process your request because the target is unknown or no longer available.]]></item>
-        <item name="wcf.ajax.error.internalError"><![CDATA[The server encountered an unresolvable problem, please try again later.]]></item>
-        <item name="wcf.ajax.error.invalidParameter"><![CDATA[The parameter “{$fieldName}” is missing or invalid.]]></item>
-        <item name="wcf.ajax.error.permissionDenied"><![CDATA[You are not authorized to execute this action.]]></item>
-        <item name="wcf.ajax.error.sessionExpired"><![CDATA[The validity of your request could not be verified, because the XSRF token was invalid. Please reload the page and try performing the action again.]]></item>
+        <item name="wcf.ajax.error.badRequest"><![CDATA[به دلیل ناقص بودن درخواست، سرور قادر به پردازش درخواست شما نبود.]]></item>
+        <item name="wcf.ajax.error.illegalLink"><![CDATA[سرور نتوانست درخواست شما را پردازش کند زیرا هدف ناشناخته است یا دیگر در دسترس نیست.]]></item>
+        <item name="wcf.ajax.error.internalError"><![CDATA[سرور با مشکلی غیرقابل حل مواجه شد، لطفاً بعداً دوباره امتحان کنید.]]></item>
+        <item name="wcf.ajax.error.invalidParameter"><![CDATA[پارامتر “{$fieldName}” مفقود یا نامعتبر است]]></item>
+        <item name="wcf.ajax.error.permissionDenied"><![CDATA[شما مجاز به اجرای این عمل نیستید.]]></item>
+        <item name="wcf.ajax.error.sessionExpired"><![CDATA[اعتبار درخواست شما تأیید نشد، زیرا رمز XSRF نامعتبر بود. لطفاً صفحه را مجدداً بارگیری کنید و دوباره این عمل را انجام دهید.]]></item>
     </category>
     <category name="wcf.article">
-        <item name="wcf.article.aboutAuthor"><![CDATA[About the Author]]></item>
+        <item name="wcf.article.aboutAuthor"><![CDATA[درباره نویسنده]]></item>
         <item name="wcf.article.articleComments"><![CDATA[{plural value=$articleContent->comments one='# Comment' other='# Comments'}]]></item>
-        <item name="wcf.article.articleViews"><![CDATA[{#$article->views} View{if $article->views != 1}s{/if}]]></item>
+        <item name="wcf.article.articleViews"><![CDATA[{#$article->views} چشم انداز{if $article->views != 1}ها{/if}]]></item>
         <item name="wcf.article.articles"><![CDATA[Articles]]></item>
         <item name="wcf.article.bbcode.type"><![CDATA[Article]]></item>
         <item name="wcf.article.button.sort"><![CDATA[Sort]]></item>
