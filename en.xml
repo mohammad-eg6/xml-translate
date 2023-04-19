@@ -1831,23 +1831,23 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wbb.thread.edit.moveDestination"><![CDATA[انجمن مقصد]]></item>
         <item name="wbb.thread.edit.moveDestination.error.equalsOrigin"><![CDATA[انجمن مقصد و مبدا یکی هستند.]]></item>
         <item name="wbb.thread.edit.moveNotice"><![CDATA[نمایش اعلان تغییر مسیر]]></item>
-        <item name="wbb.thread.edit.moveNotice.description"><![CDATA[Leaves a notice in the original forum.]]></item>
-        <item name="wbb.thread.edit.moveSource"><![CDATA[Source Forum]]></item>
+        <item name="wbb.thread.edit.moveNotice.description"><![CDATA[در انجمن اصلی اعلان می گذارد.]]></item>
+        <item name="wbb.thread.edit.moveSource"><![CDATA[انجمن منبع]]></item>
         <item name="wbb.thread.edit.moveSource.multiple"><![CDATA[{plural value=$count 1='And one other forum' other='And # other forums'}]]></item>
-        <item name="wbb.thread.edit.moveThreads"><![CDATA[Move Threads]]></item>
-        <item name="wbb.thread.edit.open"><![CDATA[Open]]></item>
-        <item name="wbb.thread.edit.removeLink"><![CDATA[Remove Redirection Notice]]></item>
-        <item name="wbb.thread.edit.restore"><![CDATA[Restore]]></item>
-        <item name="wbb.thread.edit.scrape"><![CDATA[Unpin]]></item>
-        <item name="wbb.thread.edit.sticky"><![CDATA[Pin]]></item>
-        <item name="wbb.thread.edit.trash"><![CDATA[Move to Trash]]></item>
-        <item name="wbb.thread.edit.undone"><![CDATA[Mark as Unresolved]]></item>
-        <item name="wbb.thread.edit.unmarkThread"><![CDATA[Unmark Thread]]></item>
+        <item name="wbb.thread.edit.moveThreads"><![CDATA[انتقال موضوعات]]></item>
+        <item name="wbb.thread.edit.open"><![CDATA[باز کن]]></item>
+        <item name="wbb.thread.edit.removeLink"><![CDATA[اعلان تغییر مسیر را حذف کنید]]></item>
+        <item name="wbb.thread.edit.restore"><![CDATA[بازگرداندن]]></item>
+        <item name="wbb.thread.edit.scrape"><![CDATA[پین را بردارید]]></item>
+        <item name="wbb.thread.edit.sticky"><![CDATA[پین کنید]]></item>
+        <item name="wbb.thread.edit.trash"><![CDATA[انتقال به سطل آشغال]]></item>
+        <item name="wbb.thread.edit.undone"><![CDATA[علامت گذاری به عنوان حل نشده]]></item>
+        <item name="wbb.thread.edit.unmarkThread"><![CDATA[علامت موضوع را بردارید]]></item>
     </category>
     <category name="wbb.thread.log">
-        <item name="wbb.thread.log"><![CDATA[Log]]></item>
-        <item name="wbb.thread.log.post.close"><![CDATA[Prohibited editing of <a href="$post->getLink()}" class="wbbPostLink" data-object-id="{@$post->postID}">post{if $post->subject} “{$post->subject}”{/if}</a> by <a href="{link controller='User' id=$post->userID title=$post->username}{/link}" class="userLink" data-object-id="{@$post->userID}">{$post->username}</a>.]]></item>
-        <item name="wbb.thread.log.post.delete"><![CDATA[Deleted a post.]]></item>
+        <item name="wbb.thread.log"><![CDATA[ورود به سیستم]]></item>
+        <item name="wbb.thread.log.post.close"><![CDATA[ویرایش ممنوع  <a href="$post->getLink()}" class="wbbPostLink" data-object-id="{@$post->postID}">post{if $post->subject} “{$post->subject}”{/if}</a> by <a href="{link controller='User' id=$post->userID title=$post->username}{/link}" class="userLink" data-object-id="{@$post->userID}">{$post->username}</a>.]]></item>
+        <item name="wbb.thread.log.post.delete"><![CDATA[ پست را حذف کرد.]]></item>
         <item name="wbb.thread.log.post.disable"><![CDATA[Disabled the <a href="$post->getLink()}" class="wbbPostLink" data-object-id="{@$post->postID}">Post{if $post->subject} “{$post->subject}”{/if}</a> by <a href="{link controller='User' id=$post->userID title=$post->username}{/link}" class="userLink" data-object-id="{@$post->userID}">{$post->username}</a>.]]></item>
         <item name="wbb.thread.log.post.edit"><![CDATA[Edited the <a href="$post->getLink()}" class="wbbPostLink" data-object-id="{@$post->postID}">Post{if $post->subject} “{$post->subject}”{/if}</a> by <a href="{link controller='User' id=$post->userID title=$post->username}{/link}" class="userLink" data-object-id="{@$post->userID}">{$post->username}</a>.]]></item>
         <item name="wbb.thread.log.post.enable"><![CDATA[Approved the <a href="$post->getLink()}" class="wbbPostLink" data-object-id="{@$post->postID}">Post{if $post->subject} “{$post->subject}”{/if}</a> by <a href="{link controller='User' id=$post->userID title=$post->username}{/link}" class="userLink" data-object-id="{@$post->userID}">{$post->username}</a>.]]></item>
@@ -1856,51 +1856,51 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wbb.thread.log.post.open"><![CDATA[Allowed editing of the <a href="$post->getLink()}" class="wbbPostLink" data-object-id="{@$post->postID}">post{if $post->subject} “{$post->subject}”{/if}</a> by <a href="{link controller='User' id=$post->userID title=$post->username}{/link}" class="userLink" data-object-id="{@$post->userID}">{$post->username}</a>.]]></item>
         <item name="wbb.thread.log.post.restore"><![CDATA[Restored the <a href="$post->getLink()}" class="wbbPostLink" data-object-id="{@$post->postID}">Post{if $post->subject} “{$post->subject}”{/if}</a> by <a href="{link controller='User' id=$post->userID title=$post->username}{/link}" class="userLink" data-object-id="{@$post->userID}">{$post->username}</a>.]]></item>
         <item name="wbb.thread.log.post.trash"><![CDATA[Moved the <a href="$post->getLink()}" class="wbbPostLink" data-object-id="{@$post->postID}">Post{if $post->subject} “{$post->subject}”{/if}</a> by <a href="{link controller='User' id=$post->userID title=$post->username}{/link}" class="userLink" data-object-id="{@$post->userID}">{$post->username}</a> to the trash{if $additionalData[reason]}: {$additionalData[reason]} {/if}.]]></item>
-        <item name="wbb.thread.log.thread.changeTopic"><![CDATA[Changed the title of the thread from “{$additionalData[oldTopic]}” to “{$additionalData[newTopic]}”.]]></item>
-        <item name="wbb.thread.log.thread.close"><![CDATA[Closed the thread.]]></item>
-        <item name="wbb.thread.log.thread.delete"><![CDATA[Deleted the thread.]]></item>
-        <item name="wbb.thread.log.thread.disable"><![CDATA[Disabled the thread.]]></item>
-        <item name="wbb.thread.log.thread.done"><![CDATA[Marked the thread as Resolved.]]></item>
-        <item name="wbb.thread.log.thread.enable"><![CDATA[Approved the thread.]]></item>
-        <item name="wbb.thread.log.thread.markAsBestAnswer"><![CDATA[Selected a <a href="{link application='wbb' controller='Thread' postID=$additionalData[postID]}#post{$additionalData[postID]}{/link}">post</a> as the best answer.]]></item>
+        <item name="wbb.thread.log.thread.changeTopic"><![CDATA[عنوان موضوع را تغییر داد “{$additionalData[oldTopic]}” به “{$additionalData[newTopic]}”.]]></item>
+        <item name="wbb.thread.log.thread.close"><![CDATA[موضوع را بست.]]></item>
+        <item name="wbb.thread.log.thread.delete"><![CDATA[موضوع رو حذف کرد.]]></item>
+        <item name="wbb.thread.log.thread.disable"><![CDATA[موضوع را غیرفعال کرد.]]></item>
+        <item name="wbb.thread.log.thread.done"><![CDATA[موضوع را به عنوان حل شده علامت گذاری کرد.]]></item>
+        <item name="wbb.thread.log.thread.enable"><![CDATA[موضوع را تایید کرد.]]></item>
+        <item name="wbb.thread.log.thread.markAsBestAnswer"><![CDATA[انتخاب شد <a href="{link application='wbb' controller='Thread' postID=$additionalData[postID]}#post{$additionalData[postID]}{/link}">پست</a> به عنوان بهترین پاسخ.]]></item>
         <item name="wbb.thread.log.thread.merge"><![CDATA[Merged the thread{if $additionalData[mergedThreads]|count > 1}s{/if} {implode from=$additionalData[mergedThreads] item='mergedThread'}“{$mergedThread}”{/implode} into the thread]]></item>
-        <item name="wbb.thread.log.thread.move"><![CDATA[Moved the thread from forum <a href="{link application='wbb' controller='Board' id=$additionalData[oldBoard][boardID] title=$additionalData[oldBoard][title]|phrase}{/link}">{$additionalData[oldBoard][title]|phrase}</a> to forum <a href="{link application='wbb' controller='Board' id=$additionalData[newBoard][boardID] title=$additionalData[newBoard][title]|phrase}{/link}">{$additionalData[newBoard][title]|phrase}</a>.]]></item>
-        <item name="wbb.thread.log.thread.open"><![CDATA[Opened the thread.]]></item>
-        <item name="wbb.thread.log.thread.restore"><![CDATA[Restored the thread.]]></item>
-        <item name="wbb.thread.log.thread.scrape"><![CDATA[Made the thread no longer pinned.]]></item>
-        <item name="wbb.thread.log.thread.setAsAnnouncement"><![CDATA[Changed the thread status to announcement]]></item>
-        <item name="wbb.thread.log.thread.setLabel"><![CDATA[{if $additionalData[label]|empty}Removed the Label <span class="badge label{if $additionalData[oldLabel]->cssClassName} {$additionalData[oldLabel]->cssClassName}{/if}">{$additionalData[oldLabel]->getTitle()}</span>{elseif $additionalData[oldLabel]|empty}Added the Label <span class="badge label{if $additionalData[label]->cssClassName} {$additionalData[label]->cssClassName}{/if}">{$additionalData[label]->getTitle()}</span>{else}Set the Label from <span class="badge label{if $additionalData[oldLabel]->cssClassName} {$additionalData[oldLabel]->cssClassName}{/if}">{$additionalData[oldLabel]->label|phrase}</span> to <span class="badge label{if $additionalData[label]->cssClassName} {$additionalData[label]->cssClassName}{/if}">{$additionalData[label]->getTitle()}</span>{/if}]]></item>
-        <item name="wbb.thread.log.thread.sticky"><![CDATA[Made the thread pinned.]]></item>
-        <item name="wbb.thread.log.thread.trash"><![CDATA[Moved the thread to the trash{if $additionalData[reason]}: {$additionalData[reason]} {/if}.]]></item>
-        <item name="wbb.thread.log.thread.trash.summary"><![CDATA[Thread was deleted by {if $userID}<a href="{link controller='User' id=$userID title=$username}{/link}" class="userLink" data-object-id="{@$userID}">{$username}</a>{else}{$username}{/if}{if $additionalData[reason]}: {$additionalData[reason]}{/if} ({@$time|time}).]]></item>
-        <item name="wbb.thread.log.thread.undone"><![CDATA[Marked the thread as Unresolved.]]></item>
-        <item name="wbb.thread.log.thread.unsetAsAnnouncement"><![CDATA[Removed the thread status as announcement.]]></item>
+        <item name="wbb.thread.log.thread.move"><![CDATA[موضوع را از انجمن منتقل کرد <a href="{link application='wbb' controller='Board' id=$additionalData[oldBoard][boardID] title=$additionalData[oldBoard][title]|phrase}{/link}">{$additionalData[oldBoard][title]|phrase}</a> به انجمن <a href="{link application='wbb' controller='Board' id=$additionalData[newBoard][boardID] title=$additionalData[newBoard][title]|phrase}{/link}">{$additionalData[newBoard][title]|phrase}</a>.]]></item>
+        <item name="wbb.thread.log.thread.open"><![CDATA[موضوع را باز کرد.]]></item>
+        <item name="wbb.thread.log.thread.restore"><![CDATA[تاپیک را بازیابی کرد.]]></item>
+        <item name="wbb.thread.log.thread.scrape"><![CDATA[باعث شد موضوع دیگر سنجاق نشود.]]></item>
+        <item name="wbb.thread.log.thread.setAsAnnouncement"><![CDATA[وضعیت موضوع به اعلان تغییر کرد]]></item>
+        <item name="wbb.thread.log.thread.setLabel"><![CDATA[{if $additionalData[label]|empty}برچسب را حذف کرد <span class="badge label{if $additionalData[oldLabel]->cssClassName} {$additionalData[oldLabel]->cssClassName}{/if}">{$additionalData[oldLabel]->getTitle()}</span>{elseif $additionalData[oldLabel]|empty}برچسب را اضافه کرد <span class="badge label{if $additionalData[label]->cssClassName} {$additionalData[label]->cssClassName}{/if}">{$additionalData[label]->getTitle()}</span>{else}برچسب را از <span class="badge label{if $additionalData[oldLabel]->cssClassName} {$additionalData[oldLabel]->cssClassName}{/if}">{$additionalData[oldLabel]->label|phrase}</span> to <span class="badge label{if $additionalData[label]->cssClassName} {$additionalData[label]->cssClassName}{/if}">{$additionalData[label]->getTitle()}</span>{/if}]]></item>
+        <item name="wbb.thread.log.thread.sticky"><![CDATA[موضوع را سنجاق کرد.]]></item>
+        <item name="wbb.thread.log.thread.trash"><![CDATA[موضوع را به سطل آشغال منتقل کرد{if $additionalData[reason]}: {$additionalData[reason]} {/if}.]]></item>
+        <item name="wbb.thread.log.thread.trash.summary"><![CDATA[موضوع حذف شد توسط {if $userID}<a href="{link controller='User' id=$userID title=$username}{/link}" class="userLink" data-object-id="{@$userID}">{$username}</a>{else}{$username}{/if}{if $additionalData[reason]}: {$additionalData[reason]}{/if} ({@$time|time}).]]></item>
+        <item name="wbb.thread.log.thread.undone"><![CDATA[موضوع را به عنوان حل نشده علامت گذاری کرد.]]></item>
+        <item name="wbb.thread.log.thread.unsetAsAnnouncement"><![CDATA[وضعیت موضوع به عنوان اعلان حذف شد.]]></item>
     </category>
     <category name="wcf.acl">
-        <item name="wcf.acl.access"><![CDATA[Restricted Access]]></item>
-        <item name="wcf.acl.access.denied"><![CDATA[Denied Access for Users and User-Groups]]></item>
-        <item name="wcf.acl.access.deny"><![CDATA[Deny Access]]></item>
-        <item name="wcf.acl.access.grant"><![CDATA[Allow Access]]></item>
-        <item name="wcf.acl.access.granted"><![CDATA[Granted Access for Users and User-Groups]]></item>
-        <item name="wcf.acl.access.invertPermissions"><![CDATA[Invert Permissions]]></item>
-        <item name="wcf.acl.access.invertPermissions.description"><![CDATA[If selected, all users except selected users and user groups are allowed to see the object by default.]]></item>
-        <item name="wcf.acl.allowAll"><![CDATA[Content Can be Accessed by Everyone]]></item>
-        <item name="wcf.acl.option.deny"><![CDATA[Deny]]></item>
-        <item name="wcf.acl.option.fullAccess"><![CDATA[Full Access]]></item>
-        <item name="wcf.acl.option.grant"><![CDATA[Grant]]></item>
-        <item name="wcf.acl.permissions"><![CDATA[User and User Group Permissions]]></item>
-        <item name="wcf.acl.search.description"><![CDATA[Enter username or user group …]]></item>
-        <item name="wcf.acl.search.user.description"><![CDATA[Enter username …]]></item>
-        <item name="wcf.acl.user.permissions"><![CDATA[User Permissions]]></item>
+        <item name="wcf.acl.access"><![CDATA[دسترسی محدود]]></item>
+        <item name="wcf.acl.access.denied"><![CDATA[دسترسی کاربران و گروه های کاربری ممنوع شد]]></item>
+        <item name="wcf.acl.access.deny"><![CDATA[دسترسی را رد کنید]]></item>
+        <item name="wcf.acl.access.grant"><![CDATA[اجازه دسترسی]]></item>
+        <item name="wcf.acl.access.granted"><![CDATA[دسترسی داده شده به کاربران و گروه های کاربری]]></item>
+        <item name="wcf.acl.access.invertPermissions"><![CDATA[برعکس کردن مجوزها]]></item>
+        <item name="wcf.acl.access.invertPermissions.description"><![CDATA[در صورت انتخاب، همه کاربران به جز کاربران منتخب و گروه های کاربری به طور پیش فرض مجاز به دیدن شی هستند.]]></item>
+        <item name="wcf.acl.allowAll"><![CDATA[محتوا برای همه قابل دسترسی است]]></item>
+        <item name="wcf.acl.option.deny"><![CDATA[رد کردن]]></item>
+        <item name="wcf.acl.option.fullAccess"><![CDATA[دسترسی کامل]]></item>
+        <item name="wcf.acl.option.grant"><![CDATA[اعطا کردن]]></item>
+        <item name="wcf.acl.permissions"><![CDATA[مجوزهای کاربر و گروه کاربر]]></item>
+        <item name="wcf.acl.search.description"><![CDATA[نام کاربری یا گروه کاربری را وارد کنید…]]></item>
+        <item name="wcf.acl.search.user.description"><![CDATA[نام کاربری را وارد کنید …]]></item>
+        <item name="wcf.acl.user.permissions"><![CDATA[مجوزهای کاربر]]></item>
     </category>
     <category name="wcf.acl.option">
-        <item name="wcf.acl.option.category.com.woltlab.wbb.board.mod.post"><![CDATA[Posts]]></item>
-        <item name="wcf.acl.option.category.com.woltlab.wbb.board.mod.thread"><![CDATA[Threads]]></item>
-        <item name="wcf.acl.option.category.com.woltlab.wbb.board.user.board"><![CDATA[Forums]]></item>
-        <item name="wcf.acl.option.category.com.woltlab.wbb.board.user.post"><![CDATA[Posts]]></item>
-        <item name="wcf.acl.option.category.com.woltlab.wbb.board.user.thread"><![CDATA[Threads]]></item>
-        <item name="wcf.acl.option.com.woltlab.blog.category.canUseCategory"><![CDATA[Can create articles]]></item>
-        <item name="wcf.acl.option.com.woltlab.blog.category.canViewCategory"><![CDATA[Can view category]]></item>
+        <item name="wcf.acl.option.category.com.woltlab.wbb.board.mod.post"><![CDATA[پست ها]]></item>
+        <item name="wcf.acl.option.category.com.woltlab.wbb.board.mod.thread"><![CDATA[موضوع ها]]></item>
+        <item name="wcf.acl.option.category.com.woltlab.wbb.board.user.board"><![CDATA[انجمن ها]]></item>
+        <item name="wcf.acl.option.category.com.woltlab.wbb.board.user.post"><![CDATA[پست ها]]></item>
+        <item name="wcf.acl.option.category.com.woltlab.wbb.board.user.thread"><![CDATA[موضوع خا]]></item>
+        <item name="wcf.acl.option.com.woltlab.blog.category.canUseCategory"><![CDATA[می تواند مقاله ایجاد کند]]></item>
+        <item name="wcf.acl.option.com.woltlab.blog.category.canViewCategory"><![CDATA[می تواند دسته بندی را مشاهده کند]]></item>
         <item name="wcf.acl.option.com.woltlab.calendar.category.canExportCategory"><![CDATA[Can export events of this category]]></item>
         <item name="wcf.acl.option.com.woltlab.calendar.category.canUseCategory"><![CDATA[Can create events]]></item>
         <item name="wcf.acl.option.com.woltlab.calendar.category.canViewCategory"><![CDATA[Can view category]]></item>
