@@ -2027,17 +2027,17 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.application.landingPage"><![CDATA[صفحه ورودی]]></item>
         <item name="wcf.acp.application.landingPage.default"><![CDATA[(پیش فرض)]]></item>
         <item name="wcf.acp.application.landingPage.description"><![CDATA[اختیاری: زمانی که کاربر به این برنامه پیمایش می کند، این صفحه نشان داده می شود.]]></item>
-        <item name="wcf.acp.application.list"><![CDATA[Installed Applications]]></item>
-        <item name="wcf.acp.application.management.cookieDomain"><![CDATA[Cookie Domain]]></item>
-        <item name="wcf.acp.application.management.cookieDomain.description"><![CDATA[The cookie domain must match the provided domain. When in doubt simply provide the same value that you have entered for “Domain”.]]></item>
-        <item name="wcf.acp.application.management.cookieDomain.error.containsPath"><![CDATA[Please only provide the domain without protocol or path.]]></item>
-        <item name="wcf.acp.application.management.domain"><![CDATA[Domain Configuration]]></item>
-        <item name="wcf.acp.application.management.domainName"><![CDATA[Domain]]></item>
-        <item name="wcf.acp.application.management.domainName.description"><![CDATA[Provide the domain name excluding any protocol or path, for example “www.example.com”.]]></item>
-        <item name="wcf.acp.application.management.domainName.error.containsPath"><![CDATA[Please only provide the domain without protocol or path.]]></item>
-        <item name="wcf.acp.application.multiDomain"><![CDATA[<p style="font-size: 18px">The support for setups with multiple domains is discontinued.</p>
+        <item name="wcf.acp.application.list"><![CDATA[برنامه های کاربردی نصب شده]]></item>
+        <item name="wcf.acp.application.management.cookieDomain"><![CDATA[دامنه کوکی]]></item>
+        <item name="wcf.acp.application.management.cookieDomain.description"><![CDATA[دامنه کوکی باید با دامنه ارائه شده مطابقت داشته باشد. هنگامی که شک دارید، به سادگی همان مقداری را که برای "دامنه" وارد کرده اید، ارائه دهید..]]></item>
+        <item name="wcf.acp.application.management.cookieDomain.error.containsPath"><![CDATA[لطفاً دامنه را فقط بدون پروتکل یا مسیر ارائه دهید.]]></item>
+        <item name="wcf.acp.application.management.domain"><![CDATA[پیکربندی دامنه]]></item>
+        <item name="wcf.acp.application.management.domainName"><![CDATA[دامنه]]></item>
+        <item name="wcf.acp.application.management.domainName.description"><![CDATA[برای مثال، نام دامنه را به استثنای هر پروتکل یا مسیری ارائه دهید“www.example.com”.]]></item>
+        <item name="wcf.acp.application.management.domainName.error.containsPath"><![CDATA[لطفاً دامنه را فقط بدون پروتکل یا مسیر ارائه دهید.]]></item>
+        <item name="wcf.acp.application.multiDomain"><![CDATA[<p style="font-size: 18px">پشتیبانی از تنظیمات با چندین دامنه متوقف می شود.</p>
 <p><br></p>
-<p>It is strongly recommended to consolidate all apps on a shared domain, please adjust the domain and path settings for these apps:</p>
+<p>It اکیداً توصیه می شود همه برنامه ها را در یک دامنه مشترک ترکیب کنید، لطفاً تنظیمات دامنه و مسیر را برای این برنامه ها تنظیم کنید.:</p>
 <ul class="nativeList">
 	{foreach from=$applicationList item=application}
 		<li><a href="{link controller='ApplicationEdit' id=$application->packageID}{/link}">{$application->getPackage()->getName()}</a></li>
@@ -2045,43 +2045,43 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
 </ul>]]></item>
     </category>
     <category name="wcf.acp.article">
-        <item name="wcf.acp.article.add"><![CDATA[Add Article]]></item>
-        <item name="wcf.acp.article.author"><![CDATA[Author]]></item>
-        <item name="wcf.acp.article.button.toggleI18n"><![CDATA[Internationalization]]></item>
-        <item name="wcf.acp.article.button.viewArticle"><![CDATA[Show Article]]></item>
-        <item name="wcf.acp.article.category"><![CDATA[Category]]></item>
-        <item name="wcf.acp.article.category.sortField"><![CDATA[Show Order]]></item>
-        <item name="wcf.acp.article.category.sortField.publicationDate"><![CDATA[Publication Date]]></item>
-        <item name="wcf.acp.article.category.sortField.title"><![CDATA[Title]]></item>
-        <item name="wcf.acp.article.content"><![CDATA[Content]]></item>
-        <item name="wcf.acp.article.delete.confirmMessage"><![CDATA[Do you really want to delete {if $isArticleEdit|empty}the article <span class="confirmationObject">{$article->getTitle()}</span>{else}this article{/if}?]]></item>
-        <item name="wcf.acp.article.edit"><![CDATA[Edit Article]]></item>
-        <item name="wcf.acp.article.enableComments"><![CDATA[Enable comments]]></item>
-        <item name="wcf.acp.article.i18n"><![CDATA[Multilingualism]]></item>
-        <item name="wcf.acp.article.i18n.fromI18n.confirmMessage"><![CDATA[Do you really want to disable internationalization for this article? All values except the ones of the selected language will be discarded, this will also delete the edit history of this article.<br><br>Please submit any unsaved changes before executing this action.]]></item>
-        <item name="wcf.acp.article.i18n.i18n"><![CDATA[Multilingual article]]></item>
-        <item name="wcf.acp.article.i18n.i18n.description"><![CDATA[The content will be provided for each language separately.]]></item>
-        <item name="wcf.acp.article.i18n.none"><![CDATA[Monolingual article]]></item>
-        <item name="wcf.acp.article.i18n.none.description"><![CDATA[The content is not tied to a specific language or there should be no translation.]]></item>
-        <item name="wcf.acp.article.i18n.source"><![CDATA[Use values]]></item>
-        <item name="wcf.acp.article.i18n.toI18n.confirmMessage"><![CDATA[Do you really want to enable internationalization for this article? This will cause the current values to be copied over to all other languages, and causes the edit history of this article to be discarded.<br><br>Please submit any unsaved changes before executing this action.]]></item>
-        <item name="wcf.acp.article.image"><![CDATA[Article Image]]></item>
-        <item name="wcf.acp.article.isDeleted"><![CDATA[Deleted]]></item>
-        <item name="wcf.acp.article.lastVersion"><![CDATA[There are <a href="{link controller='VersionTrackerList' objectType='com.woltlab.wcf.article' objectID=$article->articleID isACP=true}{/link}">previous versions</a> of this article, the last change was by “{$lastVersion->username}” ({@$lastVersion->time|time}).]]></item>
-        <item name="wcf.acp.article.list"><![CDATA[Articles]]></item>
-        <item name="wcf.acp.article.metaDescription"><![CDATA[Meta Description]]></item>
-        <item name="wcf.acp.article.metaTitle"><![CDATA[Meta Title]]></item>
-        <item name="wcf.acp.article.publicationDate"><![CDATA[Publication Date]]></item>
-        <item name="wcf.acp.article.publicationDate.error.invalid"><![CDATA[The publication date is invalid.]]></item>
-        <item name="wcf.acp.article.publicationStatus"><![CDATA[Status]]></item>
-        <item name="wcf.acp.article.publicationStatus.delayed"><![CDATA[Delayed publishing]]></item>
-        <item name="wcf.acp.article.publicationStatus.published"><![CDATA[Published]]></item>
-        <item name="wcf.acp.article.publicationStatus.unpublished"><![CDATA[Unpublished]]></item>
-        <item name="wcf.acp.article.restore.confirmMessage"><![CDATA[Do you really want to restore {if $isArticleEdit|empty}the article <span class="confirmationObject">{$article->getTitle()}</span>{else}this article{/if}?]]></item>
-        <item name="wcf.acp.article.setCategory"><![CDATA[Set Category]]></item>
-        <item name="wcf.acp.article.teaser"><![CDATA[Teaser]]></item>
-        <item name="wcf.acp.article.teaserImage"><![CDATA[Teaser Image]]></item>
-        <item name="wcf.acp.article.trash.confirmMessage"><![CDATA[Do you really want to move {if $isArticleEdit|empty}the article <span class="confirmationObject">{$article->getTitle()}</span>{else}this article{/if} to the trash bin?]]></item>
+        <item name="wcf.acp.article.add"><![CDATA[اضافه کردن مقاله]]></item>
+        <item name="wcf.acp.article.author"><![CDATA[نویسنده]]></item>
+        <item name="wcf.acp.article.button.toggleI18n"><![CDATA[بین المللی شدن]]></item>
+        <item name="wcf.acp.article.button.viewArticle"><![CDATA[نمایش مقاله]]></item>
+        <item name="wcf.acp.article.category"><![CDATA[مقاله]]></item>
+        <item name="wcf.acp.article.category.sortField"><![CDATA[نمایش سفارش]]></item>
+        <item name="wcf.acp.article.category.sortField.publicationDate"><![CDATA[تاریخ انتشار]]></item>
+        <item name="wcf.acp.article.category.sortField.title"><![CDATA[عنوان]]></item>
+        <item name="wcf.acp.article.content"><![CDATA[محتوا]]></item>
+        <item name="wcf.acp.article.delete.confirmMessage"><![CDATA[واقعا میخوای حذف کنی {if $isArticleEdit|empty}مقاله <span class="confirmationObject">{$article->getTitle()}</span>{else}این مقاله{/if}?]]></item>
+        <item name="wcf.acp.article.edit"><![CDATA[ویرایش مقاله]]></item>
+        <item name="wcf.acp.article.enableComments"><![CDATA[فعال کردن نظرات]]></item>
+        <item name="wcf.acp.article.i18n"><![CDATA[چند زبانه بودن]]></item>
+        <item name="wcf.acp.article.i18n.fromI18n.confirmMessage"><![CDATA[آیا واقعاً می خواهید بین المللی سازی را برای این مقاله غیرفعال کنید؟ همه مقادیر به جز مقادیر زبان انتخابی نادیده گرفته می‌شوند، این کار تاریخچه ویرایش این مقاله را نیز حذف می‌کند..<br><br>لطفاً قبل از اجرای این عمل، تغییرات ذخیره نشده را ارسال کنید.]]></item>
+        <item name="wcf.acp.article.i18n.i18n"><![CDATA[مقاله چند زبانه]]></item>
+        <item name="wcf.acp.article.i18n.i18n.description"><![CDATA[محتوا برای هر زبان به طور جداگانه ارائه خواهد شد.]]></item>
+        <item name="wcf.acp.article.i18n.none"><![CDATA[مقاله یک زبانه]]></item>
+        <item name="wcf.acp.article.i18n.none.description"><![CDATA[محتوا به زبان خاصی مرتبط نیست یا نباید ترجمه ای داشته باشد.]]></item>
+        <item name="wcf.acp.article.i18n.source"><![CDATA[از مقادیر استفاده کنید]]></item>
+        <item name="wcf.acp.article.i18n.toI18n.confirmMessage"><![CDATA[آیا واقعاً می خواهید بین المللی سازی را برای این مقاله فعال کنید؟ این باعث می‌شود که مقادیر فعلی روی همه زبان‌های دیگر کپی شوند و تاریخ ویرایش این مقاله نادیده گرفته شود..<br><br>لطفاً قبل از اجرای این عمل، تغییرات ذخیره نشده را ارسال کنید.]]></item>
+        <item name="wcf.acp.article.image"><![CDATA[تصویر مقاله]]></item>
+        <item name="wcf.acp.article.isDeleted"><![CDATA[حذف شده]]></item>
+        <item name="wcf.acp.article.lastVersion"><![CDATA[وجود دارد <a href="{link controller='VersionTrackerList' objectType='com.woltlab.wcf.article' objectID=$article->articleID isACP=true}{/link}">نسخه های قبلی</a> از این مقاله، آخرین تغییر توسط “{$lastVersion->username}” ({@$lastVersion->time|time}).]]></item>
+        <item name="wcf.acp.article.list"><![CDATA[مقالات]]></item>
+        <item name="wcf.acp.article.metaDescription"><![CDATA[توضیحات متا]]></item>
+        <item name="wcf.acp.article.metaTitle"><![CDATA[عنوان متا]]></item>
+        <item name="wcf.acp.article.publicationDate"><![CDATA[تاریخ انتشار]]></item>
+        <item name="wcf.acp.article.publicationDate.error.invalid"><![CDATA[تاریخ انتشار نامعتبر است.]]></item>
+        <item name="wcf.acp.article.publicationStatus"><![CDATA[حالت]]></item>
+        <item name="wcf.acp.article.publicationStatus.delayed"><![CDATA[انتشار با تاخیر]]></item>
+        <item name="wcf.acp.article.publicationStatus.published"><![CDATA[منتشر شده]]></item>
+        <item name="wcf.acp.article.publicationStatus.unpublished"><![CDATA[منتشر نشده]]></item>
+        <item name="wcf.acp.article.restore.confirmMessage"><![CDATA[آیا واقعاً می خواهید بازیابی کنید {if $isArticleEdit|empty}مقاله <span class="confirmationObject">{$article->getTitle()}</span>{else}این مقاله{/if}?]]></item>
+        <item name="wcf.acp.article.setCategory"><![CDATA[مجموعه را تنظیم کنید]]></item>
+        <item name="wcf.acp.article.teaser"><![CDATA[تیزر]]></item>
+        <item name="wcf.acp.article.teaserImage"><![CDATA[تصویر تیزر]]></item>
+        <item name="wcf.acp.article.trash.confirmMessage"><![CDATA[آیا واقعاً می خواهید منتقل کنبد {if $isArticleEdit|empty}مقاله <span class="confirmationObject">{$article->getTitle()}</span>{else}}این مقاله{/if} به سطل آشغال?]]></item>
         <item name="wcf.acp.article.trash.notice"><![CDATA[This article has been moved to the trash bin and is currently hidden from view.]]></item>
         <item name="wcf.acp.article.views"><![CDATA[Views]]></item>
     </category>
