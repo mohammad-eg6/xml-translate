@@ -2011,22 +2011,22 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
     </category>
     <category name="wcf.acp.application">
         <item name="wcf.acp.application.cookie"><![CDATA[تنظیمات کوکی]]></item>
-        <item name="wcf.acp.application.cookie.warning"><![CDATA[The setting below is used to establish a persistent login for your website; Keep in mind to update this value whenever the domain name changes. If you are unsure which value you need to provide, you can safely copy the value of “Domain”.]]></item>
-        <item name="wcf.acp.application.cookieDomain"><![CDATA[Cookie Domain]]></item>
-        <item name="wcf.acp.application.cookieDomain.error.containsPath"><![CDATA[The cookie domain cannot contain path components.]]></item>
-        <item name="wcf.acp.application.cookieDomain.error.invalid"><![CDATA[The cookie domain does not match the domain entered above (sub-domains like “www” can be omitted).]]></item>
-        <item name="wcf.acp.application.domain"><![CDATA[Domain Settings]]></item>
-        <item name="wcf.acp.application.domainName"><![CDATA[Domain]]></item>
-        <item name="wcf.acp.application.domainName.description"><![CDATA[If you are accessing this application through “https://www.example.com/community/forum/”, please enter “www.example.com”.]]></item>
-        <item name="wcf.acp.application.domainName.error.containsPath"><![CDATA[The domain cannot contain path components.]]></item>
-        <item name="wcf.acp.application.domainPath"><![CDATA[Path]]></item>
-        <item name="wcf.acp.application.domainPath.description"><![CDATA[If you are accessing this application through “https://www.example.com/community/forum/”, please enter “/community/forum/”.]]></item>
-        <item name="wcf.acp.application.domainPath.error.conflict"><![CDATA[This path is already taken by application “{$conflictApplication->getName()}”.]]></item>
-        <item name="wcf.acp.application.edit"><![CDATA[Edit Application]]></item>
-        <item name="wcf.acp.application.edit.title"><![CDATA[Edit Application: “<a href="{link controller='Package' id=$application->packageID}{/link}">{$application->getPackage()->getName()}</a>”]]></item>
-        <item name="wcf.acp.application.landingPage"><![CDATA[Entry Page]]></item>
-        <item name="wcf.acp.application.landingPage.default"><![CDATA[(Default)]]></item>
-        <item name="wcf.acp.application.landingPage.description"><![CDATA[Optional: This page will be shown when a user is navigating to this app.]]></item>
+        <item name="wcf.acp.application.cookie.warning"><![CDATA[تنظیمات زیر برای ایجاد یک ورود دائمی برای وب سایت شما استفاده می شود. به خاطر داشته باشید هر زمان که نام دامنه تغییر کرد، این مقدار را به روز کنید. اگر مطمئن نیستید که کدام مقدار را باید ارائه دهید، می‌توانید با خیال راحت مقدار «دامنه» را کپی کنید..]]></item>
+        <item name="wcf.acp.application.cookieDomain"><![CDATA[دامنه کوکی]]></item>
+        <item name="wcf.acp.application.cookieDomain.error.containsPath"><![CDATA[دامنه کوکی نمی تواند شامل اجزای مسیر باشد.]]></item>
+        <item name="wcf.acp.application.cookieDomain.error.invalid"><![CDATA[دامنه کوکی با دامنه وارد شده در بالا مطابقت ندارد (sub-domains like “www” can be omitted).]]></item>
+        <item name="wcf.acp.application.domain"><![CDATA[تنظیمات دامنه]]></item>
+        <item name="wcf.acp.application.domainName"><![CDATA[دامنه]]></item>
+        <item name="wcf.acp.application.domainName.description"><![CDATA[اگر از طریق به این برنامه دسترسی دارید “https://www.example.com/community/forum/”, لطفا وارد کنید “www.example.com”.]]></item>
+        <item name="wcf.acp.application.domainName.error.containsPath"><![CDATA[دامنه نمی تواند شامل اجزای مسیر باشد.]]></item>
+        <item name="wcf.acp.application.domainPath"><![CDATA[مسیر]]></item>
+        <item name="wcf.acp.application.domainPath.description"><![CDATA[اگر از طریق به این برنامه دسترسی دارید “https://www.example.com/community/forum/”, لطفا وارد کنید “/community/forum/”.]]></item>
+        <item name="wcf.acp.application.domainPath.error.conflict"><![CDATA[این مسیر قبلاً توسط اپلیکیشن طی شده است “{$conflictApplication->getName()}”.]]></item>
+        <item name="wcf.acp.application.edit"><![CDATA[ویرایش برنامه]]></item>
+        <item name="wcf.acp.application.edit.title"><![CDATA[ویرایش برنامه: “<a href="{link controller='Package' id=$application->packageID}{/link}">{$application->getPackage()->getName()}</a>”]]></item>
+        <item name="wcf.acp.application.landingPage"><![CDATA[صفحه ورودی]]></item>
+        <item name="wcf.acp.application.landingPage.default"><![CDATA[(پیش فرض)]]></item>
+        <item name="wcf.acp.application.landingPage.description"><![CDATA[اختیاری: زمانی که کاربر به این برنامه پیمایش می کند، این صفحه نشان داده می شود.]]></item>
         <item name="wcf.acp.application.list"><![CDATA[Installed Applications]]></item>
         <item name="wcf.acp.application.management.cookieDomain"><![CDATA[Cookie Domain]]></item>
         <item name="wcf.acp.application.management.cookieDomain.description"><![CDATA[The cookie domain must match the provided domain. When in doubt simply provide the same value that you have entered for “Domain”.]]></item>
