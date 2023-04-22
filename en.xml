@@ -3796,37 +3796,37 @@ ATTENTION: The messages listed above are greatly shortened. You can view details
         <item name="wcf.acp.option.blacklist_sfs_action"><![CDATA[اقدام در مورد مسابقه]]></item>
         <item name="wcf.acp.option.blacklist_sfs_action.block"><![CDATA[مسدود کردن]]></item>
         <item name="wcf.acp.option.blacklist_sfs_action.description"><![CDATA[There is always the risk of a false-positive match, therefore it is highly recommended to set it to <strong>Disable and require manual approval</strong>.]]></item>
-        <item name="wcf.acp.option.blacklist_sfs_action.disable"><![CDATA[Disable and require manual approval]]></item>
-        <item name="wcf.acp.option.blacklist_sfs_email_address"><![CDATA[Email Address]]></item>
-        <item name="wcf.acp.option.blacklist_sfs_email_address.description"><![CDATA[Email addresses are unique and yield the best results. Recommended setting: <strong>Multiple reports</strong>.]]></item>
-        <item name="wcf.acp.option.blacklist_sfs_enable"><![CDATA[Enable the verification using Stop Forum Spam]]></item>
-        <item name="wcf.acp.option.blacklist_sfs_enable.90percentile"><![CDATA[Top 10%]]></item>
-        <item name="wcf.acp.option.blacklist_sfs_enable.description"><![CDATA[The local database contains information about the number of times an entry was reported as a spammer.<br>
-<strong>Notice: No data is transferred to a third party service at any point in the process.</strong><br>
+        <item name="wcf.acp.option.blacklist_sfs_action.disable"><![CDATA[غیرفعال کنید و نیاز به تایید دستی دارید]]></item>
+        <item name="wcf.acp.option.blacklist_sfs_email_address"><![CDATA[آدرس ایمیل]]></item>
+        <item name="wcf.acp.option.blacklist_sfs_email_address.description"><![CDATA[آدرس های ایمیل منحصر به فرد هستند و بهترین نتایج را به همراه دارند. تنظیم توصیه شده: <strong>گزارش های متعدد</strong>.]]></item>
+        <item name="wcf.acp.option.blacklist_sfs_enable"><![CDATA[تأیید را با استفاده از توقف هرزنامه انجمن فعال کنید]]></item>
+        <item name="wcf.acp.option.blacklist_sfs_enable.90percentile"><![CDATA[10درصد برتر]]></item>
+        <item name="wcf.acp.option.blacklist_sfs_enable.description"><![CDATA[پایگاه داده محلی حاوی اطلاعاتی درباره تعداد دفعاتی است که یک ورودی به عنوان هرزنامه گزارش شده است..<br>
+<strong>اخطار:هیچ داده ای در هیچ نقطه ای از فرآیند به سرویس شخص سوم منتقل نمی شود</strong><br>
 <br>
-The database is carefully maintained, but there will be always be a margin of error, caused by incorrect or outdated entries. You can choose from a set of options that controls how matches are evaluated in order to reduce false-positives. The recommended settings are based on years of experience and changes should therefore be made with caution.
+پایگاه داده با دقت نگهداری می شود، اما همیشه حاشیه ای از خطا وجود خواهد داشت که ناشی از ورودی های نادرست یا قدیمی است. می‌توانید از میان مجموعه‌ای از گزینه‌ها انتخاب کنید که نحوه ارزیابی مسابقات را کنترل می‌کند تا نتیجه نادرست را کاهش دهد. تنظیمات توصیه شده بر اساس سالها تجربه است و بنابراین تغییرات باید با احتیاط انجام شود.
 <ul class="nativeList">
-	<li><strong>Do not check</strong> – This value is completely ignored.</li>
-	<li><strong>Top 10%</strong> – Only the top 10% most frequently reported values are considered.</li>
-	<li><strong>Multiple reports</strong> – Any match that has been reported more than once.</li>
-	<li><strong>Any match is sufficient</strong> – The number of reports is entirely ignored. Not recommended.</li>
+	<li><strong>بررسی نکنید</strong> – این مقدار کاملاً نادیده گرفته می شود.</li>
+	<li><strong>10% برتر</strong> – فقط 10 درصد بالای مقادیر گزارش شده در نظر گرفته می شوند.</li>
+	<li><strong>گزارش های متعدد</strong> – هر مسابقه ای که بیش از یک بار گزارش شده باشد.</li>
+	<li><strong>هر مسابقه ای کافی است</strong> – تعداد گزارش ها به طور کامل نادیده گرفته می شود. توصیه نمیشود.</li>
 </ul>]]></item>
-        <item name="wcf.acp.option.blacklist_sfs_enable.moreThanOnce"><![CDATA[Multiple reports]]></item>
-        <item name="wcf.acp.option.blacklist_sfs_enable.simpleMatch"><![CDATA[Any match is sufficient]]></item>
-        <item name="wcf.acp.option.blacklist_sfs_enable.skip"><![CDATA[Do not check]]></item>
-        <item name="wcf.acp.option.blacklist_sfs_ip_address"><![CDATA[IP Address]]></item>
-        <item name="wcf.acp.option.blacklist_sfs_ip_address.description"><![CDATA[IP addresses are more likely to be imprecise, because a lot of them are dynamically assigned, e. g. for private households or cellular connections. Recommended setting: <strong>Top 10%</strong>.]]></item>
-        <item name="wcf.acp.option.blacklist_sfs_username"><![CDATA[Username]]></item>
-        <item name="wcf.acp.option.blacklist_sfs_username.description"><![CDATA[Usernames are the <strong>least reliable criteria</strong>. Recommended setting: <strong>Do not check</strong>.]]></item>
-        <item name="wcf.acp.option.blog_entries_per_page"><![CDATA[Blog Articles per Page]]></item>
-        <item name="wcf.acp.option.blog_entry_empty_recycle_bin_cycle"><![CDATA[Prune Trash]]></item>
-        <item name="wcf.acp.option.blog_entry_empty_recycle_bin_cycle.description"><![CDATA[Blog articles are removed from the trash by the following days. Use 0 to disable.]]></item>
-        <item name="wcf.acp.option.blog_entry_max_categories"><![CDATA[Maximum Categories per Article]]></item>
-        <item name="wcf.acp.option.blog_entry_thread_board_id"><![CDATA[Forum]]></item>
-        <item name="wcf.acp.option.blog_entry_thread_board_id.description"><![CDATA[Discussion threads are automatically created in the selected forum. If no forum is selected, no threads will be created.]]></item>
-        <item name="wcf.acp.option.blog_excerpt_length"><![CDATA[Excerpt Length]]></item>
-        <item name="wcf.acp.option.blog_index_enable_stats"><![CDATA[Display general statistics]]></item>
-        <item name="wcf.acp.option.blog_message_sidebar_enable_user_entries"><![CDATA[Display author’s blog article count]]></item>
+        <item name="wcf.acp.option.blacklist_sfs_enable.moreThanOnce"><![CDATA[گزارش های متعدد]]></item>
+        <item name="wcf.acp.option.blacklist_sfs_enable.simpleMatch"><![CDATA[هر مسابقه ای کافی است]]></item>
+        <item name="wcf.acp.option.blacklist_sfs_enable.skip"><![CDATA[بررسی نکنید]]></item>
+        <item name="wcf.acp.option.blacklist_sfs_ip_address"><![CDATA[آدرس آی پی]]></item>
+        <item name="wcf.acp.option.blacklist_sfs_ip_address.description"><![CDATA[آدرس های آی پی به احتمال زیاد نادقیق هستند، زیرا بسیاری از آنها به صورت پویا تخصیص داده می شوند، مانند. g. برای خانوارهای خصوصی یا اتصالات تلفن همراه. تنظیم توصیه شده: <strong>10% برتر</strong>.]]></item>
+        <item name="wcf.acp.option.blacklist_sfs_username"><![CDATA[نام کاربری]]></item>
+        <item name="wcf.acp.option.blacklist_sfs_username.description"><![CDATA[نام های کاربری هستند <strong>حداقل معیارهای قابل اعتماد</strong>. تنظیم توصیه شده: <strong>بررسی نکنید</strong>.]]></item>
+        <item name="wcf.acp.option.blog_entries_per_page"><![CDATA[مقالات وبلاگ در هر صفحه]]></item>
+        <item name="wcf.acp.option.blog_entry_empty_recycle_bin_cycle"><![CDATA[سطل آشغال را هرس کنید]]></item>
+        <item name="wcf.acp.option.blog_entry_empty_recycle_bin_cycle.description"><![CDATA[مقالات وبلاگ تا روزهای بعد از سطل زباله حذف می شوند. برای غیرفعال کردن از 0 استفاده کنید.]]></item>
+        <item name="wcf.acp.option.blog_entry_max_categories"><![CDATA[حداکثر دسته بندی در هر مقاله]]></item>
+        <item name="wcf.acp.option.blog_entry_thread_board_id"><![CDATA[انجمن]]></item>
+        <item name="wcf.acp.option.blog_entry_thread_board_id.description"><![CDATA[موضوعات بحث به طور خودکار در انجمن انتخاب شده ایجاد می شود. اگر هیچ انجمنی انتخاب نشود، هیچ موضوعی ایجاد نخواهد شد.]]></item>
+        <item name="wcf.acp.option.blog_excerpt_length"><![CDATA[طول برگزیده شده]]></item>
+        <item name="wcf.acp.option.blog_index_enable_stats"><![CDATA[نمایش آمار کلی]]></item>
+        <item name="wcf.acp.option.blog_message_sidebar_enable_user_entries"><![CDATA[نمایش تعداد مقالات وبلاگ نویسنده]]></item>
         <item name="wcf.acp.option.breadcrumbs_home_use_page_title"><![CDATA[Use the page title for the home page in the breadcrumbs]]></item>
         <item name="wcf.acp.option.cache_source_memcached_host"><![CDATA[Memcached-Server]]></item>
         <item name="wcf.acp.option.cache_source_memcached_host.description"><![CDATA[]]></item>
