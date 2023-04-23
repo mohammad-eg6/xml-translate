@@ -4156,47 +4156,47 @@ ATTENTION: The messages listed above are greatly shortened. You can view details
         <item name="wcf.acp.option.gallery_video_links"><![CDATA[فعال کردن لینک های ویدئویی]]></item>
         <item name="wcf.acp.option.gallery_video_links.description"><![CDATA[.علاوه بر فعال کردن این گزینه، باید پلتفرم‌های ویدیویی زیر را نیز فعال کنید که می‌خواهید کاربران ویدیوها را از آن‌ها پیوند دهند]]></item>
         <item name="wcf.acp.option.gallery_video_upload"><![CDATA[فعال کردن آپلود ویدیو]]></item>
-        <item name="wcf.acp.option.gallery_vimeo_client_id"><![CDATA[Vimeo Client Identifier]]></item>
-        <item name="wcf.acp.option.gallery_vimeo_client_id.description"><![CDATA[Vimeo providers a detailed description on how to get the client identifier and client secrets <a href="https://developer.vimeo.com/api/authentication#overview" class="externalURL">here</a>. Note that you only need to create an <a href="https://developer.vimeo.com/apps" class="externalURL">app</a> and that you can find the required information on the Authentication page of the app.<br>
-Make sure that there are no whitespaces before and after the actual client identifier!]]></item>
+        <item name="wcf.acp.option.gallery_vimeo_client_id"><![CDATA[شناسه مشتری ویمیو]]></item>
+        <item name="wcf.acp.option.gallery_vimeo_client_id.description"><![CDATA[ارائه دهندگان ویمیو شرح مفصلی در مورد نحوه دریافت شناسه مشتری و اسرار مشتری ارائه می دهند <a href="https://developer.vimeo.com/api/authentication#overview" class="externalURL">here</a>. توجه داشته باشید که شما فقط نیاز به ایجاد یک <a href="https://developer.vimeo.com/apps" class="externalURL">app</a> و اینکه می توانید اطلاعات مورد نیاز را در صفحه احراز هویت برنامه پیدا کنید.<br>
+اطمینان حاصل کنید که هیچ فضای خالی قبل و بعد از شناسه مشتری واقعی وجود ندارد!]]></item>
         <item name="wcf.acp.option.gallery_vimeo_client_secrets"><![CDATA[Vimeo Client Secrets]]></item>
-        <item name="wcf.acp.option.gallery_vimeo_client_secrets.description"><![CDATA[Make sure that there are no whitespaces before and after the actual client secrets!]]></item>
-        <item name="wcf.acp.option.gallery_youtube_api_key"><![CDATA[YouTube API Key]]></item>
-        <item name="wcf.acp.option.gallery_youtube_api_key.description"><![CDATA[Google provides a detailed description on how to get an API key <a href="https://developers.google.com/youtube/registering_an_application" class="externalURL">here</a>. If you restrict the used key on the Google API website, choose “IP addresses (web servers, cron jobs, etc.)” and enter the ip address(es) of your website’s web server.<br>
-Make sure that there are no whitespaces before and after the actual API key!]]></item>
-        <item name="wcf.acp.option.github_private_key"><![CDATA[GitHub Client Secret]]></item>
-        <item name="wcf.acp.option.github_public_key"><![CDATA[GitHub Client ID]]></item>
-        <item name="wcf.acp.option.github_public_key.description"><![CDATA[You can obtain both your Client ID and Client Secret at <a href="https://github.com/settings/developers" class="externalURL">GitHub</a>. The Callback URL is: {link controller="GithubAuth" forceFrontend=true}{/link}]]></item>
-        <item name="wcf.acp.option.google_maps_access_user_location"><![CDATA[Use current user location]]></item>
-        <item name="wcf.acp.option.google_maps_access_user_location.description"><![CDATA[When entering a location, the current location of the user is used as start point on the map.]]></item>
-        <item name="wcf.acp.option.google_maps_api_key"><![CDATA[Browser API Key]]></item>
-        <item name="wcf.acp.option.google_maps_api_key.description"><![CDATA[Google provides a detailed description on how to get an API key <a href="https://developers.google.com/maps/documentation/javascript/get-api-key" class="externalURL">here</a>.]]></item>
-        <item name="wcf.acp.option.google_maps_default_latitude"><![CDATA[Default Map Position (Latitude)]]></item>
-        <item name="wcf.acp.option.google_maps_default_longitude"><![CDATA[Default Map Position (Longitude)]]></item>
-        <item name="wcf.acp.option.google_maps_enable_double_click_zoom"><![CDATA[Enable zoom by double-clicking]]></item>
-        <item name="wcf.acp.option.google_maps_enable_dragging"><![CDATA[Enable map dragging]]></item>
-        <item name="wcf.acp.option.google_maps_enable_dragging.description"><![CDATA[You can move the map by keeping the left button of your mouse pressed.]]></item>
-        <item name="wcf.acp.option.google_maps_enable_scale_control"><![CDATA[Display map scale]]></item>
-        <item name="wcf.acp.option.google_maps_enable_scroll_wheel_zoom"><![CDATA[Enable zoom by scroll wheel]]></item>
-        <item name="wcf.acp.option.google_maps_type"><![CDATA[Map Type]]></item>
-        <item name="wcf.acp.option.google_maps_type.description"><![CDATA[The default map type.]]></item>
-        <item name="wcf.acp.option.google_maps_type.hybrid"><![CDATA[Hybrid]]></item>
-        <item name="wcf.acp.option.google_maps_type.map"><![CDATA[Map]]></item>
-        <item name="wcf.acp.option.google_maps_type.physical"><![CDATA[Terrain]]></item>
-        <item name="wcf.acp.option.google_maps_type.satellite"><![CDATA[Satellite]]></item>
-        <item name="wcf.acp.option.google_maps_zoom"><![CDATA[Map Zoom]]></item>
-        <item name="wcf.acp.option.google_maps_zoom.description"><![CDATA[The default map zoom.]]></item>
-        <item name="wcf.acp.option.google_private_key"><![CDATA[Google Client Secret]]></item>
-        <item name="wcf.acp.option.google_public_key"><![CDATA[Google Client ID]]></item>
-        <item name="wcf.acp.option.google_public_key.description"><![CDATA[You can obtain your Client ID and Client Secret at <a href="https://console.cloud.google.com/apis/credentials" class="externalURL">Google</a>. The Redirect-URI is: {link controller="GoogleAuth" forceFrontend=true}{/link}]]></item>
-        <item name="wcf.acp.option.gravatar_default_type"><![CDATA[Default Gravatar Type]]></item>
-        <item name="wcf.acp.option.gravatar_default_type.404"><![CDATA[No default Gravatar]]></item>
-        <item name="wcf.acp.option.gravatar_default_type.description"><![CDATA[The <a class="externalURL" href="https://de.gravatar.com/site/implement/images/#default-image">default Gravatar type</a> used if no matching Gravatar was found.]]></item>
+        <item name="wcf.acp.option.gallery_vimeo_client_secrets.description"><![CDATA[!مطمئن شوید که قبل و بعد از اسرار مشتری واقعی هیچ فضای خالی وجود ندارد]]></item>
+        <item name="wcf.acp.option.gallery_youtube_api_key"><![CDATA[کلید ای پی آی یوتیوب]]></item>
+        <item name="wcf.acp.option.gallery_youtube_api_key.description"><![CDATA[گوگل توضیحات مفصلی در مورد نحوه دریافت کلید ای پی آی ارائه می دهد <a href="https://developers.google.com/youtube/registering_an_application" class="externalURL">here</a>. اگر کلید استفاده شده را در وب سایت گوگل ای پی آی محدود می کنید، انتخاب کنید “IP addresses (web servers, cron jobs, etc.)” و آدرس(های) آی پی وب سرور وب سایت خود را وارد کنید.<br>
+مطمئن شوید که قبل و بعد از کلید ای پی آی واقعی هیچ فضای خالی وجود ندارد!]]></item>
+        <item name="wcf.acp.option.github_private_key"><![CDATA[راز مشتری گیت هاب]]></item>
+        <item name="wcf.acp.option.github_public_key"><![CDATA[شناسه مشتری گیت هاب]]></item>
+        <item name="wcf.acp.option.github_public_key.description"><![CDATA[شما می توانید شناسه مشتری و راز مشتری خود را در این آدرس دریافت کنید <a href="https://github.com/settings/developers" class="externalURL">GitHub</a>. آدرس اینترنتی برگشت به تماس است: {link controller="GithubAuth" forceFrontend=true}{/link}]]></item>
+        <item name="wcf.acp.option.google_maps_access_user_location"><![CDATA[از موقعیت مکانی کاربر فعلی استفاده کنید]]></item>
+        <item name="wcf.acp.option.google_maps_access_user_location.description"><![CDATA[.هنگام وارد کردن یک مکان، مکان فعلی کاربر به عنوان نقطه شروع روی نقشه استفاده می شود]]></item>
+        <item name="wcf.acp.option.google_maps_api_key"><![CDATA[کلید ای پی آی مرورگر]]></item>
+        <item name="wcf.acp.option.google_maps_api_key.description"><![CDATA[گوگل توضیحات مفصلی در مورد نحوه دریافت کلید ای پی آی ارائه می دهد <a href="https://developers.google.com/maps/documentation/javascript/get-api-key" class="externalURL">here</a>.]]></item>
+        <item name="wcf.acp.option.google_maps_default_latitude"><![CDATA[موقعیت پیش فرض نقشه (عرض جغرافیایی)]]></item>
+        <item name="wcf.acp.option.google_maps_default_longitude"><![CDATA[موقعیت پیش‌فرض نقشه (طول جغرافیایی)]]></item>
+        <item name="wcf.acp.option.google_maps_enable_double_click_zoom"><![CDATA[با دوبار کلیک کردن، بزرگنمایی را فعال کنید]]></item>
+        <item name="wcf.acp.option.google_maps_enable_dragging"><![CDATA[کشیدن نقشه را فعال کنید]]></item>
+        <item name="wcf.acp.option.google_maps_enable_dragging.description"><![CDATA[.با فشار دادن دکمه سمت چپ موس می توانید نقشه را جابجا کنید]]></item>
+        <item name="wcf.acp.option.google_maps_enable_scale_control"><![CDATA[نمایش مقیاس نقشه]]></item>
+        <item name="wcf.acp.option.google_maps_enable_scroll_wheel_zoom"><![CDATA[زوم با چرخ طومار را فعال کنید]]></item>
+        <item name="wcf.acp.option.google_maps_type"><![CDATA[نوع نقشه]]></item>
+        <item name="wcf.acp.option.google_maps_type.description"><![CDATA[.نوع نقشه پیش فرض]]></item>
+        <item name="wcf.acp.option.google_maps_type.hybrid"><![CDATA[ترکیبی]]></item>
+        <item name="wcf.acp.option.google_maps_type.map"><![CDATA[نقشه]]></item>
+        <item name="wcf.acp.option.google_maps_type.physical"><![CDATA[زمین]]></item>
+        <item name="wcf.acp.option.google_maps_type.satellite"><![CDATA[ماهواره]]></item>
+        <item name="wcf.acp.option.google_maps_zoom"><![CDATA[زوم نقشه]]></item>
+        <item name="wcf.acp.option.google_maps_zoom.description"><![CDATA[.بزرگنمایی پیش فرض نقشه]]></item>
+        <item name="wcf.acp.option.google_private_key"><![CDATA[راز مشتری گوگل]]></item>
+        <item name="wcf.acp.option.google_public_key"><![CDATA[شناسه مشتری گوگل]]></item>
+        <item name="wcf.acp.option.google_public_key.description"><![CDATA[شما می توانید شناسه مشتری و راز مشتری خود را در این آدرس دریافت کنید <a href="https://console.cloud.google.com/apis/credentials" class="externalURL">Google</a>. The Redirect-URI is: {link controller="GoogleAuth" forceFrontend=true}{/link}]]></item>
+        <item name="wcf.acp.option.gravatar_default_type"><![CDATA[نوع پیش‌فرض گراواتار]]></item>
+        <item name="wcf.acp.option.gravatar_default_type.404"><![CDATA[بدون گراواتار پیش فرض]]></item>
+        <item name="wcf.acp.option.gravatar_default_type.description"><![CDATA[را <a class="externalURL" href="https://de.gravatar.com/site/implement/images/#default-image">نوع پیش فرض گراواتار</a> اگر گراواتار مشابهی پیدا نشد استفاده می شود.]]></item>
         <item name="wcf.acp.option.gravatar_default_type.identicon"><![CDATA[Identicon]]></item>
-        <item name="wcf.acp.option.gravatar_default_type.monsterid"><![CDATA[Monster id]]></item>
-        <item name="wcf.acp.option.gravatar_default_type.retro"><![CDATA[Retro]]></item>
-        <item name="wcf.acp.option.gravatar_default_type.wavatar"><![CDATA[Wavatar]]></item>
-        <item name="wcf.acp.option.head_code"><![CDATA[Head Code]]></item>
+        <item name="wcf.acp.option.gravatar_default_type.monsterid"><![CDATA[شناسه هیولا]]></item>
+        <item name="wcf.acp.option.gravatar_default_type.retro"><![CDATA[رترو]]></item>
+        <item name="wcf.acp.option.gravatar_default_type.wavatar"><![CDATA[واواتار]]></item>
+        <item name="wcf.acp.option.head_code"><![CDATA[کد سر]]></item>
         <item name="wcf.acp.option.head_code.description"><![CDATA[The entered code will be appended to the head tag of your site. You can use it to add additional meta tags.]]></item>
         <item name="wcf.acp.option.http_send_x_frame_options"><![CDATA[Disallow embedding in a frame (deprecated)]]></item>
         <item name="wcf.acp.option.http_send_x_frame_options.description"><![CDATA[The option to control embedding within a frame is deprecated, will be removed in a future version and embedding will be prevented in all cases. Allowing embedding reduces security by allowing <a href="https://en.wikipedia.org/wiki/Clickjacking" class="externalURL">Clickjacking attacks</a> to happen. In addition certain security features for cookies are not available within frames.]]></item>
