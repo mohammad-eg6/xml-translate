@@ -2082,48 +2082,48 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.article.teaser"><![CDATA[تیزر]]></item>
         <item name="wcf.acp.article.teaserImage"><![CDATA[تصویر تیزر]]></item>
         <item name="wcf.acp.article.trash.confirmMessage"><![CDATA[آیا واقعاً می خواهید منتقل کنبد {if $isArticleEdit|empty}مقاله <span class="confirmationObject">{$article->getTitle()}</span>{else}}این مقاله{/if} به سطل آشغال?]]></item>
-        <item name="wcf.acp.article.trash.notice"><![CDATA[This article has been moved to the trash bin and is currently hidden from view.]]></item>
-        <item name="wcf.acp.article.views"><![CDATA[Views]]></item>
+        <item name="wcf.acp.article.trash.notice"><![CDATA[این مقاله به سطل آشغال منتقل شده است و در حال حاضر از دید پنهان است.]]></item>
+        <item name="wcf.acp.article.views"><![CDATA[بازدید ها]]></item>
     </category>
     <category name="wcf.acp.attachment">
-        <item name="wcf.acp.attachment.list"><![CDATA[Attachments]]></item>
-        <item name="wcf.acp.attachment.stats"><![CDATA[<ul class="inlineList dotSeparated"><li>{#$stats.count} Attachment{if $stats.count != 1}s{/if}</li><li>{@$stats.size|filesize}</li><li>{#$stats.downloads} Download{if $stats.downloads != 1}s{/if}</li></ul>]]></item>
+        <item name="wcf.acp.attachment.list"><![CDATA[پیوست ها]]></item>
+        <item name="wcf.acp.attachment.stats"><![CDATA[<ul class="inlineList dotSeparated"><li>{#$stats.count} پیوست {if $stats.count != 1}s{/if}</li><li>{@$stats.size|filesize}</li><li>{#$stats.downloads} دانلود{if $stats.downloads != 1}ها{/if}</li></ul>]]></item>
     </category>
     <category name="wcf.acp.bbcode">
-        <item name="wcf.acp.bbcode.add"><![CDATA[Add BBCode]]></item>
-        <item name="wcf.acp.bbcode.add.userGroupOptionInfo"><![CDATA[Newly created BBCodes will be accessible for everyone. You can restrict usage by editing the specific user group permissions.]]></item>
-        <item name="wcf.acp.bbcode.attribute"><![CDATA[Attribute]]></item>
-        <item name="wcf.acp.bbcode.attribute.attributeHtml"><![CDATA[Attribute HTML code]]></item>
-        <item name="wcf.acp.bbcode.attribute.required"><![CDATA[Required]]></item>
-        <item name="wcf.acp.bbcode.attribute.useText"><![CDATA[Use content]]></item>
-        <item name="wcf.acp.bbcode.attribute.useText.description"><![CDATA[The content between BBCode tags would be used as attribute value unless it was clearly specified.]]></item>
-        <item name="wcf.acp.bbcode.attribute.validationPattern"><![CDATA[Regular Expression for Validation]]></item>
-        <item name="wcf.acp.bbcode.attribute.validationPattern.error.invalid"><![CDATA[The regular expression failed to validate.]]></item>
-        <item name="wcf.acp.bbcode.attributes"><![CDATA[Attribute]]></item>
-        <item name="wcf.acp.bbcode.bbcodeTag"><![CDATA[BBCode]]></item>
-        <item name="wcf.acp.bbcode.bbcodeTag.error.inUse"><![CDATA[The BBCode already exists.]]></item>
-        <item name="wcf.acp.bbcode.bbcodeTag.error.invalid"><![CDATA[The BBCode is invalid.]]></item>
-        <item name="wcf.acp.bbcode.buttonLabel"><![CDATA[Button Label]]></item>
-        <item name="wcf.acp.bbcode.className"><![CDATA[PHP Class Name]]></item>
-        <item name="wcf.acp.bbcode.className.error.notFound"><![CDATA[Unable to find specified class.]]></item>
-        <item name="wcf.acp.bbcode.edit"><![CDATA[Edit BBCode]]></item>
-        <item name="wcf.acp.bbcode.htmlClose"><![CDATA[Closing HTML tag]]></item>
-        <item name="wcf.acp.bbcode.htmlOpen"><![CDATA[Opening HTML tag]]></item>
-        <item name="wcf.acp.bbcode.isBlockElement"><![CDATA[BBCode represents a block element]]></item>
-        <item name="wcf.acp.bbcode.isBlockElement.description"><![CDATA[Block elements are treated differently when processed. They can contain line breaks and paragraphs, and generally take up the entire available width. Common examples for block elements include quotes and lists.<br><strong>Attention</strong>: You must not set this option for inline elements such as bold or links.]]></item>
-        <item name="wcf.acp.bbcode.isSourceCode"><![CDATA[Content represents source code]]></item>
-        <item name="wcf.acp.bbcode.isSourceCode.description"><![CDATA[Disables conversion of BBCodes and smilies.]]></item>
-        <item name="wcf.acp.bbcode.list"><![CDATA[BBCodes]]></item>
-        <item name="wcf.acp.bbcode.mediaProvider.add"><![CDATA[Add Media Provider]]></item>
-        <item name="wcf.acp.bbcode.mediaProvider.className"><![CDATA[PHP Class Name]]></item>
-        <item name="wcf.acp.bbcode.mediaProvider.className.error.notFound"><![CDATA[Unable to find specified class.]]></item>
-        <item name="wcf.acp.bbcode.mediaProvider.edit"><![CDATA[Edit Media Provider]]></item>
-        <item name="wcf.acp.bbcode.mediaProvider.html"><![CDATA[HTML Code]]></item>
-        <item name="wcf.acp.bbcode.mediaProvider.html.description"><![CDATA[{literal}Enter the media’s HTML code here. Variables are recognized as <kbd>{$variable}</kbd> and will be replaced with the regular expression’s matching named group.<br>
-		Example: <kbd>{$ID}</kbd> will be replaced with the medium ID as shown above.{/literal}]]></item>
-        <item name="wcf.acp.bbcode.mediaProvider.list"><![CDATA[Media Providers]]></item>
-        <item name="wcf.acp.bbcode.mediaProvider.regex"><![CDATA[Regular Expression]]></item>
-        <item name="wcf.acp.bbcode.mediaProvider.regex.description"><![CDATA[Provide the link format as a <a href="https://en.wikipedia.org/wiki/Regular_expression">regular expression</a>. Enter one expression per line. Examples for medium ID detection:
+        <item name="wcf.acp.bbcode.add"><![CDATA[کد بی بی را اضافه کنید]]></item>
+        <item name="wcf.acp.bbcode.add.userGroupOptionInfo"><![CDATA[کد های بی بی تازه ایجاد شده برای همه قابل دسترسی خواهد بود. می توانید با ویرایش مجوزهای گروه کاربری خاص، استفاده را محدود کنید.]]></item>
+        <item name="wcf.acp.bbcode.attribute"><![CDATA[نشان]]></item>
+        <item name="wcf.acp.bbcode.attribute.attributeHtml"><![CDATA[کد اچ تی ام ال را مشخص کنید]]></item>
+        <item name="wcf.acp.bbcode.attribute.required"><![CDATA[ضروری]]></item>
+        <item name="wcf.acp.bbcode.attribute.useText"><![CDATA[از محتوا استفاده کنید]]></item>
+        <item name="wcf.acp.bbcode.attribute.useText.description"><![CDATA[Tمحتوای بین تگ‌های کد بی بی به عنوان مقدار مشخصه استفاده می‌شود مگر اینکه به وضوح مشخص شده باشد.]]></item>
+        <item name="wcf.acp.bbcode.attribute.validationPattern"><![CDATA[عبارت منظم برای اعتبارسنجی]]></item>
+        <item name="wcf.acp.bbcode.attribute.validationPattern.error.invalid"><![CDATA[عبارت منظم تأیید نشد.]]></item>
+        <item name="wcf.acp.bbcode.attributes"><![CDATA[نشان]]></item>
+        <item name="wcf.acp.bbcode.bbcodeTag"><![CDATA[کد بی بی ]]></item>
+        <item name="wcf.acp.bbcode.bbcodeTag.error.inUse"><![CDATA[کد بی بی  از قبل وجود دارد.]]></item>
+        <item name="wcf.acp.bbcode.bbcodeTag.error.invalid"><![CDATA[کد بی بی نامعتبر است.]]></item>
+        <item name="wcf.acp.bbcode.buttonLabel"><![CDATA[برچسب دکمه]]></item>
+        <item name="wcf.acp.bbcode.className"><![CDATA[نام کلاس پی اچ پی]]></item>
+        <item name="wcf.acp.bbcode.className.error.notFound"><![CDATA[کلاس مشخص شده پیدا نشد.]]></item>
+        <item name="wcf.acp.bbcode.edit"><![CDATA[کد بی بی را ویرایش کنید]]></item>
+        <item name="wcf.acp.bbcode.htmlClose"><![CDATA[بستن تگ اچ تی ام ال]]></item>
+        <item name="wcf.acp.bbcode.htmlOpen"><![CDATA[باز کردن تگ اچ تی ام ال]]></item>
+        <item name="wcf.acp.bbcode.isBlockElement"><![CDATA[کد بی بی یک عنصر بلوک را نشان می دهد]]></item>
+        <item name="wcf.acp.bbcode.isBlockElement.description"><![CDATA[هنگام پردازش با عناصر بلوک متفاوت رفتار می شود. آنها می توانند شامل خطوط شکسته و پاراگراف باشند و به طور کلی کل عرض موجود را اشغال کنند. مثال های رایج برای عناصر بلوک شامل نقل قول ها و لیست ها است.<br><strong>توجه</strong>: شما نباید این گزینه را برای عناصر درون خطی مانند پررنگ یا پیوندها تنظیم کنید.]]></item>
+        <item name="wcf.acp.bbcode.isSourceCode"><![CDATA[محتوا نشان دهنده کد منبع است]]></item>
+        <item name="wcf.acp.bbcode.isSourceCode.description"><![CDATA[تبدیل کدهای بی بی و شکلک ها را غیرفعال می کند.]]></item>
+        <item name="wcf.acp.bbcode.list"><![CDATA[کد های بی بی]]></item>
+        <item name="wcf.acp.bbcode.mediaProvider.add"><![CDATA[ارائه دهنده رسانه را اضافه کنید]]></item>
+        <item name="wcf.acp.bbcode.mediaProvider.className"><![CDATA[نام کلاس پی اچ پی]]></item>
+        <item name="wcf.acp.bbcode.mediaProvider.className.error.notFound"><![CDATA[کلاس مشخص شده پیدا نشد.]]></item>
+        <item name="wcf.acp.bbcode.mediaProvider.edit"><![CDATA[ویرایش ارائه دهنده رسانه]]></item>
+        <item name="wcf.acp.bbcode.mediaProvider.html"><![CDATA[کد اچ تی ام ال]]></item>
+        <item name="wcf.acp.bbcode.mediaProvider.html.description"><![CDATA[{literal}کد اچ تی ام ال رسانه را در اینجا وارد کنید. متغیرها به عنوان شناسایی می شوند <kbd>{$variable}</kbd> و با گروه نام‌گذاری شده مطابق عبارت منظم جایگزین می‌شود.<br>
+		مثال: <kbd>{$ID}</kbd> همانطور که در بالا نشان داده شده است با شناسه رسانه جایگزین می شود.{/literal}]]></item>
+        <item name="wcf.acp.bbcode.mediaProvider.list"><![CDATA[ارائه دهندگان رسانه]]></item>
+        <item name="wcf.acp.bbcode.mediaProvider.regex"><![CDATA[عبارت منظم]]></item>
+        <item name="wcf.acp.bbcode.mediaProvider.regex.description"><![CDATA[فرمت پیوند را ارابه صورت  ارائه دهید <a href="https://en.wikipedia.org/wiki/Regular_expression">regular expression</a>. Enter one expression per line. Examples for medium ID detection:
 <ul class="nativeList">
 	<li><kbd>(?&lt;ID&gt;[0-9]+)</kbd> detects a numeric ID.</li>
 	<li><kbd>(?&lt;ID&gt;[0-9a-zA-Z]+)</kbd> detects an alphanumeric ID.</li>
@@ -3998,75 +3998,75 @@ ATTENTION: The messages listed above are greatly shortened. You can view details
         <item name="wcf.acp.option.conversation_list_default_sort_field"><![CDATA[مرتب سازی بر اساس]]></item>
         <item name="wcf.acp.option.conversation_list_default_sort_field.description"><![CDATA[گزینه مرتب سازی پیش فرض مکالمات را انتخاب کنید.]]></item>
         <item name="wcf.acp.option.conversation_list_default_sort_order"><![CDATA[ترتیب مرتب سازی]]></item>
-        <item name="wcf.acp.option.conversation_list_default_sort_order.description"><![CDATA[ترتیب مرتب سازی پیش فرض مکالمات را انتخاب کنید.]]></item>
-        <item name="wcf.acp.option.conversation_messages_per_page"><![CDATA[پیام در هر صفحه]]></item>
-        <item name="wcf.acp.option.conversations_per_page"><![CDATA[مکالمات در هر صفحه]]></item>
-        <item name="wcf.acp.option.cookie_domain"><![CDATA[دامنه کوکی]]></item>
-        <item name="wcf.acp.option.cookie_domain.description"><![CDATA[به جز شرایط خاص باید خالی بماند.]]></item>
-        <item name="wcf.acp.option.cookie_path"><![CDATA[مسیر کوکی]]></item>
+        <item name="wcf.acp.option.conversation_list_default_sort_order.description"><![CDATA[Choose default sort order of conversations.]]></item>
+        <item name="wcf.acp.option.conversation_messages_per_page"><![CDATA[Messages per Page]]></item>
+        <item name="wcf.acp.option.conversations_per_page"><![CDATA[Conversations per Page]]></item>
+        <item name="wcf.acp.option.cookie_domain"><![CDATA[Cookie Domain]]></item>
+        <item name="wcf.acp.option.cookie_domain.description"><![CDATA[Should be left blank except for special circumstances.]]></item>
+        <item name="wcf.acp.option.cookie_path"><![CDATA[Cookie Path]]></item>
         <item name="wcf.acp.option.cookie_path.description"><![CDATA[Value should be absolute to Document Root, e.g. “/forum” for “https://www.woltlab.com/forum”.]]></item>
-        <item name="wcf.acp.option.cookie_prefix"><![CDATA[پیشوند کوکی]]></item>
-        <item name="wcf.acp.option.desktop_notification_package_id"><![CDATA[دامنه اصلی برای اعلان‌های دسک‌تاپ]]></item>
-        <item name="wcf.acp.option.desktop_notification_package_id.description"><![CDATA[اعلان‌های دسک‌تاپ فقط برای برنامه انتخابی فعال می‌شود، از جمله همه برنامه‌هایی که دقیقاً از همان دامنه استفاده می‌کنند.]]></item>
-        <item name="wcf.acp.option.edit_history_expiration"><![CDATA[دوره زمانی ذخیره سازی]]></item>
-        <item name="wcf.acp.option.edit_history_expiration.description"><![CDATA[محتوای تاریخچه ویرایش پس از روزهای بعد حذف خواهد شد. برای غیرفعال کردن از 0 استفاده کنید.]]></item>
-        <item name="wcf.acp.option.enable_ad_rotation"><![CDATA[چرخش تبلیغات را فعال کنید]]></item>
-        <item name="wcf.acp.option.enable_ad_rotation.description"><![CDATA[اگر بیش از یک تبلیغ در هر مکان وجود داشته باشد، هر بار یک تبلیغ تصادفی نمایش داده می شود. با غیرفعال کردن این گزینه همه تبلیغات به صورت همزمان نمایش داده می شود]]></item>
-        <item name="wcf.acp.option.enable_benchmark"><![CDATA[معیار را فعال کنید]]></item>
-        <item name="wcf.acp.option.enable_benchmark.description"><![CDATA[.داده های اضافی را در مورد استفاده از منابع توسط اجزای جداگانه ضبط می کند. اکیداً توصیه می شود این گزینه را در محیط های تولیدی غیرفعال کنید]]></item>
-        <item name="wcf.acp.option.enable_debug_mode"><![CDATA[حالت اشکال زدایی را فعال کنید]]></item>
-        <item name="wcf.acp.option.enable_debug_mode.description"><![CDATA[!پیام های خطای گسترده را فعال می کند، همیشه باید در محیط های تولید غیرفعال شود]]></item>
-        <item name="wcf.acp.option.enable_developer_tools"><![CDATA[ابزارهای توسعه دهنده را فعال کنید]]></item>
-        <item name="wcf.acp.option.enable_developer_tools.description"><![CDATA[.مجموعه ای از ابزارهای تخصصی را فعال می کند که برای توسعه افزونه استفاده می شود. همیشه باید در محیط های تولید غیرفعال شود]]></item>
-        <item name="wcf.acp.option.enable_pluginstore_widget"><![CDATA[نمایش محصولات پیشنهادی]]></item>
+        <item name="wcf.acp.option.cookie_prefix"><![CDATA[Cookie Prefix]]></item>
+        <item name="wcf.acp.option.desktop_notification_package_id"><![CDATA[Primary Domain for Desktop Notifications]]></item>
+        <item name="wcf.acp.option.desktop_notification_package_id.description"><![CDATA[Desktop Notifications will be enabled for the selected app only, including all other apps that use the exact same domain.]]></item>
+        <item name="wcf.acp.option.edit_history_expiration"><![CDATA[Storage Time Period]]></item>
+        <item name="wcf.acp.option.edit_history_expiration.description"><![CDATA[Content in the edit history will be removed after the following days. Use 0 to disable.]]></item>
+        <item name="wcf.acp.option.enable_ad_rotation"><![CDATA[Enable ad rotation]]></item>
+        <item name="wcf.acp.option.enable_ad_rotation.description"><![CDATA[If there is more than one ad per placeholder, a random ad will be displayed every time. Disabling this option will display all ads simultaneously.]]></item>
+        <item name="wcf.acp.option.enable_benchmark"><![CDATA[Enable benchmark]]></item>
+        <item name="wcf.acp.option.enable_benchmark.description"><![CDATA[Captures additional data on resource usage by individual components. It is strongly recommended to disable this option in production environments.]]></item>
+        <item name="wcf.acp.option.enable_debug_mode"><![CDATA[Enable debug mode]]></item>
+        <item name="wcf.acp.option.enable_debug_mode.description"><![CDATA[Enables extensive error messages, it should always be disabled in production environments!]]></item>
+        <item name="wcf.acp.option.enable_developer_tools"><![CDATA[Enable developer tools]]></item>
+        <item name="wcf.acp.option.enable_developer_tools.description"><![CDATA[Enables a set of specialized tools that are used for plugin development. Should always be disabled in production environments.]]></item>
+        <item name="wcf.acp.option.enable_pluginstore_widget"><![CDATA[Display recommended products]]></item>
         <item name="wcf.acp.option.enable_pluginstore_widget.description"><![CDATA[Displays recommended products from the WoltLab® Plugin-Store on the Administration Control Panel’s index page.]]></item>
-        <item name="wcf.acp.option.enable_polling"><![CDATA[اعلان های پس زمینه را فعال کنید]]></item>
-        <item name="wcf.acp.option.enable_polling.description"><![CDATA[.به صورت دوره ای اعلان های جدید را در پس زمینه بازیابی می کند، درخواست ها هر 5 دقیقه ارسال می شوند. در صورت عدم فعالیت، فاصله زمانی تا 15 دقیقه افزایش می یابد]]></item>
-        <item name="wcf.acp.option.enable_production_debug_mode"><![CDATA[تحلیل مسئله در محیط های تولید]]></item>
-        <item name="wcf.acp.option.enable_production_debug_mode.description"><![CDATA[.آدرس اینترنتی فعلی را به جست وجوهای پایگاه داده اضافه می کند تا به جستجوی آنها در فایل های گزارش سرور پایگاه داده کمک کند]]></item>
-        <item name="wcf.acp.option.enable_share_buttons"><![CDATA[نمایش دکمه اشتراک محتوا]]></item>
-        <item name="wcf.acp.option.enable_user_authentication_failure"><![CDATA[ورود ناموفق تلاش برای ورود به سیستم]]></item>
+        <item name="wcf.acp.option.enable_polling"><![CDATA[Enable Background Notifications]]></item>
+        <item name="wcf.acp.option.enable_polling.description"><![CDATA[Periodically retrieves new notifications in the background, requests are dispatched every 5 minutes. Interval increases to up to 15 minutes on inactivity.]]></item>
+        <item name="wcf.acp.option.enable_production_debug_mode"><![CDATA[Problem analysis in production environments]]></item>
+        <item name="wcf.acp.option.enable_production_debug_mode.description"><![CDATA[Appends the current URL to database queries to assist looking them up in the database server’s log files.]]></item>
+        <item name="wcf.acp.option.enable_share_buttons"><![CDATA[Display content share button]]></item>
+        <item name="wcf.acp.option.enable_user_authentication_failure"><![CDATA[Log failed login attempts]]></item>
         <item name="wcf.acp.option.enable_woltlab_news"><![CDATA[Display WoltLab news]]></item>
         <item name="wcf.acp.option.enable_woltlab_news.description"><![CDATA[Displays the current WoltLab News on the Administration Control Panel’s index page.]]></item>
-        <item name="wcf.acp.option.error.controllerReplacementCollision"><![CDATA[نام مستعار “{$urlControllerReplacementError}” برابر با یک کنترل کننده موجود است و نمی توان از آن استفاده کرد.]]></item>
-        <item name="wcf.acp.option.error.controllerReplacementDuplicateAlias"><![CDATA[[نام مستعار “{$urlControllerReplacementError}”در حال حاضر در حال استفاده است.]]></item>
-        <item name="wcf.acp.option.error.controllerReplacementDuplicateController"><![CDATA[کنترل کننده “{$urlControllerReplacementError}” قبلا نام مستعار شده است.]]></item>
-        <item name="wcf.acp.option.error.controllerReplacementInvalidFormat"><![CDATA[شما باید با استفاده از نام مستعار ارائه دهید “real-name=custom-name”, خط “{$urlControllerReplacementError}” آن را نقض می کند.]]></item>
-        <item name="wcf.acp.option.error.controllerReplacementUnknown"><![CDATA[کنترل کننده “{$urlControllerReplacementError}” ناشناخته است.]]></item>
-        <item name="wcf.acp.option.error.tooHigh"><![CDATA[از حداکثر مقدار تجاوز می کند{if $option->maxvalue !== null} از {#$option->maxvalue}{/if}.]]></item>
-        <item name="wcf.acp.option.error.tooLong"><![CDATA[متن وارد شده خیلی طولانی است.]]></item>
-        <item name="wcf.acp.option.error.tooLow"><![CDATA[زیر حداقل مقدار{if $option->minvalue !== null} از {#$option->minvalue}{/if}.]]></item>
-        <item name="wcf.acp.option.error.tooShort"><![CDATA[.متن وارد شده خیلی کوتاه است]]></item>
-        <item name="wcf.acp.option.error.validationFailed"><![CDATA[.مقدار وارد شده نامعتبر است]]></item>
-        <item name="wcf.acp.option.exception_privacy"><![CDATA[حریم خصوصی]]></item>
-        <item name="wcf.acp.option.exception_privacy.description"><![CDATA[مشخص می کند که پیام های خطا تا چه حد دقیق هستند. خصوصی پیام خطا را به طور کامل پنهان می کند، کاهش تلاش برای پنهان کردن اطلاعات حساس و عمومی (فقط در حالت اشکال زدایی پشتیبانی می شود) همه چیز را نشان می دهد..]]></item>
-        <item name="wcf.acp.option.exception_privacy.private"><![CDATA[خصوصی]]></item>
-        <item name="wcf.acp.option.exception_privacy.public"><![CDATA[عمومی]]></item>
-        <item name="wcf.acp.option.exception_privacy.reduced"><![CDATA[کاهش]]></item>
-        <item name="wcf.acp.option.external_link_target_blank"><![CDATA[پیوندهای خارجی را در یک پنجره جدید باز کنید]]></item>
-        <item name="wcf.acp.option.external_link_target_blank.description"><![CDATA[ویژگی را اضافه می کند “target="_blank"” به پیوندهای خارجی، باعث می شود مرورگر کاربر پیوند را در یک پنجره جدید باز کند.]]></item>
-        <item name="wcf.acp.option.facebook_private_key"><![CDATA[راز برنامه فیس بوک]]></item>
+        <item name="wcf.acp.option.error.controllerReplacementCollision"><![CDATA[The alias “{$urlControllerReplacementError}” equals an existing controller and cannot be used.]]></item>
+        <item name="wcf.acp.option.error.controllerReplacementDuplicateAlias"><![CDATA[The alias “{$urlControllerReplacementError}” is already in use.]]></item>
+        <item name="wcf.acp.option.error.controllerReplacementDuplicateController"><![CDATA[The controller “{$urlControllerReplacementError}” has already been aliased.]]></item>
+        <item name="wcf.acp.option.error.controllerReplacementInvalidFormat"><![CDATA[You must provide aliases using “real-name=custom-name”, the line “{$urlControllerReplacementError}” violates it.]]></item>
+        <item name="wcf.acp.option.error.controllerReplacementUnknown"><![CDATA[The controller “{$urlControllerReplacementError}” is unknown.]]></item>
+        <item name="wcf.acp.option.error.tooHigh"><![CDATA[Exceeds the maximum value{if $option->maxvalue !== null} of {#$option->maxvalue}{/if}.]]></item>
+        <item name="wcf.acp.option.error.tooLong"><![CDATA[The entered text is too long.]]></item>
+        <item name="wcf.acp.option.error.tooLow"><![CDATA[Under the minimum value{if $option->minvalue !== null} of {#$option->minvalue}{/if}.]]></item>
+        <item name="wcf.acp.option.error.tooShort"><![CDATA[The entered text is too short.]]></item>
+        <item name="wcf.acp.option.error.validationFailed"><![CDATA[The entered value is invalid.]]></item>
+        <item name="wcf.acp.option.exception_privacy"><![CDATA[Privacy]]></item>
+        <item name="wcf.acp.option.exception_privacy.description"><![CDATA[Specifies how detailed the error messages are. Private completely hides the error message, reduced tries to hide sensitive information and public (only supported in debug mode) shows everything.]]></item>
+        <item name="wcf.acp.option.exception_privacy.private"><![CDATA[Private]]></item>
+        <item name="wcf.acp.option.exception_privacy.public"><![CDATA[Public]]></item>
+        <item name="wcf.acp.option.exception_privacy.reduced"><![CDATA[Reduced]]></item>
+        <item name="wcf.acp.option.external_link_target_blank"><![CDATA[Open external links in a new window]]></item>
+        <item name="wcf.acp.option.external_link_target_blank.description"><![CDATA[Appends the attribute “target="_blank"” to external links, causing the user’s browser to open the link in a new window.]]></item>
+        <item name="wcf.acp.option.facebook_private_key"><![CDATA[Facebook Application Secret]]></item>
         <item name="wcf.acp.option.facebook_public_key"><![CDATA[Facebook APP-ID]]></item>
         <item name="wcf.acp.option.facebook_public_key.description"><![CDATA[You can obtain your APP-ID and Application Secret at <a href="https://developers.facebook.com/apps" class="externalURL">Facebook</a>. The OAuth redirect URI is: {link controller="FacebookAuth" forceFrontend=true}{/link}]]></item>
-        <item name="wcf.acp.option.fb_share_app_id"><![CDATA[شناسه اپلیکیشن فیسبوک]]></item>
-        <item name="wcf.acp.option.fb_share_app_id.description"><![CDATA[می توانید شناسه برنامه را از سایت خود دریافت کنید <a href="https://developers.facebook.com/apps/" class="externalURL">app’s dashboard</a>, and is used with the Open Graph tags for sharing.]]></item>
-        <item name="wcf.acp.option.filebase_available_currencies"><![CDATA[ارزهای پشتیبانی شده]]></item>
-        <item name="wcf.acp.option.filebase_dashboard_box_files"><![CDATA[تعداد فایل ها]]></item>
-        <item name="wcf.acp.option.filebase_enable_custom_license"><![CDATA[مجوزهای سفارشی را فعال کنید]]></item>
-        <item name="wcf.acp.option.filebase_enable_custom_license.description"><![CDATA[.کاربران می توانند یک قرارداد مجوز سفارشی ارائه دهند]]></item>
-        <item name="wcf.acp.option.filebase_enable_file_icon"><![CDATA[نماد فایل]]></item>
-        <item name="wcf.acp.option.filebase_enable_file_icon.description"><![CDATA[.کاربران می توانند نمادی را بارگذاری کنند که برای ارائه فایل استفاده می شود]]></item>
-        <item name="wcf.acp.option.filebase_enable_license"><![CDATA[مجوزها را فعال کنید]]></item>
-        <item name="wcf.acp.option.filebase_enable_license.description"><![CDATA[فایل ها باید با یک قرارداد مجوز مرتبط باشند. کاربران می توانند یکی را انتخاب کنند <a href="{link application='filebase' controller='LicenseList'}{/link}">لیست مجوزهای از پیش تعریف شده </a>.]]></item>
-        <item name="wcf.acp.option.filebase_enable_license_confirmation"><![CDATA[از کاربران بخواهید که موافقت نامه مجوز را بپذیرند]]></item>
-        <item name="wcf.acp.option.filebase_enable_license_confirmation.description"><![CDATA[کاربران موظفند قبل از دانلود یا خرید محصولات، قرارداد مجوز را بپذیرند.]]></item>
-        <item name="wcf.acp.option.filebase_enable_moderation_notification"><![CDATA[اعلان اعتدال را فعال کنید]]></item>
-        <item name="wcf.acp.option.filebase_enable_multilingualism"><![CDATA[چندزبانگی را فعال کنید]]></item>
-        <item name="wcf.acp.option.filebase_enable_review"><![CDATA[بررسی ها]]></item>
-        <item name="wcf.acp.option.filebase_enable_selling"><![CDATA[فعال کردن فروش فایل ها]]></item>
-        <item name="wcf.acp.option.filebase_enable_selling.description"><![CDATA[.امکان فروش فایل ها را فعال می کند. می‌توانید دسترسی را بر اساس مجوزهای گروه کاربر محدود کنید]]></item>
-        <item name="wcf.acp.option.filebase_enable_time_limited_file_stats"><![CDATA[فعال کردن آمار مبتنی بر زمان]]></item>
-        <item name="wcf.acp.option.filebase_enable_time_limited_file_stats.description"><![CDATA[در لیست فایل ها و جعبه های داشبورد استفاده می شود. داده‌های نظرات، واکنش‌ها، دانلودها، فروش و درآمد را به یک دوره زمانی خاص محدود می‌کند. داده های کش شده به صورت ناهمزمان با استفاده از یک کرونجاب به روز می شوند.]]></item>
+        <item name="wcf.acp.option.fb_share_app_id"><![CDATA[Facebook App ID]]></item>
+        <item name="wcf.acp.option.fb_share_app_id.description"><![CDATA[You can obtain the app ID from your <a href="https://developers.facebook.com/apps/" class="externalURL">app’s dashboard</a>, and is used with the Open Graph tags for sharing.]]></item>
+        <item name="wcf.acp.option.filebase_available_currencies"><![CDATA[Supported Currencies]]></item>
+        <item name="wcf.acp.option.filebase_dashboard_box_files"><![CDATA[Number of Files]]></item>
+        <item name="wcf.acp.option.filebase_enable_custom_license"><![CDATA[Enable custom licenses]]></item>
+        <item name="wcf.acp.option.filebase_enable_custom_license.description"><![CDATA[Users can provide a custom license agreement.]]></item>
+        <item name="wcf.acp.option.filebase_enable_file_icon"><![CDATA[File icon]]></item>
+        <item name="wcf.acp.option.filebase_enable_file_icon.description"><![CDATA[Users can upload an icon that will be used to present the file.]]></item>
+        <item name="wcf.acp.option.filebase_enable_license"><![CDATA[Enable licenses]]></item>
+        <item name="wcf.acp.option.filebase_enable_license.description"><![CDATA[Files are required to be associated with a license agreement. Users can choose from a <a href="{link application='filebase' controller='LicenseList'}{/link}">list of pre-defined licenses</a>.]]></item>
+        <item name="wcf.acp.option.filebase_enable_license_confirmation"><![CDATA[Require users to accept the license agreement]]></item>
+        <item name="wcf.acp.option.filebase_enable_license_confirmation.description"><![CDATA[Users are required to accept the license agreement before downloading or purchasing products.]]></item>
+        <item name="wcf.acp.option.filebase_enable_moderation_notification"><![CDATA[Enable Moderation Notification]]></item>
+        <item name="wcf.acp.option.filebase_enable_multilingualism"><![CDATA[Enable multilingualism]]></item>
+        <item name="wcf.acp.option.filebase_enable_review"><![CDATA[Reviews]]></item>
+        <item name="wcf.acp.option.filebase_enable_selling"><![CDATA[Enable selling of files]]></item>
+        <item name="wcf.acp.option.filebase_enable_selling.description"><![CDATA[Enables the ability to sell files. You can restrict the availability based on user group permissions.]]></item>
+        <item name="wcf.acp.option.filebase_enable_time_limited_file_stats"><![CDATA[Enable time-based statistics]]></item>
+        <item name="wcf.acp.option.filebase_enable_time_limited_file_stats.description"><![CDATA[Used on the file list and dashboard boxes. It will limit the data for comments, reactions, downloads, sales, and revenue to a certain time period. The cached data is updated asynchronously using a cronjob.]]></item>
         <item name="wcf.acp.option.filebase_enable_version_number"><![CDATA[Enable file version numbers]]></item>
         <item name="wcf.acp.option.filebase_enable_version_number.description"><![CDATA[Users are required to specify version numbers for every uploaded file.]]></item>
         <item name="wcf.acp.option.filebase_file_empty_recycle_bin_cycle"><![CDATA[Prune Trash]]></item>
