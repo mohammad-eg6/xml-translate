@@ -4498,127 +4498,127 @@ ATTENTION: The messages listed above are greatly shortened. You can view details
         <item name="wcf.acp.option.wbb_board_default_sort_field"><![CDATA[مرتب سازی بر اساس]]></item>
         <item name="wcf.acp.option.wbb_board_default_sort_field.description"><![CDATA[.گزینه مرتب سازی پیش فرض رشته ها را انتخاب کنید]]></item>
         <item name="wcf.acp.option.wbb_board_default_sort_order"><![CDATA[ترتیب مرتب سازی]]></item>
-        <item name="wcf.acp.option.wbb_board_default_sort_order.description"><![CDATA[Choose default sort order of threads.]]></item>
-        <item name="wcf.acp.option.wbb_board_enable_deleted_thread_note"><![CDATA[Display notice for threads in trash]]></item>
-        <item name="wcf.acp.option.wbb_board_enable_deleted_thread_note.description"><![CDATA[Threads in the trash will be replaced with a notice on the thread list.]]></item>
-        <item name="wcf.acp.option.wbb_board_enable_moderators"><![CDATA[Display forum moderators]]></item>
-        <item name="wcf.acp.option.wbb_board_enable_stats"><![CDATA[Display forum statistics]]></item>
-        <item name="wcf.acp.option.wbb_board_list_depth"><![CDATA[Forum List Depth]]></item>
-        <item name="wcf.acp.option.wbb_board_list_depth.description"><![CDATA[The maximum depth of forums that will display on the forum’s list.]]></item>
-        <item name="wcf.acp.option.wbb_board_list_enable_last_post"><![CDATA[Display last post of each forum]]></item>
-        <item name="wcf.acp.option.wbb_board_list_enable_online_list"><![CDATA[Display users browsing each forum]]></item>
-        <item name="wcf.acp.option.wbb_board_list_enable_stats"><![CDATA[Display thread and post count of each forum]]></item>
+        <item name="wcf.acp.option.wbb_board_default_sort_order.description"><![CDATA[.ترتیب مرتب سازی پیش فرض رشته ها را انتخاب کنید]]></item>
+        <item name="wcf.acp.option.wbb_board_enable_deleted_thread_note"><![CDATA[نمایش اعلان برای رشته های موجود در سطل آشغال]]></item>
+        <item name="wcf.acp.option.wbb_board_enable_deleted_thread_note.description"><![CDATA[.موضوعات موجود در سطل زباله با یک اعلان در لیست رشته جایگزین می شوند]]></item>
+        <item name="wcf.acp.option.wbb_board_enable_moderators"><![CDATA[نمایش مدیران انجمن]]></item>
+        <item name="wcf.acp.option.wbb_board_enable_stats"><![CDATA[نمایش آمار انجمن]]></item>
+        <item name="wcf.acp.option.wbb_board_list_depth"><![CDATA[عمق فهرست انجمن]]></item>
+        <item name="wcf.acp.option.wbb_board_list_depth.description"><![CDATA[.حداکثر عمق تالارهایی که در لیست انجمن نمایش داده می شود]]></item>
+        <item name="wcf.acp.option.wbb_board_list_enable_last_post"><![CDATA[نمایش آخرین پست هر انجمن]]></item>
+        <item name="wcf.acp.option.wbb_board_list_enable_online_list"><![CDATA[نمایش کاربرانی که در حال مرور هر انجمن هستند]]></item>
+        <item name="wcf.acp.option.wbb_board_list_enable_stats"><![CDATA[نمایش تعداد موضوعات و پست های هر انجمن]]></item>
         <item name="wcf.acp.option.wbb_board_list_enable_sub_boards"><![CDATA[Display sub-forums]]></item>
         <item name="wcf.acp.option.wbb_board_threads_enable_language_flag"><![CDATA[Display thread language with a flag]]></item>
-        <item name="wcf.acp.option.wbb_board_threads_enable_language_flag.description"><![CDATA[Threads display a flag depending on which language is used by the thread creator.]]></item>
-        <item name="wcf.acp.option.wbb_board_threads_per_page"><![CDATA[Threads per Page]]></item>
-        <item name="wcf.acp.option.wbb_board_users_online_filter"><![CDATA[Filter “Users Online” List in Forums]]></item>
-        <item name="wcf.acp.option.wbb_board_users_online_filter.description"><![CDATA[Only users that are also currently in the visited forum are shown in the “Users Online” list.]]></item>
-        <item name="wcf.acp.option.wbb_index_enable_stats"><![CDATA[Display forum statistics]]></item>
-        <item name="wcf.acp.option.wbb_message_sidebar_enable_user_posts"><![CDATA[Display author’s post count]]></item>
-        <item name="wcf.acp.option.wbb_module_thread_marking_as_done"><![CDATA[Allow marking threads as resolved]]></item>
-        <item name="wcf.acp.option.wbb_official_post_default"><![CDATA[Default Value for “Official Posts”]]></item>
-        <item name="wcf.acp.option.wbb_official_post_default.description"><![CDATA[Posts will be marked as “official” by default if the user has permission to create official posts.]]></item>
-        <item name="wcf.acp.option.wbb_post_edit_hide_edit_note_period"><![CDATA[Limited Editing Time Period]]></item>
-        <item name="wcf.acp.option.wbb_post_edit_hide_edit_note_period.description"><![CDATA[Minutes allowed to edit posts until an edit note is displayed.]]></item>
-        <item name="wcf.acp.option.wbb_post_min_char_length"><![CDATA[Minimum Message Length]]></item>
-        <item name="wcf.acp.option.wbb_post_min_word_count"><![CDATA[Minimum Word Count]]></item>
-        <item name="wcf.acp.option.wbb_post_notification_mail_include_message"><![CDATA[Include post’s content in email notifications]]></item>
-        <item name="wcf.acp.option.wbb_post_notification_mail_include_message.description"><![CDATA[Notifications for watched threads, mentions, or quotes will include the post’s content.]]></item>
-        <item name="wcf.acp.option.wbb_reply_old_thread_warning"><![CDATA[Display Warning for Old Threads]]></item>
-        <item name="wcf.acp.option.wbb_reply_old_thread_warning.description"><![CDATA[Old threads are marked as dated based on the last reply time, users attempting to reply will receive a notice.]]></item>
-        <item name="wcf.acp.option.wbb_search_find_threads"><![CDATA[Display search results as threads]]></item>
-        <item name="wcf.acp.option.wbb_thread_default_post_sort_order"><![CDATA[Sort Order of Posts (Deprecated / Not Recommended)]]></item>
-        <item name="wcf.acp.option.wbb_thread_default_post_sort_order.description"><![CDATA[Choose default sort order of posts.]]></item>
-        <item name="wcf.acp.option.wbb_thread_delete_link_cycle"><![CDATA[Remove Redirection Links]]></item>
-        <item name="wcf.acp.option.wbb_thread_delete_link_cycle.description"><![CDATA[Redirection links of moved threads are removed by the following days. Use 0 to disable.]]></item>
-        <item name="wcf.acp.option.wbb_thread_empty_recycle_bin_cycle"><![CDATA[Prune Trash]]></item>
-        <item name="wcf.acp.option.wbb_thread_empty_recycle_bin_cycle.description"><![CDATA[Threads and posts are removed from the trash by the following days. Use 0 to disable.]]></item>
-        <item name="wcf.acp.option.wbb_thread_enable_deleted_post_note"><![CDATA[Display notice for posts in trash]]></item>
-        <item name="wcf.acp.option.wbb_thread_enable_deleted_post_note.description"><![CDATA[Posts in the trash will be replaced with a notice on the post list.]]></item>
+        <item name="wcf.acp.option.wbb_board_threads_enable_language_flag.description"><![CDATA[.موضوعات بسته به زبانی که سازنده رشته از آن استفاده می کند پرچمی را نشان می دهد]]></item>
+        <item name="wcf.acp.option.wbb_board_threads_per_page"><![CDATA[موضوعات در هر صفحه]]></item>
+        <item name="wcf.acp.option.wbb_board_users_online_filter"><![CDATA[فیلتر کنید “Users Online” لیست در انجمن ها]]></item>
+        <item name="wcf.acp.option.wbb_board_users_online_filter.description"><![CDATA[فقط کاربرانی که در حال حاضر نیز در انجمن بازدید شده هستند نشان داده می شونددر “Users Online” فهرست.]]></item>
+        <item name="wcf.acp.option.wbb_index_enable_stats"><![CDATA[نمایش آمار انجمن]]></item>
+        <item name="wcf.acp.option.wbb_message_sidebar_enable_user_posts"><![CDATA[نمایش تعداد پست های نویسنده]]></item>
+        <item name="wcf.acp.option.wbb_module_thread_marking_as_done"><![CDATA[علامت گذاری رشته ها را به عنوان حل شده مجاز کنید]]></item>
+        <item name="wcf.acp.option.wbb_official_post_default"><![CDATA[مقدار پیش فرض برای “Official Posts”]]></item>
+        <item name="wcf.acp.option.wbb_official_post_default.description"><![CDATA[پست ها به عنوان علامت گذاری خواهند شد “official” به طور پیش فرض اگر کاربر اجازه ایجاد پست های رسمی را داشته باشد.]]></item>
+        <item name="wcf.acp.option.wbb_post_edit_hide_edit_note_period"><![CDATA[دوره زمانی ویرایش محدود]]></item>
+        <item name="wcf.acp.option.wbb_post_edit_hide_edit_note_period.description"><![CDATA[.تا زمانی که یک یادداشت ویرایشی نمایش داده شود، دقیقه برای ویرایش پست ها مجاز است]]></item>
+        <item name="wcf.acp.option.wbb_post_min_char_length"><![CDATA[حداقل طول پیام]]></item>
+        <item name="wcf.acp.option.wbb_post_min_word_count"><![CDATA[حداقل تعداد کلمات]]></item>
+        <item name="wcf.acp.option.wbb_post_notification_mail_include_message"><![CDATA[محتوای پست را در اعلان‌های ایمیل قرار دهید]]></item>
+        <item name="wcf.acp.option.wbb_post_notification_mail_include_message.description"><![CDATA[.اعلان‌ها برای رشته‌های تماشا شده، اشاره‌ها یا نقل قول‌ها شامل محتوای پست می‌شود]]></item>
+        <item name="wcf.acp.option.wbb_reply_old_thread_warning"><![CDATA[نمایش هشدار برای موضوعات قدیمی]]></item>
+        <item name="wcf.acp.option.wbb_reply_old_thread_warning.description"><![CDATA[.موضوعات قدیمی بر اساس آخرین زمان پاسخ به عنوان دارای تاریخ مشخص می شوند، کاربرانی که تلاش می کنند پاسخ دهند اخطاری دریافت خواهند کرد]]></item>
+        <item name="wcf.acp.option.wbb_search_find_threads"><![CDATA[نمایش نتایج جستجو به صورت رشته]]></item>
+        <item name="wcf.acp.option.wbb_thread_default_post_sort_order"><![CDATA[ترتیب پست ها (منسوخ شده / توصیه نمی شود)]]></item>
+        <item name="wcf.acp.option.wbb_thread_default_post_sort_order.description"><![CDATA[.ترتیب مرتب سازی پیش فرض پست ها را انتخاب کنید]]></item>
+        <item name="wcf.acp.option.wbb_thread_delete_link_cycle"><![CDATA[پیوندهای تغییر مسیر را حذف کنید]]></item>
+        <item name="wcf.acp.option.wbb_thread_delete_link_cycle.description"><![CDATA[.پیوندهای تغییر مسیر رشته های منتقل شده تا روزهای بعد حذف می شوند. برای غیرفعال کردن از 0 استفاده کنید]]></item>
+        <item name="wcf.acp.option.wbb_thread_empty_recycle_bin_cycle"><![CDATA[سطل آشغال را هرس کنید]]></item>
+        <item name="wcf.acp.option.wbb_thread_empty_recycle_bin_cycle.description"><![CDATA[.موضوع ها و پست ها تا روزهای بعد از سطل زباله حذف می شوند. برای غیرفعال کردن از 0 استفاده کنید]]></item>
+        <item name="wcf.acp.option.wbb_thread_enable_deleted_post_note"><![CDATA[نمایش اعلان برای پست‌ها در سطل آشغال]]></item>
+        <item name="wcf.acp.option.wbb_thread_enable_deleted_post_note.description"><![CDATA[.پست‌های موجود در سطل آشغال با یک اعلان در لیست پست جایگزین می‌شوند]]></item>
         <item name="wcf.acp.option.wbb_thread_enable_moderation_notification"><![CDATA[Enable Moderation Notification]]></item>
-        <item name="wcf.acp.option.wbb_thread_enable_moderation_thread_log"><![CDATA[Enable Moderation Notices in threads]]></item>
-        <item name="wcf.acp.option.wbb_thread_enable_similar_threads"><![CDATA[Display similar threads]]></item>
-        <item name="wcf.acp.option.wbb_thread_enable_tags"><![CDATA[Enable thread tags]]></item>
-        <item name="wcf.acp.option.wbb_thread_enable_tags.description"><![CDATA[Allows tags to be assigned to each thread, which also display in the tag cloud.]]></item>
-        <item name="wcf.acp.option.wbb_thread_guest_max_posts"><![CDATA[Number of Displayed Posts for Guests]]></item>
-        <item name="wcf.acp.option.wbb_thread_guest_max_posts.description"><![CDATA[Only the first messages up to the configured limit will be displayed for guests. Threads with more replies will show a notice to encourage visitors to register themselves or log-in. Use 0 to always show all posts.]]]></item>
-        <item name="wcf.acp.option.wbb_thread_marking_as_done_cycle"><![CDATA[Automatically Mark Threads as Resolved]]></item>
-        <item name="wcf.acp.option.wbb_thread_marking_as_done_cycle.description"><![CDATA[Threads are marked as resolved by the following days, based on the time of the last reply. Use 0 to disable.]]></item>
-        <item name="wcf.acp.option.wbb_thread_max_formatted_excerpt_length"><![CDATA[Maximum Characters for Thread Preview]]></item>
-        <item name="wcf.acp.option.wbb_thread_min_char_length"><![CDATA[Minimum Thread Title Length]]></item>
-        <item name="wcf.acp.option.wbb_thread_min_word_count"><![CDATA[Minimum Thread Title Word Length]]></item>
-        <item name="wcf.acp.option.wbb_thread_moderation_notification_show_moderator"><![CDATA[Show moderator for notifications]]></item>
-        <item name="wcf.acp.option.wbb_thread_posts_per_page"><![CDATA[Posts per Page]]></item>
-        <item name="wcf.acp.option.wbb_thread_show_similar_threads_when_creating_new_thread"><![CDATA[Notify users of similar threads during thread creation]]></item>
-        <item name="wcf.acp.option.wbb_thread_show_similar_threads_when_creating_new_thread.description"><![CDATA[Searches for similar threads based on the thread title and displays a list of matches.]]></item>
-        <item name="wcf.acp.option.wbb_thread_similar_threads_count"><![CDATA[Number of Similar Threads]]></item>
-        <item name="wcf.acp.option.wbb_thread_similar_threads_search_period"><![CDATA[Time Period for Similar Threads]]></item>
-        <item name="wcf.acp.option.wbb_thread_similar_threads_search_period.description"><![CDATA[Similar threads are considered if not replied by the following days.]]></item>
-        <item name="wcf.acp.option.wbb_thread_users_online_filter"><![CDATA[Filter “Users Online” List in Threads]]></item>
-        <item name="wcf.acp.option.wbb_thread_users_online_filter.description"><![CDATA[Only users that are also currently in the visited thread are shown in the “Users Online” list.]]></item>
+        <item name="wcf.acp.option.wbb_thread_enable_moderation_thread_log"><![CDATA[اعلان‌های تعدیل را در رشته‌ها فعال کنید]]></item>
+        <item name="wcf.acp.option.wbb_thread_enable_similar_threads"><![CDATA[نمایش موضوعات مشابه]]></item>
+        <item name="wcf.acp.option.wbb_thread_enable_tags"><![CDATA[برچسب های رشته را فعال کنید]]></item>
+        <item name="wcf.acp.option.wbb_thread_enable_tags.description"><![CDATA[.اجازه می دهد تا برچسب ها به هر رشته اختصاص داده شود، که در ابر برچسب نیز نمایش داده می شود]]></item>
+        <item name="wcf.acp.option.wbb_thread_guest_max_posts"><![CDATA[تعداد پست های نمایش داده شده برای مهمانان]]></item>
+        <item name="wcf.acp.option.wbb_thread_guest_max_posts.description"><![CDATA[.فقط اولین پیام ها تا سقف پیکربندی شده برای مهمانان نمایش داده می شود. رشته‌هایی که پاسخ‌های بیشتری دارند، اعلامیه‌ای برای تشویق بازدیدکنندگان به ثبت نام یا ورود به سیستم نشان می‌دهند. از 0 برای نمایش همیشه همه پست ها استفاده کنید]]]></item>
+        <item name="wcf.acp.option.wbb_thread_marking_as_done_cycle"><![CDATA[علامت گذاری خودکار موضوعات به عنوان حل شده]]></item>
+        <item name="wcf.acp.option.wbb_thread_marking_as_done_cycle.description"><![CDATA[موضوع ها تا روزهای بعد بر اساس زمان آخرین پاسخ به عنوان حل شده علامت گذاری می شوند. برای غیرفعال کردن از 0 استفاده کنید.]]></item>
+        <item name="wcf.acp.option.wbb_thread_max_formatted_excerpt_length"><![CDATA[حداکثر کاراکتر برای پیش نمایش موضوع]]></item>
+        <item name="wcf.acp.option.wbb_thread_min_char_length"><![CDATA[حداقل طول عنوان موضوع]]></item>
+        <item name="wcf.acp.option.wbb_thread_min_word_count"><![CDATA[حداقل طول کلمه عنوان موضوع]]></item>
+        <item name="wcf.acp.option.wbb_thread_moderation_notification_show_moderator"><![CDATA[نمایش ناظر برای اعلان ها]]></item>
+        <item name="wcf.acp.option.wbb_thread_posts_per_page"><![CDATA[پست در هر صفحه]]></item>
+        <item name="wcf.acp.option.wbb_thread_show_similar_threads_when_creating_new_thread"><![CDATA[در حین ایجاد رشته، کاربران را از موضوعات مشابه مطلع کنید]]></item>
+        <item name="wcf.acp.option.wbb_thread_show_similar_threads_when_creating_new_thread.description"><![CDATA[.موضوعات مشابه را بر اساس عنوان موضوع جستجو می کند و لیستی از موارد مشابه را نمایش می دهد]]></item>
+        <item name="wcf.acp.option.wbb_thread_similar_threads_count"><![CDATA[تعداد موضوعات مشابه]]></item>
+        <item name="wcf.acp.option.wbb_thread_similar_threads_search_period"><![CDATA[دوره زمانی برای موضوعات مشابه]]></item>
+        <item name="wcf.acp.option.wbb_thread_similar_threads_search_period.description"><![CDATA[.موضوع های مشابه در صورت عدم پاسخگویی تا روزهای بعد در نظر گرفته می شوند]]></item>
+        <item name="wcf.acp.option.wbb_thread_users_online_filter"><![CDATA[فیلتر کنید “Users Online” لیست در موضوعات]]></item>
+        <item name="wcf.acp.option.wbb_thread_users_online_filter.description"><![CDATA[فقط کاربرانی که در حال حاضر در رشته بازدید شده نیز هستند نشان داده می شونددر “Users Online” فهرست.]]></item>
     </category>
     <category name="wcf.acp.package">
         <item name="wcf.acp.package.apiVersions"><![CDATA[Supported WoltLab Suite&trade; API Versions]]></item>
-        <item name="wcf.acp.package.apiVersions.missing"><![CDATA[This package does not provide any compatibility data.]]></item>
-        <item name="wcf.acp.package.application.installed"><![CDATA[Installed Apps]]></item>
-        <item name="wcf.acp.package.application.isTainted"><![CDATA[The app{if $taintedApplication|isset} <strong>{$taintedApplication->getPackage()->getTitle()}</strong>{/if} is not fully installed. You need to uninstall and then reinstall the app to be able to use it.]]></item>
-        <item name="wcf.acp.package.application.title"><![CDATA[Apps]]></item>
-        <item name="wcf.acp.package.author"><![CDATA[Developer]]></item>
-        <item name="wcf.acp.package.availableUpgradeVersion"><![CDATA[The new WoltLab Suite {$version} is available for installation. We have provided a guide with the instructions for the upgrade in our <a href="https://manual.woltlab.com/en/updates/#upgrading-woltlab-suite-54-to-55" class="externalURL">manual</a>.<br>
+        <item name="wcf.acp.package.apiVersions.missing"><![CDATA[.این بسته هیچ گونه داده سازگاری ارائه نمی دهد]]></item>
+        <item name="wcf.acp.package.application.installed"><![CDATA[برنامه های نصب شده]]></item>
+        <item name="wcf.acp.package.application.isTainted"><![CDATA[برنامه{if $taintedApplication|isset} <strong>{$taintedApplication->getPackage()->getTitle()}</strong>{/if} به طور کامل نصب نشده است برای اینکه بتوانید از آن استفاده کنید، باید برنامه را حذف و سپس دوباره نصب کنید.]]></item>
+        <item name="wcf.acp.package.application.title"><![CDATA[برنامه ها]]></item>
+        <item name="wcf.acp.package.author"><![CDATA[توسعه دهنده]]></item>
+        <item name="wcf.acp.package.availableUpgradeVersion"><![CDATA[The new WoltLab Suite {$version} برای نصب موجود است. ما یک راهنمای با دستورالعمل های ارتقاء ارائه کرده ایم در خود <a href="https://manual.woltlab.com/en/updates/#upgrading-woltlab-suite-54-to-55" class="externalURL">manual</a>.<br>
 <br>
-<a href="{link controller='PackageEnableUpgradeOverride' application='wcf'}{/link}">Validate the system requirements to begin the upgrade</a>]]></item>
-        <item name="wcf.acp.package.availableVersions"><![CDATA[Available Versions]]></item>
-        <item name="wcf.acp.package.button.info"><![CDATA[Details]]></item>
-        <item name="wcf.acp.package.button.installPackage"><![CDATA[Install Package]]></item>
-        <item name="wcf.acp.package.button.uninstall"><![CDATA[Uninstall]]></item>
-        <item name="wcf.acp.package.button.update"><![CDATA[Update]]></item>
-        <item name="wcf.acp.package.dependencies.dependent"><![CDATA[Dependent Packages]]></item>
-        <item name="wcf.acp.package.dependencies.dependent.description"><![CDATA[Packages requiring this package.]]></item>
-        <item name="wcf.acp.package.dependencies.required"><![CDATA[Required Packages]]></item>
-        <item name="wcf.acp.package.dependencies.required.description"><![CDATA[Packages required by this package.]]></item>
-        <item name="wcf.acp.package.dependencies.title"><![CDATA[Dependencies]]></item>
-        <item name="wcf.acp.package.description"><![CDATA[Description]]></item>
+<a href="{link controller='PackageEnableUpgradeOverride' application='wcf'}{/link}">برای شروع ارتقا، الزامات سیستم را تأیید کنید</a>]]></item>
+        <item name="wcf.acp.package.availableVersions"><![CDATA[نسخه های موجود]]></item>
+        <item name="wcf.acp.package.button.info"><![CDATA[جزئیات]]></item>
+        <item name="wcf.acp.package.button.installPackage"><![CDATA[بسته را نصب کنید]]></item>
+        <item name="wcf.acp.package.button.uninstall"><![CDATA[حذف نصب کنید]]></item>
+        <item name="wcf.acp.package.button.update"><![CDATA[به روز رسانی]]></item>
+        <item name="wcf.acp.package.dependencies.dependent"><![CDATA[بسته های وابسته]]></item>
+        <item name="wcf.acp.package.dependencies.dependent.description"><![CDATA[.بسته هایی که به این بسته نیاز دارند]]></item>
+        <item name="wcf.acp.package.dependencies.required"><![CDATA[بسته های مورد نیاز]]></item>
+        <item name="wcf.acp.package.dependencies.required.description"><![CDATA[بسته های مورد نیاز این بسته]]></item>
+        <item name="wcf.acp.package.dependencies.title"><![CDATA[وابستگی ها]]></item>
+        <item name="wcf.acp.package.description"><![CDATA[شرح]]></item>
         <item name="wcf.acp.package.enableUpgradeOverride"><![CDATA[Upgrade to WoltLab Suite {$version}]]></item>
-        <item name="wcf.acp.package.enableUpgradeOverride.enable"><![CDATA[Enable Upgrading to the New Version]]></item>
-        <item name="wcf.acp.package.enableUpgradeOverride.issues"><![CDATA[The following issues currently prevent an upgrade:]]></item>
-        <item name="wcf.acp.package.enableUpgradeOverride.success"><![CDATA[No issues detected, all system requirements for performing the upgrade are met.]]></item>
-        <item name="wcf.acp.package.error.cli.installIsApplication"><![CDATA[Apps cannot be installed via CLI.]]></item>
-        <item name="wcf.acp.package.error.databaseChange"><![CDATA[The database layout could not be changed because of the following errors:
+        <item name="wcf.acp.package.enableUpgradeOverride.enable"><![CDATA[ارتقا به نسخه جدید را فعال کنید]]></item>
+        <item name="wcf.acp.package.enableUpgradeOverride.issues"><![CDATA[:مشکلات زیر در حال حاضر مانع از ارتقاء می شود]]></item>
+        <item name="wcf.acp.package.enableUpgradeOverride.success"><![CDATA[.هیچ مشکلی شناسایی نشد، همه سیستم مورد نیاز برای انجام ارتقا برآورده شده است]]></item>
+        <item name="wcf.acp.package.error.cli.installIsApplication"><![CDATA[برنامه ها را نمی توان از طریق CLI نصب کرد.]]></item>
+        <item name="wcf.acp.package.error.databaseChange"><![CDATA[طرح پایگاه داده به دلیل خطاهای زیر قابل تغییر نیست:
 {implode from=$errors item=error glue=' '}
 	{if $error[type] === 'unregisteredTableDrop'}
-		The unknown table {$error[tableName]} cannot be dropped.
+		جدول ناشناخته {$error[tableName]} نمی توان رها کرد.
 	{else if $error[type] === 'foreignTableDrop'}
-		The table {$error[tableName]} belongs to a different package and thus cannot be dropped.
+		میز {$error[tableName]} متعلق به یک بسته متفاوت است و بنابراین نمی توان آن را رها کرد.
 	{else if $error[type] === 'unregisteredTableChange'}
-		The unknown table {$error[tableName]} cannot be altered.
+		جدول ناشناخته {$error[tableName]} قابل تغییر نیست.
 	{else if $error[type] === 'foreignColumnDrop'}
-		The column {$error[tableName]}.{$error[columnName]} belongs to a different package and thus cannot be dropped.
+		ستون {$error[tableName]}.{$error[columnName]} متعلق به یک بسته متفاوت است و بنابراین نمی توان آن را رها کرد.
 	{else if $error[type] === 'foreignColumnChange'}
-		The column {$error[tableName]}.{$error[columnName]} belongs to a different package and thus cannot be altered.
+		ستون {$error[tableName]}.{$error[columnName]}متعلق به یک بسته متفاوت است و بنابراین نمی توان آن را تغییر داد.
 	{else if $error[type] === 'renameNonexistingColumn'}
-		The column {$error[tableName]}.{$error[columnName]} does not exist and thus cannot be renamed.
+		ستون {$error[tableName]}.{$error[columnName]} وجود ندارد و بنابراین نمی توان نام آن را تغییر داد.
 	{else if $error[type] === 'foreignIndexDrop'}
-		The index {$error[tableName]} ({$error[columnNames]}) belongs to a different package and thus cannot be dropped.
+		شاخص {$error[tableName]} ({$error[columnNames]}) متعلق به یک بسته متفاوت است و بنابراین نمی توان آن را رها کرد.
 	{else if $error[type] === 'nonexistingColumnInIndex'}
-		The index {$error[tableName]} ({$error[columnNames]}) contains the non-existing column {$error[columnName]}.
+		شاخص {$error[tableName]} ({$error[columnNames]})شامل ستون غیر موجود است {$error[columnName]}.
 	{else if $error[type] === 'nullColumnInPrimaryIndex'}
-		The primary index {$error[tableName]} ({$error[columnNames]}) contains the column {$error[columnName]} whose values can be NULL.
+		شاخص اولیه {$error[tableName]} ({$error[columnNames]}) شامل ستون است {$error[columnName]} whose values can be NULL.
 	{else if $error[type] === 'foreignForeignKeyDrop'}
-		The foreign key {$error[tableName]} ({$error[columnNames]}) belongs to a different package and thus cannot be dropped.
+		کلید خارجی {$error[tableName]} ({$error[columnNames]}) متعلق به یک بسته متفاوت است و بنابراین نمی توان آن را رها کرد.
 	{else if $error[type] === 'unknownTableInForeignKey'}
-		The foreign key {$error[tableName]} ({$error[columnNames]}) references an unknown table {$error[referencedTableName]}.
+		کلید خارجی {$error[tableName]} ({$error[columnNames]}) به یک جدول ناشناخته ارجاع می دهد {$error[referencedTableName]}.
 	{else if $error[type] === 'duplicateColumnInIndex'}
-		The index {$error[tableName]} ({$error[columnNames]}) contains duplicate columns.
+		شاخص {$error[tableName]} ({$error[columnNames]}) شامل ستون های تکراری است.
 	{else if $error[type] === 'primaryNotCalledPrimary'}
-		The primary index {$error[tableName]} ({$error[columnNames]}) is not named 'PRIMARY'.
+		شاخص اولیه {$error[tableName]} ({$error[columnNames]}) نامگذاری نشده است 'PRIMARY'.
 	{else}
-		Unknown error.
+		خطای ناشناخته.
 	{/if}
 {/implode}]]></item>
-        <item name="wcf.acp.package.error.downloadFailed"><![CDATA[Downloading package{if $__downloadPackage|isset} “{$__downloadPackage}”{/if} has failed.]]></item>
-        <item name="wcf.acp.package.error.exceedsPhpLimit"><![CDATA[The file exceeds the PHP limit “upload_max_filesize” and/or “post_max_size”.]]></item>
-        <item name="wcf.acp.package.error.majorUpgrade"><![CDATA[The package updates your community to a new major version. For stability reasons major upgrades may only be performed via the update servers. Detailed information regarding the upgrade process can be found <a href="https://manual.woltlab.com/en/updates/" class="externalURL">in our manual</a>.]]></item>
+        <item name="wcf.acp.package.error.downloadFailed"><![CDATA[در حال دانلود بسته{if $__downloadPackage|isset} “{$__downloadPackage}”{/if} شکست خورده.]]></item>
+        <item name="wcf.acp.package.error.exceedsPhpLimit"><![CDATA[فایل از حد مجاز PHP بیشتر است “upload_max_filesize” و/یا “post_max_size”.]]></item>
+        <item name="wcf.acp.package.error.majorUpgrade"><![CDATA[این بسته انجمن شما را به نسخه اصلی جدید به روز می کند. به دلایل پایداری، ارتقاهای عمده ممکن است فقط از طریق سرورهای به روز رسانی انجام شوند.اطلاعات دقیق در مورد روند ارتقاء را می توان یافت <a href="https://manual.woltlab.com/en/updates/" class="externalURL">در کتابچه راهنمای ما</a>.]]></item>
         <item name="wcf.acp.package.error.noUniqueAbbreviation"><![CDATA[There is already an app installed which has the same abbreviation.]]></item>
         <item name="wcf.acp.package.error.noValidInstall"><![CDATA[The selected package does not support an installation.]]></item>
         <item name="wcf.acp.package.error.noValidPackage"><![CDATA[The uploaded archive is invalid.]]></item>
