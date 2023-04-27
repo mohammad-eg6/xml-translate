@@ -2791,7 +2791,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
 {/foreach}
 
 توجه: پیام های ذکر شده در بالا بسیار کوتاه شده اند. می‌توانید جزئیات پیام‌های خطای فردی را در رابط مدیریت در بخش «ورود به سیستم ها » خطاها» مشاهده کنید..]]></item>
-        <item name="wcf.acp.exceptionLog.email.subject"><![CDATA[خطاهای ثبت شده از آن زمان{$date|plainTime}]]></item>
+        <item name="wcf.acp.exceptionLog.email.subject"><![CDATA[ خطاهای ثبت شده از آن زمان{$date|plainTime}]]></item>
         <item name="wcf.acp.exceptionLog.exception.class"><![CDATA[نوع]]></item>
         <item name="wcf.acp.exceptionLog.exception.copy"><![CDATA[کپی پیغام خطا]]></item>
         <item name="wcf.acp.exceptionLog.exception.date"><![CDATA[زمان]]></item>
