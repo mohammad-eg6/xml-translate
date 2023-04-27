@@ -4619,37 +4619,37 @@ ATTENTION: The messages listed above are greatly shortened. You can view details
         <item name="wcf.acp.package.error.downloadFailed"><![CDATA[در حال دانلود بسته{if $__downloadPackage|isset} “{$__downloadPackage}”{/if} شکست خورده.]]></item>
         <item name="wcf.acp.package.error.exceedsPhpLimit"><![CDATA[فایل از حد مجاز PHP بیشتر است “upload_max_filesize” و/یا “post_max_size”.]]></item>
         <item name="wcf.acp.package.error.majorUpgrade"><![CDATA[این بسته انجمن شما را به نسخه اصلی جدید به روز می کند. به دلایل پایداری، ارتقاهای عمده ممکن است فقط از طریق سرورهای به روز رسانی انجام شوند.اطلاعات دقیق در مورد روند ارتقاء را می توان یافت <a href="https://manual.woltlab.com/en/updates/" class="externalURL">در کتابچه راهنمای ما</a>.]]></item>
-        <item name="wcf.acp.package.error.noUniqueAbbreviation"><![CDATA[There is already an app installed which has the same abbreviation.]]></item>
-        <item name="wcf.acp.package.error.noValidInstall"><![CDATA[The selected package does not support an installation.]]></item>
-        <item name="wcf.acp.package.error.noValidPackage"><![CDATA[The uploaded archive is invalid.]]></item>
-        <item name="wcf.acp.package.error.noValidUpdate"><![CDATA[Package “{$package->getName()}” cannot be updated using the selected archive.]]></item>
-        <item name="wcf.acp.package.error.sql.createTable"><![CDATA[Overwrite Existing Tables]]></item>
-        <item name="wcf.acp.package.error.sql.createTable.description"><![CDATA[The tables above already exist and will be replaced during the installation. Any contained data will be lost.]]></item>
-        <item name="wcf.acp.package.error.sql.dropTable"><![CDATA[Remove Existing Tables]]></item>
-        <item name="wcf.acp.package.error.sql.dropTable.description"><![CDATA[The tables above already exist and will be removed during the installation. Any contained data will be lost.]]></item>
-        <item name="wcf.acp.package.error.uniqueAlreadyInstalled"><![CDATA[This package is already installed.]]></item>
-        <item name="wcf.acp.package.error.uploadFailed"><![CDATA[An unknown error occurred during the upload.]]></item>
-        <item name="wcf.acp.package.evaluation.expired"><![CDATA[The evaluation period of <strong>{$packageName}</strong> has expired. For a legal use of this software, please update to the latest available version.{if $pluginStoreFileID || $isWoltLab}<br>The latest version can be purchased quickly and securely <strong>{if $pluginStoreFileID}<a href="https://pluginstore.woltlab.com/file/{$pluginStoreFileID}/">in the WoltLab Plugin-Store</a>{else}<a href="https://www.woltlab.com/en/purchase/">on WoltLab.com</a>{/if}</strong>.{/if}]]></item>
-        <item name="wcf.acp.package.evaluation.pending"><![CDATA[The evaluation period of the apps listed below will expire on <strong>{$evaluationEndDate|plainTime}</strong> ({@$evaluationEndDate|dateDiff:TIME_NOW:true}). The apps will automatically disable themselves after this date and become unusable, you'll need to install the latest versions of the apps to active them again.
+        <item name="wcf.acp.package.error.noUniqueAbbreviation"><![CDATA[.قبلاً یک برنامه نصب شده است که مخفف یکسانی دارد]]></item>
+        <item name="wcf.acp.package.error.noValidInstall"><![CDATA[.بسته انتخابی از نصب پشتیبانی نمی کند]]></item>
+        <item name="wcf.acp.package.error.noValidPackage"><![CDATA[.آرشیو آپلود شده نامعتبر است]]></item>
+        <item name="wcf.acp.package.error.noValidUpdate"><![CDATA[بسته “{$package->getName()}” نمی توان با استفاده از آرشیو انتخاب شده به روز کرد.]]></item>
+        <item name="wcf.acp.package.error.sql.createTable"><![CDATA[رونویسی جدول های موجود]]></item>
+        <item name="wcf.acp.package.error.sql.createTable.description"><![CDATA[جدول های بالا از قبل وجود دارند و در حین نصب جایگزین خواهند شد. هر گونه داده موجود از بین خواهد رفت.]]></item>
+        <item name="wcf.acp.package.error.sql.dropTable"><![CDATA[جدول های موجود را حذف کنید]]></item>
+        <item name="wcf.acp.package.error.sql.dropTable.description"><![CDATA[جدول های بالا از قبل وجود دارند و در حین نصب حذف خواهند شد. هر گونه داده موجود از بین خواهد رفت.]]></item>
+        <item name="wcf.acp.package.error.uniqueAlreadyInstalled"><![CDATA[.این بسته قبلاً نصب شده است]]></item>
+        <item name="wcf.acp.package.error.uploadFailed"><![CDATA[.یک خطای ناشناخته در حین آپلود روی داد]]></item>
+        <item name="wcf.acp.package.evaluation.expired"><![CDATA[دوره ارزیابی از <strong>{$packageName}</strong> منقضی شده است. برای استفاده قانونی از این نرم افزار، لطفاً به آخرین نسخه موجود به روز رسانی کنید.{if $pluginStoreFileID || $isWoltLab}<br>آخرین نسخه را می توان به سرعت و ایمن خریداری کرد <strong>{if $pluginStoreFileID}<a href="https://pluginstore.woltlab.com/file/{$pluginStoreFileID}/">in the WoltLab Plugin-Store</a>{else}<a href="https://www.woltlab.com/en/purchase/">on WoltLab.com</a>{/if}</strong>.{/if}]]></item>
+        <item name="wcf.acp.package.evaluation.pending"><![CDATA[دوره ارزیابی برنامه های فهرست شده در زیر در تاریخ منقضی خواهد شد <strong>{$evaluationEndDate|plainTime}</strong> ({@$evaluationEndDate|dateDiff:TIME_NOW:true}). پس از این تاریخ، برنامه‌ها به‌طور خودکار خود را غیرفعال می‌کنند و غیرقابل استفاده می‌شوند، برای فعال کردن دوباره آنها باید آخرین نسخه‌های برنامه‌ها را نصب کنید.
 <ul class="nativeList">
 	{foreach from=$pendingApps item=pendingApp}
 		<li>{$pendingApp}</li>
 	{/foreach}
 </ul>
-If you have <strong>already bought the licenses for the listed apps</strong>, then it is enough to install all upcoming updates. <strong>The evaluation copy will automatically be upgraded to the full version.</strong>]]></item>
-        <item name="wcf.acp.package.identifier"><![CDATA[Identifier]]></item>
+اگر تو داری <strong>قبلاً مجوزهای برنامه های فهرست شده را خریداری کرده است</strong>, سپس کافی است تمام به روز رسانی های آینده را نصب کنید. <strong>نسخه ارزیابی به طور خودکار به نسخه کامل ارتقا می یابد.</strong>]]></item>
+        <item name="wcf.acp.package.identifier"><![CDATA[مشخص کننده]]></item>
         <item name="wcf.acp.package.information.properties"><![CDATA[Properties]]></item>
-        <item name="wcf.acp.package.information.title"><![CDATA[Details]]></item>
-        <item name="wcf.acp.package.install.confirmMessage"><![CDATA[Do you really want to install the package <span class="confirmationObject">{@$package->getName()}</span>?]]></item>
-        <item name="wcf.acp.package.install.error.excludedPackages"><![CDATA[This package cannot be installed because the following packages are already installed:]]></item>
-        <item name="wcf.acp.package.install.error.excludedPackages.excludedPackage"><![CDATA[“{$excludedPackage}” ({$excludedPackage->package}){if $excludedPackage->excludedPackageVersion} (excluded version: {$excludedPackage->excludedPackageVersion}, installed version: {$excludedPackage->packageVersion}){/if}.]]></item>
-        <item name="wcf.acp.package.install.error.excludingPackages"><![CDATA[The following packages that are currently installed prohibit installing this package:]]></item>
-        <item name="wcf.acp.package.install.error.excludingPackages.excludingPackage"><![CDATA[“{$excludingPackage}” ({$excludingPackage->package}){if $excludingPackage->excludedPackageVersion} (excluded version: {$excludingPackage->excludedPackageVersion}){/if}.]]></item>
-        <item name="wcf.acp.package.install.error.missingRequirements"><![CDATA[Unable to resolve the requirements of this package.]]></item>
-        <item name="wcf.acp.package.install.installingImportedStyle"><![CDATA[The uploaded file is a package containg a style.]]></item>
-        <item name="wcf.acp.package.install.optionalPackage.missingRequirements"><![CDATA[Unable to install, some or all required packages are not installed.]]></item>
-        <item name="wcf.acp.package.install.step.prepare"><![CDATA[Preparing Installation …]]></item>
-        <item name="wcf.acp.package.install.title"><![CDATA[Installation]]></item>
+        <item name="wcf.acp.package.information.title"><![CDATA[جزئیات]]></item>
+        <item name="wcf.acp.package.install.confirmMessage"><![CDATA[آیا واقعاً می خواهید بسته را نصب کنید؟ <span class="confirmationObject">{@$package->getName()}</span>?]]></item>
+        <item name="wcf.acp.package.install.error.excludedPackages"><![CDATA[:این بسته قابل نصب نیست زیرا بسته های زیر قبلاً نصب شده اند]]></item>
+        <item name="wcf.acp.package.install.error.excludedPackages.excludedPackage"><![CDATA[“{$excludedPackage}” ({$excludedPackage->package}){if $excludedPackage->excludedPackageVersion} (نسخه حذف شده: {$excludedPackage->excludedPackageVersion}, نسخه نصب شده: {$excludedPackage->packageVersion}){/if}.]]></item>
+        <item name="wcf.acp.package.install.error.excludingPackages"><![CDATA[:بسته های زیر که در حال حاضر نصب شده اند، نصب این بسته را ممنوع می کنند]]></item>
+        <item name="wcf.acp.package.install.error.excludingPackages.excludingPackage"><![CDATA[“{$excludingPackage}” ({$excludingPackage->package}){if $excludingPackage->excludedPackageVersion} (نسخه حذف شده: {$excludingPackage->excludedPackageVersion}){/if}.]]></item>
+        <item name="wcf.acp.package.install.error.missingRequirements"><![CDATA[.قادر به رفع الزامات این بسته نیست]]></item>
+        <item name="wcf.acp.package.install.installingImportedStyle"><![CDATA[.فایل آپلود شده یک بسته حاوی یک سبک است]]></item>
+        <item name="wcf.acp.package.install.optionalPackage.missingRequirements"><![CDATA[.نصب نشد، برخی یا همه بسته های مورد نیاز نصب نمی شوند]]></item>
+        <item name="wcf.acp.package.install.step.prepare"><![CDATA[… در حال آماده سازی نصب]]></item>
+        <item name="wcf.acp.package.install.title"><![CDATA[نصب و راه اندازی]]></item>
         <item name="wcf.acp.package.installDate"><![CDATA[Installation Date]]></item>
         <item name="wcf.acp.package.installation.packageStatus"><![CDATA[Status]]></item>
         <item name="wcf.acp.package.installation.packageStatus.delivered"><![CDATA[Provided]]></item>
