@@ -2749,38 +2749,38 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.email.log.status"><![CDATA[وضعیت]]></item>
         <item name="wcf.acp.email.log.status.discarded"><![CDATA[دور انداخته شد]]></item>
         <item name="wcf.acp.email.log.status.new"><![CDATA[انتظار]]></item>
-        <item name="wcf.acp.email.log.status.permanent_failure"><![CDATA[Ultimately Failed]]></item>
-        <item name="wcf.acp.email.log.status.success"><![CDATA[Sent]]></item>
-        <item name="wcf.acp.email.log.status.transient_failure"><![CDATA[Transient Failure]]></item>
-        <item name="wcf.acp.email.log.statusMessage.title"><![CDATA[Status Message]]></item>
-        <item name="wcf.acp.email.log.subject"><![CDATA[Subject]]></item>
-        <item name="wcf.acp.email.log.time"><![CDATA[Created]]></item>
-        <item name="wcf.acp.email.smtp.test"><![CDATA[SMTP Connection Test]]></item>
-        <item name="wcf.acp.email.smtp.test.description"><![CDATA[Validates the connection data and user credentials, for their basic validity. No email is sent during this process!<br><br><strong>Notice:</strong> This is only a very basic test. Passing it does not guarantee emails to be successfully delivered!]]></item>
-        <item name="wcf.acp.email.smtp.test.error.badAuth"><![CDATA[Username and/or password were rejected by the server.]]></item>
-        <item name="wcf.acp.email.smtp.test.error.empty.host"><![CDATA[Please enter a SMTP server.]]></item>
-        <item name="wcf.acp.email.smtp.test.error.empty.password"><![CDATA[Please enter a password.]]></item>
-        <item name="wcf.acp.email.smtp.test.error.empty.user"><![CDATA[Please enter a username.]]></item>
-        <item name="wcf.acp.email.smtp.test.error.hostUnknown"><![CDATA[The server is not responding.]]></item>
-        <item name="wcf.acp.email.smtp.test.error.notTlsSupport"><![CDATA[The server does not support encryption.]]></item>
-        <item name="wcf.acp.email.smtp.test.error.tlsFailed"><![CDATA[Unable to establish a secure connection.]]></item>
-        <item name="wcf.acp.email.smtp.test.run"><![CDATA[Run SMTP Connection Test]]></item>
-        <item name="wcf.acp.email.smtp.test.run.success"><![CDATA[Test Passed]]></item>
+        <item name="wcf.acp.email.log.status.permanent_failure"><![CDATA[در نهایت شکست خورد]]></item>
+        <item name="wcf.acp.email.log.status.success"><![CDATA[ارسال شد]]></item>
+        <item name="wcf.acp.email.log.status.transient_failure"><![CDATA[خرابی گذرا]]></item>
+        <item name="wcf.acp.email.log.statusMessage.title"><![CDATA[پیام وضعیت]]></item>
+        <item name="wcf.acp.email.log.subject"><![CDATA[موضوع]]></item>
+        <item name="wcf.acp.email.log.time"><![CDATA[ایجاد شده]]></item>
+        <item name="wcf.acp.email.smtp.test"><![CDATA[تست اتصال ساده پروتکل انتقال نامه]]></item>
+        <item name="wcf.acp.email.smtp.test.description"><![CDATA[داده‌های اتصال و اعتبار کاربر را برای اعتبار اولیه آنها تأیید می‌کند. در طول این فرآیند هیچ ایمیلی ارسال نمی شود!<br><br><strong>اطلاعیه:</strong> این فقط یک تست بسیار ابتدایی است. ارسال آن تضمینی برای تحویل موفقیت آمیز ایمیل ها نیست!]]></item>
+        <item name="wcf.acp.email.smtp.test.error.badAuth"><![CDATA[نام کاربری و/یا رمز عبور توسط سرور رد شد.]]></item>
+        <item name="wcf.acp.email.smtp.test.error.empty.host"><![CDATA[لطفاً یک سرور پروتکل انتقال نامه ساده وارد کنید.]]></item>
+        <item name="wcf.acp.email.smtp.test.error.empty.password"><![CDATA[لطفا یک رمز عبور وارد کنید.]]></item>
+        <item name="wcf.acp.email.smtp.test.error.empty.user"><![CDATA[لطفا یک نام کاربری وارد کنید.]]></item>
+        <item name="wcf.acp.email.smtp.test.error.hostUnknown"><![CDATA[سرور پاسخ نمی دهد.]]></item>
+        <item name="wcf.acp.email.smtp.test.error.notTlsSupport"><![CDATA[سرور از رمزگذاری پشتیبانی نمی کند.]]></item>
+        <item name="wcf.acp.email.smtp.test.error.tlsFailed"><![CDATA[امکان برقراری یک اتصال امن وجود ندارد.]]></item>
+        <item name="wcf.acp.email.smtp.test.run"><![CDATA[تست اتصال پروتکل انتقال ایمیل ساده را اجرا کنید]]></item>
+        <item name="wcf.acp.email.smtp.test.run.success"><![CDATA[آزمون قبول شد]]></item>
     </category>
     <category name="wcf.acp.exceptionLog">
-        <item name="wcf.acp.exceptionLog"><![CDATA[Logged errors]]></item>
-        <item name="wcf.acp.exceptionLog.email.body"><![CDATA[Dear Administrator,
-the following errors have been logged on your website {@PAGE_TITLE|phrase} since {$date|plainTime}:
+        <item name="wcf.acp.exceptionLog"><![CDATA[خطاهای ثبت شده]]></item>
+        <item name="wcf.acp.exceptionLog.email.body"><![CDATA[مدیر محترم,
+خطاهای زیر در وب سایت شما ثبت شده است {@PAGE_TITLE|phrase} از آنجا که {$date|plainTime}:
 
 {foreach from=$files key=file item=data}
 
-log/{$file}.txt{if !$data[verdict]|isset} ({#$data[count]} error{if $data[count] > 1}s{/if}){/if} {* this line ends with a space *}
+ورود به سیستم/{$file}.txt{if !$data[verdict]|isset} ({#$data[count]} خطا{if $data[شمردن] > 1}s{/if}){/if} {* this line ends with a space *}
 ==================
-{if $data[verdict]|isset}
-{if $data[verdict] == 'corrupt'}
-This protocol file is corrupted. Please check the protocol manually: {'WCF_DIR'|constant}log/{$file}.txt
+{if $data[نظر]|isset}
+{if $data[نظر] == 'corrupt'}
+این فایل پروتکل خراب است. لطفاً پروتکل را به صورت دستی بررسی کنید: {'WCF_DIR'|constant}log/{$file}.txt
 {elseif $data[verdict] == 'huge'}
-This protocol file is very large. Please check the protocol manually: {'WCF_DIR'|constant}log/{$file}.txt
+این فایل پروتکل بسیار بزرگ است. لطفاً پروتکل را به صورت دستی بررسی کنید: {'WCF_DIR'|constant}log/{$file}.txt
 {/if}
 {else}
 {foreach from=$data[messages] item=message}
@@ -2790,14 +2790,14 @@ This protocol file is very large. Please check the protocol manually: {'WCF_DIR'
 {* this line is intentionally left empty *}
 {/foreach}
 
-ATTENTION: The messages listed above are greatly shortened. You can view details of individual error messages in the administration interface under “Logs » Errors”.]]></item>
-        <item name="wcf.acp.exceptionLog.email.subject"><![CDATA[Logged Errors since {$date|plainTime}]]></item>
-        <item name="wcf.acp.exceptionLog.exception.class"><![CDATA[Type]]></item>
-        <item name="wcf.acp.exceptionLog.exception.copy"><![CDATA[Copy error message]]></item>
-        <item name="wcf.acp.exceptionLog.exception.date"><![CDATA[Time]]></item>
-        <item name="wcf.acp.exceptionLog.exception.file"><![CDATA[File (Line)]]></item>
-        <item name="wcf.acp.exceptionLog.exception.memory"><![CDATA[Memory]]></item>
-        <item name="wcf.acp.exceptionLog.exception.message"><![CDATA[Error Message]]></item>
+توجه: پیام های ذکر شده در بالا بسیار کوتاه شده اند. می‌توانید جزئیات پیام‌های خطای فردی را در رابط مدیریت در بخش «ورود به سیستم ها » خطاها» مشاهده کنید..]]></item>
+        <item name="wcf.acp.exceptionLog.email.subject"><![CDATA[خطاهای ثبت شده از آن زمان{$date|plainTime}]]></item>
+        <item name="wcf.acp.exceptionLog.exception.class"><![CDATA[نوع]]></item>
+        <item name="wcf.acp.exceptionLog.exception.copy"><![CDATA[کپی پیغام خطا]]></item>
+        <item name="wcf.acp.exceptionLog.exception.date"><![CDATA[زمان]]></item>
+        <item name="wcf.acp.exceptionLog.exception.file"><![CDATA[فایل (خط)]]></item>
+        <item name="wcf.acp.exceptionLog.exception.memory"><![CDATA[حافظه]]></item>
+        <item name="wcf.acp.exceptionLog.exception.message"><![CDATA[پیغام خطا]]></item>
         <item name="wcf.acp.exceptionLog.exception.referrer"><![CDATA[Referrer]]></item>
         <item name="wcf.acp.exceptionLog.exception.requestURI"><![CDATA[Requested URL]]></item>
         <item name="wcf.acp.exceptionLog.exception.stacktrace"><![CDATA[Stacktrace]]></item>
