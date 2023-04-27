@@ -2671,84 +2671,84 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.devtools.project.optionalPackage.error.selfOptional"><![CDATA[یک بسته نمی تواند برای خودش یک بسته اختیاری باشد.]]></item>
         <item name="wcf.acp.devtools.project.optionalPackage.optionalPackage"><![CDATA[{$packageIdentifier}]]></item>
         <item name="wcf.acp.devtools.project.optionalPackage.packageIdentifier.description"><![CDATA[مسیر فایل بسته باید باشد <kbd>اختیاری/{literal}{$packageIdentifier}{/literal}.برانگیخته</kbd>.]]></item>
-        <item name="wcf.acp.devtools.project.optionalPackages"><![CDATA[Optional Packages]]></item>
-        <item name="wcf.acp.devtools.project.optionalPackages.description"><![CDATA[The following packages will be offered to be installed optionally after this package has been installed.]]></item>
-        <item name="wcf.acp.devtools.project.optionalPackages.shortTitle"><![CDATA[Optional]]></item>
-        <item name="wcf.acp.devtools.project.packageDate"><![CDATA[Creation Date]]></item>
-        <item name="wcf.acp.devtools.project.packageDate.description"><![CDATA[The package creation date refers to when this version of the package was published.]]></item>
-        <item name="wcf.acp.devtools.project.packageIdentifier"><![CDATA[Package Identifier]]></item>
-        <item name="wcf.acp.devtools.project.packageIdentifier.description"><![CDATA[The package identifier uniquely identifies the package. The identifier consists of at least three segments that are separated by dots. Each segment must not be empty and may only contain the following characters: <kbd>[A-z0-9-_]</kbd>.]]></item>
-        <item name="wcf.acp.devtools.project.packageIdentifier.error.duplicate"><![CDATA[The entered package has already been added.]]></item>
-        <item name="wcf.acp.devtools.project.packageIdentifier.error.format"><![CDATA[The entered package identifier is invalid.]]></item>
-        <item name="wcf.acp.devtools.project.packageIdentifier.error.maximumLength"><![CDATA[The package identifier must not be longer than 191 characters.]]></item>
-        <item name="wcf.acp.devtools.project.packageIdentifier.error.minimumLength"><![CDATA[The package identifier must be longer than three characters.]]></item>
-        <item name="wcf.acp.devtools.project.packageInformation"><![CDATA[Package Information]]></item>
-        <item name="wcf.acp.devtools.project.packageName"><![CDATA[Package Name]]></item>
-        <item name="wcf.acp.devtools.project.packageUrl"><![CDATA[Package Website]]></item>
-        <item name="wcf.acp.devtools.project.packageUrl.description"><![CDATA[The package website provides detailed information on the package.]]></item>
-        <item name="wcf.acp.devtools.project.packageVersion"><![CDATA[Package Version]]></item>
-        <item name="wcf.acp.devtools.project.packageVersion.description"><![CDATA[The package version consists of three dot-separated numbers and an optional whitespace-separated suffix <kbd>Dev</kbd>, <kbd>Alpha</kbd>, <kbd>Beta</kbd>, <kbd>RC</kbd>, or <kbd>pl</kbd> that is followed by another number. Examples: <kbd>1.0.0</kbd>, <kbd>2.1.0 Beta 3</kbd>.]]></item>
-        <item name="wcf.acp.devtools.project.packageVersion.error.format"><![CDATA[The entered version is invalid.]]></item>
-        <item name="wcf.acp.devtools.project.packageVersion.error.maximumLength"><![CDATA[The version must not be longer than 255 characters.]]></item>
-        <item name="wcf.acp.devtools.project.path"><![CDATA[Path]]></item>
-        <item name="wcf.acp.devtools.project.path.description"><![CDATA[The absolute path to the package within the filesystem. The placeholder shows the absolute path of WoltLab Suite Core of this installation.]]></item>
-        <item name="wcf.acp.devtools.project.path.error.cannotMakeDirectory"><![CDATA[The entered package directory cannot be created.]]></item>
-        <item name="wcf.acp.devtools.project.path.error.notFound"><![CDATA[The path is invalid.]]></item>
-        <item name="wcf.acp.devtools.project.path.error.notInstalled"><![CDATA[The package has not been installed yet. <a href="#" {if $project->getPackageArchive()->getOpenRequirements()|empty}class="jsDevtoolsInstallPackage"{else}class="jsStaticDialog" data-dialog-id="openPackageRequirements"{/if}>Do you want to install the package?</a>]]></item>
-        <item name="wcf.acp.devtools.project.path.error.notUnique"><![CDATA[The path is already used by another project.]]></item>
-        <item name="wcf.acp.devtools.project.path.error.packageXml"><![CDATA[The path does not contain a valid <kbd>package.xml</kbd>.]]></item>
-        <item name="wcf.acp.devtools.project.path.error.parentDoesNotExist"><![CDATA[The parent folder does not exist.]]></item>
-        <item name="wcf.acp.devtools.project.path.error.pathExists"><![CDATA[The entered path exists already.]]></item>
-        <item name="wcf.acp.devtools.project.path.error.versionMismatch"><![CDATA[The version shown in the <kbd>package.xml</kbd> does not match the installed version, you may have selected the wrong path.]]></item>
-        <item name="wcf.acp.devtools.project.pip.entry.add"><![CDATA[Add {$pip} Entry]]></item>
-        <item name="wcf.acp.devtools.project.pip.entry.add.pageTitle"><![CDATA[Add {$pip}{if $entryType !== null} ({$entryType}){/if} Entry - {$project->name}]]></item>
-        <item name="wcf.acp.devtools.project.pip.entry.button.add"><![CDATA[Add Entry]]></item>
-        <item name="wcf.acp.devtools.project.pip.entry.delete.addDeleteInstruction"><![CDATA[Add delete instruction]]></item>
-        <item name="wcf.acp.devtools.project.pip.entry.delete.addDeleteInstruction.description"><![CDATA[The entry will not only be deleted from database and its installation instruction removed, but a delete instruction will also be explicitly added.]]></item>
-        <item name="wcf.acp.devtools.project.pip.entry.delete.confirmMessage"><![CDATA[Do you really want to delete the entry?]]></item>
-        <item name="wcf.acp.devtools.project.pip.entry.edit"><![CDATA[Edit {$pip}{if $entryType !== null} ({$entryType}){/if} Entry]]></item>
-        <item name="wcf.acp.devtools.project.pip.entry.edit.pageTitle"><![CDATA[Edit {$pip}{if $entryType !== null} ({$entryType}){/if} Entry - {$project->name}]]></item>
-        <item name="wcf.acp.devtools.project.pip.entry.list"><![CDATA[{$pip}{if $entryType !== null} ({$entryType}){/if} Entries]]></item>
-        <item name="wcf.acp.devtools.project.pip.entry.list.pageTitle"><![CDATA[{$pip}{if $entryType !== null} ({$entryType}){/if} Entries - {$project->name}]]></item>
-        <item name="wcf.acp.devtools.project.pip.list"><![CDATA[Package Installation Plugins]]></item>
-        <item name="wcf.acp.devtools.project.pip.list.pageTitle"><![CDATA[Package Installation Plugins - {$project->name}]]></item>
+        <item name="wcf.acp.devtools.project.optionalPackages"><![CDATA[بسته های اختیاری]]></item>
+        <item name="wcf.acp.devtools.project.optionalPackages.description"><![CDATA[بسته های زیر برای نصب به صورت اختیاری پس از نصب این بسته پیشنهاد می شود.]]></item>
+        <item name="wcf.acp.devtools.project.optionalPackages.shortTitle"><![CDATA[اختیاری]]></item>
+        <item name="wcf.acp.devtools.project.packageDate"><![CDATA[تاریخ ایجاد]]></item>
+        <item name="wcf.acp.devtools.project.packageDate.description"><![CDATA[تاریخ ایجاد بسته به زمانی اشاره دارد که این نسخه از بسته منتشر شده است.]]></item>
+        <item name="wcf.acp.devtools.project.packageIdentifier"><![CDATA[شناسه بسته]]></item>
+        <item name="wcf.acp.devtools.project.packageIdentifier.description"><![CDATA[شناسه بسته به طور منحصر به فرد بسته را شناسایی می کند. شناسه شامل حداقل سه بخش است که با نقطه از هم جدا می شوند. هر بخش نباید خالی باشد و فقط ممکن است شامل کاراکترهای زیر باشد: <kbd>[الف-ی0-9-_]</kbd>.]]></item>
+        <item name="wcf.acp.devtools.project.packageIdentifier.error.duplicate"><![CDATA[بسته وارد شده قبلاً اضافه شده است.]]></item>
+        <item name="wcf.acp.devtools.project.packageIdentifier.error.format"><![CDATA[شناسه بسته وارد شده نامعتبر است.]]></item>
+        <item name="wcf.acp.devtools.project.packageIdentifier.error.maximumLength"><![CDATA[شناسه بسته نباید بیشتر از 191 کاراکتر باشد.]]></item>
+        <item name="wcf.acp.devtools.project.packageIdentifier.error.minimumLength"><![CDATA[شناسه بسته باید بیشتر از سه کاراکتر باشد.]]></item>
+        <item name="wcf.acp.devtools.project.packageInformation"><![CDATA[اطلاعات بسته]]></item>
+        <item name="wcf.acp.devtools.project.packageName"><![CDATA[نام بسته]]></item>
+        <item name="wcf.acp.devtools.project.packageUrl"><![CDATA[سایت اینترنتی بسته]]></item>
+        <item name="wcf.acp.devtools.project.packageUrl.description"><![CDATA[سایت اینترنتی بسته اطلاعات دقیقی در مورد بسته ارائه می دهد.]]></item>
+        <item name="wcf.acp.devtools.project.packageVersion"><![CDATA[نسخه بسته]]></item>
+        <item name="wcf.acp.devtools.project.packageVersion.description"><![CDATA[نسخه بسته شامل سه عدد جدا شده با نقطه و یک پسوند اختیاری جدا شده با فضای خالی است. <kbd>Dev</kbd>, <kbd>آلفا</kbd>, <kbd>بتا</kbd>, <kbd>ار سی</kbd>, یا <kbd>پی ال</kbd> که به دنبال آن عدد دیگری می آید. مثال ها: <kbd>1.0.0</kbd>, <kbd>2.1.0 بتا3  </kbd>.]]></item>
+        <item name="wcf.acp.devtools.project.packageVersion.error.format"><![CDATA[نسخه وارد شده نامعتبر است.]]></item>
+        <item name="wcf.acp.devtools.project.packageVersion.error.maximumLength"><![CDATA[نسخه نباید بیشتر از 255 کاراکتر باشد.]]></item>
+        <item name="wcf.acp.devtools.project.path"><![CDATA[مسیر]]></item>
+        <item name="wcf.acp.devtools.project.path.description"><![CDATA[مسیر مطلق به بسته در سیستم فایل. مکان نگهدار مسیر مطلق WoltLab دنباله هسته این نصب را نشان می دهد.]]></item>
+        <item name="wcf.acp.devtools.project.path.error.cannotMakeDirectory"><![CDATA[دایرکتوری بسته وارد شده ایجاد نمی شود.]]></item>
+        <item name="wcf.acp.devtools.project.path.error.notFound"><![CDATA[مسیر نامعتبر است.]]></item>
+        <item name="wcf.acp.devtools.project.path.error.notInstalled"><![CDATA[بسته هنوز نصب نشده است. <a href="#" {if $project->getPackageArchive()->getOpenRequirements()|empty}کلاس="jsDevtoolsInstallPackage"{else}class="jsStaticDialog" data-dialog-id="openPackageRequirements"{/if}>آیا می خواهید بسته را نصب کنید؟</a>]]></item>
+        <item name="wcf.acp.devtools.project.path.error.notUnique"><![CDATA[مسیر قبلاً توسط پروژه دیگری استفاده شده است.]]></item>
+        <item name="wcf.acp.devtools.project.path.error.packageXml"><![CDATA[مسیر حاوی یک معتبر نیست<kbd>بسته.xml</kbd>.]]></item>
+        <item name="wcf.acp.devtools.project.path.error.parentDoesNotExist"><![CDATA[پوشه والد وجود ندارد.]]></item>
+        <item name="wcf.acp.devtools.project.path.error.pathExists"><![CDATA[مسیر وارد شده از قبل وجود دارد.]]></item>
+        <item name="wcf.acp.devtools.project.path.error.versionMismatch"><![CDATA[نسخه نشان داده شده در <kbd>بسته.xml</kbd> با نسخه نصب شده مطابقت ندارد، ممکن است مسیر را اشتباه انتخاب کرده باشید.]]></item>
+        <item name="wcf.acp.devtools.project.pip.entry.add"><![CDATA[اضافه کردن {$pip} ورود]]></item>
+        <item name="wcf.acp.devtools.project.pip.entry.add.pageTitle"><![CDATA[اضافه کردن {$pip}{if $entryType !== null} ({$entryType}){/if} ورود - {$project->name}]]></item>
+        <item name="wcf.acp.devtools.project.pip.entry.button.add"><![CDATA[اضافه کردن ورود]]></item>
+        <item name="wcf.acp.devtools.project.pip.entry.delete.addDeleteInstruction"><![CDATA[دستور حذف را اضافه کنید]]></item>
+        <item name="wcf.acp.devtools.project.pip.entry.delete.addDeleteInstruction.description"><![CDATA[ورودی نه تنها از پایگاه داده حذف می شود و دستورالعمل نصب آن حذف می شود، بلکه یک دستورالعمل حذف نیز به صراحت اضافه می شود..]]></item>
+        <item name="wcf.acp.devtools.project.pip.entry.delete.confirmMessage"><![CDATA[آیا واقعاً می خواهید ورودی را حذف کنید؟]]></item>
+        <item name="wcf.acp.devtools.project.pip.entry.edit"><![CDATA[ویرایش {$pip}{if $entryType !== null} ({$entryType}){/if} ورودی]]></item>
+        <item name="wcf.acp.devtools.project.pip.entry.edit.pageTitle"><![CDATA[ویرایش {$pip}{if $entryType !== null} ({$entryType}){/if} ورودی - {$project->name}]]></item>
+        <item name="wcf.acp.devtools.project.pip.entry.list"><![CDATA[{$pip}{if $entryType !== null} ({$entryType}){/if} ورودی ها]]></item>
+        <item name="wcf.acp.devtools.project.pip.entry.list.pageTitle"><![CDATA[{$pip}{if $entryType !== null} ({$entryType}){/if} ورودی ها - {$project->name}]]></item>
+        <item name="wcf.acp.devtools.project.pip.list"><![CDATA[پلاگین های نصب بسته]]></item>
+        <item name="wcf.acp.devtools.project.pip.list.pageTitle"><![CDATA[پلاگین های نصب بسته- {$project->name}]]></item>
         <item name="wcf.acp.devtools.project.pips"><![CDATA[PIPs]]></item>
-        <item name="wcf.acp.devtools.project.quickSetup"><![CDATA[Search Path]]></item>
-        <item name="wcf.acp.devtools.project.quickSetup.path"><![CDATA[Path]]></item>
-        <item name="wcf.acp.devtools.project.quickSetup.path.description"><![CDATA[All folders directly contained in the path will be checked whether they contain a package.]]></item>
-        <item name="wcf.acp.devtools.project.quickSetup.path.error.noPackages"><![CDATA[The path contains no new packages.]]></item>
-        <item name="wcf.acp.devtools.project.quickSetup.success"><![CDATA[{#$count} new project{if $count > 1}s have{else} has{/if} been added.]]></item>
-        <item name="wcf.acp.devtools.project.requiredPackage.error.missingFiles"><![CDATA[The following package files are missing: {implode from=$missingFiles item=missingFile}<kbd>{$missingFile}</kbd>{/implode}.]]></item>
-        <item name="wcf.acp.devtools.project.requiredPackage.error.missingWcfRequirement"><![CDATA[The package must require <kbd>com.woltlab.wcf</kbd> in version {$minVersion} or higher.]]></item>
-        <item name="wcf.acp.devtools.project.requiredPackage.error.selfRequirement"><![CDATA[A package cannot require itself.]]></item>
-        <item name="wcf.acp.devtools.project.requiredPackage.file"><![CDATA[Package File Included in Package]]></item>
-        <item name="wcf.acp.devtools.project.requiredPackage.file.description"><![CDATA[The path to the package file has to be <kbd>requirements/{literal}{$packageIdentifier}{/literal}.tar</kbd>.]]></item>
-        <item name="wcf.acp.devtools.project.requiredPackage.minVersion"><![CDATA[Minimum Version]]></item>
+        <item name="wcf.acp.devtools.project.quickSetup"><![CDATA[مسیر جستجو]]></item>
+        <item name="wcf.acp.devtools.project.quickSetup.path"><![CDATA[مسیر]]></item>
+        <item name="wcf.acp.devtools.project.quickSetup.path.description"><![CDATA[تمام پوشه‌هایی که مستقیماً در مسیر قرار دارند بررسی می‌شوند که آیا حاوی بسته هستند یا خیر.]]></item>
+        <item name="wcf.acp.devtools.project.quickSetup.path.error.noPackages"><![CDATA[مسیر حاوی بسته های جدیدی نیست.]]></item>
+        <item name="wcf.acp.devtools.project.quickSetup.success"><![CDATA[{#$count} جدید project{if $count > 1}ها have{else} دارد{/if} اضافه شده است.]]></item>
+        <item name="wcf.acp.devtools.project.requiredPackage.error.missingFiles"><![CDATA[فایل های بسته زیر وجود ندارد: {implode from=$missingFiles item=missingFile}<kbd>{$missingFile}</kbd>{/implode}.]]></item>
+        <item name="wcf.acp.devtools.project.requiredPackage.error.missingWcfRequirement"><![CDATA[بسته باید نیاز داشته باشد<kbd>com.woltlab.wcf</kbd> در نسخه {$minVersion} یا بالاتر.]]></item>
+        <item name="wcf.acp.devtools.project.requiredPackage.error.selfRequirement"><![CDATA[یک بسته نمی تواند به خود نیاز داشته باشد.]]></item>
+        <item name="wcf.acp.devtools.project.requiredPackage.file"><![CDATA[فایل بسته موجود در بسته]]></item>
+        <item name="wcf.acp.devtools.project.requiredPackage.file.description"><![CDATA[مسیر فایل بسته باید باشد <kbd>الزامات/{literal}{$packageIdentifier}{/literal}.برانگیخته</kbd>.]]></item>
+        <item name="wcf.acp.devtools.project.requiredPackage.minVersion"><![CDATA[حداقل نسخه]]></item>
         <item name="wcf.acp.devtools.project.requiredPackage.requiredPackage"><![CDATA[<kbd>{$packageIdentifier}</kbd>
 <dl class="plain inlineDataList small">
 	{if $minVersion}
-		<dt>Minimum version</dt>
+		<dt>حداقل نسخه</dt>
 		<dd><kbd>{$minVersion}</kbd></dd>
 	{/if}
-	<dt>Package file included in package</dt>
+	<dt>فایل بسته موجود در بسته</dt>
 	<dd><span class="icon icon16 fa-{if $file}check{else}times{/if}"></span></dd>
 </dl>]]></item>
-        <item name="wcf.acp.devtools.project.requiredPackages"><![CDATA[Required Packages]]></item>
-        <item name="wcf.acp.devtools.project.requiredPackages.description"><![CDATA[In order to install this package, the following packages have to be already installed or the versions delivered together with the package have to be installed first.]]></item>
-        <item name="wcf.acp.devtools.project.requiredPackages.shortTitle"><![CDATA[Requirements]]></item>
-        <item name="wcf.acp.devtools.project.sync"><![CDATA[Sync Data]]></item>
-        <item name="wcf.acp.devtools.project.sync.pageTitle"><![CDATA[Sync Data - {$object->name}]]></item>
-        <item name="wcf.acp.devtools.sync.status.failure"><![CDATA[An error has occurred.]]></item>
-        <item name="wcf.acp.devtools.sync.status.idle"><![CDATA[Ready.]]></item>
+        <item name="wcf.acp.devtools.project.requiredPackages"><![CDATA[بسته های مورد نیاز]]></item>
+        <item name="wcf.acp.devtools.project.requiredPackages.description"><![CDATA[برای نصب این بسته، بسته های زیر باید از قبل نصب شده باشند یا نسخه های تحویل داده شده همراه با بسته ابتدا نصب شوند..]]></item>
+        <item name="wcf.acp.devtools.project.requiredPackages.shortTitle"><![CDATA[الزامات]]></item>
+        <item name="wcf.acp.devtools.project.sync"><![CDATA[همگام سازی داده ها]]></item>
+        <item name="wcf.acp.devtools.project.sync.pageTitle"><![CDATA[همگام سازی داده ها - {$object->name}]]></item>
+        <item name="wcf.acp.devtools.sync.status.failure"><![CDATA[خطایی رخ داده است.]]></item>
+        <item name="wcf.acp.devtools.sync.status.idle"><![CDATA[آماده.]]></item>
         <item name="wcf.acp.devtools.sync.status.success"><![CDATA[{$timeElapsed}s ({@TIME_NOW|time})]]></item>
-        <item name="wcf.acp.devtools.sync.syncAll"><![CDATA[Sync All]]></item>
+        <item name="wcf.acp.devtools.sync.syncAll"><![CDATA[همگام سازی همه]]></item>
     </category>
     <category name="wcf.acp.email">
-        <item name="wcf.acp.email.log"><![CDATA[Emails Sent]]></item>
-        <item name="wcf.acp.email.log.messageId"><![CDATA[Message-ID]]></item>
-        <item name="wcf.acp.email.log.status"><![CDATA[Status]]></item>
-        <item name="wcf.acp.email.log.status.discarded"><![CDATA[Discarded]]></item>
-        <item name="wcf.acp.email.log.status.new"><![CDATA[Pending]]></item>
+        <item name="wcf.acp.email.log"><![CDATA[ایمیل های ارسال شده]]></item>
+        <item name="wcf.acp.email.log.messageId"><![CDATA[شناسه پیام]]></item>
+        <item name="wcf.acp.email.log.status"><![CDATA[وضعیت]]></item>
+        <item name="wcf.acp.email.log.status.discarded"><![CDATA[دور انداخته شد]]></item>
+        <item name="wcf.acp.email.log.status.new"><![CDATA[انتظار]]></item>
         <item name="wcf.acp.email.log.status.permanent_failure"><![CDATA[Ultimately Failed]]></item>
         <item name="wcf.acp.email.log.status.success"><![CDATA[Sent]]></item>
         <item name="wcf.acp.email.log.status.transient_failure"><![CDATA[Transient Failure]]></item>
