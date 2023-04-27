@@ -2587,11 +2587,11 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.devtools.project.authorInformation"><![CDATA[اطلاعات توسعه دهنده]]></item>
         <item name="wcf.acp.devtools.project.authorUrl"><![CDATA[وب سایت توسعه دهنده]]></item>
         <item name="wcf.acp.devtools.project.edit"><![CDATA[ویرایش پروژه]]></item>
-        <item name="wcf.acp.devtools.project.edit.error.brokenPath"><![CDATA[There is no <kbd>package.xml</kbd> in the entered directory. The package files have either been deleted or moved.]]></item>
-        <item name="wcf.acp.devtools.project.edit.warning"><![CDATA[After submitting the form, the existing <kbd>package.xml</kbd> file will be rewritten!]]></item>
-        <item name="wcf.acp.devtools.project.edit.warning.missingElements"><![CDATA[The following information is missing from the <kbd>package.xml</kbd> file: {implode from=$missingElements item=missingElement}<kbd>{$missingElement}</kbd>{/implode}.]]></item>
-        <item name="wcf.acp.devtools.project.excludedPackage.error.requirementExclusion"><![CDATA[If required packages are added as conflicting packages, both, the required version and the conflicting version, have to be specified and the conflicting version has to be newer than the required version. Affected packages: {implode from=$affectedPackages item=affectedPackage}{$affectedPackage}{/implode}.]]></item>
-        <item name="wcf.acp.devtools.project.excludedPackage.error.selfExclusion"><![CDATA[A package cannot be conflicting with itself.]]></item>
+        <item name="wcf.acp.devtools.project.edit.error.brokenPath"><![CDATA[وجود ندارد <kbd>package.xml</kbd> در دایرکتوری وارد شده فایل های بسته یا حذف شده اند یا منتقل شده اند.]]></item>
+        <item name="wcf.acp.devtools.project.edit.warning"><![CDATA[پس از ارسال فرم، موجود<kbd>package.xml</kbd> فایل بازنویسی خواهد شد!]]></item>
+        <item name="wcf.acp.devtools.project.edit.warning.missingElements"><![CDATA[اطلاعات زیر در مورد وجود ندارد<kbd>package.xml</kbd> فایل: {implode from=$missingElements item=missingElement}<kbd>{$missingElement}</kbd>{/implode}.]]></item>
+        <item name="wcf.acp.devtools.project.excludedPackage.error.requirementExclusion"><![CDATA[اگر بسته‌های مورد نیاز به‌عنوان بسته‌های متضاد اضافه شوند، هم نسخه مورد نیاز و هم نسخه متضاد باید مشخص شوند و نسخه متضاد باید جدیدتر از نسخه مورد نیاز باشد. بسته های تحت تأثیر: {implode from=$affectedPackages item=affectedPackage}{$affectedPackage}{/implode}.]]></item>
+        <item name="wcf.acp.devtools.project.excludedPackage.error.selfExclusion"><![CDATA[یک بسته نمی تواند با خودش تضاد داشته باشد.]]></item>
         <item name="wcf.acp.devtools.project.excludedPackage.excludedPackage"><![CDATA[<kbd>{$packageIdentifier}</kbd>
 {if $version}
 	<dl class="plain inlineDataList small">
@@ -2599,22 +2599,22 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
 		<dd><kbd>{$version}</kbd></dd>
 	</dl>
 {/if}]]></item>
-        <item name="wcf.acp.devtools.project.excludedPackage.version"><![CDATA[Conflicting Version]]></item>
-        <item name="wcf.acp.devtools.project.excludedPackages"><![CDATA[Conflicting Packages]]></item>
-        <item name="wcf.acp.devtools.project.excludedPackages.description"><![CDATA[This package cannot be installed if one of the following packages is already installed (in the specified <strong>or new</strong> version).]]></item>
+        <item name="wcf.acp.devtools.project.excludedPackage.version"><![CDATA[نسخه متناقض]]></item>
+        <item name="wcf.acp.devtools.project.excludedPackages"><![CDATA[بسته های متناقض]]></item>
+        <item name="wcf.acp.devtools.project.excludedPackages.description"><![CDATA[اگر یکی از بسته های زیر قبلاً نصب شده باشد، این بسته قابل نصب نیست (در مشخص شده <strong>یا جدید</strong> نسخه).]]></item>
         <item name="wcf.acp.devtools.project.excludedPackages.shortTitle"><![CDATA[Conflicts]]></item>
-        <item name="wcf.acp.devtools.project.installPackage.confirmMessage"><![CDATA[Do you really want to install the package <span class="confirmationObject">{@$packageIdentifier}</span>?]]></item>
-        <item name="wcf.acp.devtools.project.installPackage.error.openRequirements"><![CDATA[The project cannot be installed because the following packages are missing:]]></item>
-        <item name="wcf.acp.devtools.project.installPackage.error.openRequirements.title"><![CDATA[Missing Packages]]></item>
-        <item name="wcf.acp.devtools.project.installPackage.openRequirement"><![CDATA[{$openPackage}{if $openRequirement[minversion]|isset} (Version {$openRequirement[minversion]}){/if}]]></item>
-        <item name="wcf.acp.devtools.project.instruction.application"><![CDATA[App]]></item>
-        <item name="wcf.acp.devtools.project.instruction.delete.confirmMessages"><![CDATA[Do you really want to delete the instruction?]]></item>
-        <item name="wcf.acp.devtools.project.instruction.edit"><![CDATA[Edit instruction]]></item>
-        <item name="wcf.acp.devtools.project.instruction.error.missingDirectory"><![CDATA[The associated directory with the unzipped files, <kbd>{$directory}</kbd>, does not exist.]]></item>
-        <item name="wcf.acp.devtools.project.instruction.error.missingDirectoryForUpdatedFiles"><![CDATA[Archives whose filename ends with <kbd>_update.tar</kbd> are considered to only contain files updated since the last version. For such archives, the name of associated directory with the unzipped files is the archive filename without the <kbd>_update.tar</kbd> suffix. This directory, <kbd>{$directory}</kbd>, does not exist.]]></item>
-        <item name="wcf.acp.devtools.project.instruction.error.missingFile"><![CDATA[The file <kbd>{$file}</kbd> does not exist.]]></item>
-        <item name="wcf.acp.devtools.project.instruction.error.noArchive"><![CDATA[The entered file is no archive ending with <kbd>.tar</kbd>.]]></item>
-        <item name="wcf.acp.devtools.project.instruction.error.noXmlFile"><![CDATA[The entered file is no XML file.]]></item>
+        <item name="wcf.acp.devtools.project.installPackage.confirmMessage"><![CDATA[آیا واقعاً می خواهید بسته را نصب کنید؟ <span class="confirmationObject">{@$packageIdentifier}</span>?]]></item>
+        <item name="wcf.acp.devtools.project.installPackage.error.openRequirements"><![CDATA[پروژه را نمی توان نصب کرد زیرا بسته های زیر وجود ندارد:]]></item>
+        <item name="wcf.acp.devtools.project.installPackage.error.openRequirements.title"><![CDATA[بسته های گم شده]]></item>
+        <item name="wcf.acp.devtools.project.installPackage.openRequirement"><![CDATA[{$openPackage}{if $openRequirement[minversion]|isset} (نسخه {$openRequirement[minversion]}){/if}]]></item>
+        <item name="wcf.acp.devtools.project.instruction.application"><![CDATA[برنامه]]></item>
+        <item name="wcf.acp.devtools.project.instruction.delete.confirmMessages"><![CDATA[آیا واقعاً می خواهید دستورالعمل را حذف کنید؟]]></item>
+        <item name="wcf.acp.devtools.project.instruction.edit"><![CDATA[ویرایش دستورالعمل]]></item>
+        <item name="wcf.acp.devtools.project.instruction.error.missingDirectory"><![CDATA[دایرکتوری مرتبط با فایل های زیپ نشده، <kbd>{$directory}</kbd>, وجود ندارد.]]></item>
+        <item name="wcf.acp.devtools.project.instruction.error.missingDirectoryForUpdatedFiles"><![CDATA[آرشیوهایی که نام فایل آنها به پایان می رسد <kbd>_update.tar</kbd> در نظر گرفته می شوند که فقط حاوی فایل هایی هستند که از آخرین نسخه به روز شده اند. برای چنین آرشیوهایی، نام دایرکتوری مرتبط با فایل های زیپ نشده، نام فایل بایگانی بدون فایل است <kbd>_update.tar</kbd> suffix. This directory, <kbd>{$directory}</kbd>, وجود ندارد.]]></item>
+        <item name="wcf.acp.devtools.project.instruction.error.missingFile"><![CDATA[فایل <kbd>{$file}</kbd> وجود ندارد.]]></item>
+        <item name="wcf.acp.devtools.project.instruction.error.noArchive"><![CDATA[فایل وارد شده بایگانی نیست که به آن ختم می شود<kbd>.tar</kbd>.]]></item>
+        <item name="wcf.acp.devtools.project.instruction.error.noXmlFile"><![CDATA[فایل وارد شده بدون فایل ایکس ام ال است.]]></item>
         <item name="wcf.acp.devtools.project.instruction.instruction"><![CDATA[<kbd>{$pip}</kbd>
 {if $value || $runStandalone || $application}
 	<dl class="plain inlineDataList small">
@@ -2627,50 +2627,50 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
 			<dd>{$application}</dd>
 		{/if}
 		{if $runStandalone}
-			<dt>Run in separate step</dt>
+			<dt>در مرحله جداگانه اجرا کنید</dt>
 			<dd><span class="icon icon16 fa-check"></span></dd>
 		{/if}
 	</dl>
 {/if}]]></item>
-        <item name="wcf.acp.devtools.project.instruction.language.error.missingFiles"><![CDATA[The directory <kbd>{$directory}<kdb> contains no XML files.]]></item>
-        <item name="wcf.acp.devtools.project.instruction.packageInstallationPlugin"><![CDATA[Package Component]]></item>
-        <item name="wcf.acp.devtools.project.instruction.runStandalone"><![CDATA[Execute in separate step]]></item>
-        <item name="wcf.acp.devtools.project.instruction.runStandalone.description"><![CDATA[For time-consuming components, it is recommended to install this component in a separate step.]]></item>
-        <item name="wcf.acp.devtools.project.instruction.script.error.missingFile"><![CDATA[The entered script file could not be found at any of the following locations: {implode from=$checkedFileLocations item=checkedFileLocation}<kbd>{$checkedFileLocation}</kbd>{/implode}.]]></item>
-        <item name="wcf.acp.devtools.project.instruction.script.error.noPhpFile"><![CDATA[The entered file is no PHP file ending with <kbd>.php</kbd>.]]></item>
-        <item name="wcf.acp.devtools.project.instruction.value"><![CDATA[File(s)]]></item>
-        <item name="wcf.acp.devtools.project.instruction.value.description"><![CDATA[The entered file will be processed during the installation/update.]]></item>
-        <item name="wcf.acp.devtools.project.instruction.value.description.defaultFilename"><![CDATA[If no file is specified, the following file will be used by default: <kbd>{$defaultFilename}</kbd>.]]></item>
-        <item name="wcf.acp.devtools.project.instructions"><![CDATA[Instructions]]></item>
-        <item name="wcf.acp.devtools.project.instructions.delete.confirmMessages"><![CDATA[Do you really want to delete the instructions?]]></item>
-        <item name="wcf.acp.devtools.project.instructions.description"><![CDATA[The instructions tell the installation and update routine what needs to be done to successfully install/update the package.]]></item>
-        <item name="wcf.acp.devtools.project.instructions.edit"><![CDATA[Edit instructions]]></item>
-        <item name="wcf.acp.devtools.project.instructions.error.missingInstructions"><![CDATA[No instructions were added.]]></item>
-        <item name="wcf.acp.devtools.project.instructions.error.noInstallationInstructions"><![CDATA[There are no installation instructions.]]></item>
-        <item name="wcf.acp.devtools.project.instructions.instructions.description"><![CDATA[The instructions will be executed in the given order. They can be sorted by dragging and dropping them.]]></item>
-        <item name="wcf.acp.devtools.project.instructions.type"><![CDATA[Instruction Type]]></item>
-        <item name="wcf.acp.devtools.project.instructions.type.install"><![CDATA[Installation]]></item>
-        <item name="wcf.acp.devtools.project.instructions.type.install.error.duplicate"><![CDATA[There is already a set of installation instructions.]]></item>
-        <item name="wcf.acp.devtools.project.instructions.type.install.title"><![CDATA[Instructions for Installation]]></item>
-        <item name="wcf.acp.devtools.project.instructions.type.update"><![CDATA[Update]]></item>
-        <item name="wcf.acp.devtools.project.instructions.type.update.error.duplicate"><![CDATA[There can only be one set of installation instructions.]]></item>
-        <item name="wcf.acp.devtools.project.instructions.type.update.error.updateForFutureVersion"><![CDATA[The updated version specified for updates always has to be an older version. The entered updated version <kbd>{$fromVersion}</kbd> is newer than the currently specified package version <kbd>{$version}</kbd>.]]></item>
-        <item name="wcf.acp.devtools.project.instructions.type.update.title"><![CDATA[Instructions for Updating from Version {$fromVersion}]]></item>
-        <item name="wcf.acp.devtools.project.instructions.update.fromVersion"><![CDATA[Updated Version]]></item>
-        <item name="wcf.acp.devtools.project.instructions.update.fromVersion.description"><![CDATA[The updated version can either be a concrete version like <kbd>1.0.3</kbd> or a whole range of versions expressed using an asterisk (example: <kbd>1.0.*</kbd>).]]></item>
-        <item name="wcf.acp.devtools.project.introduction"><![CDATA[Please read the <a href="https://docs.woltlab.com/latest/getting-started/#developer-tools" class="externalURL">usage instructions</a> in the developer documentation.]]></item>
-        <item name="wcf.acp.devtools.project.isApplication"><![CDATA[Package Contains App]]></item>
-        <item name="wcf.acp.devtools.project.isApplication.description"><![CDATA[An app has its own frontend with a dedicated namespace, database table prefix and template locations. It offers a logical (and to some extent physical) separation from other parts of Core and other installed apps. The last segment of the package identifier is used as the abbreviation of the application within the system. App abbreviations have to be unique within an installation.]]></item>
-        <item name="wcf.acp.devtools.project.license"><![CDATA[License]]></item>
-        <item name="wcf.acp.devtools.project.list"><![CDATA[Projects]]></item>
-        <item name="wcf.acp.devtools.project.name"><![CDATA[Name]]></item>
-        <item name="wcf.acp.devtools.project.name.error.notUnique"><![CDATA[The name is already used by another project.]]></item>
-        <item name="wcf.acp.devtools.project.optionalPackage.error.exclusionOptional"><![CDATA[Optional packages cannot be excluded at the same time. Affected packages: {implode from=$affectedPackages item=affectedPackage}{$affectedPackage}{/implode}.]]></item>
-        <item name="wcf.acp.devtools.project.optionalPackage.error.missingFiles"><![CDATA[The following package files are missing: {implode from=$missingFiles item=missingFile}<kbd>{$missingFile}</kbd>{/implode}.]]></item>
-        <item name="wcf.acp.devtools.project.optionalPackage.error.requirementOptional"><![CDATA[Optional packages cannot be required at the same time. Affected packages: {implode from=$affectedPackages item=affectedPackage}{$affectedPackage}{/implode}.]]></item>
-        <item name="wcf.acp.devtools.project.optionalPackage.error.selfOptional"><![CDATA[A package cannot be an optional package for itself.]]></item>
+        <item name="wcf.acp.devtools.project.instruction.language.error.missingFiles"><![CDATA[دایرکتوری <kbd>{$directory}<kdb> حاوی هیچ فایل ایکس ام ال نیست.]]></item>
+        <item name="wcf.acp.devtools.project.instruction.packageInstallationPlugin"><![CDATA[جزء بسته]]></item>
+        <item name="wcf.acp.devtools.project.instruction.runStandalone"><![CDATA[در مرحله جداگانه اجرا کنید]]></item>
+        <item name="wcf.acp.devtools.project.instruction.runStandalone.description"><![CDATA[برای قطعات وقت گیر توصیه می شود این قطعه را در مرحله ای جداگانه نصب کنید.]]></item>
+        <item name="wcf.acp.devtools.project.instruction.script.error.missingFile"><![CDATA[فایل اسکریپت وارد شده در هیچ یک از مکان های زیر یافت نشد: {implode from=$checkedFileLocations item=checkedFileLocation}<kbd>{$checkedFileLocation}</kbd>{/implode}.]]></item>
+        <item name="wcf.acp.devtools.project.instruction.script.error.noPhpFile"><![CDATA[فایل وارد شده هیچ فایل پی اچ پی نیست که به آن ختم شود <kbd>.پی اچ پی</kbd>.]]></item>
+        <item name="wcf.acp.devtools.project.instruction.value"><![CDATA[فایل(ها)]]></item>
+        <item name="wcf.acp.devtools.project.instruction.value.description"><![CDATA[فایل وارد شده در حین نصب/به روز رسانی پردازش می شود.]]></item>
+        <item name="wcf.acp.devtools.project.instruction.value.description.defaultFilename"><![CDATA[اگر هیچ فایلی مشخص نشده باشد، فایل زیر به صورت پیش فرض استفاده می شود: <kbd>{$defaultFilename}</kbd>.]]></item>
+        <item name="wcf.acp.devtools.project.instructions"><![CDATA[دستورالعمل ها]]></item>
+        <item name="wcf.acp.devtools.project.instructions.delete.confirmMessages"><![CDATA[آیا واقعاً می خواهید دستورالعمل ها را حذف کنید؟]]></item>
+        <item name="wcf.acp.devtools.project.instructions.description"><![CDATA[دستورالعمل ها به روال نصب و به روز رسانی می گویند که برای نصب/به روز رسانی موفقیت آمیز بسته چه کاری باید انجام شود.]]></item>
+        <item name="wcf.acp.devtools.project.instructions.edit"><![CDATA[دستورالعمل ها را ویرایش کنید]]></item>
+        <item name="wcf.acp.devtools.project.instructions.error.missingInstructions"><![CDATA[هیچ دستورالعملی اضافه نشد.]]></item>
+        <item name="wcf.acp.devtools.project.instructions.error.noInstallationInstructions"><![CDATA[هیچ دستورالعمل نصبی وجود ندارد.]]></item>
+        <item name="wcf.acp.devtools.project.instructions.instructions.description"><![CDATA[دستورالعمل ها به ترتیب داده شده اجرا می شوند. آنها را می توان با کشیدن و رها کردن آنها مرتب کرد.]]></item>
+        <item name="wcf.acp.devtools.project.instructions.type"><![CDATA[نوع دستورالعمل]]></item>
+        <item name="wcf.acp.devtools.project.instructions.type.install"><![CDATA[نصب و راه اندازی]]></item>
+        <item name="wcf.acp.devtools.project.instructions.type.install.error.duplicate"><![CDATA[در حال حاضر مجموعه ای از دستورالعمل های نصب وجود دارد.]]></item>
+        <item name="wcf.acp.devtools.project.instructions.type.install.title"><![CDATA[دستورالعمل نصب]]></item>
+        <item name="wcf.acp.devtools.project.instructions.type.update"><![CDATA[به روزرسانی]]></item>
+        <item name="wcf.acp.devtools.project.instructions.type.update.error.duplicate"><![CDATA[فقط یک مجموعه از دستورالعمل های نصب می تواند وجود داشته باشد.]]></item>
+        <item name="wcf.acp.devtools.project.instructions.type.update.error.updateForFutureVersion"><![CDATA[نسخه به روز شده مشخص شده برای به روز رسانی ها همیشه باید نسخه قدیمی تر باشد. نسخه به روز شده وارد شده<kbd>{$fromVersion}</kbd> is newer than the currently specified package version <kbd>{$version}</kbd>.]]></item>
+        <item name="wcf.acp.devtools.project.instructions.type.update.title"><![CDATA[دستورالعمل به روز رسانی از نسخه {$fromVersion}]]></item>
+        <item name="wcf.acp.devtools.project.instructions.update.fromVersion"><![CDATA[به روزرسانی نسخه]]></item>
+        <item name="wcf.acp.devtools.project.instructions.update.fromVersion.description"><![CDATA[نسخه به روز شده می تواند یک نسخه بتن مانند باشد <kbd>1.0.3</kbd> یا طیف کاملی از نسخه ها با استفاده از یک ستاره بیان شده است (مثال: <kbd>1.0.*</kbd>).]]></item>
+        <item name="wcf.acp.devtools.project.introduction"><![CDATA[لطفاً بخوانید<a href="https://docs.woltlab.com/latest/getting-started/#developer-tools" class="externalURL">دستورالعمل استفاده</a>در مستندات توسعه دهنده.]]></item>
+        <item name="wcf.acp.devtools.project.isApplication"><![CDATA[بسته حاوی برنامه]]></item>
+        <item name="wcf.acp.devtools.project.isApplication.description"><![CDATA[یک برنامه دارای صفحه اصلی خود با فضای نام اختصاصی، پیشوند جدول پایگاه داده و مکان های قالب است. این یک جدایی منطقی (و تا حدی فیزیکی) از سایر بخش‌های هسته و سایر برنامه‌های نصب شده ارائه می‌کند. آخرین بخش شناسه بسته به عنوان مخفف برنامه در سیستم استفاده می شود. اختصارات برنامه باید در یک نصب منحصر به فرد باشد.]]></item>
+        <item name="wcf.acp.devtools.project.license"><![CDATA[مجوز]]></item>
+        <item name="wcf.acp.devtools.project.list"><![CDATA[پروژه ها]]></item>
+        <item name="wcf.acp.devtools.project.name"><![CDATA[نام]]></item>
+        <item name="wcf.acp.devtools.project.name.error.notUnique"><![CDATA[این نام قبلاً توسط پروژه دیگری استفاده شده است.]]></item>
+        <item name="wcf.acp.devtools.project.optionalPackage.error.exclusionOptional"><![CDATA[بسته های اختیاری را نمی توان همزمان حذف کرد. بسته های تحت تأثیر: {implode from=$affectedPackages item=affectedPackage}{$affectedPackage}{/implode}.]]></item>
+        <item name="wcf.acp.devtools.project.optionalPackage.error.missingFiles"><![CDATA[فایل های بسته زیر وجود ندارد: {implode from=$missingFiles item=missingFile}<kbd>{$missingFile}</kbd>{/implode}.]]></item>
+        <item name="wcf.acp.devtools.project.optionalPackage.error.requirementOptional"><![CDATA[بسته های اختیاری نمی توانند همزمان مورد نیاز باشند. بسته های تحت تأثیر: {implode from=$affectedPackages item=affectedPackage}{$affectedPackage}{/implode}.]]></item>
+        <item name="wcf.acp.devtools.project.optionalPackage.error.selfOptional"><![CDATA[یک بسته نمی تواند برای خودش یک بسته اختیاری باشد.]]></item>
         <item name="wcf.acp.devtools.project.optionalPackage.optionalPackage"><![CDATA[{$packageIdentifier}]]></item>
-        <item name="wcf.acp.devtools.project.optionalPackage.packageIdentifier.description"><![CDATA[The path to the package file has to be <kbd>optionals/{literal}{$packageIdentifier}{/literal}.tar</kbd>.]]></item>
+        <item name="wcf.acp.devtools.project.optionalPackage.packageIdentifier.description"><![CDATA[مسیر فایل بسته باید باشد <kbd>اختیاری/{literal}{$packageIdentifier}{/literal}.برانگیخته</kbd>.]]></item>
         <item name="wcf.acp.devtools.project.optionalPackages"><![CDATA[Optional Packages]]></item>
         <item name="wcf.acp.devtools.project.optionalPackages.description"><![CDATA[The following packages will be offered to be installed optionally after this package has been installed.]]></item>
         <item name="wcf.acp.devtools.project.optionalPackages.shortTitle"><![CDATA[Optional]]></item>
@@ -4619,37 +4619,37 @@ ATTENTION: The messages listed above are greatly shortened. You can view details
         <item name="wcf.acp.package.error.downloadFailed"><![CDATA[در حال دانلود بسته{if $__downloadPackage|isset} “{$__downloadPackage}”{/if} شکست خورده.]]></item>
         <item name="wcf.acp.package.error.exceedsPhpLimit"><![CDATA[فایل از حد مجاز PHP بیشتر است “upload_max_filesize” و/یا “post_max_size”.]]></item>
         <item name="wcf.acp.package.error.majorUpgrade"><![CDATA[این بسته انجمن شما را به نسخه اصلی جدید به روز می کند. به دلایل پایداری، ارتقاهای عمده ممکن است فقط از طریق سرورهای به روز رسانی انجام شوند.اطلاعات دقیق در مورد روند ارتقاء را می توان یافت <a href="https://manual.woltlab.com/en/updates/" class="externalURL">در کتابچه راهنمای ما</a>.]]></item>
-        <item name="wcf.acp.package.error.noUniqueAbbreviation"><![CDATA[.قبلاً یک برنامه نصب شده است که مخفف یکسانی دارد]]></item>
-        <item name="wcf.acp.package.error.noValidInstall"><![CDATA[.بسته انتخابی از نصب پشتیبانی نمی کند]]></item>
-        <item name="wcf.acp.package.error.noValidPackage"><![CDATA[.آرشیو آپلود شده نامعتبر است]]></item>
-        <item name="wcf.acp.package.error.noValidUpdate"><![CDATA[بسته “{$package->getName()}” نمی توان با استفاده از آرشیو انتخاب شده به روز کرد.]]></item>
-        <item name="wcf.acp.package.error.sql.createTable"><![CDATA[رونویسی جدول های موجود]]></item>
-        <item name="wcf.acp.package.error.sql.createTable.description"><![CDATA[جدول های بالا از قبل وجود دارند و در حین نصب جایگزین خواهند شد. هر گونه داده موجود از بین خواهد رفت.]]></item>
-        <item name="wcf.acp.package.error.sql.dropTable"><![CDATA[جدول های موجود را حذف کنید]]></item>
-        <item name="wcf.acp.package.error.sql.dropTable.description"><![CDATA[جدول های بالا از قبل وجود دارند و در حین نصب حذف خواهند شد. هر گونه داده موجود از بین خواهد رفت.]]></item>
-        <item name="wcf.acp.package.error.uniqueAlreadyInstalled"><![CDATA[.این بسته قبلاً نصب شده است]]></item>
-        <item name="wcf.acp.package.error.uploadFailed"><![CDATA[.یک خطای ناشناخته در حین آپلود روی داد]]></item>
-        <item name="wcf.acp.package.evaluation.expired"><![CDATA[دوره ارزیابی از <strong>{$packageName}</strong> منقضی شده است. برای استفاده قانونی از این نرم افزار، لطفاً به آخرین نسخه موجود به روز رسانی کنید.{if $pluginStoreFileID || $isWoltLab}<br>آخرین نسخه را می توان به سرعت و ایمن خریداری کرد <strong>{if $pluginStoreFileID}<a href="https://pluginstore.woltlab.com/file/{$pluginStoreFileID}/">in the WoltLab Plugin-Store</a>{else}<a href="https://www.woltlab.com/en/purchase/">on WoltLab.com</a>{/if}</strong>.{/if}]]></item>
-        <item name="wcf.acp.package.evaluation.pending"><![CDATA[دوره ارزیابی برنامه های فهرست شده در زیر در تاریخ منقضی خواهد شد <strong>{$evaluationEndDate|plainTime}</strong> ({@$evaluationEndDate|dateDiff:TIME_NOW:true}). پس از این تاریخ، برنامه‌ها به‌طور خودکار خود را غیرفعال می‌کنند و غیرقابل استفاده می‌شوند، برای فعال کردن دوباره آنها باید آخرین نسخه‌های برنامه‌ها را نصب کنید.
+        <item name="wcf.acp.package.error.noUniqueAbbreviation"><![CDATA[There is already an app installed which has the same abbreviation.]]></item>
+        <item name="wcf.acp.package.error.noValidInstall"><![CDATA[The selected package does not support an installation.]]></item>
+        <item name="wcf.acp.package.error.noValidPackage"><![CDATA[The uploaded archive is invalid.]]></item>
+        <item name="wcf.acp.package.error.noValidUpdate"><![CDATA[Package “{$package->getName()}” cannot be updated using the selected archive.]]></item>
+        <item name="wcf.acp.package.error.sql.createTable"><![CDATA[Overwrite Existing Tables]]></item>
+        <item name="wcf.acp.package.error.sql.createTable.description"><![CDATA[The tables above already exist and will be replaced during the installation. Any contained data will be lost.]]></item>
+        <item name="wcf.acp.package.error.sql.dropTable"><![CDATA[Remove Existing Tables]]></item>
+        <item name="wcf.acp.package.error.sql.dropTable.description"><![CDATA[The tables above already exist and will be removed during the installation. Any contained data will be lost.]]></item>
+        <item name="wcf.acp.package.error.uniqueAlreadyInstalled"><![CDATA[This package is already installed.]]></item>
+        <item name="wcf.acp.package.error.uploadFailed"><![CDATA[An unknown error occurred during the upload.]]></item>
+        <item name="wcf.acp.package.evaluation.expired"><![CDATA[The evaluation period of <strong>{$packageName}</strong> has expired. For a legal use of this software, please update to the latest available version.{if $pluginStoreFileID || $isWoltLab}<br>The latest version can be purchased quickly and securely <strong>{if $pluginStoreFileID}<a href="https://pluginstore.woltlab.com/file/{$pluginStoreFileID}/">in the WoltLab Plugin-Store</a>{else}<a href="https://www.woltlab.com/en/purchase/">on WoltLab.com</a>{/if}</strong>.{/if}]]></item>
+        <item name="wcf.acp.package.evaluation.pending"><![CDATA[The evaluation period of the apps listed below will expire on <strong>{$evaluationEndDate|plainTime}</strong> ({@$evaluationEndDate|dateDiff:TIME_NOW:true}). The apps will automatically disable themselves after this date and become unusable, you'll need to install the latest versions of the apps to active them again.
 <ul class="nativeList">
 	{foreach from=$pendingApps item=pendingApp}
 		<li>{$pendingApp}</li>
 	{/foreach}
 </ul>
-اگر تو داری <strong>قبلاً مجوزهای برنامه های فهرست شده را خریداری کرده است</strong>, سپس کافی است تمام به روز رسانی های آینده را نصب کنید. <strong>نسخه ارزیابی به طور خودکار به نسخه کامل ارتقا می یابد.</strong>]]></item>
-        <item name="wcf.acp.package.identifier"><![CDATA[مشخص کننده]]></item>
+If you have <strong>already bought the licenses for the listed apps</strong>, then it is enough to install all upcoming updates. <strong>The evaluation copy will automatically be upgraded to the full version.</strong>]]></item>
+        <item name="wcf.acp.package.identifier"><![CDATA[Identifier]]></item>
         <item name="wcf.acp.package.information.properties"><![CDATA[Properties]]></item>
-        <item name="wcf.acp.package.information.title"><![CDATA[جزئیات]]></item>
-        <item name="wcf.acp.package.install.confirmMessage"><![CDATA[آیا واقعاً می خواهید بسته را نصب کنید؟ <span class="confirmationObject">{@$package->getName()}</span>?]]></item>
-        <item name="wcf.acp.package.install.error.excludedPackages"><![CDATA[:این بسته قابل نصب نیست زیرا بسته های زیر قبلاً نصب شده اند]]></item>
-        <item name="wcf.acp.package.install.error.excludedPackages.excludedPackage"><![CDATA[“{$excludedPackage}” ({$excludedPackage->package}){if $excludedPackage->excludedPackageVersion} (نسخه حذف شده: {$excludedPackage->excludedPackageVersion}, نسخه نصب شده: {$excludedPackage->packageVersion}){/if}.]]></item>
-        <item name="wcf.acp.package.install.error.excludingPackages"><![CDATA[:بسته های زیر که در حال حاضر نصب شده اند، نصب این بسته را ممنوع می کنند]]></item>
-        <item name="wcf.acp.package.install.error.excludingPackages.excludingPackage"><![CDATA[“{$excludingPackage}” ({$excludingPackage->package}){if $excludingPackage->excludedPackageVersion} (نسخه حذف شده: {$excludingPackage->excludedPackageVersion}){/if}.]]></item>
-        <item name="wcf.acp.package.install.error.missingRequirements"><![CDATA[.قادر به رفع الزامات این بسته نیست]]></item>
-        <item name="wcf.acp.package.install.installingImportedStyle"><![CDATA[.فایل آپلود شده یک بسته حاوی یک سبک است]]></item>
-        <item name="wcf.acp.package.install.optionalPackage.missingRequirements"><![CDATA[.نصب نشد، برخی یا همه بسته های مورد نیاز نصب نمی شوند]]></item>
-        <item name="wcf.acp.package.install.step.prepare"><![CDATA[… در حال آماده سازی نصب]]></item>
-        <item name="wcf.acp.package.install.title"><![CDATA[نصب و راه اندازی]]></item>
+        <item name="wcf.acp.package.information.title"><![CDATA[Details]]></item>
+        <item name="wcf.acp.package.install.confirmMessage"><![CDATA[Do you really want to install the package <span class="confirmationObject">{@$package->getName()}</span>?]]></item>
+        <item name="wcf.acp.package.install.error.excludedPackages"><![CDATA[This package cannot be installed because the following packages are already installed:]]></item>
+        <item name="wcf.acp.package.install.error.excludedPackages.excludedPackage"><![CDATA[“{$excludedPackage}” ({$excludedPackage->package}){if $excludedPackage->excludedPackageVersion} (excluded version: {$excludedPackage->excludedPackageVersion}, installed version: {$excludedPackage->packageVersion}){/if}.]]></item>
+        <item name="wcf.acp.package.install.error.excludingPackages"><![CDATA[The following packages that are currently installed prohibit installing this package:]]></item>
+        <item name="wcf.acp.package.install.error.excludingPackages.excludingPackage"><![CDATA[“{$excludingPackage}” ({$excludingPackage->package}){if $excludingPackage->excludedPackageVersion} (excluded version: {$excludingPackage->excludedPackageVersion}){/if}.]]></item>
+        <item name="wcf.acp.package.install.error.missingRequirements"><![CDATA[Unable to resolve the requirements of this package.]]></item>
+        <item name="wcf.acp.package.install.installingImportedStyle"><![CDATA[The uploaded file is a package containg a style.]]></item>
+        <item name="wcf.acp.package.install.optionalPackage.missingRequirements"><![CDATA[Unable to install, some or all required packages are not installed.]]></item>
+        <item name="wcf.acp.package.install.step.prepare"><![CDATA[Preparing Installation …]]></item>
+        <item name="wcf.acp.package.install.title"><![CDATA[Installation]]></item>
         <item name="wcf.acp.package.installDate"><![CDATA[Installation Date]]></item>
         <item name="wcf.acp.package.installation.packageStatus"><![CDATA[Status]]></item>
         <item name="wcf.acp.package.installation.packageStatus.delivered"><![CDATA[Provided]]></item>
