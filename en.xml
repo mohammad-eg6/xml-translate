@@ -4933,50 +4933,50 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.pip.aclOption.categories.name.error.notUnique"><![CDATA[The entered name is already used by another ACL option category for the same ACL object type.]]></item>
         <item name="wcf.acp.pip.aclOption.categories.name.error.tooFewSegments"><![CDATA[The entered category name only contains {#$segmentCount} segment{if $segmentCount > 1}s{/if}.]]></item>
         <item name="wcf.acp.pip.aclOption.info"><![CDATA[The <kbd>aclOption</kbd> package installation plugin allows setting up permissions for individual objects. You can find more information in the <a href="https://docs.woltlab.com/latest/package/pip/acl-option/" class="externalURL">developer documentation</a>.]]></item>
-        <item name="wcf.acp.pip.aclOption.objectType"><![CDATA[ACL Object Type]]></item>
-        <item name="wcf.acp.pip.aclOption.objectType.categories.description"><![CDATA[The ACL object type determines to which type of objects the category belongs to. Note that only ACL object types of the package itself or its required packages are available.]]></item>
-        <item name="wcf.acp.pip.aclOption.objectType.options.description"><![CDATA[The ACL object type determines to which type of objects the option belongs to. Note that only ACL object types of the package itself or its required packages are available.]]></item>
-        <item name="wcf.acp.pip.aclOption.options.categoryName"><![CDATA[Category]]></item>
-        <item name="wcf.acp.pip.aclOption.options.categoryName.description"><![CDATA[The ACL option is listed in the selected category.]]></item>
-        <item name="wcf.acp.pip.aclOption.options.name"><![CDATA[Option Name]]></item>
-        <item name="wcf.acp.pip.aclOption.options.name.description"><![CDATA[The name of the ACL option may only contain letters and must begin with a lowercase letter.]]></item>
-        <item name="wcf.acp.pip.aclOption.options.name.error.format"><![CDATA[The entered option name is invalid.]]></item>
-        <item name="wcf.acp.pip.aclOption.options.name.error.notUnique"><![CDATA[The entered name is already used by another ACL option for the same ACL object type.]]></item>
-        <item name="wcf.acp.pip.acpMenu.icon"><![CDATA[Menu Item Icon]]></item>
-        <item name="wcf.acp.pip.acpMenu.icon.description"><![CDATA[The menu item icon is only available for menu items on the first level and for menu items on the fourth (and lowest) level. For first level menu items, the icon is shown in addition to the menu item title while for fourth level menu items, only the icon is shown and the menu item title becomes a tooltip.]]></item>
-        <item name="wcf.acp.pip.acpMenu.info"><![CDATA[The <kbd>acpMenu</kbd> package installation plugin installs new ACP menu items. You can find more information in the <a href="https://docs.woltlab.com/latest/package/pip/acp-menu/" class="externalURL">developer documentation</a>.]]></item>
-        <item name="wcf.acp.pip.acpMenu.menuItem.description"><![CDATA[The menu item identifier must have the format <kbd>{literal}{app}.acp.menu.link.{additionalIdentifiers}{/literal}</kbd> where <kbd>{literal}{app}{/literal}</kbd> and <kbd>{literal}{additionalIdentifiers}{/literal}</kbd> have to be replaced with the appropriate values. <kbd>{literal}{additionalIdentifiers}{/literal}</kbd> may only contain letters, numbers, and dots.]]></item>
-        <item name="wcf.acp.pip.acpMenu.menuItem.error.format"><![CDATA[The entered identifier is invalid.]]></item>
-        <item name="wcf.acp.pip.acpMenu.menuItemController.error.noAcpController"><![CDATA[The entered controller is no ACP controller. An ACP controller begins with <kbd>{literal}{app}{/literal}\acp\</kbd> where <kbd>{literal}{app}{/literal}</kbd> is the abbreviation of the relevant app.]]></item>
-        <item name="wcf.acp.pip.acpSearchProvider.info"><![CDATA[The <kbd>acpSearchProvider</kbd> package installation plugin installs new data provider for the admin panel search. You can find more information in the <a href="https://docs.woltlab.com/latest/package/pip/acp-search-provider/" class="externalURL">developer documentation</a>.]]></item>
-        <item name="wcf.acp.pip.acpSearchProvider.providerName"><![CDATA[Provider Name]]></item>
-        <item name="wcf.acp.pip.acpSearchProvider.providerName.description"><![CDATA[The name of an ACP search result provider consists of least four segments separated by dots. Each segment must not be empty and may only contain the following characters: <kbd>[A-z0-9-_]</kbd>. In general, the first part of the definition name matches the package identifier. Example: <kbd>{$project->getPackage()->package}.searchedObject</kbd>]]></item>
-        <item name="wcf.acp.pip.acpSearchProvider.providerName.error.notUnique"><![CDATA[The entered name is already used by another acp search result provider.]]></item>
-        <item name="wcf.acp.pip.acpSearchProvider.providerName.error.tooFewSegments"><![CDATA[The entered provider name only contains {#$segmentCount} segment{if $segmentCount > 1}s{/if}.]]></item>
-        <item name="wcf.acp.pip.acpSearchProvider.showOrder.description"><![CDATA[The entered value determines in which order the different types of search results are shown.]]></item>
-        <item name="wcf.acp.pip.acpTemplateDelete.application"><![CDATA[App]]></item>
-        <item name="wcf.acp.pip.acpTemplateDelete.info"><![CDATA[The <kbd>acpTemplateDelete</kbd> package installation plugin installs deletes templates installed with the <kbd>acpTemplate</kbd> package installation plugin. You can find more information in the <a href="https://docs.woltlab.com/latest/package/pip/acpTemplateDelete/" class="externalURL">developer documentation</a>.]]></item>
-        <item name="wcf.acp.pip.acpTemplateDelete.template"><![CDATA[Template]]></item>
-        <item name="wcf.acp.pip.acpTemplateDelete.template.error.tplSuffix"><![CDATA[Only enter the name of the template without the file extension <kbd>.tpl</kbd>.]]></item>
-        <item name="wcf.acp.pip.bbcode.attributes"><![CDATA[Attributes]]></item>
-        <item name="wcf.acp.pip.bbcode.bbcodeTag"><![CDATA[BBCode Identifier]]></item>
-        <item name="wcf.acp.pip.bbcode.bbcodeTag.description"><![CDATA[The textual BBCode identifier is used to identify BBCodes, for example when updating BBCodes. The identifier may only contain lowercase letters and numbers.]]></item>
-        <item name="wcf.acp.pip.bbcode.bbcodeTag.error.allNone"><![CDATA[The identifier may neither be <kbd>all</kbd> nor <kbd>none</kbd>.]]></item>
-        <item name="wcf.acp.pip.bbcode.bbcodeTag.error.format"><![CDATA[The identifier may only contain lowercase letters and numbers.]]></item>
-        <item name="wcf.acp.pip.bbcode.bbcodeTag.error.notUnique"><![CDATA[The entered identifier is already used by another BBCode.]]></item>
-        <item name="wcf.acp.pip.bbcode.buttonLabel"><![CDATA[Button Label]]></item>
-        <item name="wcf.acp.pip.bbcode.buttonLabel.description"><![CDATA[The label is shown when hovering over the button in the WYSIWYG editor toolbar.]]></item>
-        <item name="wcf.acp.pip.bbcode.htmlClose"><![CDATA[Closing HTML tag]]></item>
-        <item name="wcf.acp.pip.bbcode.htmlClose.description"><![CDATA[Closing tag of the HTML element wrapping the BBCode’s content (without leading or trailing angle brackets).]]></item>
-        <item name="wcf.acp.pip.bbcode.htmlOpen"><![CDATA[Opening HTML tag]]></item>
-        <item name="wcf.acp.pip.bbcode.htmlOpen.description"><![CDATA[Opening tag of the HTML element wrapping the BBCode’s content (without leading or trailing angle brackets).]]></item>
-        <item name="wcf.acp.pip.bbcode.htmlOpen.error.leadingBracket"><![CDATA[The tag may not begin with an angle bracket.]]></item>
-        <item name="wcf.acp.pip.bbcode.htmlOpen.error.trailingBracket"><![CDATA[The tag may not end with an angle bracket.]]></item>
+        <item name="wcf.acp.pip.aclOption.objectType"><![CDATA[نوع شیء ACL]]></item>
+        <item name="wcf.acp.pip.aclOption.objectType.categories.description"><![CDATA[نوع شیء ACL تعیین می کند که این دسته به کدام نوع از اشیاء تعلق دارد. توجه داشته باشید که فقط انواع شیء ACL خود بسته یا بسته های مورد نیاز آن موجود است.ه]]></item>
+        <item name="wcf.acp.pip.aclOption.objectType.options.description"><![CDATA[نوع شیء ACL تعیین می کند که این گزینه به کدام نوع از اشیاء تعلق دارد.توجه داشته باشید که فقط انواع شیء ACL خود بسته یا بسته های مورد نیاز آن موجود است.]]></item>
+        <item name="wcf.acp.pip.aclOption.options.categoryName"><![CDATA[دسته بندی]]></item>
+        <item name="wcf.acp.pip.aclOption.options.categoryName.description"><![CDATA[گزینه ACL در دسته انتخابی فهرست شده است.]]></item>
+        <item name="wcf.acp.pip.aclOption.options.name"><![CDATA[نام گزینه]]></item>
+        <item name="wcf.acp.pip.aclOption.options.name.description"><![CDATA[نام گزینه ACL ممکن است فقط شامل حروف باشد و باید با یک حرف کوچک شروع شود.]]></item>
+        <item name="wcf.acp.pip.aclOption.options.name.error.format"><![CDATA[.نام گزینه وارد شده نامعتبر است]]></item>
+        <item name="wcf.acp.pip.aclOption.options.name.error.notUnique"><![CDATA[نام وارد شده قبلاً توسط گزینه ACL دیگری برای همان نوع شیء ACL استفاده می شود.]]></item>
+        <item name="wcf.acp.pip.acpMenu.icon"><![CDATA[نماد آیتم فهرست]]></item>
+        <item name="wcf.acp.pip.acpMenu.icon.description"><![CDATA[نماد آیتم فهرست فقط برای آیتم های فهرست در سطح اول و برای آیتم های فهرست در سطح چهارم (و پایین ترین) موجود است.. For first level menu items, the icon is shown in addition to the menu item title while for fourth level menu items, only the icon is shown and the menu item title becomes a tooltip.]]></item>
+        <item name="wcf.acp.pip.acpMenu.info"><![CDATA[این <kbd>acpMenu</kbd>افزونه نصب بسته آیتم های منوی جدید ACP را نصب می کند. اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/acp-menu/" class="externalURL">مستندات توسعه دهنده</a>.]]></item>
+        <item name="wcf.acp.pip.acpMenu.menuItem.description"><![CDATA[The menu item identifier must have the format <kbd>{literal}{app}.acp.menu.link.{additionalIdentifiers}{/literal}</kbd> جایی که <kbd>{literal}{app}{/literal}</kbd> و <kbd>{literal}{additionalIdentifiers}{/literal}</kbd> باید با مقادیر مناسب جایگزین شوند. <kbd>{literal}{additionalIdentifiers}{/literal}</kbd> ممکن است فقط شامل حروف، اعداد و نقطه باشد.]]></item>
+        <item name="wcf.acp.pip.acpMenu.menuItem.error.format"><![CDATA[.شناسه وارد شده نامعتبر است]]></item>
+        <item name="wcf.acp.pip.acpMenu.menuItemController.error.noAcpController"><![CDATA[کنترل کننده وارد شده هیچ کنترل کننده ACP نیست. یک کنترلر ACP با شروع می شود  <kbd>{literal}{app}{/literal}\acp\</kbd> جایی که <kbd>{literal}{app}{/literal}</kbd> مخفف اپلیکیشن مربوطه است.]]></item>
+        <item name="wcf.acp.pip.acpSearchProvider.info"><![CDATA[این <kbd>acpSearchProvider</kbd> package installation plugin installs new data provider for the admin panel search. اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/acp-search-provider/" class="externalURL">مستندات توسعه دهنده</a>.]]></item>
+        <item name="wcf.acp.pip.acpSearchProvider.providerName"><![CDATA[نام ارائه دهنده]]></item>
+        <item name="wcf.acp.pip.acpSearchProvider.providerName.description"><![CDATA[نام یک ارائه دهنده نتایج جستجوی ACP شامل حداقل چهار بخش است که با نقطه از هم جدا شده اند.هر بخش نباید خالی باشد و فقط ممکن است شامل کاراکترهای زیر باشد: <kbd>[A-z0-9-_]</kbd>. به طور کلی، قسمت اول نام تعریف با شناسه بسته مطابقت دارد. مثال: <kbd>{$project->getPackage()->package}.شی ء جستجو شده</kbd>]]></item>
+        <item name="wcf.acp.pip.acpSearchProvider.providerName.error.notUnique"><![CDATA[نام وارد شده قبلاً توسط ارائه‌دهنده نتیجه جستجوی acp دیگری استفاده شده است.]]></item>
+        <item name="wcf.acp.pip.acpSearchProvider.providerName.error.tooFewSegments"><![CDATA[نام ارائه دهنده وارد شده فقط شامل {#$segmentCount} بخش{if $segmentCount > 1}s{/if}.]]></item>
+        <item name="wcf.acp.pip.acpSearchProvider.showOrder.description"><![CDATA[.مقدار وارد شده تعیین می کند که انواع مختلف نتایج جستجو به چه ترتیبی نشان داده شوند]]></item>
+        <item name="wcf.acp.pip.acpTemplateDelete.application"><![CDATA[برنامه]]></item>
+        <item name="wcf.acp.pip.acpTemplateDelete.info"><![CDATA[این <kbd>acpTemplateDelete</kbd> package installation plugin installs deletes templates installed with the <kbd>acpTemplate</kbd> package installation plugin. اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/acpTemplateDelete/" class="externalURL">مستندات توسعه دهنده</a>.]]></item>
+        <item name="wcf.acp.pip.acpTemplateDelete.template"><![CDATA[قالب]]></item>
+        <item name="wcf.acp.pip.acpTemplateDelete.template.error.tplSuffix"><![CDATA[فقط نام قالب را بدون پسوند فایل وارد کنید <kbd>.tpl</kbd>.]]></item>
+        <item name="wcf.acp.pip.bbcode.attributes"><![CDATA[ویژگی ها]]></item>
+        <item name="wcf.acp.pip.bbcode.bbcodeTag"><![CDATA[شناسه BBCode]]></item>
+        <item name="wcf.acp.pip.bbcode.bbcodeTag.description"><![CDATA[شناسه متنی BBCode برای شناسایی کدهای BBC استفاده می شود، به عنوان مثال هنگام به روز رسانی کدهای BBC. شناسه ممکن است فقط شامل حروف کوچک و اعداد باشد..]]></item>
+        <item name="wcf.acp.pip.bbcode.bbcodeTag.error.allNone"><![CDATA[شناسه ممکن است هیچکدام نباشد <kbd>all</kbd> نه <kbd>none</kbd>.]]></item>
+        <item name="wcf.acp.pip.bbcode.bbcodeTag.error.format"><![CDATA[.شناسه ممکن است فقط شامل حروف کوچک و اعداد باشد]]></item>
+        <item name="wcf.acp.pip.bbcode.bbcodeTag.error.notUnique"><![CDATA[شناسه وارد شده قبلاً توسط BBCode دیگری استفاده می شد.]]></item>
+        <item name="wcf.acp.pip.bbcode.buttonLabel"><![CDATA[برچسب دکمه]]></item>
+        <item name="wcf.acp.pip.bbcode.buttonLabel.description"><![CDATA[زمانی که موس را روی دکمه در نوار ابزار ویرایشگر WYSIWYG نگه دارید، برچسب نشان داده می شود]]></item>
+        <item name="wcf.acp.pip.bbcode.htmlClose"><![CDATA[بستن تگ HTML]]></item>
+        <item name="wcf.acp.pip.bbcode.htmlClose.description"><![CDATA[برچسب بستن عنصر HTML که محتوای BBCode را می‌پیچد (بدون براکت‌های زاویه‌ای پیشرو یا انتهایی).]]></item>
+        <item name="wcf.acp.pip.bbcode.htmlOpen"><![CDATA[باز کردن تگ HTML]]></item>
+        <item name="wcf.acp.pip.bbcode.htmlOpen.description"><![CDATA[برچسب باز کردن عنصر HTML که محتوای BBCode را می‌پیچد (بدون براکت‌های زاویه اصلی یا انتهایی).]]></item>
+        <item name="wcf.acp.pip.bbcode.htmlOpen.error.leadingBracket"><![CDATA[.برچسب ممکن است با یک براکت زاویه شروع نشود]]></item>
+        <item name="wcf.acp.pip.bbcode.htmlOpen.error.trailingBracket"><![CDATA[.برچسب ممکن است با یک براکت زاویه ختم نشود]]></item>
         <item name="wcf.acp.pip.bbcode.iconPath"><![CDATA[Path to icon file]]></item>
-        <item name="wcf.acp.pip.bbcode.iconPath.description"><![CDATA[The entered path has to be relative to <kbd>{'WCF_DIR'|constant}icon/</kbd>.]]></item>
-        <item name="wcf.acp.pip.bbcode.iconPath.error.fileDoesNotExist"><![CDATA[The entered file does not exist.]]></item>
+        <item name="wcf.acp.pip.bbcode.iconPath.description"><![CDATA[مسیر وارد شده باید نسبت به <kbd>{'WCF_DIR'|constant}icon/</kbd>.]]></item>
+        <item name="wcf.acp.pip.bbcode.iconPath.error.fileDoesNotExist"><![CDATA[.فایل وارد شده وجود ندارد]]></item>
         <item name="wcf.acp.pip.bbcode.iconType"><![CDATA[Button Icon Type]]></item>
-        <item name="wcf.acp.pip.bbcode.iconType.filePath"><![CDATA[Image]]></item>
+        <item name="wcf.acp.pip.bbcode.iconType.filePath"><![CDATA[تصویر]]></item>
         <item name="wcf.acp.pip.bbcode.iconType.fontAwesome"><![CDATA[FontAwesome Icon]]></item>
         <item name="wcf.acp.pip.bbcode.info"><![CDATA[این <kbd>bbcode</kbd> package installation plugin installs new BBCodes. You can find more information in the <a href="https://docs.woltlab.com/latest/package/pip/bbcode/" class="externalURL">developer documentation</a>.]]></item>
         <item name="wcf.acp.pip.bbcode.isBlockElement"><![CDATA[BBCode نشان دهنده عنصر بلوک است]]></item>
