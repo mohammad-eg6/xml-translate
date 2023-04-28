@@ -4887,7 +4887,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.pip.abstractMenu.menuItemController"><![CDATA[Menu Item Controller]]></item>
         <item name="wcf.acp.pip.abstractMenu.menuItemLink"><![CDATA[Menu Item Link]]></item>
         <item name="wcf.acp.pip.abstractMenu.menuItemLink.description"><![CDATA[If no menu item controller is used, the entered link will be used. If, however, a menu item controller is used, the entered link will be appended to the link to the controller.]]></item>
-        <item name="wcf.acp.pip.abstractMenu.menuItemLink.error.noLink"><![CDATA[The entered value is no valid link.]]></item>
+        <item name="wcf.acp.pip.abstractMenu.menuItemLink.error.noLink"><![CDATA[مقدار وارد شده لینک معتبری نیست.]]></item>
         <item name="wcf.acp.pip.abstractMenu.menuItemLink.error.noLinkSpecified"><![CDATA[You either have to enter a menu item controller or a menu item link.]]></item>
         <item name="wcf.acp.pip.abstractMenu.options.description"><![CDATA[At least one of the entered options has to be enabled for the menu item to be visible. Options of non-required packages will be reported as non-existing.]]></item>
         <item name="wcf.acp.pip.abstractMenu.parentMenuItem"><![CDATA[Parent Menu Item]]></item>
@@ -4978,24 +4978,24 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.pip.bbcode.iconType"><![CDATA[Button Icon Type]]></item>
         <item name="wcf.acp.pip.bbcode.iconType.filePath"><![CDATA[Image]]></item>
         <item name="wcf.acp.pip.bbcode.iconType.fontAwesome"><![CDATA[FontAwesome Icon]]></item>
-        <item name="wcf.acp.pip.bbcode.info"><![CDATA[The <kbd>bbcode</kbd> package installation plugin installs new BBCodes. You can find more information in the <a href="https://docs.woltlab.com/latest/package/pip/bbcode/" class="externalURL">developer documentation</a>.]]></item>
-        <item name="wcf.acp.pip.bbcode.isBlockElement"><![CDATA[BBCode represents block element]]></item>
-        <item name="wcf.acp.pip.bbcode.isBlockElement.description"><![CDATA[Block elements can contain line breaks and paragraphs, and generally take up the entire available width. This option must not be selected for inline elements.]]></item>
-        <item name="wcf.acp.pip.bbcode.isSourceCode"><![CDATA[Content represents source code]]></item>
-        <item name="wcf.acp.pip.bbcode.isSourceCode.description"><![CDATA[The content of the BBCode will not be parsed.]]></item>
-        <item name="wcf.acp.pip.bbcode.showButton"><![CDATA[Display button in WYSIWYG editor]]></item>
-        <item name="wcf.acp.pip.bbcode.showButton.description"><![CDATA[The BBCode will be easily available by clicking on the associated button in the WYSIWYG editor toolbar.]]></item>
+        <item name="wcf.acp.pip.bbcode.info"><![CDATA[این <kbd>bbcode</kbd> package installation plugin installs new BBCodes. You can find more information in the <a href="https://docs.woltlab.com/latest/package/pip/bbcode/" class="externalURL">developer documentation</a>.]]></item>
+        <item name="wcf.acp.pip.bbcode.isBlockElement"><![CDATA[BBCode نشان دهنده عنصر بلوک است]]></item>
+        <item name="wcf.acp.pip.bbcode.isBlockElement.description"><![CDATA[.عناصر مسدود می توانند شامل خطوط شکسته و پاراگراف باشند و به طور کلی کل عرض موجود را اشغال کنند. این گزینه نباید برای عناصر درون خطی انتخاب شود]]></item>
+        <item name="wcf.acp.pip.bbcode.isSourceCode"><![CDATA[محتوا نشان دهنده کد منبع است]]></item>
+        <item name="wcf.acp.pip.bbcode.isSourceCode.description"><![CDATA[محتوای BBCode تجزیه نخواهد شد.]]></item>
+        <item name="wcf.acp.pip.bbcode.showButton"><![CDATA[دکمه نمایش در ویرایشگر WYSIWYG]]></item>
+        <item name="wcf.acp.pip.bbcode.showButton.description"><![CDATA[BBCode با کلیک بر روی دکمه مرتبط در نوار ابزار ویرایشگر WYSIWYG به راحتی در دسترس خواهد بود.]]></item>
         <item name="wcf.acp.pip.bbcode.wysiwygIcon"><![CDATA[Icon]]></item>
-        <item name="wcf.acp.pip.box.boxType"><![CDATA[Box Type]]></item>
-        <item name="wcf.acp.pip.box.boxType.description"><![CDATA[The content of “text” boxes can be edited by administrators using the built-in WYSIWYG editor. “html” boxes addditionally allow HTML code and “tpl” boxes also template scripting. The content of “system” boxes cannot be edited by administrators as their content is provided by the boxes' controller.]]></item>
-        <item name="wcf.acp.pip.box.content"><![CDATA[Contents]]></item>
-        <item name="wcf.acp.pip.box.content.content"><![CDATA[Box Content]]></item>
-        <item name="wcf.acp.pip.box.content.title"><![CDATA[Title]]></item>
-        <item name="wcf.acp.pip.box.cssClassName"><![CDATA[CSS Classes]]></item>
-        <item name="wcf.acp.pip.box.cssClassName.description"><![CDATA[The entered comma-separated CSS classes are assigned to the box element.]]></item>
-        <item name="wcf.acp.pip.box.identifier"><![CDATA[Box Identifier]]></item>
-        <item name="wcf.acp.pip.box.identifier.description"><![CDATA[The box identifier is used to update boxes. The identifier consists of least four segments separated by dots. Each segment must not be empty and may only contain the following characters: <kbd>[A-z0-9-_]</kbd>. In general, the first part of the menu identifier is the package identifier. Example: <kbd>com.foo.bar.package.Box</kbd>]]></item>
-        <item name="wcf.acp.pip.box.identifier.error.notUnique"><![CDATA[The entered identifier is already used by another box.]]></item>
+        <item name="wcf.acp.pip.box.boxType"><![CDATA[نوع جعبه]]></item>
+        <item name="wcf.acp.pip.box.boxType.description"><![CDATA[محتوای “text” کادرها را می توان توسط مدیران با استفاده از ویرایشگر داخلی WYSIWYG ویرایش کرد. “html” جعبه ها علاوه بر این اجازه می دهند کد HTML و “tpl” boxes also template scripting. The content of “system” boxes cannot be edited by administrators as their content is provided by the boxes' controller.]]></item>
+        <item name="wcf.acp.pip.box.content"><![CDATA[فهرست]]></item>
+        <item name="wcf.acp.pip.box.content.content"><![CDATA[محتوای جعبه]]></item>
+        <item name="wcf.acp.pip.box.content.title"><![CDATA[عنوان]]></item>
+        <item name="wcf.acp.pip.box.cssClassName"><![CDATA[کلاس های CSS]]></item>
+        <item name="wcf.acp.pip.box.cssClassName.description"><![CDATA[کلاس های CSS جدا شده با کاما وارد شده به عنصر جعبه اختصاص داده می شود.]]></item>
+        <item name="wcf.acp.pip.box.identifier"><![CDATA[شناسه جعبه]]></item>
+        <item name="wcf.acp.pip.box.identifier.description"><![CDATA[شناسه جعبه برای به روز رسانی جعبه ها استفاده می شود. شناسه شامل حداقل چهار بخش است که با نقطه از هم جدا شده اند. هر بخش نباید خالی باشد و ممکن است فقط شامل کاراکترهای زیر باشد: <kbd>[A-z0-9-_]</kbd>. به طور کلی، اولین قسمت از شناسه فهرست، شناسه بسته است. مثال: <kbd>com.foo.bar.package.Box</kbd>]]></item>
+        <item name="wcf.acp.pip.box.identifier.error.notUnique"><![CDATA[.شناسه وارد شده قبلاً توسط کادر دیگری استفاده می شود]]></item>
         <item name="wcf.acp.pip.box.identifier.error.tooFewSegments"><![CDATA[شناسه فقط شامل {#$segmentCount} بخش{if $segmentCount > 1}s{/if}.]]></item>
         <item name="wcf.acp.pip.box.info"><![CDATA[The <kbd>box</kbd> افزونه نصب بسته، بسته های از پیش پیکربندی شده جدیدی را نصب می کند. اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/box/" class="externalURL">developer documentation</a>.]]></item>
         <item name="wcf.acp.pip.box.name"><![CDATA[اسم]]></item>
