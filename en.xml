@@ -2798,9 +2798,9 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.exceptionLog.exception.file"><![CDATA[فایل (خط)]]></item>
         <item name="wcf.acp.exceptionLog.exception.memory"><![CDATA[حافظه]]></item>
         <item name="wcf.acp.exceptionLog.exception.message"><![CDATA[پیغام خطا]]></item>
-        <item name="wcf.acp.exceptionLog.exception.referrer"><![CDATA[Referrer]]></item>
-        <item name="wcf.acp.exceptionLog.exception.requestURI"><![CDATA[Requested URL]]></item>
-        <item name="wcf.acp.exceptionLog.exception.stacktrace"><![CDATA[Stacktrace]]></item>
+        <item name="wcf.acp.exceptionLog.exception.referrer"><![CDATA[ارجاع دهنده]]></item>
+        <item name="wcf.acp.exceptionLog.exception.requestURI"><![CDATA[ درخواستی آدرس اینترنتی]]></item>
+        <item name="wcf.acp.exceptionLog.exception.stacktrace"><![CDATA[ردیابی پشته]]></item>
         <item name="wcf.acp.exceptionLog.exception.userAgent"><![CDATA[User Agent]]></item>
         <item name="wcf.acp.exceptionLog.exceptionNotFound"><![CDATA[No error with the ID “{$exceptionID}” was found.]]></item>
         <item name="wcf.acp.exceptionLog.search"><![CDATA[Search]]></item>
