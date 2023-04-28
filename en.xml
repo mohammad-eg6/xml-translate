@@ -2798,9 +2798,9 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.exceptionLog.exception.file"><![CDATA[فایل (خط)]]></item>
         <item name="wcf.acp.exceptionLog.exception.memory"><![CDATA[حافظه]]></item>
         <item name="wcf.acp.exceptionLog.exception.message"><![CDATA[پیغام خطا]]></item>
-        <item name="wcf.acp.exceptionLog.exception.referrer"><![CDATA[ارجاع دهنده]]></item>
-        <item name="wcf.acp.exceptionLog.exception.requestURI"><![CDATA[ درخواستی آدرس اینترنتی]]></item>
-        <item name="wcf.acp.exceptionLog.exception.stacktrace"><![CDATA[ردیابی پشته]]></item>
+        <item name="wcf.acp.exceptionLog.exception.referrer"><![CDATA[Referrer]]></item>
+        <item name="wcf.acp.exceptionLog.exception.requestURI"><![CDATA[Requested URL]]></item>
+        <item name="wcf.acp.exceptionLog.exception.stacktrace"><![CDATA[Stacktrace]]></item>
         <item name="wcf.acp.exceptionLog.exception.userAgent"><![CDATA[User Agent]]></item>
         <item name="wcf.acp.exceptionLog.exceptionNotFound"><![CDATA[No error with the ID “{$exceptionID}” was found.]]></item>
         <item name="wcf.acp.exceptionLog.search"><![CDATA[Search]]></item>
@@ -4918,21 +4918,21 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.pip.abstractOption.options.optionType.text.disableAutocomplete.description"><![CDATA[Disables the browser’s autocomplete support for the input field.]]></item>
         <item name="wcf.acp.pip.abstractOption.options.optionType.text.maxLength"><![CDATA[Maximum Length]]></item>
         <item name="wcf.acp.pip.abstractOption.options.optionType.text.minLength"><![CDATA[Minimum Length]]></item>
-        <item name="wcf.acp.pip.abstractOption.options.optionType.useroptions.isSortable"><![CDATA[Custom User Fields Are Sortable]]></item>
-        <item name="wcf.acp.pip.abstractOption.options.optionType.useroptions.isSortable.description"><![CDATA[Makes custom user fields not only selectable but also sortable.]]></item>
-        <item name="wcf.acp.pip.abstractOption.options.options.description"><![CDATA[At least one of the entered options has to be enabled for the value of this option to be editable. Options of non-required packages will be reported as non-existing.]]></item>
-        <item name="wcf.acp.pip.abstractOption.options.permissions.description"><![CDATA[The active user must be granted at least one of the entered permissions for the value of the option to be editable. Permissions of non-required packages will be reported as non-existing.]]></item>
-        <item name="wcf.acp.pip.abstractOption.options.selectOptions"><![CDATA[Selectable Options]]></item>
-        <item name="wcf.acp.pip.abstractOption.options.selectOptions.description"><![CDATA[Each option has to be written in a new line using the format <kbd>value:description</kbd> where <kbd>description</kbd> may be the identifier of a phrase.]]></item>
-        <item name="wcf.acp.pip.abstractOption.options.showOrder.description"><![CDATA[The entered value determines in which order the options in the same category are shown.]]></item>
-        <item name="wcf.acp.pip.abstractOption.options.validationPattern"><![CDATA[Validation Pattern]]></item>
-        <item name="wcf.acp.pip.abstractOption.options.validationPattern.description"><![CDATA[The entered validation pattern is used to validate the entered value when editing the option’s value.]]></item>
-        <item name="wcf.acp.pip.abstractOption.options.validationPattern.error.invalid"><![CDATA[The entered validation pattern is invalid.]]></item>
-        <item name="wcf.acp.pip.aclOption.categories.name"><![CDATA[Category Name]]></item>
-        <item name="wcf.acp.pip.aclOption.categories.name.description"><![CDATA[The name of an ACL option category consists of least two segments separated by dots. Each segment must not be empty and may only contain the following characters: <kbd>[A-z0-9-_]</kbd>.]]></item>
-        <item name="wcf.acp.pip.aclOption.categories.name.error.notUnique"><![CDATA[The entered name is already used by another ACL option category for the same ACL object type.]]></item>
-        <item name="wcf.acp.pip.aclOption.categories.name.error.tooFewSegments"><![CDATA[The entered category name only contains {#$segmentCount} segment{if $segmentCount > 1}s{/if}.]]></item>
-        <item name="wcf.acp.pip.aclOption.info"><![CDATA[The <kbd>aclOption</kbd> package installation plugin allows setting up permissions for individual objects. You can find more information in the <a href="https://docs.woltlab.com/latest/package/pip/acl-option/" class="externalURL">developer documentation</a>.]]></item>
+        <item name="wcf.acp.pip.abstractOption.options.optionType.useroptions.isSortable"><![CDATA[فیلدهای کاربر سفارشی قابل مرتب شدن هستند]]></item>
+        <item name="wcf.acp.pip.abstractOption.options.optionType.useroptions.isSortable.description"><![CDATA[.فیلدهای کاربر سفارشی را نه تنها قابل انتخاب بلکه قابل مرتب می کند]]></item>
+        <item name="wcf.acp.pip.abstractOption.options.options.description"><![CDATA[.حداقل یکی از گزینه های وارد شده باید فعال باشد تا مقدار این گزینه قابل ویرایش باشد. گزینه های بسته های غیر ضروری به عنوان غیرموجود گزارش می شود]]></item>
+        <item name="wcf.acp.pip.abstractOption.options.permissions.description"><![CDATA[.کاربر فعال باید حداقل یکی از مجوزهای وارد شده را داشته باشد تا مقدار گزینه قابل ویرایش باشد. مجوزهای بسته های غیر الزامی به عنوان غیرموجود گزارش می شود]]></item>
+        <item name="wcf.acp.pip.abstractOption.options.selectOptions"><![CDATA[گزینه های قابل انتخاب]]></item>
+        <item name="wcf.acp.pip.abstractOption.options.selectOptions.description"><![CDATA[هر گزینه باید در یک خط جدید با استفاده از قالب نوشته شود <kbd>value:description</kbd> جایی که <kbd>description</kbd> ممکن است معرف یک عبارت باشد.]]></item>
+        <item name="wcf.acp.pip.abstractOption.options.showOrder.description"><![CDATA[.مقدار وارد شده تعیین می کند که گزینه های یک دسته به چه ترتیبی نشان داده شوند]]></item>
+        <item name="wcf.acp.pip.abstractOption.options.validationPattern"><![CDATA[الگوی اعتبارسنجی]]></item>
+        <item name="wcf.acp.pip.abstractOption.options.validationPattern.description"><![CDATA[.الگوی اعتبار سنجی وارد شده برای اعتبارسنجی مقدار وارد شده هنگام ویرایش مقدار گزینه استفاده می شود]]></item>
+        <item name="wcf.acp.pip.abstractOption.options.validationPattern.error.invalid"><![CDATA[.الگوی اعتبار سنجی وارد شده نامعتبر است]]></item>
+        <item name="wcf.acp.pip.aclOption.categories.name"><![CDATA[نام دسته]]></item>
+        <item name="wcf.acp.pip.aclOption.categories.name.description"><![CDATA[نام یک دسته گزینه ACL شامل حداقل دو بخش است که با نقطه از هم جدا شده اند. هر بخش نباید خالی باشد و فقط ممکن است شامل کاراکترهای زیر باشد: <kbd>[A-z0-9-_]</kbd>.]]></item>
+        <item name="wcf.acp.pip.aclOption.categories.name.error.notUnique"><![CDATA[نام وارد شده قبلاً توسط یک دسته گزینه ACL دیگر برای همان نوع شیء ACL استفاده شده است.]]></item>
+        <item name="wcf.acp.pip.aclOption.categories.name.error.tooFewSegments"><![CDATA[نام دسته وارد شده فقط شامل {#$segmentCount} بخش{if $segmentCount > 1}s{/if}.]]></item>
+        <item name="wcf.acp.pip.aclOption.info"><![CDATA[این <kbd>aclOption</kbd> افزونه نصب بسته اجازه می دهد تا مجوزها را برای اشیاء جداگانه تنظیم کنید.اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/acl-option/" class="externalURL">مستندات توسعه دهنده</a>.]]></item>
         <item name="wcf.acp.pip.aclOption.objectType"><![CDATA[نوع شیء ACL]]></item>
         <item name="wcf.acp.pip.aclOption.objectType.categories.description"><![CDATA[نوع شیء ACL تعیین می کند که این دسته به کدام نوع از اشیاء تعلق دارد. توجه داشته باشید که فقط انواع شیء ACL خود بسته یا بسته های مورد نیاز آن موجود است.ه]]></item>
         <item name="wcf.acp.pip.aclOption.objectType.options.description"><![CDATA[نوع شیء ACL تعیین می کند که این گزینه به کدام نوع از اشیاء تعلق دارد.توجه داشته باشید که فقط انواع شیء ACL خود بسته یا بسته های مورد نیاز آن موجود است.]]></item>
@@ -4944,11 +4944,11 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.pip.aclOption.options.name.error.notUnique"><![CDATA[نام وارد شده قبلاً توسط گزینه ACL دیگری برای همان نوع شیء ACL استفاده می شود.]]></item>
         <item name="wcf.acp.pip.acpMenu.icon"><![CDATA[نماد آیتم فهرست]]></item>
         <item name="wcf.acp.pip.acpMenu.icon.description"><![CDATA[نماد آیتم فهرست فقط برای آیتم های فهرست در سطح اول و برای آیتم های فهرست در سطح چهارم (و پایین ترین) موجود است.. For first level menu items, the icon is shown in addition to the menu item title while for fourth level menu items, only the icon is shown and the menu item title becomes a tooltip.]]></item>
-        <item name="wcf.acp.pip.acpMenu.info"><![CDATA[این <kbd>acpMenu</kbd>افزونه نصب بسته آیتم های منوی جدید ACP را نصب می کند. اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/acp-menu/" class="externalURL">مستندات توسعه دهنده</a>.]]></item>
-        <item name="wcf.acp.pip.acpMenu.menuItem.description"><![CDATA[The menu item identifier must have the format <kbd>{literal}{app}.acp.menu.link.{additionalIdentifiers}{/literal}</kbd> جایی که <kbd>{literal}{app}{/literal}</kbd> و <kbd>{literal}{additionalIdentifiers}{/literal}</kbd> باید با مقادیر مناسب جایگزین شوند. <kbd>{literal}{additionalIdentifiers}{/literal}</kbd> ممکن است فقط شامل حروف، اعداد و نقطه باشد.]]></item>
+        <item name="wcf.acp.pip.acpMenu.info"><![CDATA[این <kbd>acpMenu</kbd>افزونه نصب بسته آیتم های فهرست جدید ACP را نصب می کند. اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/acp-menu/" class="externalURL">مستندات توسعه دهنده</a>.]]></item>
+        <item name="wcf.acp.pip.acpMenu.menuItem.description"><![CDATA[شناسه آیتم فهرست باید فرمت داشته باشد <kbd>{literal}{app}.acp.menu.link.{additionalIdentifiers}{/literal}</kbd> جایی که <kbd>{literal}{app}{/literal}</kbd> و <kbd>{literal}{additionalIdentifiers}{/literal}</kbd> باید با مقادیر مناسب جایگزین شوند. <kbd>{literal}{additionalIdentifiers}{/literal}</kbd> ممکن است فقط شامل حروف، اعداد و نقطه باشد.]]></item>
         <item name="wcf.acp.pip.acpMenu.menuItem.error.format"><![CDATA[.شناسه وارد شده نامعتبر است]]></item>
         <item name="wcf.acp.pip.acpMenu.menuItemController.error.noAcpController"><![CDATA[کنترل کننده وارد شده هیچ کنترل کننده ACP نیست. یک کنترلر ACP با شروع می شود  <kbd>{literal}{app}{/literal}\acp\</kbd> جایی که <kbd>{literal}{app}{/literal}</kbd> مخفف اپلیکیشن مربوطه است.]]></item>
-        <item name="wcf.acp.pip.acpSearchProvider.info"><![CDATA[این <kbd>acpSearchProvider</kbd> package installation plugin installs new data provider for the admin panel search. اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/acp-search-provider/" class="externalURL">مستندات توسعه دهنده</a>.]]></item>
+        <item name="wcf.acp.pip.acpSearchProvider.info"><![CDATA[این <kbd>acpSearchProvider</kbd> افزونه نصب بسته ارائه دهنده داده جدید را برای جستجوی پنل مدیریت نصب می کند. اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/acp-search-provider/" class="externalURL">مستندات توسعه دهنده</a>.]]></item>
         <item name="wcf.acp.pip.acpSearchProvider.providerName"><![CDATA[نام ارائه دهنده]]></item>
         <item name="wcf.acp.pip.acpSearchProvider.providerName.description"><![CDATA[نام یک ارائه دهنده نتایج جستجوی ACP شامل حداقل چهار بخش است که با نقطه از هم جدا شده اند.هر بخش نباید خالی باشد و فقط ممکن است شامل کاراکترهای زیر باشد: <kbd>[A-z0-9-_]</kbd>. به طور کلی، قسمت اول نام تعریف با شناسه بسته مطابقت دارد. مثال: <kbd>{$project->getPackage()->package}.شی ء جستجو شده</kbd>]]></item>
         <item name="wcf.acp.pip.acpSearchProvider.providerName.error.notUnique"><![CDATA[نام وارد شده قبلاً توسط ارائه‌دهنده نتیجه جستجوی acp دیگری استفاده شده است.]]></item>
