@@ -6204,262 +6204,262 @@ Your account on the website: {@PAGE_TITLE|phrase} [URL:{link isEmail=true}{/link
         <item name="wcf.article.aboutAuthor"><![CDATA[درباره نویسنده]]></item>
         <item name="wcf.article.articleComments"><![CDATA[{plural value=$articleContent->comments one='# Comment' other='# Comments'}]]></item>
         <item name="wcf.article.articleViews"><![CDATA[{#$article->views} چشم انداز{if $article->views != 1}ها{/if}]]></item>
-        <item name="wcf.article.articles"><![CDATA[Articles]]></item>
-        <item name="wcf.article.bbcode.type"><![CDATA[Article]]></item>
-        <item name="wcf.article.button.sort"><![CDATA[Sort]]></item>
-        <item name="wcf.article.comment"><![CDATA[Article Comment]]></item>
-        <item name="wcf.article.commentResponse"><![CDATA[Reply to Article Comment]]></item>
-        <item name="wcf.article.like.notification.message"><![CDATA[<strong>{$author}</strong> reacted to your article <strong>{$article->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
-        <item name="wcf.article.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} reacted to article <strong>{$article->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
-        <item name="wcf.article.like.notification.title"><![CDATA[Reaction to your article]]></item>
-        <item name="wcf.article.like.notification.title.stacked"><![CDATA[{#$count} users reacted to your article]]></item>
-        <item name="wcf.article.moreArticles"><![CDATA[More Articles]]></item>
-        <item name="wcf.article.nextArticle"><![CDATA[Next Article]]></item>
-        <item name="wcf.article.previousArticle"><![CDATA[Previous Article]]></item>
-        <item name="wcf.article.publicationStatus.0"><![CDATA[This article has not been published yet.]]></item>
-        <item name="wcf.article.publicationStatus.2"><![CDATA[This article will be published on {@$publicationDate|plainTime}.]]></item>
-        <item name="wcf.article.recentActivity"><![CDATA[Wrote the article {if $article->hasLabels()}<ul class="labelList">{foreach from=$article->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}<a href="{$article->getLink()}">{$article->getTitle()}</a>.]]></item>
-        <item name="wcf.article.recentActivity.articleComment"><![CDATA[Commented on article <a href="{$article->getLink()}#comment{$commentID}">{$article->getTitle()}</a>.]]></item>
-        <item name="wcf.article.recentActivity.articleCommentResponse"><![CDATA[Replied to a comment by <a href="{link controller='User' object=$commentAuthor}{/link}">{$commentAuthor->username}</a> on article <a href="{$article->getLink()}#comment{@$commentID}/response{@$responseID}">{$article->getTitle()}</a>.]]></item>
-        <item name="wcf.article.recentActivity.likedArticle"><![CDATA[Reacted with <span title="{$reactionType->getTitle()}" class="jsTooltip">{@$reactionType->renderIcon()}</span> to the article <a href="{$article->getLink()}">{$article->getTitle()}</a>.]]></item>
-        <item name="wcf.article.relatedArticles"><![CDATA[Related Articles]]></item>
-        <item name="wcf.article.search"><![CDATA[Search Articles]]></item>
-        <item name="wcf.article.search.error.noResults"><![CDATA[The search returned no results.]]></item>
-        <item name="wcf.article.search.error.tooShort"><![CDATA[The entered keyword is too short.]]></item>
-        <item name="wcf.article.search.name"><![CDATA[Search Titles]]></item>
-        <item name="wcf.article.search.results"><![CDATA[Search Results]]></item>
-        <item name="wcf.article.showArticlesWritten"><![CDATA[Articles by {$user->username}]]></item>
-        <item name="wcf.article.sortField.comments"><![CDATA[Comments]]></item>
-        <item name="wcf.article.sortField.cumulativeLikes"><![CDATA[Reactions]]></item>
-        <item name="wcf.article.sortField.random"><![CDATA[Random]]></item>
-        <item name="wcf.article.sortField.replies"><![CDATA[Replies]]></item>
-        <item name="wcf.article.sortField.time"><![CDATA[Date]]></item>
-        <item name="wcf.article.sortField.views"><![CDATA[Views]]></item>
+        <item name="wcf.article.articles"><![CDATA[مقالات]]></item>
+        <item name="wcf.article.bbcode.type"><![CDATA[مقاله]]></item>
+        <item name="wcf.article.button.sort"><![CDATA[مرتب سازی]]></item>
+        <item name="wcf.article.comment"><![CDATA[نظر مقاله]]></item>
+        <item name="wcf.article.commentResponse"><![CDATA[پاسخ به نظر مقاله]]></item>
+        <item name="wcf.article.like.notification.message"><![CDATA[<strong>{$author}</strong> به مقاله شما واکنش نشان داد <strong>{$article->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+        <item name="wcf.article.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} به مقاله شما واکنش نشان داد <strong>{$article->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+        <item name="wcf.article.like.notification.title"><![CDATA[واکنش به مقاله شما]]></item>
+        <item name="wcf.article.like.notification.title.stacked"><![CDATA[{#$count} کاربران به مقاله شما واکنش نشان دادند]]></item>
+        <item name="wcf.article.moreArticles"><![CDATA[مقالات بیشتر]]></item>
+        <item name="wcf.article.nextArticle"><![CDATA[مقاله بعدی]]></item>
+        <item name="wcf.article.previousArticle"><![CDATA[مقاله قبلی]]></item>
+        <item name="wcf.article.publicationStatus.0"><![CDATA[این مقاله هنوز منتشر نشده است.]]></item>
+        <item name="wcf.article.publicationStatus.2"><![CDATA[این مقاله در تاریخ منتشر خواهد شد {@$publicationDate|plainTime}.]]></item>
+        <item name="wcf.article.recentActivity"><![CDATA[مقاله را نوشت {if $article->hasLabels()}<ul class="labelList">{foreach from=$article->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}<a href="{$article->getLink()}">{$article->getTitle()}</a>.]]></item>
+        <item name="wcf.article.recentActivity.articleComment"><![CDATA[در مورد مقاله نظر داد <a href="{$article->getLink()}#comment{$commentID}">{$article->getTitle()}</a>.]]></item>
+        <item name="wcf.article.recentActivity.articleCommentResponse"><![CDATA[پاسخ داد به یک نظر با <a href="{link controller='User' object=$commentAuthor}{/link}">{$commentAuthor->username}</a> on article <a href="{$article->getLink()}#comment{@$commentID}/response{@$responseID}">{$article->getTitle()}</a>.]]></item>
+        <item name="wcf.article.recentActivity.likedArticle"><![CDATA[واکنش نشان داد با <span title="{$reactionType->getTitle()}" class="jsTooltip">{@$reactionType->renderIcon()}</span> به مقاله <a href="{$article->getLink()}">{$article->getTitle()}</a>.]]></item>
+        <item name="wcf.article.relatedArticles"><![CDATA[مقالات مرتبط]]></item>
+        <item name="wcf.article.search"><![CDATA[جستجو در مقالات]]></item>
+        <item name="wcf.article.search.error.noResults"><![CDATA[جستجو نتیجه ای نداشت.]]></item>
+        <item name="wcf.article.search.error.tooShort"><![CDATA[کلمه کلیدی وارد شده خیلی کوتاه است.]]></item>
+        <item name="wcf.article.search.name"><![CDATA[جستجو در عناوین]]></item>
+        <item name="wcf.article.search.results"><![CDATA[نتایج جستجو]]></item>
+        <item name="wcf.article.showArticlesWritten"><![CDATA[مقالات توسط{$user->username}]]></item>
+        <item name="wcf.article.sortField.comments"><![CDATA[نظرات]]></item>
+        <item name="wcf.article.sortField.cumulativeLikes"><![CDATA[واکنش ها]]></item>
+        <item name="wcf.article.sortField.random"><![CDATA[تصادفی]]></item>
+        <item name="wcf.article.sortField.replies"><![CDATA[پاسخ ها]]></item>
+        <item name="wcf.article.sortField.time"><![CDATA[تاریخ]]></item>
+        <item name="wcf.article.sortField.views"><![CDATA[بازدید ها]]></item>
     </category>
     <category name="wcf.attachment">
-        <item name="wcf.attachment.attachments"><![CDATA[Attachments]]></item>
-        <item name="wcf.attachment.delete.sure"><![CDATA[Do you really want to delete this attachment?]]></item>
-        <item name="wcf.attachment.downloads"><![CDATA[Downloads]]></item>
-        <item name="wcf.attachment.dragAndDrop.dropHere"><![CDATA[Drag and Drop here to upload]]></item>
-        <item name="wcf.attachment.dragAndDrop.dropNow"><![CDATA[Drop now to upload]]></item>
+        <item name="wcf.attachment.attachments"><![CDATA[پیوست ها]]></item>
+        <item name="wcf.attachment.delete.sure"><![CDATA[آیا واقعاً می خواهید این پیوست را حذف کنید؟]]></item>
+        <item name="wcf.attachment.downloads"><![CDATA[دانلودها]]></item>
+        <item name="wcf.attachment.dragAndDrop.dropHere"><![CDATA[برای آپلود اینجا را بکشید و رها کنید]]></item>
+        <item name="wcf.attachment.dragAndDrop.dropNow"><![CDATA[اکنون برای آپلود رها کنید]]></item>
         <item name="wcf.attachment.file.info"><![CDATA[{@$attachment->filesize|filesize} – {plural value=$attachment->downloads 1="1 Download" other="# Downloads"}]]></item>
         <item name="wcf.attachment.file.title"><![CDATA[Download file “{$attachment->filename}”]]></item>
-        <item name="wcf.attachment.fileType"><![CDATA[Type]]></item>
-        <item name="wcf.attachment.filename"><![CDATA[Filename]]></item>
-        <item name="wcf.attachment.files"><![CDATA[Files]]></item>
-        <item name="wcf.attachment.filesize"><![CDATA[File Size]]></item>
-        <item name="wcf.attachment.image.info"><![CDATA[{@$attachment->filesize|filesize}, {#$attachment->width}×{#$attachment->height}, viewed {#$attachment->downloads} times]]></item>
+        <item name="wcf.attachment.fileType"><![CDATA[نوع]]></item>
+        <item name="wcf.attachment.filename"><![CDATA[نام فایل]]></item>
+        <item name="wcf.attachment.files"><![CDATA[فایل ها]]></item>
+        <item name="wcf.attachment.filesize"><![CDATA[اندازه فایل]]></item>
+        <item name="wcf.attachment.image.info"><![CDATA[{@$attachment->filesize|filesize}, {#$attachment->width}×{#$attachment->height}, مشاهده شده است {#$attachment->downloads} times]]></item>
         <item name="wcf.attachment.image.title"><![CDATA[View image “{$attachment->filename}”]]></item>
-        <item name="wcf.attachment.images"><![CDATA[Images]]></item>
-        <item name="wcf.attachment.insert"><![CDATA[Insert into message]]></item>
-        <item name="wcf.attachment.insertAll"><![CDATA[Insert All]]></item>
-        <item name="wcf.attachment.insertFull"><![CDATA[Full Image]]></item>
+        <item name="wcf.attachment.images"><![CDATA[تصاویر]]></item>
+        <item name="wcf.attachment.insert"><![CDATA[درج در پیام]]></item>
+        <item name="wcf.attachment.insertAll"><![CDATA[درج همه]]></item>
+        <item name="wcf.attachment.insertFull"><![CDATA[تصویر کامل]]></item>
         <item name="wcf.attachment.insertThumbnail"><![CDATA[Thumbnail]]></item>
-        <item name="wcf.attachment.lastDownloadTime"><![CDATA[Last Download]]></item>
-        <item name="wcf.attachment.upload.error.invalidExtension"><![CDATA[The file extension is invalid.]]></item>
-        <item name="wcf.attachment.upload.error.reachedLimit"><![CDATA[You have reached the maximum number of attachments allowed.]]></item>
+        <item name="wcf.attachment.lastDownloadTime"><![CDATA[آخرین دانلود]]></item>
+        <item name="wcf.attachment.upload.error.invalidExtension"><![CDATA[پسوند فایل نامعتبر است.]]></item>
+        <item name="wcf.attachment.upload.error.reachedLimit"><![CDATA[شما به حداکثر تعداد مجاز پیوست رسیده اید.]]></item>
         <item name="wcf.attachment.upload.error.reachedRemainingLimit"><![CDATA[You have selected too many attachments, remaining: #remaining#.]]></item>
-        <item name="wcf.attachment.upload.error.tooLarge"><![CDATA[The file is too big.]]></item>
-        <item name="wcf.attachment.upload.error.uploadFailed"><![CDATA[An unknown error occurred during the upload.]]></item>
+        <item name="wcf.attachment.upload.error.tooLarge"><![CDATA[فایل خیلی بزرگ است]]></item>
+        <item name="wcf.attachment.upload.error.uploadFailed"><![CDATA[یک خطای ناشناخته در حین آپلود روی داد.]]></item>
         <item name="wcf.attachment.upload.error.uploadPhpLimit"><![CDATA[The file exceeds the PHP limit “upload_max_filesize” and/or “post_max_size”.]]></item>
-        <item name="wcf.attachment.upload.limits"><![CDATA[The maximum number of attachments: {#$attachmentHandler->getMaxCount()}<br>
-Maximum File Size: {@$attachmentHandler->getMaxSize()|filesize}<br>
-Allowed extensions: {', '|implode:$attachmentHandler->getFormattedAllowedExtensions()}]]></item>
-        <item name="wcf.attachment.uploadTime"><![CDATA[Upload Time]]></item>
+        <item name="wcf.attachment.upload.limits"><![CDATA[حداکثر تعداد پیوست: {#$attachmentHandler->getMaxCount()}<br>
+حداکثر اندازه فایل: {@$attachmentHandler->getMaxSize()|filesize}<br>
+پسوند های مجاز: {', '|implode:$attachmentHandler->getFormattedAllowedExtensions()}]]></item>
+        <item name="wcf.attachment.uploadTime"><![CDATA[زمان آپلود]]></item>
     </category>
     <category name="wcf.bbcode">
-        <item name="wcf.bbcode.button.collapse"><![CDATA[Display Less]]></item>
-        <item name="wcf.bbcode.button.showAll"><![CDATA[Display More]]></item>
-        <item name="wcf.bbcode.code"><![CDATA[Code]]></item>
+        <item name="wcf.bbcode.button.collapse"><![CDATA[نمایش کمتر]]></item>
+        <item name="wcf.bbcode.button.showAll"><![CDATA[نمایش بیشتر]]></item>
+        <item name="wcf.bbcode.code"><![CDATA[کد]]></item>
         <item name="wcf.bbcode.code.simplified"><![CDATA[(Code, {#$lines} line{if $lines != 1}s{/if})]]></item>
-        <item name="wcf.bbcode.image.blocked"><![CDATA[Blocked Image]]></item>
-        <item name="wcf.bbcode.image.source"><![CDATA[Image Link]]></item>
-        <item name="wcf.bbcode.quote"><![CDATA[Quote]]></item>
-        <item name="wcf.bbcode.quote.delete"><![CDATA[Delete Quote]]></item>
-        <item name="wcf.bbcode.quote.edit"><![CDATA[Edit Quote]]></item>
-        <item name="wcf.bbcode.quote.edit.author"><![CDATA[Author]]></item>
-        <item name="wcf.bbcode.quote.edit.link"><![CDATA[Source]]></item>
-        <item name="wcf.bbcode.quote.insert"><![CDATA[Insert Quote]]></item>
+        <item name="wcf.bbcode.image.blocked"><![CDATA[تصویر مسدود شده]]></item>
+        <item name="wcf.bbcode.image.source"><![CDATA[لینک تصویر]]></item>
+        <item name="wcf.bbcode.quote"><![CDATA[نقل قول]]></item>
+        <item name="wcf.bbcode.quote.delete"><![CDATA[نقل قول را حذف کنید]]></item>
+        <item name="wcf.bbcode.quote.edit"><![CDATA[نقل قول را ویرایش کنید]]></item>
+        <item name="wcf.bbcode.quote.edit.author"><![CDATA[نویسنده]]></item>
+        <item name="wcf.bbcode.quote.edit.link"><![CDATA[منبع]]></item>
+        <item name="wcf.bbcode.quote.insert"><![CDATA[درج نقل قول]]></item>
         <item name="wcf.bbcode.quote.simplified"><![CDATA[[…]]]></item>
-        <item name="wcf.bbcode.quote.title"><![CDATA[Quote from {$quoteAuthor}]]></item>
-        <item name="wcf.bbcode.spoiler.hide"><![CDATA[Hide Spoiler]]></item>
-        <item name="wcf.bbcode.spoiler.show"><![CDATA[Display Spoiler]]></item>
-        <item name="wcf.bbcode.spoiler.simplified"><![CDATA[(Hidden Content)]]></item>
-        <item name="wcf.bbcode.spoiler.text"><![CDATA[(Hidden Content)]]></item>
+        <item name="wcf.bbcode.quote.title"><![CDATA[نقل قول از {$quoteAuthor}]]></item>
+        <item name="wcf.bbcode.spoiler.hide"><![CDATA[مخفی کردن اسپویلر]]></item>
+        <item name="wcf.bbcode.spoiler.show"><![CDATA[نمایش اسپویلر]]></item>
+        <item name="wcf.bbcode.spoiler.simplified"><![CDATA[(محتوای پنهان)]]></item>
+        <item name="wcf.bbcode.spoiler.text"><![CDATA[(محتوای پنهان)]]></item>
     </category>
     <category name="wcf.button">
-        <item name="wcf.button.delete.confirmMessage"><![CDATA[Do you really want to delete <strong>{$objectTitle}</strong>?]]></item>
+        <item name="wcf.button.delete.confirmMessage"><![CDATA[واقعا میخواهید حذف کنید <strong>{$objectTitle}</strong>?]]></item>
     </category>
     <category name="wcf.captcha">
-        <item name="wcf.captcha.com.woltlab.wcf.captchaQuestion"><![CDATA[Question]]></item>
+        <item name="wcf.captcha.com.woltlab.wcf.captchaQuestion"><![CDATA[سوال]]></item>
         <item name="wcf.captcha.com.woltlab.wcf.recaptcha"><![CDATA[reCAPTCHA]]></item>
         <item name="wcf.captcha.useNoCaptcha"><![CDATA[(No Captcha)]]></item>
     </category>
     <category name="wcf.captcha.question">
-        <item name="wcf.captcha.question.answer.error.false"><![CDATA[The entered answer is incorrect.]]></item>
-        <item name="wcf.captcha.question.captcha"><![CDATA[Question]]></item>
-        <item name="wcf.captcha.question.captcha.description"><![CDATA[Please answer the question respectively to solve the problem below.]]></item>
+        <item name="wcf.captcha.question.answer.error.false"><![CDATA[پاسخ وارد شده نادرست است.]]></item>
+        <item name="wcf.captcha.question.captcha"><![CDATA[سوال]]></item>
+        <item name="wcf.captcha.question.captcha.description"><![CDATA[لطفا برای حل مشکل زیر به ترتیب به سوال پاسخ دهید.]]></item>
     </category>
     <category name="wcf.captcha.recaptchaInvisible">
-        <item name="wcf.captcha.recaptchaInvisible.error.recaptchaString.false"><![CDATA[The check failed, please re-submit the form.]]></item>
+        <item name="wcf.captcha.recaptchaInvisible.error.recaptchaString.false"><![CDATA[بررسی انجام نشد، لطفا فرم را دوباره ارسال کنید.]]></item>
     </category>
     <category name="wcf.captcha.recaptchaV2">
-        <item name="wcf.captcha.recaptchaV2.error.recaptchaString.false"><![CDATA[Please confirm that you are not a robot.]]></item>
+        <item name="wcf.captcha.recaptchaV2.error.recaptchaString.false"><![CDATA[لطفاً تأیید کنید که ربات نیستید.]]></item>
     </category>
     <category name="wcf.category">
-        <item name="wcf.category.add"><![CDATA[Add Category]]></item>
-        <item name="wcf.category.button.choose"><![CDATA[Choose Category]]></item>
-        <item name="wcf.category.button.list"><![CDATA[Categories]]></item>
-        <item name="wcf.category.delete.sure"><![CDATA[Do you really want to delete this category?]]></item>
-        <item name="wcf.category.description"><![CDATA[Description]]></item>
-        <item name="wcf.category.descriptionUseHtml"><![CDATA[Enable HTML code in the description]]></item>
-        <item name="wcf.category.edit"><![CDATA[Edit Category]]></item>
-        <item name="wcf.category.isDisabled"><![CDATA[Disable Category]]></item>
-        <item name="wcf.category.list"><![CDATA[Categories]]></item>
-        <item name="wcf.category.noneAvailable"><![CDATA[No categories have been added yet.]]></item>
-        <item name="wcf.category.parentCategoryID"><![CDATA[Parent Category]]></item>
-        <item name="wcf.category.parentCategoryID.error.invalid"><![CDATA[The selected category does not exist.]]></item>
-        <item name="wcf.category.position"><![CDATA[Display Order]]></item>
-        <item name="wcf.category.title"><![CDATA[Title]]></item>
+        <item name="wcf.category.add"><![CDATA[اضافه کردن دسته]]></item>
+        <item name="wcf.category.button.choose"><![CDATA[دسته را انتخاب کنید]]></item>
+        <item name="wcf.category.button.list"><![CDATA[دسته بندی ها]]></item>
+        <item name="wcf.category.delete.sure"><![CDATA[آیا واقعاً می خواهید این دسته را حذف کنید؟]]></item>
+        <item name="wcf.category.description"><![CDATA[شرح]]></item>
+        <item name="wcf.category.descriptionUseHtml"><![CDATA[کد HTML را در توضیحات فعال کنید]]></item>
+        <item name="wcf.category.edit"><![CDATA[ویرایش دسته]]></item>
+        <item name="wcf.category.isDisabled"><![CDATA[غیرفعال کردن دسته]]></item>
+        <item name="wcf.category.list"><![CDATA[دسته بندی ها]]></item>
+        <item name="wcf.category.noneAvailable"><![CDATA[هنوز هیچ دسته ای اضافه نشده است.]]></item>
+        <item name="wcf.category.parentCategoryID"><![CDATA[دسته والد]]></item>
+        <item name="wcf.category.parentCategoryID.error.invalid"><![CDATA[دسته انتخابی وجود ندارد.]]></item>
+        <item name="wcf.category.position"><![CDATA[نمایش سفارش]]></item>
+        <item name="wcf.category.title"><![CDATA[عنوان]]></item>
     </category>
     <category name="wcf.cli">
         <item name="wcf.cli.error.command.notFound"><![CDATA[The command "{$command}" could not be found. Type in "commands" to list available commands.]]></item>
         <item name="wcf.cli.error.help.noArguments"><![CDATA[The command "{$command}" does not support any parameters.]]></item>
         <item name="wcf.cli.error.language.notFound"><![CDATA[The language with the language code "{$languageCode}" could not be found.]]></item>
-        <item name="wcf.cli.help.disableUpdateCheck"><![CDATA[Do not search for updates after login.]]></item>
-        <item name="wcf.cli.help.exitOnFail"><![CDATA[Exits the script if an error occurs.]]></item>
-        <item name="wcf.cli.help.exitOnFail.description"><![CDATA[If this parameter is set the script execution will be terminated once an error occurs.
-Errors are:
-- Missing commands
-- Failing commands
-- Core errors]]></item>
-        <item name="wcf.cli.help.help"><![CDATA[Displays this help and exits.]]></item>
-        <item name="wcf.cli.help.language"><![CDATA[Forces the language with the entered language code.]]></item>
+        <item name="wcf.cli.help.disableUpdateCheck"><![CDATA[پس از ورود به سیستم، به‌روزرسانی‌ها را جستجو نکنید.]]></item>
+        <item name="wcf.cli.help.exitOnFail"><![CDATA[در صورت بروز خطا از اسکریپت خارج می شود.]]></item>
+        <item name="wcf.cli.help.exitOnFail.description"><![CDATA[اگر این پارامتر تنظیم شود، اجرای اسکریپت به محض بروز خطا خاتمه می یابد.
+خطاها عبارتند از:
+- دستورات از دست رفته
+- دستورات ناموفق
+- خطاهای اصلی]]></item>
+        <item name="wcf.cli.help.help"><![CDATA[این راهنما را نمایش می دهد و خارج می شود.]]></item>
+        <item name="wcf.cli.help.language"><![CDATA[زبان را با کد زبان وارد شده مجبور می کند.]]></item>
         <item name="wcf.cli.help.noLongHelp"><![CDATA[There is no long help for the parameter "{$topic}".]]></item>
-        <item name="wcf.cli.help.q"><![CDATA[Quiet: Display less information.]]></item>
-        <item name="wcf.cli.help.v"><![CDATA[Verbose: Display more information.]]></item>
-        <item name="wcf.cli.help.version"><![CDATA[Displays the version number and exits.]]></item>
-        <item name="wcf.cli.worker.list"><![CDATA[Lists all workers.]]></item>
+        <item name="wcf.cli.help.q"><![CDATA[بی صدا: نمایش اطلاعات کمتر.]]></item>
+        <item name="wcf.cli.help.v"><![CDATA[Verbose: نمایش اطلاعات بیشتر.]]></item>
+        <item name="wcf.cli.help.version"><![CDATA[شماره نسخه را نمایش می دهد و خارج می شود.]]></item>
+        <item name="wcf.cli.worker.list"><![CDATA[لیست همه کارگران]]></item>
         <item name="wcf.cli.worker.setParameter"><![CDATA[Sets a worker parameter e.g.: --setParameter param=value]]></item>
-        <item name="wcf.cli.worker.threadId"><![CDATA[Specifies the thread id when processing in parallel. Used internally when --threads is given.]]></item>
-        <item name="wcf.cli.worker.threadId.invalid"><![CDATA[The entered thread id is not valid.]]></item>
-        <item name="wcf.cli.worker.threads"><![CDATA[Requested number of parallel processes.]]></item>
-        <item name="wcf.cli.worker.threads.windows"><![CDATA[Parallel processing using --threads is not available on Windows.]]></item>
+        <item name="wcf.cli.worker.threadId"><![CDATA[شناسه رشته را هنگام پردازش موازی مشخص می کند. زمانی که --threads داده می شود به صورت داخلی استفاده می شود.]]></item>
+        <item name="wcf.cli.worker.threadId.invalid"><![CDATA[شناسه موضوع وارد شده معتبر نیست.]]></item>
+        <item name="wcf.cli.worker.threads"><![CDATA[تعداد فرآیندهای موازی درخواستی]]></item>
+        <item name="wcf.cli.worker.threads.windows"><![CDATA[پردازش موازی با استفاده از --threads در ویندوز در دسترس نیست.]]></item>
     </category>
     <category name="wcf.clipboard">
-        <item name="wcf.clipboard.item.com.woltlab.filebase.file.assignLabel"><![CDATA[Assign Label ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.filebase.file.delete"><![CDATA[Delete ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.filebase.file.delete.confirmMessage"><![CDATA[Do you really want to delete the marked file{if $count != 1}s{/if}?]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.filebase.file.disable"><![CDATA[Disable ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.filebase.file.enable"><![CDATA[Approve ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.filebase.file.restore"><![CDATA[Restore ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.filebase.file.trash"><![CDATA[Move to Trash ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.filebase.file.trash.confirmMessage"><![CDATA[Do you really want to move the marked file{if $count != 1}s{/if} to the trash?]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.filebase.file.version.delete.confirmMessage"><![CDATA[Do you really want to delete the marked version{if $count != 1}s{/if}?]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.filebase.file.version.trash.confirmMessage"><![CDATA[Do you really want to move the marked version {if $count != 1}s{/if} to the trash?]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.filebase.version.delete"><![CDATA[Delete ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.filebase.version.disable"><![CDATA[Disable ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.filebase.version.enable"><![CDATA[Approve ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.filebase.version.restore"><![CDATA[Restore ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.filebase.version.trash"><![CDATA[Move to Trash ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.gallery.image.delete"><![CDATA[Delete ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.gallery.image.delete.confirmMessage"><![CDATA[Do you really want to delete the marked image{if $count != 1}s{/if}{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/video{if $count != 1}s{/if}{/if}?]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.gallery.image.disable"><![CDATA[Disable ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.gallery.image.edit"><![CDATA[Edit ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.gallery.image.enable"><![CDATA[Approve ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.gallery.image.moveToAlbum"><![CDATA[Move to Album ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.gallery.image.restore"><![CDATA[Restore ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.gallery.image.trash"><![CDATA[Move to Trash ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.gallery.image.trash.confirmMessage"><![CDATA[Do you really want to move the marked image{if $count != 1}s{/if}{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/video{if $count != 1}s{/if}{/if} to the trash?]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wbb.post.copyToExistingThread"><![CDATA[Copy Into This Thread ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wbb.post.copyToExistingThread.confirmMessage"><![CDATA[Do you really want to copy {if $count != 1}the marked posts{else}this post{/if} into this thread?]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wbb.post.copyToNewThread"><![CDATA[Copy Into a New Thread ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wbb.post.delete"><![CDATA[Delete ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wbb.post.deleteCompletely.confirmMessage"><![CDATA[Do you really want to delete {if $count != 1}the marked posts{else}this post{/if}?]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wbb.post.disable"><![CDATA[Disable ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wbb.post.enable"><![CDATA[Approve ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wbb.post.merge"><![CDATA[Merge ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wbb.post.moveToExistingThread"><![CDATA[Move Into This Thread ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wbb.post.moveToExistingThread.confirmMessage"><![CDATA[Do you really want to move {if $count != 1}the marked posts{else}this post{/if} into this thread?]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wbb.post.moveToNewThread"><![CDATA[Move Into a New Thread ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wbb.post.restore"><![CDATA[Restore ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wbb.post.trash"><![CDATA[Move to Trash ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wbb.post.trash.confirmMessage"><![CDATA[Do you really want to move {if $count != 1}the marked posts{else}this post{/if} to the trash?]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wbb.thread.assignLabel"><![CDATA[Assign Labels ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wbb.thread.close"><![CDATA[Close ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wbb.thread.copy"><![CDATA[Copy ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wbb.thread.copy.confirmMessage"><![CDATA[Do you really want to copy the marked thread{if $count != 1}s{/if} into this forum?]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.filebase.file.assignLabel"><![CDATA[برچسب را اختصاص دهید ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.filebase.file.delete"><![CDATA[حذف ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.filebase.file.delete.confirmMessage"><![CDATA[آیا واقعاً می خواهید فایل علامت گذاری شده را حذف کنید؟{if $count != 1}s{/if}?]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.filebase.file.disable"><![CDATA[غیر فعال کردن ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.filebase.file.enable"><![CDATA[تایید ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.filebase.file.restore"><![CDATA[بازگرداندن ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.filebase.file.trash"><![CDATA[انتقال به سطل زباله ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.filebase.file.trash.confirmMessage"><![CDATA[آیا واقعاً می خواهید فایل علامت گذاری شده را منتقل کنید؟{if $count != 1}s{/if} به سطل زباله؟]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.filebase.file.version.delete.confirmMessage"><![CDATA[آیا واقعاً می خواهید نسخه علامت گذاری شده را حذف کنید؟{if $count != 1}s{/if}?]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.filebase.file.version.trash.confirmMessage"><![CDATA[آیا واقعاً می خواهید نسخه علامت گذاری شده را منتقل کنید؟ {if $count != 1}s{/if} به سطل زباله؟]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.filebase.version.delete"><![CDATA[حذف ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.filebase.version.disable"><![CDATA[غیر فعال کردن ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.filebase.version.enable"><![CDATA[تایید ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.filebase.version.restore"><![CDATA[بازیابی ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.filebase.version.trash"><![CDATA[انتقال به سطل زباله ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.gallery.image.delete"><![CDATA[حذف ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.gallery.image.delete.confirmMessage"><![CDATA[آیا واقعاً می خواهید تصویر علامت گذاری شده را حذف کنید؟{if $count != 1}s{/if}{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/video{if $count != 1}s{/if}{/if}?]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.gallery.image.disable"><![CDATA[غیر فعال کردن ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.gallery.image.edit"><![CDATA[ویرایش ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.gallery.image.enable"><![CDATA[تایید ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.gallery.image.moveToAlbum"><![CDATA[انتقال به آلبوم ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.gallery.image.restore"><![CDATA[بازیابی ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.gallery.image.trash"><![CDATA[انتقال به سطل زباله ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.gallery.image.trash.confirmMessage"><![CDATA[آیا واقعاً می خواهید تصویر علامت گذاری شده را انتقال بدهید{if $count != 1}s{/if}{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/video{if $count != 1}s{/if}{/if} به سطل زباله؟]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wbb.post.copyToExistingThread"><![CDATA[در این رشته کپی کنید ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wbb.post.copyToExistingThread.confirmMessage"><![CDATA[واقعا میخواهید کپی کنید {if $count != 1}پست های علامت گذاری شده{else}this post{/if} به این رشته؟]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wbb.post.copyToNewThread"><![CDATA[در یک رشته جدید کپی کنید ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wbb.post.delete"><![CDATA[حذف ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wbb.post.deleteCompletely.confirmMessage"><![CDATA[واقعا میخواهید حذف کنید {if $count != 1}the marked posts{else}this post{/if}?]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wbb.post.disable"><![CDATA[غیر فعال کردن ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wbb.post.enable"><![CDATA[تایید ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wbb.post.merge"><![CDATA[ادغام ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wbb.post.moveToExistingThread"><![CDATA[وارد این موضوع شوید ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wbb.post.moveToExistingThread.confirmMessage"><![CDATA[آیا واقعاً می خواهید حرکت کنید {if $count != 1}پست های علامت گذاری شده{else}این پست{/if} به این رشته؟]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wbb.post.moveToNewThread"><![CDATA[حرکت به یک موضوع جدید ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wbb.post.restore"><![CDATA[بازگرداندن ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wbb.post.trash"><![CDATA[انتقال به سطل زباله ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wbb.post.trash.confirmMessage"><![CDATA[آیا واقعاً می خواهیدانتقال بدهید {if $count != 1}the marked posts{else}this post{/if} به سطل زباله؟]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wbb.thread.assignLabel"><![CDATA[برچسب ها را اختصاص دهید ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wbb.thread.close"><![CDATA[بستن ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wbb.thread.copy"><![CDATA[کپی  ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wbb.thread.copy.confirmMessage"><![CDATA[آیا واقعاً می خواهید موضوع علامت گذاری شده را کپی کنید{if $count != 1}s{/if} به این انجمن؟]]></item>
         <item name="wcf.clipboard.item.com.woltlab.wbb.thread.delete"><![CDATA[Delete ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wbb.thread.delete.confirmMessage"><![CDATA[Do you really want to delete {if $count != 1}the marked threads{else}this thread{/if}?]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wbb.thread.disable"><![CDATA[Disable ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wbb.thread.done"><![CDATA[Mark as Resolved  ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wbb.thread.enable"><![CDATA[Approve ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wbb.thread.merge"><![CDATA[Merge ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wbb.thread.move"><![CDATA[Move ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wbb.thread.open"><![CDATA[Open ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wbb.thread.removeLink"><![CDATA[Remove Redirection Notice ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wbb.thread.removeLink.confirmMessage"><![CDATA[Do you really want to delete {if $count != 1}the marked links{else}this link{/if}?]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wbb.thread.restore"><![CDATA[Restore ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wbb.thread.trash"><![CDATA[Move to Trash ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wbb.thread.trash.confirmMessage"><![CDATA[Do you really want to move {if $count != 1}the marked threads{else}this thread{/if} to the trash?]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wbb.thread.undone"><![CDATA[Mark as Unresolved ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.article.delete"><![CDATA[Delete ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.article.delete.confirmMessage"><![CDATA[Do you really want to delete {#$count} article{if $count != 1}s{/if}?]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.article.publish"><![CDATA[Publish ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.article.restore"><![CDATA[Restore ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.article.setCategory"><![CDATA[Set Category ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.article.trash"><![CDATA[Move to Trash ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.article.trash.confirmMessage"><![CDATA[Do you really want to move {#$count} article{if $count != 1}s{/if} to the trash bin?]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.article.unpublish"><![CDATA[Withdraw Publication ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.conversation.conversation.assignLabel"><![CDATA[Assign Label ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.conversation.conversation.close"><![CDATA[Close for Replies ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.conversation.conversation.leave"><![CDATA[Hide ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.conversation.conversation.leavePermanently"><![CDATA[Leave ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.conversation.conversation.markAsRead"><![CDATA[Mark as Read ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.conversation.conversation.markAsRead.confirmMessage"><![CDATA[Do you really want to mark the marked conversation{if $count != 1}s{/if} as read?]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.conversation.conversation.open"><![CDATA[Open ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.conversation.conversation.restore"><![CDATA[Mark as Active ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.media.delete"><![CDATA[Delete ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.media.delete.confirmMessage"><![CDATA[Do you really want to delete {#$count} file{if $count != 1}s{/if}?]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.media.insert"><![CDATA[Insert ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.media.setCategory"><![CDATA[Edit Category ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.moderation.queue.assignUserByClipboard"><![CDATA[Assign User ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.moderation.queue.enableContent"><![CDATA[Approve Content ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.moderation.queue.removeActivationContent"><![CDATA[Delete Pending Content ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.moderation.queue.removeReport"><![CDATA[Close Report ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.moderation.queue.removeReportContent"><![CDATA[Delete Reported Content ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.tag.delete"><![CDATA[Delete ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.tag.delete.confirmMessage"><![CDATA[Do you really want to delete {#$count} tag{if $count != 1}s{/if}?]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.tag.setAsSynonyms"><![CDATA[Set as Synonyms ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.user.assignToGroup"><![CDATA[Add to User Group]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.user.ban"><![CDATA[Ban ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.user.confirmEmail"><![CDATA[Confirm Email Address ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.user.delete"><![CDATA[Delete ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.user.delete.confirmMessage"><![CDATA[Do you really want to delete {#$count} user{if $count != 1}s{/if}?]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.user.deleteUserContent"><![CDATA[Delete User Contents ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.user.enable"><![CDATA[Approve]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.user.exportMailAddress"><![CDATA[Export Email Addresses]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.user.merge"><![CDATA[Merge]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.user.resendActivationMail"><![CDATA[Send New Activation Code ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.user.revertContentChanges"><![CDATA[Revert Changes To Contents]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.user.sendMail"><![CDATA[Send Email]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.user.sendNewPassword"><![CDATA[Send New Password ({#$count})]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.user.sendNewPassword.confirmMessage"><![CDATA[Do you really want to send a new password to {#$count} user{if $count != 1}s{/if}?]]></item>
-        <item name="wcf.clipboard.item.com.woltlab.wcf.user.unconfirmEmail"><![CDATA[Unconfirm Email Address ({#$count})]]></item>
-        <item name="wcf.clipboard.item.mark"><![CDATA[Mark Object]]></item>
-        <item name="wcf.clipboard.item.markAll"><![CDATA[Mark All Objects]]></item>
-        <item name="wcf.clipboard.item.unmarkAll"><![CDATA[Unmark All]]></item>
-        <item name="wcf.clipboard.label.com.woltlab.filebase.file.marked"><![CDATA[{if $count == 1}One File{else}{#$count} Files{/if}]]></item>
-        <item name="wcf.clipboard.label.com.woltlab.filebase.version.marked"><![CDATA[{if $count == 1}One Version{else}{#$count} Versions{/if}]]></item>
-        <item name="wcf.clipboard.label.com.woltlab.gallery.image.marked"><![CDATA[{if $count == 1}One Image{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/Video{/if}{else}{#$count} Images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/Videos{/if}{/if}]]></item>
-        <item name="wcf.clipboard.label.com.woltlab.wbb.post.marked"><![CDATA[{if $count == 1}One Post{else}{#$count} Posts{/if}]]></item>
-        <item name="wcf.clipboard.label.com.woltlab.wbb.thread.marked"><![CDATA[{if $count == 1}One Thread{else}{#$count} Threads{/if}]]></item>
-        <item name="wcf.clipboard.label.com.woltlab.wcf.article.marked"><![CDATA[{if $count == 1}One Article{else}{#$count} Articles{/if}]]></item>
-        <item name="wcf.clipboard.label.com.woltlab.wcf.conversation.conversation.marked"><![CDATA[{if $count == 1}One Conversation{else}{#$count} Conversations{/if}]]></item>
-        <item name="wcf.clipboard.label.com.woltlab.wcf.media.marked"><![CDATA[{if $count == 1}One File{else}{#$count} Files{/if}]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wbb.thread.delete.confirmMessage"><![CDATA[واقعا میخواهید حذف کنید {if $count != 1}رشته های علامت گذاری شده{else}این رشته{/if}?]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wbb.thread.disable"><![CDATA[غیر فعال کردن ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wbb.thread.done"><![CDATA[علامت زدن به عنوان حل شده  ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wbb.thread.enable"><![CDATA[تایید ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wbb.thread.merge"><![CDATA[ادغام ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wbb.thread.move"><![CDATA[انتقال ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wbb.thread.open"><![CDATA[باز کردن ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wbb.thread.removeLink"><![CDATA[اعلان تغییر مسیر را حذف کنید ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wbb.thread.removeLink.confirmMessage"><![CDATA[واقعا میخواهید حذف کنید {if $count != 1}لینک های علامت گذاری شده{else}این لینک{/if}?]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wbb.thread.restore"><![CDATA[بازگرداندن ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wbb.thread.trash"><![CDATA[انتقال به سطل زباله ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wbb.thread.trash.confirmMessage"><![CDATA[آیا واقعاً می خواهید حرکت کنید {if $count != 1}رشته های علامت گذاری شده{else}این رشته{/if} به سطل زباله؟]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wbb.thread.undone"><![CDATA[علامت گذاری به عنوان حل نشده ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.article.delete"><![CDATA[حذف ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.article.delete.confirmMessage"><![CDATA[واقعا میخواهید حذف کنید {#$count} مقاله{if $count != 1}ها{/if}?]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.article.publish"><![CDATA[انتشار ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.article.restore"><![CDATA[بازگرداندن ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.article.setCategory"><![CDATA[دسته بندی را تنظیم کنید ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.article.trash"><![CDATA[انتقال به سطل زباله ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.article.trash.confirmMessage"><![CDATA[آیا واقعاً می خواهید انتقال دهید {#$count} مقاله{if $count != 1}ها{/if} به سطل زباله؟]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.article.unpublish"><![CDATA[لغو انتشار ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.conversation.conversation.assignLabel"><![CDATA[برچسب را اختصاص دهید ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.conversation.conversation.close"><![CDATA[بستن برای پاسخ ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.conversation.conversation.leave"><![CDATA[پنهان شدن ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.conversation.conversation.leavePermanently"><![CDATA[ترک کردن ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.conversation.conversation.markAsRead"><![CDATA[به عنوان خوانده شده علامت بزن ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.conversation.conversation.markAsRead.confirmMessage"><![CDATA[آیا واقعاً می خواهید مکالمه علامت گذاری شده را علامت گذاری کنید؟{if $count != 1}s{/if} به عنوان خوانده شده؟]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.conversation.conversation.open"><![CDATA[باز کردن ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.conversation.conversation.restore"><![CDATA[علامت گذاری به عنوان فعال ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.media.delete"><![CDATA[حذف ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.media.delete.confirmMessage"><![CDATA[واقعا میخواهید حذف کنید {#$count} فایل{if $count != 1}ها{/if}?]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.media.insert"><![CDATA[درج کردن ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.media.setCategory"><![CDATA[ویرایش دسته ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.moderation.queue.assignUserByClipboard"><![CDATA[اختصاص کاربر({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.moderation.queue.enableContent"><![CDATA[تایید محتوا ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.moderation.queue.removeActivationContent"><![CDATA[حذف محتوای معلق ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.moderation.queue.removeReport"><![CDATA[بستن گزارش ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.moderation.queue.removeReportContent"><![CDATA[حذف محتوای گزارش شده ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.tag.delete"><![CDATA[حذف ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.tag.delete.confirmMessage"><![CDATA[واقعا میخواهید حذف کنید {#$count} تگ{if $count != 1}ها{/if}?]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.tag.setAsSynonyms"><![CDATA[تنظیم به عنوان مترادف ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.user.assignToGroup"><![CDATA[به گروه کاربر اضافه کنید]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.user.ban"><![CDATA[ممنوع  ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.user.confirmEmail"><![CDATA[آدرس ایمیل را تایید کنید ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.user.delete"><![CDATA[حذف ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.user.delete.confirmMessage"><![CDATA[واقعا میخواهید حذف کنید {#$count} کاربر{if $count != 1}ها{/if}?]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.user.deleteUserContent"><![CDATA[حذف محتویات کاربر ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.user.enable"><![CDATA[تایید]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.user.exportMailAddress"><![CDATA[صادرکردن آدرس های ایمیل]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.user.merge"><![CDATA[ادغام]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.user.resendActivationMail"><![CDATA[ارسال کد فعال سازی جدید ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.user.revertContentChanges"><![CDATA[برگرداندن تغییرات به محتوا]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.user.sendMail"><![CDATA[ایمیل بفرست]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.user.sendNewPassword"><![CDATA[ارسال رمز جدید ({#$count})]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.user.sendNewPassword.confirmMessage"><![CDATA[آیا واقعاً می خواهید یک رمز عبور جدید ارسال کنید {#$count} کاربر{if $count != 1}ها{/if}?]]></item>
+        <item name="wcf.clipboard.item.com.woltlab.wcf.user.unconfirmEmail"><![CDATA[آدرس ایمیل را تایید نکردن ({#$count})]]></item>
+        <item name="wcf.clipboard.item.mark"><![CDATA[علامت گذاری شی]]></item>
+        <item name="wcf.clipboard.item.markAll"><![CDATA[علامت گذاری همه اشیا]]></item>
+        <item name="wcf.clipboard.item.unmarkAll"><![CDATA[برداشتن علامت همه]]></item>
+        <item name="wcf.clipboard.label.com.woltlab.filebase.file.marked"><![CDATA[{if $count == 1}یک فایل{else}{#$count} فایل ها{/if}]]></item>
+        <item name="wcf.clipboard.label.com.woltlab.filebase.version.marked"><![CDATA[{if $count == 1}یک نسخه{else}{#$count} نسخه ها{/if}]]></item>
+        <item name="wcf.clipboard.label.com.woltlab.gallery.image.marked"><![CDATA[{if $count == 1}یک تصویر{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/Video{/if}{else}{#$count} تصاویر{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/Videos{/if}{/if}]]></item>
+        <item name="wcf.clipboard.label.com.woltlab.wbb.post.marked"><![CDATA[{if $count == 1}یک پست{else}{#$count}  پست ها{/if}]]></item>
+        <item name="wcf.clipboard.label.com.woltlab.wbb.thread.marked"><![CDATA[{if $count == 1}یک پست{else}{#$count} رشته ها{/if}]]></item>
+        <item name="wcf.clipboard.label.com.woltlab.wcf.article.marked"><![CDATA[{if $count == 1}یک مقاله{else}{#$count} مقالات{/if}]]></item>
+        <item name="wcf.clipboard.label.com.woltlab.wcf.conversation.conversation.marked"><![CDATA[{if $count == 1}یک مکالمه{else}{#$count} مکالمات{/if}]]></item>
+        <item name="wcf.clipboard.label.com.woltlab.wcf.media.marked"><![CDATA[{if $count == 1}یک فایل{else}{#$count} فایل ها{/if}]]></item>
         <item name="wcf.clipboard.label.com.woltlab.wcf.moderation.queue.marked"><![CDATA[{plural value=$count 1='One Moderation Item' other='# Moderation Items'}]]></item>
-        <item name="wcf.clipboard.label.com.woltlab.wcf.tag.marked"><![CDATA[{if $count == 1}One Tag{else}{#$count} Tags{/if}]]></item>
-        <item name="wcf.clipboard.label.com.woltlab.wcf.user.marked"><![CDATA[{if $count == 1}One User{else}{#$count} Users{/if}]]></item>
+        <item name="wcf.clipboard.label.com.woltlab.wcf.tag.marked"><![CDATA[{if $count == 1}یک برچسب {else}{#$count} برچسب ها{/if}]]></item>
+        <item name="wcf.clipboard.label.com.woltlab.wcf.user.marked"><![CDATA[{if $count == 1}یک کاربر{else}{#$count} کاربران{/if}]]></item>
     </category>
     <category name="wcf.comment">
         <item name="wcf.comment.add"><![CDATA[Write a comment …]]></item>
