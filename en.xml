@@ -4882,21 +4882,21 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.paidSubscription.userGroups.description"><![CDATA[.خریداران به طور خودکار به گروه های کاربری انتخاب شده اضافه می شوند]]></item>
     </category>
     <category name="wcf.acp.pip">
-        <item name="wcf.acp.pip.abstractMenu.menuItem"><![CDATA[Menu Item Identifier]]></item>
-        <item name="wcf.acp.pip.abstractMenu.menuItem.error.notUnique"><![CDATA[The entered identifier is already used by another menu item.]]></item>
-        <item name="wcf.acp.pip.abstractMenu.menuItemController"><![CDATA[Menu Item Controller]]></item>
-        <item name="wcf.acp.pip.abstractMenu.menuItemLink"><![CDATA[Menu Item Link]]></item>
-        <item name="wcf.acp.pip.abstractMenu.menuItemLink.description"><![CDATA[If no menu item controller is used, the entered link will be used. If, however, a menu item controller is used, the entered link will be appended to the link to the controller.]]></item>
-        <item name="wcf.acp.pip.abstractMenu.menuItemLink.error.noLink"><![CDATA[مقدار وارد شده لینک معتبری نیست.]]></item>
-        <item name="wcf.acp.pip.abstractMenu.menuItemLink.error.noLinkSpecified"><![CDATA[You either have to enter a menu item controller or a menu item link.]]></item>
-        <item name="wcf.acp.pip.abstractMenu.options.description"><![CDATA[At least one of the entered options has to be enabled for the menu item to be visible. Options of non-required packages will be reported as non-existing.]]></item>
-        <item name="wcf.acp.pip.abstractMenu.parentMenuItem"><![CDATA[Parent Menu Item]]></item>
-        <item name="wcf.acp.pip.abstractMenu.parentMenuItem.error.childAsParent"><![CDATA[You cannot select a child menu item of the menu item as its parent.]]></item>
-        <item name="wcf.acp.pip.abstractMenu.parentMenuItem.error.selfParent"><![CDATA[You cannot select the menu item itself as its own parent.]]></item>
-        <item name="wcf.acp.pip.abstractMenu.permissions.description"><![CDATA[The active user must be granted at least one of the entered permissions in order to see the menu item. Permissions of non-required packages will be reported as non-existing.]]></item>
-        <item name="wcf.acp.pip.abstractMenu.showOrder.description"><![CDATA[The entered value determines in which order the menu items with the same parent are shown.]]></item>
-        <item name="wcf.acp.pip.abstractOption.categories.categoryName"><![CDATA[Category Name]]></item>
-        <item name="wcf.acp.pip.abstractOption.categories.options.description"><![CDATA[At least one of the entered options has to be enabled for the options in the category to be editable. Options of non-required packages will be reported as non-existing.]]></item>
+        <item name="wcf.acp.pip.abstractMenu.menuItem"><![CDATA[شناسه آیتم فهرست]]></item>
+        <item name="wcf.acp.pip.abstractMenu.menuItem.error.notUnique"><![CDATA[.شناسه وارد شده قبلاً توسط یکی دیگر از موارد فهرست استفاده شده است]]></item>
+        <item name="wcf.acp.pip.abstractMenu.menuItemController"><![CDATA[کنترل کننده آیتم فهرست]]></item>
+        <item name="wcf.acp.pip.abstractMenu.menuItemLink"><![CDATA[لینک آیتم فهرست]]></item>
+        <item name="wcf.acp.pip.abstractMenu.menuItemLink.description"><![CDATA[.اگر از کنترل کننده آیتم های فهرست استفاده نشود، از لینک وارد شده استفاده می شود. با این حال، اگر از یک کنترل کننده آیتم فهرست استفاده شود، لینک وارد شده به لینک کنترل کننده اضافه می شود]]></item>
+        <item name="wcf.acp.pip.abstractMenu.menuItemLink.error.noLink"><![CDATA[.مقدار وارد شده لینک معتبری نیست]]></item>
+        <item name="wcf.acp.pip.abstractMenu.menuItemLink.error.noLinkSpecified"><![CDATA[.یا باید یک کنترل کننده آیتم فهرست یا لینک آیتم فهرست را وارد کنید]]></item>
+        <item name="wcf.acp.pip.abstractMenu.options.description"><![CDATA[.حداقل یکی از گزینه های وارد شده باید فعال باشد تا آیتم فهرست قابل مشاهده باشد. گزینه های بسته های غیر ضروری به عنوان غیرموجود گزارش می شود]]></item>
+        <item name="wcf.acp.pip.abstractMenu.parentMenuItem"><![CDATA[آیتم فهرست والدین]]></item>
+        <item name="wcf.acp.pip.abstractMenu.parentMenuItem.error.childAsParent"><![CDATA[.شما نمی توانید یک آیتم فهرست فرزند از آیتم فهرست را به عنوان والد آن انتخاب کنید]]></item>
+        <item name="wcf.acp.pip.abstractMenu.parentMenuItem.error.selfParent"><![CDATA[.شما نمی توانید خود آیتم فهرست را به عنوان والد خود انتخاب کنید]]></item>
+        <item name="wcf.acp.pip.abstractMenu.permissions.description"><![CDATA[.کاربر فعال باید حداقل یکی از مجوزهای وارد شده را داشته باشد تا بتواند آیتم فهرست را ببیند.مجوزهای بسته های غیر الزامی به عنوان غیرموجود گزارش می شود]]></item>
+        <item name="wcf.acp.pip.abstractMenu.showOrder.description"><![CDATA[.مقدار وارد شده تعیین می کند که آیتم های فهرست با همان والد به چه ترتیبی نشان داده شوند]]></item>
+        <item name="wcf.acp.pip.abstractOption.categories.categoryName"><![CDATA[نام دسته]]></item>
+        <item name="wcf.acp.pip.abstractOption.categories.options.description"><![CDATA[.حداقل یکی از گزینه های وارد شده باید فعال باشد تا گزینه های دسته قابل ویرایش باشند. حداقل یکی از گزینه های وارد شده باید فعال باشد تا گزینه های دسته قابل ویرایش باشند]]></item>
         <item name="wcf.acp.pip.abstractOption.categories.parentCategoryName"><![CDATA[دسته والد]]></item>
         <item name="wcf.acp.pip.abstractOption.categories.permissions.description"><![CDATA[کاربر فعال باید حداقل یکی از مجوزهای وارد شده را داشته باشد تا گزینه های موجود در دسته قابل ویرایش باشند.مجوزهای بسته های غیر الزامی به عنوان غیرموجود گزارش می شود.]]></item>
         <item name="wcf.acp.pip.abstractOption.categories.showOrder.description"><![CDATA[مقدار وارد شده تعیین می‌کند که دسته‌هایی با همان دسته والد به چه ترتیبی نشان داده شوند.]]></item>
@@ -4916,14 +4916,14 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.pip.abstractOption.options.optionType.select.allowEmptyValue.description"><![CDATA[علاوه بر گزینه های مشخص شده، “(No Selection)” را می توان انتخاب کرد.]]></item>
         <item name="wcf.acp.pip.abstractOption.options.optionType.text.disableAutocomplete"><![CDATA[تکمیل خودکار را غیرفعال کنید]]></item>
         <item name="wcf.acp.pip.abstractOption.options.optionType.text.disableAutocomplete.description"><![CDATA[.پشتیبانی تکمیل خودکار مرورگر برای فیلد ورودی را غیرفعال می کند]]></item>
-        <item name="wcf.acp.pip.abstractOption.options.optionType.text.maxLength"><![CDATA[Maximum Length]]></item>
-        <item name="wcf.acp.pip.abstractOption.options.optionType.text.minLength"><![CDATA[Minimum Length]]></item>
+        <item name="wcf.acp.pip.abstractOption.options.optionType.text.maxLength"><![CDATA[حداکثر طول]]></item>
+        <item name="wcf.acp.pip.abstractOption.options.optionType.text.minLength"><![CDATA[حداقل طول]]></item>
         <item name="wcf.acp.pip.abstractOption.options.optionType.useroptions.isSortable"><![CDATA[فیلدهای کاربر سفارشی قابل مرتب شدن هستند]]></item>
         <item name="wcf.acp.pip.abstractOption.options.optionType.useroptions.isSortable.description"><![CDATA[.فیلدهای کاربر سفارشی را نه تنها قابل انتخاب بلکه قابل مرتب می کند]]></item>
         <item name="wcf.acp.pip.abstractOption.options.options.description"><![CDATA[.حداقل یکی از گزینه های وارد شده باید فعال باشد تا مقدار این گزینه قابل ویرایش باشد. گزینه های بسته های غیر ضروری به عنوان غیرموجود گزارش می شود]]></item>
         <item name="wcf.acp.pip.abstractOption.options.permissions.description"><![CDATA[.کاربر فعال باید حداقل یکی از مجوزهای وارد شده را داشته باشد تا مقدار گزینه قابل ویرایش باشد. مجوزهای بسته های غیر الزامی به عنوان غیرموجود گزارش می شود]]></item>
         <item name="wcf.acp.pip.abstractOption.options.selectOptions"><![CDATA[گزینه های قابل انتخاب]]></item>
-        <item name="wcf.acp.pip.abstractOption.options.selectOptions.description"><![CDATA[هر گزینه باید در یک خط جدید با استفاده از قالب نوشته شود <kbd>ارزش: توصیف</kbd> جایی که <kbd>description</kbd> ممکن است معرف یک عبارت باشد.]]></item>
+        <item name="wcf.acp.pip.abstractOption.options.selectOptions.description"><![CDATA[هر گزینه باید در یک خط جدید با استفاده از قالب نوشته شود <kbd>ارزش: توصیف</kbd> جایی که <kbd>توصیف</kbd> ممکن است معرف یک عبارت باشد.]]></item>
         <item name="wcf.acp.pip.abstractOption.options.showOrder.description"><![CDATA[.مقدار وارد شده تعیین می کند که گزینه های یک دسته به چه ترتیبی نشان داده شوند]]></item>
         <item name="wcf.acp.pip.abstractOption.options.validationPattern"><![CDATA[الگوی اعتبارسنجی]]></item>
         <item name="wcf.acp.pip.abstractOption.options.validationPattern.description"><![CDATA[.الگوی اعتبار سنجی وارد شده برای اعتبارسنجی مقدار وارد شده هنگام ویرایش مقدار گزینه استفاده می شود]]></item>
@@ -4943,7 +4943,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.pip.aclOption.options.name.error.format"><![CDATA[.نام گزینه وارد شده نامعتبر است]]></item>
         <item name="wcf.acp.pip.aclOption.options.name.error.notUnique"><![CDATA[نام وارد شده قبلاً توسط گزینه ACL دیگری برای همان نوع شیء ACL استفاده می شود.]]></item>
         <item name="wcf.acp.pip.acpMenu.icon"><![CDATA[نماد آیتم فهرست]]></item>
-        <item name="wcf.acp.pip.acpMenu.icon.description"><![CDATA[نماد آیتم فهرست فقط برای آیتم های فهرست در سطح اول و برای آیتم های فهرست در سطح چهارم (و پایین ترین) موجود است.. For first level menu items, the icon is shown in addition to the menu item title while for fourth level menu items, only the icon is shown and the menu item title becomes a tooltip.]]></item>
+        <item name="wcf.acp.pip.acpMenu.icon.description"><![CDATA[.نماد آیتم فهرست فقط برای آیتم های فهرست در سطح اول و برای آیتم های فهرست در سطح چهارم (و پایین ترین) موجود است. برای آیتم های فهرست سطح اول، نماد علاوه بر عنوان آیتم فهرست نشان داده می شود، در حالی که برای آیتم های فهرست سطح چهارم، فقط نماد نشان داده می شود و عنوان آیتم فهرست به یک راهنمای ابزار تبدیل می شود]]></item>
         <item name="wcf.acp.pip.acpMenu.info"><![CDATA[این <kbd>acpMenu</kbd>افزونه نصب بسته آیتم های فهرست جدید ACP را نصب می کند. اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/acp-menu/" class="externalURL">مستندات توسعه دهنده</a>.]]></item>
         <item name="wcf.acp.pip.acpMenu.menuItem.description"><![CDATA[شناسه آیتم فهرست باید فرمت داشته باشد <kbd>{literal}{app}.acp.menu.link.{additionalIdentifiers}{/literal}</kbd> جایی که <kbd>{literal}{app}{/literal}</kbd> و <kbd>{literal}{additionalIdentifiers}{/literal}</kbd> باید با مقادیر مناسب جایگزین شوند. <kbd>{literal}{additionalIdentifiers}{/literal}</kbd> ممکن است فقط شامل حروف، اعداد و نقطه باشد.]]></item>
         <item name="wcf.acp.pip.acpMenu.menuItem.error.format"><![CDATA[.شناسه وارد شده نامعتبر است]]></item>
@@ -4955,13 +4955,13 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.pip.acpSearchProvider.providerName.error.tooFewSegments"><![CDATA[نام ارائه دهنده وارد شده فقط شامل {#$segmentCount} بخش{if $segmentCount > 1}s{/if}.]]></item>
         <item name="wcf.acp.pip.acpSearchProvider.showOrder.description"><![CDATA[.مقدار وارد شده تعیین می کند که انواع مختلف نتایج جستجو به چه ترتیبی نشان داده شوند]]></item>
         <item name="wcf.acp.pip.acpTemplateDelete.application"><![CDATA[برنامه]]></item>
-        <item name="wcf.acp.pip.acpTemplateDelete.info"><![CDATA[این <kbd>acpTemplateDelete</kbd> package installation plugin installs deletes templates installed with the <kbd>acpTemplate</kbd> package installation plugin. اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/acpTemplateDelete/" class="externalURL">مستندات توسعه دهنده</a>.]]></item>
+        <item name="wcf.acp.pip.acpTemplateDelete.info"><![CDATA[این <kbd>acpTemplateDelete</kbd> افزونه نصب بسته نصب ،قالب های نصب شده را حذف میکند با <kbd>acpTemplate</kbd> افزونه نصب بسته. اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/acpTemplateDelete/" class="externalURL">مستندات توسعه دهنده</a>.]]></item>
         <item name="wcf.acp.pip.acpTemplateDelete.template"><![CDATA[قالب]]></item>
         <item name="wcf.acp.pip.acpTemplateDelete.template.error.tplSuffix"><![CDATA[فقط نام قالب را بدون پسوند فایل وارد کنید <kbd>.tpl</kbd>.]]></item>
         <item name="wcf.acp.pip.bbcode.attributes"><![CDATA[ویژگی ها]]></item>
         <item name="wcf.acp.pip.bbcode.bbcodeTag"><![CDATA[شناسه BBCode]]></item>
-        <item name="wcf.acp.pip.bbcode.bbcodeTag.description"><![CDATA[شناسه متنی BBCode برای شناسایی کدهای BBC استفاده می شود، به عنوان مثال هنگام به روز رسانی کدهای BBC. شناسه ممکن است فقط شامل حروف کوچک و اعداد باشد..]]></item>
-        <item name="wcf.acp.pip.bbcode.bbcodeTag.error.allNone"><![CDATA[شناسه ممکن است هیچکدام نباشد <kbd>all</kbd> نه <kbd>none</kbd>.]]></item>
+        <item name="wcf.acp.pip.bbcode.bbcodeTag.description"><![CDATA[شناسه متنی BBCode برای شناسایی کدهای BBC استفاده می شود، به عنوان مثال هنگام به روز رسانی کدهای BBC. شناسه ممکن است فقط شامل حروف کوچک و اعداد باشد.]]></item>
+        <item name="wcf.acp.pip.bbcode.bbcodeTag.error.allNone"><![CDATA[شناسه ممکن است هیچکدام نباشد <kbd>همه</kbd> نه <kbd>هیچ یک</kbd>.]]></item>
         <item name="wcf.acp.pip.bbcode.bbcodeTag.error.format"><![CDATA[.شناسه ممکن است فقط شامل حروف کوچک و اعداد باشد]]></item>
         <item name="wcf.acp.pip.bbcode.bbcodeTag.error.notUnique"><![CDATA[شناسه وارد شده قبلاً توسط BBCode دیگری استفاده می شد.]]></item>
         <item name="wcf.acp.pip.bbcode.buttonLabel"><![CDATA[برچسب دکمه]]></item>
@@ -4972,20 +4972,20 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.pip.bbcode.htmlOpen.description"><![CDATA[برچسب باز کردن عنصر HTML که محتوای BBCode را می‌پیچد (بدون براکت‌های زاویه اصلی یا انتهایی).]]></item>
         <item name="wcf.acp.pip.bbcode.htmlOpen.error.leadingBracket"><![CDATA[.برچسب ممکن است با یک براکت زاویه شروع نشود]]></item>
         <item name="wcf.acp.pip.bbcode.htmlOpen.error.trailingBracket"><![CDATA[.برچسب ممکن است با یک براکت زاویه ختم نشود]]></item>
-        <item name="wcf.acp.pip.bbcode.iconPath"><![CDATA[Path to icon file]]></item>
+        <item name="wcf.acp.pip.bbcode.iconPath"><![CDATA[مسیر فایل نمایه]]></item>
         <item name="wcf.acp.pip.bbcode.iconPath.description"><![CDATA[مسیر وارد شده باید نسبت به <kbd>{'WCF_DIR'|constant}icon/</kbd>.]]></item>
         <item name="wcf.acp.pip.bbcode.iconPath.error.fileDoesNotExist"><![CDATA[.فایل وارد شده وجود ندارد]]></item>
-        <item name="wcf.acp.pip.bbcode.iconType"><![CDATA[Button Icon Type]]></item>
+        <item name="wcf.acp.pip.bbcode.iconType"><![CDATA[نوع نمایه دکمه]]></item>
         <item name="wcf.acp.pip.bbcode.iconType.filePath"><![CDATA[تصویر]]></item>
         <item name="wcf.acp.pip.bbcode.iconType.fontAwesome"><![CDATA[FontAwesome Icon]]></item>
-        <item name="wcf.acp.pip.bbcode.info"><![CDATA[این <kbd>bbcode</kbd> package installation plugin installs new BBCodes. You can find more information in the <a href="https://docs.woltlab.com/latest/package/pip/bbcode/" class="externalURL">developer documentation</a>.]]></item>
+        <item name="wcf.acp.pip.bbcode.info"><![CDATA[این <kbd>bbcode</kbd> افزونه نصب بسته، BBCode های جدیدی را نصب می کند. اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/bbcode/" class="externalURL">مستندات توسعه دهنده</a>.]]></item>
         <item name="wcf.acp.pip.bbcode.isBlockElement"><![CDATA[BBCode نشان دهنده عنصر بلوک است]]></item>
         <item name="wcf.acp.pip.bbcode.isBlockElement.description"><![CDATA[.عناصر مسدود می توانند شامل خطوط شکسته و پاراگراف باشند و به طور کلی کل عرض موجود را اشغال کنند. این گزینه نباید برای عناصر درون خطی انتخاب شود]]></item>
         <item name="wcf.acp.pip.bbcode.isSourceCode"><![CDATA[محتوا نشان دهنده کد منبع است]]></item>
         <item name="wcf.acp.pip.bbcode.isSourceCode.description"><![CDATA[محتوای BBCode تجزیه نخواهد شد.]]></item>
         <item name="wcf.acp.pip.bbcode.showButton"><![CDATA[دکمه نمایش در ویرایشگر WYSIWYG]]></item>
         <item name="wcf.acp.pip.bbcode.showButton.description"><![CDATA[BBCode با کلیک بر روی دکمه مرتبط در نوار ابزار ویرایشگر WYSIWYG به راحتی در دسترس خواهد بود.]]></item>
-        <item name="wcf.acp.pip.bbcode.wysiwygIcon"><![CDATA[Icon]]></item>
+        <item name="wcf.acp.pip.bbcode.wysiwygIcon"><![CDATA[نمایه]]></item>
         <item name="wcf.acp.pip.box.boxType"><![CDATA[نوع جعبه]]></item>
         <item name="wcf.acp.pip.box.boxType.description"><![CDATA[محتوای “text” کادرها را می توان توسط مدیران با استفاده از ویرایشگر داخلی WYSIWYG ویرایش کرد. “html” جعبه ها علاوه بر این اجازه می دهند کد HTML و “tpl” boxes also template scripting. The content of “system” boxes cannot be edited by administrators as their content is provided by the boxes' controller.]]></item>
         <item name="wcf.acp.pip.box.content"><![CDATA[فهرست]]></item>
@@ -4997,7 +4997,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.pip.box.identifier.description"><![CDATA[شناسه جعبه برای به روز رسانی جعبه ها استفاده می شود. شناسه شامل حداقل چهار بخش است که با نقطه از هم جدا شده اند. هر بخش نباید خالی باشد و ممکن است فقط شامل کاراکترهای زیر باشد: <kbd>[A-z0-9-_]</kbd>. به طور کلی، اولین قسمت از شناسه فهرست، شناسه بسته است. مثال: <kbd>com.foo.bar.package.Box</kbd>]]></item>
         <item name="wcf.acp.pip.box.identifier.error.notUnique"><![CDATA[.شناسه وارد شده قبلاً توسط کادر دیگری استفاده می شود]]></item>
         <item name="wcf.acp.pip.box.identifier.error.tooFewSegments"><![CDATA[شناسه فقط شامل {#$segmentCount} بخش{if $segmentCount > 1}s{/if}.]]></item>
-        <item name="wcf.acp.pip.box.info"><![CDATA[The <kbd>box</kbd> افزونه نصب بسته، بسته های از پیش پیکربندی شده جدیدی را نصب می کند. اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/box/" class="externalURL">developer documentation</a>.]]></item>
+        <item name="wcf.acp.pip.box.info"><![CDATA[The <kbd>box</kbd> افزونه نصب بسته، بسته های از پیش پیکربندی شده جدیدی را نصب می کند. اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/box/" class="externalURL">مستندات توسعه دهنده</a>.]]></item>
         <item name="wcf.acp.pip.box.name"><![CDATA[اسم]]></item>
         <item name="wcf.acp.pip.box.name.description"><![CDATA[نام جعبه در لیست جعبه در ACP نمایش داده می شود.]]></item>
         <item name="wcf.acp.pip.box.objectType"><![CDATA[کنترل کننده]]></item>
