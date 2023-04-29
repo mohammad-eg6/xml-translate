@@ -4026,8 +4026,8 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.option.enable_production_debug_mode.description"><![CDATA[.آدرس اینترنتی فعلی را به جستارهای پایگاه داده اضافه می کند تا به جستجوی آنها در فایل های گزارش سرور پایگاه داده کمک کند]]></item>
         <item name="wcf.acp.option.enable_share_buttons"><![CDATA[نمایش دکمه اشتراک محتوا]]></item>
         <item name="wcf.acp.option.enable_user_authentication_failure"><![CDATA[ورود ناموفق تلاش برای ورود به سیستم]]></item>
-        <item name="wcf.acp.option.enable_woltlab_news"><![CDATA[Display WoltLab news]]></item>
-        <item name="wcf.acp.option.enable_woltlab_news.description"><![CDATA[Displays the current WoltLab News on the Administration Control Panel’s index page.]]></item>
+        <item name="wcf.acp.option.enable_woltlab_news"><![CDATA[نمایش اخبار WoltLab]]></item>
+        <item name="wcf.acp.option.enable_woltlab_news.description"><![CDATA[اخبار WoltLab فعلی را در صفحه فهرست پنل مدیریت نمایش می دهد.]]></item>
         <item name="wcf.acp.option.error.controllerReplacementCollision"><![CDATA[نام مستعار “{$urlControllerReplacementError}” برابر با یک کنترل کننده موجود است و نمی توان از آن استفاده کرد.]]></item>
         <item name="wcf.acp.option.error.controllerReplacementDuplicateAlias"><![CDATA[نام مستعار “{$urlControllerReplacementError}” در حال حاضر در حال استفاده است.]]></item>
         <item name="wcf.acp.option.error.controllerReplacementDuplicateController"><![CDATA[کنترل کننده “{$urlControllerReplacementError}” قبلا نام مستعار شده است]]></item>
