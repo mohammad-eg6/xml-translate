@@ -6462,142 +6462,142 @@ Your account on the website: {@PAGE_TITLE|phrase} [URL:{link isEmail=true}{/link
         <item name="wcf.clipboard.label.com.woltlab.wcf.user.marked"><![CDATA[{if $count == 1}یک کاربر{else}{#$count} کاربران{/if}]]></item>
     </category>
     <category name="wcf.comment">
-        <item name="wcf.comment.add"><![CDATA[Write a comment …]]></item>
-        <item name="wcf.comment.approve"><![CDATA[Approve]]></item>
-        <item name="wcf.comment.button.response.add"><![CDATA[Reply]]></item>
-        <item name="wcf.comment.delete.confirmMessage"><![CDATA[Do you really want to delete this comment?]]></item>
-        <item name="wcf.comment.description"><![CDATA[Press Enter to send or Escape to cancel.]]></item>
-        <item name="wcf.comment.error.floodControl"><![CDATA[You have already written a comment within the last {if $__wcf->getSession()->getPermission('user.comment.floodControlTime') > 1}{#$__wcf->getSession()->getPermission('user.comment.floodControlTime')} seconds{else}second{/if}. You must wait at least {#$lastCommentTime+$__wcf->getSession()->getPermission('user.comment.floodControlTime')-TIME_NOW} second{if ($lastCommentTime+$__wcf->getSession()->getPermission('user.comment.floodControlTime')-TIME_NOW) != 1}s{/if} before attempting to write a new comment.]]></item>
-        <item name="wcf.comment.guestDialog.title"><![CDATA[Guest Comment]]></item>
-        <item name="wcf.comment.moderation.disabledComment"><![CDATA[Your comment requires approval by a moderator, until then it will remain invisible for others.]]></item>
-        <item name="wcf.comment.moderation.info"><![CDATA[Newly created comments need to be manually approved before publication, other users cannot see this comment until it has been approved.]]></item>
-        <item name="wcf.comment.more"><![CDATA[More Comments]]></item>
-        <item name="wcf.comment.objectAuthor"><![CDATA[Author]]></item>
-        <item name="wcf.comment.response.add"><![CDATA[Reply …]]></item>
-        <item name="wcf.comment.response.more"><![CDATA[{literal}{if $count == 1}One more reply{else}{#$count} more replies{/if}{/literal}]]></item>
-        <item name="wcf.comment.sortField.cumulativeLikes"><![CDATA[Reactions]]></item>
-        <item name="wcf.comment.sortField.time"><![CDATA[Date]]></item>
+        <item name="wcf.comment.add"><![CDATA[یک نظر بنویسید...]]></item>
+        <item name="wcf.comment.approve"><![CDATA[تایید]]></item>
+        <item name="wcf.comment.button.response.add"><![CDATA[پاسخ]]></item>
+        <item name="wcf.comment.delete.confirmMessage"><![CDATA[آیا واقعاً می خواهید این نظر را حذف کنید؟]]></item>
+        <item name="wcf.comment.description"><![CDATA[برای ارسال Enter یا برای لغو Escape را فشار دهید.]]></item>
+        <item name="wcf.comment.error.floodControl"><![CDATA[شما قبلاً یک نظر در آخرین کامنت نوشته اید {if $__wcf->getSession()->getPermission('user.comment.floodControlTime') > 1}{#$__wcf->getSession()->getPermission('user.comment.floodControlTime')} ثانیه ها{else}second{/if}. حداقل باید صبر کنید {#$lastCommentTime+$__wcf->getSession()->getPermission('user.comment.floodControlTime')-TIME_NOW} ثانیه{if ($lastCommentTime+$__wcf->getSession()->getPermission('user.comment.floodControlTime')-TIME_NOW) != 1}ها{/if} قبل از تلاش برای نوشتن یک نظر جدید]]></item>
+        <item name="wcf.comment.guestDialog.title"><![CDATA[نظر مهمان]]></item>
+        <item name="wcf.comment.moderation.disabledComment"><![CDATA[نظر شما نیاز به تایید تعدیل کننده دارد، تا آن زمان برای دیگران نامرئی خواهد ماند.]]></item>
+        <item name="wcf.comment.moderation.info"><![CDATA[نظرات جدید ایجاد شده باید قبل از انتشار به صورت دستی تأیید شوند، سایر کاربران نمی توانند این نظر را ببینند تا زمانی که تأیید شود.]]></item>
+        <item name="wcf.comment.more"><![CDATA[نظرات بیشتر]]></item>
+        <item name="wcf.comment.objectAuthor"><![CDATA[نویسنده]]></item>
+        <item name="wcf.comment.response.add"><![CDATA[پاسخ …]]></item>
+        <item name="wcf.comment.response.more"><![CDATA[{literal}{if $count == 1}یک پاسخ دیگر{else}{#$count} پاسخ های بیشتر{/if}{/literal}]]></item>
+        <item name="wcf.comment.sortField.cumulativeLikes"><![CDATA[واکنش ها]]></item>
+        <item name="wcf.comment.sortField.time"><![CDATA[تاریخ]]></item>
     </category>
     <category name="wcf.condition">
-        <item name="wcf.condition.greaterThan"><![CDATA[greater than]]></item>
-        <item name="wcf.condition.greaterThan.error.lessThan"><![CDATA[The “less than” value and the “greater than” value are conflicting.]]></item>
-        <item name="wcf.condition.greaterThan.error.maxValue"><![CDATA[The “greater than” value cannot be greater than {#$maxValue}.]]></item>
-        <item name="wcf.condition.greaterThan.error.minValue"><![CDATA[The “greater than” value cannot be less than {#$minValue}.]]></item>
-        <item name="wcf.condition.lessThan"><![CDATA[less than]]></item>
-        <item name="wcf.condition.lessThan.error.maxValue"><![CDATA[The “less than” value cannot be greater than {#$maxValue}.]]></item>
-        <item name="wcf.condition.lessThan.error.minValue"><![CDATA[The “less than” value cannot be less than {#$minValue}.]]></item>
-        <item name="wcf.condition.timestamp.error.endBeforeStart"><![CDATA[The end date is prior to the start date.]]></item>
-        <item name="wcf.condition.timestamp.error.invalidEnd"><![CDATA[The end date is invalid.]]></item>
-        <item name="wcf.condition.timestamp.error.invalidStart"><![CDATA[The start date is invalid.]]></item>
+        <item name="wcf.condition.greaterThan"><![CDATA[بزرگتر از]]></item>
+        <item name="wcf.condition.greaterThan.error.lessThan"><![CDATA[مقدار «کمتر از» و «بیشتر از» با هم متضاد هستند.]]></item>
+        <item name="wcf.condition.greaterThan.error.maxValue"><![CDATA[مقدار "بیشتر از" نمی تواند بیشتر از آن باشد {#$maxValue}.]]></item>
+        <item name="wcf.condition.greaterThan.error.minValue"><![CDATA[مقدار "بیشتر از" نمی تواند کمتر از آن باشد {#$minValue}.]]></item>
+        <item name="wcf.condition.lessThan"><![CDATA[کمتر از]]></item>
+        <item name="wcf.condition.lessThan.error.maxValue"><![CDATA[مقدار "کمتر از" نمی تواند بیشتر از آن باشد {#$maxValue}.]]></item>
+        <item name="wcf.condition.lessThan.error.minValue"><![CDATA[مقدار "کمتر از" نمی تواند کمتر از آن باشد {#$minValue}.]]></item>
+        <item name="wcf.condition.timestamp.error.endBeforeStart"><![CDATA[تاریخ پایان قبل از تاریخ شروع است.]]></item>
+        <item name="wcf.condition.timestamp.error.invalidEnd"><![CDATA[تاریخ پایان نامعتبر است.]]></item>
+        <item name="wcf.condition.timestamp.error.invalidStart"><![CDATA[تاریخ شروع نامعتبر است.]]></item>
     </category>
     <category name="wcf.contact">
-        <item name="wcf.contact.confirmPrivacyPolicy"><![CDATA[I have read the <a href="{page}com.woltlab.wcf.PrivacyPolicy{/page}">privacy policy</a> and expressly accept it. <span class="customOptionRequired">*</span>]]></item>
-        <item name="wcf.contact.data"><![CDATA[Your Inquiry]]></item>
-        <item name="wcf.contact.mail.html"><![CDATA[<h2>Hello,</h2>
+        <item name="wcf.contact.confirmPrivacyPolicy"><![CDATA[من  <a href="{page}com.woltlab.wcf.PrivacyPolicy{/page}">privacy policy</a>  را خوانده ام و صریحاً آن را می پذیرم. <span class="customOptionRequired">*</span>]]></item>
+        <item name="wcf.contact.data"><![CDATA[پرسش شما]]></item>
+        <item name="wcf.contact.mail.html"><![CDATA[<h2>سلام,</h2>
 
-<p>“{$name}” sent you a message on <a href="{link isHtmlEmail=true}{/link}">{PAGE_TITLE|phrase}</a> via the contact form:</p>
+<p>“{$name}” برای شما پیام ارسال کرد <a href="{link isHtmlEmail=true}{/link}">{PAGE_TITLE|phrase}</a> از طریق تماس form:</p>
 <p><br></p>
-<p>Email: <a href="mailto:{$emailAddress}">{$emailAddress}</a></p>
+<p>ایمیل: <a href="mailto:{$emailAddress}">{$emailAddress}</a></p>
 {foreach from=$options item=option}
 <p><strong>{@$option['title']}:</strong> {@$option['htmlValue']}</p>
 {/foreach}
 {if !$attachments|empty}
 <p><br></p>
-<p>Attachments:</p>
+<p>پیوست ها:</p>
 <ul>
 {foreach from=$attachments item=attachment}
 <li><a href="{$attachment->getLink()}">{$attachment->getTitle()}</a></li>
 {/foreach}
 </ul>
 {if CONTACT_FORM_PRUNE_ATTACHMENTS}
-<p><small>(Attachments are removed after {if CONTACT_FORM_PRUNE_ATTACHMENTS == 1}one day{else}{CONTACT_FORM_PRUNE_ATTACHMENTS} days{/if}.)</small></p>
+<p><small>(ضمیمه ها حذف شدند بعد از {if CONTACT_FORM_PRUNE_ATTACHMENTS == 1}یک روز{else}{CONTACT_FORM_PRUNE_ATTACHMENTS} روز ها{/if}.)</small></p>
 {/if}
 {/if}]]></item>
-        <item name="wcf.contact.mail.plaintext"><![CDATA[Hello,
+        <item name="wcf.contact.mail.plaintext"><![CDATA[سلام,
 
-“{@$name}” sent you a message on {@PAGE_TITLE|phrase} via the contact form:
+“{@$name}” برای شما پیام ارسال کرد {@PAGE_TITLE|phrase} از طریق فرم تماس:
 
-Email: {@$emailAddress} {* this line ends with a space *}
+ایمیل: {@$emailAddress} {* this line ends with a space *}
 {foreach from=$options item=option}
 {@$option['title']}: {if !$option['isMessage']}{@$option['value']}{else} {* this line ends with a space *}
 {@$option['value']}{/if} {* this line ends with a space *}
 {/foreach}
 {if !$attachments|empty}
 
-Attachments:
+پیوست ها:
 {foreach from=$attachments item=attachment}
 - {@$attachment->getTitle()} [URL: {@$attachment->getLink()} ]
 {/foreach}
-{if CONTACT_FORM_PRUNE_ATTACHMENTS}(Attachments are removed after {if CONTACT_FORM_PRUNE_ATTACHMENTS == 1}one day{else}{CONTACT_FORM_PRUNE_ATTACHMENTS} days{/if}.){/if} {* this line ends with a space *}
+{if CONTACT_FORM_PRUNE_ATTACHMENTS}(ضمیمه ها حذف شدند بعد از {if CONTACT_FORM_PRUNE_ATTACHMENTS == 1}یک روز{else}{CONTACT_FORM_PRUNE_ATTACHMENTS} روز ها{/if}.){/if} {* this line ends with a space *}
 {/if}]]></item>
-        <item name="wcf.contact.mail.subject"><![CDATA[New message via the contact form]]></item>
-        <item name="wcf.contact.option1"><![CDATA[Subject]]></item>
-        <item name="wcf.contact.option2"><![CDATA[Message]]></item>
-        <item name="wcf.contact.optionDescription1"><![CDATA[Short and precise description of your inquiry.]]></item>
-        <item name="wcf.contact.options.required"><![CDATA[Required fields]]></item>
-        <item name="wcf.contact.recipient.name1"><![CDATA[Administrator]]></item>
-        <item name="wcf.contact.recipientID"><![CDATA[Recipient]]></item>
-        <item name="wcf.contact.sender"><![CDATA[Sender]]></item>
-        <item name="wcf.contact.sender.information"><![CDATA[Your Data]]></item>
-        <item name="wcf.contact.success"><![CDATA[Message has been sent.]]></item>
+        <item name="wcf.contact.mail.subject"><![CDATA[پیام جدید از طریق فرم تماس]]></item>
+        <item name="wcf.contact.option1"><![CDATA[موضوع]]></item>
+        <item name="wcf.contact.option2"><![CDATA[پیام]]></item>
+        <item name="wcf.contact.optionDescription1"><![CDATA[شرح کوتاه و دقیق درخواست شما.]]></item>
+        <item name="wcf.contact.options.required"><![CDATA[فیلدهای مورد نیاز]]></item>
+        <item name="wcf.contact.recipient.name1"><![CDATA[مدیر]]></item>
+        <item name="wcf.contact.recipientID"><![CDATA[گیرنده]]></item>
+        <item name="wcf.contact.sender"><![CDATA[فرستنده]]></item>
+        <item name="wcf.contact.sender.information"><![CDATA[داده های شما]]></item>
+        <item name="wcf.contact.success"><![CDATA[پیام ارسال شده است.]]></item>
     </category>
     <category name="wcf.conversation">
-        <item name="wcf.conversation.add"><![CDATA[Create Conversation]]></item>
-        <item name="wcf.conversation.attachments"><![CDATA[Conversation contains {#$conversation->attachments} attachment{if $conversation->attachments != 1}s{/if}]]></item>
-        <item name="wcf.conversation.button.add"><![CDATA[Create Conversation]]></item>
-        <item name="wcf.conversation.button.saveAsDraft"><![CDATA[Save Draft]]></item>
-        <item name="wcf.conversation.conversations"><![CDATA[Conversations]]></item>
-        <item name="wcf.conversation.error.floodControl"><![CDATA[You have already started {if $limit == 1}one conversation{else}{#$limit} conversations{/if} in the past 24 hours. Please wait until <strong>{@$notBefore|time}</strong> before you start a new conversation.]]></item>
-        <item name="wcf.conversation.error.mailboxIsFull"><![CDATA[You have reached your maximum conversations limit and cannot create new conversations.]]></item>
-        <item name="wcf.conversation.filter.participants"><![CDATA[Filter by Participants]]></item>
-        <item name="wcf.conversation.folder.draft"><![CDATA[Drafts]]></item>
-        <item name="wcf.conversation.folder.hidden"><![CDATA[Hidden]]></item>
-        <item name="wcf.conversation.folder.outbox"><![CDATA[Started]]></item>
-        <item name="wcf.conversation.folders"><![CDATA[Folders]]></item>
-        <item name="wcf.conversation.gotoLastPost"><![CDATA[Go to Last Message]]></item>
-        <item name="wcf.conversation.hideConversation"><![CDATA[Manage Participation]]></item>
-        <item name="wcf.conversation.hideConversation.leave"><![CDATA[Hide]]></item>
-        <item name="wcf.conversation.hideConversation.leave.description"><![CDATA[The conversation will no longer be listed as an active conversation until a new message is written to it.]]></item>
-        <item name="wcf.conversation.hideConversation.leavePermanently"><![CDATA[Leave]]></item>
-        <item name="wcf.conversation.hideConversation.leavePermanently.description"><![CDATA[After leaving the conversation, you will no longer be listed as an active participant.]]></item>
-        <item name="wcf.conversation.hideConversation.restore"><![CDATA[Mark as Active]]></item>
-        <item name="wcf.conversation.information"><![CDATA[Details]]></item>
-        <item name="wcf.conversation.invisible"><![CDATA[invisible]]></item>
-        <item name="wcf.conversation.invisibleParticipants"><![CDATA[Invisible Participants]]></item>
-        <item name="wcf.conversation.invisibleParticipants.description"><![CDATA[Invisible participants remain invisible to the other participants until they write a message.]]></item>
-        <item name="wcf.conversation.lastPostTime"><![CDATA[Last Reply]]></item>
-        <item name="wcf.conversation.lastVisitTime"><![CDATA[Conversation Read]]></item>
-        <item name="wcf.conversation.leave.title"><![CDATA[Manage Participation]]></item>
-        <item name="wcf.conversation.markAsRead.doubleClick"><![CDATA[Double-Click to Mark This Conversation Read]]></item>
-        <item name="wcf.conversation.message"><![CDATA[Message]]></item>
-        <item name="wcf.conversation.message.button.add"><![CDATA[Reply]]></item>
-        <item name="wcf.conversation.message.edit"><![CDATA[Edit Message]]></item>
-        <item name="wcf.conversation.message.editNote"><![CDATA[{$message->username} edited this message {#$message->editCount} times, last: {@$message->lastEditTime|time}.]]></item>
-        <item name="wcf.conversation.message.error.floodControl"><![CDATA[You have already sent a message within the last {plural value=$__wcf->getSession()->getPermission('user.conversation.floodControlTime') 1='second' other='# seconds'}. You must wait at least {plural value=$waitTime 1='one second' other='# seconds'} before attempting to write a new message.]]></item>
-        <item name="wcf.conversation.message.permalink"><![CDATA[Permalink to {#$startIndex}. message]]></item>
-        <item name="wcf.conversation.noConversations"><![CDATA[There are no conversations at the moment.]]></item>
-        <item name="wcf.conversation.noMoreItems"><![CDATA[You have no recent conversations.]]></item>
-        <item name="wcf.conversation.noParticipantsWarning"><![CDATA[You are about to reply to a conversation without other participants, nobody is going to read your message!]]></item>
-        <item name="wcf.conversation.ownPosts"><![CDATA[Conversation contains your own messages]]></item>
-        <item name="wcf.conversation.participantCanInvite"><![CDATA[Participants can add new participants]]></item>
-        <item name="wcf.conversation.participants"><![CDATA[Participants]]></item>
-        <item name="wcf.conversation.participants.description"><![CDATA[Multiple users must be entered separately.]]></item>
-        <item name="wcf.conversation.participants.error.canNotUseConversation"><![CDATA[{$errorData[username]} is not allowed to participate in a conversation.]]></item>
-        <item name="wcf.conversation.participants.error.doesNotAcceptConversation"><![CDATA[{$errorData[username]} does not want to be added in conversations.]]></item>
-        <item name="wcf.conversation.participants.error.duplicate"><![CDATA[{$errorData[username]} is already a participant of this conversation.]]></item>
-        <item name="wcf.conversation.participants.error.emptyGroup"><![CDATA[All members of the entered user groups already participate in this conversation.]]></item>
-        <item name="wcf.conversation.participants.error.ignoresYou"><![CDATA[{$errorData[username]} is blocking you.]]></item>
-        <item name="wcf.conversation.participants.error.intersects"><![CDATA[{$errorData[username]} was already added as a visible participant.]]></item>
-        <item name="wcf.conversation.participants.error.invisibleParticipantsNoPermission"><![CDATA[You do not have the permission to add invisible participants.]]></item>
-        <item name="wcf.conversation.participants.error.isAuthor"><![CDATA[You are already a participant of this conversation.]]></item>
-        <item name="wcf.conversation.participants.error.mailboxIsFull"><![CDATA[{$errorData[username]} is already participating in too many conversations and cannot be added.]]></item>
-        <item name="wcf.conversation.participants.error.notFound"><![CDATA[The username “{$errorData[username]}” does not exist.]]></item>
-        <item name="wcf.conversation.participants.error.participantCanInviteNoPermission"><![CDATA[You do not have the permission to allow participants to add new participants.]]></item>
-        <item name="wcf.conversation.participants.error.tooManyParticipants"><![CDATA[You have added too many participants, you can add up to {#$__wcf->getSession()->getPermission('user.conversation.maxParticipants')} participants.]]></item>
-        <item name="wcf.conversation.participants.other"><![CDATA[and {if $conversation->participants - $participantSummaryCount == 1}one other{else}{#$conversation->participants-$participantSummaryCount} others{/if}]]></item>
-        <item name="wcf.conversation.participants.removeParticipant"><![CDATA[Remove Participant]]></item>
-        <item name="wcf.conversation.participants.removeParticipant.confirmMessage"><![CDATA[Do you really want to remove <span class="confirmationObject">{$participant->username}</span> from this conversation?]]></item>
-        <item name="wcf.conversation.quota"><![CDATA[Quota]]></item>
+        <item name="wcf.conversation.add"><![CDATA[ایجاد مکالمه]]></item>
+        <item name="wcf.conversation.attachments"><![CDATA[مکالمه شامل {#$conversation->attachments} پیوست{if $conversation->attachments != 1}ها{/if}]]></item>
+        <item name="wcf.conversation.button.add"><![CDATA[ایجاد مکالمه]]></item>
+        <item name="wcf.conversation.button.saveAsDraft"><![CDATA[ذخیره پیش نویس]]></item>
+        <item name="wcf.conversation.conversations"><![CDATA[گفتگو]]></item>
+        <item name="wcf.conversation.error.floodControl"><![CDATA[شما قبلا شروع کرده اید {if $limit == 1}یک مکالمه{else}{#$limit} گفتگو ها{/if} در 24 ساعت گذشته لطفا صبر کنید تا <strong>{@$notBefore|time}</strong> قبل از شروع مکالمه جدید]]></item>
+        <item name="wcf.conversation.error.mailboxIsFull"><![CDATA[شما به حداکثر حد مجاز مکالمه خود رسیده اید و نمی توانید مکالمه جدیدی ایجاد کنید.]]></item>
+        <item name="wcf.conversation.filter.participants"><![CDATA[فیلتر بر اساس شرکت کنندگان]]></item>
+        <item name="wcf.conversation.folder.draft"><![CDATA[پیش نویس ها]]></item>
+        <item name="wcf.conversation.folder.hidden"><![CDATA[پنهان ]]></item>
+        <item name="wcf.conversation.folder.outbox"><![CDATA[آغاز شده]]></item>
+        <item name="wcf.conversation.folders"><![CDATA[پوشه ها]]></item>
+        <item name="wcf.conversation.gotoLastPost"><![CDATA[به آخرین پیام بروید]]></item>
+        <item name="wcf.conversation.hideConversation"><![CDATA[مدیریت مشارکت]]></item>
+        <item name="wcf.conversation.hideConversation.leave"><![CDATA[پنهان کردن ]]></item>
+        <item name="wcf.conversation.hideConversation.leave.description"><![CDATA[مکالمه تا زمانی که پیام جدیدی در آن نوشته نشود، دیگر به عنوان یک مکالمه فعال فهرست نمی شود.]]></item>
+        <item name="wcf.conversation.hideConversation.leavePermanently"><![CDATA[ترک کردن]]></item>
+        <item name="wcf.conversation.hideConversation.leavePermanently.description"><![CDATA[پس از ترک مکالمه، دیگر به عنوان یک شرکت کننده فعال در لیست قرار نخواهید داشت.]]></item>
+        <item name="wcf.conversation.hideConversation.restore"><![CDATA[علامت گذاری به عنوان فعال]]></item>
+        <item name="wcf.conversation.information"><![CDATA[جزئیات]]></item>
+        <item name="wcf.conversation.invisible"><![CDATA[نامرئی]]></item>
+        <item name="wcf.conversation.invisibleParticipants"><![CDATA[شرکت کنندگان نامرئی]]></item>
+        <item name="wcf.conversation.invisibleParticipants.description"><![CDATA[شرکت کنندگان نامرئی برای سایر شرکت کنندگان تا زمانی که پیامی بنویسند نامرئی می مانند.]]></item>
+        <item name="wcf.conversation.lastPostTime"><![CDATA[آخرین پاسخ]]></item>
+        <item name="wcf.conversation.lastVisitTime"><![CDATA[گفتگو بخوانید]]></item>
+        <item name="wcf.conversation.leave.title"><![CDATA[مدیریت مشارکت]]></item>
+        <item name="wcf.conversation.markAsRead.doubleClick"><![CDATA[برای علامت گذاری این مکالمه به عنوان خوانده شده، دوبار کلیک کنید]]></item>
+        <item name="wcf.conversation.message"><![CDATA[پیام]]></item>
+        <item name="wcf.conversation.message.button.add"><![CDATA[پاسخ]]></item>
+        <item name="wcf.conversation.message.edit"><![CDATA[ویرایش پیام]]></item>
+        <item name="wcf.conversation.message.editNote"><![CDATA[{$message->username} این پیام را ویرایش کرد {#$message->editCount} بار، آخرین: {@$message->lastEditTime|time}.]]></item>
+        <item name="wcf.conversation.message.error.floodControl"><![CDATA[شما قبلاً یک پیام در آخرین بار ارسال کرده اید {plural value=$__wcf->getSession()->getPermission('user.conversation.floodControlTime') 1='second' other='# seconds'}. حداقل باید صبر کنید {plural value=$waitTime 1='one second' other='# seconds'} قبل از تلاش برای نوشتن یک پیام جدید]]></item>
+        <item name="wcf.conversation.message.permalink"><![CDATA[پیوند دائمی به {#$startIndex}. پیام]]></item>
+        <item name="wcf.conversation.noConversations"><![CDATA[در حال حاضر هیچ گفتگویی وجود ندارد.]]></item>
+        <item name="wcf.conversation.noMoreItems"><![CDATA[هیچ مکالمه اخیری ندارید.]]></item>
+        <item name="wcf.conversation.noParticipantsWarning"><![CDATA[شما در حال پاسخ دادن به یک مکالمه بدون شرکت‌کنندگان دیگر هستید، هیچ‌کس پیام شما را نخواهد خواند!]]></item>
+        <item name="wcf.conversation.ownPosts"><![CDATA[مکالمه حاوی پیام های شماست]]></item>
+        <item name="wcf.conversation.participantCanInvite"><![CDATA[شرکت کنندگان می توانند شرکت کنندگان جدید اضافه کنند]]></item>
+        <item name="wcf.conversation.participants"><![CDATA[شركت كنندگان]]></item>
+        <item name="wcf.conversation.participants.description"><![CDATA[چند کاربر باید جداگانه وارد شوند.]]></item>
+        <item name="wcf.conversation.participants.error.canNotUseConversation"><![CDATA[{$errorData[username]} اجازه شرکت در گفتگو را ندارد.]]></item>
+        <item name="wcf.conversation.participants.error.doesNotAcceptConversation"><![CDATA[{$errorData[username]} نمی خواهد در مکالمات اضافه شود.]]></item>
+        <item name="wcf.conversation.participants.error.duplicate"><![CDATA[{$errorData[username]} از قبل یکی از شرکت کنندگان این گفتگو است.]]></item>
+        <item name="wcf.conversation.participants.error.emptyGroup"><![CDATA[همه اعضای گروه های کاربری وارد شده قبلاً در این گفتگو شرکت می کنند.]]></item>
+        <item name="wcf.conversation.participants.error.ignoresYou"><![CDATA[{$errorData[username]} شما را مسدود می کند]]></item>
+        <item name="wcf.conversation.participants.error.intersects"><![CDATA[{$errorData[username]} قبلاً به عنوان یک شرکت کننده قابل مشاهده اضافه شده است.]]></item>
+        <item name="wcf.conversation.participants.error.invisibleParticipantsNoPermission"><![CDATA[شما اجازه اضافه کردن شرکت کنندگان نامرئی را ندارید.]]></item>
+        <item name="wcf.conversation.participants.error.isAuthor"><![CDATA[شما قبلاً در این گفتگو شرکت کرده اید.]]></item>
+        <item name="wcf.conversation.participants.error.mailboxIsFull"><![CDATA[{$errorData[username]} در حال حاضر در مکالمات بسیار زیادی شرکت می کند و نمی تواند اضافه شود.]]></item>
+        <item name="wcf.conversation.participants.error.notFound"><![CDATA[نام کاربری “{$errorData[username]}” وجود ندارد.]]></item>
+        <item name="wcf.conversation.participants.error.participantCanInviteNoPermission"><![CDATA[شما اجازه ندارید به شرکت کنندگان اجازه دهید شرکت کنندگان جدید اضافه کنند.]]></item>
+        <item name="wcf.conversation.participants.error.tooManyParticipants"><![CDATA[شرکت‌کنندگان زیادی اضافه کرده‌اید، می‌توانید به آن‌ها اضافه کنید {#$__wcf->getSession()->getPermission('user.conversation.maxParticipants')} participants.]]></item>
+        <item name="wcf.conversation.participants.other"><![CDATA[and {if $conversation->participants - $participantSummaryCount == 1}یکی دیگر{else}{#$conversation->participants-$participantSummaryCount} دیگران{/if}]]></item>
+        <item name="wcf.conversation.participants.removeParticipant"><![CDATA[حذف شرکت کننده]]></item>
+        <item name="wcf.conversation.participants.removeParticipant.confirmMessage"><![CDATA[آیا واقعاً می خواهید حذف کنید؟ <span class="confirmationObject">{$participant->username}</span> از این گفتگو؟]]></item>
+        <item name="wcf.conversation.quota"><![CDATA[سهمیه]]></item>
         <item name="wcf.conversation.quota.description"><![CDATA[{#$conversationCount/$maxConversationCount*100}% used ({#$conversationCount} of {#$maxConversationCount})]]></item>
         <item name="wcf.conversation.replies"><![CDATA[Replies]]></item>
         <item name="wcf.conversation.reply"><![CDATA[Reply to this conversation…]]></item>
