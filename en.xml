@@ -6907,98 +6907,98 @@ Your account on the website: {@PAGE_TITLE|phrase} [URL:{link isEmail=true}{/link
         <item name="wcf.editor.code.highlighter.description"><![CDATA[هایلایت در ویرایشگر نمایش داده نمی شود.]]></item>
         <item name="wcf.editor.code.highlighter.detect"><![CDATA[(تشخیص خودکار)]]></item>
         <item name="wcf.editor.code.highlighter.plain"><![CDATA[(هیچ یک)]]></item>
-        <item name="wcf.editor.code.line"><![CDATA[Start Line Number]]></item>
-        <item name="wcf.editor.code.line.description"><![CDATA[Optional: Specify the start for line enumeration.]]></item>
-        <item name="wcf.editor.code.title"><![CDATA[{if $highlighter}{$highlighter}{else}Code{/if}{if $file} - {$file}{/if}]]></item>
-        <item name="wcf.editor.format.heading2"><![CDATA[Heading 1]]></item>
-        <item name="wcf.editor.format.heading3"><![CDATA[Heading 2]]></item>
-        <item name="wcf.editor.format.heading4"><![CDATA[Heading 3]]></item>
-        <item name="wcf.editor.format.paragraph"><![CDATA[Normal text]]></item>
-        <item name="wcf.editor.html.description"><![CDATA[Contents will be evaluated unchecked.]]></item>
-        <item name="wcf.editor.html.title"><![CDATA[Unsafe HTML]]></item>
-        <item name="wcf.editor.image.edit"><![CDATA[Edit Image]]></item>
-        <item name="wcf.editor.image.float"><![CDATA[Float]]></item>
-        <item name="wcf.editor.image.float.left"><![CDATA[Left]]></item>
-        <item name="wcf.editor.image.float.right"><![CDATA[Right]]></item>
-        <item name="wcf.editor.image.insert"><![CDATA[Insert Image]]></item>
-        <item name="wcf.editor.image.link"><![CDATA[Link]]></item>
-        <item name="wcf.editor.image.link.error.invalid"><![CDATA[The entered link is invalid.]]></item>
-        <item name="wcf.editor.image.source"><![CDATA[Source]]></item>
-        <item name="wcf.editor.image.source.error.blocked"><![CDATA[Images from external sources have been disabled, please use the file attachment function.]]></item>
-        <item name="wcf.editor.image.source.error.insecure"><![CDATA[Insecure sources (“http://”) for images have been disabled, please use secure sources only (“https://”).]]></item>
-        <item name="wcf.editor.image.source.error.invalid"><![CDATA[The entered link is invalid.]]></item>
-        <item name="wcf.editor.link.add"><![CDATA[Insert Link]]></item>
-        <item name="wcf.editor.link.edit"><![CDATA[Edit Link]]></item>
-        <item name="wcf.editor.link.error.invalid"><![CDATA[The entered link is invalid.]]></item>
-        <item name="wcf.editor.link.text"><![CDATA[Text]]></item>
-        <item name="wcf.editor.link.unlink"><![CDATA[Unlink]]></item>
-        <item name="wcf.editor.link.url"><![CDATA[Link]]></item>
-        <item name="wcf.editor.list.indent"><![CDATA[Indent]]></item>
-        <item name="wcf.editor.list.outdent"><![CDATA[Outdent]]></item>
-        <item name="wcf.editor.quote.author"><![CDATA[Source]]></item>
-        <item name="wcf.editor.quote.edit"><![CDATA[Edit Quote]]></item>
-        <item name="wcf.editor.quote.title"><![CDATA[{if $author}Quote from {@$author}{else}Quote{/if}]]></item>
-        <item name="wcf.editor.quote.url"><![CDATA[Link]]></item>
-        <item name="wcf.editor.quote.url.description"><![CDATA[Optional: Specify the link to the source.]]></item>
-        <item name="wcf.editor.source.error.active"><![CDATA[Please return to the normal view before submitting.]]></item>
-        <item name="wcf.editor.spoiler.edit"><![CDATA[Edit Spoiler]]></item>
-        <item name="wcf.editor.spoiler.label"><![CDATA[Label]]></item>
-        <item name="wcf.editor.spoiler.label.description"><![CDATA[Optional: Specify the label for the spoiler toggle button.]]></item>
-        <item name="wcf.editor.spoiler.title"><![CDATA[Spoiler{if $label}: {$label}{/if}]]></item>
-        <item name="wcf.editor.table.addHead"><![CDATA[Add head]]></item>
-        <item name="wcf.editor.table.cols"><![CDATA[Columns]]></item>
-        <item name="wcf.editor.table.deleteColumn"><![CDATA[Delete column]]></item>
-        <item name="wcf.editor.table.deleteHead"><![CDATA[Delete head]]></item>
-        <item name="wcf.editor.table.deleteRow"><![CDATA[Delete row]]></item>
-        <item name="wcf.editor.table.deleteTable"><![CDATA[Delete table]]></item>
-        <item name="wcf.editor.table.insertColumnLeft"><![CDATA[Insert column left]]></item>
-        <item name="wcf.editor.table.insertColumnRight"><![CDATA[Insert column right]]></item>
-        <item name="wcf.editor.table.insertRowAbove"><![CDATA[Insert row above]]></item>
-        <item name="wcf.editor.table.insertRowBelow"><![CDATA[Insert row below]]></item>
-        <item name="wcf.editor.table.insertTable"><![CDATA[Insert table]]></item>
-        <item name="wcf.editor.table.rows"><![CDATA[Rows]]></item>
+        <item name="wcf.editor.code.line"><![CDATA[شماره خط شروع]]></item>
+        <item name="wcf.editor.code.line.description"><![CDATA[اختیاری: شروع را برای شمارش خطوط مشخص کنید.]]></item>
+        <item name="wcf.editor.code.title"><![CDATA[{if $highlighter}{$highlighter}{else}کد{/if}{if $file} - {$file}{/if}]]></item>
+        <item name="wcf.editor.format.heading2"><![CDATA[سرفصل 1]]></item>
+        <item name="wcf.editor.format.heading3"><![CDATA[سرفصل 2]]></item>
+        <item name="wcf.editor.format.heading4"><![CDATA[سرفصل 3]]></item>
+        <item name="wcf.editor.format.paragraph"><![CDATA[متن معمولی]]></item>
+        <item name="wcf.editor.html.description"><![CDATA[محتوا بدون علامت ارزیابی خواهد شد.]]></item>
+        <item name="wcf.editor.html.title"><![CDATA[HTML ناامن]]></item>
+        <item name="wcf.editor.image.edit"><![CDATA[ویرایش تصویر]]></item>
+        <item name="wcf.editor.image.float"><![CDATA[شناور]]></item>
+        <item name="wcf.editor.image.float.left"><![CDATA[چپ]]></item>
+        <item name="wcf.editor.image.float.right"><![CDATA[راست]]></item>
+        <item name="wcf.editor.image.insert"><![CDATA[درج تصویر]]></item>
+        <item name="wcf.editor.image.link"><![CDATA[لینک]]></item>
+        <item name="wcf.editor.image.link.error.invalid"><![CDATA[لینک وارد شده نامعتبر است.]]></item>
+        <item name="wcf.editor.image.source"><![CDATA[منبع]]></item>
+        <item name="wcf.editor.image.source.error.blocked"><![CDATA[تصاویر از منابع خارجی غیرفعال شده اند، لطفاً از تابع پیوست فایل استفاده کنید.]]></item>
+        <item name="wcf.editor.image.source.error.insecure"><![CDATA[منابع ناامن (“http://”) برای  تصاویر غیرفعال شده اند، لطفا فقط از منابع امن استفاده کنید (“https://”).]]></item>
+        <item name="wcf.editor.image.source.error.invalid"><![CDATA[لینک وارد شده نامعتبر است.]]></item>
+        <item name="wcf.editor.link.add"><![CDATA[درج لینک]]></item>
+        <item name="wcf.editor.link.edit"><![CDATA[ویرایش لینک]]></item>
+        <item name="wcf.editor.link.error.invalid"><![CDATA[لینک وارد شده نامعتبر است.]]></item>
+        <item name="wcf.editor.link.text"><![CDATA[متن]]></item>
+        <item name="wcf.editor.link.unlink"><![CDATA[لغو پیوند]]></item>
+        <item name="wcf.editor.link.url"><![CDATA[لینک]]></item>
+        <item name="wcf.editor.list.indent"><![CDATA[تورفتگی]]></item>
+        <item name="wcf.editor.list.outdent"><![CDATA[بیرون زدگی]]></item>
+        <item name="wcf.editor.quote.author"><![CDATA[منبع]]></item>
+        <item name="wcf.editor.quote.edit"><![CDATA[نقل قول را ویرایش کنید]]></item>
+        <item name="wcf.editor.quote.title"><![CDATA[{if $author}نقل قول از {@$author}{else}نقل قول {/if}]]></item>
+        <item name="wcf.editor.quote.url"><![CDATA[لینک]]></item>
+        <item name="wcf.editor.quote.url.description"><![CDATA[اختیاری: لینک منبع را مشخص کنید.]]></item>
+        <item name="wcf.editor.source.error.active"><![CDATA[لطفا قبل از ارسال به نمای عادی برگردید.]]></item>
+        <item name="wcf.editor.spoiler.edit"><![CDATA[ویرایش اسپویلر]]></item>
+        <item name="wcf.editor.spoiler.label"><![CDATA[برچسب]]></item>
+        <item name="wcf.editor.spoiler.label.description"><![CDATA[اختیاری: برچسب دکمه جابجایی اسپویلر را مشخص کنید.]]></item>
+        <item name="wcf.editor.spoiler.title"><![CDATA[اسپویلر{if $label}: {$label}{/if}]]></item>
+        <item name="wcf.editor.table.addHead"><![CDATA[سرتیتر اضافه کنید]]></item>
+        <item name="wcf.editor.table.cols"><![CDATA[ستون ها]]></item>
+        <item name="wcf.editor.table.deleteColumn"><![CDATA[حذف ستون]]></item>
+        <item name="wcf.editor.table.deleteHead"><![CDATA[سرتیتر را حذف کنید]]></item>
+        <item name="wcf.editor.table.deleteRow"><![CDATA[حذف ردیف]]></item>
+        <item name="wcf.editor.table.deleteTable"><![CDATA[حذف جدول]]></item>
+        <item name="wcf.editor.table.insertColumnLeft"><![CDATA[درج ستون سمت چپ]]></item>
+        <item name="wcf.editor.table.insertColumnRight"><![CDATA[درج ستون سمت راست]]></item>
+        <item name="wcf.editor.table.insertRowAbove"><![CDATA[ردیف بالا را درج کنید]]></item>
+        <item name="wcf.editor.table.insertRowBelow"><![CDATA[ردیف زیر را درج کنید]]></item>
+        <item name="wcf.editor.table.insertTable"><![CDATA[درج جدول]]></item>
+        <item name="wcf.editor.table.rows"><![CDATA[ردیف ها]]></item>
     </category>
     <category name="wcf.form">
-        <item name="wcf.form.field.className"><![CDATA[Class]]></item>
-        <item name="wcf.form.field.className.description.interface"><![CDATA[The entered class (without leading backslash) must implement the interface <kbd>{$interface}</kbd>.]]></item>
-        <item name="wcf.form.field.className.description.parentClass"><![CDATA[The entered class (without leading backslash) must extend the class <kbd>{$parentClass}</kbd>.]]></item>
-        <item name="wcf.form.field.className.error.interface"><![CDATA[The entered class{if $language|isset} ({$language}){/if} does not implement the interface <kbd>{$interface}</kbd>.]]></item>
-        <item name="wcf.form.field.className.error.isInstantiable"><![CDATA[The entered class{if $language|isset} ({$language}){/if} is not instantiable.]]></item>
-        <item name="wcf.form.field.className.error.leadingBackslash"><![CDATA[The entered class name{if $language|isset} ({$language}){/if} must not have a leading backslash.]]></item>
-        <item name="wcf.form.field.className.error.nonExistent"><![CDATA[The entered class{if $language|isset} ({$language}){/if} does not exist.]]></item>
-        <item name="wcf.form.field.className.error.parentClass"><![CDATA[The entered class{if $language|isset} ({$language}){/if} does not extend <kbd>{$parentClass}</kbd>.]]></item>
-        <item name="wcf.form.field.date.error.earliestDate"><![CDATA[The entered value may not be earlier than {$earliestDate}.]]></item>
-        <item name="wcf.form.field.date.error.format"><![CDATA[The format of the entered value is invalid.]]></item>
-        <item name="wcf.form.field.date.error.latestDate"><![CDATA[The entered value may not be later than {$latestDate}.]]></item>
-        <item name="wcf.form.field.email"><![CDATA[Email Address]]></item>
-        <item name="wcf.form.field.email.error.invalidEmail"><![CDATA[The entered text is no valid email address.]]></item>
-        <item name="wcf.form.field.email.error.maximumLength"><![CDATA[The entered email address{if $language|isset} for language “{$language}”{/if} contains {#$length} character{if $length !== 1}s{/if} but it may not be longer than {#$maximumLength} character{if $maximumLength !== 1}s{/if}.]]></item>
-        <item name="wcf.form.field.itemList.error.maximumMultiples"><![CDATA[You may not enter more than {#$maximumCount} {if $maximumCount == 1}entry{else}entries{/if} but {#$count} {if $count == 1}entry is{else}entries are{/if} given.]]></item>
-        <item name="wcf.form.field.itemList.error.minimumMultiples"><![CDATA[You have to entered at least {#$minimumCount} {if $minimumCount == 1}entry{else}entries{/if} but only {#$count} {if $count == 1}entry is{else}entries are{/if} given.]]></item>
-        <item name="wcf.form.field.itemList.error.separator"><![CDATA[The following items may contain no {if $separator === ','}comma{else if $separator === "\n"}newline{else}space{/if}: {implode from=$invalidItems item=item}“{$item}”{/implode}.]]></item>
-        <item name="wcf.form.field.numeric.error.maximum"><![CDATA[The entered value may not be greater than {#$maximum}.]]></item>
-        <item name="wcf.form.field.numeric.error.minimum"><![CDATA[The entered value may not be less than {#$minimum}.]]></item>
-        <item name="wcf.form.field.option"><![CDATA[Options]]></item>
-        <item name="wcf.form.field.option.error.nonExistent"><![CDATA[The following options do not exist: {implode from=$options item=option}<kbd>{$option}</kbd>{/implode}.]]></item>
-        <item name="wcf.form.field.rating"><![CDATA[Rating]]></item>
+        <item name="wcf.form.field.className"><![CDATA[کلاس]]></item>
+        <item name="wcf.form.field.className.description.interface"><![CDATA[کلاس وارد شده (بدون بک اسلش) باید اینترفیس را پیاده سازی کند <kbd>{$interface}</kbd>.]]></item>
+        <item name="wcf.form.field.className.description.parentClass"><![CDATA[کلاس وارد شده (بدون بک اسلش) باید کلاس را گسترش دهد <kbd>{$parentClass}</kbd>.]]></item>
+        <item name="wcf.form.field.className.error.interface"><![CDATA[کلاس وارد شده{if $language|isset} ({$language}){/if} رابط را پیاده سازی نمی کند <kbd>{$interface}</kbd>.]]></item>
+        <item name="wcf.form.field.className.error.isInstantiable"><![CDATA[کلاس وارد شده{if $language|isset} ({$language}){/if} قابل اثبات نیست]]></item>
+        <item name="wcf.form.field.className.error.leadingBackslash"><![CDATA[نام کلاس وارد شده{if $language|isset} ({$language}){/if} نباید بک اسلش پیشرو داشته باشد.]]></item>
+        <item name="wcf.form.field.className.error.nonExistent"><![CDATA[کلاس وارد شده{if $language|isset} ({$language}){/if} وجود ندارد.]]></item>
+        <item name="wcf.form.field.className.error.parentClass"><![CDATA[کلاس وارد شده{if $language|isset} ({$language}){/if} گسترش نمی یابد <kbd>{$parentClass}</kbd>.]]></item>
+        <item name="wcf.form.field.date.error.earliestDate"><![CDATA[مقدار وارد شده ممکن است زودتر از آن نباشد {$earliestDate}.]]></item>
+        <item name="wcf.form.field.date.error.format"><![CDATA[قالب مقدار وارد شده نامعتبر است.]]></item>
+        <item name="wcf.form.field.date.error.latestDate"><![CDATA[مقدار وارد شده ممکن است دیرتر از آن نباشد {$latestDate}.]]></item>
+        <item name="wcf.form.field.email"><![CDATA[آدرس ایمیل]]></item>
+        <item name="wcf.form.field.email.error.invalidEmail"><![CDATA[متن وارد شده آدرس ایمیل معتبری نیست.]]></item>
+        <item name="wcf.form.field.email.error.maximumLength"><![CDATA[آدرس ایمیل وارد شده{if $language|isset} برای زبان “{$language}”{/if} شامل {#$length} کرکتر{if $length !== 1}s{/if} اما ممکن است بیشتر از آن نباشد {#$maximumLength} کرکتر{if $maximumLength !== 1}s{/if}.]]></item>
+        <item name="wcf.form.field.itemList.error.maximumMultiples"><![CDATA[نمی توانید بیشتر از آن وارد کنید {#$maximumCount} {if $maximumCount == 1}ورودی{else}ورودی ها{/if} ولی {#$count} {if $count == 1}ورودی است{else}ورودی ها هستند{/if} داده شده.]]></item>
+        <item name="wcf.form.field.itemList.error.minimumMultiples"><![CDATA[حداقل باید وارد کنید {#$minimumCount} {if $minimumCount == 1}ورودی{else}ورودی ها{/if} ولی فقط{#$count} {if $count == 1}ورودی هست{else}ورودی ها هستند{/if} داده شده.]]></item>
+        <item name="wcf.form.field.itemList.error.separator"><![CDATA[موارد زیر ممکن است حاوی هیچ {if $separator === ','}کاما{else if $separator === "\n"}خط جدید{else}فضا{/if}: {implode from=$invalidItems item=item}“{$item}”{/implode}.]]></item>
+        <item name="wcf.form.field.numeric.error.maximum"><![CDATA[مقدار وارد شده ممکن است بیشتر از {#$maximum}.]]></item>
+        <item name="wcf.form.field.numeric.error.minimum"><![CDATA[مقدار وارد شده ممکن است کمتر از {#$minimum}.]]></item>
+        <item name="wcf.form.field.option"><![CDATA[گزینه ها]]></item>
+        <item name="wcf.form.field.option.error.nonExistent"><![CDATA[گزینه های زیر وجود ندارند: {implode from=$options item=option}<kbd>{$option}</kbd>{/implode}.]]></item>
+        <item name="wcf.form.field.rating"><![CDATA[رتبه بندی]]></item>
         <item name="wcf.form.field.rating.ratingTitle"><![CDATA[{#$rating}/{#$maximumRating}]]></item>
-        <item name="wcf.form.field.rating.removeRating"><![CDATA[Reset Rating]]></item>
-        <item name="wcf.form.field.showOrder"><![CDATA[Position]]></item>
-        <item name="wcf.form.field.showOrder.firstPosition"><![CDATA[(first position)]]></item>
-        <item name="wcf.form.field.text.error.maximumLength"><![CDATA[The entered text{if $language|isset} for language “{$language}”{/if} contains {#$length} character{if $length !== 1}s{/if} but it may not be longer than {#$maximumLength} character{if $maximumLength !== 1}s{/if}.]]></item>
-        <item name="wcf.form.field.text.error.minimumLength"><![CDATA[The entered text{if $language|isset} for language “{$language}”{/if} only contains {#$length} character{if $length !== 1}s{/if} but it may not be shorter than {#$minimumLength} character{if $minimumLength !== 1}s{/if}.]]></item>
-        <item name="wcf.form.field.upload.error.maximum"><![CDATA[You can upload a maximum of {if $maximum > 1}{#$maximum} files{else}one file{/if}.]]></item>
-        <item name="wcf.form.field.upload.error.maximumFilesize"><![CDATA[The file “{$file->getFilename()}” may have a maximum size of {$maximumFilesize|filesize}.]]></item>
-        <item name="wcf.form.field.upload.error.maximumImageHeight"><![CDATA[The file “{$file->getFilename()}” may have a maximum height of {#$maximumImageHeight} pixels.]]></item>
-        <item name="wcf.form.field.upload.error.maximumImageWidth"><![CDATA[The file “{$file->getFilename()}” may have a maximum width of {#$maximumImageWidth} pixels.]]></item>
-        <item name="wcf.form.field.upload.error.minimum"><![CDATA[You must upload at least {if $minimum > 1}{#$minimum} files{else}one file{/if}.]]></item>
-        <item name="wcf.form.field.upload.error.minimumImageHeight"><![CDATA[The file “{$file->getFilename()}” may have a minimum height of {#$minimumImageHeight} pixels.]]></item>
-        <item name="wcf.form.field.upload.error.minimumImageWidth"><![CDATA[The file “{$file->getFilename()}” may have a minimum width of {#$minimumImageWidth} pixels.]]></item>
-        <item name="wcf.form.field.url.error.invalid"><![CDATA[The entered link is invalid.]]></item>
-        <item name="wcf.form.field.user.error.maximumMultiples"><![CDATA[You may not enter more than {#$maximumCount} user{if $maximumCount != 1}s{/if} but {#$count} user{if $count != 1}s are{else} is{/if} given.]]></item>
-        <item name="wcf.form.field.user.error.minimumMultiples"><![CDATA[You have to entered at least {#$minimumCount} user{if $minimumCount != 1}s{/if} but only {#$count} user{if $count != 1}s are{else} is{/if} given.]]></item>
-        <item name="wcf.form.field.user.error.nonExistent"><![CDATA[{if $nonExistentUsernames|isset}The following users do not exist: {implode from=$nonExistentUsernames item=nonExistentUsername}“{$nonExistentUsername}”{/implode}.{else}The entered user does not exist.{/if}]]></item>
-        <item name="wcf.form.field.userGroupOption"><![CDATA[Permissions]]></item>
+        <item name="wcf.form.field.rating.removeRating"><![CDATA[بازنشانی رتبه]]></item>
+        <item name="wcf.form.field.showOrder"><![CDATA[موقعیت]]></item>
+        <item name="wcf.form.field.showOrder.firstPosition"><![CDATA[(مقام اول)]]></item>
+        <item name="wcf.form.field.text.error.maximumLength"><![CDATA[متن وارد شده{if $language|isset} برای زبان “{$language}”{/if} شامل {#$length} کرکتر{if $length !== 1}s{/if} اما ممکن است بیشتر از آن نباشد {#$maximumLength} کرکتر{if $maximumLength !== 1}s{/if}.]]></item>
+        <item name="wcf.form.field.text.error.minimumLength"><![CDATA[متن وارد شده{if $language|isset} برای زبان “{$language}”{/if} فقط شامل {#$length} کرکتر{if $length !== 1}s{/if} اما ممکن است کوتاهتر از آن نباشد {#$minimumLength} کرکتر{if $minimumLength !== 1}s{/if}.]]></item>
+        <item name="wcf.form.field.upload.error.maximum"><![CDATA[حداکثر می توانید آپلود کنید {if $maximum > 1}{#$maximum} فایل {else}یک فایل{/if}.]]></item>
+        <item name="wcf.form.field.upload.error.maximumFilesize"><![CDATA[فایل “{$file->getFilename()}” ممکن است حداکثر اندازه داشته باشد {$maximumFilesize|filesize}.]]></item>
+        <item name="wcf.form.field.upload.error.maximumImageHeight"><![CDATA[فایل “{$file->getFilename()}” ممکن است حداکثر ارتفاع داشته باشد {#$maximumImageHeight} پیکسل .]]></item>
+        <item name="wcf.form.field.upload.error.maximumImageWidth"><![CDATA[فایل “{$file->getFilename()}” ممکن است حداکثر عرض داشته باشد {#$maximumImageWidth} پیکسل .]]></item>
+        <item name="wcf.form.field.upload.error.minimum"><![CDATA[حداقل باید آپلود کنید {if $minimum > 1}{#$minimum} فایل {else}یک فایل{/if}.]]></item>
+        <item name="wcf.form.field.upload.error.minimumImageHeight"><![CDATA[فایل “{$file->getFilename()}” ممکن است حداقل ارتفاع داشته باشد {#$minimumImageHeight} پیکسل.]]></item>
+        <item name="wcf.form.field.upload.error.minimumImageWidth"><![CDATA[فایل “{$file->getFilename()}” ممکن است حداقل عرض داشته باشد {#$minimumImageWidth} پیکسل.]]></item>
+        <item name="wcf.form.field.url.error.invalid"><![CDATA[لینک وارد شده نامعتبر است.]]></item>
+        <item name="wcf.form.field.user.error.maximumMultiples"><![CDATA[نمی توانید بیشتر از آن وارد کنید {#$maximumCount} کاربر{if $maximumCount != 1}s{/if} ولی {#$count} کاربر{if $count != 1}ها هستند{else} هست{/if} داده شده]]></item>
+        <item name="wcf.form.field.user.error.minimumMultiples"><![CDATA[حداقل باید وارد کنید {#$minimumCount} کاربر{if $minimumCount != 1}ها{/if} ولی فقط {#$count} کاربر{if $count != 1}ها هستند{else} هست{/if} داده شده.]]></item>
+        <item name="wcf.form.field.user.error.nonExistent"><![CDATA[{if $nonExistentUsernames|isset}کاربران زیر وجود ندارند: {implode from=$nonExistentUsernames item=nonExistentUsername}“{$nonExistentUsername}”{/implode}.{else}کاربر وارد شده وجود ندارد.{/if}]]></item>
+        <item name="wcf.form.field.userGroupOption"><![CDATA[مجوزها]]></item>
         <item name="wcf.form.field.userGroupOption.error.nonExistent"><![CDATA[The following permissions do not exist: {implode from=$options item=option}<kbd>{$option}</kbd>{/implode}.]]></item>
         <item name="wcf.form.field.username.error.invalid"><![CDATA[The entered username is invalid.]]></item>
         <item name="wcf.form.field.username.error.notUnique"><![CDATA[The entered username is already in use.]]></item>
