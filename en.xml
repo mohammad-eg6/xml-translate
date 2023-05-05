@@ -7283,171 +7283,171 @@ Your account on the website: {@PAGE_TITLE|phrase} [URL:{link isEmail=true}{/link
         <item name="wcf.like.reactionsGiven"><![CDATA[واکنش های داده شده]]></item>
         <item name="wcf.like.reactionsReceived"><![CDATA[واکنش های دریافتی]]></item>
         <item name="wcf.like.showLikesReceived"><![CDATA[واکنش های دریافت شده توسط {$user->username}]]></item>
-        <item name="wcf.like.summary"><![CDATA[{literal}{if $others == 0}{@$users.slice(0, -1).join(", ")}{if $users.length > 1} and {/if}{@$users.slice(-1)[0]}{else}{@$users.join(", ")} and {if $others == 1}one{else}{#$others}{/if} other{if $others > 1}s{/if}{/if} like{if $users.length == 1}s{/if} this.{/literal}]]></item>
-        <item name="wcf.like.title.com.woltlab.blog.entryComment"><![CDATA[Reacted with {@$reaction->render()} to the comment by {if $commentAuthor}{user object=$commentAuthor}{else}a guest{/if} on the blog article {anchor link=$comment content=$entry}.]]></item>
-        <item name="wcf.like.title.com.woltlab.blog.entryComment.response"><![CDATA[Reacted with {@$reaction->render()} to the response by {if $responseAuthor}{user object=$responseAuthor}{else}a guest{/if} on the comment by {if $commentAuthor}{user object=$commentAuthor}{else}a guest{/if} on the blog article {anchor link=$response content=$entry}.]]></item>
-        <item name="wcf.like.title.com.woltlab.blog.likeableEntry"><![CDATA[Reacted with {@$reaction->render()} to the blog article {anchor object=$entry class='blogEntryLink'}.]]></item>
-        <item name="wcf.like.title.com.woltlab.calendar.eventDateComment"><![CDATA[Reacted with {@$reaction->render()} to the comment by {if $commentAuthor}{user object=$commentAuthor}{else}a guest{/if} on the event {if $eventDate->getEvent()->hasLabels()}<ul class="labelList">{foreach from=$eventDate->getEvent()->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}<a href="{$eventDate->getLink()}#comment{@$commentID}" class="calendarEventLink" data-object-id="{@$eventDate->eventDateID}">{$eventDate->getTitle()}</a>.]]></item>
-        <item name="wcf.like.title.com.woltlab.calendar.eventDateComment.response"><![CDATA[Reacted with {@$reaction->render()} to the reply by {if $responseAuthor}{user object=$responseAuthor}{else}a guest{/if} on the comment by {if $commentAuthor}{user object=$commentAuthor}{else}a guest{/if} on the event {if $eventDate->getEvent()->hasLabels()}<ul class="labelList">{foreach from=$eventDate->getEvent()->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}<a href="{$eventDate->getLink()}#comment{@$commentID}/response{@$responseID}" class="calendarEventLink" data-object-id="{@$eventDate->eventDateID}">{$eventDate->getTitle()}</a>.]]></item>
-        <item name="wcf.like.title.com.woltlab.calendar.likeableEvent"><![CDATA[Reacted with {@$reaction->render()} to the event {if $event->hasLabels()}<ul class="labelList">{foreach from=$event->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}{anchor object=$event->getFirstEventDate() class='calendarEventLink'}.]]></item>
-        <item name="wcf.like.title.com.woltlab.filebase.fileComment"><![CDATA[Reacted with {@$reaction->render()} to the comment by {if $commentAuthor}{user object=$commentAuthor}{else}a guest{/if} on the file {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}<a href="{$comment->getLink()}" class="filebaseFileLink" data-object-id="{@$file->fileID}">{$file->getTitle()}</a>.]]></item>
-        <item name="wcf.like.title.com.woltlab.filebase.fileComment.response"><![CDATA[Reacted with {@$reaction->render()} to the reply by {if $responseAuthor}{user object=$responseAuthor}{else}a guest{/if} on the comment by {if $commentAuthor}{user object=$commentAuthor}{else}a guest{/if} on the file {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}<a href="{$response->getLink()}" class="filebaseFileLink" data-object-id="{@$file->fileID}">{$file->getTitle()}</a>.]]></item>
-        <item name="wcf.like.title.com.woltlab.filebase.likeableFile"><![CDATA[Reacted with {@$reaction->render()} to the file {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}{anchor object=$file class='filebaseFileLink'}.]]></item>
-        <item name="wcf.like.title.com.woltlab.filebase.likeableFileVersion"><![CDATA[Reacted with {@$reaction->render()} to {if $version->versionNumber}the version {$version->versionNumber}{else}a version{/if} of the file {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}{anchor object=$version->getFile() class='filebaseFileLink'}.]]></item>
-        <item name="wcf.like.title.com.woltlab.filebase.likeableReview"><![CDATA[Reacted with {@$reaction->render()} to the review <a href="{$review->getLink()}">{$review->getTitle()}</a> for the file {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}{anchor object=$version->getFile() class='filebaseFileLink'}.]]></item>
-        <item name="wcf.like.title.com.woltlab.gallery.imageComment"><![CDATA[Reacted with {@$reaction->render()} to the comment by {if $commentAuthor}{user object=$commentAuthor}{else}a guest{/if} on the {if $image->isImage()}image{else}video{/if} {anchor link=$comment content=$image}.]]></item>
-        <item name="wcf.like.title.com.woltlab.gallery.imageComment.response"><![CDATA[Reacted with {@$reaction->render()} to the reply by {if $responseAuthor}{user object=$responseAuthor}{else}a guest{/if} on the comment by {if $commentAuthor}{user object=$commentAuthor}{else}a guest{/if} on the {if $image->isImage()}image{else}video{/if} {anchor link=$response content=$image}.]]></item>
-        <item name="wcf.like.title.com.woltlab.gallery.likeableImage"><![CDATA[Reacted with {@$reaction->render()} to the {if $image->isImage()}image{else}video{/if} {anchor object=$image}.]]></item>
-        <item name="wcf.like.title.com.woltlab.wbb.likeablePost"><![CDATA[Reacted with {@$reaction->render()} to <a href="{$post->getLink()}" class="wbbPostLink" data-object-id="{@$post->postID}">{$post->username}’s post</a> in the thread {if $thread->hasLabels()}<ul class="labelList">{foreach from=$thread->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul>{/if} {anchor object=$thread class='wbbTopicLink'}.]]></item>
-        <item name="wcf.like.title.com.woltlab.wcf.articleComment"><![CDATA[Reacted with {@$reaction->render()} to the comment by {if $commentAuthor}<a href="{link controller='User' object=$commentAuthor}{/link}">{$commentAuthor->username}</a>{else}a guest{/if} on the article <a href="{$comment->getLink()}">{$articleContent->getTitle()}</a>.]]></item>
-        <item name="wcf.like.title.com.woltlab.wcf.articleComment.response"><![CDATA[Reacted with {@$reaction->render()} to the response by {if $responseAuthor}<a href="{link controller='User' object=$responseAuthor}{/link}">{$responseAuthor->username}</a>{else}a guest{/if} on the comment by {if $commentAuthor}<a href="{link controller='User' object=$commentAuthor}{/link}">{$commentAuthor->username}</a>{else}a guest{/if} on the article <a href="{$response->getLink()}">{$articleContent->getTitle()}</a>.]]></item>
-        <item name="wcf.like.title.com.woltlab.wcf.likeableArticle"><![CDATA[Reacted with {@$reaction->render()} to the article <a href="{$article->getLink()}">{$article->getTitle()}</a>.]]></item>
-        <item name="wcf.like.title.com.woltlab.wcf.pageComment"><![CDATA[Reacted with {@$reaction->render()} to the comment by {if $commentAuthor}<a href="{link controller='User' object=$commentAuthor}{/link}">{$commentAuthor->username}</a>{else}a guest{/if} on the page <a href="{$comment->getLink()}">{$page->getTitle()}</a>.]]></item>
-        <item name="wcf.like.title.com.woltlab.wcf.pageComment.response"><![CDATA[Reacted with {@$reaction->render()} to the response by {if $responseAuthor}<a href="{link controller='User' object=$responseAuthor}{/link}">{$responseAuthor->username}</a>{else}a guest{/if} on the comment by {if $commentAuthor}<a href="{link controller='User' object=$commentAuthor}{/link}">{$commentAuthor->username}</a>{else}a guest{/if} on the page <a href="{$response->getLink()}">{$page->getTitle()}</a>.]]></item>
-        <item name="wcf.like.title.com.woltlab.wcf.user.profileComment"><![CDATA[Reacted with {@$reaction->render()} to the comment by {if $commentAuthor}<a href="{link controller='User' object=$commentAuthor}{/link}">{$commentAuthor->username}</a>{else}a guest{/if} on <a href="{$comment->getLink()}">{$user->username}’s wall</a>.]]></item>
-        <item name="wcf.like.title.com.woltlab.wcf.user.profileComment.response"><![CDATA[Reacted with {@$reaction->render()} to the response by {if $responseAuthor}<a href="{link controller='User' object=$responseAuthor}{/link}">{$responseAuthor->username}</a>{else}a guest{/if} on the comment by {if $commentAuthor}<a href="{link controller='User' object=$commentAuthor}{/link}">{$commentAuthor->username}</a>{else}a guest{/if} on <a href="{$response->getLink()}">{$user->username}’s wall</a>.]]></item>
-        <item name="wcf.like.tooltip"><![CDATA[{if $likes}{#$likes} Like{if $likes != 1}s{/if}{if $dislikes}, {/if}{/if}{if $dislikes}{#$dislikes} Dislike{if $dislikes != 1}s{/if}{/if}]]></item>
+        <item name="wcf.like.summary"><![CDATA[{literal}{if $others == 0}{@$users.slice(0, -1).join(", ")}{if $users.length > 1} و {/if}{@$users.slice(-1)[0]}{else}{@$users.join(", ")} و {if $others == 1}یک{else}{#$others}{/if} دیگر{if $others > 1}s{/if}{/if} لایک{if $users.length == 1}{/if} این.{/literal}]]></item>
+        <item name="wcf.like.title.com.woltlab.blog.entryComment"><![CDATA[واکنش نشان داد با {@$reaction->render()} به نظر توسط {if $commentAuthor}{user object=$commentAuthor}{else}یک مهمان{/if} در مقاله وبلاگ {anchor link=$comment content=$entry}.]]></item>
+        <item name="wcf.like.title.com.woltlab.blog.entryComment.response"><![CDATA[واکنش نشان داد با {@$reaction->render()} به پاسخ توسط {if $responseAuthor}{user object=$responseAuthor}{else}یک مهمان{/if} در نظر توسط {if $commentAuthor}{user object=$commentAuthor}{else}یک مهمان{/if} در مقاله وبلاگ {anchor link=$response content=$entry}.]]></item>
+        <item name="wcf.like.title.com.woltlab.blog.likeableEntry"><![CDATA[واکنش نشان داد با {@$reaction->render()} به مقاله وبلاگ {anchor object=$entry class='blogEntryLink'}.]]></item>
+        <item name="wcf.like.title.com.woltlab.calendar.eventDateComment"><![CDATA[واکنش نشان داد با {@$reaction->render()} به نظر توسط {if $commentAuthor}{user object=$commentAuthor}{else}یک  مهمان{/if} در رویداد {if $eventDate->getEvent()->hasLabels()}<ul class="labelList">{foreach from=$eventDate->getEvent()->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}<a href="{$eventDate->getLink()}#comment{@$commentID}" class="calendarEventLink" data-object-id="{@$eventDate->eventDateID}">{$eventDate->getTitle()}</a>.]]></item>
+        <item name="wcf.like.title.com.woltlab.calendar.eventDateComment.response"><![CDATA[واکنش نشان داد با {@$reaction->render()} به پاسخ توسط {if $responseAuthor}{user object=$responseAuthor}{else}یک مهمان{/if} در نظر توسط {if $commentAuthor}{user object=$commentAuthor}{else}یک مهمان{/if} در رویداد {if $eventDate->getEvent()->hasLabels()}<ul class="labelList">{foreach from=$eventDate->getEvent()->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}<a href="{$eventDate->getLink()}#comment{@$commentID}/response{@$responseID}" class="calendarEventLink" data-object-id="{@$eventDate->eventDateID}">{$eventDate->getTitle()}</a>.]]></item>
+        <item name="wcf.like.title.com.woltlab.calendar.likeableEvent"><![CDATA[واکنش نشان داد با {@$reaction->render()} در رویداد {if $event->hasLabels()}<ul class="labelList">{foreach from=$event->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}{anchor object=$event->getFirstEventDate() class='calendarEventLink'}.]]></item>
+        <item name="wcf.like.title.com.woltlab.filebase.fileComment"><![CDATA[واکنش نشان داد با {@$reaction->render()} به نظر توسط {if $commentAuthor}{user object=$commentAuthor}{else}یک مهمان{/if} روی فایل {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}<a href="{$comment->getLink()}" class="filebaseFileLink" data-object-id="{@$file->fileID}">{$file->getTitle()}</a>.]]></item>
+        <item name="wcf.like.title.com.woltlab.filebase.fileComment.response"><![CDATA[واکنش نشان داد با {@$reaction->render()} به پاسخ توسط {if $responseAuthor}{user object=$responseAuthor}{else}یک مهمان{/if} در نظر توسط {if $commentAuthor}{user object=$commentAuthor}{else}یک مهمان{/if} روی فایل {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}<a href="{$response->getLink()}" class="filebaseFileLink" data-object-id="{@$file->fileID}">{$file->getTitle()}</a>.]]></item>
+        <item name="wcf.like.title.com.woltlab.filebase.likeableFile"><![CDATA[واکنش نشان داد با {@$reaction->render()} به فایل {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}{anchor object=$file class='filebaseFileLink'}.]]></item>
+        <item name="wcf.like.title.com.woltlab.filebase.likeableFileVersion"><![CDATA[واکنش نشان داد با {@$reaction->render()} به {if $version->versionNumber}نسخه {$version->versionNumber}{else}یک نسخه{/if} از فایل {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}{anchor object=$version->getFile() class='filebaseFileLink'}.]]></item>
+        <item name="wcf.like.title.com.woltlab.filebase.likeableReview"><![CDATA[واکنش نشان داد با {@$reaction->render()} به بررسی <a href="{$review->getLink()}">{$review->getTitle()}</a> برای فایل {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}{anchor object=$version->getFile() class='filebaseFileLink'}.]]></item>
+        <item name="wcf.like.title.com.woltlab.gallery.imageComment"><![CDATA[واکنش نشان داد با {@$reaction->render()} به نظر توسط {if $commentAuthor}{user object=$commentAuthor}{else}یک مهمان{/if} روی {if $image->isImage()}تصویر{else}ویدیو{/if} {anchor link=$comment content=$image}.]]></item>
+        <item name="wcf.like.title.com.woltlab.gallery.imageComment.response"><![CDATA[واکنش نشان داد با {@$reaction->render()} به پاسخ توسط {if $responseAuthor}{user object=$responseAuthor}{else}یک مهمان{/if} در نظر توسط {if $commentAuthor}{user object=$commentAuthor}{else}یک مهمان{/if} روی {if $image->isImage()}تصویر{else}ویدیو{/if} {anchor link=$response content=$image}.]]></item>
+        <item name="wcf.like.title.com.woltlab.gallery.likeableImage"><![CDATA[واکنش نشان داد با {@$reaction->render()} به {if $image->isImage()}تصویر{else}ویدیو{/if} {anchor object=$image}.]]></item>
+        <item name="wcf.like.title.com.woltlab.wbb.likeablePost"><![CDATA[واکنش نشان داد با {@$reaction->render()} به <a href="{$post->getLink()}" class="wbbPostLink" data-object-id="{@$post->postID}">{$post->username}’پست</a> در موضوع {if $thread->hasLabels()}<ul class="labelList">{foreach from=$thread->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul>{/if} {anchor object=$thread class='wbbTopicLink'}.]]></item>
+        <item name="wcf.like.title.com.woltlab.wcf.articleComment"><![CDATA[واکنش نشان داد با {@$reaction->render()} به نظر توسط {if $commentAuthor}<a href="{link controller='User' object=$commentAuthor}{/link}">{$commentAuthor->username}</a>{else}یک مهمان{/if} روی مقاله <a href="{$comment->getLink()}">{$articleContent->getTitle()}</a>.]]></item>
+        <item name="wcf.like.title.com.woltlab.wcf.articleComment.response"><![CDATA[واکنش نشان داد با {@$reaction->render()} به پاسخ توسط {if $responseAuthor}<a href="{link controller='User' object=$responseAuthor}{/link}">{$responseAuthor->username}</a>{else}یک مهمان{/if} در نظر توسط {if $commentAuthor}<a href="{link controller='User' object=$commentAuthor}{/link}">{$commentAuthor->username}</a>{else}یک مهمان{/if} روی مقاله <a href="{$response->getLink()}">{$articleContent->getTitle()}</a>.]]></item>
+        <item name="wcf.like.title.com.woltlab.wcf.likeableArticle"><![CDATA[واکنش نشان داد با {@$reaction->render()} به مقاله <a href="{$article->getLink()}">{$article->getTitle()}</a>.]]></item>
+        <item name="wcf.like.title.com.woltlab.wcf.pageComment"><![CDATA[واکنش نشان داد با {@$reaction->render()} به نظر توسط {if $commentAuthor}<a href="{link controller='User' object=$commentAuthor}{/link}">{$commentAuthor->username}</a>{else}a guest{/if} on the page <a href="{$comment->getLink()}">{$page->getTitle()}</a>.]]></item>
+        <item name="wcf.like.title.com.woltlab.wcf.pageComment.response"><![CDATA[واکنش نشان داد با {@$reaction->render()} به پاسخ توسط {if $responseAuthor}<a href="{link controller='User' object=$responseAuthor}{/link}">{$responseAuthor->username}</a>{else}یک مهمان{/if} در نظر توسط {if $commentAuthor}<a href="{link controller='User' object=$commentAuthor}{/link}">{$commentAuthor->username}</a>{else}یک مهمان{/if} در صفحه <a href="{$response->getLink()}">{$page->getTitle()}</a>.]]></item>
+        <item name="wcf.like.title.com.woltlab.wcf.user.profileComment"><![CDATA[واکنش نشان داد با {@$reaction->render()} به نظر توسط {if $commentAuthor}<a href="{link controller='User' object=$commentAuthor}{/link}">{$commentAuthor->username}</a>{else}یک مهمان{/if} روی <a href="{$comment->getLink()}">{$user->username}’دیوار</a>.]]></item>
+        <item name="wcf.like.title.com.woltlab.wcf.user.profileComment.response"><![CDATA[واکنش نشان داد با {@$reaction->render()} به پاسخ توسط {if $responseAuthor}<a href="{link controller='User' object=$responseAuthor}{/link}">{$responseAuthor->username}</a>{else}یک مهمان{/if} در نظر توسط {if $commentAuthor}<a href="{link controller='User' object=$commentAuthor}{/link}">{$commentAuthor->username}</a>{else}یک مهمان{/if} روی <a href="{$response->getLink()}">{$user->username}’دیوار</a>.]]></item>
+        <item name="wcf.like.tooltip"><![CDATA[{if $likes}{#$likes} لایک{if $likes != 1}{/if}{if $dislikes}, {/if}{/if}{if $dislikes}{#$dislikes} دیسلایک{if $dislikes != 1}{/if}{/if}]]></item>
     </category>
     <category name="wcf.map">
-        <item name="wcf.map.noLocationSuggestions"><![CDATA[There are no location suggestions in the current map section.]]></item>
-        <item name="wcf.map.route.button.calculateRoute"><![CDATA[Calculate Route]]></item>
-        <item name="wcf.map.route.error.not_found"><![CDATA[The route could not be calculated.]]></item>
-        <item name="wcf.map.route.error.over_query_limit"><![CDATA[The route could not be calculated. Too many requests have been sent to Google Maps’ API within the allowed time period.]]></item>
-        <item name="wcf.map.route.error.request_denied"><![CDATA[The route could not be calculated. This website is not allowed to use Google Maps’ directions service.]]></item>
-        <item name="wcf.map.route.origin"><![CDATA[Starting Point]]></item>
-        <item name="wcf.map.route.planner"><![CDATA[Route Planner]]></item>
-        <item name="wcf.map.route.travelMode"><![CDATA[Travel Mode]]></item>
-        <item name="wcf.map.route.travelMode.bicycling"><![CDATA[Bicycling]]></item>
-        <item name="wcf.map.route.travelMode.driving"><![CDATA[Driving]]></item>
-        <item name="wcf.map.route.travelMode.transit"><![CDATA[Transit]]></item>
-        <item name="wcf.map.route.travelMode.walking"><![CDATA[Walking]]></item>
-        <item name="wcf.map.route.viewOnGoogleMaps"><![CDATA[View on Google Maps]]></item>
-        <item name="wcf.map.showLocationSuggestions"><![CDATA[Suggest Locations]]></item>
-        <item name="wcf.map.useLocationSuggestion"><![CDATA[Use Location]]></item>
+        <item name="wcf.map.noLocationSuggestions"><![CDATA[هیچ پیشنهاد مکانی در بخش نقشه فعلی وجود ندارد.]]></item>
+        <item name="wcf.map.route.button.calculateRoute"><![CDATA[محاسبه مسیر]]></item>
+        <item name="wcf.map.route.error.not_found"><![CDATA[مسیر قابل محاسبه نیست.]]></item>
+        <item name="wcf.map.route.error.over_query_limit"><![CDATA[مسیر قابل محاسبه نیست. درخواست‌های زیادی در بازه زمانی مجاز به API Google Maps ارسال شده است.]]></item>
+        <item name="wcf.map.route.error.request_denied"><![CDATA[مسیر قابل محاسبه نیست. این وب سایت مجاز به استفاده از سرویس مسیرهای Google Maps نیست.]]></item>
+        <item name="wcf.map.route.origin"><![CDATA[نقطه شروع]]></item>
+        <item name="wcf.map.route.planner"><![CDATA[برنامه ریز مسیر]]></item>
+        <item name="wcf.map.route.travelMode"><![CDATA[حالت سفر]]></item>
+        <item name="wcf.map.route.travelMode.bicycling"><![CDATA[دوچرخه سواری]]></item>
+        <item name="wcf.map.route.travelMode.driving"><![CDATA[ر]]></item>
+        <item name="wcf.map.route.travelMode.transit"><![CDATA[ترانزیت]]></item>
+        <item name="wcf.map.route.travelMode.walking"><![CDATA[پیاده روی]]></item>
+        <item name="wcf.map.route.viewOnGoogleMaps"><![CDATA[مشاهده در نقشه های گوگل]]></item>
+        <item name="wcf.map.showLocationSuggestions"><![CDATA[مکان‌ها را پیشنهاد دهید]]></item>
+        <item name="wcf.map.useLocationSuggestion"><![CDATA[از موقعیت مکانی استفاده کنید]]></item>
     </category>
     <category name="wcf.media">
-        <item name="wcf.media.altText"><![CDATA[Alternate Text]]></item>
-        <item name="wcf.media.button.insert"><![CDATA[Insert]]></item>
-        <item name="wcf.media.button.replaceFile"><![CDATA[Replace File]]></item>
-        <item name="wcf.media.button.select"><![CDATA[Select]]></item>
-        <item name="wcf.media.caption"><![CDATA[Caption]]></item>
-        <item name="wcf.media.caption.enableHtml"><![CDATA[Enable HTML code in caption]]></item>
-        <item name="wcf.media.category.choose"><![CDATA[Categories]]></item>
-        <item name="wcf.media.category.choose.noCategory"><![CDATA[(no category)]]></item>
-        <item name="wcf.media.categoryID"><![CDATA[Category]]></item>
-        <item name="wcf.media.chooseFile"><![CDATA[Select File]]></item>
-        <item name="wcf.media.chooseImage"><![CDATA[Select Image]]></item>
-        <item name="wcf.media.delete.confirmMessage"><![CDATA[Do you really want to delete the media file <span class="confirmationObject">{$title}</span>?]]></item>
-        <item name="wcf.media.downloads"><![CDATA[Downloads]]></item>
-        <item name="wcf.media.edit"><![CDATA[Edit Media File]]></item>
-        <item name="wcf.media.filename"><![CDATA[Filename]]></item>
-        <item name="wcf.media.filesize"><![CDATA[Filesize]]></item>
-        <item name="wcf.media.imageDimensions"><![CDATA[Dimensions]]></item>
+        <item name="wcf.media.altText"><![CDATA[متن جایگزین]]></item>
+        <item name="wcf.media.button.insert"><![CDATA[درج ]]></item>
+        <item name="wcf.media.button.replaceFile"><![CDATA[فایل را جایگزین کنید]]></item>
+        <item name="wcf.media.button.select"><![CDATA[انتخاب ]]></item>
+        <item name="wcf.media.caption"><![CDATA[عنوان]]></item>
+        <item name="wcf.media.caption.enableHtml"><![CDATA[کد HTML را در عنوان فعال کنید]]></item>
+        <item name="wcf.media.category.choose"><![CDATA[دسته بندی ها]]></item>
+        <item name="wcf.media.category.choose.noCategory"><![CDATA[(بدون دسته)]]></item>
+        <item name="wcf.media.categoryID"><![CDATA[دسته بندی]]></item>
+        <item name="wcf.media.chooseFile"><![CDATA[فایل را انتخاب کنید]]></item>
+        <item name="wcf.media.chooseImage"><![CDATA[تصویر را انتخاب کنید]]></item>
+        <item name="wcf.media.delete.confirmMessage"><![CDATA[آیا واقعاً می خواهید فایل رسانه ای را حذف کنید؟ <span class="confirmationObject">{$title}</span>?]]></item>
+        <item name="wcf.media.downloads"><![CDATA[دانلودها]]></item>
+        <item name="wcf.media.edit"><![CDATA[ویرایش فایل رسانه ای]]></item>
+        <item name="wcf.media.filename"><![CDATA[نام فایل]]></item>
+        <item name="wcf.media.filesize"><![CDATA[حجم فایلحجم فایل]]></item>
+        <item name="wcf.media.imageDimensions"><![CDATA[ابعاد]]></item>
         <item name="wcf.media.imageDimensions.value"><![CDATA[{#$media->width}×{#$media->height}]]></item>
-        <item name="wcf.media.insert"><![CDATA[Insert File]]></item>
-        <item name="wcf.media.insert.imageSize"><![CDATA[Image Size]]></item>
-        <item name="wcf.media.insert.imageSize.large"><![CDATA[Large Thumbnail]]></item>
-        <item name="wcf.media.insert.imageSize.medium"><![CDATA[Medium Thumbnail]]></item>
-        <item name="wcf.media.insert.imageSize.original"><![CDATA[Original Image]]></item>
-        <item name="wcf.media.insert.imageSize.small"><![CDATA[Small Thumbnail]]></item>
-        <item name="wcf.media.isMultilingual"><![CDATA[Enable Multilingualism]]></item>
-        <item name="wcf.media.languageID"><![CDATA[Language]]></item>
-        <item name="wcf.media.lastDownloadTime"><![CDATA[Last Download]]></item>
-        <item name="wcf.media.manager"><![CDATA[Manage Media]]></item>
-        <item name="wcf.media.media"><![CDATA[Media]]></item>
-        <item name="wcf.media.media.pageTitle"><![CDATA[{if $__wcf->session->getPermission('admin.content.cms.canOnlyAccessOwnMedia')}Own {/if}Media]]></item>
-        <item name="wcf.media.search.cancel"><![CDATA[Cancel Search]]></item>
-        <item name="wcf.media.search.info.searchStringThreshold"><![CDATA[The search term must contain at least {#$minSearchLength} character{if $minSearchLength > 1}s{/if}.]]></item>
-        <item name="wcf.media.search.noResults"><![CDATA[The search returned no results.]]></item>
-        <item name="wcf.media.search.placeholder"><![CDATA[Search Files]]></item>
-        <item name="wcf.media.setCategory"><![CDATA[Edit Category]]></item>
-        <item name="wcf.media.upload.error.differentFileExtension"><![CDATA[The new file must have the same file extension as the current file.]]></item>
-        <item name="wcf.media.upload.error.differentFileType"><![CDATA[The new file must be of the same file type as the current file.]]></item>
-        <item name="wcf.media.upload.error.noImage"><![CDATA[The uploaded file is no image.]]></item>
-        <item name="wcf.media.upload.error.uploadFailed"><![CDATA[An unknown error occurred during the upload.]]></item>
-        <item name="wcf.media.upload.success"><![CDATA[The file has been successfully uploaded.]]></item>
-        <item name="wcf.media.uploadTime"><![CDATA[Upload Date]]></item>
-        <item name="wcf.media.uploader"><![CDATA[Uploaded By]]></item>
+        <item name="wcf.media.insert"><![CDATA[درج فایل]]></item>
+        <item name="wcf.media.insert.imageSize"><![CDATA[اندازه تصویر]]></item>
+        <item name="wcf.media.insert.imageSize.large"><![CDATA[تامنیل بزرگ]]></item>
+        <item name="wcf.media.insert.imageSize.medium"><![CDATA[تامنیل متوسط]]></item>
+        <item name="wcf.media.insert.imageSize.original"><![CDATA[تصویر اصلی]]></item>
+        <item name="wcf.media.insert.imageSize.small"><![CDATA[تامنیل کوچک]]></item>
+        <item name="wcf.media.isMultilingual"><![CDATA[چندزبانی را فعال کنید]]></item>
+        <item name="wcf.media.languageID"><![CDATA[زبان]]></item>
+        <item name="wcf.media.lastDownloadTime"><![CDATA[آخرین دانلود]]></item>
+        <item name="wcf.media.manager"><![CDATA[مدیریت رسانه]]></item>
+        <item name="wcf.media.media"><![CDATA[رسانه ]]></item>
+        <item name="wcf.media.media.pageTitle"><![CDATA[{if $__wcf->session->getPermission('admin.content.cms.canOnlyAccessOwnMedia')}صاحب {/if}Media]]></item>
+        <item name="wcf.media.search.cancel"><![CDATA[لغو جستجو]]></item>
+        <item name="wcf.media.search.info.searchStringThreshold"><![CDATA[عبارت جستجو باید حداقل شامل {#$minSearchLength} کرکتر{if $minSearchLength > 1}{/if}.]]></item>
+        <item name="wcf.media.search.noResults"><![CDATA[جستجو نتیجه ای نداشت.]]></item>
+        <item name="wcf.media.search.placeholder"><![CDATA[جستجوی فایل ها]]></item>
+        <item name="wcf.media.setCategory"><![CDATA[ویرایش دسته]]></item>
+        <item name="wcf.media.upload.error.differentFileExtension"><![CDATA[Tفایل جدید باید همان پسوند فایل فعلی را داشته باشد.]]></item>
+        <item name="wcf.media.upload.error.differentFileType"><![CDATA[فایل جدید باید از همان نوع فایل فعلی باشد.]]></item>
+        <item name="wcf.media.upload.error.noImage"><![CDATA[فایل آپلود شده بدون تصویر است.]]></item>
+        <item name="wcf.media.upload.error.uploadFailed"><![CDATA[یک خطای ناشناخته در حین آپلود روی داد.]]></item>
+        <item name="wcf.media.upload.success"><![CDATA[فایل با موفقیت آپلود شد.]]></item>
+        <item name="wcf.media.uploadTime"><![CDATA[تاریخ آپلود]]></item>
+        <item name="wcf.media.uploader"><![CDATA[بارگزاری شده توسط]]></item>
     </category>
     <category name="wcf.menu">
-        <item name="wcf.menu.com.woltlab.wcf.FooterLinks"><![CDATA[Footer Links]]></item>
-        <item name="wcf.menu.com.woltlab.wcf.FooterMenu"><![CDATA[Footer Menu]]></item>
-        <item name="wcf.menu.com.woltlab.wcf.MainMenu"><![CDATA[Main Menu]]></item>
-        <item name="wcf.menu.item.com.woltlab.blog.BlogList"><![CDATA[Blog]]></item>
-        <item name="wcf.menu.item.com.woltlab.blog.EntryList"><![CDATA[Articles]]></item>
-        <item name="wcf.menu.item.com.woltlab.blog.MyBlogList"><![CDATA[My Blogs]]></item>
-        <item name="wcf.menu.item.com.woltlab.blog.MyEntryList"><![CDATA[My Articles]]></item>
-        <item name="wcf.menu.item.com.woltlab.blog.UnreadEntryList"><![CDATA[Unread Articles]]></item>
-        <item name="wcf.menu.item.com.woltlab.blog.WatchedEntryList"><![CDATA[Watched Articles]]></item>
-        <item name="wcf.menu.item.com.woltlab.calendar.Calendar"><![CDATA[Calendar]]></item>
-        <item name="wcf.menu.item.com.woltlab.calendar.EventParticipationList"><![CDATA[Participations]]></item>
-        <item name="wcf.menu.item.com.woltlab.calendar.Map"><![CDATA[Map]]></item>
-        <item name="wcf.menu.item.com.woltlab.calendar.UnreadEventList"><![CDATA[Unread Events]]></item>
-        <item name="wcf.menu.item.com.woltlab.calendar.UpcomingEventList"><![CDATA[Upcoming Events]]></item>
-        <item name="wcf.menu.item.com.woltlab.filebase.FileList"><![CDATA[Filebase]]></item>
-        <item name="wcf.menu.item.com.woltlab.filebase.MyFileList"><![CDATA[My Files]]></item>
-        <item name="wcf.menu.item.com.woltlab.filebase.PurchasedFileList"><![CDATA[Purchased Files]]></item>
-        <item name="wcf.menu.item.com.woltlab.filebase.UnreadFileList"><![CDATA[New Files]]></item>
-        <item name="wcf.menu.item.com.woltlab.filebase.WatchedFileList"><![CDATA[Watched Files]]></item>
-        <item name="wcf.menu.item.com.woltlab.gallery.AlbumList"><![CDATA[Albums]]></item>
-        <item name="wcf.menu.item.com.woltlab.gallery.Gallery"><![CDATA[Gallery]]></item>
-        <item name="wcf.menu.item.com.woltlab.gallery.Map"><![CDATA[Map]]></item>
-        <item name="wcf.menu.item.com.woltlab.gallery.MyAlbumList"><![CDATA[My Albums]]></item>
-        <item name="wcf.menu.item.com.woltlab.gallery.MyFavoriteList"><![CDATA[My Favorites]]></item>
-        <item name="wcf.menu.item.com.woltlab.gallery.MyImageList"><![CDATA[My Images]]></item>
-        <item name="wcf.menu.item.com.woltlab.gallery.MyVideoList"><![CDATA[My Videos]]></item>
-        <item name="wcf.menu.item.com.woltlab.gallery.UnreadAlbumList"><![CDATA[New Albums]]></item>
-        <item name="wcf.menu.item.com.woltlab.gallery.UnreadImageList"><![CDATA[New Items]]></item>
-        <item name="wcf.menu.item.com.woltlab.gallery.WatchedImageList"><![CDATA[Watched Images]]></item>
-        <item name="wcf.menu.item.com.woltlab.wbb.BoardList"><![CDATA[Forum]]></item>
-        <item name="wcf.menu.item.com.woltlab.wbb.IgnoredThreadList"><![CDATA[Ignored Threads]]></item>
-        <item name="wcf.menu.item.com.woltlab.wbb.UnreadThreadList"><![CDATA[Unread Posts]]></item>
-        <item name="wcf.menu.item.com.woltlab.wbb.UnresolvedThreadList"><![CDATA[Unresolved Threads]]></item>
-        <item name="wcf.menu.item.com.woltlab.wbb.WatchedBoardList"><![CDATA[Watched Boards]]></item>
-        <item name="wcf.menu.item.com.woltlab.wbb.WatchedThreadList"><![CDATA[Watched Threads]]></item>
-        <item name="wcf.menu.item.com.woltlab.wcf.ArticleList"><![CDATA[Articles]]></item>
-        <item name="wcf.menu.item.com.woltlab.wcf.Contact"><![CDATA[Contact]]></item>
-        <item name="wcf.menu.item.com.woltlab.wcf.Dashboard"><![CDATA[Dashboard]]></item>
-        <item name="wcf.menu.item.com.woltlab.wcf.LegalNotice"><![CDATA[Legal Notice]]></item>
-        <item name="wcf.menu.item.com.woltlab.wcf.MembersList"><![CDATA[Members]]></item>
-        <item name="wcf.menu.item.com.woltlab.wcf.PrivacyPolicy"><![CDATA[Privacy Policy]]></item>
-        <item name="wcf.menu.item.com.woltlab.wcf.RecentActivityList"><![CDATA[Recent Activities]]></item>
-        <item name="wcf.menu.item.com.woltlab.wcf.Team"><![CDATA[Team]]></item>
-        <item name="wcf.menu.item.com.woltlab.wcf.UnreadArticleList"><![CDATA[Unread Articles]]></item>
-        <item name="wcf.menu.item.com.woltlab.wcf.UserSearch"><![CDATA[Search Members]]></item>
-        <item name="wcf.menu.item.com.woltlab.wcf.UsersOnlineList"><![CDATA[Users Online]]></item>
-        <item name="wcf.menu.item.com.woltlab.wcf.WatchedArticleList"><![CDATA[Watched Articles]]></item>
-        <item name="wcf.menu.page"><![CDATA[Menu]]></item>
-        <item name="wcf.menu.page.button.toggle"><![CDATA[More {$title} pages]]></item>
-        <item name="wcf.menu.page.location"><![CDATA[Current Location]]></item>
-        <item name="wcf.menu.page.navigation"><![CDATA[Navigation]]></item>
-        <item name="wcf.menu.page.options"><![CDATA[Options]]></item>
-        <item name="wcf.menu.user"><![CDATA[User Menu]]></item>
+        <item name="wcf.menu.com.woltlab.wcf.FooterLinks"><![CDATA[لینک های پاورقی]]></item>
+        <item name="wcf.menu.com.woltlab.wcf.FooterMenu"><![CDATA[منوی پاورقی]]></item>
+        <item name="wcf.menu.com.woltlab.wcf.MainMenu"><![CDATA[منوی اصلی]]></item>
+        <item name="wcf.menu.item.com.woltlab.blog.BlogList"><![CDATA[وبلاگ]]></item>
+        <item name="wcf.menu.item.com.woltlab.blog.EntryList"><![CDATA[مقالات]]></item>
+        <item name="wcf.menu.item.com.woltlab.blog.MyBlogList"><![CDATA[وبلاگ های من]]></item>
+        <item name="wcf.menu.item.com.woltlab.blog.MyEntryList"><![CDATA[مقالات من]]></item>
+        <item name="wcf.menu.item.com.woltlab.blog.UnreadEntryList"><![CDATA[مقالات خوانده نشده]]></item>
+        <item name="wcf.menu.item.com.woltlab.blog.WatchedEntryList"><![CDATA[مقالات تماشا شده]]></item>
+        <item name="wcf.menu.item.com.woltlab.calendar.Calendar"><![CDATA[تقویم]]></item>
+        <item name="wcf.menu.item.com.woltlab.calendar.EventParticipationList"><![CDATA[مشارکت ها]]></item>
+        <item name="wcf.menu.item.com.woltlab.calendar.Map"><![CDATA[نقشه]]></item>
+        <item name="wcf.menu.item.com.woltlab.calendar.UnreadEventList"><![CDATA[رویدادهای خوانده نشده]]></item>
+        <item name="wcf.menu.item.com.woltlab.calendar.UpcomingEventList"><![CDATA[رویدادهای آینده]]></item>
+        <item name="wcf.menu.item.com.woltlab.filebase.FileList"><![CDATA[پایگاه فایل]]></item>
+        <item name="wcf.menu.item.com.woltlab.filebase.MyFileList"><![CDATA[فایل های من]]></item>
+        <item name="wcf.menu.item.com.woltlab.filebase.PurchasedFileList"><![CDATA[فایل های خریداری شده]]></item>
+        <item name="wcf.menu.item.com.woltlab.filebase.UnreadFileList"><![CDATA[فایل های جدید]]></item>
+        <item name="wcf.menu.item.com.woltlab.filebase.WatchedFileList"><![CDATA[فایل های تماشا شده]]></item>
+        <item name="wcf.menu.item.com.woltlab.gallery.AlbumList"><![CDATA[آلبوم ها]]></item>
+        <item name="wcf.menu.item.com.woltlab.gallery.Gallery"><![CDATA[گالری]]></item>
+        <item name="wcf.menu.item.com.woltlab.gallery.Map"><![CDATA[نقشه]]></item>
+        <item name="wcf.menu.item.com.woltlab.gallery.MyAlbumList"><![CDATA[آلبوم های من]]></item>
+        <item name="wcf.menu.item.com.woltlab.gallery.MyFavoriteList"><![CDATA[علایق من]]></item>
+        <item name="wcf.menu.item.com.woltlab.gallery.MyImageList"><![CDATA[تصاویر من]]></item>
+        <item name="wcf.menu.item.com.woltlab.gallery.MyVideoList"><![CDATA[نماهنگ های من]]></item>
+        <item name="wcf.menu.item.com.woltlab.gallery.UnreadAlbumList"><![CDATA[آلبوم های جدید]]></item>
+        <item name="wcf.menu.item.com.woltlab.gallery.UnreadImageList"><![CDATA[آیتم های جدید]]></item>
+        <item name="wcf.menu.item.com.woltlab.gallery.WatchedImageList"><![CDATA[تصاویر تماشا شده]]></item>
+        <item name="wcf.menu.item.com.woltlab.wbb.BoardList"><![CDATA[انجمن]]></item>
+        <item name="wcf.menu.item.com.woltlab.wbb.IgnoredThreadList"><![CDATA[موضوعات نادیده گرفته شده]]></item>
+        <item name="wcf.menu.item.com.woltlab.wbb.UnreadThreadList"><![CDATA[پست های خوانده نشده]]></item>
+        <item name="wcf.menu.item.com.woltlab.wbb.UnresolvedThreadList"><![CDATA[موضوعات حل نشده]]></item>
+        <item name="wcf.menu.item.com.woltlab.wbb.WatchedBoardList"><![CDATA[تابلوهای تماشا شده]]></item>
+        <item name="wcf.menu.item.com.woltlab.wbb.WatchedThreadList"><![CDATA[موضوعات تماشا شده]]></item>
+        <item name="wcf.menu.item.com.woltlab.wcf.ArticleList"><![CDATA[مقالات]]></item>
+        <item name="wcf.menu.item.com.woltlab.wcf.Contact"><![CDATA[مخاطب]]></item>
+        <item name="wcf.menu.item.com.woltlab.wcf.Dashboard"><![CDATA[داشبورد]]></item>
+        <item name="wcf.menu.item.com.woltlab.wcf.LegalNotice"><![CDATA[اطلاع قانونی]]></item>
+        <item name="wcf.menu.item.com.woltlab.wcf.MembersList"><![CDATA[اعضا]]></item>
+        <item name="wcf.menu.item.com.woltlab.wcf.PrivacyPolicy"><![CDATA[سیاست حفظ حریم خصوصی]]></item>
+        <item name="wcf.menu.item.com.woltlab.wcf.RecentActivityList"><![CDATA[فعالیت های اخیر]]></item>
+        <item name="wcf.menu.item.com.woltlab.wcf.Team"><![CDATA[تیم]]></item>
+        <item name="wcf.menu.item.com.woltlab.wcf.UnreadArticleList"><![CDATA[مقالات خوانده نشده]]></item>
+        <item name="wcf.menu.item.com.woltlab.wcf.UserSearch"><![CDATA[جستجوی اعضا]]></item>
+        <item name="wcf.menu.item.com.woltlab.wcf.UsersOnlineList"><![CDATA[کاربران آنلاین]]></item>
+        <item name="wcf.menu.item.com.woltlab.wcf.WatchedArticleList"><![CDATA[مقالات تماشا شده]]></item>
+        <item name="wcf.menu.page"><![CDATA[منو]]></item>
+        <item name="wcf.menu.page.button.toggle"><![CDATA[صفحات {$title} دیگر]]></item>
+        <item name="wcf.menu.page.location"><![CDATA[موقعیت فعلی]]></item>
+        <item name="wcf.menu.page.navigation"><![CDATA[جهت یابی]]></item>
+        <item name="wcf.menu.page.options"><![CDATA[گزینه ها]]></item>
+        <item name="wcf.menu.user"><![CDATA[منو کاربر]]></item>
     </category>
     <category name="wcf.message">
-        <item name="wcf.message.autosave.prompt"><![CDATA[Restore saved draft?]]></item>
-        <item name="wcf.message.autosave.prompt.confirm"><![CDATA[Restore draft]]></item>
-        <item name="wcf.message.autosave.prompt.discard"><![CDATA[Discard draft]]></item>
-        <item name="wcf.message.autosave.restored"><![CDATA[Draft restored]]></item>
-        <item name="wcf.message.autosave.restored.confirm"><![CDATA[Keep]]></item>
-        <item name="wcf.message.autosave.restored.revert"><![CDATA[Discard and Clear Editor]]></item>
-        <item name="wcf.message.autosave.restored.revert.confirmMessage"><![CDATA[Do you really want to discard this draft and clear the editor?]]></item>
-        <item name="wcf.message.autosave.restored.version"><![CDATA[Draft as of {@$date}]]></item>
-        <item name="wcf.message.autosave.saved"><![CDATA[Draft saved]]></item>
-        <item name="wcf.message.bbcode.code.copy"><![CDATA[Copy Contents]]></item>
-        <item name="wcf.message.bbcode.code.copy.success"><![CDATA[The contents have been successfully copied.]]></item>
-        <item name="wcf.message.button.extendedEdit"><![CDATA[More Options]]></item>
-        <item name="wcf.message.button.extendedReply"><![CDATA[More Options]]></item>
-        <item name="wcf.message.error.censoredWordsFound"><![CDATA[The message contains censored words: {implode from=$censoredWords key=censoredWord item=number}{$censoredWord}{if $number > 1} ({#$number}×){/if}{/implode}.]]></item>
-        <item name="wcf.message.error.disallowedBBCodes"><![CDATA[The message contains disallowed BBCodes: {implode from=$disallowedBBCodes item=disallowedBBCode}{$disallowedBBCode}{/implode}.]]></item>
-        <item name="wcf.message.error.editorAlreadyInUse"><![CDATA[The editor is already in use, please finish editing before continuing.]]></item>
-        <item name="wcf.message.error.tooLong"><![CDATA[The message is too long, must be under {#$maxTextLength} characters.]]></item>
-        <item name="wcf.message.new"><![CDATA[New]]></item>
-        <item name="wcf.message.quote.insertAllQuotes"><![CDATA[Insert All Quotes]]></item>
-        <item name="wcf.message.quote.insertQuote"><![CDATA[Insert Quote]]></item>
-        <item name="wcf.message.quote.insertSelectedQuotes"><![CDATA[Insert Marked Quotes]]></item>
-        <item name="wcf.message.quote.manageQuotes"><![CDATA[Manage Quotes]]></item>
-        <item name="wcf.message.quote.quoteAndReply"><![CDATA[Insert Quote]]></item>
+        <item name="wcf.message.autosave.prompt"><![CDATA[پیش نویس ذخیره شده بازیابی شود؟]]></item>
+        <item name="wcf.message.autosave.prompt.confirm"><![CDATA[بازیابی پیش نویس]]></item>
+        <item name="wcf.message.autosave.prompt.discard"><![CDATA[دور انداختن پیش نویس]]></item>
+        <item name="wcf.message.autosave.restored"><![CDATA[پیش نویس بازیابی شد]]></item>
+        <item name="wcf.message.autosave.restored.confirm"><![CDATA[نگه داشتن]]></item>
+        <item name="wcf.message.autosave.restored.revert"><![CDATA[حذف و پاک کردن ویرایشگر]]></item>
+        <item name="wcf.message.autosave.restored.revert.confirmMessage"><![CDATA[آیا واقعاً می‌خواهید این پیش‌نویس را کنار بگذارید و ویرایشگر را پاک کنید؟]]></item>
+        <item name="wcf.message.autosave.restored.version"><![CDATA[پیش نویس از {@$date}]]></item>
+        <item name="wcf.message.autosave.saved"><![CDATA[پیش نویس ذخیره شد]]></item>
+        <item name="wcf.message.bbcode.code.copy"><![CDATA[کپی مطالب]]></item>
+        <item name="wcf.message.bbcode.code.copy.success"><![CDATA[مطالب با موفقیت کپی شد.]]></item>
+        <item name="wcf.message.button.extendedEdit"><![CDATA[گزینه های بیشتر]]></item>
+        <item name="wcf.message.button.extendedReply"><![CDATA[گزینه های بیشتر]]></item>
+        <item name="wcf.message.error.censoredWordsFound"><![CDATA[پیام حاوی کلمات سانسور شده است: {implode from=$censoredWords key=censoredWord item=number}{$censoredWord}{if $number > 1} ({#$number}×){/if}{/implode}.]]></item>
+        <item name="wcf.message.error.disallowedBBCodes"><![CDATA[پیام حاوی کدهای بی بی سی غیر مجاز است: {implode from=$disallowedBBCodes item=disallowedBBCode}{$disallowedBBCode}{/implode}.]]></item>
+        <item name="wcf.message.error.editorAlreadyInUse"><![CDATA[ویرایشگر قبلاً در حال استفاده است، لطفاً قبل از ادامه ویرایش را تمام کنید.]]></item>
+        <item name="wcf.message.error.tooLong"><![CDATA[پیام خیلی طولانی است، باید زیر  {#$maxTextLength} کرکتر باشد]]></item>
+        <item name="wcf.message.new"><![CDATA[جدید]]></item>
+        <item name="wcf.message.quote.insertAllQuotes"><![CDATA[درج همه نقل قول ها]]></item>
+        <item name="wcf.message.quote.insertQuote"><![CDATA[درج نقل قول]]></item>
+        <item name="wcf.message.quote.insertSelectedQuotes"><![CDATA[درج نقل قول های علامت گذاری شده]]></item>
+        <item name="wcf.message.quote.manageQuotes"><![CDATA[مدیریت نقل قول ها]]></item>
+        <item name="wcf.message.quote.quoteAndReply"><![CDATA[درج نقل قول]]></item>
         <item name="wcf.message.quote.quoteMessage"><![CDATA[Quote]]></item>
         <item name="wcf.message.quote.quoteSelected"><![CDATA[Save Quote]]></item>
         <item name="wcf.message.quote.removeAllQuotes"><![CDATA[Remove All Quotes]]></item>
