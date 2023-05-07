@@ -7602,109 +7602,109 @@ Your account on the website: {@PAGE_TITLE|phrase} [URL:{link isEmail=true}{/link
         <item name="wcf.moderation.report.notification.commentResponse.title"><![CDATA[پاسخ جدید (گزارش)]]></item>
         <item name="wcf.moderation.report.notification.commentResponse.title.stacked"><![CDATA[{#$timesTriggered} پاسخ های جدید (گزارش)]]></item>
         <item name="wcf.moderation.report.reason"><![CDATA[دلیل]]></item>
-        <item name="wcf.moderation.report.reason.description"><![CDATA[This function is reserved for: spam, advertisement and other questionable (racism, glorification of violence, offending, or sexist) content.]]></item>
-        <item name="wcf.moderation.report.removeContent"><![CDATA[Delete Content]]></item>
-        <item name="wcf.moderation.report.removeContent.confirmMessage"><![CDATA[Do you really want to delete the reported content{if $moderationQueueCount|isset && $moderationQueueCount > 1}s{/if}?]]></item>
-        <item name="wcf.moderation.report.removeContent.reason"><![CDATA[Reason (optional)]]></item>
-        <item name="wcf.moderation.report.removeReport"><![CDATA[Close Report]]></item>
-        <item name="wcf.moderation.report.removeReport.confirmMessage"><![CDATA[Do you really want to close {if !$moderationQueueCount|isset || $moderationQueueCount == 1}this report{else}these reports{/if}?]]></item>
-        <item name="wcf.moderation.report.removeReport.markAsJustified"><![CDATA[Also mark report as “Justified”]]></item>
-        <item name="wcf.moderation.report.reportContent"><![CDATA[Report Content]]></item>
-        <item name="wcf.moderation.report.reportedBy"><![CDATA[Reported by]]></item>
-        <item name="wcf.moderation.report.reportedContent"><![CDATA[Reported Content]]></item>
-        <item name="wcf.moderation.report.success"><![CDATA[The content has been reported.]]></item>
+        <item name="wcf.moderation.report.reason.description"><![CDATA[این تابع برای: هرزنامه، تبلیغات و سایر محتوای مشکوک (نژادپرستی، تمجید از خشونت، توهین‌آمیز یا جنسیتی) محفوظ است.]]></item>
+        <item name="wcf.moderation.report.removeContent"><![CDATA[حذف محتوا]]></item>
+        <item name="wcf.moderation.report.removeContent.confirmMessage"><![CDATA[آیا واقعاً می خواهید محتوای گزارش شده را حذف کنید؟{if $moderationQueueCount|isset && $moderationQueueCount > 1}ها{/if}?]]></item>
+        <item name="wcf.moderation.report.removeContent.reason"><![CDATA[دلیل (اختیاری)]]></item>
+        <item name="wcf.moderation.report.removeReport"><![CDATA[بستن گزارش]]></item>
+        <item name="wcf.moderation.report.removeReport.confirmMessage"><![CDATA[واقعا میخواهید ببندید {if !$moderationQueueCount|isset || $moderationQueueCount == 1}این گزارش{else}این گزارشات{/if}?]]></item>
+        <item name="wcf.moderation.report.removeReport.markAsJustified"><![CDATA[همچنین گزارش را به‌عنوان «توجیه شده» علامت‌گذاری کنید]]></item>
+        <item name="wcf.moderation.report.reportContent"><![CDATA[گزارش محتوا]]></item>
+        <item name="wcf.moderation.report.reportedBy"><![CDATA[گزارش شده توسط]]></item>
+        <item name="wcf.moderation.report.reportedContent"><![CDATA[محتوای گزارش شده]]></item>
+        <item name="wcf.moderation.report.success"><![CDATA[مطالب گزارش شده است.]]></item>
     </category>
     <category name="wcf.notice">
-        <item name="wcf.notice.button.dismiss"><![CDATA[Permanently dismiss this notice]]></item>
+        <item name="wcf.notice.button.dismiss"><![CDATA[این اطلاعیه را برای همیشه رد کنید]]></item>
     </category>
     <category name="wcf.page">
-        <item name="wcf.page.availableUpdates"><![CDATA[There are <a href="{link controller='PackageUpdate' isACP=true}{/link}">updates available</a> for installed packages.]]></item>
-        <item name="wcf.page.box.edit"><![CDATA[Edit Box]]></item>
-        <item name="wcf.page.breadcrumb"><![CDATA[Breadcrumb]]></item>
-        <item name="wcf.page.category.com.woltlab.gallery"><![CDATA[WoltLab Suite Gallery]]></item>
-        <item name="wcf.page.com.woltlab.gallery.AlbumListPage"><![CDATA[Albums]]></item>
-        <item name="wcf.page.com.woltlab.gallery.AlbumPage"><![CDATA[Album]]></item>
-        <item name="wcf.page.com.woltlab.gallery.ImageAddPage"><![CDATA[Upload Images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/Videos{/if}]]></item>
-        <item name="wcf.page.com.woltlab.gallery.ImageEditPage"><![CDATA[Edit Images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/Videos{/if}]]></item>
-        <item name="wcf.page.com.woltlab.gallery.ImageListPage"><![CDATA[Images]]></item>
-        <item name="wcf.page.com.woltlab.gallery.ImagePage"><![CDATA[Image{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/Video{/if}]]></item>
-        <item name="wcf.page.com.woltlab.gallery.MapPage"><![CDATA[Map]]></item>
-        <item name="wcf.page.com.woltlab.gallery.UnreadImageListPage"><![CDATA[New Images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and Videos{/if}]]></item>
-        <item name="wcf.page.com.woltlab.gallery.WatchedImageListPage"><![CDATA[Watched Categories]]></item>
-        <item name="wcf.page.comment"><![CDATA[Page Comment]]></item>
-        <item name="wcf.page.commentResponse"><![CDATA[Reply to Page Comment]]></item>
-        <item name="wcf.page.cookiePolicy.info"><![CDATA[This site uses cookies. By continuing to browse this site, you are agreeing to our use of cookies.]]></item>
-        <item name="wcf.page.cookiePolicy.info.moreInformation"><![CDATA[More Details]]></item>
-        <item name="wcf.page.copyright"><![CDATA[<a href="https://www.woltlab.com" rel="nofollow"{if EXTERNAL_LINK_TARGET_BLANK} target="_blank"{/if}>Powered by <strong>WoltLab Suite&trade;{if SHOW_VERSION_NUMBER} {@WCF_VERSION}{/if}</strong></a>]]></item>
-        <item name="wcf.page.error.backward"><![CDATA[Back to previous page.]]></item>
-        <item name="wcf.page.error.flood"><![CDATA[You have performed too many actions of this type. The function has therefore been temporarily deactivated for security reasons. Please try again later.]]></item>
-        <item name="wcf.page.error.illegalLink"><![CDATA[Sorry, but the page you are looking for has not been found. Try checking the URL for errors, then hit the refresh button on your browser.]]></item>
-        <item name="wcf.page.error.illegalLink.title"><![CDATA[Page Not Found]]></item>
-        <item name="wcf.page.error.insufficientPermissions"><![CDATA[Insufficient Permissions]]></item>
-        <item name="wcf.page.error.loginAvailable"><![CDATA[This page or section may be accessible for authorized users only.]]></item>
-        <item name="wcf.page.error.permissionDenied"><![CDATA[Access denied. You’re not authorized to view this page.]]></item>
-        <item name="wcf.page.error.permissionDenied.title"><![CDATA[Access Denied]]></item>
-        <item name="wcf.page.javascriptDisabled"><![CDATA[Your browser has JavaScript disabled. If you would like to use all features of this site, it is mandatory to enable JavaScript.]]></item>
-        <item name="wcf.page.jumpTo"><![CDATA[Go to Page]]></item>
-        <item name="wcf.page.jumpTo.description"><![CDATA[Enter a value between “1” and “#pages#”.]]></item>
-        <item name="wcf.page.mainMenu"><![CDATA[Navigation]]></item>
-        <item name="wcf.page.menu.outstandingItems"><![CDATA[({#$menuItemNode->getOutstandingItems()} {if $menuItemNode->getOutstandingItems() == 1}New Item{else}News Items{/if})]]></item>
-        <item name="wcf.page.offline"><![CDATA[Page is currently in maintenance mode{if OFFLINE_MESSAGE != ''}:{else}.{/if}]]></item>
-        <item name="wcf.page.onlineLocation.com.woltlab.blog.BlogEntryList"><![CDATA[Articles in blog {anchor object=$blog}]]></item>
-        <item name="wcf.page.onlineLocation.com.woltlab.blog.CategoryEntryList"><![CDATA[Blog articles in category {anchor object=$category}]]></item>
-        <item name="wcf.page.onlineLocation.com.woltlab.blog.Entry"><![CDATA[Blog article {anchor object=$entry class='blogEntryLink'}]]></item>
-        <item name="wcf.page.onlineLocation.com.woltlab.blog.EntryEdit"><![CDATA[Edit blog article {anchor object=$entry class='blogEntryLink'}]]></item>
-        <item name="wcf.page.onlineLocation.com.woltlab.blog.UserEntryList"><![CDATA[<a href="{link controller='UserEntryList' application='blog' object=$user}{/link}">Blog articles by {$user->username}</a>]]></item>
-        <item name="wcf.page.onlineLocation.com.woltlab.calendar.Event"><![CDATA[Event <a href="{link controller='Event' application='calendar' object=$eventDate}{/link}">{$eventDate->getEvent()->subject}</a>]]></item>
-        <item name="wcf.page.onlineLocation.com.woltlab.filebase.CategoryFileList"><![CDATA[File category <a href="{$category->getLink()}">{$category->getTitle()}</a>]]></item>
-        <item name="wcf.page.onlineLocation.com.woltlab.filebase.File"><![CDATA[File {anchor object=$file class='filebaseFileLink'}]]></item>
-        <item name="wcf.page.onlineLocation.com.woltlab.filebase.UserFileList"><![CDATA[<a href="{link controller='UserFileList' application='filebase' object=$user}{/link}">Files by {$user->username}</a>]]></item>
+        <item name="wcf.page.availableUpdates"><![CDATA[وجود دارند <a href="{link controller='PackageUpdate' isACP=true}{/link}"> به روز رسانی هایی در دسترس است</a> برای بسته های نصب شده.]]></item>
+        <item name="wcf.page.box.edit"><![CDATA[جعبه ویرایش]]></item>
+        <item name="wcf.page.breadcrumb"><![CDATA[خرده نان]]></item>
+        <item name="wcf.page.category.com.woltlab.gallery"><![CDATA[گالری مجموعه WoltLab]]></item>
+        <item name="wcf.page.com.woltlab.gallery.AlbumListPage"><![CDATA[البوم ها]]></item>
+        <item name="wcf.page.com.woltlab.gallery.AlbumPage"><![CDATA[البوم]]></item>
+        <item name="wcf.page.com.woltlab.gallery.ImageAddPage"><![CDATA[آپلود تصاویر{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/ویدیو ها{/if}]]></item>
+        <item name="wcf.page.com.woltlab.gallery.ImageEditPage"><![CDATA[ویرایش تصاویر{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/ویدیو ها{/if}]]></item>
+        <item name="wcf.page.com.woltlab.gallery.ImageListPage"><![CDATA[تصاویر]]></item>
+        <item name="wcf.page.com.woltlab.gallery.ImagePage"><![CDATA[تصویر{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/ویدیو{/if}]]></item>
+        <item name="wcf.page.com.woltlab.gallery.MapPage"><![CDATA[نقشه]]></item>
+        <item name="wcf.page.com.woltlab.gallery.UnreadImageListPage"><![CDATA[تصاویر جدید{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو ها {/if}]]></item>
+        <item name="wcf.page.com.woltlab.gallery.WatchedImageListPage"><![CDATA[دسته بندی های تماشا شده]]></item>
+        <item name="wcf.page.comment"><![CDATA[صفحه نظر]]></item>
+        <item name="wcf.page.commentResponse"><![CDATA[به کامنت صفحه پاسخ دهید]]></item>
+        <item name="wcf.page.cookiePolicy.info"><![CDATA[این سایت از کوکی ها استفاده می کند. با ادامه مرور این سایت، با استفاده ما از کوکی ها موافقت می کنید.]]></item>
+        <item name="wcf.page.cookiePolicy.info.moreInformation"><![CDATA[جزئیات بیشتر]]></item>
+        <item name="wcf.page.copyright"><![CDATA[<a href="https://www.woltlab.com" rel="nofollow"{if EXTERNAL_LINK_TARGET_BLANK} target="_blank"{/if}>پشتیبانی شده توسط <strong>WoltLab Suite&trade;{if SHOW_VERSION_NUMBER} {@WCF_VERSION}{/if}</strong></a>]]></item>
+        <item name="wcf.page.error.backward"><![CDATA[بازگشت به صفحه قبل]]></item>
+        <item name="wcf.page.error.flood"><![CDATA[شما اقدامات زیادی از این نوع انجام داده اید. بنابراین این عملکرد به دلایل امنیتی به طور موقت غیرفعال شده است. لطفاً بعداً دوباره امتحان کنید.]]></item>
+        <item name="wcf.page.error.illegalLink"><![CDATA[با عرض پوزش، اما صفحه مورد نظر شما یافت نشد. سعی کنید URL را برای وجود خطا بررسی کنید، سپس دکمه refresh را در مرورگر خود فشار دهید.]]></item>
+        <item name="wcf.page.error.illegalLink.title"><![CDATA[صفحه یافت نشد]]></item>
+        <item name="wcf.page.error.insufficientPermissions"><![CDATA[مجوزهای ناکافی]]></item>
+        <item name="wcf.page.error.loginAvailable"><![CDATA[این صفحه یا بخش ممکن است فقط برای کاربران مجاز قابل دسترسی باشد.]]></item>
+        <item name="wcf.page.error.permissionDenied"><![CDATA[دسترسی رد شد. شما مجاز به مشاهده این صفحه نیستید.]]></item>
+        <item name="wcf.page.error.permissionDenied.title"><![CDATA[دسترسی رد شد]]></item>
+        <item name="wcf.page.javascriptDisabled"><![CDATA[جاوااسکریپت مرورگر شما غیر فعال است. اگر مایل به استفاده از تمامی امکانات این سایت هستید، فعال کردن جاوا اسکریپت الزامی است.]]></item>
+        <item name="wcf.page.jumpTo"><![CDATA[به صفحه بروید]]></item>
+        <item name="wcf.page.jumpTo.description"><![CDATA[یک مقدار وارد کنید بین “1” و “#pages#”.]]></item>
+        <item name="wcf.page.mainMenu"><![CDATA[جهت یابی]]></item>
+        <item name="wcf.page.menu.outstandingItems"><![CDATA[({#$menuItemNode->getOutstandingItems()} {if $menuItemNode->getOutstandingItems() == 1}گزینه جدید{else}گزینه های جدید{/if})]]></item>
+        <item name="wcf.page.offline"><![CDATA[صفحه در حال حاضر در حالت تعمیر و نگهداری است{if OFFLINE_MESSAGE != ''}:{else}.{/if}]]></item>
+        <item name="wcf.page.onlineLocation.com.woltlab.blog.BlogEntryList"><![CDATA[مقالات در وبلاگ {anchor object=$blog}]]></item>
+        <item name="wcf.page.onlineLocation.com.woltlab.blog.CategoryEntryList"><![CDATA[مقالات وبلاگ در دسته بندی {anchor object=$category}]]></item>
+        <item name="wcf.page.onlineLocation.com.woltlab.blog.Entry"><![CDATA[مقاله وبلاگ {anchor object=$entry class='blogEntryLink'}]]></item>
+        <item name="wcf.page.onlineLocation.com.woltlab.blog.EntryEdit"><![CDATA[ویرایش مقاله وبلاگ {anchor object=$entry class='blogEntryLink'}]]></item>
+        <item name="wcf.page.onlineLocation.com.woltlab.blog.UserEntryList"><![CDATA[<a href="{link controller='UserEntryList' application='blog' object=$user}{/link}">مقالات وبلاگ توسط {$user->username}</a>]]></item>
+        <item name="wcf.page.onlineLocation.com.woltlab.calendar.Event"><![CDATA[رویداد <a href="{link controller='Event' application='calendar' object=$eventDate}{/link}">{$eventDate->getEvent()->subject}</a>]]></item>
+        <item name="wcf.page.onlineLocation.com.woltlab.filebase.CategoryFileList"><![CDATA[دسته بندی فایل <a href="{$category->getLink()}">{$category->getTitle()}</a>]]></item>
+        <item name="wcf.page.onlineLocation.com.woltlab.filebase.File"><![CDATA[فایل {anchor object=$file class='filebaseFileLink'}]]></item>
+        <item name="wcf.page.onlineLocation.com.woltlab.filebase.UserFileList"><![CDATA[<a href="{link controller='UserFileList' application='filebase' object=$user}{/link}">فایل ها توسط {$user->username}</a>]]></item>
         <item name="wcf.page.onlineLocation.com.woltlab.gallery.Album"><![CDATA[Album <a href="{$album->getLink()}">{$album->getTitle()}</a>]]></item>
-        <item name="wcf.page.onlineLocation.com.woltlab.gallery.CategoryImageList"><![CDATA[Gallery category <a href="{$category->getLink()}">{$category->getTitle()}</a>]]></item>
-        <item name="wcf.page.onlineLocation.com.woltlab.gallery.Image"><![CDATA[{if $image->isImage()}Image{else}Video{/if} <a href="{$image->getLink()}">{$image->getTitle()}</a>]]></item>
-        <item name="wcf.page.onlineLocation.com.woltlab.gallery.ImageEdit"><![CDATA[Editing {if $image->isImage()}Image{else}Video{/if} <a href="{$image->getLink()}">{$image->getTitle()}</a>]]></item>
-        <item name="wcf.page.onlineLocation.com.woltlab.gallery.UserAlbumList"><![CDATA[<a href="{link controller='UserAlbumList' application='gallery' object=$user}{/link}">Albums by {$user->username}</a>]]></item>
-        <item name="wcf.page.onlineLocation.com.woltlab.gallery.UserImageList"><![CDATA[<a href="{link controller='UserImageList' application='gallery' object=$user}{/link}">Images by {$user->username}</a>]]></item>
-        <item name="wcf.page.onlineLocation.com.woltlab.gallery.UserVideoList"><![CDATA[<a href="{link controller='UserVideoList' application='gallery' object=$user}{/link}">Videos by {$user->username}</a>]]></item>
-        <item name="wcf.page.onlineLocation.com.woltlab.wbb.Board"><![CDATA[Forum <a href="{link controller='Board' application='wbb' object=$board}{/link}">{$board->getTitle()}</a>]]></item>
-        <item name="wcf.page.onlineLocation.com.woltlab.wbb.Thread"><![CDATA[Thread {anchor object=$thread class='wbbTopicLink'}]]></item>
-        <item name="wcf.page.onlineLocation.com.woltlab.wbb.ThreadAdd"><![CDATA[Create thread in forum <a href="{link controller='Board' application='wbb' object=$board}{/link}">{$board->getTitle()}</a>]]></item>
-        <item name="wcf.page.onlineLocation.com.woltlab.wbb.ThreadLog"><![CDATA[Thread log {anchor object=$thread class='wbbTopicLink'}]]></item>
-        <item name="wcf.page.onlineLocation.com.woltlab.wcf.Article"><![CDATA[Article <a href="{$article->getLink()}">{$article->getTitle()}</a>]]></item>
-        <item name="wcf.page.onlineLocation.com.woltlab.wcf.CategoryArticleList"><![CDATA[Article category <a href="{$category->getLink()}">{$category->getTitle()}</a>]]></item>
+        <item name="wcf.page.onlineLocation.com.woltlab.gallery.CategoryImageList"><![CDATA[دسته گالری <a href="{$category->getLink()}">{$category->getTitle()}</a>]]></item>
+        <item name="wcf.page.onlineLocation.com.woltlab.gallery.Image"><![CDATA[{if $image->isImage()}تصویر{else}ویدیو{/if} <a href="{$image->getLink()}">{$image->getTitle()}</a>]]></item>
+        <item name="wcf.page.onlineLocation.com.woltlab.gallery.ImageEdit"><![CDATA[ویرایش {if $image->isImage()}تصویر{else}ویدیو{/if} <a href="{$image->getLink()}">{$image->getTitle()}</a>]]></item>
+        <item name="wcf.page.onlineLocation.com.woltlab.gallery.UserAlbumList"><![CDATA[<a href="{link controller='UserAlbumList' application='gallery' object=$user}{/link}">البوم ها توسط {$user->username}</a>]]></item>
+        <item name="wcf.page.onlineLocation.com.woltlab.gallery.UserImageList"><![CDATA[<a href="{link controller='UserImageList' application='gallery' object=$user}{/link}">تصاویر توسط {$user->username}</a>]]></item>
+        <item name="wcf.page.onlineLocation.com.woltlab.gallery.UserVideoList"><![CDATA[<a href="{link controller='UserVideoList' application='gallery' object=$user}{/link}">ویدیو ها توسط {$user->username}</a>]]></item>
+        <item name="wcf.page.onlineLocation.com.woltlab.wbb.Board"><![CDATA[انجمن <a href="{link controller='Board' application='wbb' object=$board}{/link}">{$board->getTitle()}</a>]]></item>
+        <item name="wcf.page.onlineLocation.com.woltlab.wbb.Thread"><![CDATA[موضوع {anchor object=$thread class='wbbTopicLink'}]]></item>
+        <item name="wcf.page.onlineLocation.com.woltlab.wbb.ThreadAdd"><![CDATA[ایجاد موضوع در انجمن <a href="{link controller='Board' application='wbb' object=$board}{/link}">{$board->getTitle()}</a>]]></item>
+        <item name="wcf.page.onlineLocation.com.woltlab.wbb.ThreadLog"><![CDATA[گزارش موضوع {anchor object=$thread class='wbbTopicLink'}]]></item>
+        <item name="wcf.page.onlineLocation.com.woltlab.wcf.Article"><![CDATA[مقاله <a href="{$article->getLink()}">{$article->getTitle()}</a>]]></item>
+        <item name="wcf.page.onlineLocation.com.woltlab.wcf.CategoryArticleList"><![CDATA[دسته بندی مقاله <a href="{$category->getLink()}">{$category->getTitle()}</a>]]></item>
         <item name="wcf.page.onlineLocation.com.woltlab.wcf.User"><![CDATA[User profile of <a href="{link controller='User' object=$user}{/link}" class="userLink" data-user-id="{@$user->userID}">{$user->username}</a>]]></item>
-        <item name="wcf.page.onlineLocation.com.woltlab.wcf.conversation.Conversation"><![CDATA[Conversation {anchor object=$conversation class='conversationLink'}]]></item>
-        <item name="wcf.page.pageNo"><![CDATA[Page {#$pageNo}]]></item>
-        <item name="wcf.page.pageObjectID"><![CDATA[Object ID]]></item>
-        <item name="wcf.page.pageObjectID.com.woltlab.blog.BlogEntryList"><![CDATA[ID of the Blog]]></item>
-        <item name="wcf.page.pageObjectID.com.woltlab.blog.CategoryEntryList"><![CDATA[ID of the Category]]></item>
-        <item name="wcf.page.pageObjectID.com.woltlab.blog.Entry"><![CDATA[ID of the Article]]></item>
-        <item name="wcf.page.pageObjectID.com.woltlab.blog.UserEntryList"><![CDATA[ID of the User]]></item>
-        <item name="wcf.page.pageObjectID.com.woltlab.wbb.Board"><![CDATA[ID of the Forum]]></item>
-        <item name="wcf.page.pageObjectID.com.woltlab.wbb.Thread"><![CDATA[ID of the Thread]]></item>
-        <item name="wcf.page.pageObjectID.com.woltlab.wbb.ThreadAdd"><![CDATA[ID of the Forum]]></item>
-        <item name="wcf.page.pageObjectID.com.woltlab.wcf.Article"><![CDATA[ID of the Article]]></item>
-        <item name="wcf.page.pageObjectID.com.woltlab.wcf.CategoryArticleList"><![CDATA[ID of the Category]]></item>
-        <item name="wcf.page.pageObjectID.com.woltlab.wcf.User"><![CDATA[ID of the User]]></item>
-        <item name="wcf.page.pageObjectID.search"><![CDATA[Search ID]]></item>
-        <item name="wcf.page.pageObjectID.search.com.woltlab.blog.BlogEntryList"><![CDATA[Search Blog Titles]]></item>
-        <item name="wcf.page.pageObjectID.search.com.woltlab.blog.CategoryEntryList"><![CDATA[Search Category Titles]]></item>
-        <item name="wcf.page.pageObjectID.search.com.woltlab.blog.Entry"><![CDATA[Search Article Titles]]></item>
-        <item name="wcf.page.pageObjectID.search.com.woltlab.blog.UserEntryList"><![CDATA[Search Usernames]]></item>
-        <item name="wcf.page.pageObjectID.search.com.woltlab.wbb.Board"><![CDATA[Search Forum Titles]]></item>
-        <item name="wcf.page.pageObjectID.search.com.woltlab.wbb.Thread"><![CDATA[Search Thread Titles]]></item>
-        <item name="wcf.page.pageObjectID.search.com.woltlab.wbb.ThreadAdd"><![CDATA[Search Forum Titles]]></item>
-        <item name="wcf.page.pageObjectID.search.com.woltlab.wcf.Article"><![CDATA[Search Article Titles]]></item>
-        <item name="wcf.page.pageObjectID.search.com.woltlab.wcf.CategoryArticleList"><![CDATA[Search Category Titles]]></item>
-        <item name="wcf.page.pageObjectID.search.com.woltlab.wcf.User"><![CDATA[Search Usernames]]></item>
-        <item name="wcf.page.pageObjectID.search.noResults"><![CDATA[The search returned no results.]]></item>
-        <item name="wcf.page.pageObjectID.search.results"><![CDATA[Search Results]]></item>
-        <item name="wcf.page.pageObjectID.search.terms"><![CDATA[Search]]></item>
-        <item name="wcf.page.pagePosition"><![CDATA[Page {#$pageNo} of {#$pages}]]></item>
-        <item name="wcf.page.recentActivity.pageComment"><![CDATA[Commented on page <a href="{$page->getLink()}#comment{$commentID}">{$page->getTitle()}</a>.]]></item>
-        <item name="wcf.page.recentActivity.pageCommentResponse"><![CDATA[Replied to a comment by <a href="{link controller='User' object=$commentAuthor}{/link}">{$commentAuthor->username}</a> on page <a href="{$page->getLink()}#comment{@$commentID}/response{@$responseID}">{$page->getTitle()}</a>.]]></item>
-        <item name="wcf.page.redirect.title"><![CDATA[Redirection]]></item>
-        <item name="wcf.page.redirect.url"><![CDATA[Please click here if the automatic redirection does not work!]]></item>
+        <item name="wcf.page.onlineLocation.com.woltlab.wcf.conversation.Conversation"><![CDATA[مکالمه {anchor object=$conversation class='conversationLink'}]]></item>
+        <item name="wcf.page.pageNo"><![CDATA[صفحه {#$pageNo}]]></item>
+        <item name="wcf.page.pageObjectID"><![CDATA[شناسه شی]]></item>
+        <item name="wcf.page.pageObjectID.com.woltlab.blog.BlogEntryList"><![CDATA[شناسه وبلاگ]]></item>
+        <item name="wcf.page.pageObjectID.com.woltlab.blog.CategoryEntryList"><![CDATA[شناسه دسته]]></item>
+        <item name="wcf.page.pageObjectID.com.woltlab.blog.Entry"><![CDATA[شناسه مقاله]]></item>
+        <item name="wcf.page.pageObjectID.com.woltlab.blog.UserEntryList"><![CDATA[شناسه کاربر]]></item>
+        <item name="wcf.page.pageObjectID.com.woltlab.wbb.Board"><![CDATA[شناسه انجمن]]></item>
+        <item name="wcf.page.pageObjectID.com.woltlab.wbb.Thread"><![CDATA[شناسه موضوع]]></item>
+        <item name="wcf.page.pageObjectID.com.woltlab.wbb.ThreadAdd"><![CDATA[شناسه انجمن]]></item>
+        <item name="wcf.page.pageObjectID.com.woltlab.wcf.Article"><![CDATA[شناسه مقاله]]></item>
+        <item name="wcf.page.pageObjectID.com.woltlab.wcf.CategoryArticleList"><![CDATA[شناسه دسته]]></item>
+        <item name="wcf.page.pageObjectID.com.woltlab.wcf.User"><![CDATA[شناسه کابر]]></item>
+        <item name="wcf.page.pageObjectID.search"><![CDATA[جستجو شناسه]]></item>
+        <item name="wcf.page.pageObjectID.search.com.woltlab.blog.BlogEntryList"><![CDATA[جستجو در عناوین وبلاگ]]></item>
+        <item name="wcf.page.pageObjectID.search.com.woltlab.blog.CategoryEntryList"><![CDATA[جستجوی عناوین دسته ها]]></item>
+        <item name="wcf.page.pageObjectID.search.com.woltlab.blog.Entry"><![CDATA[جستجو در عناوین مقاله]]></item>
+        <item name="wcf.page.pageObjectID.search.com.woltlab.blog.UserEntryList"><![CDATA[جستجوی نام های کاربری]]></item>
+        <item name="wcf.page.pageObjectID.search.com.woltlab.wbb.Board"><![CDATA[جستجو در عناوین انجمن]]></item>
+        <item name="wcf.page.pageObjectID.search.com.woltlab.wbb.Thread"><![CDATA[جستجو در عناوین موضوع]]></item>
+        <item name="wcf.page.pageObjectID.search.com.woltlab.wbb.ThreadAdd"><![CDATA[جستجو در عناوین انجمن]]></item>
+        <item name="wcf.page.pageObjectID.search.com.woltlab.wcf.Article"><![CDATA[جستجو در عناوین مقاله]]></item>
+        <item name="wcf.page.pageObjectID.search.com.woltlab.wcf.CategoryArticleList"><![CDATA[جستجوی عناوین دسته ها]]></item>
+        <item name="wcf.page.pageObjectID.search.com.woltlab.wcf.User"><![CDATA[جستجوی نام های کاربری]]></item>
+        <item name="wcf.page.pageObjectID.search.noResults"><![CDATA[جستجو نتیجه ای نداشت.]]></item>
+        <item name="wcf.page.pageObjectID.search.results"><![CDATA[نتایج جستجو]]></item>
+        <item name="wcf.page.pageObjectID.search.terms"><![CDATA[جستجو]]></item>
+        <item name="wcf.page.pagePosition"><![CDATA[صفحه {#$pageNo} از {#$pages}]]></item>
+        <item name="wcf.page.recentActivity.pageComment"><![CDATA[در صفحه نظر داد <a href="{$page->getLink()}#comment{$commentID}">{$page->getTitle()}</a>.]]></item>
+        <item name="wcf.page.recentActivity.pageCommentResponse"><![CDATA[پاسخ داد به یک نظر توسط <a href="{link controller='User' object=$commentAuthor}{/link}">{$commentAuthor->username}</a> در صفحه <a href="{$page->getLink()}#comment{@$commentID}/response{@$responseID}">{$page->getTitle()}</a>.]]></item>
+        <item name="wcf.page.redirect.title"><![CDATA[تغییر مسیر]]></item>
+        <item name="wcf.page.redirect.url"><![CDATA[اگر تغییر مسیر خودکار کار نمی کند، لطفا اینجا را کلیک کنید!]]></item>
         <item name="wcf.page.requestedPage"><![CDATA[Requested Page]]></item>
         <item name="wcf.page.requestedPage.condition.reverseLogic"><![CDATA[Reverse “Requested Page” selection]]></item>
         <item name="wcf.page.requestedPage.condition.reverseLogic.description"><![CDATA[If selected, the requested page <strong>may not</strong> be one of the pages selected under “Requested Page”.]]></item>
