@@ -7448,160 +7448,160 @@ Your account on the website: {@PAGE_TITLE|phrase} [URL:{link isEmail=true}{/link
         <item name="wcf.message.quote.insertSelectedQuotes"><![CDATA[درج نقل قول های علامت گذاری شده]]></item>
         <item name="wcf.message.quote.manageQuotes"><![CDATA[مدیریت نقل قول ها]]></item>
         <item name="wcf.message.quote.quoteAndReply"><![CDATA[درج نقل قول]]></item>
-        <item name="wcf.message.quote.quoteMessage"><![CDATA[Quote]]></item>
-        <item name="wcf.message.quote.quoteSelected"><![CDATA[Save Quote]]></item>
-        <item name="wcf.message.quote.removeAllQuotes"><![CDATA[Remove All Quotes]]></item>
-        <item name="wcf.message.quote.removeSelectedQuotes"><![CDATA[Removed Marked Quotes]]></item>
-        <item name="wcf.message.quote.showQuotes"><![CDATA[{if $count == 1}One Quote{else}{#$count} Quotes{/if}]]></item>
-        <item name="wcf.message.settings"><![CDATA[Settings]]></item>
-        <item name="wcf.message.share"><![CDATA[Share]]></item>
-        <item name="wcf.message.share.copy"><![CDATA[Copy Code]]></item>
-        <item name="wcf.message.share.copy.success"><![CDATA[The code has been successfully copied.]]></item>
-        <item name="wcf.message.share.facebook"><![CDATA[Facebook]]></item>
-        <item name="wcf.message.share.linkedIn"><![CDATA[LinkedIn]]></item>
-        <item name="wcf.message.share.nativeShare"><![CDATA[More Options]]></item>
-        <item name="wcf.message.share.permalink"><![CDATA[Permalink]]></item>
-        <item name="wcf.message.share.permalink.bbcode"><![CDATA[BBCode]]></item>
+        <item name="wcf.message.quote.quoteMessage"><![CDATA[نقل قول]]></item>
+        <item name="wcf.message.quote.quoteSelected"><![CDATA[ذخیره نقل قول]]></item>
+        <item name="wcf.message.quote.removeAllQuotes"><![CDATA[حذف همه نقل قول ها]]></item>
+        <item name="wcf.message.quote.removeSelectedQuotes"><![CDATA[نقل قول های علامت گذاری شده حذف شد]]></item>
+        <item name="wcf.message.quote.showQuotes"><![CDATA[{if $count == 1}یک نقل قول{else}{#$count} نقل قول {/if}]]></item>
+        <item name="wcf.message.settings"><![CDATA[تنظیمات]]></item>
+        <item name="wcf.message.share"><![CDATA[اشتراک گذاری]]></item>
+        <item name="wcf.message.share.copy"><![CDATA[کپی کردن کد]]></item>
+        <item name="wcf.message.share.copy.success"><![CDATA[کد با موفقیت کپی شد.]]></item>
+        <item name="wcf.message.share.facebook"><![CDATA[فیس بوک]]></item>
+        <item name="wcf.message.share.linkedIn"><![CDATA[لینکدین]]></item>
+        <item name="wcf.message.share.nativeShare"><![CDATA[گزینه های بیشتر]]></item>
+        <item name="wcf.message.share.permalink"><![CDATA[پیوند ثابت]]></item>
+        <item name="wcf.message.share.permalink.bbcode"><![CDATA[بی بی سی کد]]></item>
         <item name="wcf.message.share.permalink.html"><![CDATA[HTML]]></item>
-        <item name="wcf.message.share.pinterest"><![CDATA[Pinterest]]></item>
-        <item name="wcf.message.share.reddit"><![CDATA[Reddit]]></item>
-        <item name="wcf.message.share.socialMedia"><![CDATA[Social Media]]></item>
-        <item name="wcf.message.share.twitter"><![CDATA[Twitter]]></item>
-        <item name="wcf.message.share.whatsApp"><![CDATA[WhatsApp]]></item>
+        <item name="wcf.message.share.pinterest"><![CDATA[پینترست]]></item>
+        <item name="wcf.message.share.reddit"><![CDATA[ردیت]]></item>
+        <item name="wcf.message.share.socialMedia"><![CDATA[رسانه های اجتماعی]]></item>
+        <item name="wcf.message.share.twitter"><![CDATA[توییتر]]></item>
+        <item name="wcf.message.share.whatsApp"><![CDATA[واتس اپ]]></item>
         <item name="wcf.message.share.xing"><![CDATA[XING]]></item>
-        <item name="wcf.message.smilies"><![CDATA[Smilies]]></item>
-        <item name="wcf.message.status.deleted"><![CDATA[Deleted]]></item>
-        <item name="wcf.message.status.disabled"><![CDATA[Disabled]]></item>
-        <item name="wcf.message.toc"><![CDATA[Contents]]></item>
-        <item name="wcf.message.toc.hide"><![CDATA[hide]]></item>
-        <item name="wcf.message.toc.show"><![CDATA[show]]></item>
-        <item name="wcf.message.user.consent.button.enable"><![CDATA[Display all external content]]></item>
-        <item name="wcf.message.user.consent.description"><![CDATA[Content embedded from external sources will not be displayed without your consent.]]></item>
-        <item name="wcf.message.user.consent.notice"><![CDATA[Through the activation of external content, you agree that personal data may be transferred to third party platforms. We have provided more information on this in our privacy policy.]]></item>
-        <item name="wcf.message.user.consent.title"><![CDATA[External Content]]></item>
+        <item name="wcf.message.smilies"><![CDATA[شکلک ها]]></item>
+        <item name="wcf.message.status.deleted"><![CDATA[حذف شده]]></item>
+        <item name="wcf.message.status.disabled"><![CDATA[از دسترس خارج شده]]></item>
+        <item name="wcf.message.toc"><![CDATA[فهرست]]></item>
+        <item name="wcf.message.toc.hide"><![CDATA[پنهان ]]></item>
+        <item name="wcf.message.toc.show"><![CDATA[نمایش]]></item>
+        <item name="wcf.message.user.consent.button.enable"><![CDATA[نمایش تمام محتوای خارجی]]></item>
+        <item name="wcf.message.user.consent.description"><![CDATA[محتوای جاسازی شده از منابع خارجی بدون رضایت شما نمایش داده نخواهد شد.]]></item>
+        <item name="wcf.message.user.consent.notice"><![CDATA[از طریق فعال سازی محتوای خارجی، شما موافقت می کنید که داده های شخصی ممکن است به سیستم عامل های شخص ثالث منتقل شود. ما اطلاعات بیشتری در این مورد در سیاست حفظ حریم خصوصی خود ارائه کرده ایم.]]></item>
+        <item name="wcf.message.user.consent.title"><![CDATA[محتوای خارجی]]></item>
     </category>
     <category name="wcf.moderation">
-        <item name="wcf.moderation.assignedUser"><![CDATA[Assigned User]]></item>
-        <item name="wcf.moderation.assignedUser.change"><![CDATA[Assign User]]></item>
-        <item name="wcf.moderation.assignedUser.error.notAffected"><![CDATA[This user does not have sufficient privileges.]]></item>
-        <item name="wcf.moderation.assignedUser.nobody"><![CDATA[Nobody]]></item>
-        <item name="wcf.moderation.assignedUsername"><![CDATA[Assigned User]]></item>
-        <item name="wcf.moderation.comments"><![CDATA[Comments]]></item>
-        <item name="wcf.moderation.comments.description"><![CDATA[All comments are internal and will not be exposed to non-moderators.]]></item>
-        <item name="wcf.moderation.deletedContent.com.woltlab.blog.entry"><![CDATA[Deleted Blog Articles]]></item>
-        <item name="wcf.moderation.deletedContent.com.woltlab.calendar.event"><![CDATA[Deleted Events]]></item>
-        <item name="wcf.moderation.deletedContent.com.woltlab.filebase.file"><![CDATA[Deleted Files]]></item>
-        <item name="wcf.moderation.deletedContent.com.woltlab.filebase.version"><![CDATA[Deleted File Versions]]></item>
-        <item name="wcf.moderation.deletedContent.com.woltlab.gallery.image"><![CDATA[Deleted Images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and Videos{/if}]]></item>
-        <item name="wcf.moderation.deletedContent.com.woltlab.wbb.post"><![CDATA[Deleted Posts]]></item>
-        <item name="wcf.moderation.deletedContent.com.woltlab.wbb.thread"><![CDATA[Deleted Threads]]></item>
-        <item name="wcf.moderation.deletedContent.objectType.com.woltlab.blog.entry"><![CDATA[Blog Articles]]></item>
-        <item name="wcf.moderation.deletedContent.objectType.com.woltlab.calendar.event"><![CDATA[Events]]></item>
-        <item name="wcf.moderation.deletedContent.objectType.com.woltlab.filebase.file"><![CDATA[Files]]></item>
-        <item name="wcf.moderation.deletedContent.objectType.com.woltlab.filebase.version"><![CDATA[File Versions]]></item>
-        <item name="wcf.moderation.deletedContent.objectType.com.woltlab.gallery.image"><![CDATA[Images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and Videos{/if}]]></item>
-        <item name="wcf.moderation.deletedContent.objectType.com.woltlab.wbb.post"><![CDATA[Posts]]></item>
-        <item name="wcf.moderation.deletedContent.objectType.com.woltlab.wbb.thread"><![CDATA[Threads]]></item>
-        <item name="wcf.moderation.deletedContent.objectTypes"><![CDATA[Deleted Content]]></item>
-        <item name="wcf.moderation.doneItems"><![CDATA[Resolved Items]]></item>
-        <item name="wcf.moderation.filter"><![CDATA[Filter Items]]></item>
-        <item name="wcf.moderation.filterByType"><![CDATA[Type]]></item>
-        <item name="wcf.moderation.filterByUser"><![CDATA[Assigned User]]></item>
-        <item name="wcf.moderation.filterByUser.allEntries"><![CDATA[All Items]]></item>
-        <item name="wcf.moderation.filterByUser.myself"><![CDATA[Myself ({$__wcf->getUser()->username})]]></item>
-        <item name="wcf.moderation.filterByUser.nobody"><![CDATA[Nobody]]></item>
-        <item name="wcf.moderation.jumpToContent"><![CDATA[Go to Related Content]]></item>
-        <item name="wcf.moderation.lastChangeTime"><![CDATA[Last Change]]></item>
-        <item name="wcf.moderation.markAsRead.doubleClick"><![CDATA[Double-Click to Mark This Item Read]]></item>
-        <item name="wcf.moderation.moderation"><![CDATA[Moderation]]></item>
-        <item name="wcf.moderation.noEntries"><![CDATA[There are no items at the moment. <a href="#" class="jsStaticDialog" data-dialog-id="moderationListSortFilter" role="button">Change the filters.</a>{if $hasActiveFilter} <a href="{link controller='ModerationList'}{/link}">Reset the active filters.</a>{/if}]]></item>
-        <item name="wcf.moderation.noMoreItems"><![CDATA[You have no recent items.]]></item>
-        <item name="wcf.moderation.notification.comment.mail.html"><![CDATA[<p>{@$authorList} commented on the moderation entry <a href="{$moderationQueue->getLink()}">{$moderationQueue->getTitle()}</a>:</p>]]></item>
-        <item name="wcf.moderation.notification.comment.mail.plaintext"><![CDATA[{@$authorList} commented on the moderation entry {@$moderationQueue->getTitle()} [URL:{@$moderationQueue->getLink()}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
-        <item name="wcf.moderation.notification.comment.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A guest{/if} commented on the moderation entry <strong>{$moderationQueue}</strong>.]]></item>
-        <item name="wcf.moderation.notification.comment.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} commented on the moderation entry <strong>{$moderationQueue}</strong>.]]></item>
-        <item name="wcf.moderation.notification.comment.title"><![CDATA[New comment (Moderation)]]></item>
-        <item name="wcf.moderation.notification.comment.title.stacked"><![CDATA[{#$timesTriggered} new comments (Moderation)]]></item>
-        <item name="wcf.moderation.notification.commentResponse.mail.html"><![CDATA[<p>{@$authorList} replied to <strong>{$commentAuthor}</strong>’s comment on the moderation entry <a href="{$moderationQueue->getLink()}">{$moderationQueue->getTitle()}</a>:</p>]]></item>
-        <item name="wcf.moderation.notification.commentResponse.mail.plaintext"><![CDATA[{@$authorList} replied to {@$commentAuthor}’s comment on the moderation entry {@$moderationQueue->getTitle()} [URL:{@$moderationQueue->getLink()}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
-        <item name="wcf.moderation.notification.commentResponse.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A guest{/if} replied to a comment by <strong>{$commentAuthor}</strong> on the moderation entry <strong>{$moderationQueue}</strong>.]]></item>
-        <item name="wcf.moderation.notification.commentResponse.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} replied to comments on the moderation entry <strong>{$moderationQueue}</strong>.]]></item>
-        <item name="wcf.moderation.notification.commentResponse.title"><![CDATA[New reply (Moderation)]]></item>
-        <item name="wcf.moderation.notification.commentResponse.title.stacked"><![CDATA[{#$timesTriggered} new replies (Moderation)]]></item>
-        <item name="wcf.moderation.outstandingItems"><![CDATA[Pending Items]]></item>
-        <item name="wcf.moderation.showAll"><![CDATA[Display All Items]]></item>
-        <item name="wcf.moderation.showDeletedContent"><![CDATA[Display Deleted Content]]></item>
-        <item name="wcf.moderation.status"><![CDATA[Status]]></item>
-        <item name="wcf.moderation.status.confirmed.com.woltlab.wcf.moderation.activation"><![CDATA[Content has been approved]]></item>
-        <item name="wcf.moderation.status.confirmed.com.woltlab.wcf.moderation.report"><![CDATA[Report was justified, content has been deleted]]></item>
-        <item name="wcf.moderation.status.done"><![CDATA[Resolved]]></item>
-        <item name="wcf.moderation.status.outstanding"><![CDATA[Pending]]></item>
-        <item name="wcf.moderation.status.processing"><![CDATA[In Progress]]></item>
-        <item name="wcf.moderation.status.rejected.com.woltlab.wcf.moderation.activation"><![CDATA[Approval was denied]]></item>
-        <item name="wcf.moderation.status.rejected.com.woltlab.wcf.moderation.report"><![CDATA[Report was unjustified]]></item>
-        <item name="wcf.moderation.status.rejectedButJustified.com.woltlab.wcf.moderation.report"><![CDATA[Report was justified]]></item>
-        <item name="wcf.moderation.time"><![CDATA[Time]]></item>
-        <item name="wcf.moderation.title"><![CDATA[Title]]></item>
-        <item name="wcf.moderation.type"><![CDATA[Type]]></item>
-        <item name="wcf.moderation.type.all"><![CDATA[All Items]]></item>
-        <item name="wcf.moderation.type.com.woltlab.blog.entry"><![CDATA[Blog Article]]></item>
-        <item name="wcf.moderation.type.com.woltlab.calendar.event"><![CDATA[Event]]></item>
-        <item name="wcf.moderation.type.com.woltlab.filebase.file"><![CDATA[File]]></item>
-        <item name="wcf.moderation.type.com.woltlab.filebase.review"><![CDATA[File Review]]></item>
-        <item name="wcf.moderation.type.com.woltlab.filebase.version"><![CDATA[File Version]]></item>
-        <item name="wcf.moderation.type.com.woltlab.gallery.image"><![CDATA[Image{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/Video{/if}]]></item>
-        <item name="wcf.moderation.type.com.woltlab.wbb.post"><![CDATA[Post]]></item>
-        <item name="wcf.moderation.type.com.woltlab.wcf.article"><![CDATA[Article]]></item>
-        <item name="wcf.moderation.type.com.woltlab.wcf.comment.comment"><![CDATA[Comment]]></item>
-        <item name="wcf.moderation.type.com.woltlab.wcf.comment.response"><![CDATA[Comment Reply]]></item>
-        <item name="wcf.moderation.type.com.woltlab.wcf.conversation.message"><![CDATA[Conversation]]></item>
-        <item name="wcf.moderation.type.com.woltlab.wcf.moderation.activation"><![CDATA[Approval]]></item>
-        <item name="wcf.moderation.type.com.woltlab.wcf.moderation.activation.delayed"><![CDATA[Delayed]]></item>
-        <item name="wcf.moderation.type.com.woltlab.wcf.moderation.report"><![CDATA[Report]]></item>
-        <item name="wcf.moderation.type.com.woltlab.wcf.user"><![CDATA[User Profile]]></item>
-        <item name="wcf.moderation.username"><![CDATA[Author]]></item>
+        <item name="wcf.moderation.assignedUser"><![CDATA[کاربر اختصاص داده شده]]></item>
+        <item name="wcf.moderation.assignedUser.change"><![CDATA[اختصاص کاربر]]></item>
+        <item name="wcf.moderation.assignedUser.error.notAffected"><![CDATA[این کاربر از امتیازات کافی برخوردار نیست.]]></item>
+        <item name="wcf.moderation.assignedUser.nobody"><![CDATA[هيچ كس]]></item>
+        <item name="wcf.moderation.assignedUsername"><![CDATA[کاربر اختصاص داده شده]]></item>
+        <item name="wcf.moderation.comments"><![CDATA[نظرات]]></item>
+        <item name="wcf.moderation.comments.description"><![CDATA[همه نظرات داخلی هستند و در معرض دید غیر مدیران قرار نمی گیرند.]]></item>
+        <item name="wcf.moderation.deletedContent.com.woltlab.blog.entry"><![CDATA[مقالات وبلاگ حذف شده]]></item>
+        <item name="wcf.moderation.deletedContent.com.woltlab.calendar.event"><![CDATA[رویدادهای حذف شده]]></item>
+        <item name="wcf.moderation.deletedContent.com.woltlab.filebase.file"><![CDATA[فایل های حذف شده]]></item>
+        <item name="wcf.moderation.deletedContent.com.woltlab.filebase.version"><![CDATA[نسخه های فایل حذف شده]]></item>
+        <item name="wcf.moderation.deletedContent.com.woltlab.gallery.image"><![CDATA[تصاویر حذف شده{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو ها{/if}]]></item>
+        <item name="wcf.moderation.deletedContent.com.woltlab.wbb.post"><![CDATA[پست های حذف شده]]></item>
+        <item name="wcf.moderation.deletedContent.com.woltlab.wbb.thread"><![CDATA[موضوعات حذف شده]]></item>
+        <item name="wcf.moderation.deletedContent.objectType.com.woltlab.blog.entry"><![CDATA[مقالات وبلاگ]]></item>
+        <item name="wcf.moderation.deletedContent.objectType.com.woltlab.calendar.event"><![CDATA[رویداد ها]]></item>
+        <item name="wcf.moderation.deletedContent.objectType.com.woltlab.filebase.file"><![CDATA[فایل ها]]></item>
+        <item name="wcf.moderation.deletedContent.objectType.com.woltlab.filebase.version"><![CDATA[نسخه های فایل]]></item>
+        <item name="wcf.moderation.deletedContent.objectType.com.woltlab.gallery.image"><![CDATA[تصاویر{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو ها{/if}]]></item>
+        <item name="wcf.moderation.deletedContent.objectType.com.woltlab.wbb.post"><![CDATA[نوشته ها]]></item>
+        <item name="wcf.moderation.deletedContent.objectType.com.woltlab.wbb.thread"><![CDATA[موضوعات]]></item>
+        <item name="wcf.moderation.deletedContent.objectTypes"><![CDATA[مطالب حذف شده]]></item>
+        <item name="wcf.moderation.doneItems"><![CDATA[موارد حل شده]]></item>
+        <item name="wcf.moderation.filter"><![CDATA[موارد را فیلتر کنید]]></item>
+        <item name="wcf.moderation.filterByType"><![CDATA[نوع]]></item>
+        <item name="wcf.moderation.filterByUser"><![CDATA[کاربر اختصاص داده شده]]></item>
+        <item name="wcf.moderation.filterByUser.allEntries"><![CDATA[همه موارد]]></item>
+        <item name="wcf.moderation.filterByUser.myself"><![CDATA[خودم ({$__wcf->getUser()->username})]]></item>
+        <item name="wcf.moderation.filterByUser.nobody"><![CDATA[هيچ كس]]></item>
+        <item name="wcf.moderation.jumpToContent"><![CDATA[به محتوای مرتبط بروید]]></item>
+        <item name="wcf.moderation.lastChangeTime"><![CDATA[آخرین تغییر]]></item>
+        <item name="wcf.moderation.markAsRead.doubleClick"><![CDATA[برای علامت گذاری این مورد به عنوان خوانده شده دوبار کلیک کنید]]></item>
+        <item name="wcf.moderation.moderation"><![CDATA[اعتدال]]></item>
+        <item name="wcf.moderation.noEntries"><![CDATA[در حال حاضر هیچ آیتمی وجود ندارد. <a href="#" class="jsStaticDialog" data-dialog-id="moderationListSortFilter" role="button">فیلترها را عوض کنید</a>{if $hasActiveFilter} <a href="{link controller='ModerationList'}{/link}">فیلترهای فعال را بازنشانی کنید.</a>{/if}]]></item>
+        <item name="wcf.moderation.noMoreItems"><![CDATA[شما هیچ مورد اخیری ندارید.]]></item>
+        <item name="wcf.moderation.notification.comment.mail.html"><![CDATA[<p>{@$authorList} در مورد ورودی تعدیل نظر داد <a href="{$moderationQueue->getLink()}">{$moderationQueue->getTitle()}</a>:</p>]]></item>
+        <item name="wcf.moderation.notification.comment.mail.plaintext"><![CDATA[{@$authorList} در مورد ورودی تعدیل نظر داد {@$moderationQueue->getTitle()} [URL:{@$moderationQueue->getLink()}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+        <item name="wcf.moderation.notification.comment.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}یک مهمان{/if} در مورد ورودی تعدیل نظر داد <strong>{$moderationQueue}</strong>.]]></item>
+        <item name="wcf.moderation.notification.comment.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} در مورد ورودی تعدیل نظر داد <strong>{$moderationQueue}</strong>.]]></item>
+        <item name="wcf.moderation.notification.comment.title"><![CDATA[نظر جدید (تعدیل)]]></item>
+        <item name="wcf.moderation.notification.comment.title.stacked"><![CDATA[{#$timesTriggered} نظرات جدید (تعدیل)]]></item>
+        <item name="wcf.moderation.notification.commentResponse.mail.html"><![CDATA[<p>{@$authorList} پاسخ داد به نظر <strong>{$commentAuthor}</strong> در ورودی اعتدال <a href="{$moderationQueue->getLink()}">{$moderationQueue->getTitle()}</a>:</p>]]></item>
+        <item name="wcf.moderation.notification.commentResponse.mail.plaintext"><![CDATA[{@$authorList} پاسخ داد به نظر  {@$commentAuthor}در ورودی اعتدال {@$moderationQueue->getTitle()} [URL:{@$moderationQueue->getLink()}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+        <item name="wcf.moderation.notification.commentResponse.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}یک مهمان{/if} پاسخ داد به یک نظر توسط <strong>{$commentAuthor}</strong> در ورودی تعدیل <strong>{$moderationQueue}</strong>.]]></item>
+        <item name="wcf.moderation.notification.commentResponse.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} به نظرات مربوط به ورودی تعدیل پاسخ داد <strong>{$moderationQueue}</strong>.]]></item>
+        <item name="wcf.moderation.notification.commentResponse.title"><![CDATA[پاسخ های جدید (تعدیل)]]></item>
+        <item name="wcf.moderation.notification.commentResponse.title.stacked"><![CDATA[{#$timesTriggered} پاسخ های جدید (تعدیل)]]></item>
+        <item name="wcf.moderation.outstandingItems"><![CDATA[موارد در انتظار]]></item>
+        <item name="wcf.moderation.showAll"><![CDATA[نمایش همه موارد]]></item>
+        <item name="wcf.moderation.showDeletedContent"><![CDATA[نمایش مطالب حذف شده]]></item>
+        <item name="wcf.moderation.status"><![CDATA[وضعیت]]></item>
+        <item name="wcf.moderation.status.confirmed.com.woltlab.wcf.moderation.activation"><![CDATA[محتوا تایید شده است]]></item>
+        <item name="wcf.moderation.status.confirmed.com.woltlab.wcf.moderation.report"><![CDATA[گزارش موجه بود، محتوا حذف شد]]></item>
+        <item name="wcf.moderation.status.done"><![CDATA[حل شد]]></item>
+        <item name="wcf.moderation.status.outstanding"><![CDATA[انتظار]]></item>
+        <item name="wcf.moderation.status.processing"><![CDATA[در حال پیش رفت]]></item>
+        <item name="wcf.moderation.status.rejected.com.woltlab.wcf.moderation.activation"><![CDATA[تایید رد شد]]></item>
+        <item name="wcf.moderation.status.rejected.com.woltlab.wcf.moderation.report"><![CDATA[گزارش غیر قابل توجیه بود]]></item>
+        <item name="wcf.moderation.status.rejectedButJustified.com.woltlab.wcf.moderation.report"><![CDATA[گزارش موجه بود]]></item>
+        <item name="wcf.moderation.time"><![CDATA[زمان]]></item>
+        <item name="wcf.moderation.title"><![CDATA[عنوان]]></item>
+        <item name="wcf.moderation.type"><![CDATA[نوع]]></item>
+        <item name="wcf.moderation.type.all"><![CDATA[همه موارد]]></item>
+        <item name="wcf.moderation.type.com.woltlab.blog.entry"><![CDATA[مقاله وبلاگ]]></item>
+        <item name="wcf.moderation.type.com.woltlab.calendar.event"><![CDATA[رویداد]]></item>
+        <item name="wcf.moderation.type.com.woltlab.filebase.file"><![CDATA[فایل]]></item>
+        <item name="wcf.moderation.type.com.woltlab.filebase.review"><![CDATA[بررسی فایل]]></item>
+        <item name="wcf.moderation.type.com.woltlab.filebase.version"><![CDATA[نسخه فایل]]></item>
+        <item name="wcf.moderation.type.com.woltlab.gallery.image"><![CDATA[تصویر{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/ویدیو{/if}]]></item>
+        <item name="wcf.moderation.type.com.woltlab.wbb.post"><![CDATA[پست]]></item>
+        <item name="wcf.moderation.type.com.woltlab.wcf.article"><![CDATA[مقاله]]></item>
+        <item name="wcf.moderation.type.com.woltlab.wcf.comment.comment"><![CDATA[نظر]]></item>
+        <item name="wcf.moderation.type.com.woltlab.wcf.comment.response"><![CDATA[پاسخ نظر ]]></item>
+        <item name="wcf.moderation.type.com.woltlab.wcf.conversation.message"><![CDATA[مکالمه]]></item>
+        <item name="wcf.moderation.type.com.woltlab.wcf.moderation.activation"><![CDATA[تاییدیه]]></item>
+        <item name="wcf.moderation.type.com.woltlab.wcf.moderation.activation.delayed"><![CDATA[با تاخیر]]></item>
+        <item name="wcf.moderation.type.com.woltlab.wcf.moderation.report"><![CDATA[گزارش]]></item>
+        <item name="wcf.moderation.type.com.woltlab.wcf.user"><![CDATA[مشخصات کاربر]]></item>
+        <item name="wcf.moderation.username"><![CDATA[نویسنده]]></item>
     </category>
     <category name="wcf.moderation.activation">
-        <item name="wcf.moderation.activation"><![CDATA[Approval]]></item>
-        <item name="wcf.moderation.activation.content"><![CDATA[Content awaiting approval]]></item>
-        <item name="wcf.moderation.activation.details"><![CDATA[Information]]></item>
-        <item name="wcf.moderation.activation.enableContent"><![CDATA[Approve]]></item>
-        <item name="wcf.moderation.activation.enableContent.confirmMessage"><![CDATA[Do you really want to approve {if !$moderationQueueCount|isset || $moderationQueueCount == 1}this content{else}these contents{/if}?]]></item>
-        <item name="wcf.moderation.activation.notification.comment.mail.html"><![CDATA[<p>{@$authorList} commented on the moderation entry <a href="{$moderationQueue->getLink()}">{$moderationQueue->getTitle()}</a> waiting for approval:</p>]]></item>
-        <item name="wcf.moderation.activation.notification.comment.mail.plaintext"><![CDATA[{@$authorList} commented on {@$moderationQueue->getTitle()} [URL:{@$moderationQueue->getLink()}] waiting for approval{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
-        <item name="wcf.moderation.activation.notification.comment.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A guest{/if} commented on <strong>{$moderationQueue}</strong> waiting for approval.]]></item>
-        <item name="wcf.moderation.activation.notification.comment.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} commented on <strong>{$moderationQueue}</strong> waiting for approval.]]></item>
-        <item name="wcf.moderation.activation.notification.comment.title"><![CDATA[New comment (Approval)]]></item>
-        <item name="wcf.moderation.activation.notification.comment.title.stacked"><![CDATA[{#$timesTriggered} new comments (Approval)]]></item>
-        <item name="wcf.moderation.activation.notification.commentResponse.mail.html"><![CDATA[<p>{@$authorList} replied to <strong>{$commentAuthor}</strong>’s comment on <a href="{$moderationQueue->getLink()}">{$moderationQueue->getTitle()}</a>  waiting for approval:</p>]]></item>
-        <item name="wcf.moderation.activation.notification.commentResponse.mail.plaintext"><![CDATA[{@$authorList} replied to {@$commentAuthor}’s comment on {@$moderationQueue->getTitle()} [URL:{@$moderationQueue->getLink()}] waiting for approval{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
-        <item name="wcf.moderation.activation.notification.commentResponse.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A guest{/if} replied to a comment by <strong>{$commentAuthor}</strong> on <strong>{$moderationQueue}</strong> waiting for approval.]]></item>
-        <item name="wcf.moderation.activation.notification.commentResponse.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} replied to comments on <strong>{$moderationQueue}</strong> waiting for approval.]]></item>
-        <item name="wcf.moderation.activation.notification.commentResponse.title"><![CDATA[New reply (Approval)]]></item>
-        <item name="wcf.moderation.activation.notification.commentResponse.title.stacked"><![CDATA[{#$timesTriggered} new replies (Approval)]]></item>
-        <item name="wcf.moderation.activation.removeContent"><![CDATA[Delete Content]]></item>
-        <item name="wcf.moderation.activation.removeContent.confirmMessage"><![CDATA[Do you really want to delete {if !$moderationQueueCount|isset || $moderationQueueCount == 1}this content{else}these contents{/if}?]]></item>
+        <item name="wcf.moderation.activation"><![CDATA[تایدیه]]></item>
+        <item name="wcf.moderation.activation.content"><![CDATA[محتوای در انتظار تایید]]></item>
+        <item name="wcf.moderation.activation.details"><![CDATA[اطلاعات]]></item>
+        <item name="wcf.moderation.activation.enableContent"><![CDATA[تایید]]></item>
+        <item name="wcf.moderation.activation.enableContent.confirmMessage"><![CDATA[واقعا میخواهید تایید کنید {if !$moderationQueueCount|isset || $moderationQueueCount == 1}این محتوا{else}این محتوا ها{/if}?]]></item>
+        <item name="wcf.moderation.activation.notification.comment.mail.html"><![CDATA[<p>{@$authorList} در مورد ورودی تعدیل نظر داد <a href="{$moderationQueue->getLink()}">{$moderationQueue->getTitle()}</a> منتظر پذیرفته شدن:</p>]]></item>
+        <item name="wcf.moderation.activation.notification.comment.mail.plaintext"><![CDATA[{@$authorList} نظر داد روی {@$moderationQueue->getTitle()} [URL:{@$moderationQueue->getLink()}] منتظر پذیرفته شدن{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+        <item name="wcf.moderation.activation.notification.comment.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}یک مهمان{/if} نظر داد روی<strong>{$moderationQueue}</strong> منتظر پذیرفته شدن]]></item>
+        <item name="wcf.moderation.activation.notification.comment.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} نظر داد روی <strong>{$moderationQueue}</strong> منتظر پذیرفته شدن]]></item>
+        <item name="wcf.moderation.activation.notification.comment.title"><![CDATA[نظر جدید (تأیید)]]></item>
+        <item name="wcf.moderation.activation.notification.comment.title.stacked"><![CDATA[{#$timesTriggered} نظر های جدید (تأیید)]]></item>
+        <item name="wcf.moderation.activation.notification.commentResponse.mail.html"><![CDATA[<p>{@$authorList} پاسخ داد به نظر <strong>{$commentAuthor}</strong>روی <a href="{$moderationQueue->getLink()}">{$moderationQueue->getTitle()}</a>  منتظر پذیرفته شدن:</p>]]></item>
+        <item name="wcf.moderation.activation.notification.commentResponse.mail.plaintext"><![CDATA[{@$authorList} replied to {@$commentAuthor}’s comment on {@$moderationQueue->getTitle()} [URL:{@$moderationQueue->getLink()}] منتظر پذیرفته شدن{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+        <item name="wcf.moderation.activation.notification.commentResponse.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}یک مهمان{/if} پاسخ داد به یک نظر توسط <strong>{$commentAuthor}</strong> on <strong>{$moderationQueue}</strong> منتظر پذیرفته شدن.]]></item>
+        <item name="wcf.moderation.activation.notification.commentResponse.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} پاسخ داد به یک نظر توسط <strong>{$moderationQueue}</strong> منتظر پذیرفته شدن.]]></item>
+        <item name="wcf.moderation.activation.notification.commentResponse.title"><![CDATA[پاسخ جدید (تأییدیه)]]></item>
+        <item name="wcf.moderation.activation.notification.commentResponse.title.stacked"><![CDATA[{#$timesTriggered} پاسخ های جدید (تأییدیه)]]></item>
+        <item name="wcf.moderation.activation.removeContent"><![CDATA[حذف محتوا]]></item>
+        <item name="wcf.moderation.activation.removeContent.confirmMessage"><![CDATA[واقعا میخواهید حذف کنید {if !$moderationQueueCount|isset || $moderationQueueCount == 1}این محتوا{else}این محتوا ها{/if}?]]></item>
     </category>
     <category name="wcf.moderation.report">
-        <item name="wcf.moderation.report"><![CDATA[Report]]></item>
-        <item name="wcf.moderation.report.alreadyReported"><![CDATA[This content has already been reported.]]></item>
-        <item name="wcf.moderation.report.changeJustifiedStatus"><![CDATA[Change “Justified” status]]></item>
-        <item name="wcf.moderation.report.changeJustifiedStatus.confirmMessage"><![CDATA[Do you really want to change the “Justified” status of this report?]]></item>
-        <item name="wcf.moderation.report.changeJustifiedStatus.markAsJustified"><![CDATA[Mark report as “Justified”]]></item>
-        <item name="wcf.moderation.report.details"><![CDATA[Information]]></item>
-        <item name="wcf.moderation.report.notification.comment.mail.html"><![CDATA[<p>{@$authorList} commented on the report <a href="{$moderationQueue->getLink()}">{$moderationQueue->getTitle()}</a>:</p>]]></item>
-        <item name="wcf.moderation.report.notification.comment.mail.plaintext"><![CDATA[{@$authorList} commented on the report {@$moderationQueue->getTitle()} [URL:{@$moderationQueue->getLink()}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
-        <item name="wcf.moderation.report.notification.comment.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A guest{/if} commented on the report <strong>{$moderationQueue}</strong>.]]></item>
-        <item name="wcf.moderation.report.notification.comment.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} commented on the report <strong>{$moderationQueue}</strong>.]]></item>
-        <item name="wcf.moderation.report.notification.comment.title"><![CDATA[New comment (Report)]]></item>
-        <item name="wcf.moderation.report.notification.comment.title.stacked"><![CDATA[{#$timesTriggered} new comments (Report)]]></item>
-        <item name="wcf.moderation.report.notification.commentResponse.mail.html"><![CDATA[<p>{@$authorList} replied to <strong>{$commentAuthor}</strong>’s comment on the report <a href="{$moderationQueue->getLink()}">{$moderationQueue->getTitle()}</a>:</p>]]></item>
-        <item name="wcf.moderation.report.notification.commentResponse.mail.plaintext"><![CDATA[{@$authorList} replied to {@$commentAuthor}’s comment on the report {@$moderationQueue->getTitle()} [URL:{@$moderationQueue->getLink()}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
-        <item name="wcf.moderation.report.notification.commentResponse.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A guest{/if} replied to a comment by <strong>{$commentAuthor->username}</strong> on the report <strong>{$moderationQueue}</strong>.]]></item>
-        <item name="wcf.moderation.report.notification.commentResponse.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} replied to comments on the report <strong>{$moderationQueue->getTitle()}</strong>.]]></item>
-        <item name="wcf.moderation.report.notification.commentResponse.title"><![CDATA[New reply (Report)]]></item>
-        <item name="wcf.moderation.report.notification.commentResponse.title.stacked"><![CDATA[{#$timesTriggered} new replies (Report)]]></item>
-        <item name="wcf.moderation.report.reason"><![CDATA[Reason]]></item>
+        <item name="wcf.moderation.report"><![CDATA[گزارش]]></item>
+        <item name="wcf.moderation.report.alreadyReported"><![CDATA[این محتوا قبلا گزارش شده است.]]></item>
+        <item name="wcf.moderation.report.changeJustifiedStatus"><![CDATA[تغییر وضعیت "توجیه شده".]]></item>
+        <item name="wcf.moderation.report.changeJustifiedStatus.confirmMessage"><![CDATA[آیا واقعاً می‌خواهید وضعیت «توجیه‌شده» این گزارش را تغییر دهید؟]]></item>
+        <item name="wcf.moderation.report.changeJustifiedStatus.markAsJustified"><![CDATA[علامت گذاری گزارش به عنوان "موجه"]]></item>
+        <item name="wcf.moderation.report.details"><![CDATA[اطلاعات]]></item>
+        <item name="wcf.moderation.report.notification.comment.mail.html"><![CDATA[<p>{@$authorList} در مورد این گزارش اظهار نظر کرد <a href="{$moderationQueue->getLink()}">{$moderationQueue->getTitle()}</a>:</p>]]></item>
+        <item name="wcf.moderation.report.notification.comment.mail.plaintext"><![CDATA[{@$authorList} در مورد این گزارش اظهار نظر کرد{@$moderationQueue->getTitle()} [URL:{@$moderationQueue->getLink()}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+        <item name="wcf.moderation.report.notification.comment.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A guest{/if} در مورد این گزارش اظهار نظر کرد <strong>{$moderationQueue}</strong>.]]></item>
+        <item name="wcf.moderation.report.notification.comment.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} در مورد این گزارش اظهار نظر کرد <strong>{$moderationQueue}</strong>.]]></item>
+        <item name="wcf.moderation.report.notification.comment.title"><![CDATA[نظر جدید (گزارش)]]></item>
+        <item name="wcf.moderation.report.notification.comment.title.stacked"><![CDATA[{#$timesTriggered} نظر های جدید (گزارش)]]></item>
+        <item name="wcf.moderation.report.notification.commentResponse.mail.html"><![CDATA[<p>{@$authorList} پاسخ داد به نظر <strong>{$commentAuthor}</strong> در مورد  گزارش <a href="{$moderationQueue->getLink()}">{$moderationQueue->getTitle()}</a>:</p>]]></item>
+        <item name="wcf.moderation.report.notification.commentResponse.mail.plaintext"><![CDATA[{@$authorList} پاسخ داد به نظر {@$commentAuthor} در مورد گزارش {@$moderationQueue->getTitle()} [URL:{@$moderationQueue->getLink()}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+        <item name="wcf.moderation.report.notification.commentResponse.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}یک مهمان{/if} پاسخ داد به نظرات در مورد گزارش <strong>{$commentAuthor->username}</strong> در مورد گزارش <strong>{$moderationQueue}</strong>.]]></item>
+        <item name="wcf.moderation.report.notification.commentResponse.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} پاسخ داد به نظرات در مورد گزارش <strong>{$moderationQueue->getTitle()}</strong>.]]></item>
+        <item name="wcf.moderation.report.notification.commentResponse.title"><![CDATA[پاسخ جدید (گزارش)]]></item>
+        <item name="wcf.moderation.report.notification.commentResponse.title.stacked"><![CDATA[{#$timesTriggered} پاسخ های جدید (گزارش)]]></item>
+        <item name="wcf.moderation.report.reason"><![CDATA[دلیل]]></item>
         <item name="wcf.moderation.report.reason.description"><![CDATA[This function is reserved for: spam, advertisement and other questionable (racism, glorification of violence, offending, or sexist) content.]]></item>
         <item name="wcf.moderation.report.removeContent"><![CDATA[Delete Content]]></item>
         <item name="wcf.moderation.report.removeContent.confirmMessage"><![CDATA[Do you really want to delete the reported content{if $moderationQueueCount|isset && $moderationQueueCount > 1}s{/if}?]]></item>
