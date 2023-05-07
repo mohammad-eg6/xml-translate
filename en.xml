@@ -7705,307 +7705,307 @@ Your account on the website: {@PAGE_TITLE|phrase} [URL:{link isEmail=true}{/link
         <item name="wcf.page.recentActivity.pageCommentResponse"><![CDATA[پاسخ داد به یک نظر توسط <a href="{link controller='User' object=$commentAuthor}{/link}">{$commentAuthor->username}</a> در صفحه <a href="{$page->getLink()}#comment{@$commentID}/response{@$responseID}">{$page->getTitle()}</a>.]]></item>
         <item name="wcf.page.redirect.title"><![CDATA[تغییر مسیر]]></item>
         <item name="wcf.page.redirect.url"><![CDATA[اگر تغییر مسیر خودکار کار نمی کند، لطفا اینجا را کلیک کنید!]]></item>
-        <item name="wcf.page.requestedPage"><![CDATA[Requested Page]]></item>
-        <item name="wcf.page.requestedPage.condition.reverseLogic"><![CDATA[Reverse “Requested Page” selection]]></item>
-        <item name="wcf.page.requestedPage.condition.reverseLogic.description"><![CDATA[If selected, the requested page <strong>may not</strong> be one of the pages selected under “Requested Page”.]]></item>
-        <item name="wcf.page.search"><![CDATA[Search Pages]]></item>
-        <item name="wcf.page.search.error.noResults"><![CDATA[The search returned no results.]]></item>
-        <item name="wcf.page.search.error.tooShort"><![CDATA[The entered keyword is too short.]]></item>
-        <item name="wcf.page.search.name"><![CDATA[Search Page Names]]></item>
-        <item name="wcf.page.search.results"><![CDATA[Search Results]]></item>
-        <item name="wcf.page.sidebar.left"><![CDATA[Left Sidebar]]></item>
-        <item name="wcf.page.sidebar.right"><![CDATA[Right Sidebar]]></item>
+        <item name="wcf.page.requestedPage"><![CDATA[صفحه درخواستی]]></item>
+        <item name="wcf.page.requestedPage.condition.reverseLogic"><![CDATA[انتخاب «صفحه درخواستی» را معکوس کنید]]></item>
+        <item name="wcf.page.requestedPage.condition.reverseLogic.description"><![CDATA[در صورت انتخاب، صفحه درخواستی <strong>ممکن است نباشد</strong>  یکی از صفحات انتخاب شده در  “Requested Page”.]]></item>
+        <item name="wcf.page.search"><![CDATA[جستجوی صفحات]]></item>
+        <item name="wcf.page.search.error.noResults"><![CDATA[جستجو نتیجه ای نداشت.]]></item>
+        <item name="wcf.page.search.error.tooShort"><![CDATA[کلمه کلیدی وارد شده خیلی کوتاه است.]]></item>
+        <item name="wcf.page.search.name"><![CDATA[جستجوی نام صفحات]]></item>
+        <item name="wcf.page.search.results"><![CDATA[نتایج جستجو]]></item>
+        <item name="wcf.page.sidebar.left"><![CDATA[نوار کناری سمت چپ]]></item>
+        <item name="wcf.page.sidebar.right"><![CDATA[نوار کناری سمت راست]]></item>
     </category>
     <category name="wcf.paidSubscription">
-        <item name="wcf.paidSubscription.availableSubscriptions"><![CDATA[Available Subscriptions]]></item>
-        <item name="wcf.paidSubscription.button.moreInformation"><![CDATA[More Details]]></item>
-        <item name="wcf.paidSubscription.confirmTOS"><![CDATA[I agree to the <a href="{PAID_SUBSCRIPTION_TOS_URL}">Terms of Service</a>]]></item>
-        <item name="wcf.paidSubscription.expires"><![CDATA[Active Until]]></item>
-        <item name="wcf.paidSubscription.expiringSubscription.notification.mail.html"><![CDATA[Your subscription “{$subscription->getTitle()}” will expire <b>{dateInterval start=$notification->time end=$subscription->endDate full=true format='sentence'}</b> (on {$subscription->endDate|date:'F jS'}).]]></item>
-        <item name="wcf.paidSubscription.expiringSubscription.notification.mail.plaintext"><![CDATA[Your subscription “{@$subscription->getTitle()}” will expire {dateInterval start=$notification->time end=$subscription->endDate full=true format='sentence'} (on {@$subscription->endDate|date:'F jS'}).]]></item>
-        <item name="wcf.paidSubscription.expiringSubscription.notification.message"><![CDATA[Your subscription <strong>{$userNotificationObject->getTitle()}</strong> will expire {dateInterval start=$notification->time end=$userNotificationObject->endDate full=true format='sentence'} (on {$userNotificationObject->endDate|date:'F jS'}).]]></item>
-        <item name="wcf.paidSubscription.expiringSubscription.notification.title"><![CDATA[Expiring Subscription]]></item>
-        <item name="wcf.paidSubscription.formattedCost"><![CDATA[{$subscription->currency} {$subscription->cost|currency}{if $subscription->subscriptionLength} {if $subscription->subscriptionLength != 1}for{else}per{/if} {if $subscription->subscriptionLength != 1}{@$subscription->subscriptionLength} {/if}{if $subscription->subscriptionLengthUnit == 'D'}day{if $subscription->subscriptionLength != 1}s{/if}{/if}{if $subscription->subscriptionLengthUnit == 'M'}month{if $subscription->subscriptionLength != 1}s{/if}{/if}{if $subscription->subscriptionLengthUnit == 'Y'}year{if $subscription->subscriptionLength != 1}s{/if}{/if}{/if}]]></item>
-        <item name="wcf.paidSubscription.purchasedSubscriptions"><![CDATA[Purchased Subscriptions]]></item>
-        <item name="wcf.paidSubscription.returnMessage"><![CDATA[Thank you for your payment, the transaction has been completed. Your subscription will be active once your payment has been processed by us.]]></item>
+        <item name="wcf.paidSubscription.availableSubscriptions"><![CDATA[اشتراک های موجود]]></item>
+        <item name="wcf.paidSubscription.button.moreInformation"><![CDATA[جزئیات بیشتر]]></item>
+        <item name="wcf.paidSubscription.confirmTOS"><![CDATA[من موافقم <a href="{PAID_SUBSCRIPTION_TOS_URL}">شرایط استفاده از خدمات</a>]]></item>
+        <item name="wcf.paidSubscription.expires"><![CDATA[فعال تا]]></item>
+        <item name="wcf.paidSubscription.expiringSubscription.notification.mail.html"><![CDATA[اشتراک شما “{$subscription->getTitle()}” منقضی خواهد شد <b>{dateInterval start=$notification->time end=$subscription->endDate full=true format='sentence'}</b> (on {$subscription->endDate|date:'F jS'}).]]></item>
+        <item name="wcf.paidSubscription.expiringSubscription.notification.mail.plaintext"><![CDATA[اشتراک شما “{@$subscription->getTitle()}” منقضی خواهد شد {dateInterval start=$notification->time end=$subscription->endDate full=true format='sentence'} (on {@$subscription->endDate|date:'F jS'}).]]></item>
+        <item name="wcf.paidSubscription.expiringSubscription.notification.message"><![CDATA[اشتراک شما <strong>{$userNotificationObject->getTitle()}</strong> منقضی خواهد شد {dateInterval start=$notification->time end=$userNotificationObject->endDate full=true format='sentence'} (on {$userNotificationObject->endDate|date:'F jS'}).]]></item>
+        <item name="wcf.paidSubscription.expiringSubscription.notification.title"><![CDATA[اشتراک در حال انقضا]]></item>
+        <item name="wcf.paidSubscription.formattedCost"><![CDATA[{$subscription->currency} {$subscription->cost|currency}{if $subscription->subscriptionLength} {if $subscription->subscriptionLength != 1}برای{else}به ازای{/if} {if $subscription->subscriptionLength != 1}{@$subscription->subscriptionLength} {/if}{if $subscription->subscriptionLengthUnit == 'D'}روز{if $subscription->subscriptionLength != 1}{/if}{/if}{if $subscription->subscriptionLengthUnit == 'M'}ماه{if $subscription->subscriptionLength != 1}{/if}{/if}{if $subscription->subscriptionLengthUnit == 'Y'}سال{if $subscription->subscriptionLength != 1}{/if}{/if}{/if}]]></item>
+        <item name="wcf.paidSubscription.purchasedSubscriptions"><![CDATA[اشتراک های خریداری شده]]></item>
+        <item name="wcf.paidSubscription.returnMessage"><![CDATA[با تشکر از پرداخت شما، معامله انجام شد. اشتراک شما پس از پردازش پرداخت شما توسط ما فعال خواهد شد.]]></item>
     </category>
     <category name="wcf.payment">
-        <item name="wcf.payment.com.woltlab.wcf.payment.method.paypal"><![CDATA[Use PayPal]]></item>
-        <item name="wcf.payment.paypal.button.purchase"><![CDATA[Purchase with PayPal]]></item>
-        <item name="wcf.payment.paypal.button.subscribe"><![CDATA[Subscribe with PayPal]]></item>
+        <item name="wcf.payment.com.woltlab.wcf.payment.method.paypal"><![CDATA[استفاده از پی پال]]></item>
+        <item name="wcf.payment.paypal.button.purchase"><![CDATA[خرید با پی پال ]]></item>
+        <item name="wcf.payment.paypal.button.subscribe"><![CDATA[اشتراک با پی پال]]></item>
     </category>
     <category name="wcf.poll">
-        <item name="wcf.poll.button.addOption"><![CDATA[Add Another Option]]></item>
-        <item name="wcf.poll.button.removeOption"><![CDATA[Remove Option]]></item>
-        <item name="wcf.poll.button.showParticipants"><![CDATA[List Participants]]></item>
-        <item name="wcf.poll.button.showResult"><![CDATA[Display Result]]></item>
-        <item name="wcf.poll.button.showVote"><![CDATA[Vote]]></item>
-        <item name="wcf.poll.button.vote"><![CDATA[Vote]]></item>
-        <item name="wcf.poll.endTime"><![CDATA[Poll Ends (optional)]]></item>
-        <item name="wcf.poll.endTime.error.invalid"><![CDATA[The entered date is invalid.]]></item>
-        <item name="wcf.poll.endTimeInfo"><![CDATA[Poll ends on {@$poll->endTime|plainTime}]]></item>
-        <item name="wcf.poll.isChangeable"><![CDATA[Votes can be changed]]></item>
-        <item name="wcf.poll.isPublic"><![CDATA[Publicize participants]]></item>
-        <item name="wcf.poll.management"><![CDATA[Poll]]></item>
-        <item name="wcf.poll.maxVotes"><![CDATA[Maximum Poll Votes]]></item>
-        <item name="wcf.poll.maxVotes.error.invalid"><![CDATA[The maximum number of votes allowed exceeds the number of available options.]]></item>
-        <item name="wcf.poll.multipleVotes"><![CDATA[You can select up to {#$poll->maxVotes} options.]]></item>
-        <item name="wcf.poll.noVotes"><![CDATA[No votes yet]]></item>
-        <item name="wcf.poll.options"><![CDATA[Poll Options]]></item>
-        <item name="wcf.poll.options.description"><![CDATA[You can sort the options with drag and drop to change their order. You can create up to {@POLL_MAX_OPTIONS} options.]]></item>
-        <item name="wcf.poll.question"><![CDATA[Poll Question]]></item>
-        <item name="wcf.poll.restrictedResult"><![CDATA[The result is only visible to the participants.]]></item>
-        <item name="wcf.poll.resultsRequireVote"><![CDATA[Restrict the results to the participants only]]></item>
-        <item name="wcf.poll.resultsRequireVote.description"><![CDATA[The results are invisible unless the poll ended or the user voted.]]></item>
-        <item name="wcf.poll.sortByVotes"><![CDATA[Sort result by votes]]></item>
-        <item name="wcf.poll.totalVotes"><![CDATA[A total of {#$poll->votes} vote{if $poll->votes != 1}s{/if}]]></item>
+        <item name="wcf.poll.button.addOption"><![CDATA[گزینه دیگری را اضافه کنید]]></item>
+        <item name="wcf.poll.button.removeOption"><![CDATA[حذف گزینه]]></item>
+        <item name="wcf.poll.button.showParticipants"><![CDATA[لیست شرکت کنندگان]]></item>
+        <item name="wcf.poll.button.showResult"><![CDATA[نمایش نتیجه]]></item>
+        <item name="wcf.poll.button.showVote"><![CDATA[رای]]></item>
+        <item name="wcf.poll.button.vote"><![CDATA[رای]]></item>
+        <item name="wcf.poll.endTime"><![CDATA[پایان نظرسنجی (اختیاری)]]></item>
+        <item name="wcf.poll.endTime.error.invalid"><![CDATA[تاریخ وارد شده نامعتبر است.]]></item>
+        <item name="wcf.poll.endTimeInfo"><![CDATA[نظرسنجی به پایان می رسد در {@$poll->endTime|plainTime}]]></item>
+        <item name="wcf.poll.isChangeable"><![CDATA[رای ها قابل تغییر است]]></item>
+        <item name="wcf.poll.isPublic"><![CDATA[شرکت کنندگان را عمومی کنید]]></item>
+        <item name="wcf.poll.management"><![CDATA[نظرسنجی]]></item>
+        <item name="wcf.poll.maxVotes"><![CDATA[حداکثر رای نظرسنجی]]></item>
+        <item name="wcf.poll.maxVotes.error.invalid"><![CDATA[حداکثر تعداد رای مجاز از تعداد گزینه های موجود بیشتر است.]]></item>
+        <item name="wcf.poll.multipleVotes"><![CDATA[شما می توانید انتخاب کنید تا {#$poll->maxVotes} گزینه .]]></item>
+        <item name="wcf.poll.noVotes"><![CDATA[هنوز رای نیامده است]]></item>
+        <item name="wcf.poll.options"><![CDATA[گزینه های نظرسنجی]]></item>
+        <item name="wcf.poll.options.description"><![CDATA[می توانید گزینه ها را با کشیدن و رها کردن مرتب کنید تا ترتیب آنها را تغییر دهید. شما می توانید تا {@POLL_MAX_OPTIONS} گزینه بسازید.]]></item>
+        <item name="wcf.poll.question"><![CDATA[نظرسنجی]]></item>
+        <item name="wcf.poll.restrictedResult"><![CDATA[نتیجه فقط برای شرکت کنندگان قابل مشاهده است.]]></item>
+        <item name="wcf.poll.resultsRequireVote"><![CDATA[نتایج را فقط به شرکت کنندگان محدود کنید]]></item>
+        <item name="wcf.poll.resultsRequireVote.description"><![CDATA[نتایج نامرئی هستند مگر اینکه نظرسنجی به پایان برسد یا کاربر رای دهد.]]></item>
+        <item name="wcf.poll.sortByVotes"><![CDATA[نتیجه را بر اساس آرا مرتب کنید]]></item>
+        <item name="wcf.poll.totalVotes"><![CDATA[در مجموع از {#$poll->votes} رای{if $poll->votes != 1}{/if}]]></item>
     </category>
     <category name="wcf.reactionType">
-        <item name="wcf.reactionType.title1"><![CDATA[Like]]></item>
-        <item name="wcf.reactionType.title2"><![CDATA[Thanks]]></item>
-        <item name="wcf.reactionType.title3"><![CDATA[Haha]]></item>
-        <item name="wcf.reactionType.title4"><![CDATA[Confused]]></item>
-        <item name="wcf.reactionType.title5"><![CDATA[Sad]]></item>
+        <item name="wcf.reactionType.title1"><![CDATA[لایک]]></item>
+        <item name="wcf.reactionType.title2"><![CDATA[با تشکر]]></item>
+        <item name="wcf.reactionType.title3"><![CDATA[هاها]]></item>
+        <item name="wcf.reactionType.title4"><![CDATA[سردرگم]]></item>
+        <item name="wcf.reactionType.title5"><![CDATA[ناراحت]]></item>
     </category>
     <category name="wcf.reactions">
-        <item name="wcf.reactions.react"><![CDATA[React]]></item>
+        <item name="wcf.reactions.react"><![CDATA[واکنش]]></item>
         <item name="wcf.reactions.reactionTypeCount"><![CDATA[{@$reaction->renderIcon()}&#x202F;×&#x202F;{#$count}]]></item>
-        <item name="wcf.reactions.summary.listReactions"><![CDATA[List Reactions]]></item>
-        <item name="wcf.reactions.summary.noReactions"><![CDATA[There are no reactions at the moment.]]></item>
-        <item name="wcf.reactions.summary.title"><![CDATA[Reactions]]></item>
+        <item name="wcf.reactions.summary.listReactions"><![CDATA[لیست واکنش ها]]></item>
+        <item name="wcf.reactions.summary.noReactions"><![CDATA[در حال حاضر هیچ واکنشی وجود ندارد.]]></item>
+        <item name="wcf.reactions.summary.title"><![CDATA[واکنش ها]]></item>
     </category>
     <category name="wcf.recaptcha">
-        <item name="wcf.recaptcha.audio"><![CDATA[Audio Version]]></item>
-        <item name="wcf.recaptcha.description"><![CDATA[Please enter the letters that are displayed in the picture below (letters are not case-sensitive). If you cannot identify the captcha even after reloading it, please contact the administrator.]]></item>
-        <item name="wcf.recaptcha.error.recaptchaString.false"><![CDATA[The entered security code is incorrect. Please try again.]]></item>
-        <item name="wcf.recaptcha.help"><![CDATA[Help]]></item>
-        <item name="wcf.recaptcha.image"><![CDATA[Image Version]]></item>
-        <item name="wcf.recaptcha.reload"><![CDATA[Reload]]></item>
-        <item name="wcf.recaptcha.title"><![CDATA[Verification (“reCAPTCHA”)]]></item>
+        <item name="wcf.recaptcha.audio"><![CDATA[نسخه صوتی]]></item>
+        <item name="wcf.recaptcha.description"><![CDATA[لطفا حروفی که در تصویر زیر نمایش داده شده را وارد کنید (حروف به بزرگی و کوچکی کوچک و بزرگ حساس نیستند). اگر نمی توانید کپچا را حتی پس از بارگیری مجدد آن شناسایی کنید، لطفاً با سرپرست تماس بگیرید.]]></item>
+        <item name="wcf.recaptcha.error.recaptchaString.false"><![CDATA[کد امنیتی وارد شده نادرست است. لطفا دوباره تلاش کنید.]]></item>
+        <item name="wcf.recaptcha.help"><![CDATA[کمک]]></item>
+        <item name="wcf.recaptcha.image"><![CDATA[نسخه تصویر]]></item>
+        <item name="wcf.recaptcha.reload"><![CDATA[بارگذاری مجدد]]></item>
+        <item name="wcf.recaptcha.title"><![CDATA[تایید (“reCAPTCHA”)]]></item>
     </category>
     <category name="wcf.search">
-        <item name="wcf.search.author"><![CDATA[Search by Author]]></item>
-        <item name="wcf.search.button.showMoreFilters"><![CDATA[Advanced filters]]></item>
-        <item name="wcf.search.extended"><![CDATA[More Options]]></item>
-        <item name="wcf.search.object.com.woltlab.blog.entry"><![CDATA[Blog Article]]></item>
-        <item name="wcf.search.object.com.woltlab.calendar.event"><![CDATA[Event]]></item>
-        <item name="wcf.search.object.com.woltlab.filebase.file"><![CDATA[File]]></item>
-        <item name="wcf.search.object.com.woltlab.gallery.image"><![CDATA[{if $message|isset && ($message->isVideo || $message->isVideoLink)}Video{else}Image{/if}]]></item>
-        <item name="wcf.search.object.com.woltlab.wbb.post"><![CDATA[Post]]></item>
-        <item name="wcf.search.object.com.woltlab.wcf.article"><![CDATA[Article]]></item>
-        <item name="wcf.search.object.com.woltlab.wcf.conversation.message"><![CDATA[Conversation]]></item>
-        <item name="wcf.search.object.com.woltlab.wcf.page"><![CDATA[Page]]></item>
-        <item name="wcf.search.period"><![CDATA[Time Period]]></item>
-        <item name="wcf.search.results.title"><![CDATA[{plural value=$count 0='No Results' one='One Result' other='# Results'}{if $query} for “{@$query}”{/if}]]></item>
-        <item name="wcf.search.searchIn"><![CDATA[Search In]]></item>
-        <item name="wcf.search.searchIn.subjectAndMessage"><![CDATA[Subject and message]]></item>
-        <item name="wcf.search.searchIn.subjectOnly"><![CDATA[Subject only]]></item>
-        <item name="wcf.search.searchInCategories"><![CDATA[Search in Categories]]></item>
-        <item name="wcf.search.sortBy"><![CDATA[Sort by]]></item>
-        <item name="wcf.search.sortBy.relevance"><![CDATA[Relevance]]></item>
-        <item name="wcf.search.sortBy.time"><![CDATA[Time]]></item>
-        <item name="wcf.search.sortBy.username"><![CDATA[Author]]></item>
-        <item name="wcf.search.type"><![CDATA[Content Type]]></item>
-        <item name="wcf.search.type.com.woltlab.blog.entry"><![CDATA[Blog Articles]]></item>
-        <item name="wcf.search.type.com.woltlab.calendar.event"><![CDATA[Events]]></item>
-        <item name="wcf.search.type.com.woltlab.filebase.file"><![CDATA[Files]]></item>
-        <item name="wcf.search.type.com.woltlab.gallery.image"><![CDATA[Gallery]]></item>
-        <item name="wcf.search.type.com.woltlab.wbb.board"><![CDATA[This Forum]]></item>
-        <item name="wcf.search.type.com.woltlab.wbb.post"><![CDATA[Forum]]></item>
-        <item name="wcf.search.type.com.woltlab.wbb.thread"><![CDATA[This Thread]]></item>
-        <item name="wcf.search.type.com.woltlab.wcf.article"><![CDATA[Articles]]></item>
-        <item name="wcf.search.type.com.woltlab.wcf.conversation"><![CDATA[This Conversation]]></item>
-        <item name="wcf.search.type.com.woltlab.wcf.conversation.message"><![CDATA[Conversations]]></item>
-        <item name="wcf.search.type.com.woltlab.wcf.page"><![CDATA[Pages]]></item>
-        <item name="wcf.search.type.everywhere"><![CDATA[Everywhere]]></item>
-        <item name="wcf.search.type.tags"><![CDATA[Search by Tags]]></item>
-        <item name="wcf.search.type.tags.popular"><![CDATA[Popular Tags]]></item>
+        <item name="wcf.search.author"><![CDATA[جستجو بر اساس نویسنده]]></item>
+        <item name="wcf.search.button.showMoreFilters"><![CDATA[فیلترهای پیشرفته]]></item>
+        <item name="wcf.search.extended"><![CDATA[گزینه های بیشتر]]></item>
+        <item name="wcf.search.object.com.woltlab.blog.entry"><![CDATA[مقاله وبلاگ]]></item>
+        <item name="wcf.search.object.com.woltlab.calendar.event"><![CDATA[رویداد]]></item>
+        <item name="wcf.search.object.com.woltlab.filebase.file"><![CDATA[فایل]]></item>
+        <item name="wcf.search.object.com.woltlab.gallery.image"><![CDATA[{if $message|isset && ($message->isVideo || $message->isVideoLink)}ویدیو{else}تصویر{/if}]]></item>
+        <item name="wcf.search.object.com.woltlab.wbb.post"><![CDATA[پست]]></item>
+        <item name="wcf.search.object.com.woltlab.wcf.article"><![CDATA[مقاله]]></item>
+        <item name="wcf.search.object.com.woltlab.wcf.conversation.message"><![CDATA[مکالمه]]></item>
+        <item name="wcf.search.object.com.woltlab.wcf.page"><![CDATA[صفحه]]></item>
+        <item name="wcf.search.period"><![CDATA[دوره زمانی]]></item>
+        <item name="wcf.search.results.title"><![CDATA[{plural value=$count 0='No Results' one='One Result' other='# Results'}{if $query} برای “{@$query}”{/if}]]></item>
+        <item name="wcf.search.searchIn"><![CDATA[جستجو در]]></item>
+        <item name="wcf.search.searchIn.subjectAndMessage"><![CDATA[موضوع و پیام]]></item>
+        <item name="wcf.search.searchIn.subjectOnly"><![CDATA[فقط موضوع]]></item>
+        <item name="wcf.search.searchInCategories"><![CDATA[جستجو در دسته بندی ها]]></item>
+        <item name="wcf.search.sortBy"><![CDATA[مرتب سازی بر اساس]]></item>
+        <item name="wcf.search.sortBy.relevance"><![CDATA[ارتباط]]></item>
+        <item name="wcf.search.sortBy.time"><![CDATA[زمان]]></item>
+        <item name="wcf.search.sortBy.username"><![CDATA[نویسنده]]></item>
+        <item name="wcf.search.type"><![CDATA[نوع محتوا]]></item>
+        <item name="wcf.search.type.com.woltlab.blog.entry"><![CDATA[مقالات وبلاگ]]></item>
+        <item name="wcf.search.type.com.woltlab.calendar.event"><![CDATA[رویداد ها]]></item>
+        <item name="wcf.search.type.com.woltlab.filebase.file"><![CDATA[فایل ها]]></item>
+        <item name="wcf.search.type.com.woltlab.gallery.image"><![CDATA[گالری]]></item>
+        <item name="wcf.search.type.com.woltlab.wbb.board"><![CDATA[این انجمن]]></item>
+        <item name="wcf.search.type.com.woltlab.wbb.post"><![CDATA[انجمن]]></item>
+        <item name="wcf.search.type.com.woltlab.wbb.thread"><![CDATA[این موضوع]]></item>
+        <item name="wcf.search.type.com.woltlab.wcf.article"><![CDATA[مقالات]]></item>
+        <item name="wcf.search.type.com.woltlab.wcf.conversation"><![CDATA[این مکالمه]]></item>
+        <item name="wcf.search.type.com.woltlab.wcf.conversation.message"><![CDATA[مکالمات]]></item>
+        <item name="wcf.search.type.com.woltlab.wcf.page"><![CDATA[صفحات]]></item>
+        <item name="wcf.search.type.everywhere"><![CDATA[هر کجا]]></item>
+        <item name="wcf.search.type.tags"><![CDATA[جستجو بر اساس برچسب ها]]></item>
+        <item name="wcf.search.type.tags.popular"><![CDATA[برچسب های محبوب]]></item>
     </category>
     <category name="wcf.style">
-        <item name="wcf.style.changeStyle"><![CDATA[Change Style]]></item>
-        <item name="wcf.style.colorPicker"><![CDATA[Color Picker]]></item>
-        <item name="wcf.style.colorPicker.button.apply"><![CDATA[Apply]]></item>
-        <item name="wcf.style.colorPicker.button.changeColor"><![CDATA[Change color]]></item>
-        <item name="wcf.style.colorPicker.color"><![CDATA[Color]]></item>
-        <item name="wcf.style.colorPicker.current"><![CDATA[current]]></item>
-        <item name="wcf.style.colorPicker.error.invalidColor"><![CDATA[The entered color is invalid.]]></item>
-        <item name="wcf.style.colorPicker.hexAlpha"><![CDATA[Hex Value with Alpha Channel]]></item>
-        <item name="wcf.style.colorPicker.hue"><![CDATA[Hue]]></item>
-        <item name="wcf.style.colorPicker.lightness"><![CDATA[Lightness]]></item>
-        <item name="wcf.style.colorPicker.new"><![CDATA[new]]></item>
-        <item name="wcf.style.colorPicker.saturation"><![CDATA[Saturation]]></item>
-        <item name="wcf.style.currentStyle"><![CDATA[Current Style]]></item>
+        <item name="wcf.style.changeStyle"><![CDATA[تغییر سبک]]></item>
+        <item name="wcf.style.colorPicker"><![CDATA[انتخاب کننده رنگ]]></item>
+        <item name="wcf.style.colorPicker.button.apply"><![CDATA[درخواست دادن]]></item>
+        <item name="wcf.style.colorPicker.button.changeColor"><![CDATA[تغییر رنگ]]></item>
+        <item name="wcf.style.colorPicker.color"><![CDATA[رنگ]]></item>
+        <item name="wcf.style.colorPicker.current"><![CDATA[جاری]]></item>
+        <item name="wcf.style.colorPicker.error.invalidColor"><![CDATA[رنگ وارد شده نامعتبر است.]]></item>
+        <item name="wcf.style.colorPicker.hexAlpha"><![CDATA[ارزش هگز با کانال آلفا]]></item>
+        <item name="wcf.style.colorPicker.hue"><![CDATA[رنگ]]></item>
+        <item name="wcf.style.colorPicker.lightness"><![CDATA[سبکی]]></item>
+        <item name="wcf.style.colorPicker.new"><![CDATA[جدید]]></item>
+        <item name="wcf.style.colorPicker.saturation"><![CDATA[اشباع]]></item>
+        <item name="wcf.style.currentStyle"><![CDATA[سبک فعلی]]></item>
     </category>
     <category name="wcf.tagging">
         <item name="wcf.tagging.combinedTaggedObjects"><![CDATA[{implode from=$combinedTags item=tag glue=', '}“{$tag->name}”{/implode}]]></item>
-        <item name="wcf.tagging.combinedTaggedObjects.com.woltlab.blog.entry"><![CDATA[Blog Articles Tagged with]]></item>
-        <item name="wcf.tagging.combinedTaggedObjects.com.woltlab.calendar.event"><![CDATA[Events Tagged with]]></item>
-        <item name="wcf.tagging.combinedTaggedObjects.com.woltlab.filebase.file"><![CDATA[Files Tagged with]]></item>
-        <item name="wcf.tagging.combinedTaggedObjects.com.woltlab.gallery.image"><![CDATA[Images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and Videos{/if} Tagged with]]></item>
-        <item name="wcf.tagging.combinedTaggedObjects.com.woltlab.wbb.thread"><![CDATA[Threads Tagged with]]></item>
-        <item name="wcf.tagging.combinedTaggedObjects.com.woltlab.wcf.article"><![CDATA[Articles Tagged with]]></item>
-        <item name="wcf.tagging.objectType.com.woltlab.blog.entry"><![CDATA[Blog Articles]]></item>
-        <item name="wcf.tagging.objectType.com.woltlab.calendar.event"><![CDATA[Events]]></item>
-        <item name="wcf.tagging.objectType.com.woltlab.filebase.file"><![CDATA[Files]]></item>
-        <item name="wcf.tagging.objectType.com.woltlab.gallery.image"><![CDATA[Images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and Videos{/if}]]></item>
-        <item name="wcf.tagging.objectType.com.woltlab.wbb.thread"><![CDATA[Threads]]></item>
-        <item name="wcf.tagging.objectType.com.woltlab.wcf.article"><![CDATA[Articles]]></item>
-        <item name="wcf.tagging.objectTypes"><![CDATA[Content]]></item>
-        <item name="wcf.tagging.taggedObjects.com.woltlab.blog.entry"><![CDATA[Blog Articles Tagged with “{$tag->name}”]]></item>
-        <item name="wcf.tagging.taggedObjects.com.woltlab.calendar.event"><![CDATA[Events Tagged with “{$tag->name}”]]></item>
-        <item name="wcf.tagging.taggedObjects.com.woltlab.filebase.file"><![CDATA[Files Tagged with “{$tag->name}”]]></item>
-        <item name="wcf.tagging.taggedObjects.com.woltlab.gallery.image"><![CDATA[Images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and Videos{/if} Tagged with “{$tag->name}”]]></item>
-        <item name="wcf.tagging.taggedObjects.com.woltlab.wbb.thread"><![CDATA[Threads Tagged with “{$tag->name}”]]></item>
-        <item name="wcf.tagging.taggedObjects.com.woltlab.wcf.article"><![CDATA[Articles Tagged with “{$tag->name}”]]></item>
-        <item name="wcf.tagging.taggedObjects.noResults"><![CDATA[No items matched this tag.]]></item>
-        <item name="wcf.tagging.tags"><![CDATA[Tags]]></item>
-        <item name="wcf.tagging.tags.add"><![CDATA[Tags]]></item>
-        <item name="wcf.tagging.tags.description"><![CDATA[Separate multiple tags with a comma.]]></item>
-        <item name="wcf.tagging.tags.error.unknownTags"><![CDATA[The following tags do not exist: {implode from=$unknownTags item=unknownTag}{$unknownTag}{/implode}.]]></item>
+        <item name="wcf.tagging.combinedTaggedObjects.com.woltlab.blog.entry"><![CDATA[مطالب وبلاگ با برچسب]]></item>
+        <item name="wcf.tagging.combinedTaggedObjects.com.woltlab.calendar.event"><![CDATA[رویدادهای برچسب زده شده با]]></item>
+        <item name="wcf.tagging.combinedTaggedObjects.com.woltlab.filebase.file"><![CDATA[فایل های برچسب گذاری شده با]]></item>
+        <item name="wcf.tagging.combinedTaggedObjects.com.woltlab.gallery.image"><![CDATA[تصاویر{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو ها{/if} برچسب زده شده با]]></item>
+        <item name="wcf.tagging.combinedTaggedObjects.com.woltlab.wbb.thread"><![CDATA[موضوعات برچسب گذاری شده با]]></item>
+        <item name="wcf.tagging.combinedTaggedObjects.com.woltlab.wcf.article"><![CDATA[مقالات برچسب گذاری شده با]]></item>
+        <item name="wcf.tagging.objectType.com.woltlab.blog.entry"><![CDATA[مقالات وبلاگ]]></item>
+        <item name="wcf.tagging.objectType.com.woltlab.calendar.event"><![CDATA[رویداد ها]]></item>
+        <item name="wcf.tagging.objectType.com.woltlab.filebase.file"><![CDATA[فایل ها]]></item>
+        <item name="wcf.tagging.objectType.com.woltlab.gallery.image"><![CDATA[تصاویر{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو ها{/if}]]></item>
+        <item name="wcf.tagging.objectType.com.woltlab.wbb.thread"><![CDATA[موضوعات]]></item>
+        <item name="wcf.tagging.objectType.com.woltlab.wcf.article"><![CDATA[مقالات]]></item>
+        <item name="wcf.tagging.objectTypes"><![CDATA[محتوا]]></item>
+        <item name="wcf.tagging.taggedObjects.com.woltlab.blog.entry"><![CDATA[مطالب وبلاگ با برچسب “{$tag->name}”]]></item>
+        <item name="wcf.tagging.taggedObjects.com.woltlab.calendar.event"><![CDATA[رویدادهای برچسب زده شده با “{$tag->name}”]]></item>
+        <item name="wcf.tagging.taggedObjects.com.woltlab.filebase.file"><![CDATA[فایل های برچسب گذاری شده با “{$tag->name}”]]></item>
+        <item name="wcf.tagging.taggedObjects.com.woltlab.gallery.image"><![CDATA[تصاویر{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو ها{/if} Tagged with “{$tag->name}”]]></item>
+        <item name="wcf.tagging.taggedObjects.com.woltlab.wbb.thread"><![CDATA[موضوعات برچسب گذاری شده با “{$tag->name}”]]></item>
+        <item name="wcf.tagging.taggedObjects.com.woltlab.wcf.article"><![CDATA[مقالات برچسب گذاری شده با “{$tag->name}”]]></item>
+        <item name="wcf.tagging.taggedObjects.noResults"><![CDATA[هیچ موردی با این برچسب مطابقت نداشت.]]></item>
+        <item name="wcf.tagging.tags"><![CDATA[برچسب ها]]></item>
+        <item name="wcf.tagging.tags.add"><![CDATA[برچسب ها]]></item>
+        <item name="wcf.tagging.tags.description"><![CDATA[چندین تگ را با کاما جدا کنید.]]></item>
+        <item name="wcf.tagging.tags.error.unknownTags"><![CDATA[برچسب های زیر وجود ندارند: {implode from=$unknownTags item=unknownTag}{$unknownTag}{/implode}.]]></item>
     </category>
     <category name="wcf.upload">
-        <item name="wcf.upload.error.noImage"><![CDATA[The uploaded file is no image.]]></item>
-        <item name="wcf.upload.error.reachedRemainingLimit"><![CDATA[You have selected too many files. You can only upload {#$maxFiles} more file{if $maxFiles != 1}s{/if}.]]></item>
-        <item name="wcf.upload.error.uploadFailed"><![CDATA[An unknown error occurred during the upload.]]></item>
+        <item name="wcf.upload.error.noImage"><![CDATA[فایل آپلود شده بدون تصویر است.]]></item>
+        <item name="wcf.upload.error.reachedRemainingLimit"><![CDATA[شما فایل های زیادی را انتخاب کرده اید. شما فقط می توانید آپلود کنید {#$maxFiles} فایل دیگر{if $maxFiles != 1}{/if}.]]></item>
+        <item name="wcf.upload.error.uploadFailed"><![CDATA[یک خطای ناشناخته در حین آپلود روی داد.]]></item>
     </category>
     <category name="wcf.user">
-        <item name="wcf.user.access.everyone"><![CDATA[Everyone]]></item>
-        <item name="wcf.user.access.following"><![CDATA[Users I Follow]]></item>
-        <item name="wcf.user.access.nobody"><![CDATA[Nobody]]></item>
-        <item name="wcf.user.access.registered"><![CDATA[Registered Users]]></item>
-        <item name="wcf.user.accountManagement"><![CDATA[Account Management]]></item>
-        <item name="wcf.user.accountManagement.password.description"><![CDATA[Please confirm changes with your <u>current</u> password!]]></item>
-        <item name="wcf.user.accountManagement.warning"><![CDATA[Warning! You are editing your user account, careless changes might lock you out!]]></item>
-        <item name="wcf.user.activationCode"><![CDATA[Activation Code]]></item>
-        <item name="wcf.user.activationCode.error.invalid"><![CDATA[You have provided an invalid activation code. Click the link below if you wish to request a new activation code.]]></item>
-        <item name="wcf.user.activityPoint"><![CDATA[Points]]></item>
-        <item name="wcf.user.activityPoint.objectType"><![CDATA[Type]]></item>
-        <item name="wcf.user.activityPoint.objectType.com.woltlab.blog.activityPointEvent.entry"><![CDATA[Blog Articles]]></item>
-        <item name="wcf.user.activityPoint.objectType.com.woltlab.calendar.activityPointEvent.event"><![CDATA[Events]]></item>
-        <item name="wcf.user.activityPoint.objectType.com.woltlab.filebase.activityPointEvent.file"><![CDATA[Files]]></item>
-        <item name="wcf.user.activityPoint.objectType.com.woltlab.filebase.activityPointEvent.review"><![CDATA[File Reviews]]></item>
-        <item name="wcf.user.activityPoint.objectType.com.woltlab.gallery.activityPointEvent.image"><![CDATA[Images]]></item>
-        <item name="wcf.user.activityPoint.objectType.com.woltlab.gallery.activityPointEvent.video"><![CDATA[Videos]]></item>
-        <item name="wcf.user.activityPoint.objectType.com.woltlab.gallery.activityPointEvent.videoLink"><![CDATA[Video Links]]></item>
-        <item name="wcf.user.activityPoint.objectType.com.woltlab.wbb.activityPointEvent.post"><![CDATA[Posts <span class="icon icon16 fa-question-circle jsTooltip" title="Replies only, excludes first posts"></span>]]></item>
-        <item name="wcf.user.activityPoint.objectType.com.woltlab.wbb.activityPointEvent.thread"><![CDATA[Threads]]></item>
-        <item name="wcf.user.activityPoint.objectType.com.woltlab.wcf.like.activityPointEvent.receivedLikes"><![CDATA[Reactions Received]]></item>
-        <item name="wcf.user.activityPoint.objects"><![CDATA[Count]]></item>
-        <item name="wcf.user.activityPoint.pointsPerObject"><![CDATA[Points]]></item>
-        <item name="wcf.user.activityPoint.showActivityPoints"><![CDATA[Display Points of {$user->username}]]></item>
-        <item name="wcf.user.activityPoint.sum"><![CDATA[Sum]]></item>
-        <item name="wcf.user.articles"><![CDATA[Articles]]></item>
-        <item name="wcf.user.author"><![CDATA[Author]]></item>
-        <item name="wcf.user.ban"><![CDATA[Ban User]]></item>
-        <item name="wcf.user.ban.confirmMessage"><![CDATA[Do you really want to ban this user?]]></item>
-        <item name="wcf.user.ban.expires"><![CDATA[Unbanning]]></item>
-        <item name="wcf.user.ban.expires.description"><![CDATA[The user will automatically be unbanned at the set time.]]></item>
-        <item name="wcf.user.ban.neverExpires"><![CDATA[Permanently Ban User]]></item>
-        <item name="wcf.user.ban.reason.description"><![CDATA[The reason for the ban will be displayed for the user when visiting the site.]]></item>
-        <item name="wcf.user.banned"><![CDATA[The user “{$user->username}” has been banned{if $user->banExpires != 0} until {@$user->banExpires|date}{/if}.]]></item>
-        <item name="wcf.user.birthday.age"><![CDATA[Age]]></item>
-        <item name="wcf.user.birthday.age.from"><![CDATA[from]]></item>
-        <item name="wcf.user.birthday.age.to"><![CDATA[to]]></item>
-        <item name="wcf.user.birthdayToday"><![CDATA[It is their birthday]]></item>
-        <item name="wcf.user.boxList.description.activityPoints"><![CDATA[{#$boxUser->activityPoints} Point{if $boxUser->activityPoints != 1}s{/if}]]></item>
+        <item name="wcf.user.access.everyone"><![CDATA[همه]]></item>
+        <item name="wcf.user.access.following"><![CDATA[کاربرانی که دنبال می کنم]]></item>
+        <item name="wcf.user.access.nobody"><![CDATA[هیچ کس]]></item>
+        <item name="wcf.user.access.registered"><![CDATA[کاربران ثبت نام شده]]></item>
+        <item name="wcf.user.accountManagement"><![CDATA[مدیریت حساب]]></item>
+        <item name="wcf.user.accountManagement.password.description"><![CDATA[لطفا تغییرات را تایید کنید با رمز <u>فعلی</u> خود!]]></item>
+        <item name="wcf.user.accountManagement.warning"><![CDATA[هشدار! شما در حال ویرایش حساب کاربری خود هستید، تغییرات بی دقت ممکن است شما را قفل کند!]]></item>
+        <item name="wcf.user.activationCode"><![CDATA[کد فعال سازی]]></item>
+        <item name="wcf.user.activationCode.error.invalid"><![CDATA[شما یک کد فعال سازی نامعتبر ارائه کرده اید. در صورت تمایل به درخواست کد فعال سازی جدید، روی لینک زیر کلیک کنید.]]></item>
+        <item name="wcf.user.activityPoint"><![CDATA[امتیازات]]></item>
+        <item name="wcf.user.activityPoint.objectType"><![CDATA[نوع]]></item>
+        <item name="wcf.user.activityPoint.objectType.com.woltlab.blog.activityPointEvent.entry"><![CDATA[مقالات وبلاگ]]></item>
+        <item name="wcf.user.activityPoint.objectType.com.woltlab.calendar.activityPointEvent.event"><![CDATA[رویداد ها]]></item>
+        <item name="wcf.user.activityPoint.objectType.com.woltlab.filebase.activityPointEvent.file"><![CDATA[فایل ها]]></item>
+        <item name="wcf.user.activityPoint.objectType.com.woltlab.filebase.activityPointEvent.review"><![CDATA[بررسی فایل]]></item>
+        <item name="wcf.user.activityPoint.objectType.com.woltlab.gallery.activityPointEvent.image"><![CDATA[تصاویر]]></item>
+        <item name="wcf.user.activityPoint.objectType.com.woltlab.gallery.activityPointEvent.video"><![CDATA[ویدیو ها]]></item>
+        <item name="wcf.user.activityPoint.objectType.com.woltlab.gallery.activityPointEvent.videoLink"><![CDATA[لینک های ویدیو]]></item>
+        <item name="wcf.user.activityPoint.objectType.com.woltlab.wbb.activityPointEvent.post"><![CDATA[نوشته ها <span class="icon icon16 fa-question-circle jsTooltip" title="Replies only, excludes first posts"></span>]]></item>
+        <item name="wcf.user.activityPoint.objectType.com.woltlab.wbb.activityPointEvent.thread"><![CDATA[موضوعات]]></item>
+        <item name="wcf.user.activityPoint.objectType.com.woltlab.wcf.like.activityPointEvent.receivedLikes"><![CDATA[واکنش های دریافتی]]></item>
+        <item name="wcf.user.activityPoint.objects"><![CDATA[شمردن]]></item>
+        <item name="wcf.user.activityPoint.pointsPerObject"><![CDATA[امتیازات]]></item>
+        <item name="wcf.user.activityPoint.showActivityPoints"><![CDATA[نقاط نمایش از {$user->username}]]></item>
+        <item name="wcf.user.activityPoint.sum"><![CDATA[مجموع]]></item>
+        <item name="wcf.user.articles"><![CDATA[موضوعات]]></item>
+        <item name="wcf.user.author"><![CDATA[نویسنده]]></item>
+        <item name="wcf.user.ban"><![CDATA[ممنوع کردن کاربر]]></item>
+        <item name="wcf.user.ban.confirmMessage"><![CDATA[آیا واقعاً می خواهید این کاربر را تحریم کنید؟]]></item>
+        <item name="wcf.user.ban.expires"><![CDATA[لغو ممنوعیت]]></item>
+        <item name="wcf.user.ban.expires.description"><![CDATA[کاربر به طور خودکار در زمان تعیین شده لغو ممنوعیت خواهد شد.]]></item>
+        <item name="wcf.user.ban.neverExpires"><![CDATA[ممنوعیت دائمی کاربر]]></item>
+        <item name="wcf.user.ban.reason.description"><![CDATA[دلیل ممنوعیت در هنگام بازدید از سایت برای کاربر نمایش داده می شود.]]></item>
+        <item name="wcf.user.banned"><![CDATA[کاربر “{$user->username}” ممنوع شده{if $user->banExpires != 0} تا زمان {@$user->banExpires|date}{/if}.]]></item>
+        <item name="wcf.user.birthday.age"><![CDATA[سن]]></item>
+        <item name="wcf.user.birthday.age.from"><![CDATA[از]]></item>
+        <item name="wcf.user.birthday.age.to"><![CDATA[به]]></item>
+        <item name="wcf.user.birthdayToday"><![CDATA[روز تولدشان است]]></item>
+        <item name="wcf.user.boxList.description.activityPoints"><![CDATA[{#$boxUser->activityPoints} امتیاز{if $boxUser->activityPoints != 1}{/if}]]></item>
         <item name="wcf.user.boxList.description.blogEntries"><![CDATA[{plural value=$boxUser->blogEntries one='# Blog Article' other='# Blog Articles'}]]></item>
-        <item name="wcf.user.boxList.description.calendarEvents"><![CDATA[{#$boxUser->calendarEvents} Event{if $boxUser->calendarEvents != 1}s{/if}]]></item>
-        <item name="wcf.user.boxList.description.filebaseFiles"><![CDATA[{#$boxUser->filebaseFiles} File{if $boxUser->filebaseFiles != 1}s{/if}]]></item>
-        <item name="wcf.user.boxList.description.galleryImages"><![CDATA[{#$boxUser->galleryImages} Image{if $boxUser->galleryImages != 1}s{/if}]]></item>
-        <item name="wcf.user.boxList.description.galleryVideos"><![CDATA[{#$boxUser->galleryVideos} Video{if $boxUser->galleryVideos != 1}s{/if}]]></item>
-        <item name="wcf.user.boxList.description.likesReceived"><![CDATA[{#$boxUser->likesReceived} Like{if $boxUser->likesReceived != 1}s{/if}]]></item>
+        <item name="wcf.user.boxList.description.calendarEvents"><![CDATA[{#$boxUser->calendarEvents} رویداد{if $boxUser->calendarEvents != 1}{/if}]]></item>
+        <item name="wcf.user.boxList.description.filebaseFiles"><![CDATA[{#$boxUser->filebaseFiles} فایل{if $boxUser->filebaseFiles != 1}{/if}]]></item>
+        <item name="wcf.user.boxList.description.galleryImages"><![CDATA[{#$boxUser->galleryImages} تصویر{if $boxUser->galleryImages != 1}{/if}]]></item>
+        <item name="wcf.user.boxList.description.galleryVideos"><![CDATA[{#$boxUser->galleryVideos} ویدیو{if $boxUser->galleryVideos != 1}{/if}]]></item>
+        <item name="wcf.user.boxList.description.likesReceived"><![CDATA[{#$boxUser->likesReceived} لایک{if $boxUser->likesReceived != 1}{/if}]]></item>
         <item name="wcf.user.boxList.description.registrationDate"><![CDATA[{@$boxUser->registrationDate|time}]]></item>
-        <item name="wcf.user.boxList.description.wbbPosts"><![CDATA[{#$boxUser->wbbPosts} Post{if $boxUser->wbbPosts != 1}s{/if}]]></item>
-        <item name="wcf.user.button.follow"><![CDATA[Follow]]></item>
-        <item name="wcf.user.button.ignore"><![CDATA[Block]]></item>
-        <item name="wcf.user.button.login"><![CDATA[Login]]></item>
-        <item name="wcf.user.button.mail"><![CDATA[Send Email]]></item>
-        <item name="wcf.user.button.register"><![CDATA[Register]]></item>
-        <item name="wcf.user.button.unfollow"><![CDATA[Unfollow]]></item>
-        <item name="wcf.user.button.unignore"><![CDATA[Unblock]]></item>
-        <item name="wcf.user.changeEmail"><![CDATA[Change Email Address]]></item>
-        <item name="wcf.user.changeEmail.needReactivation"><![CDATA[Your new email address{if $newEmail|isset} (“{$newEmail}”){/if} must be verified first. You should have received an email which was sent to your new email address containing an activation link. Open the link to verify your new email address.]]></item>
-        <item name="wcf.user.changeEmail.needReactivation.mail.html.activate"><![CDATA[Confirm my email address]]></item>
-        <item name="wcf.user.changeEmail.needReactivation.mail.html.headline"><![CDATA[Dear {$mailbox->getUser()->username},]]></item>
+        <item name="wcf.user.boxList.description.wbbPosts"><![CDATA[{#$boxUser->wbbPosts} پست{if $boxUser->wbbPosts != 1}{/if}]]></item>
+        <item name="wcf.user.button.follow"><![CDATA[دنبال کردن]]></item>
+        <item name="wcf.user.button.ignore"><![CDATA[مسدود کردن]]></item>
+        <item name="wcf.user.button.login"><![CDATA[وارد شدن]]></item>
+        <item name="wcf.user.button.mail"><![CDATA[ایمیل بفرست]]></item>
+        <item name="wcf.user.button.register"><![CDATA[ثبت نام]]></item>
+        <item name="wcf.user.button.unfollow"><![CDATA[لغو دنبال کردن]]></item>
+        <item name="wcf.user.button.unignore"><![CDATA[رفع انسداد]]></item>
+        <item name="wcf.user.changeEmail"><![CDATA[آدرس ایمیل را تغییر دهید]]></item>
+        <item name="wcf.user.changeEmail.needReactivation"><![CDATA[آدرس ایمیل جدید شما{if $newEmail|isset} (“{$newEmail}”){/if} ابتدا باید تایید شود شما باید ایمیلی دریافت کرده باشید که به آدرس ایمیل جدید شما ارسال شده است که حاوی لینک فعال سازی است. پیوند را برای تأیید آدرس ایمیل جدید خود باز کنید.]]></item>
+        <item name="wcf.user.changeEmail.needReactivation.mail.html.activate"><![CDATA[آدرس ایمیل من را تایید کنید]]></item>
+        <item name="wcf.user.changeEmail.needReactivation.mail.html.headline"><![CDATA[عزیز {$mailbox->getUser()->username},]]></item>
         <item name="wcf.user.changeEmail.needReactivation.mail.html.intro"><![CDATA[
-<p>You have changed your email address on: <a href="{link isHtmlEmail=true}{/link}">{PAGE_TITLE|phrase}</a>. To complete
-this change it is required to confirm your new email address once:</p>]]></item>
+<p>شما آدرس ایمیل خود را تغییر داده اید: <a href="{link isHtmlEmail=true}{/link}">{PAGE_TITLE|phrase}</a>. برای تکمیل
+این تغییر برای تأیید یک بار آدرس ایمیل جدید شما لازم است:</p>]]></item>
         <item name="wcf.user.changeEmail.needReactivation.mail.html.outro"><![CDATA[
-<p>Your activation code is: <kbd>{$mailbox->getUser()->reactivationCode}</kbd>.</p>
-<p>If you have troubles confirming your email address, please contact the administrator at:
-<a href="mailto:{MAIL_ADMIN_ADDRESS}">{MAIL_ADMIN_ADDRESS}</a>. Please ignore this email if
-you did not register an account with us.</p>]]></item>
+<p>کد فعال سازی شما هست: <kbd>{$mailbox->getUser()->reactivationCode}</kbd>.</p>
+<p>اگر در تأیید آدرس ایمیل خود با مشکل مواجه شدید، لطفاً با مدیر این آدرس تماس بگیرید:
+<a href="mailto:{MAIL_ADMIN_ADDRESS}">{MAIL_ADMIN_ADDRESS}</a>. اگر حساب کاربری در ما ثبت نکرده اید، لطفاً این ایمیل را نادیده بگیرید
+.</p>]]></item>
         <item name="wcf.user.changeEmail.needReactivation.mail.plaintext"><![CDATA[Dear {@$mailbox->getUser()->username},
 
-You have changed your email address on: {@PAGE_TITLE|phrase} [URL:{link isEmail=true}{/link}]. To complete
-this change it is required to confirm your new email address once:
+شما آدرس ایمیل خود را تغییر داده اید: {@PAGE_TITLE|phrase} [URL:{link isEmail=true}{/link}]. برای تکمیل
+این تغییر برای تأیید یک بار آدرس ایمیل جدید شما لازم است:
 
     {link controller='EmailActivation' isEmail=true}u={@$mailbox->getUser()->userID}&a={@$mailbox->getUser()->reactivationCode}{/link} {* this line ends with a space *}
 
-Your activation code is: {@$mailbox->getUser()->reactivationCode} {* this line ends with a space *}
+کد فعال سازی شما هست: {@$mailbox->getUser()->reactivationCode} {* this line ends with a space *}
 
-If you have troubles confirming your email address, please contact the
-administrator at: {@MAIL_ADMIN_ADDRESS}. Please ignore this email if you did
-not register with us.]]></item>
-        <item name="wcf.user.changeEmail.needReactivation.mail.subject"><![CDATA[Email Activation for Website: {@PAGE_TITLE|phrase}]]></item>
-        <item name="wcf.user.changeEmail.success"><![CDATA[The email address has been changed.]]></item>
-        <item name="wcf.user.changePassword"><![CDATA[Change Password]]></item>
-        <item name="wcf.user.changePassword.success"><![CDATA[The password has been changed.]]></item>
-        <item name="wcf.user.changeUsername"><![CDATA[Change Username]]></item>
-        <item name="wcf.user.changeUsername.description"><![CDATA[You can change your username every {$renamePeriod} days. Changes between uppercase or lowercase are always allowed.
-		{if $__wcf->getUser()->lastUsernameChange}Last change was {@$__wcf->getUser()->lastUsernameChange|date}.{/if}]]></item>
-        <item name="wcf.user.changeUsername.success"><![CDATA[The username has been changed.]]></item>
-        <item name="wcf.user.confirmEmail"><![CDATA[Confirm Email]]></item>
-        <item name="wcf.user.confirmEmail.error.notEqual"><![CDATA[The entered email addresses do not match.]]></item>
-        <item name="wcf.user.confirmPassword"><![CDATA[Confirm Password]]></item>
-        <item name="wcf.user.confirmPassword.error.notEqual"><![CDATA[The entered passwords do not match.]]></item>
-        <item name="wcf.user.controlPanel"><![CDATA[Control Panel]]></item>
-        <item name="wcf.user.disableAvatar"><![CDATA[Block Avatar]]></item>
-        <item name="wcf.user.disableAvatar.confirmMessage"><![CDATA[Do you really want to block the avatar of this user?]]></item>
-        <item name="wcf.user.disableAvatar.expires"><![CDATA[Unblocking]]></item>
-        <item name="wcf.user.disableAvatar.expires.description"><![CDATA[The avatar of the user will automatically be unblocked at the set time.]]></item>
-        <item name="wcf.user.disableAvatar.neverExpires"><![CDATA[Permanently Block]]></item>
-        <item name="wcf.user.disableCoverPhoto"><![CDATA[Block Cover Photo]]></item>
-        <item name="wcf.user.disableCoverPhoto.confirmMessage"><![CDATA[Do you really want to block the cover photo of this user?]]></item>
-        <item name="wcf.user.disableCoverPhoto.expires"><![CDATA[Unblocking]]></item>
-        <item name="wcf.user.disableCoverPhoto.expires.description"><![CDATA[The cover photo of the user will automatically be unblocked at the set time.]]></item>
-        <item name="wcf.user.disableCoverPhoto.neverExpires"><![CDATA[Permanently Block]]></item>
-        <item name="wcf.user.disableSignature"><![CDATA[Block Signature]]></item>
-        <item name="wcf.user.disableSignature.confirmMessage"><![CDATA[Do you really want to block the signature of this user?]]></item>
-        <item name="wcf.user.disableSignature.expires"><![CDATA[Unblocking]]></item>
-        <item name="wcf.user.disableSignature.expires.description"><![CDATA[The signature of the user will automatically be unblocked at the set time.]]></item>
-        <item name="wcf.user.disableSignature.neverExpires"><![CDATA[Permanently Block]]></item>
-        <item name="wcf.user.edit"><![CDATA[Edit User]]></item>
-        <item name="wcf.user.editProfile"><![CDATA[Edit Profile]]></item>
-        <item name="wcf.user.email"><![CDATA[Email]]></item>
-        <item name="wcf.user.email.error.invalid"><![CDATA[The email is invalid.]]></item>
-        <item name="wcf.user.email.error.notUnique"><![CDATA[The email is already in use.]]></item>
-        <item name="wcf.user.emailActivation"><![CDATA[Verify New Email Address]]></item>
-        <item name="wcf.user.emailActivation.error.emailAlreadyEnabled"><![CDATA[The email address is already activated.]]></item>
-        <item name="wcf.user.emailActivation.success"><![CDATA[The email address has been activated.]]></item>
-        <item name="wcf.user.enableAvatar"><![CDATA[Unblock Avatar]]></item>
-        <item name="wcf.user.enableCoverPhoto"><![CDATA[Unblock Cover Photo]]></item>
-        <item name="wcf.user.enableSignature"><![CDATA[Unblock Signature]]></item>
-        <item name="wcf.user.error.isBanned"><![CDATA[Your user account has been banned{if $__wcf->user->banExpires != 0} until {@$__wcf->user->banExpires|date}{/if}{if $__wcf->user->banReason}: {@$__wcf->user->banReason|newlineToBreak}{else}.{/if}]]></item>
-        <item name="wcf.user.following.noUsers"><![CDATA[You are not following any users at the moment.]]></item>
-        <item name="wcf.user.gender.female"><![CDATA[Female]]></item>
-        <item name="wcf.user.gender.male"><![CDATA[Male]]></item>
-        <item name="wcf.user.gender.other"><![CDATA[Non-Binary]]></item>
-        <item name="wcf.user.group"><![CDATA[User Group]]></item>
-        <item name="wcf.user.guest"><![CDATA[Guest]]></item>
-        <item name="wcf.user.ignore.error.cannotBeIgnored"><![CDATA[The user cannot be blocked.]]></item>
-        <item name="wcf.user.ignore.type"><![CDATA[Block User]]></item>
-        <item name="wcf.user.ignore.type.blockDirectContact"><![CDATA[Block Direct Contact]]></item>
-        <item name="wcf.user.ignore.type.hideMessages"><![CDATA[Block Direct Contact and Hide Created Messages]]></item>
-        <item name="wcf.user.ignore.type.noIgnore"><![CDATA[Do Not Block]]></item>
-        <item name="wcf.user.ignoredUsers.noUsers"><![CDATA[You are not blocking any users at the moment.]]></item>
+اگر در تأیید آدرس ایمیل خود با مشکل مواجه شدید، لطفاً با مدیر این آدرس تماس بگیرید
+: {@MAIL_ADMIN_ADDRESS}. اگر با ما ثبت نام نکردید لطفاً این ایمیل را نادیده بگیرید
+.]]></item>
+        <item name="wcf.user.changeEmail.needReactivation.mail.subject"><![CDATA[فعال سازی ایمیل برای وب سایت: {@PAGE_TITLE|phrase}]]></item>
+        <item name="wcf.user.changeEmail.success"><![CDATA[آدرس ایمیل تغییر کرده است.]]></item>
+        <item name="wcf.user.changePassword"><![CDATA[رمز عبور را تغییر دهید]]></item>
+        <item name="wcf.user.changePassword.success"><![CDATA[رمز عبور تغییر کرده است.]]></item>
+        <item name="wcf.user.changeUsername"><![CDATA[تغییر نام کاربری]]></item>
+        <item name="wcf.user.changeUsername.description"><![CDATA[شما می توانید نام کاربری خود را  تغییر دهید هر {$renamePeriod} روز. تغییر بین حروف بزرگ یا کوچک همیشه مجاز است.
+		{if $__wcf->getUser()->lastUsernameChange}آخرین تغییر بود {@$__wcf->getUser()->lastUsernameChange|date}.{/if}]]></item>
+        <item name="wcf.user.changeUsername.success"><![CDATA[نام کاربری تغییر کرده است.]]></item>
+        <item name="wcf.user.confirmEmail"><![CDATA[تایید ایمیل]]></item>
+        <item name="wcf.user.confirmEmail.error.notEqual"><![CDATA[آدرس های ایمیل وارد شده مطابقت ندارند.]]></item>
+        <item name="wcf.user.confirmPassword"><![CDATA[تایید کردن رمز عبور]]></item>
+        <item name="wcf.user.confirmPassword.error.notEqual"><![CDATA[پسوردهای وارد شده مطابقت ندارند.]]></item>
+        <item name="wcf.user.controlPanel"><![CDATA[صفحه کنترل]]></item>
+        <item name="wcf.user.disableAvatar"><![CDATA[آواتار را مسدود کنید]]></item>
+        <item name="wcf.user.disableAvatar.confirmMessage"><![CDATA[آیا واقعاً می خواهید آواتار این کاربر را مسدود کنید؟?]]></item>
+        <item name="wcf.user.disableAvatar.expires"><![CDATA[رفع انسداد]]></item>
+        <item name="wcf.user.disableAvatar.expires.description"><![CDATA[آواتار کاربر به طور خودکار در زمان تعیین شده رفع انسداد می شود.]]></item>
+        <item name="wcf.user.disableAvatar.neverExpires"><![CDATA[مسدود کردن دائمی]]></item>
+        <item name="wcf.user.disableCoverPhoto"><![CDATA[مسدود کردن عکس جلد ]]></item>
+        <item name="wcf.user.disableCoverPhoto.confirmMessage"><![CDATA[آیا واقعاً می خواهید عکس روی جلد این کاربر را مسدود کنید؟?]]></item>
+        <item name="wcf.user.disableCoverPhoto.expires"><![CDATA[رفع انسداد]]></item>
+        <item name="wcf.user.disableCoverPhoto.expires.description"><![CDATA[عکس روی جلد کاربر به طور خودکار در زمان تعیین شده رفع انسداد می شود.]]></item>
+        <item name="wcf.user.disableCoverPhoto.neverExpires"><![CDATA[مسدود کردن دائمی]]></item>
+        <item name="wcf.user.disableSignature"><![CDATA[مسدود کردن امضا]]></item>
+        <item name="wcf.user.disableSignature.confirmMessage"><![CDATA[آیا واقعاً می خواهید امضای این کاربر را مسدود کنید؟?]]></item>
+        <item name="wcf.user.disableSignature.expires"><![CDATA[رفع انسداد]]></item>
+        <item name="wcf.user.disableSignature.expires.description"><![CDATA[امضای کاربر به طور خودکار در زمان تعیین شده رفع انسداد می شود.]]></item>
+        <item name="wcf.user.disableSignature.neverExpires"><![CDATA[مسدود کردن دائمی]]></item>
+        <item name="wcf.user.edit"><![CDATA[ویرایش کاربر]]></item>
+        <item name="wcf.user.editProfile"><![CDATA[ویرایش مشخصات]]></item>
+        <item name="wcf.user.email"><![CDATA[ایمیل]]></item>
+        <item name="wcf.user.email.error.invalid"><![CDATA[ایمیل نامعتبر است.]]></item>
+        <item name="wcf.user.email.error.notUnique"><![CDATA[ایمیل در حال حاضر در حال استفاده است.]]></item>
+        <item name="wcf.user.emailActivation"><![CDATA[آدرس ایمیل جدید را تأیید کنید]]></item>
+        <item name="wcf.user.emailActivation.error.emailAlreadyEnabled"><![CDATA[آدرس ایمیل قبلاً فعال شده است.]]></item>
+        <item name="wcf.user.emailActivation.success"><![CDATA[آدرس ایمیل فعال شد.]]></item>
+        <item name="wcf.user.enableAvatar"><![CDATA[رفع انسداد اواتار]]></item>
+        <item name="wcf.user.enableCoverPhoto"><![CDATA[رفع انسداد عکس روی جلد]]></item>
+        <item name="wcf.user.enableSignature"><![CDATA[رفع انسداد امضا]]></item>
+        <item name="wcf.user.error.isBanned"><![CDATA[حساب کاربری شما مسدود شده است{if $__wcf->user->banExpires != 0} until {@$__wcf->user->banExpires|date}{/if}{if $__wcf->user->banReason}: {@$__wcf->user->banReason|newlineToBreak}{else}.{/if}]]></item>
+        <item name="wcf.user.following.noUsers"><![CDATA[شما در حال حاضر هیچ کاربری را دنبال نمی کنید.]]></item>
+        <item name="wcf.user.gender.female"><![CDATA[زن]]></item>
+        <item name="wcf.user.gender.male"><![CDATA[مرد]]></item>
+        <item name="wcf.user.gender.other"><![CDATA[بدون جنسیت مشخص]]></item>
+        <item name="wcf.user.group"><![CDATA[گروه کاربران]]></item>
+        <item name="wcf.user.guest"><![CDATA[مهمان]]></item>
+        <item name="wcf.user.ignore.error.cannotBeIgnored"><![CDATA[این کاربر را نمی توان مسدود کرد.]]></item>
+        <item name="wcf.user.ignore.type"><![CDATA[مسدود کردن کاربر]]></item>
+        <item name="wcf.user.ignore.type.blockDirectContact"><![CDATA[مسدود کردن تماس مستقیم]]></item>
+        <item name="wcf.user.ignore.type.hideMessages"><![CDATA[تماس مستقیم را مسدود کنید و پیام های ایجاد شده را پنهان کنید]]></item>
+        <item name="wcf.user.ignore.type.noIgnore"><![CDATA[مسدود نکنید]]></item>
+        <item name="wcf.user.ignoredUsers.noUsers"><![CDATA[شما در حال حاضر هیچ کاربری را مسدود نمی کنید.]]></item>
         <item name="wcf.user.ipAddress"><![CDATA[IP Address]]></item>
-        <item name="wcf.user.ipAddress.searchEngine"><![CDATA[Search for {if !$ipAddress|empty}{$ipAddress}{else}this IP address{/if} {if !$host|empty}on {$host}{/if}]]></item>
-        <item name="wcf.user.language"><![CDATA[Language]]></item>
-        <item name="wcf.user.language.description"><![CDATA[User interface language]]></item>
-        <item name="wcf.user.lastActivityTime"><![CDATA[Last Activity]]></item>
-        <item name="wcf.user.login"><![CDATA[Login]]></item>
-        <item name="wcf.user.login.3rdParty"><![CDATA[Third-Party Login]]></item>
+        <item name="wcf.user.ipAddress.searchEngine"><![CDATA[جستجو برای {if !$ipAddress|empty}{$ipAddress}{else}این IP address{/if} {if !$host|empty}on {$host}{/if}]]></item>
+        <item name="wcf.user.language"><![CDATA[زبان]]></item>
+        <item name="wcf.user.language.description"><![CDATA[زبان رابط کاربری]]></item>
+        <item name="wcf.user.lastActivityTime"><![CDATA[آخرین فعالیت]]></item>
+        <item name="wcf.user.login"><![CDATA[وارد شدن]]></item>
+        <item name="wcf.user.login.3rdParty"><![CDATA[ورود شخص ثالث]]></item>
         <item name="wcf.user.login.blocked"><![CDATA[There have been too many failed login attempts originating from your IP address, your login attempts will be temporarily rejected for security reasons. Please try again later!]]></item>
         <item name="wcf.user.login.error.cookieRequired"><![CDATA[The login requires the acceptance of cookies, please enable cookies to proceed.]]></item>
         <item name="wcf.user.login.forceLogin"><![CDATA[You must be logged-in to access this page.]]></item>
