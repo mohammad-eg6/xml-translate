@@ -8049,65 +8049,65 @@ Your account on the website: {@PAGE_TITLE|phrase} [URL:{link isEmail=true}{/link
         <item name="wcf.user.membersList.registrationDate"><![CDATA[عضو از {@$user->registrationDate|date}]]></item>
         <item name="wcf.user.moderate"><![CDATA[کاربر متوسط]]></item>
         <item name="wcf.user.mostOnlineUsers"><![CDATA[بیشترین کاربران انلاین]]></item>
-        <item name="wcf.user.myProfile"><![CDATA[My Profile]]></item>
-        <item name="wcf.user.newActivationCode"><![CDATA[Request New Activation Code]]></item>
-        <item name="wcf.user.newActivationCode.success"><![CDATA[The activation code has been sent to “{$email}”.]]></item>
-        <item name="wcf.user.newEmail"><![CDATA[New Email Address]]></item>
-        <item name="wcf.user.newPassword"><![CDATA[New Password]]></item>
-        <item name="wcf.user.newPassword.error.invalidLink"><![CDATA[The link to set a new password is no longer valid. For security reasons, this link expires after some time and can only be used once. You can request a new link on the following page: <a href="{link controller='LostPassword'}{/link}">Lost Password</a>]]></item>
-        <item name="wcf.user.newPassword.info"><![CDATA[You are setting a new password for the user “{$user->username}”.]]></item>
-        <item name="wcf.user.newPassword.success"><![CDATA[The password of the user “{$user->username}” has been changed successfully. You may now login with your new password.]]></item>
-        <item name="wcf.user.newUsername"><![CDATA[New Username]]></item>
-        <item name="wcf.user.newestMember"><![CDATA[Newest Member]]></item>
-        <item name="wcf.user.online"><![CDATA[Online]]></item>
-        <item name="wcf.user.online.title"><![CDATA[{$username} is online]]></item>
-        <item name="wcf.user.option.error.birthdayTooYoung"><![CDATA[You are not old enough. To register with this website you must be at least {#REGISTER_MIN_USER_AGE} years old.]]></item>
-        <item name="wcf.user.option.error.censoredWordsFound"><![CDATA[The text contains censored words: {implode from=$censoredWords key=censoredWord item=number}{$censoredWord}{if $number > 1} ({#$number}×){/if}{/implode}.]]></item>
-        <item name="wcf.user.option.error.disallowedBBCodes"><![CDATA[The message contains disallowed BBCodes: {implode from=$disallowedBBCodes item=disallowedBBCode}{$disallowedBBCode}{/implode}.]]></item>
-        <item name="wcf.user.option.error.tooHigh"><![CDATA[The set value is too high.{if $option->maxvalue !== null} The maximum value is {#$option->maxvalue}.{/if}]]></item>
-        <item name="wcf.user.option.error.tooLong"><![CDATA[The entered text is too long.]]></item>
-        <item name="wcf.user.option.error.tooLow"><![CDATA[The set value is too low.{if $option->minvalue !== null} The minimum value is {#$option->minvalue}.{/if}]]></item>
-        <item name="wcf.user.option.error.tooShort"><![CDATA[The entered text is too short.]]></item>
-        <item name="wcf.user.option.error.validationFailed"><![CDATA[The entered text is invalid.]]></item>
-        <item name="wcf.user.panel.settings"><![CDATA[Settings]]></item>
-        <item name="wcf.user.panel.showAll"><![CDATA[Display All]]></item>
-        <item name="wcf.user.password"><![CDATA[Password]]></item>
-        <item name="wcf.user.password.description"><![CDATA[A secure password should be at least 10 characters long.]]></item>
-        <item name="wcf.user.password.error.false"><![CDATA[The entered password is wrong.]]></item>
-        <item name="wcf.user.password.error.notSecure"><![CDATA[Please select a more secure password.]]></item>
-        <item name="wcf.user.password.strength"><![CDATA[Password Strength]]></item>
-        <item name="wcf.user.password.zxcvbn.suggestions.add_word_uncommon_better"><![CDATA[Add another word or two. Uncommon words are better.]]></item>
-        <item name="wcf.user.password.zxcvbn.suggestions.all_upper"><![CDATA[All-uppercase is almost as easy to guess as all-lowercase.]]></item>
-        <item name="wcf.user.password.zxcvbn.suggestions.avoid_associated_year"><![CDATA[Avoid years that are associated with you.]]></item>
-        <item name="wcf.user.password.zxcvbn.suggestions.avoid_date"><![CDATA[Avoid dates and years that are associated with you.]]></item>
-        <item name="wcf.user.password.zxcvbn.suggestions.avoid_recent_year"><![CDATA[Avoid recent years.]]></item>
-        <item name="wcf.user.password.zxcvbn.suggestions.avoid_repeat"><![CDATA[Avoid repeated words and characters.]]></item>
-        <item name="wcf.user.password.zxcvbn.suggestions.avoid_sequence"><![CDATA[Avoid sequences.]]></item>
-        <item name="wcf.user.password.zxcvbn.suggestions.l33t"><![CDATA[Predictable substitutions like “@” instead of “a” don’t help very much.]]></item>
-        <item name="wcf.user.password.zxcvbn.suggestions.no_need_for_symbols_digits_uppercase"><![CDATA[No need for symbols, digits, or uppercase letters.]]></item>
-        <item name="wcf.user.password.zxcvbn.suggestions.reversed"><![CDATA[Reversed words aren’t much harder to guess.]]></item>
-        <item name="wcf.user.password.zxcvbn.suggestions.start_upper"><![CDATA[Capitalization does not help very much.]]></item>
-        <item name="wcf.user.password.zxcvbn.suggestions.use_longer_keyboard_pattern"><![CDATA[Use a longer keyboard pattern with more turns.]]></item>
-        <item name="wcf.user.password.zxcvbn.suggestions.use_words_avoid_common_phrases"><![CDATA[Use a few words, avoid common phrases.]]></item>
-        <item name="wcf.user.password.zxcvbn.warnings.common"><![CDATA[This is a very common password.]]></item>
-        <item name="wcf.user.password.zxcvbn.warnings.common_alike"><![CDATA[This is similar to a commonly used password.]]></item>
-        <item name="wcf.user.password.zxcvbn.warnings.date"><![CDATA[Dates are often easy to guess.]]></item>
-        <item name="wcf.user.password.zxcvbn.warnings.name"><![CDATA[Common names and surnames are easy to guess.]]></item>
-        <item name="wcf.user.password.zxcvbn.warnings.recent_year"><![CDATA[Recent years are easy to guess.]]></item>
-        <item name="wcf.user.password.zxcvbn.warnings.repeat"><![CDATA[Repeats like “abcabcabc” are only slightly harder to guess than “abc”.]]></item>
-        <item name="wcf.user.password.zxcvbn.warnings.repeat_single_char"><![CDATA[Repeats like “aaa” are easy to guess.]]></item>
-        <item name="wcf.user.password.zxcvbn.warnings.sequence"><![CDATA[Sequences like “abc” or “6543” are easy to guess.]]></item>
-        <item name="wcf.user.password.zxcvbn.warnings.short_keyboard_pattern"><![CDATA[Short keyboard patterns are easy to guess.]]></item>
-        <item name="wcf.user.password.zxcvbn.warnings.sole_name"><![CDATA[Names and surnames by themselves are easy to guess.]]></item>
-        <item name="wcf.user.password.zxcvbn.warnings.sole_word"><![CDATA[A word by itself is easy to guess.]]></item>
-        <item name="wcf.user.password.zxcvbn.warnings.straight_row"><![CDATA[Straight rows of keys are easy to guess.]]></item>
-        <item name="wcf.user.password.zxcvbn.warnings.top_10"><![CDATA[This is a top-10 common password.]]></item>
-        <item name="wcf.user.password.zxcvbn.warnings.top_100"><![CDATA[This is a top-100 common password.]]></item>
-        <item name="wcf.user.profileHits"><![CDATA[Profile Hits]]></item>
-        <item name="wcf.user.profileHits.hitsPerDay"><![CDATA[{#$user->profileHits/$user->getProfileAge()} hits per day]]></item>
-        <item name="wcf.user.quit"><![CDATA[Delete User Account]]></item>
-        <item name="wcf.user.quit.active"><![CDATA[Your user account will be deleted on {$__wcf->user->quitStarted+7*86400|date}. During this time period you can abort the deletion within the <a href="{link controller='AccountManagement'}{/link}">Account Management Form</a>.]]></item>
-        <item name="wcf.user.quit.cancel"><![CDATA[Your user account will be deleted on {$quitStarted+7*86400|date}. Please enable this option if you wish to abort the deletion.]]></item>
+        <item name="wcf.user.myProfile"><![CDATA[پروفایل من]]></item>
+        <item name="wcf.user.newActivationCode"><![CDATA[درخواست کد فعال سازی جدید]]></item>
+        <item name="wcf.user.newActivationCode.success"><![CDATA[کد فعال سازی ارسال شده است “{$email}”.]]></item>
+        <item name="wcf.user.newEmail"><![CDATA[آدرس ایمیل جدید]]></item>
+        <item name="wcf.user.newPassword"><![CDATA[رمز عبور جدید]]></item>
+        <item name="wcf.user.newPassword.error.invalidLink"><![CDATA[پیوند تنظیم رمز عبور جدید دیگر معتبر نیست. به دلایل امنیتی، این لینک پس از مدتی منقضی می شود و فقط یک بار می توان از آن استفاده کرد. می توانید در صفحه زیر درخواست لینک جدید بدهید: <a href="{link controller='LostPassword'}{/link}">رمز فراموش شده</a>]]></item>
+        <item name="wcf.user.newPassword.info"><![CDATA[شما در حال تعیین رمز عبور جدید برای کاربر  “{$user->username}” هستید.]]></item>
+        <item name="wcf.user.newPassword.success"><![CDATA[رمز عبور کاربر “{$user->username}” با موفقیت تغییر کرده است اکنون می توانید با رمز عبور جدید خود وارد شوید.]]></item>
+        <item name="wcf.user.newUsername"><![CDATA[شناسه کاربری جدید]]></item>
+        <item name="wcf.user.newestMember"><![CDATA[جدیدترین عضو]]></item>
+        <item name="wcf.user.online"><![CDATA[انلاین]]></item>
+        <item name="wcf.user.online.title"><![CDATA[{$username} انلاین است]]></item>
+        <item name="wcf.user.option.error.birthdayTooYoung"><![CDATA[شما به اندازه کافی بزرگ نیستید. برای ثبت نام در این وب سایت باید حداقل {#REGISTER_MIN_USER_AGE} ساله باشید.]]></item>
+        <item name="wcf.user.option.error.censoredWordsFound"><![CDATA[متن حاوی کلمات سانسور شده است: {implode from=$censoredWords key=censoredWord item=number}{$censoredWord}{if $number > 1} ({#$number}×){/if}{/implode}.]]></item>
+        <item name="wcf.user.option.error.disallowedBBCodes"><![CDATA[پیام حاوی کدهای BBC غیر مجاز است: {implode from=$disallowedBBCodes item=disallowedBBCode}{$disallowedBBCode}{/implode}.]]></item>
+        <item name="wcf.user.option.error.tooHigh"><![CDATA[مقدار تنظیم شده خیلی زیاد است.{if $option->maxvalue !== null} حداکثر مقدار  {#$option->maxvalue}.{/if}]]></item>
+        <item name="wcf.user.option.error.tooLong"><![CDATA[متن وارد شده خیلی طولانی است.]]></item>
+        <item name="wcf.user.option.error.tooLow"><![CDATA[مقدار تنظیم شده خیلی کم است.{if $option->minvalue !== null} حداقل مقدار {#$option->minvalue}.{/if}]]></item>
+        <item name="wcf.user.option.error.tooShort"><![CDATA[متن وارد شده خیلی کوتاه است.]]></item>
+        <item name="wcf.user.option.error.validationFailed"><![CDATA[متن وارد شده نامعتبر است.]]></item>
+        <item name="wcf.user.panel.settings"><![CDATA[تنظیمات]]></item>
+        <item name="wcf.user.panel.showAll"><![CDATA[نمایش همه]]></item>
+        <item name="wcf.user.password"><![CDATA[رمز عبور]]></item>
+        <item name="wcf.user.password.description"><![CDATA[رمز عبور ایمن باید حداقل 10 کاراکتر باشد.]]></item>
+        <item name="wcf.user.password.error.false"><![CDATA[رمز وارد شده اشتباه است.]]></item>
+        <item name="wcf.user.password.error.notSecure"><![CDATA[لطفا یک رمز عبور امن تر انتخاب کنید.]]></item>
+        <item name="wcf.user.password.strength"><![CDATA[قدرت رمز عبور]]></item>
+        <item name="wcf.user.password.zxcvbn.suggestions.add_word_uncommon_better"><![CDATA[یکی دو کلمه دیگر اضافه کنید. کلمات غیر معمول بهتر هستند.]]></item>
+        <item name="wcf.user.password.zxcvbn.suggestions.all_upper"><![CDATA[حدس زدن حروف بزرگ تقریباً به راحتی حروف کوچک است.]]></item>
+        <item name="wcf.user.password.zxcvbn.suggestions.avoid_associated_year"><![CDATA[از سال هایی که با شما مرتبط است دوری کنید.]]></item>
+        <item name="wcf.user.password.zxcvbn.suggestions.avoid_date"><![CDATA[از تاریخ ها و سال هایی که با شما مرتبط هستند اجتناب کنید.]]></item>
+        <item name="wcf.user.password.zxcvbn.suggestions.avoid_recent_year"><![CDATA[از سال های اخیر اجتناب کنید.]]></item>
+        <item name="wcf.user.password.zxcvbn.suggestions.avoid_repeat"><![CDATA[از کلمات و شخصیت های تکراری خودداری کنید.]]></item>
+        <item name="wcf.user.password.zxcvbn.suggestions.avoid_sequence"><![CDATA[از دنباله ها اجتناب کنید.]]></item>
+        <item name="wcf.user.password.zxcvbn.suggestions.l33t"><![CDATA[تعویض های قابل پیش بینی مانند “@” بجای “a” خیلی کمک نمیکند.]]></item>
+        <item name="wcf.user.password.zxcvbn.suggestions.no_need_for_symbols_digits_uppercase"><![CDATA[بدون نیاز به نمادها، ارقام یا حروف بزرگ.]]></item>
+        <item name="wcf.user.password.zxcvbn.suggestions.reversed"><![CDATA[حدس زدن کلمات معکوس خیلی سخت تر نیست.]]></item>
+        <item name="wcf.user.password.zxcvbn.suggestions.start_upper"><![CDATA[حروف بزرگ کمک چندانی نمی کند.]]></item>
+        <item name="wcf.user.password.zxcvbn.suggestions.use_longer_keyboard_pattern"><![CDATA[از الگوی صفحه کلید بلندتر با چرخش بیشتر استفاده کنید.]]></item>
+        <item name="wcf.user.password.zxcvbn.suggestions.use_words_avoid_common_phrases"><![CDATA[از چند کلمه استفاده کنید، از عبارات رایج اجتناب کنید.]]></item>
+        <item name="wcf.user.password.zxcvbn.warnings.common"><![CDATA[این یک رمز عبور بسیار رایج است.]]></item>
+        <item name="wcf.user.password.zxcvbn.warnings.common_alike"><![CDATA[این مشابه رمز عبور رایج است.]]></item>
+        <item name="wcf.user.password.zxcvbn.warnings.date"><![CDATA[حدس زدن تاریخ ها اغلب آسان است.]]></item>
+        <item name="wcf.user.password.zxcvbn.warnings.name"><![CDATA[حدس زدن نام و نام خانوادگی معمولی آسان است.]]></item>
+        <item name="wcf.user.password.zxcvbn.warnings.recent_year"><![CDATA[حدس زدن سال های اخیر آسان است.]]></item>
+        <item name="wcf.user.password.zxcvbn.warnings.repeat"><![CDATA[تکرار هایی مانند “abcabcabc” جدس زدنشان فقط کمی سخت تر از  “abc” است.]]></item>
+        <item name="wcf.user.password.zxcvbn.warnings.repeat_single_char"><![CDATA[تکرار هایی مانند  “aaa” را به راحتی می توان حدس زد.]]></item>
+        <item name="wcf.user.password.zxcvbn.warnings.sequence"><![CDATA[دنباله هایی مانند “abc” یا “6543” را به راحتی می توان حدس زد.]]></item>
+        <item name="wcf.user.password.zxcvbn.warnings.short_keyboard_pattern"><![CDATA[حدس زدن الگوهای صفحه کلید کوتاه آسان است.]]></item>
+        <item name="wcf.user.password.zxcvbn.warnings.sole_name"><![CDATA[حدس زدن نام و نام خانوادگی به تنهایی آسان است.]]></item>
+        <item name="wcf.user.password.zxcvbn.warnings.sole_word"><![CDATA[حدس زدن یک کلمه به تنهایی آسان است.]]></item>
+        <item name="wcf.user.password.zxcvbn.warnings.straight_row"><![CDATA[ردیف های مستقیم کلیدها به راحتی قابل حدس زدن هستند.]]></item>
+        <item name="wcf.user.password.zxcvbn.warnings.top_10"><![CDATA[این 10 رمز عبور رایج است.]]></item>
+        <item name="wcf.user.password.zxcvbn.warnings.top_100"><![CDATA[این  100 رمز عبور رایج است.]]></item>
+        <item name="wcf.user.profileHits"><![CDATA[بازدیدهای پروفایل]]></item>
+        <item name="wcf.user.profileHits.hitsPerDay"><![CDATA[{#$user->profileHits/$user->getProfileAge()} بازدید در روز]]></item>
+        <item name="wcf.user.quit"><![CDATA[حذف حساب کاربری]]></item>
+        <item name="wcf.user.quit.active"><![CDATA[حساب کاربری شما حذف خواهد شد در {$__wcf->user->quitStarted+7*86400|date}. در طول این بازه زمانی، می توانید حذف را  لغو کنید از داخل <a href="{link controller='AccountManagement'}{/link}">فرم مدیریت حساب</a>.]]></item>
+        <item name="wcf.user.quit.cancel"><![CDATA[حساب کاربری شما حذف خواهد شد در {$quitStarted+7*86400|date}. اگر می خواهید حذف را لغو کنید، لطفاً این گزینه را فعال کنید.]]></item>
         <item name="wcf.user.quit.cancel.success"><![CDATA[The account deletion has been aborted.]]></item>
         <item name="wcf.user.quit.description"><![CDATA[Note: Posts, attachments, and similar content will remain even after your account has been deleted.]]></item>
         <item name="wcf.user.quit.success"><![CDATA[Your user account will be deleted on {TIME_NOW+7*86400|date}. During this time period you can abort the deletion on this page.]]></item>
