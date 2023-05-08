@@ -4773,7 +4773,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.package.validation.errorCode.11"><![CDATA[این {if $type == 'install'}نصب{else}به روز رسانی{/if}-instructions specify the file “{$value}” for the Package Installation Plugin “{$pip}”, اما در مکان مشخص شده یافت نمی شود. علت های احتمالی:<ul class="nativeList"><li>فایل به هیچ وجه به آرشیو اضافه نشده است</li><li>فایل وجود دارد اما با نام (کمی) متفاوت (اشتباه تایپی)</li></ul>]]></item>
         <item name="wcf.acp.package.validation.errorCode.12"><![CDATA[بسته  “{$packageName|phrase}” قبلاً در نسخه نصب شده است “{$packageVersion}”.]]></item>
         <item name="wcf.acp.package.validation.errorCode.13"><![CDATA[نسخه API “{$version}” نامعتبر است.]]></item>
-        <item name="wcf.acp.package.validation.errorCode.14"><![CDATA[این بسته برای {if $isOlderVersion}یک قدیمی تر{else}یک جدیدتر{/if} نسخه WoltLab Suite و سازگار نیست.]]></item>
+        <item name="wcf.acp.package.validation.errorCode.14"><![CDATA[این بسته برای {if $isOlderVersion}یک قدیمی تر{else}یک جدیدتر{/if} نسخه WoltLab مجموعه و سازگار نیست.]]></item>
         <item name="wcf.acp.package.validation.errorCode.15"><![CDATA[این بسته حاوی هیچ داده ای در مورد سازگاری API نیست، در حالی که ابزارهای توسعه دهنده فعال هستند از نصب جلوگیری می شود.]]></item>
         <item name="wcf.acp.package.validation.errorCode.16"><![CDATA[علاوه بر &lt;void/&gt; instruction additional Package Installation Plugins are used.]]></item>
         <item name="wcf.acp.package.validation.errorCode.17"><![CDATA[این &lt;void/&gt; دستورالعمل ممکن است در دستورالعمل های نصب استفاده نشود.]]></item>
@@ -4794,7 +4794,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
     <category name="wcf.acp.page">
         <item name="wcf.acp.page.add"><![CDATA[اضافه کردن صفحه]]></item>
         <item name="wcf.acp.page.addPageToMainMenu"><![CDATA[اضافه کردن صفحه به منوی اصلی]]></item>
-        <item name="wcf.acp.page.allowSpidersToIndex"><![CDATA[Allow search spiders to index this page]]></item>
+        <item name="wcf.acp.page.allowSpidersToIndex"><![CDATA[به عنکبوت های جستجو اجازه دهید این صفحه را فهرست کنند]]></item>
         <item name="wcf.acp.page.application"><![CDATA[برنامه]]></item>
         <item name="wcf.acp.page.application.error.missing"><![CDATA[.هیچ برنامه ای مشخص نشده است، صفحه قابل دسترسی نیست]]></item>
         <item name="wcf.acp.page.availableDuringOfflineMode"><![CDATA[صفحه در حالت نگهداری در دسترس است]]></item>
@@ -4802,7 +4802,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.page.boxOrder.discard"><![CDATA[مرتب سازی را کنار بگذارید]]></item>
         <item name="wcf.acp.page.boxOrder.discard.confirmMessage"><![CDATA[آیا واقعاً می‌خواهید مرتب‌سازی کادر جداگانه برای این صفحه را کنار بگذارید؟]]></item>
         <item name="wcf.acp.page.boxOrder.pageAdd"><![CDATA[.شما می توانید پس از ذخیره، یک ترتیب مرتب سازی جداگانه برای جعبه ها تنظیم کنید]]></item>
-        <item name="wcf.acp.page.boxOrder.pageEdit"><![CDATA[You can set an individual <a href="{link controller='PageBoxOrder' id=$page->pageID}{/link}">sort order for boxes</a>, please save your changes before continuing.]]></item>
+        <item name="wcf.acp.page.boxOrder.pageEdit"><![CDATA[شما می توانید یک فرد را تنظیم کنید <a href="{link controller='PageBoxOrder' id=$page->pageID}{/link}">ترتیب مرتب سازی جعبه ها</a>, لطفا قبل از ادامه تغییرات خود را ذخیره کنید.]]></item>
         <item name="wcf.acp.page.boxOrder.position.content"><![CDATA[(محتوا)]]></item>
         <item name="wcf.acp.page.boxes"><![CDATA[کادرهای انتخاب شده را در این صفحه نمایش دهید]]></item>
         <item name="wcf.acp.page.button.boxOrder"><![CDATA[جعبه های مرتب سازی]]></item>
