@@ -8006,50 +8006,49 @@ Your account on the website: {@PAGE_TITLE|phrase} [URL:{link isEmail=true}{/link
         <item name="wcf.user.lastActivityTime"><![CDATA[آخرین فعالیت]]></item>
         <item name="wcf.user.login"><![CDATA[وارد شدن]]></item>
         <item name="wcf.user.login.3rdParty"><![CDATA[ورود شخص ثالث]]></item>
-        <item name="wcf.user.login.blocked"><![CDATA[There have been too many failed login attempts originating from your IP address, your login attempts will be temporarily rejected for security reasons. Please try again later!]]></item>
-        <item name="wcf.user.login.error.cookieRequired"><![CDATA[The login requires the acceptance of cookies, please enable cookies to proceed.]]></item>
-        <item name="wcf.user.login.forceLogin"><![CDATA[You must be logged-in to access this page.]]></item>
-        <item name="wcf.user.login.login"><![CDATA[Login]]></item>
-        <item name="wcf.user.login.register"><![CDATA[Register]]></item>
-        <item name="wcf.user.login.register.registerNow"><![CDATA[Register Yourself]]></item>
-        <item name="wcf.user.login.register.teaser"><![CDATA[Don’t have an account yet? <a href="{link controller='Register'}{/link}">Register yourself now</a> and be a part of our community!]]></item>
-        <item name="wcf.user.loginOrRegister"><![CDATA[Login{if !REGISTER_DISABLED} or register{/if}]]></item>
-        <item name="wcf.user.logout"><![CDATA[Logout]]></item>
-        <item name="wcf.user.lostPassword"><![CDATA[Lost Password]]></item>
-        <item name="wcf.user.lostPassword.description"><![CDATA[You must provide your username or email address to request a new password. Contact the site’s administrator if you need assistance.]]></item>
-        <item name="wcf.user.lostPassword.email.error.notFound"><![CDATA[“{$email}” is not used by any account.]]></item>
-        <item name="wcf.user.lostPassword.error.flood"><![CDATA[You have requested too many passwords. The function has therefore been temporarily deactivated for security reasons. Please try again later.]]></item>
-        <item name="wcf.user.lostPassword.error.tooManyRequests"><![CDATA[The password has been requested at least once in the past 24 hours. For security reasons you must wait at least {#$hours} hour{if $hours != 1}s{/if} before requesting it again.]]></item>
-        <item name="wcf.user.lostPassword.mail.html.headline"><![CDATA[Dear {$mailbox->getUser()->username},]]></item>
+        <item name="wcf.user.login.blocked"><![CDATA[تلاش‌های زیادی برای ورود ناموفق از آدرس IP شما انجام شده است، تلاش‌های ورود به سیستم شما به دلایل امنیتی موقتاً رد می‌شود. لطفاً بعداً دوباره امتحان کنید!]]></item>
+        <item name="wcf.user.login.error.cookieRequired"><![CDATA[ورود به سیستم نیاز به پذیرش کوکی ها دارد، لطفاً کوکی ها را فعال کنید تا ادامه یابد.]]></item>
+        <item name="wcf.user.login.forceLogin"><![CDATA[برای دسترسی به این صفحه باید وارد سیستم شوید.]]></item>
+        <item name="wcf.user.login.login"><![CDATA[وارد شدن]]></item>
+        <item name="wcf.user.login.register"><![CDATA[ثبت نام]]></item>
+        <item name="wcf.user.login.register.registerNow"><![CDATA[خودتان را ثبت نام کنید]]></item>
+        <item name="wcf.user.login.register.teaser"><![CDATA[حساب کاربری ندارید؟ <a href="{link controller='Register'}{/link}">همین الان خودتان را ثبت نام کنید </a> و بخشی از جامعه ما باشید!]]></item>
+        <item name="wcf.user.loginOrRegister"><![CDATA[وارد شدن{if !REGISTER_DISABLED} یا ثبت نام{/if}]]></item>
+        <item name="wcf.user.logout"><![CDATA[خروج]]></item>
+        <item name="wcf.user.lostPassword"><![CDATA[رمز فراموش شده]]></item>
+        <item name="wcf.user.lostPassword.description"><![CDATA[برای درخواست رمز عبور جدید باید نام کاربری یا آدرس ایمیل خود را وارد کنید. در صورت نیاز به کمک با مدیر سایت تماس بگیرید.]]></item>
+        <item name="wcf.user.lostPassword.email.error.notFound"><![CDATA[“{$email}” توسط هیچ حساب کاربری استفاده نمی شود.]]></item>
+        <item name="wcf.user.lostPassword.error.flood"><![CDATA[شما پسوردهای زیادی درخواست کرده اید. بنابراین این عملکرد به دلایل امنیتی به طور موقت غیرفعال شده است. لطفاً بعداً دوباره امتحان کنید.]]></item>
+        <item name="wcf.user.lostPassword.error.tooManyRequests"><![CDATA[رمز عبور حداقل یک بار در 24 ساعت گذشته درخواست شده است. به دلایل امنیتی باید حداقل  {#$hours} ساعت{if $hours != 1}{/if} قبل از درخواست مجدد صبر کنید.]]></item>
+        <item name="wcf.user.lostPassword.mail.html.headline"><![CDATA[عزیز {$mailbox->getUser()->username},]]></item>
         <item name="wcf.user.lostPassword.mail.html.intro"><![CDATA[
-<p>You (or someone else) claimed to have lost the password for the user account {$mailbox->getUser()->username} on
-the website <a href="{link isHtmlEmail=true}{/link}">{@PAGE_TITLE|phrase}</a>.</p>]]></item>
+<p>شما (یا شخص دیگری) ادعا کردید که رمز عبور حساب کاربری را گم کرده اید {$mailbox->getUser()->username} در
+وب سایت <a href="{link isHtmlEmail=true}{/link}">{@PAGE_TITLE|phrase}</a>.</p>]]></item>
         <item name="wcf.user.lostPassword.mail.html.outro"><![CDATA[
-<p>If you don’t want to change your password you can simply wait. The request will expire at {$mailbox->getUser()->lastLostPasswordRequestTime+86400|plainTime}.</p>]]></item>
-        <item name="wcf.user.lostPassword.mail.html.reset"><![CDATA[Change Password]]></item>
-        <item name="wcf.user.lostPassword.mail.plaintext"><![CDATA[Dear {@$mailbox->getUser()->username},
+<p>اگر نمی خواهید رمز عبور خود را تغییر دهید، می توانید به سادگی صبر کنید. درخواست منقضی می شود در تاریخ  {$mailbox->getUser()->lastLostPasswordRequestTime+86400|plainTime}.</p>]]></item>
+        <item name="wcf.user.lostPassword.mail.html.reset"><![CDATA[تغییر رمز عبور]]></item>
+        <item name="wcf.user.lostPassword.mail.plaintext"><![CDATA[عزیز {@$mailbox->getUser()->username},
 
-You (or someone else) claimed to have lost the password for the user account {@$mailbox->getUser()->username} on
-the website {@PAGE_TITLE|phrase} [URL:{link isEmail=true}{/link}]. You can change your password after clicking
-the following link:
+شما (یا شخص دیگری) ادعا کردید که رمز عبور حساب کاربری را گم کرده اید {@$mailbox->getUser()->username} در
+وب سایت {@PAGE_TITLE|phrase} [URL:{link isEmail=true}{/link}]. پس از کلیک روی لینک زیر می توانید رمز عبور خود را تغییر دهید :
 
     {link controller='NewPassword' object=$mailbox->getUser() isEmail=true}k={@$mailbox->getUser()->lostPasswordKey}{/link} {* this line ends with a space *}
 
-If you don’t want to change your password you can simply wait. The request will expire at {@$mailbox->getUser()->lastLostPasswordRequestTime+86400|plainTime}.]]></item>
-        <item name="wcf.user.lostPassword.mail.sent"><![CDATA[You should receive an email shortly.]]></item>
-        <item name="wcf.user.lostPassword.mail.subject"><![CDATA[Lost Password for Website: {@PAGE_TITLE|phrase}]]></item>
-        <item name="wcf.user.lostPasswordKey"><![CDATA[Security Key]]></item>
-        <item name="wcf.user.lostPasswordKey.error.invalid"><![CDATA[The Security Key is invalid.]]></item>
-        <item name="wcf.user.members"><![CDATA[Members]]></item>
-        <item name="wcf.user.members.filter"><![CDATA[Filter Members]]></item>
-        <item name="wcf.user.members.noMembers"><![CDATA[No members matched your criteria. <a href="{link controller='MembersList'}{/link}">Reset the applied filters.</a>]]></item>
-        <item name="wcf.user.members.sort"><![CDATA[Sort by]]></item>
-        <item name="wcf.user.members.sort.letters"><![CDATA[First Letter]]></item>
-        <item name="wcf.user.members.sort.letters.all"><![CDATA[All]]></item>
+اگر نمی خواهید رمز عبور خود را تغییر دهید، می توانید به سادگی صبر کنید. درخواست منقضی می شود در تاریخ  {@$mailbox->getUser()->lastLostPasswordRequestTime+86400|plainTime}.]]></item>
+        <item name="wcf.user.lostPassword.mail.sent"><![CDATA[شما باید به زودی یک ایمیل دریافت کنید.]]></item>
+        <item name="wcf.user.lostPassword.mail.subject"><![CDATA[رمز عبور گم شده برای وب سایت: {@PAGE_TITLE|phrase}]]></item>
+        <item name="wcf.user.lostPasswordKey"><![CDATA[کلید امنیتی]]></item>
+        <item name="wcf.user.lostPasswordKey.error.invalid"><![CDATA[کلید امنیتی نامعتبر است.]]></item>
+        <item name="wcf.user.members"><![CDATA[اعضا]]></item>
+        <item name="wcf.user.members.filter"><![CDATA[فیلتر کردن اعضا]]></item>
+        <item name="wcf.user.members.noMembers"><![CDATA[هیچ عضوی با معیارهای شما مطابقت نداشت. <a href="{link controller='MembersList'}{/link}">فیلترهای اعمال شده را بازنشانی کنید.</a>]]></item>
+        <item name="wcf.user.members.sort"><![CDATA[مرتب سازی بر اساس]]></item>
+        <item name="wcf.user.members.sort.letters"><![CDATA[نامه اول]]></item>
+        <item name="wcf.user.members.sort.letters.all"><![CDATA[همه]]></item>
         <item name="wcf.user.membersList.location"><![CDATA[from {$user->location}]]></item>
-        <item name="wcf.user.membersList.registrationDate"><![CDATA[Member since {@$user->registrationDate|date}]]></item>
-        <item name="wcf.user.moderate"><![CDATA[Moderate User]]></item>
-        <item name="wcf.user.mostOnlineUsers"><![CDATA[Most Online Users]]></item>
+        <item name="wcf.user.membersList.registrationDate"><![CDATA[عضو از {@$user->registrationDate|date}]]></item>
+        <item name="wcf.user.moderate"><![CDATA[کاربر متوسط]]></item>
+        <item name="wcf.user.mostOnlineUsers"><![CDATA[بیشترین کاربران انلاین]]></item>
         <item name="wcf.user.myProfile"><![CDATA[My Profile]]></item>
         <item name="wcf.user.newActivationCode"><![CDATA[Request New Activation Code]]></item>
         <item name="wcf.user.newActivationCode.success"><![CDATA[The activation code has been sent to “{$email}”.]]></item>
