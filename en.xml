@@ -3359,7 +3359,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.index.credits"><![CDATA[درباره مجموعه WoltLab و تجارت؛]]></item>
         <item name="wcf.acp.index.credits.contributor"><![CDATA[مشارکت ها]]></item>
         <item name="wcf.acp.index.credits.contributor.more"><![CDATA[بیشتر]]></item>
-        <item name="wcf.acp.index.credits.designer"><![CDATA[طراح]]></item>
+        <item name="wcf.acp.index.credits.designer"><![CDATA[Designer]]></item>
         <item name="wcf.acp.index.credits.developedBy"><![CDATA[Software developed by]]></item>
         <item name="wcf.acp.index.credits.developer"><![CDATA[Developer]]></item>
         <item name="wcf.acp.index.credits.productManager"><![CDATA[Product Manager]]></item>
