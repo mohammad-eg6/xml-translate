@@ -4978,8 +4978,8 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.pip.bbcode.iconType"><![CDATA[نوع نمایه دکمه]]></item>
         <item name="wcf.acp.pip.bbcode.iconType.filePath"><![CDATA[تصویر]]></item>
         <item name="wcf.acp.pip.bbcode.iconType.fontAwesome"><![CDATA[FontAwesome نمایه]]></item>
-        <item name="wcf.acp.pip.bbcode.info"><![CDATA[این <kbd>bbcode</kbd> افزونه نصب بسته، BBCode های جدیدی را نصب می کند. اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/bbcode/" class="externalURL">مستندات توسعه دهنده</a>.]]></item>
-        <item name="wcf.acp.pip.bbcode.isBlockElement"><![CDATA[BBCode نشان دهنده عنصر بلوک است]]></item>
+        <item name="wcf.acp.pip.bbcode.info"><![CDATA[این <kbd>کد Bulletin Board</kbd> افزونه نصب بسته، کد Bulletin Board های جدیدی را نصب می کند. اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/bbcode/" class="externalURL">مستندات توسعه دهنده</a>.]]></item>
+        <item name="wcf.acp.pip.bbcode.isBlockElement"><![CDATA[کد Bulletin Board نشان دهنده عنصر بلوک است]]></item>
         <item name="wcf.acp.pip.bbcode.isBlockElement.description"><![CDATA[.عناصر مسدود می توانند شامل خطوط شکسته و پاراگراف باشند و به طور کلی کل عرض موجود را اشغال کنند. این گزینه نباید برای عناصر درون خطی انتخاب شود]]></item>
         <item name="wcf.acp.pip.bbcode.isSourceCode"><![CDATA[محتوا نشان دهنده کد منبع است]]></item>
         <item name="wcf.acp.pip.bbcode.isSourceCode.description"><![CDATA[محتوای کد Bulletin Board تجزیه نخواهد شد.]]></item>
