@@ -1500,16 +1500,16 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
     </category>
     <category name="wbb.condition">
         <item name="wbb.condition.page.board"><![CDATA[انجمن های درخواستی]]></item>
-        <item name="wbb.condition.page.board.description"><![CDATA[اخطار فقط در صورتی نمایش داده می شود که کاربر فعال در یکی از انجمن های انتخاب شده باشد. چند مورد را می توان با نگه داشتن دکمه انتخاب کرد “Ctrl/Shift” کلید (Windows) یا “Command” (Mac OS) را کلید زده و روی موارد مورد نظر کلیک کنید.]]></item>
+        <item name="wbb.condition.page.board.description"><![CDATA[اخطار فقط در صورتی نمایش داده می شود که کاربر فعال در یکی از انجمن های انتخاب شده باشد. چند مورد را می توان با نگه داشتن دکمه انتخاب کرد “کنترل/شیفت” کلید (ویندوز) یا “فرمان” (سیستم عامل مک) را کلید زده و روی موارد مورد نظر کلیک کنید.]]></item>
     </category>
     <category name="wbb.index">
         <item name="wbb.index.ignoreBoards"><![CDATA[تابلوها را نادیده بگیرید]]></item>
         <item name="wbb.index.selectForumForNewThread"><![CDATA[انجمن را برای موضوع جدید انتخاب کنید]]></item>
         <item name="wbb.index.stats"><![CDATA[آمار]]></item>
         <item name="wbb.index.stats.detail"><![CDATA[<ul class="inlineList dotSeparated">
-<li>{#$stats[members]} Member{if $stats.members != 1}s{/if}</li>
-<li>{#$stats[threads]} Thread{if $stats[threads] != 1}s{/if}</li>
-<li>{#$stats[posts]} Post{if $stats[posts] != 1}s{/if} ({#$stats[postsPerDay]} Post{if $stats[postsPerDay] != 1}s{/if} per Day)</li>
+<li>{#$stats[members]} عضو{if $stats.members != 1}ها{/if}</li>
+<li>{#$stats[threads]} موضوع{if $stats[threads] != 1}ها{/if}</li>
+<li>{#$stats[posts]} پست{if $stats[posts] != 1}ها{/if} ({#$stats[postsPerDay]} پست{if $stats[postsPerDay] != 1}ها{/if} per Day)</li>
 </ul>
 {if $stats[newestMember]}<p>Latest Member: {user object=$stats[newestMember]}.</p>{/if}]]></item>
     </category>
