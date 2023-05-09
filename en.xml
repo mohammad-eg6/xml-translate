@@ -4934,7 +4934,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.pip.aclOption.categories.name.error.tooFewSegments"><![CDATA[نام دسته وارد شده فقط شامل {#$segmentCount} بخش{if $segmentCount > 1}s{/if}.]]></item>
         <item name="wcf.acp.pip.aclOption.info"><![CDATA[این <kbd>aclOption</kbd> افزونه نصب بسته اجازه می دهد تا مجوزها را برای اشیاء جداگانه تنظیم کنید.اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/acl-option/" class="externalURL">مستندات توسعه دهنده</a>.]]></item>
         <item name="wcf.acp.pip.aclOption.objectType"><![CDATA[نوع شیء ACL]]></item>
-        <item name="wcf.acp.pip.aclOption.objectType.categories.description"><![CDATA[نوع شیء ACL تعیین می کند که این دسته به کدام نوع از اشیاء تعلق دارد. توجه داشته باشید که فقط انواع شیء ACL خود بسته یا بسته های مورد نیاز آن موجود است.ه]]></item>
+        <item name="wcf.acp.pip.aclOption.objectType.categories.description"><![CDATA[نوع شیء ACL تعیین می کند که این دسته به کدام نوع از اشیاء تعلق دارد. توجه داشته باشید که فقط انواع شیء ACL خود بسته یا بسته های مورد نیاز آن موجود است.]]></item>
         <item name="wcf.acp.pip.aclOption.objectType.options.description"><![CDATA[نوع شیء ACL تعیین می کند که این گزینه به کدام نوع از اشیاء تعلق دارد.توجه داشته باشید که فقط انواع شیء ACL خود بسته یا بسته های مورد نیاز آن موجود است.]]></item>
         <item name="wcf.acp.pip.aclOption.options.categoryName"><![CDATA[دسته بندی]]></item>
         <item name="wcf.acp.pip.aclOption.options.categoryName.description"><![CDATA[گزینه ACL در دسته انتخابی فهرست شده است.]]></item>
@@ -4959,17 +4959,17 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.pip.acpTemplateDelete.template"><![CDATA[قالب]]></item>
         <item name="wcf.acp.pip.acpTemplateDelete.template.error.tplSuffix"><![CDATA[فقط نام قالب را بدون پسوند فایل وارد کنید <kbd>.tpl</kbd>.]]></item>
         <item name="wcf.acp.pip.bbcode.attributes"><![CDATA[ویژگی ها]]></item>
-        <item name="wcf.acp.pip.bbcode.bbcodeTag"><![CDATA[شناسه BBCode]]></item>
-        <item name="wcf.acp.pip.bbcode.bbcodeTag.description"><![CDATA[شناسه متنی BBCode برای شناسایی کدهای BBC استفاده می شود، به عنوان مثال هنگام به روز رسانی کدهای BBC. شناسه ممکن است فقط شامل حروف کوچک و اعداد باشد.]]></item>
+        <item name="wcf.acp.pip.bbcode.bbcodeTag"><![CDATA[شناسه Bulletin Board]]></item>
+        <item name="wcf.acp.pip.bbcode.bbcodeTag.description"><![CDATA[شناسه متنی کدBulletin Board برای شناسایی کدهای Bulletin Board استفاده می شود، به عنوان مثال هنگام به روز رسانی کدهای Bulletin Board. شناسه ممکن است فقط شامل حروف کوچک و اعداد باشد.]]></item>
         <item name="wcf.acp.pip.bbcode.bbcodeTag.error.allNone"><![CDATA[شناسه ممکن است هیچکدام نباشد <kbd>همه</kbd> نه <kbd>هیچ یک</kbd>.]]></item>
         <item name="wcf.acp.pip.bbcode.bbcodeTag.error.format"><![CDATA[.شناسه ممکن است فقط شامل حروف کوچک و اعداد باشد]]></item>
-        <item name="wcf.acp.pip.bbcode.bbcodeTag.error.notUnique"><![CDATA[شناسه وارد شده قبلاً توسط BBCode دیگری استفاده می شد.]]></item>
+        <item name="wcf.acp.pip.bbcode.bbcodeTag.error.notUnique"><![CDATA[شناسه وارد شده قبلاً توسط کدBulletin Board دیگری استفاده می شد.]]></item>
         <item name="wcf.acp.pip.bbcode.buttonLabel"><![CDATA[برچسب دکمه]]></item>
         <item name="wcf.acp.pip.bbcode.buttonLabel.description"><![CDATA[زمانی که موس را روی دکمه در نوار ابزار ویرایشگر WYSIWYG نگه دارید، برچسب نشان داده می شود]]></item>
-        <item name="wcf.acp.pip.bbcode.htmlClose"><![CDATA[بستن تگ HTML]]></item>
-        <item name="wcf.acp.pip.bbcode.htmlClose.description"><![CDATA[برچسب بستن عنصر HTML که محتوای BBCode را می‌پیچد (بدون براکت‌های زاویه‌ای پیشرو یا انتهایی).]]></item>
-        <item name="wcf.acp.pip.bbcode.htmlOpen"><![CDATA[باز کردن تگ HTML]]></item>
-        <item name="wcf.acp.pip.bbcode.htmlOpen.description"><![CDATA[برچسب باز کردن عنصر HTML که محتوای BBCode را می‌پیچد (بدون براکت‌های زاویه اصلی یا انتهایی).]]></item>
+        <item name="wcf.acp.pip.bbcode.htmlClose"><![CDATA[بستن برچسب HTML]]></item>
+        <item name="wcf.acp.pip.bbcode.htmlClose.description"><![CDATA[برچسب بستن عنصر HTML که محتوای کد Bulletin Board را می‌پیچد (بدون براکت‌های زاویه‌ای پیشرو یا انتهایی).]]></item>
+        <item name="wcf.acp.pip.bbcode.htmlOpen"><![CDATA[باز کردن برچسب HTML]]></item>
+        <item name="wcf.acp.pip.bbcode.htmlOpen.description"><![CDATA[برچسب باز کردن عنصر HTML که محتوای  کد Bulletin Board را می‌پیچد (بدون براکت‌های زاویه اصلی یا انتهایی).]]></item>
         <item name="wcf.acp.pip.bbcode.htmlOpen.error.leadingBracket"><![CDATA[.برچسب ممکن است با یک براکت زاویه شروع نشود]]></item>
         <item name="wcf.acp.pip.bbcode.htmlOpen.error.trailingBracket"><![CDATA[.برچسب ممکن است با یک براکت زاویه ختم نشود]]></item>
         <item name="wcf.acp.pip.bbcode.iconPath"><![CDATA[مسیر فایل نمایه]]></item>
@@ -4982,9 +4982,9 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.pip.bbcode.isBlockElement"><![CDATA[BBCode نشان دهنده عنصر بلوک است]]></item>
         <item name="wcf.acp.pip.bbcode.isBlockElement.description"><![CDATA[.عناصر مسدود می توانند شامل خطوط شکسته و پاراگراف باشند و به طور کلی کل عرض موجود را اشغال کنند. این گزینه نباید برای عناصر درون خطی انتخاب شود]]></item>
         <item name="wcf.acp.pip.bbcode.isSourceCode"><![CDATA[محتوا نشان دهنده کد منبع است]]></item>
-        <item name="wcf.acp.pip.bbcode.isSourceCode.description"><![CDATA[محتوای BBCode تجزیه نخواهد شد.]]></item>
+        <item name="wcf.acp.pip.bbcode.isSourceCode.description"><![CDATA[محتوای کد Bulletin Board تجزیه نخواهد شد.]]></item>
         <item name="wcf.acp.pip.bbcode.showButton"><![CDATA[دکمه نمایش در ویرایشگر WYSIWYG]]></item>
-        <item name="wcf.acp.pip.bbcode.showButton.description"><![CDATA[BBCode با کلیک بر روی دکمه مرتبط در نوار ابزار ویرایشگر WYSIWYG به راحتی در دسترس خواهد بود.]]></item>
+        <item name="wcf.acp.pip.bbcode.showButton.description"><![CDATA[کد Bulletin Board با کلیک بر روی دکمه مرتبط در نوار ابزار ویرایشگر WYSIWYG به راحتی در دسترس خواهد بود.]]></item>
         <item name="wcf.acp.pip.bbcode.wysiwygIcon"><![CDATA[نمایه]]></item>
         <item name="wcf.acp.pip.box.boxType"><![CDATA[نوع جعبه]]></item>
         <item name="wcf.acp.pip.box.boxType.description"><![CDATA[محتوای “text” کادرها را می توان توسط مدیران با استفاده از ویرایشگر داخلی WYSIWYG ویرایش کرد. “html” جعبه ها علاوه بر این اجازه می دهند کد HTML و “tpl” کادرها نمی توانند توسط مدیران ویرایش شوند زیرا محتوای آنها توسط کنترل کننده جعبه ها ارائه می شود.]]></item>
@@ -4996,8 +4996,8 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.pip.box.identifier"><![CDATA[شناسه جعبه]]></item>
         <item name="wcf.acp.pip.box.identifier.description"><![CDATA[شناسه جعبه برای به روز رسانی جعبه ها استفاده می شود. شناسه شامل حداقل چهار بخش است که با نقطه از هم جدا شده اند. هر بخش نباید خالی باشد و ممکن است فقط شامل کاراکترهای زیر باشد: <kbd>[A-z0-9-_]</kbd>. به طور کلی، اولین قسمت از شناسه فهرست، شناسه بسته است. مثال: <kbd>com.foo.bar.package.Box</kbd>]]></item>
         <item name="wcf.acp.pip.box.identifier.error.notUnique"><![CDATA[.شناسه وارد شده قبلاً توسط کادر دیگری استفاده می شود]]></item>
-        <item name="wcf.acp.pip.box.identifier.error.tooFewSegments"><![CDATA[شناسه فقط شامل {#$segmentCount} بخش{if $segmentCount > 1}s{/if}.]]></item>
-        <item name="wcf.acp.pip.box.info"><![CDATA[The <kbd>box</kbd> افزونه نصب بسته، بسته های از پیش پیکربندی شده جدیدی را نصب می کند. اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/box/" class="externalURL">مستندات توسعه دهنده</a>.]]></item>
+        <item name="wcf.acp.pip.box.identifier.error.tooFewSegments"><![CDATA[شناسه فقط شامل {#$segmentCount} بخش{if $segmentCount > 1}ها{/if}.]]></item>
+        <item name="wcf.acp.pip.box.info"><![CDATA[The <kbd>جعبه</kbd> افزونه نصب بسته، بسته های از پیش پیکربندی شده جدیدی را نصب می کند. اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/box/" class="externalURL">مستندات توسعه دهنده</a>.]]></item>
         <item name="wcf.acp.pip.box.name"><![CDATA[اسم]]></item>
         <item name="wcf.acp.pip.box.name.description"><![CDATA[نام جعبه در لیست جعبه در ACP نمایش داده می شود.]]></item>
         <item name="wcf.acp.pip.box.objectType"><![CDATA[کنترل کننده]]></item>
