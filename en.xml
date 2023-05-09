@@ -3503,14 +3503,14 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.menu.item.add"><![CDATA[اضافه کردن آیتم فهرست]]></item>
         <item name="wcf.acp.menu.item.button.choose"><![CDATA[آیتم فهرست را انتخاب کنید]]></item>
         <item name="wcf.acp.menu.item.edit"><![CDATA[ویرایش آیتم فهرست]]></item>
-        <item name="wcf.acp.menu.item.externalURL"><![CDATA[وبلاگ خارجی]]></item>
+        <item name="wcf.acp.menu.item.externalURL"><![CDATA[آدرس اینترنتی خارجی]]></item>
         <item name="wcf.acp.menu.item.isDisabled"><![CDATA[غیرفعال کردن آیتم فهرست]]></item>
         <item name="wcf.acp.menu.item.link"><![CDATA[لینک]]></item>
         <item name="wcf.acp.menu.item.link.external"><![CDATA[لینک خارجی]]></item>
         <item name="wcf.acp.menu.item.link.internal"><![CDATA[لینک داخلی]]></item>
         <item name="wcf.acp.menu.item.list"><![CDATA[آیتم های فهرست]]></item>
         <item name="wcf.acp.menu.item.pageObjectID.error.invalid"><![CDATA[.نام کاربری نامعتبر است]]></item>
-        <item name="wcf.acp.menu.item.parentItem"><![CDATA[آیتم فهرست والدین]]></item>
+        <item name="wcf.acp.menu.item.parentItem"><![CDATA[آیتم فهرست والد]]></item>
         <item name="wcf.acp.menu.link.activityPoint"><![CDATA[امتیاز فعالیت]]></item>
         <item name="wcf.acp.menu.link.ad"><![CDATA[تبلیغات]]></item>
         <item name="wcf.acp.menu.link.ad.add"><![CDATA[اضافه کردن تبلیغ]]></item>
@@ -3621,7 +3621,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.menu.link.stat.list"><![CDATA[آمار]]></item>
         <item name="wcf.acp.menu.link.style"><![CDATA[سبک ها]]></item>
         <item name="wcf.acp.menu.link.style.add"><![CDATA[اضافه کردن سبک]]></item>
-        <item name="wcf.acp.menu.link.style.globalValues"><![CDATA[Global CSS and SCSS]]></item>
+        <item name="wcf.acp.menu.link.style.globalValues"><![CDATA[جهانی CSS و SCSS]]></item>
         <item name="wcf.acp.menu.link.style.import"><![CDATA[سبک واردات]]></item>
         <item name="wcf.acp.menu.link.style.list"><![CDATA[سبک ها]]></item>
         <item name="wcf.acp.menu.link.systemCheck"><![CDATA[بررسی سیستم]]></item>
@@ -3761,7 +3761,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.notice.list"><![CDATA[اطلاعیه ها]]></item>
         <item name="wcf.acp.notice.notice"><![CDATA[اخطار]]></item>
         <item name="wcf.acp.notice.notice.description"><![CDATA[<kbd>{literal}{$username}{/literal}</kbd> با نام جایگزین خواهد شد و <kbd>{literal}{$email}{/literal}</kbd> از طریق آدرس پست الکترونیکی کاربر فعال.]]></item>
-        <item name="wcf.acp.notice.noticeUseHtml"><![CDATA[Enable HTML code in notice]]></item>
+        <item name="wcf.acp.notice.noticeUseHtml"><![CDATA[کد HTML را در اطلاعیه فعال کنید]]></item>
         <item name="wcf.acp.notice.resetIsDismissed"><![CDATA[اعلامیه های رد شده دوباره نمایش داده می شود.]]></item>
         <item name="wcf.acp.notice.resetIsDismissed.description"><![CDATA[.اخطار دوباره برای کاربرانی که نسخه قبلی را رد کرده اند نمایش داده می شود. مهمانانی که این اعلان را رد کرده اند، فقط در جلسه جدیدی آن را مشاهده خواهند کرد]]></item>
         <item name="wcf.acp.notice.showOrder.description"><![CDATA[.ترتیب نمایش اعلامیه ها را انتخاب کنید]]></item>
@@ -3795,19 +3795,19 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.option.avatar_default_type.silhouette"><![CDATA[Silhouette]]></item>
         <item name="wcf.acp.option.blacklist_sfs_action"><![CDATA[اقدام در مورد مسابقه]]></item>
         <item name="wcf.acp.option.blacklist_sfs_action.block"><![CDATA[مسدود کردن]]></item>
-        <item name="wcf.acp.option.blacklist_sfs_action.description"><![CDATA[There is always the risk of a false-positive match, therefore it is highly recommended to set it to <strong>غیرفعال کنید و نیاز به تایید دستی دارید</strong>.]]></item>
+        <item name="wcf.acp.option.blacklist_sfs_action.description"><![CDATA[همیشه خطر تطابق مثبت کاذب وجود دارد، بنابراین توصیه می شود آن را روی آن تنظیم کنید <strong>غیرفعال کنید و نیاز به تایید دستی دارید</strong>.]]></item>
         <item name="wcf.acp.option.blacklist_sfs_action.disable"><![CDATA[غیرفعال کنید و نیاز به تایید دستی دارید]]></item>
         <item name="wcf.acp.option.blacklist_sfs_email_address"><![CDATA[آدرس ایمیل]]></item>
         <item name="wcf.acp.option.blacklist_sfs_email_address.description"><![CDATA[آدرس های ایمیل منحصر به فرد هستند و بهترین نتایج را به همراه دارند. تنظیم توصیه شده: <strong>گزارش های متعدد</strong>.]]></item>
         <item name="wcf.acp.option.blacklist_sfs_enable"><![CDATA[تأیید را با استفاده از توقف هرزنامه انجمن فعال کنید]]></item>
-        <item name="wcf.acp.option.blacklist_sfs_enable.90percentile"><![CDATA[10درصد برتر]]></item>
+        <item name="wcf.acp.option.blacklist_sfs_enable.90percentile"><![CDATA[10% برتر]]></item>
         <item name="wcf.acp.option.blacklist_sfs_enable.description"><![CDATA[پایگاه داده محلی حاوی اطلاعاتی درباره تعداد دفعاتی است که یک ورودی به عنوان هرزنامه گزارش شده است..<br>
 <strong>اخطار:هیچ داده ای در هیچ نقطه ای از فرآیند به سرویس شخص سوم منتقل نمی شود</strong><br>
 <br>
 پایگاه داده با دقت نگهداری می شود، اما همیشه حاشیه ای از خطا وجود خواهد داشت که ناشی از ورودی های نادرست یا قدیمی است. می‌توانید از میان مجموعه‌ای از گزینه‌ها انتخاب کنید که نحوه ارزیابی مسابقات را کنترل می‌کند تا نتیجه نادرست را کاهش دهد. تنظیمات توصیه شده بر اساس سالها تجربه است و بنابراین تغییرات باید با احتیاط انجام شود.
 <ul class="nativeList">
 	<li><strong>بررسی نکنید</strong> – این مقدار کاملاً نادیده گرفته می شود.</li>
-	<li><strong>10درصد برتر</strong> – فقط 10 درصد بالای مقادیر گزارش شده در نظر گرفته می شوند.</li>
+	<li><strong>10% برتر</strong> – فقط 10 % بالای مقادیر گزارش شده در نظر گرفته می شوند.</li>
 	<li><strong>گزارش های متعدد</strong> – هر مسابقه ای که بیش از یک بار گزارش شده باشد.</li>
 	<li><strong>هر مسابقه ای کافی است</strong> – تعداد گزارش ها به طور کامل نادیده گرفته می شود. توصیه نمیشود.</li>
 </ul>]]></item>
@@ -3815,7 +3815,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.option.blacklist_sfs_enable.simpleMatch"><![CDATA[هر مسابقه ای کافی است]]></item>
         <item name="wcf.acp.option.blacklist_sfs_enable.skip"><![CDATA[بررسی نکنید]]></item>
         <item name="wcf.acp.option.blacklist_sfs_ip_address"><![CDATA[آدرس IP]]></item>
-        <item name="wcf.acp.option.blacklist_sfs_ip_address.description"><![CDATA[آدرس های IP به احتمال زیاد نادقیق هستند، زیرا بسیاری از آنها به صورت پویا تخصیص داده می شوند، مانند. g. برای خانوارهای خصوصی یا اتصالات تلفن همراه. تنظیم توصیه شده: <strong>10درصد برتر</strong>.]]></item>
+        <item name="wcf.acp.option.blacklist_sfs_ip_address.description"><![CDATA[آدرس های IP به احتمال زیاد نادقیق هستند، زیرا بسیاری از آنها به صورت پویا تخصیص داده می شوند، مانند. به عنوان مثال برای خانوارهای خصوصی یا اتصالات تلفن همراه. تنظیم توصیه شده: <strong>10% برتر</strong>.]]></item>
         <item name="wcf.acp.option.blacklist_sfs_username"><![CDATA[نام کاربری]]></item>
         <item name="wcf.acp.option.blacklist_sfs_username.description"><![CDATA[نام های کاربری هستند <strong>حداقل معیارهای قابل اعتماد</strong>. تنظیم توصیه شده: <strong>بررسی نکنید</strong>.]]></item>
         <item name="wcf.acp.option.blog_entries_per_page"><![CDATA[مقالات وبلاگ در هر صفحه]]></item>
@@ -4001,13 +4001,13 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.option.conversation_list_default_sort_order.description"><![CDATA[.ترتیب مرتب سازی پیش فرض مکالمات را انتخاب کنید]]></item>
         <item name="wcf.acp.option.conversation_messages_per_page"><![CDATA[پیام در هر صفحه]]></item>
         <item name="wcf.acp.option.conversations_per_page"><![CDATA[مکالمات در هر صفحه]]></item>
-        <item name="wcf.acp.option.cookie_domain"><![CDATA[دامنه کوکی]]></item>
+        <item name="wcf.acp.option.cookie_domain"><![CDATA[دامنه Cookie]]></item>
         <item name="wcf.acp.option.cookie_domain.description"><![CDATA[.به جز شرایط خاص باید خالی بماند]]></item>
-        <item name="wcf.acp.option.cookie_path"><![CDATA[مسیر کوکی]]></item>
+        <item name="wcf.acp.option.cookie_path"><![CDATA[مسیر Cookie]]></item>
         <item name="wcf.acp.option.cookie_path.description"><![CDATA[مقدار باید مطلق به ریشه سند باشد، به عنوان مثال. “/forum” برای “https://www.woltlab.com/forum”.]]></item>
-        <item name="wcf.acp.option.cookie_prefix"><![CDATA[پیشوند کوکی]]></item>
-        <item name="wcf.acp.option.desktop_notification_package_id"><![CDATA[دامنه اصلی برای اعلان‌های دسک‌تاپ]]></item>
-        <item name="wcf.acp.option.desktop_notification_package_id.description"><![CDATA[.اعلان‌های دسک‌تاپ فقط برای برنامه انتخابی فعال خواهد شد، از جمله سایر برنامه‌هایی که دقیقاً از همان دامنه استفاده می‌کنند]]></item>
+        <item name="wcf.acp.option.cookie_prefix"><![CDATA[پیشوند Cookie]]></item>
+        <item name="wcf.acp.option.desktop_notification_package_id"><![CDATA[دامنه اصلی برای اعلان‌های Desktop]]></item>
+        <item name="wcf.acp.option.desktop_notification_package_id.description"><![CDATA[.اعلان‌های Desktop فقط برای برنامه انتخابی فعال خواهد شد، از جمله سایر برنامه‌هایی که دقیقاً از همان دامنه استفاده می‌کنند]]></item>
         <item name="wcf.acp.option.edit_history_expiration"><![CDATA[دوره زمانی ذخیره سازی]]></item>
         <item name="wcf.acp.option.edit_history_expiration.description"><![CDATA[.محتوای تاریخچه ویرایش پس از روزهای بعد حذف خواهد شد. برای غیرفعال کردن از 0 استفاده کنید]]></item>
         <item name="wcf.acp.option.enable_ad_rotation"><![CDATA[چرخش تبلیغات را فعال کنید]]></item>
@@ -4019,7 +4019,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.option.enable_developer_tools"><![CDATA[ابزارهای توسعه دهنده را فعال کنید]]></item>
         <item name="wcf.acp.option.enable_developer_tools.description"><![CDATA[.مجموعه ای از ابزارهای تخصصی را فعال می کند که برای توسعه افزونه استفاده می شود. همیشه باید در محیط های تولید غیرفعال شود]]></item>
         <item name="wcf.acp.option.enable_pluginstore_widget"><![CDATA[نمایش محصولات پیشنهادی]]></item>
-        <item name="wcf.acp.option.enable_pluginstore_widget.description"><![CDATA[محصولات توصیه شده از فروشگاه افزونه WoltLab® را در صفحه فهرست پنل مدیریت نمایش می دهد.]]></item>
+        <item name="wcf.acp.option.enable_pluginstore_widget.description"><![CDATA[محصولات توصیه شده از فروشگاه افزونه WoltLab® را در صفحه فهرست درگاه مدیریت نمایش می دهد.]]></item>
         <item name="wcf.acp.option.enable_polling"><![CDATA[اعلان های پس زمینه را فعال کنید]]></item>
         <item name="wcf.acp.option.enable_polling.description"><![CDATA[.به صورت دوره ای اعلان های جدید را در پس زمینه بازیابی می کند، درخواست ها هر 5 دقیقه ارسال می شوند. در صورت عدم فعالیت، فاصله زمانی تا 15 دقیقه افزایش می یابد]]></item>
         <item name="wcf.acp.option.enable_production_debug_mode"><![CDATA[تحلیل مسئله در محیط های تولید]]></item>
@@ -4027,7 +4027,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.option.enable_share_buttons"><![CDATA[نمایش دکمه اشتراک محتوا]]></item>
         <item name="wcf.acp.option.enable_user_authentication_failure"><![CDATA[ورود ناموفق تلاش برای ورود به سیستم]]></item>
         <item name="wcf.acp.option.enable_woltlab_news"><![CDATA[نمایش اخبار WoltLab]]></item>
-        <item name="wcf.acp.option.enable_woltlab_news.description"><![CDATA[اخبار WoltLab فعلی را در صفحه فهرست پنل مدیریت نمایش می دهد.]]></item>
+        <item name="wcf.acp.option.enable_woltlab_news.description"><![CDATA[اخبار WoltLab فعلی را در صفحه فهرست درگاه مدیریت نمایش می دهد.]]></item>
         <item name="wcf.acp.option.error.controllerReplacementCollision"><![CDATA[نام مستعار “{$urlControllerReplacementError}” برابر با یک کنترل کننده موجود است و نمی توان از آن استفاده کرد.]]></item>
         <item name="wcf.acp.option.error.controllerReplacementDuplicateAlias"><![CDATA[نام مستعار “{$urlControllerReplacementError}” در حال حاضر در حال استفاده است.]]></item>
         <item name="wcf.acp.option.error.controllerReplacementDuplicateController"><![CDATA[کنترل کننده “{$urlControllerReplacementError}” قبلا نام مستعار شده است]]></item>
@@ -4043,11 +4043,11 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.option.exception_privacy.private"><![CDATA[خصوصی]]></item>
         <item name="wcf.acp.option.exception_privacy.public"><![CDATA[عمومی]]></item>
         <item name="wcf.acp.option.exception_privacy.reduced"><![CDATA[کاهش]]></item>
-        <item name="wcf.acp.option.external_link_target_blank"><![CDATA[پیوندهای خارجی را در یک پنجره جدید باز کنید]]></item>
-        <item name="wcf.acp.option.external_link_target_blank.description"><![CDATA[ویژگی را اضافه می کند “target="_blank"” به پیوندهای خارجی، باعث می شود مرورگر کاربر پیوند را در یک پنجره جدید باز کند.]]></item>
-        <item name="wcf.acp.option.facebook_private_key"><![CDATA[راز برنامه فیس بوک]]></item>
-        <item name="wcf.acp.option.facebook_public_key"><![CDATA[فیس بوک APP-ID]]></item>
-        <item name="wcf.acp.option.facebook_public_key.description"><![CDATA[You can obtain your APP-ID and Application Secret at <a href="https://developers.facebook.com/apps" class="externalURL">فیس بوک</a>. The OAuth redirect URI is: {link controller="FacebookAuth" forceFrontend=true}{/link}]]></item>
+        <item name="wcf.acp.option.external_link_target_blank"><![CDATA[لینک های خارجی را در یک پنجره جدید باز کنید]]></item>
+        <item name="wcf.acp.option.external_link_target_blank.description"><![CDATA[ویژگی را اضافه می کند “target="_blank"” به لینک های خارجی، باعث می شود مرورگر کاربر پیوند را در یک پنجره جدید باز کند.]]></item>
+        <item name="wcf.acp.option.facebook_private_key"><![CDATA[راز برنامه فیسبوک]]></item>
+        <item name="wcf.acp.option.facebook_public_key"><![CDATA[فیسبوک APP-ID]]></item>
+        <item name="wcf.acp.option.facebook_public_key.description"><![CDATA[می توانید APP-ID و راز برنامه خود را در این آدرس دریافت کنید در <a href="https://developers.facebook.com/apps" class="externalURL">فیسبوک</a>. The OAuth redirect URI is: {link controller="FacebookAuth" forceFrontend=true}{/link}]]></item>
         <item name="wcf.acp.option.fb_share_app_id"><![CDATA[شناسه اپلیکیشن فیسبوک]]></item>
         <item name="wcf.acp.option.fb_share_app_id.description"><![CDATA[می توانید شناسه برنامه را از سایت خود دریافت کنید <a href="https://developers.facebook.com/apps/" class="externalURL">داشبورد برنامه</a>, و با تگ های نمودار باز برای اشتراک گذاری استفاده می شود.]]></item>
         <item name="wcf.acp.option.filebase_available_currencies"><![CDATA[ارزهای پشتیبانی شده]]></item>
@@ -4066,11 +4066,11 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.option.filebase_enable_selling"><![CDATA[فعال کردن فروش فایل ها]]></item>
         <item name="wcf.acp.option.filebase_enable_selling.description"><![CDATA[.امکان فروش فایل ها را فعال می کند. می‌توانید دسترسی را بر اساس مجوزهای گروه کاربر محدود کنید]]></item>
         <item name="wcf.acp.option.filebase_enable_time_limited_file_stats"><![CDATA[فعال کردن آمار مبتنی بر زمان]]></item>
-        <item name="wcf.acp.option.filebase_enable_time_limited_file_stats.description"><![CDATA[.در لیست فایل ها و جعبه های داشبورد استفاده می شود. داده‌های نظرات، واکنش‌ها، دانلودها، فروش و درآمد را به یک دوره زمانی خاص محدود می‌کند. داده های کش شده به صورت ناهمزمان با استفاده از یک کرونجاب به روز می شوند]]></item>
+        <item name="wcf.acp.option.filebase_enable_time_limited_file_stats.description"><![CDATA[.در لیست فایل ها و جعبه های داشبورد استفاده می شود. داده‌های نظرات، واکنش‌ها، دانلودها، فروش و درآمد را به یک دوره زمانی خاص محدود می‌کند. داده های ذخیره شده به صورت ناهمزمان با استفاده از یک Cronjob به روز می شوند]]></item>
         <item name="wcf.acp.option.filebase_enable_version_number"><![CDATA[شماره نسخه فایل را فعال کنید]]></item>
         <item name="wcf.acp.option.filebase_enable_version_number.description"><![CDATA[.کاربران باید برای هر فایل آپلود شده شماره نسخه را مشخص کنند]]></item>
         <item name="wcf.acp.option.filebase_file_empty_recycle_bin_cycle"><![CDATA[سطل آشغال را هرس کنید]]></item>
-        <item name="wcf.acp.option.filebase_file_empty_recycle_bin_cycle.description"><![CDATA[.فایل‌ها و نسخه‌های فایل تا روزهای بعد از سطل زباله حذف می‌شوند. برای غیرفعال کردن از 0 استفاده کنید]]></item>
+        <item name="wcf.acp.option.filebase_file_empty_recycle_bin_cycle.description"><![CDATA[.فایل‌ها و نسخه‌های فایل تا روزهای بعد از سطل آشغال حذف می‌شوند. برای غیرفعال کردن از 0 استفاده کنید]]></item>
         <item name="wcf.acp.option.filebase_file_types"><![CDATA[انواع فایل های مجاز]]></item>
         <item name="wcf.acp.option.filebase_file_types.description"><![CDATA[.شما می توانید انتخاب کنید که کدام نوع فایل مجاز است، شما باید حداقل یک نوع را انتخاب کنید]]></item>
         <item name="wcf.acp.option.filebase_file_types.externalURL"><![CDATA[لینک خارجی]]></item>
@@ -4119,8 +4119,8 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.option.gallery_image_watermark_font_size.description"><![CDATA[.اندازه فونت بر حسب امتیاز]]></item>
         <item name="wcf.acp.option.gallery_image_watermark_image"><![CDATA[تصویر]]></item>
         <item name="wcf.acp.option.gallery_image_watermark_image.removeFile"><![CDATA[تصاویر موجود را حذف کنید]]></item>
-        <item name="wcf.acp.option.gallery_image_watermark_original"><![CDATA[اعمال واترمارک روی تصویر اصلی]]></item>
-        <item name="wcf.acp.option.gallery_image_watermark_original.description"><![CDATA[.توجه! اعمال واترمارک روی تصویر اصلی دائمی است و بعداً قابل برگشت نیست]]></item>
+        <item name="wcf.acp.option.gallery_image_watermark_original"><![CDATA[اعمال Watermark روی تصویر اصلی]]></item>
+        <item name="wcf.acp.option.gallery_image_watermark_original.description"><![CDATA[.توجه! اعمال Watermark روی تصویر اصلی دائمی است و بعداً قابل برگشت نیست]]></item>
         <item name="wcf.acp.option.gallery_image_watermark_position"><![CDATA[موقعیت]]></item>
         <item name="wcf.acp.option.gallery_image_watermark_position.bottomCenter"><![CDATA[مرکز پایین]]></item>
         <item name="wcf.acp.option.gallery_image_watermark_position.bottomLeft"><![CDATA[پایین سمت چپ]]></item>
@@ -4162,10 +4162,10 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.option.gallery_vimeo_client_secrets"><![CDATA[Vimeo اسرار مشتری]]></item>
         <item name="wcf.acp.option.gallery_vimeo_client_secrets.description"><![CDATA[!مطمئن شوید که قبل و بعد از اسرار مشتری واقعی هیچ فضای خالی وجود ندارد]]></item>
         <item name="wcf.acp.option.gallery_youtube_api_key"><![CDATA[کلید API یوتیوب]]></item>
-        <item name="wcf.acp.option.gallery_youtube_api_key.description"><![CDATA[گوگل توضیحات مفصلی در مورد نحوه دریافت کلید API ارائه می دهد <a href="https://developers.google.com/youtube/registering_an_application" class="externalURL">اینجا</a>. اگر کلید استفاده شده را در وب سایت گوگل API محدود می کنید، انتخاب کنید “IP addresses (web servers, cron jobs, etc.)” و آدرس(های) آی پی وب سرور وب سایت خود را وارد کنید.<br>
-مطمئن شوید که قبل و بعد از کلید ای پی آی واقعی هیچ فضای خالی وجود ندارد!]]></item>
-        <item name="wcf.acp.option.github_private_key"><![CDATA[راز مشتری گیت هاب]]></item>
-        <item name="wcf.acp.option.github_public_key"><![CDATA[شناسه مشتری گیت هاب]]></item>
+        <item name="wcf.acp.option.gallery_youtube_api_key.description"><![CDATA[گوگل توضیحات مفصلی در مورد نحوه دریافت کلید API ارائه می دهد <a href="https://developers.google.com/youtube/registering_an_application" class="externalURL">اینجا</a>. اگر کلید استفاده شده را در وب سایت گوگل API محدود می کنید، انتخاب کنید “IP addresses (web servers, cron jobs, etc.)” و آدرس(های) IP وب سرور وب سایت خود را وارد کنید.<br>
+مطمئن شوید که قبل و بعد از کلید API واقعی هیچ فضای خالی وجود ندارد!]]></item>
+        <item name="wcf.acp.option.github_private_key"><![CDATA[راز مشتری GitHub]]></item>
+        <item name="wcf.acp.option.github_public_key"><![CDATA[شناسه مشتری GitHub]]></item>
         <item name="wcf.acp.option.github_public_key.description"><![CDATA[شما می توانید شناسه مشتری و راز مشتری خود را در این آدرس دریافت کنید <a href="https://github.com/settings/developers" class="externalURL">GitHub</a>. آدرس اینترنتی برگشت به تماس است: {link controller="GithubAuth" forceFrontend=true}{/link}]]></item>
         <item name="wcf.acp.option.google_maps_access_user_location"><![CDATA[از موقعیت مکانی کاربر فعلی استفاده کنید]]></item>
         <item name="wcf.acp.option.google_maps_access_user_location.description"><![CDATA[.هنگام وارد کردن یک مکان، مکان فعلی کاربر به عنوان نقطه شروع روی نقشه استفاده می شود]]></item>
@@ -4195,7 +4195,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.option.gravatar_default_type.identicon"><![CDATA[یکسان]]></item>
         <item name="wcf.acp.option.gravatar_default_type.monsterid"><![CDATA[شناسه هیولا]]></item>
         <item name="wcf.acp.option.gravatar_default_type.retro"><![CDATA[Retro]]></item>
-        <item name="wcf.acp.option.gravatar_default_type.wavatar"><![CDATA[اواتار]]></item>
+        <item name="wcf.acp.option.gravatar_default_type.wavatar"><![CDATA[و اواتار]]></item>
         <item name="wcf.acp.option.head_code"><![CDATA[head code]]></item>
         <item name="wcf.acp.option.head_code.description"><![CDATA[کد وارد شده به تگ head سایت شما اضافه می شود. می توانید از آن برای اضافه کردن متا تگ های اضافی استفاده کنید.]]></item>
         <item name="wcf.acp.option.http_send_x_frame_options"><![CDATA[جاسازی در یک قاب مجاز نیست (منسوخ شده)]]></item>
@@ -4778,7 +4778,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.package.validation.errorCode.16"><![CDATA[علاوه بر &lt;void/&gt; instruction additional Package Installation Plugins are used.]]></item>
         <item name="wcf.acp.package.validation.errorCode.17"><![CDATA[این &lt;void/&gt; دستورالعمل ممکن است در دستورالعمل های نصب استفاده نشود.]]></item>
         <item name="wcf.acp.package.validation.errorCode.18"><![CDATA[برنامه “{$application->getPackage()->package}”, که قبلاً نصب شده است، از همان مخفف برنامه استفاده می کند.]]></item>
-        <item name="wcf.acp.package.validation.errorCode.19"><![CDATA[نسخه “{$version}” بسته ناسازگار “{$packageName}” نامعتبر است.]]></item>
+        <item name="wcf.acp.package.validation.errorCode.19"><![CDATA[نسخه “{$version}” بسته ناسازگار “{$packageName}” نامعتبر است.]]></item> 
         <item name="wcf.acp.package.validation.errorCode.2"><![CDATA[بسته “{$archive}” مورد نیاز را از دست داده است “package.xml” فایل.]]></item>
         <item name="wcf.acp.package.validation.errorCode.20"><![CDATA[بسته “{$packageName}” خود را مستثنی می کند.]]></item>
         <item name="wcf.acp.package.validation.errorCode.3"><![CDATA[نام بسته “{$packageName}”انتظارات را برآورده نکرد و رد شد.]]></item>
@@ -4832,7 +4832,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.page.name.error.notUnique"><![CDATA[.نام در حال حاضر در حال استفاده است]]></item>
         <item name="wcf.acp.page.originIsNotSystem"><![CDATA[فقط صفحات سفارشی]]></item>
         <item name="wcf.acp.page.page"><![CDATA[صفحه]]></item>
-        <item name="wcf.acp.page.parentPage"><![CDATA[Parent Page]]></item>
+        <item name="wcf.acp.page.parentPage"><![CDATA[صفحه والد]]></item>
         <item name="wcf.acp.page.parentPage.error.invalid"><![CDATA[.صفحه انتخاب شده نامعتبر است]]></item>
         <item name="wcf.acp.page.parentPage.none"><![CDATA[هیچ یک]]></item>
         <item name="wcf.acp.page.type"><![CDATA[نوع صفحه]]></item>
@@ -4842,14 +4842,14 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.page.type.text"><![CDATA[متن]]></item>
         <item name="wcf.acp.page.type.text.description"><![CDATA[با استفاده از ویرایشگر داخلی WYSIWYG محتوا ایجاد کنید (توصیه می شود).]]></item>
         <item name="wcf.acp.page.type.tpl"><![CDATA[قالب]]></item>
-        <item name="wcf.acp.page.type.tpl.description"><![CDATA[مشابه نوع “HTML”, but offers additional support for template scripting.]]></item>
+        <item name="wcf.acp.page.type.tpl.description"><![CDATA[مشابه نوع “HTML”, اما پشتیبانی اضافی برای اسکریپت نویسی قالب ارائه می دهد.]]></item>
         <item name="wcf.acp.page.url"><![CDATA[آدرس اینترنتی]]></item>
     </category>
     <category name="wcf.acp.paidSubscription">
         <item name="wcf.acp.paidSubscription.add"><![CDATA[اضافه کردن اشتراک]]></item>
         <item name="wcf.acp.paidSubscription.cost"><![CDATA[ارزش]]></item>
         <item name="wcf.acp.paidSubscription.edit"><![CDATA[ویرایش اشتراک]]></item>
-        <item name="wcf.acp.paidSubscription.error.noPaymentMethods"><![CDATA[برای اضافه کردن اشتراک حداقل به یک ارائه دهنده پرداخت فعال نیاز دارد “Supported Payment Methods” option.]]></item>
+        <item name="wcf.acp.paidSubscription.error.noPaymentMethods"><![CDATA[برای اضافه کردن اشتراک حداقل به یک ارائه دهنده پرداخت فعال نیاز دارد “Supported Payment Methods” گزینه.]]></item>
         <item name="wcf.acp.paidSubscription.excludedSubscriptions"><![CDATA[اشتراک های مستثنی شده]]></item>
         <item name="wcf.acp.paidSubscription.excludedSubscriptions.description"><![CDATA[.از خرید سایر اشتراک ها برای خریداران این اشتراک جلوگیری می کند]]></item>
         <item name="wcf.acp.paidSubscription.isDisabled"><![CDATA[اشتراک را غیرفعال کنید]]></item>
@@ -4869,7 +4869,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.paidSubscription.transactionLog"><![CDATA[معامله]]></item>
         <item name="wcf.acp.paidSubscription.transactionLog.list"><![CDATA[معاملات]]></item>
         <item name="wcf.acp.paidSubscription.transactionLog.logMessage"><![CDATA[عمل]]></item>
-        <item name="wcf.acp.paidSubscription.transactionLog.logTime"><![CDATA[Date]]></item>
+        <item name="wcf.acp.paidSubscription.transactionLog.logTime"><![CDATA[تاریخ]]></item>
         <item name="wcf.acp.paidSubscription.transactionLog.paymentMethod"><![CDATA[روش پرداخت]]></item>
         <item name="wcf.acp.paidSubscription.transactionLog.transactionDetails"><![CDATA[جزئیات]]></item>
         <item name="wcf.acp.paidSubscription.transactionLog.transactionID"><![CDATA[شناسه تراکنش]]></item>
@@ -4890,7 +4890,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.pip.abstractMenu.menuItemLink.error.noLink"><![CDATA[.مقدار وارد شده لینک معتبری نیست]]></item>
         <item name="wcf.acp.pip.abstractMenu.menuItemLink.error.noLinkSpecified"><![CDATA[.یا باید یک کنترل کننده آیتم فهرست یا لینک آیتم فهرست را وارد کنید]]></item>
         <item name="wcf.acp.pip.abstractMenu.options.description"><![CDATA[.حداقل یکی از گزینه های وارد شده باید فعال باشد تا آیتم فهرست قابل مشاهده باشد. گزینه های بسته های غیر ضروری به عنوان غیرموجود گزارش می شود]]></item>
-        <item name="wcf.acp.pip.abstractMenu.parentMenuItem"><![CDATA[آیتم فهرست والدین]]></item>
+        <item name="wcf.acp.pip.abstractMenu.parentMenuItem"><![CDATA[آیتم فهرست والد]]></item>
         <item name="wcf.acp.pip.abstractMenu.parentMenuItem.error.childAsParent"><![CDATA[.شما نمی توانید یک آیتم فهرست فرزند از آیتم فهرست را به عنوان والد آن انتخاب کنید]]></item>
         <item name="wcf.acp.pip.abstractMenu.parentMenuItem.error.selfParent"><![CDATA[.شما نمی توانید خود آیتم فهرست را به عنوان والد خود انتخاب کنید]]></item>
         <item name="wcf.acp.pip.abstractMenu.permissions.description"><![CDATA[.کاربر فعال باید حداقل یکی از مجوزهای وارد شده را داشته باشد تا بتواند آیتم فهرست را ببیند.مجوزهای بسته های غیر الزامی به عنوان غیرموجود گزارش می شود]]></item>
@@ -4977,7 +4977,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.pip.bbcode.iconPath.error.fileDoesNotExist"><![CDATA[.فایل وارد شده وجود ندارد]]></item>
         <item name="wcf.acp.pip.bbcode.iconType"><![CDATA[نوع نمایه دکمه]]></item>
         <item name="wcf.acp.pip.bbcode.iconType.filePath"><![CDATA[تصویر]]></item>
-        <item name="wcf.acp.pip.bbcode.iconType.fontAwesome"><![CDATA[FontAwesome Icon]]></item>
+        <item name="wcf.acp.pip.bbcode.iconType.fontAwesome"><![CDATA[FontAwesome نمایه]]></item>
         <item name="wcf.acp.pip.bbcode.info"><![CDATA[این <kbd>bbcode</kbd> افزونه نصب بسته، BBCode های جدیدی را نصب می کند. اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/bbcode/" class="externalURL">مستندات توسعه دهنده</a>.]]></item>
         <item name="wcf.acp.pip.bbcode.isBlockElement"><![CDATA[BBCode نشان دهنده عنصر بلوک است]]></item>
         <item name="wcf.acp.pip.bbcode.isBlockElement.description"><![CDATA[.عناصر مسدود می توانند شامل خطوط شکسته و پاراگراف باشند و به طور کلی کل عرض موجود را اشغال کنند. این گزینه نباید برای عناصر درون خطی انتخاب شود]]></item>
@@ -4987,7 +4987,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.pip.bbcode.showButton.description"><![CDATA[BBCode با کلیک بر روی دکمه مرتبط در نوار ابزار ویرایشگر WYSIWYG به راحتی در دسترس خواهد بود.]]></item>
         <item name="wcf.acp.pip.bbcode.wysiwygIcon"><![CDATA[نمایه]]></item>
         <item name="wcf.acp.pip.box.boxType"><![CDATA[نوع جعبه]]></item>
-        <item name="wcf.acp.pip.box.boxType.description"><![CDATA[محتوای “text” کادرها را می توان توسط مدیران با استفاده از ویرایشگر داخلی WYSIWYG ویرایش کرد. “html” جعبه ها علاوه بر این اجازه می دهند کد HTML و “tpl” boxes also template scripting. The content of “system” boxes cannot be edited by administrators as their content is provided by the boxes' controller.]]></item>
+        <item name="wcf.acp.pip.box.boxType.description"><![CDATA[محتوای “text” کادرها را می توان توسط مدیران با استفاده از ویرایشگر داخلی WYSIWYG ویرایش کرد. “html” جعبه ها علاوه بر این اجازه می دهند کد HTML و “tpl” کادرها نمی توانند توسط مدیران ویرایش شوند زیرا محتوای آنها توسط کنترل کننده جعبه ها ارائه می شود.]]></item>
         <item name="wcf.acp.pip.box.content"><![CDATA[فهرست]]></item>
         <item name="wcf.acp.pip.box.content.content"><![CDATA[محتوای جعبه]]></item>
         <item name="wcf.acp.pip.box.content.title"><![CDATA[عنوان]]></item>
