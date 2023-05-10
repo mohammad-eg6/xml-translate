@@ -8820,101 +8820,101 @@ Your account on the website: {@PAGE_TITLE|phrase} [URL:{link isEmail=true}{/link
         <item name="wcf.user.register.disclaimer.accept"><![CDATA[پذیرفتن]]></item>
         <item name="wcf.user.register.disclaimer.decline"><![CDATA[رد کردن]]></item>
         <item name="wcf.user.register.disclaimer.text"><![CDATA[<h2>محدودیت مسئولیت برای محتوای داخلی</h2>
-<p>The content of our website has been compiled with meticulous care and to the best of our knowledge. However, we cannot assume any liability for the up-to-dateness, completeness or accuracy of any of the pages.</p>
+<p>محتوای وب سایت ما با دقت و در حد دانش ما گردآوری شده است. با این حال، ما نمی توانیم مسئولیتی در قبال به روز بودن، کامل بودن یا دقت هر یک از صفحات بپذیریم..</p>
 <p><br></p>
-<p>Pursuant to section 7, para. 1 of the TMG (Telemediengesetz – Tele Media Act by German law), we as service providers are liable for our own content on these pages in accordance with general laws. However, pursuant to sections 8 to 10 of the TMG, we as service providers are not under obligation to monitor external information provided or stored on our website. Once we have become aware of a specific infringement of the law, we will immediately remove the content in question. Any liability concerning this matter can only be assumed from the point in time at which the infringement becomes known to us.</p>
-<h2>Limitation of liability for external links</h2>
-<p>Our website contains links to the websites of third parties (“external links”). As the content of these websites is not under our control, we cannot assume any liability for such external content. In all cases, the provider of information of the linked websites is liable for the content and accuracy of the information provided. At the point in time when the links were placed, no infringements of the law were recognisable to us. As soon as an infringement of the law becomes known to us, we will immediately remove the link in question.</p>
-<h2>Copyright</h2>
-<p>The content and works published on this website are governed by the copyright laws of of the country this site is hosted from. Any duplication, processing, distribution or any form of utilisation beyond the scope of copyright law shall require the prior written consent of the author or authors in question.</p>
-<h2>Data protection</h2>
-<p>A visit to our website can result in the storage on our server of information about the access (date, time, page accessed). This does not represent any analysis of personal data (e.g., name, address or email address). If personal data are collected, this only occurs – to the extent possible – with the prior consent of the user of the website. Any forwarding of the data to third parties without the express consent of the user shall not take place.</p>
+<p>بر اساس بخش 7، بند. 1 از TMG (Telemediengesetz - قانون رسانه های تله توسط قانون آلمان)، ما به عنوان ارائه دهندگان خدمات در قبال محتوای خود در این صفحات مطابق با قوانین عمومی مسئول هستیم. با این حال، طبق بخش‌های 8 تا 10 TMG، ما به‌عنوان ارائه‌دهندگان خدمات موظف به نظارت بر اطلاعات خارجی ارائه‌شده یا ذخیره‌شده در وب‌سایت خود نیستیم. به محض اینکه از یک تخلف خاص از قانون مطلع شدیم، بلافاصله محتوای مورد نظر را حذف خواهیم کرد. هرگونه مسئولیتی در رابطه با این موضوع تنها از زمانی می‌توان فرض کرد که تخلف برای ما مشخص شود..</p>
+<h2>محدودیت مسئولیت برای پیوندهای خارجی</h2>
+<p>وب سایت ما حاوی پیوندهایی به وب سایت های اشخاص ثالث است (“external links”). از آنجایی که محتوای این وب سایت ها تحت کنترل ما نیست، ما نمی توانیم هیچ گونه مسئولیتی در قبال چنین محتوای خارجی بپذیریم. در تمامی موارد، ارائه‌دهنده اطلاعات وب‌سایت‌های لینک‌شده در قبال محتوا و صحت اطلاعات ارائه‌شده مسئول است. در زمانی که لینک ها قرار داده شد، هیچ تخلفی از قانون برای ما قابل تشخیص نبود. به محض اینکه تخلفی از قانون برای ما مشخص شد، بلافاصله پیوند مورد نظر را حذف خواهیم کرد.</p>
+<h2>کپی رایت</h2>
+<p>محتوا و آثار منتشر شده در این وب سایت تحت قوانین کپی رایت کشوری است که این سایت از آن میزبانی می شود. هر گونه کپی، پردازش، توزیع یا هر شکل استفاده فراتر از محدوده قانون کپی رایت، نیاز به رضایت کتبی قبلی نویسنده یا نویسندگان مورد نظر دارد..</p>
+<h2>حفاظت از داده ها</h2>
+<p>بازدید از وب سایت ما می تواند منجر به ذخیره اطلاعات مربوط به دسترسی (تاریخ، زمان، صفحه دسترسی) در سرور ما شود. این هیچ گونه تجزیه و تحلیل داده های شخصی (مانند نام، آدرس یا آدرس ایمیل) را نشان نمی دهد. در صورت جمع‌آوری داده‌های شخصی، این امر تنها - تا حد امکان - با رضایت قبلی کاربر وب‌سایت رخ می‌دهد. هرگونه ارسال اطلاعات به اشخاص ثالث بدون رضایت صریح کاربر انجام نخواهد شد.</p>
 <p><br></p>
-<p>We would like to expressly point out that the transmission of data via the Internet (e.g., by email) can offer security vulnerabilities. It is therefore impossible to safeguard the data completely against access by third parties. We cannot assume any liability for damages arising as a result of such security vulnerabilities.</p>
+<p>ما می خواهیم به صراحت اشاره کنیم که انتقال داده ها از طریق اینترنت (به عنوان مثال، از طریق ایمیل) می تواند آسیب پذیری های امنیتی ایجاد کند. بنابراین محافظت کامل از داده ها در برابر دسترسی اشخاص ثالث غیرممکن است. ما نمی توانیم هیچ گونه مسئولیتی در قبال خسارات ناشی از چنین آسیب پذیری های امنیتی بپذیریم.</p>
 <p><br></p>
-<p>The use by third parties of all published contact details for the purpose of advertising is expressly excluded. We reserve the right to take legal steps in the case of the unsolicited sending of advertising information; e.g., by means of spam mail.</p>
+<p>استفاده اشخاص ثالث از کلیه اطلاعات تماس منتشر شده به منظور تبلیغات صراحتاً مستثنی شده است. ما این حق را برای خود محفوظ می داریم که در صورت ارسال ناخواسته اطلاعات تبلیغاتی اقدامات قانونی انجام دهیم. به عنوان مثال، از طریق ایمیل های اسپم.</p>
 <p><br></p>
-<p><small><em>Source: <a href="http://www.mustervorlage.net/disclaimer-muster" class="externalURL">Mustervorlage.net</a></em></small></p>]]></item>
-        <item name="wcf.user.register.error.blacklistMatches"><![CDATA[The registration could not be completed due to active restrictions, please contact the site administrator.]]></item>
-        <item name="wcf.user.register.error.disabled"><![CDATA[Registration is currently disabled.]]></item>
-        <item name="wcf.user.register.needActivation"><![CDATA[Your user account is not activated yet. You must complete the <a href="{link controller='RegisterActivation'}{/link}">activation process</a> first.]]></item>
-        <item name="wcf.user.register.needActivation.mail.html.activate"><![CDATA[Confirm my email address]]></item>
-        <item name="wcf.user.register.needActivation.mail.html.headline"><![CDATA[Dear {$mailbox->getUser()->username},]]></item>
+<p><small><em>منبع: <a href="http://www.mustervorlage.net/disclaimer-muster" class="externalURL">Mustervorlage.net</a></em></small></p>]]></item>
+        <item name="wcf.user.register.error.blacklistMatches"><![CDATA[ثبت نام به دلیل محدودیت های فعال انجام نشد، لطفا با مدیر سایت تماس بگیرید.]]></item>
+        <item name="wcf.user.register.error.disabled"><![CDATA[ثبت نام در حال حاضر غیرفعال است.]]></item>
+        <item name="wcf.user.register.needActivation"><![CDATA[حساب کاربری شما هنوز فعال نشده است. شما باید  <a href="{link controller='RegisterActivation'}{/link}">اول فرآیند فعال سازی راتکمیل کنید </a> .]]></item>
+        <item name="wcf.user.register.needActivation.mail.html.activate"><![CDATA[آدرس ایمیل من را تایید کنید]]></item>
+        <item name="wcf.user.register.needActivation.mail.html.headline"><![CDATA[عزیز {$mailbox->getUser()->username},]]></item>
         <item name="wcf.user.register.needActivation.mail.html.intro"><![CDATA[
-<p>Thank you for registering at: <a href="{link isHtmlEmail=true}{/link}">{PAGE_TITLE|phrase}</a>. Before you are able to use your
-user account to its full extent it is required that you confirm validity of your email address once:</p>]]></item>
+<p>با تشکر از شما برای ثبت نام در: <a href="{link isHtmlEmail=true}{/link}">{PAGE_TITLE|phrase}</a>. 
+قبل از اینکه بتوانید از حساب کاربری خود تا حد کامل استفاده کنید، لازم است که اعتبار آدرس ایمیل خود را یک بار تأیید کنید:</p>]]></item>
         <item name="wcf.user.register.needActivation.mail.html.outro"><![CDATA[
-<p>Your activation code is: <kbd>{$mailbox->getUser()->emailConfirmed}</kbd>.</p>
-<p>If you have trouble confirming your email address, please contact the administrator at:
-<a href="mailto:{MAIL_ADMIN_ADDRESS}">{MAIL_ADMIN_ADDRESS}</a>. Please ignore this email if
-you did not register an account with us.</p>]]></item>
-        <item name="wcf.user.register.needActivation.mail.plaintext"><![CDATA[Dear {@$mailbox->getUser()->username},
+<p>کد فعال سازی شما هست: <kbd>{$mailbox->getUser()->emailConfirmed}</kbd>.</p>
+<p>اگر در تأیید آدرس ایمیل خود مشکل دارید، لطفاً با مدیر این آدرس تماس بگیرید:
+<a href="mailto:{MAIL_ADMIN_ADDRESS}">{MAIL_ADMIN_ADDRESS}</a>. 
+اگر حساب کاربری در ما ثبت نکرده اید، لطفاً این ایمیل را نادیده بگیرید.</p>]]></item>
+        <item name="wcf.user.register.needActivation.mail.plaintext"><![CDATA[عزیز {@$mailbox->getUser()->username},
 
-Thank you for registering at: {@PAGE_TITLE|phrase} [URL:{link isEmail=true}{/link}]. Before you are
-able to use your user account to its full extent it is required that you
-confirm the validity of your email address once:
+با تشکر از شما برای ثبت نام در: {@PAGE_TITLE|phrase} [URL:{link isEmail=true}{/link}]. 
+
+قبل از اینکه بتوانید از حساب کاربری خود به طور کامل استفاده کنید، لازم است یک بار اعتبار آدرس ایمیل خود را تأیید کنید:
 
     {link controller='RegisterActivation' isEmail=true}u={@$mailbox->getUser()->userID}&a={@$mailbox->getUser()->emailConfirmed}{/link} {* this line ends with a space *}
 
-Your activation code is: {@$mailbox->getUser()->emailConfirmed} {* this line ends with a space *}
+کد فعال سازی شما هست: {@$mailbox->getUser()->emailConfirmed} {* this line ends with a space *}
 
-If you have trouble confirming your email address, please contact the
-administrator at: {@MAIL_ADMIN_ADDRESS}. Please ignore this email if you did
-not register with us.]]></item>
-        <item name="wcf.user.register.needActivation.mail.subject"><![CDATA[Activate Your Registration for Website: {@PAGE_TITLE|phrase}]]></item>
-        <item name="wcf.user.register.needAdminActivation"><![CDATA[Your account must be activated by an administrator in order to use the full scope of the website.]]></item>
-        <item name="wcf.user.register.needEmailConfirmation"><![CDATA[Your email address is not activated yet. {if $__wcf->user->canEmailConfirm()}<a href="{link controller='RegisterNewActivationCode'}{/link}">Confirm your email address</a>{else}To activate your email address contact the administrator of this site{/if}.]]></item>
-        <item name="wcf.user.register.notification.mail"><![CDATA[Dear Administrator,
 
-someone registered with your website {@PAGE_TITLE|phrase}: {@$user->username}.
+اگر در تأیید آدرس ایمیل خود مشکل دارید، لطفاً با مدیر این آدرس تماس بگیرید: {@MAIL_ADMIN_ADDRESS}. 
+اگر با ما ثبت نام نکردید لطفاً این ایمیل را نادیده بگیرید.]]></item>
+        <item name="wcf.user.register.needActivation.mail.subject"><![CDATA[ثبت نام خود را برای وب سایت فعال کنید: {@PAGE_TITLE|phrase}]]></item>
+        <item name="wcf.user.register.needAdminActivation"><![CDATA[حساب شما باید توسط یک مدیر فعال شود تا بتوانید از دامنه کامل وب سایت استفاده کنید.]]></item>
+        <item name="wcf.user.register.needEmailConfirmation"><![CDATA[آدرس ایمیل شما هنوز فعال نشده است. {if $__wcf->user->canEmailConfirm()}<a href="{link controller='RegisterNewActivationCode'}{/link}">آدرس ایمیل خود را تایید کنید</a>{else}برای فعال کردن آدرس ایمیل خود با مدیر این سایت تماس بگیرید{/if}.]]></item>
+        <item name="wcf.user.register.notification.mail"><![CDATA[مدیر محترم، شخصی در وب سایت شما ثبت نام کرده است
 
-Email address used: {@$user->email}.
+ {@PAGE_TITLE|phrase}: {@$user->username}.
 
-Open the link below to access the user profile:
+آدرس ایمیل استفاده شده: {@$user->email}.
+
+برای دسترسی به پروفایل کاربری لینک زیر را باز کنید:
 {link controller='User' object=$user isEmail=true}{/link}]]></item>
-        <item name="wcf.user.register.notification.mail.subject"><![CDATA[New Registration with Your Website: {@PAGE_TITLE|phrase}]]></item>
-        <item name="wcf.user.register.success"><![CDATA[Thank you for registering, {$user->username}.<br>
-Your registration is now completed.]]></item>
-        <item name="wcf.user.register.success.awaitActivation"><![CDATA[Thank you for registering, {$user->username}.<br>
-Your account is awaiting approval from an administrator.<br>
-A notification will be sent once your account has been approved.]]></item>
-        <item name="wcf.user.register.success.needActivation"><![CDATA[Thank you for registering, {$user->username}.<br>
-An email was sent to “{$user->email}” containing a one-time link to verify your account and ultimately completing your registration.]]></item>
+        <item name="wcf.user.register.notification.mail.subject"><![CDATA[ثبت نام جدید با وب سایت شما: {@PAGE_TITLE|phrase}]]></item>
+        <item name="wcf.user.register.success"><![CDATA[ممنون از اینکه ثبت نام کردید, {$user->username}.<br>
+اکنون ثبت نام شما تکمیل شده است.]]></item>
+        <item name="wcf.user.register.success.awaitActivation"><![CDATA[ممنون از اینکه ثبت نام کردید, {$user->username}.<br>
+حساب شما در انتظار تایید یک مدیر است.<br>
+پس از تأیید حساب شما، یک اعلان ارسال می شود.]]></item>
+        <item name="wcf.user.register.success.needActivation"><![CDATA[ممنون از اینکه ثبت نام کردید, {$user->username}.<br>
+یک ایمیل ارسال شد به “{$user->email}” حاوی یک پیوند یکبار مصرف برای تأیید حساب شما و در نهایت تکمیل ثبت نام شما.]]></item>
     </category>
     <category name="wcf.user.security">
-        <item name="wcf.user.security.activeSessions"><![CDATA[Active Sessions]]></item>
-        <item name="wcf.user.security.activeSessions.description"><![CDATA[You are currently logged into your account in the listed web browsers. Revoke sessions you no longer need or that you do not recognize. You can change your password within the <a href="{link controller='AccountManagement'}{/link}">Account Management Form</a>.]]></item>
-        <item name="wcf.user.security.currentSession"><![CDATA[Current Session]]></item>
-        <item name="wcf.user.security.deleteSession"><![CDATA[Revoke Session]]></item>
-        <item name="wcf.user.security.deleteSession.confirmMessage"><![CDATA[Do you really want to revoke the session?]]></item>
-        <item name="wcf.user.security.ipAddress"><![CDATA[IP Address]]></item>
-        <item name="wcf.user.security.lastActivity"><![CDATA[Last active]]></item>
-        <item name="wcf.user.security.multifactor"><![CDATA[Multi-factor Authentication]]></item>
-        <item name="wcf.user.security.multifactor.active"><![CDATA[Active]]></item>
-        <item name="wcf.user.security.multifactor.authentication"><![CDATA[Multi-factor Authentication]]></item>
-        <item name="wcf.user.security.multifactor.authentication.description"><![CDATA[This user account is protected by a second factor.]]></item>
-        <item name="wcf.user.security.multifactor.authentication.loginAs"><![CDATA[Log in as]]></item>
-        <item name="wcf.user.security.multifactor.authentication.noPendingUserChange"><![CDATA[The multi-factor authentication was not completed in time. The incomplete login process was aborted for security reasons. Please <a href="{link controller='Login'}{/link}">Login</a> once again.]]></item>
-        <item name="wcf.user.security.multifactor.authentication.noSetup"><![CDATA[The account <strong>{$user->username}</strong> is protected by multi-factor authentication, but no methods are set up. Please contact the administrator for support.]]></item>
-        <item name="wcf.user.security.multifactor.backup.authenticationEmail.body.html"><![CDATA[<h2>Dear {$setup->getUser()->username},</h2>
+        <item name="wcf.user.security.activeSessions"><![CDATA[جلسات فعال]]></item>
+        <item name="wcf.user.security.activeSessions.description"><![CDATA[شما در حال حاضر در مرورگرهای وب لیست شده وارد حساب کاربری خود شده اید. جلساتی را که دیگر نیازی ندارید یا نمی شناسید لغو کنید. شما می توانید رمز عبور خود را در داخل  <a href="{link controller='AccountManagement'}{/link}">فرم مدیریت حساب تغییر دهید</a>.]]></item>
+        <item name="wcf.user.security.currentSession"><![CDATA[جلسه فعلی]]></item>
+        <item name="wcf.user.security.deleteSession"><![CDATA[لغو جلسه]]></item>
+        <item name="wcf.user.security.deleteSession.confirmMessage"><![CDATA[آیا واقعاً می خواهید جلسه را لغو کنید؟?]]></item>
+        <item name="wcf.user.security.ipAddress"><![CDATA[آدرس آی پی]]></item>
+        <item name="wcf.user.security.lastActivity"><![CDATA[آخرین فعالیت]]></item>
+        <item name="wcf.user.security.multifactor"><![CDATA[احراز هویت چند عاملی]]></item>
+        <item name="wcf.user.security.multifactor.active"><![CDATA[فعال]]></item>
+        <item name="wcf.user.security.multifactor.authentication"><![CDATA[احراز هویت چند عاملی]]></item>
+        <item name="wcf.user.security.multifactor.authentication.description"><![CDATA[این حساب کاربری توسط یک عامل دوم محافظت می شود.]]></item>
+        <item name="wcf.user.security.multifactor.authentication.loginAs"><![CDATA[ورود به عنوان]]></item>
+        <item name="wcf.user.security.multifactor.authentication.noPendingUserChange"><![CDATA[احراز هویت چند عاملی به موقع کامل نشد. فرآیند ورود ناقص به دلایل امنیتی متوقف شد. لطفا <a href="{link controller='Login'}{/link}">Login</a> یک بار دیگر امتحان کنید.]]></item>
+        <item name="wcf.user.security.multifactor.authentication.noSetup"><![CDATA[اکانت <strong>{$user->username}</strong> با احراز هویت چند عاملی محافظت می شود، اما هیچ روشی تنظیم نشده است. لطفا برای پشتیبانی با مدیر تماس بگیرید.]]></item>
+        <item name="wcf.user.security.multifactor.backup.authenticationEmail.body.html"><![CDATA[<h2>عزیز {$setup->getUser()->username},</h2>
 
-<p>You used the emergency code <code>{$usedCode[identifier]}</code> for multi-factor authentication. This code no longer is valid. {plural value=$remaining 0='<b>You don’t have any remaining codes.</b>' 1='You have one remaining code.' other='You have # remaining codes.'}</p>
+<p>شما از کد اضطراری استفاده کردید <code>{$usedCode[identifier]}</code> برای احراز هویت چند عاملی این کد دیگر معتبر نیست. {plural value=$remaining 0='<b>You don’t have any remaining codes.</b>' 1='You have one remaining code.' other='You have # remaining codes.'}</p>
 
-<p>You can manage multi-factor authentication within the <a href="{link controller='AccountSecurity' isHtmlEmail=true}#section_multifactor{/link}">Account Security</a> page. Within account security you can generate new emergency codes or disable multi-factor authentication.</p>]]></item>
-        <item name="wcf.user.security.multifactor.backup.authenticationEmail.body.plain"><![CDATA[Dear {$setup->getUser()->username},
+<p>شما می توانید احراز هویت چند عاملی را از اینجا مدیریت کنید <a href="{link controller='AccountSecurity' isHtmlEmail=true}#section_multifactor{/link}">امنیت اکانت</a> صفحه در امنیت حساب می توانید کدهای اضطراری جدید ایجاد کنید یا احراز هویت چند عاملی را غیرفعال کنید.</p>]]></item>
+        <item name="wcf.user.security.multifactor.backup.authenticationEmail.body.plain"><![CDATA[عزیز {$setup->getUser()->username},
 
-You used the emergency code “{$usedCode[identifier]}” for multi-factor authentication. This code no longer is valid. {plural value=$remaining 0='**You don\'t have any remaining codes.**' 1='You have one remaining code.' other='You have # remaining codes.'} {* this line ends with a space *}
+شما از کد اضطراری استفاده کردید “{$usedCode[identifier]}” برای احراز هویت چند عاملی این کد دیگر معتبر نیست. {plural value=$remaining 0='**You don\'t have any remaining codes.**' 1='You have one remaining code.' other='You have # remaining codes.'} {* this line ends with a space *}
 
-You can manage multi-factor authentication within the Account Security page [URL:{link controller='AccountSecurity' isEmail=true}#section_multifactor{/link}]. Within account security you can generate new emergency codes or disable multi-factor authentication.]]></item>
-        <item name="wcf.user.security.multifactor.backup.authenticationEmail.subject"><![CDATA[Authentication using emergency code on {@PAGE_TITLE|phrase}]]></item>
-        <item name="wcf.user.security.multifactor.backup.code"><![CDATA[Emergency Code]]></item>
-        <item name="wcf.user.security.multifactor.backup.code.description"><![CDATA[An emergency code consists of 20 digits and may only be used once.]]></item>
-        <item name="wcf.user.security.multifactor.backup.error.flood"><![CDATA[Please try again later.]]></item>
-        <item name="wcf.user.security.multifactor.backup.existingCodes"><![CDATA[Active Emergency Codes]]></item>
-        <item name="wcf.user.security.multifactor.backup.existingCodes.description"><![CDATA[<p>You can find the latest set of emergency codes for use with the multi-factor authentication below. Codes that are striked out have been used and are no longer valid. Use the bold identifier to compare the list to your notes. Please generate a new set of codes if the listed codes do not match your notes.</p>]]></item>
-        <item name="wcf.user.security.multifactor.backup.generateCodes"><![CDATA[Generate Codes]]></item>
-        <item name="wcf.user.security.multifactor.backup.regenerateCodes"><![CDATA[Generate New Emergency Codes]]></item>
-        <item name="wcf.user.security.multifactor.backup.regenerateCodes.description"><![CDATA[<p>Generate new emergency codes if you lost or used up your existing set. Generating new emergency codes will invalidate all existing codes.</p>]]></item>
+شما می توانید احراز هویت چند عاملی را در صفحه امنیت حساب مدیریت کنید [URL:{link controller='AccountSecurity' isEmail=true}#section_multifactor{/link}]. در امنیت حساب می توانید کدهای اضطراری جدید ایجاد کنید یا احراز هویت چند عاملی را غیرفعال کنید.]]></item>
+        <item name="wcf.user.security.multifactor.backup.authenticationEmail.subject"><![CDATA[احراز هویت با استفاده از کد اضطراری روشن است {@PAGE_TITLE|phrase}]]></item>
+        <item name="wcf.user.security.multifactor.backup.code"><![CDATA[کد اضطراری]]></item>
+        <item name="wcf.user.security.multifactor.backup.code.description"><![CDATA[یک کد اضطراری شامل 20 رقم است و فقط یک بار می تواند استفاده شود.]]></item>
+        <item name="wcf.user.security.multifactor.backup.error.flood"><![CDATA[لطفاً بعداً دوباره امتحان کنید.]]></item>
+        <item name="wcf.user.security.multifactor.backup.existingCodes"><![CDATA[کدهای اضطراری فعال]]></item>
+        <item name="wcf.user.security.multifactor.backup.existingCodes.description"><![CDATA[<p>می‌توانید آخرین مجموعه کدهای اضطراری را برای استفاده با احراز هویت چند عاملی در زیر بیابید. کدهایی که حذف شده اند استفاده شده اند و دیگر معتبر نیستند. از شناسه پررنگ برای مقایسه لیست با یادداشت های خود استفاده کنید. اگر کدهای فهرست شده با یادداشت های شما مطابقت ندارند، لطفاً مجموعه جدیدی از کدها را ایجاد کنید.</p>]]></item>
+        <item name="wcf.user.security.multifactor.backup.generateCodes"><![CDATA[ایجاد کدها]]></item>
+        <item name="wcf.user.security.multifactor.backup.regenerateCodes"><![CDATA[کدهای اضطراری جدید ایجاد کنید]]></item>
+        <item name="wcf.user.security.multifactor.backup.regenerateCodes.description"><![CDATA[<p>اگر مجموعه موجود خود را گم کرده اید یا تمام کرده اید، کدهای اضطراری جدید ایجاد کنید. ایجاد کدهای اضطراری جدید همه کدهای موجود را باطل می کند.</p>]]></item>
         <item name="wcf.user.security.multifactor.backup.status"><![CDATA[<ul class="inlineList small dotSeparated">
 <li>{plural value=$count 0="No codes remaining" 1="One code remaining" other="# codes remaining"}</li>
 {if $lastUsed}<li>Last used on {@$lastUsed|plainTime}</li>{/if}
