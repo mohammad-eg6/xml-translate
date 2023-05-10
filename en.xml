@@ -8523,303 +8523,303 @@ Your account on the website: {@PAGE_TITLE|phrase} [URL:{link isEmail=true}{/link
         <item name="wcf.user.notification.commentResponse.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} پاسخ داد به نظر شما روی {if $owner->userID == $__wcf->getUser()->userID}دیوار شما{else}دیوار<strong>{$owner}</strong>{/if} .]]></item>
         <item name="wcf.user.notification.commentResponse.title"><![CDATA[پاسخ جدید (دیوار)]]></item>
         <item name="wcf.user.notification.commentResponse.title.stacked"><![CDATA[{#$timesTriggered} پاسخ های جدید (دیوار)]]></item>
-        <item name="wcf.user.notification.commentResponseOwner.mail.html"><![CDATA[<p>{@$authorList} replied to <strong>{$commentAuthor}</strong>’s comment on <a href="{$owner->getLink()}#wall/comment{@$commentID}/response{@$responseID}">your wall</a>:</p>]]></item>
-        <item name="wcf.user.notification.commentResponseOwner.mail.plaintext"><![CDATA[{@$authorList} replied to {@$commentAuthor}’s comment on your wall [URL:{@$owner->getLink()}#wall/comment{@$commentID}/response{@$responseID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
-        <item name="wcf.user.notification.commentResponseOwner.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A guest{/if} replied to <strong>{$commentAuthor}</strong>’s comment on your wall.]]></item>
-        <item name="wcf.user.notification.commentResponseOwner.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} replied to the comment by <strong>{$author}</strong> on your wall.]]></item>
-        <item name="wcf.user.notification.commentResponseOwner.title"><![CDATA[New Reply (Wall)]]></item>
-        <item name="wcf.user.notification.commentResponseOwner.title.stacked"><![CDATA[{#$timesTriggered} new replies (Wall)]]></item>
-        <item name="wcf.user.notification.conversation.mail.html"><![CDATA[<p><strong>{$author}</strong> started the conversation <a href="{$conversation->getLink()}">{$conversation->getTitle()}</a>:</p>]]></item>
-        <item name="wcf.user.notification.conversation.mail.plaintext"><![CDATA[{@$author} started the conversation “{@$conversation->getTitle()}” [URL:{@$conversation->getLink()}]:]]></item>
-        <item name="wcf.user.notification.conversation.mail.title"><![CDATA[New Conversation from "{@$author->username}"]]></item>
-        <item name="wcf.user.notification.conversation.message"><![CDATA[<strong>{$author}</strong> started the conversation <strong>{$conversation->getTitle()}</strong>.]]></item>
-        <item name="wcf.user.notification.conversation.message.mail.html"><![CDATA[<p>{@$authorList} replied to the conversation <a href="{$message->getLink()}">{$conversation->getTitle()}</a>:</p>]]></item>
-        <item name="wcf.user.notification.conversation.message.mail.plaintext"><![CDATA[{@$authorList} replied to the conversation “{@$conversation->getTitle()}” [URL:{@$message->getLink()}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
-        <item name="wcf.user.notification.conversation.message.mail.title"><![CDATA["{@$author}" replied to the conversation "{@$conversation->getTitle()}"]]></item>
-        <item name="wcf.user.notification.conversation.message.message"><![CDATA[<strong>{$author}</strong> replied to the conversation <strong>{$message->getConversation()->getTitle()}</strong>.]]></item>
-        <item name="wcf.user.notification.conversation.message.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} replied to the conversation <strong>{$message->getConversation()->getTitle()}</strong>.]]></item>
-        <item name="wcf.user.notification.conversation.message.title"><![CDATA[New Reply to a Conversation]]></item>
-        <item name="wcf.user.notification.conversation.message.title.stacked"><![CDATA[{#$count} participants replied to a conversation]]></item>
-        <item name="wcf.user.notification.conversation.title"><![CDATA[New Conversation]]></item>
+        <item name="wcf.user.notification.commentResponseOwner.mail.html"><![CDATA[<p>{@$authorList} پاسخ داد به نظر <strong>{$commentAuthor}</strong>روی <a href="{$owner->getLink()}#wall/comment{@$commentID}/response{@$responseID}">دیوار شما</a>:</p>]]></item>
+        <item name="wcf.user.notification.commentResponseOwner.mail.plaintext"><![CDATA[{@$authorList} پاسخ داد به نظر  {@$commentAuthor}روی دیوار شما [URL:{@$owner->getLink()}#wall/comment{@$commentID}/response{@$responseID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+        <item name="wcf.user.notification.commentResponseOwner.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A guest{/if} پاسخ داد به نظر <strong>{$commentAuthor}</strong>روی دیوار شما.]]></item>
+        <item name="wcf.user.notification.commentResponseOwner.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} پاسخ داد به نظر با <strong>{$author}</strong> روی دیوار شما.]]></item>
+        <item name="wcf.user.notification.commentResponseOwner.title"><![CDATA[پاسخ جدید (دیوار)]]></item>
+        <item name="wcf.user.notification.commentResponseOwner.title.stacked"><![CDATA[{#$timesTriggered} پاسخ های جدید (دیوار)]]></item>
+        <item name="wcf.user.notification.conversation.mail.html"><![CDATA[<p><strong>{$author}</strong>گفتگو را آغاز کرد <a href="{$conversation->getLink()}">{$conversation->getTitle()}</a>:</p>]]></item>
+        <item name="wcf.user.notification.conversation.mail.plaintext"><![CDATA[{@$author} گفتگو را آغاز کرد “{@$conversation->getTitle()}” [URL:{@$conversation->getLink()}]:]]></item>
+        <item name="wcf.user.notification.conversation.mail.title"><![CDATA[مکالمه جدید از "{@$author->username}"]]></item>
+        <item name="wcf.user.notification.conversation.message"><![CDATA[<strong>{$author}</strong> گفتگو را آغاز کرد <strong>{$conversation->getTitle()}</strong>.]]></item>
+        <item name="wcf.user.notification.conversation.message.mail.html"><![CDATA[<p>{@$authorList} به گفتگو پاسخ داد <a href="{$message->getLink()}">{$conversation->getTitle()}</a>:</p>]]></item>
+        <item name="wcf.user.notification.conversation.message.mail.plaintext"><![CDATA[{@$authorList} به گفتگو پاسخ داد “{@$conversation->getTitle()}” [URL:{@$message->getLink()}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+        <item name="wcf.user.notification.conversation.message.mail.title"><![CDATA["{@$author}" به گفتگو پاسخ داد "{@$conversation->getTitle()}"]]></item>
+        <item name="wcf.user.notification.conversation.message.message"><![CDATA[<strong>{$author}</strong> به گفتگو پاسخ داد <strong>{$message->getConversation()->getTitle()}</strong>.]]></item>
+        <item name="wcf.user.notification.conversation.message.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} به گفتگو پاسخ داد <strong>{$message->getConversation()->getTitle()}</strong>.]]></item>
+        <item name="wcf.user.notification.conversation.message.title"><![CDATA[پاسخ جدید به یک مکالمه]]></item>
+        <item name="wcf.user.notification.conversation.message.title.stacked"><![CDATA[{#$count} شرکت کنندگان به یک مکالمه پاسخ دادند]]></item>
+        <item name="wcf.user.notification.conversation.title"><![CDATA[مکالمه جدید]]></item>
         <item name="wcf.user.notification.count"><![CDATA[if (data.returnValues.count == 0) { "No Notifications" } else if (data.returnValues.count == 1) { "1 Notification" } else { data.returnValues.count + " Notifications" }]]></item>
-        <item name="wcf.user.notification.enableDesktopNotifications"><![CDATA[Enable desktop notifications to receive alerts for new notifications.]]></item>
-        <item name="wcf.user.notification.enableDesktopNotifications.button"><![CDATA[Change Preference]]></item>
-        <item name="wcf.user.notification.follow.mail.html"><![CDATA[<p>{@$authorList} {if $authors|count == 1}follows{else}follow{/if} you:</p>]]></item>
-        <item name="wcf.user.notification.follow.mail.plaintext"><![CDATA[{@$authorList} {if $authors|count == 1}follows{else}follow{/if} you.]]></item>
-        <item name="wcf.user.notification.follow.message"><![CDATA[<strong>{$author}</strong> follows you.]]></item>
-        <item name="wcf.user.notification.follow.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} follow you.]]></item>
-        <item name="wcf.user.notification.follow.title"><![CDATA[New Follower]]></item>
-        <item name="wcf.user.notification.follow.title.stacked"><![CDATA[{#$count} new followers]]></item>
-        <item name="wcf.user.notification.mail.authorList.html"><![CDATA[{if !$event->getAuthor()->userID}{if $guestTimesTriggered > 1}Guests{else}A guest{/if}{else}<a href="{link controller='User' object=$event->getAuthor() isHtmlEmail=true}{/link}">{$event->getAuthor()->username}</a>{/if}{if $count > 1 && $count < 4}{if $count == 2 && !$guestTimesTriggered} and {else}, {/if}<a href="{link controller='User' object=$authors[1] isHtmlEmail=true}{/link}">{$authors[1]->username}</a>{if $count == 3}{if !$guestTimesTriggered} and {else}, {/if}<a href="{link controller='User' object=$authors[2] isHtmlEmail=true}{/link}">{$authors[2]->username}</a>{/if}{elseif $count >= 4}{if $guestTimesTriggered},{else} and{/if} {#$count-1} other users{/if}{if $event->getAuthor()->userID && $guestTimesTriggered} and {if $guestTimesTriggered == 1}a guest{else}{#$guestTimesTriggered} guests{/if}{/if}]]></item>
-        <item name="wcf.user.notification.mail.authorList.plaintext"><![CDATA[{if !$event->getAuthor()->userID}{if $guestTimesTriggered > 1}Guests{else}A guest{/if}{else}{@$event->getAuthor()->username} [URL:{link controller='User' object=$event->getAuthor() isEmail=true}{/link}]{/if}{if $count > 1 && $count < 4}{if $count == 2 && !$guestTimesTriggered} and {else}, {/if}{@$authors[1]->username} [URL:{link controller='User' object=$authors[1] isEmail=true}{/link}]{if $count == 3}{if !$guestTimesTriggered} and {else}, {/if}{@$authors[2]->username} [URL:{link controller='User' object=$authors[2] isEmail=true}{/link}]{/if}{elseif $count >= 4}{if $guestTimesTriggered},{else} and{/if} {#$count-1} other users{/if}{if $event->getAuthor()->userID && $guestTimesTriggered} and {if $guestTimesTriggered == 1}a guest{else}{#$guestTimesTriggered} guests{/if}{/if}]]></item>
-        <item name="wcf.user.notification.mail.daily.html.intro"><![CDATA[<h2>Dear {$mailbox->getUser()->username},</h2>
+        <item name="wcf.user.notification.enableDesktopNotifications"><![CDATA[اعلان‌های دسکتاپ را برای دریافت هشدار برای اعلان‌های جدید فعال کنید.]]></item>
+        <item name="wcf.user.notification.enableDesktopNotifications.button"><![CDATA[تغییر اولویت]]></item>
+        <item name="wcf.user.notification.follow.mail.html"><![CDATA[<p>{@$authorList} {if $authors|count == 1}شما را دنبال میکند{else}دنبال کردن شما{/if} </p>]]></item>
+        <item name="wcf.user.notification.follow.mail.plaintext"><![CDATA[{@$authorList} {if $authors|count == 1}شما را دنبال میکند{else}دنبال کردن شما{/if} .]]></item>
+        <item name="wcf.user.notification.follow.message"><![CDATA[<strong>{$author}</strong> شما را دنبال میکند.]]></item>
+        <item name="wcf.user.notification.follow.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} دنبال کردن شما.]]></item>
+        <item name="wcf.user.notification.follow.title"><![CDATA[دنبال کننده جدید]]></item>
+        <item name="wcf.user.notification.follow.title.stacked"><![CDATA[{#$count}دنبال کننده های جدید]]></item>
+        <item name="wcf.user.notification.mail.authorList.html"><![CDATA[{if !$event->getAuthor()->userID}{if $guestTimesTriggered > 1}مهمانان{else}یک مهمان{/if}{else}<a href="{link controller='User' object=$event->getAuthor() isHtmlEmail=true}{/link}">{$event->getAuthor()->username}</a>{/if}{if $count > 1 && $count < 4}{if $count == 2 && !$guestTimesTriggered} و {else}, {/if}<a href="{link controller='User' object=$authors[1] isHtmlEmail=true}{/link}">{$authors[1]->username}</a>{if $count == 3}{if !$guestTimesTriggered} و {else}, {/if}<a href="{link controller='User' object=$authors[2] isHtmlEmail=true}{/link}">{$authors[2]->username}</a>{/if}{elseif $count >= 4}{if $guestTimesTriggered},{else} و{/if} {#$count-1} کاربران دیگر{/if}{if $event->getAuthor()->userID && $guestTimesTriggered} و {if $guestTimesTriggered == 1}یک مهمان{else}{#$guestTimesTriggered} مهمانان{/if}{/if}]]></item>
+        <item name="wcf.user.notification.mail.authorList.plaintext"><![CDATA[{if !$event->getAuthor()->userID}{if $guestTimesTriggered > 1}مهمانان{else}یک مهمان{/if}{else}{@$event->getAuthor()->username} [URL:{link controller='User' object=$event->getAuthor() isEmail=true}{/link}]{/if}{if $count > 1 && $count < 4}{if $count == 2 && !$guestTimesTriggered} و {else}, {/if}{@$authors[1]->username} [URL:{link controller='User' object=$authors[1] isEmail=true}{/link}]{if $count == 3}{if !$guestTimesTriggered} و {else}, {/if}{@$authors[2]->username} [URL:{link controller='User' object=$authors[2] isEmail=true}{/link}]{/if}{elseif $count >= 4}{if $guestTimesTriggered},{else} و{/if} {#$count-1} کاربران دیگر{/if}{if $event->getAuthor()->userID && $guestTimesTriggered} و {if $guestTimesTriggered == 1}یک مهمان{else}{#$guestTimesTriggered} مهمانان{/if}{/if}]]></item>
+        <item name="wcf.user.notification.mail.daily.html.intro"><![CDATA[<h2>عزیز {$mailbox->getUser()->username},</h2>
 
-<p>You currently have {#$notifications|count} unread notification{if $notifications|count != 1}s{/if} older than 24 hours:</p>]]></item>
-        <item name="wcf.user.notification.mail.daily.html.outro"><![CDATA[<p>{if $notifications|count > $maximum}Visit your <a href="{link controller='NotificationList' isHtmlEmail=true}{/link}">notification list</a> to view the remaining {#$remaining} notifications.</p>{/if}
+<p>You currently have {#$notifications|count} اعلان خوانده نشده{if $notifications|count != 1}s{/if} قدیمی تر از 24 ساعت:</p>]]></item>
+        <item name="wcf.user.notification.mail.daily.html.outro"><![CDATA[<p>{if $notifications|count > $maximum}بازدید <a href="{link controller='NotificationList' isHtmlEmail=true}{/link}">لیست اعلان شما</a> برای مشاهده بقیه {#$remaining} اعلان ها.</p>{/if}
 
-<p>This is an automatic notification, <b>please do not reply to this email</b>!</p>
+<p>این یک اعلان خودکار است, <b>لطفا به این ایمیل پاسخ ندهید</b>!</p>
 
-<p>Visit your <a href="{link controller='NotificationSettings' isHtmlEmail=true}{/link}">notification settings</a> to configure
-your notifications on <a href="{link isHtmlEmail=true}{/link}">{PAGE_TITLE|phrase}</a> as you wish.</p>
+<p>بازدید <a href="{link controller='NotificationSettings' isHtmlEmail=true}{/link}">تنظیمات اعلان شما</a> برای پیکر بندی اعلان های خود روی
+ <a href="{link isHtmlEmail=true}{/link}">{PAGE_TITLE|phrase}</a> هر طور که میخواهید.</p>
 
-<p>You can <a href="{link controller='NotificationUnsubscribe' isHtmlEmail=true}userID={@$mailbox->getUser()->userID}&token={@$mailbox->getUser()->notificationMailToken}{/link}">disable all email notifications</a> as well.</p>]]></item>
-        <item name="wcf.user.notification.mail.daily.plaintext.intro"><![CDATA[Dear {@$mailbox->getUser()->username},
+<p>شما میتوانید <a href="{link controller='NotificationUnsubscribe' isHtmlEmail=true}userID={@$mailbox->getUser()->userID}&token={@$mailbox->getUser()->notificationMailToken}{/link}">تمام اعلان های ایمیل را غیر فعال کنید</a> همچنین.</p>]]></item>
+        <item name="wcf.user.notification.mail.daily.plaintext.intro"><![CDATA[عزیز {@$mailbox->getUser()->username},
 
-You currently have {#$notifications|count} unread notification{if $notifications|count != 1}s{/if} older than 24 hours:]]></item>
-        <item name="wcf.user.notification.mail.daily.plaintext.outro"><![CDATA[{if $notifications|count > $maximum}Visit your notification list [URL:{link controller='NotificationList' isEmail=true}{/link}] to view the remaining {#$remaining} notifications.
+شما در حال حاضر دارید {#$notifications|count} اعلان خوانده نشده{if $notifications|count != 1}s{/if} قدیمی تر از 24 ساعت:]]></item>
+        <item name="wcf.user.notification.mail.daily.plaintext.outro"><![CDATA[{if $notifications|count > $maximum}از لیست اعلانات خود دیدن کنید [URL:{link controller='NotificationList' isEmail=true}{/link}] برای مشاهده بقیه {#$remaining} اعلان ها.
 
-{/if}This is an automatic notification, PLEASE DO NOT REPLY TO THIS EMAIL!
+{/if}این یک اعلان خودکار است، لطفاً به این ایمیل پاسخ ندهید!
 
-Visit your notification settings [URL:{link controller='NotificationSettings' isEmail=true}{/link}] to configure
-your notifications on {@PAGE_TITLE|phrase} [URL:{link isEmail=true}{/link}] as you wish.
+به تنظیمات اعلان خود مراجعه کنید [URL:{link controller='NotificationSettings' isEmail=true}{/link}] برای پیکربندی اعلان های خود روی
+ {@PAGE_TITLE|phrase} [URL:{link isEmail=true}{/link}] هر طور که میخواهید.
 
-If you wish to disable all email notifications you can do so by visiting:
+اگر می‌خواهید تمام اعلان‌های ایمیل را غیرفعال کنید، می‌توانید این کار را با مراجعه به سایت انجام دهید:
 {link controller='NotificationUnsubscribe' isEmail=true}userID={@$mailbox->getUser()->userID}&token={@$mailbox->getUser()->notificationMailToken}{/link}]]></item>
-        <item name="wcf.user.notification.mail.daily.subject"><![CDATA[{if $count == 1}New Notification{else}{#$count} New Notifications{/if}]]></item>
-        <item name="wcf.user.notification.mail.disabled"><![CDATA[The selected email notifications have been unsubscribed.]]></item>
-        <item name="wcf.user.notification.mail.html.intro"><![CDATA[<h2>Dear {$mailbox->getUser()->username},</h2>]]></item>
-        <item name="wcf.user.notification.mail.html.outro"><![CDATA[<p>This is an automatic notification, <b>please do not reply to this email</b>!</p>
+        <item name="wcf.user.notification.mail.daily.subject"><![CDATA[{if $count == 1}اعلان جدید{else}{#$count} اعلان  جدید{/if}]]></item>
+        <item name="wcf.user.notification.mail.disabled"><![CDATA[اشتراک اعلان‌های ایمیل انتخابی لغو شده است.]]></item>
+        <item name="wcf.user.notification.mail.html.intro"><![CDATA[<h2>عزیز {$mailbox->getUser()->username},</h2>]]></item>
+        <item name="wcf.user.notification.mail.html.outro"><![CDATA[<p>این یک اعلان خودکار است, <b>لطفا به این ایمیل پاسخ ندهید</b>!</p>
 
-<p>Visit your <a href="{link controller='NotificationSettings' isHtmlEmail=true}{/link}">notification settings</a> to configure
-your notifications on <a href="{link isHtmlEmail=true}{/link}">{PAGE_TITLE|phrase}</a> as you wish.</p>
+<p>بازدید <a href="{link controller='NotificationSettings' isHtmlEmail=true}{/link}">تنظیمات اعلان شما</a> برای پیکربندی اعلان های خود روی
+ <a href="{link isHtmlEmail=true}{/link}">{PAGE_TITLE|phrase}</a> هر طور که میخواهید.</p>
 
-<p>You can <a href="{link controller='NotificationUnsubscribe' isHtmlEmail=true}eventID={@$event->eventID}&userID={@$mailbox->getUser()->userID}&token={@$mailbox->getUser()->notificationMailToken}{/link}">disable only this type of notification</a> as well.</p>]]></item>
-        <item name="wcf.user.notification.mail.jumpToContent"><![CDATA[Jump To Content]]></item>
-        <item name="wcf.user.notification.mail.plaintext.intro"><![CDATA[Dear {@$mailbox->getUser()->username},]]></item>
-        <item name="wcf.user.notification.mail.plaintext.outro"><![CDATA[This is an automatic notification, PLEASE DO NOT REPLY TO THIS EMAIL!
+<p>شما میتوانید <a href="{link controller='NotificationUnsubscribe' isHtmlEmail=true}eventID={@$event->eventID}&userID={@$mailbox->getUser()->userID}&token={@$mailbox->getUser()->notificationMailToken}{/link}">فقط این نوع از اعلان ها را غیر فعال کنید</a> همچنین.</p>]]></item>
+        <item name="wcf.user.notification.mail.jumpToContent"><![CDATA[پرش به محتوا]]></item>
+        <item name="wcf.user.notification.mail.plaintext.intro"><![CDATA[عزیز {@$mailbox->getUser()->username},]]></item>
+        <item name="wcf.user.notification.mail.plaintext.outro"><![CDATA[این یک اعلان خودکار است، لطفاً به این ایمیل پاسخ ندهید!
 
-Visit your notification settings [URL:{link controller='NotificationSettings' isEmail=true}{/link}] to configure
-your notifications on {@PAGE_TITLE|phrase} [URL:{link isEmail=true}{/link}] as you wish.
+بازدید تنظیمات اعلان شما [URL:{link controller='NotificationSettings' isEmail=true}{/link}] برای پیکربندی اعلان های خود روی
+ {@PAGE_TITLE|phrase} [URL:{link isEmail=true}{/link}]هر طور که میخواهید.
 
-If you only wish to disable this type of notification you can do so by visiting:
+اگر فقط می خواهید این نوع اعلان را غیرفعال کنید، می توانید این کار را با مراجعه به سایت انجام دهید:
 {link controller='NotificationUnsubscribe' isEmail=true}eventID={@$event->eventID}&userID={@$mailbox->getUser()->userID}&token={@$mailbox->getUser()->notificationMailToken}{/link}]]></item>
-        <item name="wcf.user.notification.mail.subject"><![CDATA[New Notification: {@$title}]]></item>
-        <item name="wcf.user.notification.mail.unsubscribe.confirm"><![CDATA[Unsubscribe selected email notifications]]></item>
-        <item name="wcf.user.notification.mail.unsubscribe.description"><![CDATA[Please select the email notifications you would like to unsubscribe.]]></item>
-        <item name="wcf.user.notification.mail.unsubscribe.event"><![CDATA[Notification Type]]></item>
-        <item name="wcf.user.notification.mail.unsubscribe.event.all"><![CDATA[All Email Notifications]]></item>
-        <item name="wcf.user.notification.mailNotificationType.daily"><![CDATA[Daily Email Notification]]></item>
-        <item name="wcf.user.notification.mailNotificationType.instant"><![CDATA[Instant Email Notification]]></item>
-        <item name="wcf.user.notification.mailNotificationType.none"><![CDATA[No Email Notification]]></item>
-        <item name="wcf.user.notification.mailNotificationType.notSupported"><![CDATA[Email Notifications are not supported.]]></item>
-        <item name="wcf.user.notification.markAllAsConfirmed.confirmMessage"><![CDATA[Do you really want to mark all notifications as read?]]></item>
-        <item name="wcf.user.notification.noMoreNotifications"><![CDATA[You have no recent notifications.]]></item>
-        <item name="wcf.user.notification.noNotifications"><![CDATA[There are no notifications at the moment.]]></item>
-        <item name="wcf.user.notification.notifications"><![CDATA[Notifications]]></item>
-        <item name="wcf.user.notification.notifications.disabled"><![CDATA[Disabled]]></item>
-        <item name="wcf.user.notification.notifications.enabled"><![CDATA[Enabled]]></item>
-        <item name="wcf.user.notification.pageComment.mail.html"><![CDATA[<p>{@$authorList} commented on the page <a href="{$page->getLink()}#comment{@$commentID}">{$page->getTitle()}</a>:</p>]]></item>
-        <item name="wcf.user.notification.pageComment.mail.plaintext"><![CDATA[{@$authorList} commented on the page “{@$page->getTitle()}” [URL:{@$page->getLink()}#comment{@$commentID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
-        <item name="wcf.user.notification.pageComment.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A guest{/if} commented on the page <strong>{$page->getTitle()}</strong>.]]></item>
-        <item name="wcf.user.notification.pageComment.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} commented on the page <strong>{$page->getTitle()}</strong>.]]></item>
-        <item name="wcf.user.notification.pageComment.response.mail.html"><![CDATA[<p>{@$authorList} replied to {$commentAuthor}’s comment on the page <a href="{$page->getLink()}#comment{@$commentID}">{$page->getTitle()}</a>:</p>]]></item>
-        <item name="wcf.user.notification.pageComment.response.mail.plaintext"><![CDATA[{@$authorList} replied to {@$commentAuthor}’s comment on the page “{@$page->getTitle()}” [URL:{@$page->getLink()}#comment{@$commentID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
-        <item name="wcf.user.notification.pageComment.response.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A guest{/if} replied to <strong>{$commentAuthor}</strong>’s comment on the page {$page->getTitle()}.]]></item>
-        <item name="wcf.user.notification.pageComment.response.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} replied to <strong>{$commentAuthor}</strong>’s comment on the page {$page->getTitle()}.]]></item>
-        <item name="wcf.user.notification.pageComment.response.title"><![CDATA[New Reply (Page)]]></item>
-        <item name="wcf.user.notification.pageComment.response.title.stacked"><![CDATA[{#$timesTriggered} new replies (Page)]]></item>
-        <item name="wcf.user.notification.pageComment.responseOwner.mail.html"><![CDATA[<p>{@$authorList} replied to your comment on the page <a href="{$page->getLink()}#comment{@$commentID}">{$page->getTitle()}</a>:</p>]]></item>
-        <item name="wcf.user.notification.pageComment.responseOwner.mail.plaintext"><![CDATA[{@$authorList} replied to your comment on the page “{@$page->getTitle()}” [URL:{@$page->getLink()}#comment{@$commentID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
-        <item name="wcf.user.notification.pageComment.responseOwner.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A guest{/if} replied to your comment on the page <strong>{$page->getTitle()}</strong>.]]></item>
-        <item name="wcf.user.notification.pageComment.responseOwner.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} replied to your comment on the page <strong>{$page->getTitle()}</strong>.]]></item>
-        <item name="wcf.user.notification.pageComment.responseOwner.title"><![CDATA[New reply (Page)]]></item>
-        <item name="wcf.user.notification.pageComment.responseOwner.title.stacked"><![CDATA[{#$timesTriggered} new replies (Page)]]></item>
-        <item name="wcf.user.notification.pageComment.title"><![CDATA[New Comment (Page)]]></item>
-        <item name="wcf.user.notification.pageComment.title.stacked"><![CDATA[{#$timesTriggered} new comments (Page)]]></item>
-        <item name="wcf.user.notification.settings"><![CDATA[Settings]]></item>
-        <item name="wcf.user.notification.showAll"><![CDATA[Display All Notifications]]></item>
-        <item name="wcf.user.notification.stacked.authorList"><![CDATA[{if !$guestTimesTriggered|isset}{assign var=guestTimesTriggered value=0}{/if}{if $count < 4}<strong>{$authors[0]}</strong>{if $count != 1}{if $count == 2 && !$guestTimesTriggered} and {else}, {/if}<strong>{$authors[1]}</strong>{if $count == 3}{if !$guestTimesTriggered} and {else}, {/if} <strong>{$authors[2]}</strong>{/if}{/if}{if $guestTimesTriggered} and {plural value=$guestTimesTriggered one='a guest' other='# guests'}{/if}{else}<strong>{$authors[0]}</strong>{if $guestTimesTriggered},{else} and{/if} {#$others} other users {if $guestTimesTriggered}and {plural value=$guestTimesTriggered one='a guest' other='# guests'}{/if}{/if}]]></item>
-        <item name="wcf.user.notification.status.active"><![CDATA[Active]]></item>
-        <item name="wcf.user.notification.status.email"><![CDATA[Email]]></item>
-        <item name="wcf.user.notification.trophy.received.message"><![CDATA[You received the trophy <strong>{$userTrophy->getTrophy()}</strong>.]]></item>
-        <item name="wcf.user.notification.trophy.received.title"><![CDATA[Trophy received]]></item>
-        <item name="wcf.user.notification.userRegistration.mail.html"><![CDATA[<p>{@$authorList} {if $count == 1}has{else}have{/if} registered:</p>]]></item>
-        <item name="wcf.user.notification.userRegistration.mail.plaintext"><![CDATA[{@$authorList} {if $count == 1}has{else}have{/if} registered.]]></item>
-        <item name="wcf.user.notification.userRegistration.message"><![CDATA[<strong>{$author}</strong> has registered.]]></item>
-        <item name="wcf.user.notification.userRegistration.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} have registered.]]></item>
-        <item name="wcf.user.notification.userRegistration.title"><![CDATA[New user registration]]></item>
-        <item name="wcf.user.notification.userRegistration.title.stacked"><![CDATA[{#$count} new user registrations]]></item>
+        <item name="wcf.user.notification.mail.subject"><![CDATA[اعلان جدید: {@$title}]]></item>
+        <item name="wcf.user.notification.mail.unsubscribe.confirm"><![CDATA[لغو اشتراک اعلان های ایمیل انتخاب شده]]></item>
+        <item name="wcf.user.notification.mail.unsubscribe.description"><![CDATA[لطفاً اعلان‌های ایمیلی را که می‌خواهید لغو اشتراک کنید، انتخاب کنید.]]></item>
+        <item name="wcf.user.notification.mail.unsubscribe.event"><![CDATA[نوع اعلان]]></item>
+        <item name="wcf.user.notification.mail.unsubscribe.event.all"><![CDATA[همه اعلان های ایمیل]]></item>
+        <item name="wcf.user.notification.mailNotificationType.daily"><![CDATA[اعلان ایمیل روزانه]]></item>
+        <item name="wcf.user.notification.mailNotificationType.instant"><![CDATA[اعلان ایمیل فوری]]></item>
+        <item name="wcf.user.notification.mailNotificationType.none"><![CDATA[بدون اعلان ایمیل]]></item>
+        <item name="wcf.user.notification.mailNotificationType.notSupported"><![CDATA[اعلان‌های ایمیل پشتیبانی نمی‌شوند.]]></item>
+        <item name="wcf.user.notification.markAllAsConfirmed.confirmMessage"><![CDATA[آیا واقعاً می خواهید همه اعلان ها را به عنوان خوانده شده علامت گذاری کنید؟?]]></item>
+        <item name="wcf.user.notification.noMoreNotifications"><![CDATA[هیچ اعلان اخیری ندارید.]]></item>
+        <item name="wcf.user.notification.noNotifications"><![CDATA[در حال حاضر هیچ اعلانی وجود ندارد.]]></item>
+        <item name="wcf.user.notification.notifications"><![CDATA[اعلان ها]]></item>
+        <item name="wcf.user.notification.notifications.disabled"><![CDATA[غیر فعال شده]]></item>
+        <item name="wcf.user.notification.notifications.enabled"><![CDATA[فعال شده]]></item>
+        <item name="wcf.user.notification.pageComment.mail.html"><![CDATA[<p>{@$authorList} در صفحه نظر داد <a href="{$page->getLink()}#comment{@$commentID}">{$page->getTitle()}</a>:</p>]]></item>
+        <item name="wcf.user.notification.pageComment.mail.plaintext"><![CDATA[{@$authorList} در صفحه نظر داد “{@$page->getTitle()}” [URL:{@$page->getLink()}#comment{@$commentID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+        <item name="wcf.user.notification.pageComment.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A guest{/if} در صفحه نظر داد <strong>{$page->getTitle()}</strong>.]]></item>
+        <item name="wcf.user.notification.pageComment.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} در صفحه نظر داد <strong>{$page->getTitle()}</strong>.]]></item>
+        <item name="wcf.user.notification.pageComment.response.mail.html"><![CDATA[<p>{@$authorList} پاسخ داد به نظر {$commentAuthor}در صفحه <a href="{$page->getLink()}#comment{@$commentID}">{$page->getTitle()}</a>:</p>]]></item>
+        <item name="wcf.user.notification.pageComment.response.mail.plaintext"><![CDATA[{@$authorList} پاسخ داد به نظر {@$commentAuthor}در صفحه “{@$page->getTitle()}” [URL:{@$page->getLink()}#comment{@$commentID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+        <item name="wcf.user.notification.pageComment.response.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}یک مهمان{/if} پاسخ داد به نظر <strong>{$commentAuthor}</strong>در صفحه {$page->getTitle()}.]]></item>
+        <item name="wcf.user.notification.pageComment.response.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} پاسخ داد به نظر <strong>{$commentAuthor}</strong>در صفحه {$page->getTitle()}.]]></item>
+        <item name="wcf.user.notification.pageComment.response.title"><![CDATA[پاسخ جدید (صفحه)]]></item>
+        <item name="wcf.user.notification.pageComment.response.title.stacked"><![CDATA[{#$timesTriggered} پاسخ های جدید (صفحه)]]></item>
+        <item name="wcf.user.notification.pageComment.responseOwner.mail.html"><![CDATA[<p>{@$authorList} به نظر شما در صفحه پاسخ داد <a href="{$page->getLink()}#comment{@$commentID}">{$page->getTitle()}</a>:</p>]]></item>
+        <item name="wcf.user.notification.pageComment.responseOwner.mail.plaintext"><![CDATA[{@$authorList} به نظر شما در صفحه پاسخ داد “{@$page->getTitle()}” [URL:{@$page->getLink()}#comment{@$commentID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+        <item name="wcf.user.notification.pageComment.responseOwner.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}یک مهمان{/if}به نظر شما در صفحه پاسخ داد <strong>{$page->getTitle()}</strong>.]]></item>
+        <item name="wcf.user.notification.pageComment.responseOwner.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language}به نظر شما در صفحه پاسخ داد <strong>{$page->getTitle()}</strong>.]]></item>
+        <item name="wcf.user.notification.pageComment.responseOwner.title"><![CDATA[پاسخ جدید (صفحه)]]></item>
+        <item name="wcf.user.notification.pageComment.responseOwner.title.stacked"><![CDATA[{#$timesTriggered} پاسخ های جدید (صفحه)]]></item>
+        <item name="wcf.user.notification.pageComment.title"><![CDATA[نظر جدید (صقحه)]]></item>
+        <item name="wcf.user.notification.pageComment.title.stacked"><![CDATA[{#$timesTriggered} نظرات جدید (صفحه)]]></item>
+        <item name="wcf.user.notification.settings"><![CDATA[تنظیمات]]></item>
+        <item name="wcf.user.notification.showAll"><![CDATA[نمایش تمام اعلان ها]]></item>
+        <item name="wcf.user.notification.stacked.authorList"><![CDATA[{if !$guestTimesTriggered|isset}{assign var=guestTimesTriggered value=0}{/if}{if $count < 4}<strong>{$authors[0]}</strong>{if $count != 1}{if $count == 2 && !$guestTimesTriggered} و {else}, {/if}<strong>{$authors[1]}</strong>{if $count == 3}{if !$guestTimesTriggered} و {else}, {/if} <strong>{$authors[2]}</strong>{/if}{/if}{if $guestTimesTriggered} و {plural value=$guestTimesTriggered one='a guest' other='# guests'}{/if}{else}<strong>{$authors[0]}</strong>{if $guestTimesTriggered},{else} و{/if} {#$others} کاربران دیگر {if $guestTimesTriggered}and {plural value=$guestTimesTriggered one='a guest' other='# guests'}{/if}{/if}]]></item>
+        <item name="wcf.user.notification.status.active"><![CDATA[فعال]]></item>
+        <item name="wcf.user.notification.status.email"><![CDATA[ایمیل]]></item>
+        <item name="wcf.user.notification.trophy.received.message"><![CDATA[شما جایزه را دریافت کردید <strong>{$userTrophy->getTrophy()}</strong>.]]></item>
+        <item name="wcf.user.notification.trophy.received.title"><![CDATA[جایزه دریافت شد]]></item>
+        <item name="wcf.user.notification.userRegistration.mail.html"><![CDATA[<p>{@$authorList} {if $count == 1}ثبت شده است{else}ثبت شده اند{/if} </p>]]></item>
+        <item name="wcf.user.notification.userRegistration.mail.plaintext"><![CDATA[{@$authorList} {if $count == 1}ثبت شده است{else}ثبت شده اند{/if} .]]></item>
+        <item name="wcf.user.notification.userRegistration.message"><![CDATA[<strong>{$author}</strong> ثبت شده است.]]></item>
+        <item name="wcf.user.notification.userRegistration.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} ثبت شده اند.]]></item>
+        <item name="wcf.user.notification.userRegistration.title"><![CDATA[ثبت نام کاربر جدید]]></item>
+        <item name="wcf.user.notification.userRegistration.title.stacked"><![CDATA[{#$count} ثبت نام کاربران جدید]]></item>
     </category>
     <category name="wcf.user.objectWatch">
-        <item name="wcf.user.objectWatch.button.subscribe"><![CDATA[Subscribe]]></item>
-        <item name="wcf.user.objectWatch.enableNotification.com.woltlab.blog.blog"><![CDATA[Notify me of new blog articles.]]></item>
-        <item name="wcf.user.objectWatch.enableNotification.com.woltlab.blog.category"><![CDATA[Notify me of new articles in this category.]]></item>
-        <item name="wcf.user.objectWatch.enableNotification.com.woltlab.calendar.category"><![CDATA[Notify me of new events in this category.]]></item>
-        <item name="wcf.user.objectWatch.enableNotification.com.woltlab.filebase.category"><![CDATA[Notify me of new files.]]></item>
-        <item name="wcf.user.objectWatch.enableNotification.com.woltlab.filebase.file"><![CDATA[Notify me of new file versions.]]></item>
-        <item name="wcf.user.objectWatch.enableNotification.com.woltlab.gallery.category"><![CDATA[Notify me of new images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and videos{/if} in this category.]]></item>
-        <item name="wcf.user.objectWatch.enableNotification.com.woltlab.wbb.board"><![CDATA[Receive notifications for new threads]]></item>
-        <item name="wcf.user.objectWatch.enableNotification.com.woltlab.wbb.thread"><![CDATA[Notify me of new posts.]]></item>
-        <item name="wcf.user.objectWatch.enableNotification.com.woltlab.wcf.article.category"><![CDATA[Notify me of new articles.]]></item>
-        <item name="wcf.user.objectWatch.manageSubscription"><![CDATA[Manage Subscription]]></item>
-        <item name="wcf.user.objectWatch.subscribe.com.woltlab.blog.blog"><![CDATA[Watch blog]]></item>
-        <item name="wcf.user.objectWatch.subscribe.com.woltlab.blog.category"><![CDATA[Watch this category]]></item>
-        <item name="wcf.user.objectWatch.subscribe.com.woltlab.calendar.category"><![CDATA[Watch this category]]></item>
-        <item name="wcf.user.objectWatch.subscribe.com.woltlab.filebase.category"><![CDATA[Watch this category]]></item>
-        <item name="wcf.user.objectWatch.subscribe.com.woltlab.filebase.file"><![CDATA[Watch this file]]></item>
-        <item name="wcf.user.objectWatch.subscribe.com.woltlab.gallery.category"><![CDATA[Watch this category]]></item>
-        <item name="wcf.user.objectWatch.subscribe.com.woltlab.wbb.board"><![CDATA[Watch this forum]]></item>
-        <item name="wcf.user.objectWatch.subscribe.com.woltlab.wbb.thread"><![CDATA[Watch this thread]]></item>
-        <item name="wcf.user.objectWatch.subscribe.com.woltlab.wcf.article.category"><![CDATA[Watch this category]]></item>
-        <item name="wcf.user.objectWatch.unsubscribe.com.woltlab.blog.blog"><![CDATA[Unwatch this blog]]></item>
-        <item name="wcf.user.objectWatch.unsubscribe.com.woltlab.blog.category"><![CDATA[Unwatch this category]]></item>
-        <item name="wcf.user.objectWatch.unsubscribe.com.woltlab.calendar.category"><![CDATA[Unwatch this category]]></item>
-        <item name="wcf.user.objectWatch.unsubscribe.com.woltlab.filebase.category"><![CDATA[Unwatch this category]]></item>
-        <item name="wcf.user.objectWatch.unsubscribe.com.woltlab.filebase.file"><![CDATA[Unwatch this file]]></item>
-        <item name="wcf.user.objectWatch.unsubscribe.com.woltlab.gallery.category"><![CDATA[Unwatch this category]]></item>
-        <item name="wcf.user.objectWatch.unsubscribe.com.woltlab.wbb.board"><![CDATA[Unwatch this forum]]></item>
-        <item name="wcf.user.objectWatch.unsubscribe.com.woltlab.wbb.thread"><![CDATA[Unwatch this thread]]></item>
-        <item name="wcf.user.objectWatch.unsubscribe.com.woltlab.wcf.article.category"><![CDATA[Unwatch this category]]></item>
+        <item name="wcf.user.objectWatch.button.subscribe"><![CDATA[اشتراک]]></item>
+        <item name="wcf.user.objectWatch.enableNotification.com.woltlab.blog.blog"><![CDATA[از مقالات جدید وبلاگ به من اطلاع دهید.]]></item>
+        <item name="wcf.user.objectWatch.enableNotification.com.woltlab.blog.category"><![CDATA[از مقالات جدید در این دسته به من اطلاع دهید.]]></item>
+        <item name="wcf.user.objectWatch.enableNotification.com.woltlab.calendar.category"><![CDATA[از رویدادهای جدید در این دسته به من اطلاع دهید.]]></item>
+        <item name="wcf.user.objectWatch.enableNotification.com.woltlab.filebase.category"><![CDATA[فایل های جدید را به من اطلاع دهید.]]></item>
+        <item name="wcf.user.objectWatch.enableNotification.com.woltlab.filebase.file"><![CDATA[من را از نسخه های فایل جدید مطلع کنید.]]></item>
+        <item name="wcf.user.objectWatch.enableNotification.com.woltlab.gallery.category"><![CDATA[من را از تصاویر جدید مطلع کنید{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو ها{/if} در این دسته.]]></item>
+        <item name="wcf.user.objectWatch.enableNotification.com.woltlab.wbb.board"><![CDATA[دریافت اعلان برای موضوعات جدید]]></item>
+        <item name="wcf.user.objectWatch.enableNotification.com.woltlab.wbb.thread"><![CDATA[من را از پست های جدید مطلع کنید.]]></item>
+        <item name="wcf.user.objectWatch.enableNotification.com.woltlab.wcf.article.category"><![CDATA[از مقالات جدید به من اطلاع دهید.]]></item>
+        <item name="wcf.user.objectWatch.manageSubscription"><![CDATA[مدیریت اشتراک]]></item>
+        <item name="wcf.user.objectWatch.subscribe.com.woltlab.blog.blog"><![CDATA[تماشای وبلاگ]]></item>
+        <item name="wcf.user.objectWatch.subscribe.com.woltlab.blog.category"><![CDATA[تماشای این دسته]]></item>
+        <item name="wcf.user.objectWatch.subscribe.com.woltlab.calendar.category"><![CDATA[تماشای این دسته]]></item>
+        <item name="wcf.user.objectWatch.subscribe.com.woltlab.filebase.category"><![CDATA[تماشای این دسته]]></item>
+        <item name="wcf.user.objectWatch.subscribe.com.woltlab.filebase.file"><![CDATA[تماشای این فایل]]></item>
+        <item name="wcf.user.objectWatch.subscribe.com.woltlab.gallery.category"><![CDATA[تماشای این دسته]]></item>
+        <item name="wcf.user.objectWatch.subscribe.com.woltlab.wbb.board"><![CDATA[تماشای این انجمن]]></item>
+        <item name="wcf.user.objectWatch.subscribe.com.woltlab.wbb.thread"><![CDATA[تماشای این موضوع]]></item>
+        <item name="wcf.user.objectWatch.subscribe.com.woltlab.wcf.article.category"><![CDATA[تماشای این دسته]]></item>
+        <item name="wcf.user.objectWatch.unsubscribe.com.woltlab.blog.blog"><![CDATA[نادیده گرفتن این وبلاگ]]></item>
+        <item name="wcf.user.objectWatch.unsubscribe.com.woltlab.blog.category"><![CDATA[نادیده گرفتن این دسته]]></item>
+        <item name="wcf.user.objectWatch.unsubscribe.com.woltlab.calendar.category"><![CDATA[نادیده گرفتن این دسته]]></item>
+        <item name="wcf.user.objectWatch.unsubscribe.com.woltlab.filebase.category"><![CDATA[نادیده گرفتن این دسته]]></item>
+        <item name="wcf.user.objectWatch.unsubscribe.com.woltlab.filebase.file"><![CDATA[نادیده گرفتن این فایل]]></item>
+        <item name="wcf.user.objectWatch.unsubscribe.com.woltlab.gallery.category"><![CDATA[نادیده گرفتن این دسته]]></item>
+        <item name="wcf.user.objectWatch.unsubscribe.com.woltlab.wbb.board"><![CDATA[نادیده گرفتن این انجمن]]></item>
+        <item name="wcf.user.objectWatch.unsubscribe.com.woltlab.wbb.thread"><![CDATA[نادیده گرفتن این موضوع]]></item>
+        <item name="wcf.user.objectWatch.unsubscribe.com.woltlab.wcf.article.category"><![CDATA[نادیده گرفتن این دسته]]></item>
     </category>
     <category name="wcf.user.option">
-        <item name="wcf.user.option.aboutMe"><![CDATA[About Me]]></item>
-        <item name="wcf.user.option.adminCanMail"><![CDATA[Accept emails sent by administrators]]></item>
-        <item name="wcf.user.option.adminComment"><![CDATA[Comment (internal)]]></item>
-        <item name="wcf.user.option.birthday"><![CDATA[Birthday]]></item>
-        <item name="wcf.user.option.birthdayShowYear"><![CDATA[Display year of birth]]></item>
-        <item name="wcf.user.option.birthdayShowYear.description"><![CDATA[Allows users to view your age.]]></item>
-        <item name="wcf.user.option.calendarEventNotificationTime"><![CDATA[Event Reminder]]></item>
-        <item name="wcf.user.option.calendarEventNotificationTime.172800"><![CDATA[Two Days Before]]></item>
-        <item name="wcf.user.option.calendarEventNotificationTime.2419200"><![CDATA[Four Weeks Before]]></item>
-        <item name="wcf.user.option.calendarEventNotificationTime.3600"><![CDATA[One Hour Before]]></item>
-        <item name="wcf.user.option.calendarEventNotificationTime.43200"><![CDATA[Twelve Hours Before]]></item>
-        <item name="wcf.user.option.calendarEventNotificationTime.604800"><![CDATA[One Week Before]]></item>
-        <item name="wcf.user.option.calendarEventNotificationTime.7200"><![CDATA[Two Hours Before]]></item>
-        <item name="wcf.user.option.calendarEventNotificationTime.86400"><![CDATA[One Day Before]]></item>
-        <item name="wcf.user.option.calendarEventNotificationTime.description"><![CDATA[Choose when to be notified of upcoming events.]]></item>
-        <item name="wcf.user.option.calendarShowBirthdays"><![CDATA[Birthdays on Calendar]]></item>
-        <item name="wcf.user.option.calendarShowBirthdays.description"><![CDATA[Choose which users’ birthdays to display.]]></item>
-        <item name="wcf.user.option.calendarShowBirthdays.everyone"><![CDATA[Everyone]]></item>
-        <item name="wcf.user.option.calendarShowBirthdays.following"><![CDATA[Followed Users]]></item>
-        <item name="wcf.user.option.calendarShowBirthdays.nobody"><![CDATA[Nobody]]></item>
-        <item name="wcf.user.option.canSendConversation"><![CDATA[Can Add Me to Conversations]]></item>
-        <item name="wcf.user.option.canViewEmailAddress"><![CDATA[Can View My Email Address]]></item>
-        <item name="wcf.user.option.canViewOnlineStatus"><![CDATA[Can View My Online Status]]></item>
-        <item name="wcf.user.option.canViewProfile"><![CDATA[Can View My Profile]]></item>
-        <item name="wcf.user.option.canViewTrophies"><![CDATA[Can View Trophies]]></item>
-        <item name="wcf.user.option.canWriteProfileComments"><![CDATA[Can Write Comments on My Wall]]></item>
-        <item name="wcf.user.option.category.profile"><![CDATA[Personal Data]]></item>
-        <item name="wcf.user.option.category.profile.aboutMe"><![CDATA[About Me]]></item>
-        <item name="wcf.user.option.category.profile.contact"><![CDATA[Contact Options]]></item>
-        <item name="wcf.user.option.category.profile.personal"><![CDATA[Personal Details]]></item>
-        <item name="wcf.user.option.category.settings"><![CDATA[Settings]]></item>
-        <item name="wcf.user.option.category.settings.general"><![CDATA[General]]></item>
-        <item name="wcf.user.option.category.settings.general.appearance"><![CDATA[Appearance]]></item>
-        <item name="wcf.user.option.category.settings.general.date"><![CDATA[Date and Time]]></item>
-        <item name="wcf.user.option.category.settings.general.interface"><![CDATA[Interface]]></item>
-        <item name="wcf.user.option.category.settings.privacy"><![CDATA[Privacy]]></item>
-        <item name="wcf.user.option.category.settings.privacy.content"><![CDATA[Content]]></item>
-        <item name="wcf.user.option.category.settings.privacy.messaging"><![CDATA[Messaging]]></item>
-        <item name="wcf.user.option.conversationMessagesPerPage"><![CDATA[Messages per Page]]></item>
-        <item name="wcf.user.option.conversationsPerPage"><![CDATA[Conversations per Page]]></item>
-        <item name="wcf.user.option.editorPastePreserveFormatting"><![CDATA[Preserve text formatting when pasting into the editor]]></item>
-        <item name="wcf.user.option.editorPastePreserveFormatting.description"><![CDATA[Disabling this option will force any content to be pasted from clipboard as plain text, stripping all formatting.]]></item>
-        <item name="wcf.user.option.enableEmbeddedMedia"><![CDATA[Display all external content]]></item>
-        <item name="wcf.user.option.facebook"><![CDATA[Facebook]]></item>
-        <item name="wcf.user.option.gender"><![CDATA[Gender]]></item>
-        <item name="wcf.user.option.hobbies"><![CDATA[Hobbies]]></item>
-        <item name="wcf.user.option.homepage"><![CDATA[Website]]></item>
-        <item name="wcf.user.option.location"><![CDATA[Location]]></item>
-        <item name="wcf.user.option.occupation"><![CDATA[Occupation]]></item>
-        <item name="wcf.user.option.postsPerPage"><![CDATA[Posts per Page]]></item>
-        <item name="wcf.user.option.searchBooleanOption"><![CDATA[User’s selection for “{$option->getTitle()}”:]]></item>
-        <item name="wcf.user.option.searchRadioButtonOption"><![CDATA[User’s selection for “{$option->getTitle()}”:]]></item>
-        <item name="wcf.user.option.searchTextOption"><![CDATA[“{$option->getTitle()}” contains:]]></item>
-        <item name="wcf.user.option.showSignature"><![CDATA[Display members’ signatures]]></item>
-        <item name="wcf.user.option.skype"><![CDATA[Skype]]></item>
-        <item name="wcf.user.option.threadsPerPage"><![CDATA[Threads per Page]]></item>
-        <item name="wcf.user.option.timezone"><![CDATA[Timezone]]></item>
-        <item name="wcf.user.option.twitter"><![CDATA[Twitter]]></item>
-        <item name="wcf.user.option.watchThreadOnReply"><![CDATA[Automatically watch threads when I have replied to them]]></item>
+        <item name="wcf.user.option.aboutMe"><![CDATA[درباره من]]></item>
+        <item name="wcf.user.option.adminCanMail"><![CDATA[ایمیل های ارسال شده توسط مدیران را بپذیرید]]></item>
+        <item name="wcf.user.option.adminComment"><![CDATA[نظر (داخلی)]]></item>
+        <item name="wcf.user.option.birthday"><![CDATA[تاریخ تولد]]></item>
+        <item name="wcf.user.option.birthdayShowYear"><![CDATA[نمایش سال تولد]]></item>
+        <item name="wcf.user.option.birthdayShowYear.description"><![CDATA[به کاربران اجازه می دهد سن شما را مشاهده کنند.]]></item>
+        <item name="wcf.user.option.calendarEventNotificationTime"><![CDATA[یادآوری رویداد]]></item>
+        <item name="wcf.user.option.calendarEventNotificationTime.172800"><![CDATA[دو روز قبل]]></item>
+        <item name="wcf.user.option.calendarEventNotificationTime.2419200"><![CDATA[چهار هفته قبل]]></item>
+        <item name="wcf.user.option.calendarEventNotificationTime.3600"><![CDATA[یک ساعت قبل]]></item>
+        <item name="wcf.user.option.calendarEventNotificationTime.43200"><![CDATA[دوازده ساعت قبل]]></item>
+        <item name="wcf.user.option.calendarEventNotificationTime.604800"><![CDATA[یک هفته قبل]]></item>
+        <item name="wcf.user.option.calendarEventNotificationTime.7200"><![CDATA[دو ساعت قبل]]></item>
+        <item name="wcf.user.option.calendarEventNotificationTime.86400"><![CDATA[یک روز قبل]]></item>
+        <item name="wcf.user.option.calendarEventNotificationTime.description"><![CDATA[انتخاب کنید چه زمانی از رویدادهای آینده مطلع شوید.]]></item>
+        <item name="wcf.user.option.calendarShowBirthdays"><![CDATA[تولدها در تقویم]]></item>
+        <item name="wcf.user.option.calendarShowBirthdays.description"><![CDATA[انتخاب کنید تولد کدام کاربران نمایش داده شود.]]></item>
+        <item name="wcf.user.option.calendarShowBirthdays.everyone"><![CDATA[همه]]></item>
+        <item name="wcf.user.option.calendarShowBirthdays.following"><![CDATA[کاربران دنبال شده]]></item>
+        <item name="wcf.user.option.calendarShowBirthdays.nobody"><![CDATA[هیچ کس]]></item>
+        <item name="wcf.user.option.canSendConversation"><![CDATA[می تواند من را به مکالمات اضافه کند]]></item>
+        <item name="wcf.user.option.canViewEmailAddress"><![CDATA[میتواند ادرس ایمیل من را مشاهده کند]]></item>
+        <item name="wcf.user.option.canViewOnlineStatus"><![CDATA[میتواند وضعیت انلاین من را مشاهده کند]]></item>
+        <item name="wcf.user.option.canViewProfile"><![CDATA[می تواند نمایه من را مشاهده کند]]></item>
+        <item name="wcf.user.option.canViewTrophies"><![CDATA[می تواند جوایز را مشاهده کند]]></item>
+        <item name="wcf.user.option.canWriteProfileComments"><![CDATA[می تواند نظرات خود را روی دیوار من بنویسد]]></item>
+        <item name="wcf.user.option.category.profile"><![CDATA[اطلاعات شخصی]]></item>
+        <item name="wcf.user.option.category.profile.aboutMe"><![CDATA[درباره من]]></item>
+        <item name="wcf.user.option.category.profile.contact"><![CDATA[گزینه های تماس]]></item>
+        <item name="wcf.user.option.category.profile.personal"><![CDATA[جزئیات شخصی]]></item>
+        <item name="wcf.user.option.category.settings"><![CDATA[تنظیمات]]></item>
+        <item name="wcf.user.option.category.settings.general"><![CDATA[عمومی]]></item>
+        <item name="wcf.user.option.category.settings.general.appearance"><![CDATA[ظاهر]]></item>
+        <item name="wcf.user.option.category.settings.general.date"><![CDATA[تاریخ و زمان]]></item>
+        <item name="wcf.user.option.category.settings.general.interface"><![CDATA[رابط]]></item>
+        <item name="wcf.user.option.category.settings.privacy"><![CDATA[حریم خصوصی]]></item>
+        <item name="wcf.user.option.category.settings.privacy.content"><![CDATA[محتوا]]></item>
+        <item name="wcf.user.option.category.settings.privacy.messaging"><![CDATA[پیام رسانی]]></item>
+        <item name="wcf.user.option.conversationMessagesPerPage"><![CDATA[پیام در هر صفحه]]></item>
+        <item name="wcf.user.option.conversationsPerPage"><![CDATA[مکالمات در هر صفحه]]></item>
+        <item name="wcf.user.option.editorPastePreserveFormatting"><![CDATA[هنگام چسباندن در ویرایشگر، قالب بندی متن را حفظ کنید]]></item>
+        <item name="wcf.user.option.editorPastePreserveFormatting.description"><![CDATA[غیرفعال کردن این گزینه باعث می‌شود هر محتوایی به‌عنوان متن ساده از کلیپ‌بورد جای‌گذاری شود و تمام قالب‌بندی‌ها حذف شود..]]></item>
+        <item name="wcf.user.option.enableEmbeddedMedia"><![CDATA[نمایش تمام محتوای خارجی]]></item>
+        <item name="wcf.user.option.facebook"><![CDATA[فیسبوک]]></item>
+        <item name="wcf.user.option.gender"><![CDATA[جنسیت]]></item>
+        <item name="wcf.user.option.hobbies"><![CDATA[سرگرمی ها]]></item>
+        <item name="wcf.user.option.homepage"><![CDATA[وب سایت]]></item>
+        <item name="wcf.user.option.location"><![CDATA[محل]]></item>
+        <item name="wcf.user.option.occupation"><![CDATA[اشتغال]]></item>
+        <item name="wcf.user.option.postsPerPage"><![CDATA[پست در هر صفحه]]></item>
+        <item name="wcf.user.option.searchBooleanOption"><![CDATA[انتخاب کاربر برای “{$option->getTitle()}”:]]></item>
+        <item name="wcf.user.option.searchRadioButtonOption"><![CDATA[انتخاب کاربر برای “{$option->getTitle()}”:]]></item>
+        <item name="wcf.user.option.searchTextOption"><![CDATA[“{$option->getTitle()}” شامل:]]></item>
+        <item name="wcf.user.option.showSignature"><![CDATA[نمایش امضای اعضا]]></item>
+        <item name="wcf.user.option.skype"><![CDATA[اسکایپ]]></item>
+        <item name="wcf.user.option.threadsPerPage"><![CDATA[موضوعات در هر صفحه]]></item>
+        <item name="wcf.user.option.timezone"><![CDATA[منطقه زمانی]]></item>
+        <item name="wcf.user.option.twitter"><![CDATA[توییتر]]></item>
+        <item name="wcf.user.option.watchThreadOnReply"><![CDATA[وقتی به موضوعات پاسخ دادم به صورت خودکار تماشا کنید]]></item>
     </category>
     <category name="wcf.user.profile">
-        <item name="wcf.user.profile.content.about.noPublicData"><![CDATA[{if $userID == $__wcf->getUser()->userID}You have not provided any details yet.{else}There are no details visible to you.{/if}]]></item>
-        <item name="wcf.user.profile.content.recentActivity.noEntries"><![CDATA[There are no recent activities at the moment.]]></item>
-        <item name="wcf.user.profile.content.wall.comment"><![CDATA[Wall Comment]]></item>
-        <item name="wcf.user.profile.content.wall.commentResponse"><![CDATA[Reply to wall comment]]></item>
-        <item name="wcf.user.profile.content.wall.noEntries"><![CDATA[There are no comments at the moment.]]></item>
-        <item name="wcf.user.profile.followers"><![CDATA[{$user->username}’s Followers]]></item>
-        <item name="wcf.user.profile.following"><![CDATA[{$user->username} Follows]]></item>
-        <item name="wcf.user.profile.management"><![CDATA[Management]]></item>
-        <item name="wcf.user.profile.menu.about"><![CDATA[About Me]]></item>
-        <item name="wcf.user.profile.menu.albums"><![CDATA[Albums]]></item>
-        <item name="wcf.user.profile.menu.blogs"><![CDATA[Blogs]]></item>
-        <item name="wcf.user.profile.menu.likes"><![CDATA[Reactions]]></item>
-        <item name="wcf.user.profile.menu.recentActivity"><![CDATA[Recent Activity]]></item>
-        <item name="wcf.user.profile.menu.wall"><![CDATA[Wall]]></item>
-        <item name="wcf.user.profile.menu.warning"><![CDATA[Warnings]]></item>
-        <item name="wcf.user.profile.oldUsername"><![CDATA[Used to be called {$user->getOldUsername()}]]></item>
-        <item name="wcf.user.profile.protected"><![CDATA[This member limits who may view their full profile.]]></item>
-        <item name="wcf.user.profile.recentActivity.bestAnswer"><![CDATA[Marked <a href="{$post->getLink()}" class="wbbPostLink" data-object-id="{@$post->postID}">{$post->username}’s post</a> in the thread {if $thread->hasLabels()}<ul class="labelList">{foreach from=$thread->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}{anchor object=$thread class='wbbTopicLink'} as the best answer.]]></item>
-        <item name="wcf.user.profile.recentActivity.follow"><![CDATA[Now follows <a href="{link controller='User' object=$user}{/link}">{$user->username}</a>.]]></item>
-        <item name="wcf.user.profile.recentActivity.likedPost"><![CDATA[Reacted with <span title="{$reactionType->getTitle()}" class="jsTooltip">{@$reactionType->renderIcon()}</span> to <a href="{$post->getLink()}" class="wbbPostLink" data-object-id="{@$post->postID}">{$post->username}’s post</a> in the thread {if $thread->hasLabels()}<ul class="labelList">{foreach from=$thread->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}{anchor object=$thread class='wbbTopicLink'}.]]></item>
-        <item name="wcf.user.profile.recentActivity.post"><![CDATA[Replied to the thread {if $thread->hasLabels()}<ul class="labelList">{foreach from=$thread->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}<a href="{$post->getLink()}" class="wbbPostLink" data-object-id="{@$post->postID}">{$thread->topic}</a>.]]></item>
-        <item name="wcf.user.profile.recentActivity.profileComment"><![CDATA[Wrote a comment on <a href="{link controller='User' object=$user}{/link}#wall/comment{@$commentID}">{$user->username}’s wall</a>.]]></item>
-        <item name="wcf.user.profile.recentActivity.profileCommentResponse"><![CDATA[Replied to a comment by <a href="{link controller='User' object=$commentAuthor}{/link}">{$commentAuthor->username}</a> on <a href="{link controller='User' object=$user}{/link}#wall/comment{@$commentID}/response{@$responseID}">{$user->username}’s wall</a>.]]></item>
-        <item name="wcf.user.profile.recentActivity.thread"><![CDATA[Posted the thread {if $thread->hasLabels()}<ul class="labelList">{foreach from=$thread->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}{anchor object=$thread class='wbbTopicLink'}.]]></item>
-        <item name="wcf.user.profile.report"><![CDATA[Report User Profile]]></item>
-        <item name="wcf.user.profile.title"><![CDATA[User profile of {$user->username}]]></item>
-        <item name="wcf.user.profile.visitors"><![CDATA[Profile Visitors]]></item>
+        <item name="wcf.user.profile.content.about.noPublicData"><![CDATA[{if $userID == $__wcf->getUser()->userID}شما هنوز هیچ جزئیاتی ارائه نکرده اید.{else}هیچ جزئیاتی برای شما قابل مشاهده نیست.{/if}]]></item>
+        <item name="wcf.user.profile.content.recentActivity.noEntries"><![CDATA[در حال حاضر هیچ فعالیت اخیری وجود ندارد.]]></item>
+        <item name="wcf.user.profile.content.wall.comment"><![CDATA[نظر دیوار]]></item>
+        <item name="wcf.user.profile.content.wall.commentResponse"><![CDATA[پاسخ به نظر دیوار]]></item>
+        <item name="wcf.user.profile.content.wall.noEntries"><![CDATA[هیچ نظری در حال حاضر وجود ندارد.]]></item>
+        <item name="wcf.user.profile.followers"><![CDATA[دنبال کننده های{$user->username}]]></item>
+        <item name="wcf.user.profile.following"><![CDATA[{$user->username} دنبال میکند]]></item>
+        <item name="wcf.user.profile.management"><![CDATA[مدیریت]]></item>
+        <item name="wcf.user.profile.menu.about"><![CDATA[درباره من]]></item>
+        <item name="wcf.user.profile.menu.albums"><![CDATA[البوم ها]]></item>
+        <item name="wcf.user.profile.menu.blogs"><![CDATA[وبلاگ ها]]></item>
+        <item name="wcf.user.profile.menu.likes"><![CDATA[واکنش ها]]></item>
+        <item name="wcf.user.profile.menu.recentActivity"><![CDATA[فعالیت اخیر]]></item>
+        <item name="wcf.user.profile.menu.wall"><![CDATA[دیوار]]></item>
+        <item name="wcf.user.profile.menu.warning"><![CDATA[هشدارها]]></item>
+        <item name="wcf.user.profile.oldUsername"><![CDATA[قبلاً نامیده می شد {$user->getOldUsername()}]]></item>
+        <item name="wcf.user.profile.protected"><![CDATA[این عضو برای افرادی که می توانند نمایه کامل خود را ببینند محدود می کند.]]></item>
+        <item name="wcf.user.profile.recentActivity.bestAnswer"><![CDATA[علامت گذاری شده است <a href="{$post->getLink()}" class="wbbPostLink" data-object-id="{@$post->postID}">{$post->username}’s پست</a> در موضوع {if $thread->hasLabels()}<ul class="labelList">{foreach from=$thread->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}{anchor object=$thread class='wbbTopicLink'} به عنوان بهترین پاسخ.]]></item>
+        <item name="wcf.user.profile.recentActivity.follow"><![CDATA[الان دنبال میکند <a href="{link controller='User' object=$user}{/link}">{$user->username}</a>.]]></item>
+        <item name="wcf.user.profile.recentActivity.likedPost"><![CDATA[واکنش نشان داد با <span title="{$reactionType->getTitle()}" class="jsTooltip">{@$reactionType->renderIcon()}</span> به <a href="{$post->getLink()}" class="wbbPostLink" data-object-id="{@$post->postID}">{$post->username}’s پست</a> در موضوع {if $thread->hasLabels()}<ul class="labelList">{foreach from=$thread->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}{anchor object=$thread class='wbbTopicLink'}.]]></item>
+        <item name="wcf.user.profile.recentActivity.post"><![CDATA[به موضوع پاسخ داد {if $thread->hasLabels()}<ul class="labelList">{foreach from=$thread->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}<a href="{$post->getLink()}" class="wbbPostLink" data-object-id="{@$post->postID}">{$thread->topic}</a>.]]></item>
+        <item name="wcf.user.profile.recentActivity.profileComment"><![CDATA[نظری نوشت روی <a href="{link controller='User' object=$user}{/link}#wall/comment{@$commentID}">{$user->username}’s دیوار</a>.]]></item>
+        <item name="wcf.user.profile.recentActivity.profileCommentResponse"><![CDATA[پاسخ داد به یک نظر توسط <a href="{link controller='User' object=$commentAuthor}{/link}">{$commentAuthor->username}</a> روی <a href="{link controller='User' object=$user}{/link}#wall/comment{@$commentID}/response{@$responseID}">{$user->username}’s دیوار</a>.]]></item>
+        <item name="wcf.user.profile.recentActivity.thread"><![CDATA[موضوع را ارسال کرد {if $thread->hasLabels()}<ul class="labelList">{foreach from=$thread->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}{anchor object=$thread class='wbbTopicLink'}.]]></item>
+        <item name="wcf.user.profile.report"><![CDATA[گزارش مشحصات کاربر]]></item>
+        <item name="wcf.user.profile.title"><![CDATA[مشخصات کاربر از {$user->username}]]></item>
+        <item name="wcf.user.profile.visitors"><![CDATA[مشخصات بازدید کنندگان]]></item>
     </category>
     <category name="wcf.user.rank">
-        <item name="wcf.user.rank.administrator"><![CDATA[Administrator]]></item>
-        <item name="wcf.user.rank.moderator"><![CDATA[Moderator]]></item>
-        <item name="wcf.user.rank.user0"><![CDATA[Beginner]]></item>
-        <item name="wcf.user.rank.user1"><![CDATA[Student]]></item>
-        <item name="wcf.user.rank.user2"><![CDATA[Intermediate]]></item>
-        <item name="wcf.user.rank.user3"><![CDATA[Professional]]></item>
-        <item name="wcf.user.rank.user4"><![CDATA[Master]]></item>
-        <item name="wcf.user.rank.user5"><![CDATA[Enlightened]]></item>
+        <item name="wcf.user.rank.administrator"><![CDATA[مدیر]]></item>
+        <item name="wcf.user.rank.moderator"><![CDATA[تعدیل کننده]]></item>
+        <item name="wcf.user.rank.user0"><![CDATA[مبتدی]]></item>
+        <item name="wcf.user.rank.user1"><![CDATA[دانشجو]]></item>
+        <item name="wcf.user.rank.user2"><![CDATA[حد وسط]]></item>
+        <item name="wcf.user.rank.user3"><![CDATA[حرفه ای]]></item>
+        <item name="wcf.user.rank.user4"><![CDATA[استاد]]></item>
+        <item name="wcf.user.rank.user5"><![CDATA[روشنفکر]]></item>
     </category>
     <category name="wcf.user.recentActivity">
         <item name="wcf.user.recentActivity"><![CDATA[Recent Activities]]></item>
-        <item name="wcf.user.recentActivity.com.woltlab.blog.entryComment.recentActivityEvent"><![CDATA[Comment (Blog Article)]]></item>
-        <item name="wcf.user.recentActivity.com.woltlab.blog.entryComment.response.recentActivityEvent"><![CDATA[Reply (Blog Article)]]></item>
-        <item name="wcf.user.recentActivity.com.woltlab.blog.likeableEntry.recentActivityEvent"><![CDATA[Reaction (Blog Article)]]></item>
-        <item name="wcf.user.recentActivity.com.woltlab.blog.recentActivityEvent.entry"><![CDATA[Blog Article]]></item>
-        <item name="wcf.user.recentActivity.com.woltlab.calendar.eventDateComment.recentActivityEvent"><![CDATA[Comment (Event)]]></item>
-        <item name="wcf.user.recentActivity.com.woltlab.calendar.eventDateComment.response.recentActivityEvent"><![CDATA[Reply (Event)]]></item>
-        <item name="wcf.user.recentActivity.com.woltlab.calendar.likeableEvent.recentActivityEvent"><![CDATA[Reaction (Event)]]></item>
-        <item name="wcf.user.recentActivity.com.woltlab.calendar.recentActivityEvent.event"><![CDATA[Event]]></item>
-        <item name="wcf.user.recentActivity.com.woltlab.filebase.fileComment.recentActivityEvent"><![CDATA[Comment (File)]]></item>
-        <item name="wcf.user.recentActivity.com.woltlab.filebase.fileComment.response.recentActivityEvent"><![CDATA[Reply (File)]]></item>
-        <item name="wcf.user.recentActivity.com.woltlab.filebase.likeableFile.recentActivityEvent"><![CDATA[Reaction (File)]]></item>
-        <item name="wcf.user.recentActivity.com.woltlab.filebase.likeableFileReview.recentActivityEvent"><![CDATA[Reaction (File Review)]]></item>
-        <item name="wcf.user.recentActivity.com.woltlab.filebase.recentActivityEvent.file"><![CDATA[File]]></item>
-        <item name="wcf.user.recentActivity.com.woltlab.filebase.recentActivityEvent.version"><![CDATA[File Version]]></item>
-        <item name="wcf.user.recentActivity.com.woltlab.filebase.review"><![CDATA[File Reviews]]></item>
-        <item name="wcf.user.recentActivity.com.woltlab.gallery.imageComment.recentActivityEvent"><![CDATA[Comment (Image{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/Video{/if})]]></item>
-        <item name="wcf.user.recentActivity.com.woltlab.gallery.imageComment.response.recentActivityEvent"><![CDATA[Reply (Image{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/Video{/if})]]></item>
-        <item name="wcf.user.recentActivity.com.woltlab.gallery.likeableImage.recentActivityEvent"><![CDATA[Reaction (Image{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/Video{/if})]]></item>
-        <item name="wcf.user.recentActivity.com.woltlab.gallery.recentActivityEvent.image"><![CDATA[Image{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/Video{/if}]]></item>
-        <item name="wcf.user.recentActivity.com.woltlab.gallery.recentActivityEvent.images"><![CDATA[Images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/Videos{/if}]]></item>
-        <item name="wcf.user.recentActivity.com.woltlab.wbb.likeablePost.recentActivityEvent"><![CDATA[Reaction (Post)]]></item>
-        <item name="wcf.user.recentActivity.com.woltlab.wbb.recentActivityEvent.bestAnswer"><![CDATA[Best Answer]]></item>
-        <item name="wcf.user.recentActivity.com.woltlab.wbb.recentActivityEvent.post"><![CDATA[Post]]></item>
-        <item name="wcf.user.recentActivity.com.woltlab.wbb.recentActivityEvent.thread"><![CDATA[Thread]]></item>
-        <item name="wcf.user.recentActivity.com.woltlab.wcf.article.recentActivityEvent"><![CDATA[Article]]></item>
-        <item name="wcf.user.recentActivity.com.woltlab.wcf.articleComment.recentActivityEvent"><![CDATA[Comment (Article)]]></item>
-        <item name="wcf.user.recentActivity.com.woltlab.wcf.articleComment.response.recentActivityEvent"><![CDATA[Reply (Article)]]></item>
-        <item name="wcf.user.recentActivity.com.woltlab.wcf.likeableArticle.recentActivityEvent"><![CDATA[Like (Article)]]></item>
-        <item name="wcf.user.recentActivity.com.woltlab.wcf.page.recentActivityEvent"><![CDATA[Comment (Page)]]></item>
-        <item name="wcf.user.recentActivity.com.woltlab.wcf.page.response.recentActivityEvent"><![CDATA[Reply (Page)]]></item>
-        <item name="wcf.user.recentActivity.com.woltlab.wcf.user.profileComment.recentActivityEvent"><![CDATA[Wall Comment]]></item>
-        <item name="wcf.user.recentActivity.com.woltlab.wcf.user.profileComment.response.recentActivityEvent"><![CDATA[Wall Reply]]></item>
-        <item name="wcf.user.recentActivity.com.woltlab.wcf.user.recentActivityEvent.follow"><![CDATA[Follow]]></item>
-        <item name="wcf.user.recentActivity.com.woltlab.wcf.userTrophy.recentActivityEvent.trophyReceived"><![CDATA[Trophy]]></item>
-        <item name="wcf.user.recentActivity.condition.excludedObjectType"><![CDATA[Excluded Activities]]></item>
-        <item name="wcf.user.recentActivity.more"><![CDATA[Display More]]></item>
-        <item name="wcf.user.recentActivity.noEntries"><![CDATA[There are no activities at the moment.]]></item>
-        <item name="wcf.user.recentActivity.noMoreEntries"><![CDATA[There are no new activities at the moment.]]></item>
-        <item name="wcf.user.recentActivity.scope.all"><![CDATA[All Activities]]></item>
-        <item name="wcf.user.recentActivity.scope.followedUsers"><![CDATA[Filter by Followed Users]]></item>
-        <item name="wcf.user.recentActivity.scope.followedUsers.noResults"><![CDATA[There are no recent activities by followed users. Displaying activity for all users.]]></item>
+        <item name="wcf.user.recentActivity.com.woltlab.blog.entryComment.recentActivityEvent"><![CDATA[نظر (مقاله وبلاگ)]]></item>
+        <item name="wcf.user.recentActivity.com.woltlab.blog.entryComment.response.recentActivityEvent"><![CDATA[پاسخ (مقاله وبلاگ)]]></item>
+        <item name="wcf.user.recentActivity.com.woltlab.blog.likeableEntry.recentActivityEvent"><![CDATA[واکنش (مقاله وبلاگ)]]></item>
+        <item name="wcf.user.recentActivity.com.woltlab.blog.recentActivityEvent.entry"><![CDATA[مقاله وبلاگ]]></item>
+        <item name="wcf.user.recentActivity.com.woltlab.calendar.eventDateComment.recentActivityEvent"><![CDATA[نظر (رویداد)]]></item>
+        <item name="wcf.user.recentActivity.com.woltlab.calendar.eventDateComment.response.recentActivityEvent"><![CDATA[پاسخ (رویداد)]]></item>
+        <item name="wcf.user.recentActivity.com.woltlab.calendar.likeableEvent.recentActivityEvent"><![CDATA[واکنش (رویداد)]]></item>
+        <item name="wcf.user.recentActivity.com.woltlab.calendar.recentActivityEvent.event"><![CDATA[رویداد]]></item>
+        <item name="wcf.user.recentActivity.com.woltlab.filebase.fileComment.recentActivityEvent"><![CDATA[نظر (فایل)]]></item>
+        <item name="wcf.user.recentActivity.com.woltlab.filebase.fileComment.response.recentActivityEvent"><![CDATA[پاسخ (فایل)]]></item>
+        <item name="wcf.user.recentActivity.com.woltlab.filebase.likeableFile.recentActivityEvent"><![CDATA[واکنش (فایل)]]></item>
+        <item name="wcf.user.recentActivity.com.woltlab.filebase.likeableFileReview.recentActivityEvent"><![CDATA[واکنش (بررسی فایل)]]></item>
+        <item name="wcf.user.recentActivity.com.woltlab.filebase.recentActivityEvent.file"><![CDATA[فایل]]></item>
+        <item name="wcf.user.recentActivity.com.woltlab.filebase.recentActivityEvent.version"><![CDATA[نسخه فایل]]></item>
+        <item name="wcf.user.recentActivity.com.woltlab.filebase.review"><![CDATA[بررسی فایل ها]]></item>
+        <item name="wcf.user.recentActivity.com.woltlab.gallery.imageComment.recentActivityEvent"><![CDATA[Comment (تصویر{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/ویدیو{/if})]]></item>
+        <item name="wcf.user.recentActivity.com.woltlab.gallery.imageComment.response.recentActivityEvent"><![CDATA[پاسخ (Image{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/ویدیو{/if})]]></item>
+        <item name="wcf.user.recentActivity.com.woltlab.gallery.likeableImage.recentActivityEvent"><![CDATA[واکنش (Image{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/ویدیو{/if})]]></item>
+        <item name="wcf.user.recentActivity.com.woltlab.gallery.recentActivityEvent.image"><![CDATA[تصویر{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/ویدیو{/if}]]></item>
+        <item name="wcf.user.recentActivity.com.woltlab.gallery.recentActivityEvent.images"><![CDATA[تصاویر{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/ویدیو ها{/if}]]></item>
+        <item name="wcf.user.recentActivity.com.woltlab.wbb.likeablePost.recentActivityEvent"><![CDATA[واکنش (پست)]]></item>
+        <item name="wcf.user.recentActivity.com.woltlab.wbb.recentActivityEvent.bestAnswer"><![CDATA[بهترین جواب]]></item>
+        <item name="wcf.user.recentActivity.com.woltlab.wbb.recentActivityEvent.post"><![CDATA[پست]]></item>
+        <item name="wcf.user.recentActivity.com.woltlab.wbb.recentActivityEvent.thread"><![CDATA[موضوع]]></item>
+        <item name="wcf.user.recentActivity.com.woltlab.wcf.article.recentActivityEvent"><![CDATA[مقاله]]></item>
+        <item name="wcf.user.recentActivity.com.woltlab.wcf.articleComment.recentActivityEvent"><![CDATA[نظر (مقاله)]]></item>
+        <item name="wcf.user.recentActivity.com.woltlab.wcf.articleComment.response.recentActivityEvent"><![CDATA[پاسخ (مقاله)]]></item>
+        <item name="wcf.user.recentActivity.com.woltlab.wcf.likeableArticle.recentActivityEvent"><![CDATA[لایک (مقاله)]]></item>
+        <item name="wcf.user.recentActivity.com.woltlab.wcf.page.recentActivityEvent"><![CDATA[نظر (صفحه)]]></item>
+        <item name="wcf.user.recentActivity.com.woltlab.wcf.page.response.recentActivityEvent"><![CDATA[پاسخ (صفحه)]]></item>
+        <item name="wcf.user.recentActivity.com.woltlab.wcf.user.profileComment.recentActivityEvent"><![CDATA[نظر دیوار]]></item>
+        <item name="wcf.user.recentActivity.com.woltlab.wcf.user.profileComment.response.recentActivityEvent"><![CDATA[پاسخ دیوار]]></item>
+        <item name="wcf.user.recentActivity.com.woltlab.wcf.user.recentActivityEvent.follow"><![CDATA[دنبال]]></item>
+        <item name="wcf.user.recentActivity.com.woltlab.wcf.userTrophy.recentActivityEvent.trophyReceived"><![CDATA[جایزه]]></item>
+        <item name="wcf.user.recentActivity.condition.excludedObjectType"><![CDATA[فعالیت های مستثنی شده]]></item>
+        <item name="wcf.user.recentActivity.more"><![CDATA[نمایش بیشتر]]></item>
+        <item name="wcf.user.recentActivity.noEntries"><![CDATA[در حال حاضر هیچ فعالیتی وجود ندارد.]]></item>
+        <item name="wcf.user.recentActivity.noMoreEntries"><![CDATA[در حال حاضر هیچ فعالیت جدیدی وجود ندارد.]]></item>
+        <item name="wcf.user.recentActivity.scope.all"><![CDATA[تمام فعالیت ها]]></item>
+        <item name="wcf.user.recentActivity.scope.followedUsers"><![CDATA[فیلتر بر اساس کاربران دنبال شده]]></item>
+        <item name="wcf.user.recentActivity.scope.followedUsers.noResults"><![CDATA[هیچ فعالیت اخیری توسط کاربران دنبال شده وجود ندارد. نمایش فعالیت برای همه کاربران.]]></item>
     </category>
     <category name="wcf.user.register">
-        <item name="wcf.user.register"><![CDATA[Registration]]></item>
-        <item name="wcf.user.register.disclaimer.accept"><![CDATA[Accept]]></item>
-        <item name="wcf.user.register.disclaimer.decline"><![CDATA[Decline]]></item>
-        <item name="wcf.user.register.disclaimer.text"><![CDATA[<h2>Limitation of liability for internal content</h2>
+        <item name="wcf.user.register"><![CDATA[ثبت]]></item>
+        <item name="wcf.user.register.disclaimer.accept"><![CDATA[پذیرفتن]]></item>
+        <item name="wcf.user.register.disclaimer.decline"><![CDATA[رد کردن]]></item>
+        <item name="wcf.user.register.disclaimer.text"><![CDATA[<h2>محدودیت مسئولیت برای محتوای داخلی</h2>
 <p>The content of our website has been compiled with meticulous care and to the best of our knowledge. However, we cannot assume any liability for the up-to-dateness, completeness or accuracy of any of the pages.</p>
 <p><br></p>
 <p>Pursuant to section 7, para. 1 of the TMG (Telemediengesetz – Tele Media Act by German law), we as service providers are liable for our own content on these pages in accordance with general laws. However, pursuant to sections 8 to 10 of the TMG, we as service providers are not under obligation to monitor external information provided or stored on our website. Once we have become aware of a specific infringement of the law, we will immediately remove the content in question. Any liability concerning this matter can only be assumed from the point in time at which the infringement becomes known to us.</p>
