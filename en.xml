@@ -1507,11 +1507,11 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wbb.index.selectForumForNewThread"><![CDATA[انجمن را برای موضوع جدید انتخاب کنید]]></item>
         <item name="wbb.index.stats"><![CDATA[آمار]]></item>
         <item name="wbb.index.stats.detail"><![CDATA[<ul class="inlineList dotSeparated">
-<li>{#$stats[members]} عضو{if $stats.members != 1}ها{/if}</li>
-<li>{#$stats[threads]} موضوع{if $stats[threads] != 1}ها{/if}</li>
-<li>{#$stats[posts]} پست{if $stats[posts] != 1}ها{/if} ({#$stats[postsPerDay]} پست{if $stats[postsPerDay] != 1}ها{/if} per Day)</li>
+<li>{#$stats[اعضا]} عضو{if $stats.members != 1}ها{/if}</li>
+<li>{#$stats[موضوعات]} موضوع{if $stats[موضوعات] != 1}ها{/if}</li>
+<li>{#$stats[پست ها]} پست{if $stats[پست ها] != 1}ها{/if} ({#$stats[پست در روز]} پست{if $stats[پست در روز] != 1}ها{/if} per Day)</li>
 </ul>
-{if $stats[newestMember]}<p>Latest Member: {user object=$stats[newestMember]}.</p>{/if}]]></item>
+{if $stats[جدیدترین عضو]}<p>آخرین عضو: {user object=$stats[جدیدترین عضو]}.</p>{/if}]]></item>
     </category>
     <category name="wbb.post">
         <item name="wbb.post.add"><![CDATA[پاسخ به موضوع]]></item>
@@ -1521,11 +1521,11 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wbb.post.condition.board"><![CDATA[انجمن]]></item>
         <item name="wbb.post.condition.state"><![CDATA[حالت]]></item>
         <item name="wbb.post.condition.state.isClosed"><![CDATA[بسته شد]]></item>
-        <item name="wbb.post.condition.state.isClosed.error.conflict"><![CDATA[“Closed” و “Open” نمی توان همزمان انتخاب کرد.]]></item>
-        <item name="wbb.post.condition.state.isDeleted"><![CDATA[در سطل اشغال]]></item>
-        <item name="wbb.post.condition.state.isDeleted.error.conflict"><![CDATA[“In Trash Bin” و “Not in Trash Bin” نمی توان همزمان انتخاب کرد.]]></item>
-        <item name="wbb.post.condition.state.isDisabled"><![CDATA[Awaiting approval]]></item>
-        <item name="wbb.post.condition.state.isDisabled.error.conflict"><![CDATA[“Awaiting approval” و “Approved” نمی توان همزمان انتخاب کرد.]]></item>
+        <item name="wbb.post.condition.state.isClosed.error.conflict"><![CDATA[“بسته شد” و “باز” نمی توان همزمان انتخاب کرد.]]></item>
+        <item name="wbb.post.condition.state.isDeleted"><![CDATA[در سطل آشغال]]></item>
+        <item name="wbb.post.condition.state.isDeleted.error.conflict"><![CDATA[“در سطل آشغال” و “در سطل آشغال نیست” نمی توان همزمان انتخاب کرد.]]></item>
+        <item name="wbb.post.condition.state.isDisabled"><![CDATA[منتظر تایید]]></item>
+        <item name="wbb.post.condition.state.isDisabled.error.conflict"><![CDATA[“منتظر تایید” و “تایید شده” نمی توان همزمان انتخاب کرد.]]></item>
         <item name="wbb.post.condition.state.isEnabled"><![CDATA[تایید شده]]></item>
         <item name="wbb.post.condition.state.isNotDeleted"><![CDATA[در سطل آشغال نیست]]></item>
         <item name="wbb.post.condition.state.isOpen"><![CDATA[باز کن]]></item>
