@@ -1560,11 +1560,11 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wbb.post.editNote"><![CDATA[{if $post->editCount}ویرایش شده {if $post->editCount == 1}یک بار{else}{#$post->editCount} بارها{/if},آخرین توسط {if $post->editorID}<a href="{link controller='User' id=$post->editorID}{/link}" class="userLink" data-object-id="{@$post->editorID}">{$post->editor}</a>{else}{$post->editor}{/if}{if $post->editReason}: {$post->editReason}{/if} ({@$post->lastEditTime|time}).{/if}{if $thread->canEditPost($post->getDecoratedObject()) && $post->hasOldVersions()}{if $post->editCount} — {/if}<a href="{link controller='EditHistory' objectType='com.woltlab.wbb.post' objectID=$post->postID}{/link}">این پست دارای نسخه های قبلی است که ذخیره شده اند.</a>{/if}]]></item>
         <item name="wbb.post.editReason"><![CDATA[دلیل ویرایش (اختیاری)]]></item>
         <item name="wbb.post.enableTime"><![CDATA[تاریخ انتشار]]></item>
-        <item name="wbb.post.enableTime.description"><![CDATA[لطفا تاریخ انتشار را مشخص کنید، تاپیک یا پست تا آن زمان غیرفعال می‌ماند.]]></item>
+        <item name="wbb.post.enableTime.description"><![CDATA[لطفا تاریخ انتشار را مشخص کنید، موضوع یا پست تا آن زمان غیرفعال می‌ماند.]]></item>
         <item name="wbb.post.enableTime.error.invalid"><![CDATA[تاریخ مشخص شده نامعتبر است، باید تاریخ آینده را انتخاب کنید.]]></item>
         <item name="wbb.post.enableTime.now"><![CDATA[اکنون منتشر کنید]]></item>
         <item name="wbb.post.enableTime.nowAndUpdateTime"><![CDATA[تاریخ انتشار را روی زمان فعلی تنظیم کنید]]></item>
-        <item name="wbb.post.error.floodControl"><![CDATA[شما قبلاً یک پست در آخرین پست نوشته اید {if $__wcf->getSession()->getPermission('user.board.floodControlTime') > 1}{#$__wcf->getSession()->getPermission('user.board.floodControlTime')} ثانیه ها{else}ثانیه{/if}. حداقل باید صبر کنی {#$lastPostTime+$__wcf->getSession()->getPermission('user.board.floodControlTime')-TIME_NOW} ثانیه{if ($lastPostTime+$__wcf->getSession()->getPermission('user.board.floodControlTime')-TIME_NOW) != 1}s{/if} قبل از تلاش برای نوشتن یک پست جدید.]]></item>
+        <item name="wbb.post.error.floodControl"><![CDATA[شما قبلاً یک پست در آخرین پست نوشته اید {if $__wcf->getSession()->getPermission('user.board.floodControlTime') > 1}{#$__wcf->getSession()->getPermission('user.board.floodControlTime')} ثانیه ها{else}ثانیه{/if}. حداقل باید صبر کنی {#$lastPostTime+$__wcf->getSession()->getPermission('user.board.floodControlTime')-TIME_NOW} ثانیه{if ($lastPostTime+$__wcf->getSession()->getPermission('user.board.floodControlTime')-TIME_NOW) != 1}ها{/if} قبل از تلاش برای نوشتن یک پست جدید.]]></item>
         <item name="wbb.post.hiddenForGuests"><![CDATA[این موضوعات شامل {if $numberOfHiddenPosts == 1}یک پست بیشتر{else}{#$numberOfHiddenPosts} پست های بیشتر{/if} که برای مهمانان پنهان شده است، لطفا {if !REGISTER_DISABLED}<a href="{link controller='Register'}{/link}">خودت ثبت نام کن</a> یا{/if}<a href="{link controller='Login'}{/link}">وارد شدن</a> برای ادامه خواندن.]]></item>
         <item name="wbb.post.ignoredUser"><![CDATA[پست توسط {$__ignoredUser->username} پنهان شده بود.]]></item>
         <item name="wbb.post.information"><![CDATA[اطلاعات]]></item>
@@ -1574,8 +1574,8 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wbb.post.ipAddress.otherUsers"><![CDATA[IPسایر کاربران برای آدرس  {$post->getIpAddress()}]]></item>
         <item name="wbb.post.ipAddress.post"><![CDATA[برای IP آدرس {$post->username}]]></item>
         <item name="wbb.post.ipAddress.title"><![CDATA[ IPآدرس های]]></item>
-        <item name="wbb.post.like.notification.message"><![CDATA[<strong>{$author}</strong>به پست شما در تاپیک واکنش نشان داد <strong>{$thread->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
-        <item name="wbb.post.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} rبه پست شما در تاپیک واکنش نشان داد <strong>{$thread->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+        <item name="wbb.post.like.notification.message"><![CDATA[<strong>{$author}</strong>به پست شما در موضوع واکنش نشان داد <strong>{$thread->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+        <item name="wbb.post.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} rبه پست شما در موضوع واکنش نشان داد <strong>{$thread->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
         <item name="wbb.post.like.notification.title"><![CDATA[واکنش به پست شما]]></item>
         <item name="wbb.post.like.notification.title.stacked"><![CDATA[{#$count} کاربران به پست شما واکنش نشان دادند]]></item>
         <item name="wbb.post.mention.notification.mail.html"><![CDATA[<p><strong>{$author}</strong> از شما در تاپیک نام برد <a href="{$post->getLink()}">{$thread->getTitle()}</a>در انجمن <a href="{$thread->getBoard()->getLink()}">{$thread->getBoard()->getTitle()}</a>{if WBB_POST_NOTIFICATION_MAIL_INCLUDE_MESSAGE}:{else}.{/if}</p>]]></item>
@@ -1592,17 +1592,17 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wbb.post.moveToNewThread"><![CDATA[حرکت به یک موضوع جدید]]></item>
         <item name="wbb.post.moveToNewThread.boardID"><![CDATA[انجمن مقصد]]></item>
         <item name="wbb.post.notification.mail.html"><![CDATA[<p>{@$authorList} به تاپیک پاسخ داد <a href="{$post->getLink()}">{$thread->getTitle()}</a> در انجمن <a href="{$thread->getBoard()->getLink()}">{$thread->getBoard()->getTitle()}</a>{if WBB_POST_NOTIFICATION_MAIL_INCLUDE_MESSAGE}:{else}.{/if}</p>]]></item>
-        <item name="wbb.post.notification.mail.plaintext"><![CDATA[{@$authorList} به تاپیک پاسخ داد  “{@$thread->getTitle()}” [URL:{@$post->getLink()}] در انجمن “{@$thread->getBoard()->getTitle()}”{if WBB_POST_NOTIFICATION_MAIL_INCLUDE_MESSAGE && $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
-        <item name="wbb.post.notification.mail.title"><![CDATA[پست جدید در تاپیک تماشا شده "{@$thread->getTitle()}"]]></item>
-        <item name="wbb.post.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}یک مهمان{/if} به تاپیک پاسخ داد <strong>{$userNotificationObject->getThread()->getTitle()}</strong>.]]></item>
-        <item name="wbb.post.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language}به تاپیک پاسخ داد <strong>{$message->getThread()->getTitle()}</strong>.]]></item>
+        <item name="wbb.post.notification.mail.plaintext"><![CDATA[{@$authorList} به موضوع پاسخ داد  “{@$thread->getTitle()}” [آدرس اینترنتی:{@$post->getLink()}] در انجمن “{@$thread->getBoard()->getTitle()}”{if WBB_POST_NOTIFICATION_MAIL_INCLUDE_MESSAGE && $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+        <item name="wbb.post.notification.mail.title"><![CDATA[پست جدید در موضوع تماشا شده "{@$thread->getTitle()}"]]></item>
+        <item name="wbb.post.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}یک مهمان{/if} به موضوع پاسخ داد <strong>{$userNotificationObject->getThread()->getTitle()}</strong>.]]></item>
+        <item name="wbb.post.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language}به موضوع پاسخ داد <strong>{$message->getThread()->getTitle()}</strong>.]]></item>
         <item name="wbb.post.notification.moderate.close.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}یک تعدیل کننده{/if} پستت را بست <strong>{$post->getTitle()}</strong>.]]></item>
         <item name="wbb.post.notification.moderate.close.notification.title"><![CDATA[پست شما بسته شده است]]></item>
         <item name="wbb.post.notification.moderate.enable.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{elseتعدیل کننده{/if} پست شما را فعال کرد <strong>{$post->getTitle()}</strong>.]]></item>
-        <item name="wbb.post.notification.moderate.enable.notification.title"><![CDATA[Your post has been enabled]]></item>
+        <item name="wbb.post.notification.moderate.enable.notification.title"><![CDATA[پست شما فعال شد]]></item>
         <item name="wbb.post.notification.moderate.move.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}تعدیل کننده{/if} پست شما را منتقل کرد <strong>{$post->getTitle()}</strong>.]]></item>
         <item name="wbb.post.notification.moderate.move.notification.title"><![CDATA[پست شما منتقل شد]]></item>
-        <item name="wbb.post.notification.moderate.trash.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}تعدیل کننده{/if} پست شما را سطل اشغال کرد <strong>{$post->getTitle()}</strong>{if !$userNotificationObject->getDecoratedObject()->__get('reason')|empty} به این دلیل “{$userNotificationObject->getDecoratedObject()->reason|truncate:255:'…'}“{/if}.]]></item>
+        <item name="wbb.post.notification.moderate.trash.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}تعدیل کننده{/if} پست شما را سطل آشغال کرد <strong>{$post->getTitle()}</strong>{if !$userNotificationObject->getDecoratedObject()->__get('reason')|empty} به این دلیل “{$userNotificationObject->getDecoratedObject()->reason|truncate:255:'…'}“{/if}.]]></item>
         <item name="wbb.post.notification.moderate.trash.notification.title"><![CDATA[پست شما حذف شده است]]></item>
         <item name="wbb.post.notification.title"><![CDATA[پست جدید در موضوع تماشا شده]]></item>
         <item name="wbb.post.notification.title.stacked"><![CDATA[{#$timesTriggered} پست های جدید این موضوع تماشا شده ]]></item>
@@ -1613,7 +1613,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wbb.post.option.closeThread"><![CDATA[بستن موضوع]]></item>
         <item name="wbb.post.option.closeThread.description"><![CDATA[پس از ایجاد پست شما، موضوع را می بندد.]]></item>
         <item name="wbb.post.option.markAsDone"><![CDATA[علامت زدن به عنوان حل شده]]></item>
-        <item name="wbb.post.option.markAsDone.description"><![CDATA[علامت زدن به عنوان حلشده.]]></item>
+        <item name="wbb.post.option.markAsDone.description"><![CDATA[علامت زدن به عنوان حل شده.]]></item>
         <item name="wbb.post.option.markAsOfficial"><![CDATA[علامت گذاری به عنوان "رسمی"]]></item>
         <item name="wbb.post.option.markAsOfficial.description"><![CDATA[پست‌های رسمی با قالب‌بندی خاصی علامت‌گذاری می‌شوند و راحت‌تر پیدا می‌شوند.]]></item>
         <item name="wbb.post.option.removeEditNote"><![CDATA[ویرایش متن حدف کنید]]></item>
@@ -1621,8 +1621,8 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wbb.post.option.showEditNote"><![CDATA[نمایش متن ویرایش]]></item>
         <item name="wbb.post.option.showEditNote.description"><![CDATA[یادداشت «پست ویرایش شده توسط …» را اضافه می کند.]]></item>
         <item name="wbb.post.posts"><![CDATA[پست ها]]></item>
-        <item name="wbb.post.previousPosts"><![CDATA[پست قبلی{if $items != 1}s{/if}]]></item>
-        <item name="wbb.post.quote.notification.mail.html"><![CDATA[<p><strong>{$author}</strong> یکی از پست های شما را به عنوان پاسخ به نقل قول کرد <a href="{@$post->getLink()}">{$thread->getTitle()}</a> in forum <a href="{$thread->getBoard()->getLink()}">{$thread->getBoard()->getTitle()}</a>{if WBB_POST_NOTIFICATION_MAIL_INCLUDE_MESSAGE}:{else}.{/if}</p>]]></item>
+        <item name="wbb.post.previousPosts"><![CDATA[پست قبلی{if $items != 1}ها{/if}]]></item>
+        <item name="wbb.post.quote.notification.mail.html"><![CDATA[<p><strong>{$author}</strong> یکی از پست های شما را به عنوان پاسخ به نقل قول کرد <a href="{@$post->getLink()}">{$thread->getTitle()}</a> در انجمن <a href="{$thread->getBoard()->getLink()}">{$thread->getBoard()->getTitle()}</a>{if WBB_POST_NOTIFICATION_MAIL_INCLUDE_MESSAGE}:{else}.{/if}</p>]]></item>
         <item name="wbb.post.quote.notification.mail.plaintext"><![CDATA[{@$author} یکی از پست های شما را به عنوان پاسخ به نقل قول کرد “{@$thread->getTitle()}” [URL:{@$post->getLink()}] در انجمن “{@$thread->getBoard()->getTitle()}”{if WBB_POST_NOTIFICATION_MAIL_INCLUDE_MESSAGE}:{else}.{/if}]]></item>
         <item name="wbb.post.quote.notification.mail.title"><![CDATA[از شما در موضوع نقل قول شد "{@$userNotificationObject->getThread()->topic}"]]></item>
         <item name="wbb.post.quote.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}مهمان{/if} یکی از پست های شما را به عنوان پاسخ به نقل قول کرد <strong>{$userNotificationObject->getThread()->getTitle()}</strong>.]]></item>
@@ -1652,19 +1652,19 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wbb.thread.article.replies"><![CDATA[{#$replies} {if $replies == 1}پاسخ{else}پاسخ ها{/if}]]></item>
         <item name="wbb.thread.article.replies.title"><![CDATA[پاسخ ها]]></item>
         <item name="wbb.thread.article.reply"><![CDATA[نوشتن پاسخ…]]></item>
-        <item name="wbb.thread.articleThread.info"><![CDATA[{#$articleThread->replies} {if $articleThread->replies == 1}پاسخ{else}replies{/if}{if $articleThread->replies > 0}, last: {@$articleThread->lastPostTime|time}{/if}]]></item>
+        <item name="wbb.thread.articleThread.info"><![CDATA[{#$articleThread->replies} {if $articleThread->replies == 1}پاسخ{else}پاسخ ها{/if}{if $articleThread->replies > 0}, آخر: {@$articleThread->lastPostTime|time}{/if}]]></item>
         <item name="wbb.thread.articleThread.message"><![CDATA[<p>بحث مقاله <a href="{@$articleContent->getLink()}">{@$articleContent->getTitle()}</a>:</p>
 <woltlab-quote>{@$articleContent->getFormattedTeaser()}</woltlab-quote>]]></item>
         <item name="wbb.thread.articleThread.subject"><![CDATA[{@$articleContent->getTitle()}]]></item>
-        <item name="wbb.thread.attachments"><![CDATA[موضوع شامل {#$thread->attachments} پیوست{if $thread->attachments != 1}s{/if}]]></item>
+        <item name="wbb.thread.attachments"><![CDATA[موضوع شامل {#$thread->attachments} پیوست{if $thread->attachments != 1}ها{/if}]]></item>
         <item name="wbb.thread.bbcode.type"><![CDATA[موضوع]]></item>
         <item name="wbb.thread.bestAnswer"><![CDATA[بهترین جواب]]></item>
         <item name="wbb.thread.boxList.description.activity"><![CDATA[{#$boxThread->replies} {if $boxThread->replies == 1}پاسخ{else}پاسخ ها{/if}]]></item>
         <item name="wbb.thread.boxList.description.cumulativeLikes"><![CDATA[{include file='__topReaction' cachedReactions=$boxThread->cachedReactions render='full'}]]></item>
-        <item name="wbb.thread.boxList.description.hotness"><![CDATA[{#$boxThread->replies} {if $boxThread->replies == 1}پاسخ{else}پاسخ ها{/if}, {#$boxThread->views} بازدید{if $boxThread->views != 1}s{/if}, {$boxThread->time|dateDiff}]]></item>
+        <item name="wbb.thread.boxList.description.hotness"><![CDATA[{#$boxThread->replies} {if $boxThread->replies == 1}پاسخ{else}پاسخ ها{/if}, {#$boxThread->views} بازدید{if $boxThread->views != 1}ها{/if}, {$boxThread->time|dateDiff}]]></item>
         <item name="wbb.thread.boxList.description.lastPostTime"><![CDATA[{user object=$boxThread->getLastPosterProfile() tabindex='-1'} <span class="separatorLeft">{@$boxThread->lastPostTime|time}</span>]]></item>
         <item name="wbb.thread.boxList.description.replies"><![CDATA[{#$boxThread->replies} {if $boxThread->replies == 1}پاسخ{else}پاسخ ها{/if}, اخر: {@$boxThread->lastPostTime|time}]]></item>
-        <item name="wbb.thread.boxList.description.views"><![CDATA[{#$boxThread->views} بازدید{if $boxThread->views != 1}s{/if}]]></item>
+        <item name="wbb.thread.boxList.description.views"><![CDATA[{#$boxThread->views} بازدید{if $boxThread->views != 1}ها{/if}]]></item>
         <item name="wbb.thread.button.add"><![CDATA[ایجاد موضوع]]></item>
         <item name="wbb.thread.button.jumpToArticleThread"><![CDATA[موضوع گفتگو]]></item>
         <item name="wbb.thread.closed"><![CDATA[بسته شده]]></item>
@@ -1679,8 +1679,8 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wbb.thread.condition.displayMode.description"><![CDATA[حالت نمایش انتخاب شده تنها زمانی مناسب است که رشته ها در نوار کناری نمایش داده نشوند.]]></item>
         <item name="wbb.thread.condition.displayMode.firstPostExcerpt"><![CDATA[پیش نمایش اولین پست]]></item>
         <item name="wbb.thread.condition.displayMode.table"><![CDATA[جدول]]></item>
-        <item name="wbb.thread.condition.isUnread.lastPostTime"><![CDATA[فقط تاپیک هایی که آخرین پست آنها خوانده نشده است]]></item>
-        <item name="wbb.thread.condition.isUnread.time"><![CDATA[فقط تاپیک هایی که اولین پست آنها خوانده نشده است]]></item>
+        <item name="wbb.thread.condition.isUnread.lastPostTime"><![CDATA[فقط موضوع هایی که آخرین پست آنها خوانده نشده است]]></item>
+        <item name="wbb.thread.condition.isUnread.time"><![CDATA[فقط موضوع هایی که اولین پست آنها خوانده نشده است]]></item>
         <item name="wbb.thread.condition.lastPostAge"><![CDATA[مدت زمان آخرین پست]]></item>
         <item name="wbb.thread.condition.lastPostAge.description"><![CDATA[تعداد روزهای گذشته از آخرین پست]]></item>
         <item name="wbb.thread.condition.lastPostTime"><![CDATA[آخرین پاسخ]]></item>
@@ -1688,10 +1688,10 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wbb.thread.condition.state"><![CDATA[حالت]]></item>
         <item name="wbb.thread.condition.state.isAnnouncement"><![CDATA[اعلان]]></item>
         <item name="wbb.thread.condition.state.isAnnouncement.error.conflict.sticky"><![CDATA[اعلان" و "پین شده" را نمی توان همزمان انتخاب کرد".]]></item>
-        <item name="wbb.thread.condition.state.isClosed"><![CDATA[Closed]]></item>
+        <item name="wbb.thread.condition.state.isClosed"><![CDATA[بسته شد]]></item>
         <item name="wbb.thread.condition.state.isClosed.error.conflict"><![CDATA[بسته" و "باز" را نمی توان همزمان انتخاب کرد".]]></item>
         <item name="wbb.thread.condition.state.isDeleted"><![CDATA[در سطل آشغال]]></item>
-        <item name="wbb.thread.condition.state.isDeleted.error.conflict"><![CDATA[در سطل آشغال" و "بیرون از سطل زباله" را نمی توان همزمان انتخاب کرد".]]></item>
+        <item name="wbb.thread.condition.state.isDeleted.error.conflict"><![CDATA[در سطل آشغال" و "بیرون از سطل آشغال" را نمی توان همزمان انتخاب کرد".]]></item>
         <item name="wbb.thread.condition.state.isDisabled"><![CDATA[در انتظار تایید]]></item>
         <item name="wbb.thread.condition.state.isDisabled.error.conflict"><![CDATA[در انتظار تایید" و "تأیید شده" را نمی توان همزمان انتخاب کرد".]]></item>
         <item name="wbb.thread.condition.state.isDone"><![CDATA[حل شد]]></item>
@@ -1701,7 +1701,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wbb.thread.condition.state.isLink.error.conflict"><![CDATA[لینک" و "بدون لینک" را نمی توان همزمان انتخاب کرد".]]></item>
         <item name="wbb.thread.condition.state.isNoLink"><![CDATA[بدون لینک]]></item>
         <item name="wbb.thread.condition.state.isNormal"><![CDATA[موضوع معمولی]]></item>
-        <item name="wbb.thread.condition.state.isNormal.error.conflict.isAnnouncement"><![CDATA[پاعلان" و "موضوع معمولی" را نمی توان همزمان انتخاب کرد".]]></item>
+        <item name="wbb.thread.condition.state.isNormal.error.conflict.isAnnouncement"><![CDATA[اعلان" و "موضوع معمولی" را نمی توان همزمان انتخاب کرد".]]></item>
         <item name="wbb.thread.condition.state.isNormal.error.conflict.isSticky"><![CDATA[پین شده" و "موضوع معمولی" را نمی توان همزمان انتخاب کرد".]]></item>
         <item name="wbb.thread.condition.state.isNotDeleted"><![CDATA[در سطل آشغال نیست]]></item>
         <item name="wbb.thread.condition.state.isOpen"><![CDATA[باز]]></item>
@@ -1710,7 +1710,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wbb.thread.condition.subscription"><![CDATA[اشتراک]]></item>
         <item name="wbb.thread.condition.subscription.boardOrThreadSubscription"><![CDATA[موضوعات مشترک و موضوعات در تابلوهای مشترک]]></item>
         <item name="wbb.thread.condition.subscription.boardSubscription"><![CDATA[موضوعات فقط در تابلوهای مشترک]]></item>
-        <item name="wbb.thread.condition.subscription.threadSubscription"><![CDATA[فقط تاپیک های مشترک]]></item>
+        <item name="wbb.thread.condition.subscription.threadSubscription"><![CDATA[فقط موضوعات مشترک]]></item>
         <item name="wbb.thread.condition.time"><![CDATA[تاریخ]]></item>
         <item name="wbb.thread.condition.username"><![CDATA[ایجاد شده توسط]]></item>
         <item name="wbb.thread.condition.username.description"><![CDATA[چند کاربر باید با کاما از هم جدا شوند.]]></item>
@@ -1721,11 +1721,11 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wbb.thread.confirmTrash.reason"><![CDATA[دلیل (اختیاری)]]></item>
         <item name="wbb.thread.copy.title"><![CDATA[کپی موضوع  ({$item} از {$count})]]></item>
         <item name="wbb.thread.cumulativeLikes"><![CDATA[واکنش ها]]></item>
-        <item name="wbb.thread.delayedPublication"><![CDATA[این تاپیک منتشر خواهد شد در تاریخ {@$thread->enableTime|plainTime}.]]></item>
+        <item name="wbb.thread.delayedPublication"><![CDATA[این موضوع منتشر خواهد شد در تاریخ {@$thread->enableTime|plainTime}.]]></item>
         <item name="wbb.thread.done"><![CDATA[موضوع به عنوان حل شده علامت گذاری شده است.]]></item>
         <item name="wbb.thread.edit"><![CDATA[موضوع را ویرایش کنید]]></item>
         <item name="wbb.thread.enableTime"><![CDATA[تاریخ انتشار]]></item>
-        <item name="wbb.thread.enableTime.description"><![CDATA[لطفاً تاریخ انتشار را مشخص کنید، تاپیک و همه پست‌های آن تا زمان تعیین شده غیرفعال می‌مانند.]]></item>
+        <item name="wbb.thread.enableTime.description"><![CDATA[لطفاً تاریخ انتشار را مشخص کنید، موضوع و همه پست‌های آن تا زمان تعیین شده غیرفعال می‌مانند.]]></item>
         <item name="wbb.thread.enableTime.error.invalid"><![CDATA[تاریخ مشخص شده نامعتبر است، باید تاریخ آینده را انتخاب کنید.]]></item>
         <item name="wbb.thread.enableTime.now"><![CDATA[اکنون منتشر کنید]]></item>
         <item name="wbb.thread.enableTime.nowAndUpdateTime"><![CDATA[تاریخ انتشار را روی زمان فعلی تنظیم کنید]]></item>
@@ -1740,41 +1740,41 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wbb.thread.markAsBestAnswer"><![CDATA[علامت گذاری به عنوان "بهترین پاسخ]]></item>
         <item name="wbb.thread.markAsBestAnswer.confirmMessage"><![CDATA[آیا واقعاً می خواهید این پست را به عنوان "بهترین پاسخ" علامت گذاری کنید؟]]></item>
         <item name="wbb.thread.markAsRead.doubleClick"><![CDATA[برای علامت گذاری این موضوع به عنوان خوانده شده دوبار کلیک کنید]]></item>
-        <item name="wbb.thread.moderation.disabledThread"><![CDATA[این تاپیک تا زمانی که توسط تعدیل کننده تایید نشود برای دیگران غیرقابل دسترسی خواهد بود.]]></item>
-        <item name="wbb.thread.moderation.info"><![CDATA[تاپیک های جدید ایجاد شده تا زمانی که توسط تعدیل کننده تایید نشود، برای دیگران غیرقابل دسترسی باقی می ماند.]]></item>
+        <item name="wbb.thread.moderation.disabledThread"><![CDATA[این موضوع تا زمانی که توسط تعدیل کننده تایید نشود برای دیگران غیرقابل دسترسی خواهد بود.]]></item>
+        <item name="wbb.thread.moderation.info"><![CDATA[موضوعات جدید ایجاد شده تا زمانی که توسط تعدیل کننده تایید نشود، برای دیگران غیرقابل دسترسی باقی می ماند.]]></item>
         <item name="wbb.thread.moderation.redirect"><![CDATA[موضوع شما پس از تایید نمایش داده می شود.]]></item>
         <item name="wbb.thread.modification.log.thread.hide"><![CDATA[مخفی کردن ورودی گزارش]]></item>
         <item name="wbb.thread.modification.log.thread.hide.confirmMessage"><![CDATA[آیا واقعاً می خواهید ورودی گزارش را پنهان کنید؟]]></item>
         <item name="wbb.thread.moved"><![CDATA[منتقل شد]]></item>
         <item name="wbb.thread.newPosts"><![CDATA[{literal}بارگذاری کنید {if $newPostsCount == 1}یک پست جدید{else}{#$newPostsCount}پست های جدید{/if}{/literal}]]></item>
-        <item name="wbb.thread.newPosts.nextPage"><![CDATA[نمایش {if $count == 1}یک پست جدید{else}{#$count} پست های جدید{/if} (next page)]]></item>
-        <item name="wbb.thread.noPosts"><![CDATA[این تاپیک دیگر حاوی هیچ پستی نیست. می توانید این تاپیک را حذف کنید.]]></item>
+        <item name="wbb.thread.newPosts.nextPage"><![CDATA[نمایش {if $count == 1}یک پست جدید{else}{#$count} پست های جدید{/if} (صفحه بعد)]]></item>
+        <item name="wbb.thread.noPosts"><![CDATA[این موضوع دیگر حاوی هیچ پستی نیست. می توانید این موضوع را حذف کنید.]]></item>
         <item name="wbb.thread.notification.mail.html"><![CDATA[<p><strong>{$author}</strong> پست کرد موضوع را <a href="{$thread->getLink()}">{$thread->getTitle()}</a> در انجمن <a href="{$thread->getBoard()->getLink()}">{$thread->getBoard()->getTitle()}</a>{if WBB_POST_NOTIFICATION_MAIL_INCLUDE_MESSAGE}:{else}.{/if}</p>]]></item>
-        <item name="wbb.thread.notification.mail.plaintext"><![CDATA[{@$author} پست کرد موضوع را “{@$thread->getTitle()}” [URL:{@$thread->getLink()}] در انجمن “{@$thread->getBoard()->getTitle()}”{if WBB_POST_NOTIFICATION_MAIL_INCLUDE_MESSAGE}:{else}.{/if}]]></item>
+        <item name="wbb.thread.notification.mail.plaintext"><![CDATA[{@$author} پست کرد موضوع را “{@$thread->getTitle()}” [آدرش اینترنتی:{@$thread->getLink()}] در انجمن “{@$thread->getBoard()->getTitle()}”{if WBB_POST_NOTIFICATION_MAIL_INCLUDE_MESSAGE}:{else}.{/if}]]></item>
         <item name="wbb.thread.notification.mail.title"><![CDATA[موضوع جدید در انجمن تماشا شده"{@$boardTitle}"]]></item>
         <item name="wbb.thread.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}مهمان{/if} موضوع را ارسال کرد <strong>{$userNotificationObject->getTitle()}</strong> در انجمن <strong>{$userNotificationObject->getBoard()->getTitle()}</strong>.]]></item>
         <item name="wbb.thread.notification.moderate.changeTopic.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}تعدیل کننده{/if} عنوان تاپیک خود را از <strong>{$userNotificationObject->getDecoratedObject()->oldTopic}</strong> به <strong>{$userNotificationObject->getDecoratedObject()->newTopic}</strong>.]]></item>
-        <item name="wbb.thread.notification.moderate.changeTopic.notification.title"><![CDATA[عنوان تاپیک شما تغییر کرده است]]></item>
-        <item name="wbb.thread.notification.moderate.close.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}تعدیل کننده{/if} تاپیک شما را بست <strong>{$thread->getTitle()}</strong>.]]></item>
-        <item name="wbb.thread.notification.moderate.close.notification.title"><![CDATA[تاپیک شما بسته شد]]></item>
-        <item name="wbb.thread.notification.moderate.enable.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}تعدیل کننده{/if} تاپیک شما را فعال کرد <strong>{$thread->getTitle()}</strong>.]]></item>
-        <item name="wbb.thread.notification.moderate.enable.notification.title"><![CDATA[تاپیک شما فعال شده است]]></item>
-        <item name="wbb.thread.notification.moderate.move.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}تعدیل کننده{/if} تاپیک شما را جابجا کرد <strong>{$thread->getTitle()}</strong>.]]></item>
-        <item name="wbb.thread.notification.moderate.move.notification.title"><![CDATA[تاپیک شما منتقل شد]]></item>
-        <item name="wbb.thread.notification.moderate.open.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}تعدیل کننده{/if} تاپیک شما را باز کرد <strong>{$thread->getTitle()}</strong>.]]></item>
-        <item name="wbb.thread.notification.moderate.open.notification.title"><![CDATA[تاپیک شما باز شد]]></item>
-        <item name="wbb.thread.notification.moderate.restore.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}تعدیل کننده{/if} تاپیک شما را بازیابی کرد “{$thread->getTitle()}”.]]></item>
-        <item name="wbb.thread.notification.moderate.restore.notification.title"><![CDATA[تاپیک شما بازیابی شده است]]></item>
-        <item name="wbb.thread.notification.moderate.setLabel.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}تعدیل کننده{/if} {if $userNotificationObject->getDecoratedObject()->label == null}has removed the label <span class="badge label{if $userNotificationObject->getDecoratedObject()->oldLabel->cssClassName} {$userNotificationObject->getDecoratedObject()->oldLabel->cssClassName}{/if}">{$userNotificationObject->getDecoratedObject()->oldLabel->getTitle()}</span> from your thread <strong>{$thread->getTitle()}</strong>.{elseif $userNotificationObject->getDecoratedObject()->oldLabel == null}has added the label <span class="badge label{if $userNotificationObject->getDecoratedObject()->label->cssClassName} {$userNotificationObject->getDecoratedObject()->label->cssClassName}{/if}">{$userNotificationObject->getDecoratedObject()->label->getTitle()}</span> to your thread <strong>{$thread->getTitle()}</strong>.{else}has changed the label from <span class="badge label{if $userNotificationObject->getDecoratedObject()->oldLabel->cssClassName} {$userNotificationObject->getDecoratedObject()->oldLabel->cssClassName}{/if}">{$userNotificationObject->getDecoratedObject()->oldLabel->getTitle()}</span> to <span class="badge label{if $userNotificationObject->getDecoratedObject()->label->cssClassName} {$userNotificationObject->getDecoratedObject()->label->cssClassName}{/if}">{$userNotificationObject->getDecoratedObject()->label->getTitle()}</span> in your thread <strong>{$thread->getTitle()}</strong>.{/if}]]></item>
-        <item name="wbb.thread.notification.moderate.setLabel.notification.title"><![CDATA[یک برچسب {if $userNotificationObject->getDecoratedObject()->label == null}از تاپیک شما حذف شده است{elseif $userNotificationObject->getDecoratedObject()->oldLabel != null}تاپیک شما تغییر کرده است{else}به تاپیک شما اضافه شد{/if}]]></item>
-        <item name="wbb.thread.notification.moderate.trash.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}تعدیل کننده{/if} تاپیک شما رو سطل آشغال منتقل کرد “{$thread->getTitle()}”{if !$userNotificationObject->getDecoratedObject()->__get('reason')|empty} به این دلیل “{$userNotificationObject->getDecoratedObject()->reason|truncate:255:'…'}”{/if}.]]></item>
+        <item name="wbb.thread.notification.moderate.changeTopic.notification.title"><![CDATA[عنوان موضوع شما تغییر کرده است]]></item>
+        <item name="wbb.thread.notification.moderate.close.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}تعدیل کننده{/if} موضوع شما را بست <strong>{$thread->getTitle()}</strong>.]]></item>
+        <item name="wbb.thread.notification.moderate.close.notification.title"><![CDATA[موضوع شما بسته شد]]></item>
+        <item name="wbb.thread.notification.moderate.enable.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}تعدیل کننده{/if} موضوع شما را فعال کرد <strong>{$thread->getTitle()}</strong>.]]></item>
+        <item name="wbb.thread.notification.moderate.enable.notification.title"><![CDATA[موضوع شما فعال شده است]]></item>
+        <item name="wbb.thread.notification.moderate.move.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}تعدیل کننده{/if} موضوع شما را جابجا کرد <strong>{$thread->getTitle()}</strong>.]]></item>
+        <item name="wbb.thread.notification.moderate.move.notification.title"><![CDATA[موضوع شما منتقل شد]]></item>
+        <item name="wbb.thread.notification.moderate.open.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}تعدیل کننده{/if} موضوع شما را باز کرد <strong>{$thread->getTitle()}</strong>.]]></item>
+        <item name="wbb.thread.notification.moderate.open.notification.title"><![CDATA[موضوع شما باز شد]]></item>
+        <item name="wbb.thread.notification.moderate.restore.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}تعدیل کننده{/if} موضوع شما را بازیابی کرد “{$thread->getTitle()}”.]]></item>
+        <item name="wbb.thread.notification.moderate.restore.notification.title"><![CDATA[موضوع شما بازیابی شده است]]></item>
+        <item name="wbb.thread.notification.moderate.setLabel.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}تعدیل کننده{/if} {if $userNotificationObject->getDecoratedObject()->label == null}برچسب را حذف کرده است <span class="badge label{if $userNotificationObject->getDecoratedObject()->oldLabel->cssClassName} {$userNotificationObject->getDecoratedObject()->oldLabel->cssClassName}{/if}">{$userNotificationObject->getDecoratedObject()->oldLabel->getTitle()}</span> from your thread <strong>{$thread->getTitle()}</strong>.{elseif $userNotificationObject->getDecoratedObject()->oldLabel == null}has added the label <span class="badge label{if $userNotificationObject->getDecoratedObject()->label->cssClassName} {$userNotificationObject->getDecoratedObject()->label->cssClassName}{/if}">{$userNotificationObject->getDecoratedObject()->label->getTitle()}</span> to your thread <strong>{$thread->getTitle()}</strong>.{else}has changed the label from <span class="badge label{if $userNotificationObject->getDecoratedObject()->oldLabel->cssClassName} {$userNotificationObject->getDecoratedObject()->oldLabel->cssClassName}{/if}">{$userNotificationObject->getDecoratedObject()->oldLabel->getTitle()}</span> to <span class="badge label{if $userNotificationObject->getDecoratedObject()->label->cssClassName} {$userNotificationObject->getDecoratedObject()->label->cssClassName}{/if}">{$userNotificationObject->getDecoratedObject()->label->getTitle()}</span> in your thread <strong>{$thread->getTitle()}</strong>.{/if}]]></item>
+        <item name="wbb.thread.notification.moderate.setLabel.notification.title"><![CDATA[یک برچسب {if $userNotificationObject->getDecoratedObject()->label == null}از موضوع شما حذف شده است{elseif $userNotificationObject->getDecoratedObject()->oldLabel != null}موضوع شما تغییر کرده است{else}به موضوع شما اضافه شد{/if}]]></item>
+        <item name="wbb.thread.notification.moderate.trash.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}تعدیل کننده{/if} موضوع شما رو سطل آشغال منتقل کرد “{$thread->getTitle()}”{if !$userNotificationObject->getDecoratedObject()->__get('reason')|empty} به این دلیل “{$userNotificationObject->getDecoratedObject()->reason|truncate:255:'…'}”{/if}.]]></item>
         <item name="wbb.thread.notification.moderate.trash.notification.title"><![CDATA[موضوع شما حذف شده است]]></item>
         <item name="wbb.thread.notification.title"><![CDATA[موضوع جدید در انجمن تماشا شده]]></item>
-        <item name="wbb.thread.oldThread"><![CDATA[آخرین پاسخ بیشتر از {#WBB_REPLY_OLD_THREAD_WARNING} چند روز پیش این تاپیک به احتمال زیاد منسوخ شده است.{if $board->canStartThread()} توصیه می شود که یک <a href="{link application='wbb' controller='ThreadAdd' id=$thread->boardID}{/link}">موضوع جدید</a> بجای.{/if}]]></item>
+        <item name="wbb.thread.oldThread"><![CDATA[آخرین پاسخ بیشتر از {#WBB_REPLY_OLD_THREAD_WARNING} چند روز پیش این موضوع به احتمال زیاد منسوخ شده است.{if $board->canStartThread()} توصیه می شود که یک <a href="{link application='wbb' controller='ThreadAdd' id=$thread->boardID}{/link}">موضوع جدید</a> بجای.{/if}]]></item>
         <item name="wbb.thread.ownPosts"><![CDATA[موضوع حاوی پست های شماست]]></item>
         <item name="wbb.thread.polls"><![CDATA[موضوع شامل {#$thread->polls} نظرسنجی{if $thread->polls != 1}ها{/if}]]></item>
         <item name="wbb.thread.replies"><![CDATA[پاسخ ها]]></item>
-        <item name="wbb.thread.reply"><![CDATA[پاسخ به این تاپیک…]]></item>
+        <item name="wbb.thread.reply"><![CDATA[پاسخ به این موضوع…]]></item>
         <item name="wbb.thread.reported"><![CDATA[موضوع گزارش شده است]]></item>
         <item name="wbb.thread.similarThreads"><![CDATA[موضوعات مشابه]]></item>
         <item name="wbb.thread.sortField.activity"><![CDATA[فعالیت]]></item>
@@ -1787,7 +1787,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wbb.thread.sortField.username"><![CDATA[نویسنده]]></item>
         <item name="wbb.thread.sortField.views"><![CDATA[بازدید ها]]></item>
         <item name="wbb.thread.status.ignoring"><![CDATA[نادیده گرفته شد]]></item>
-        <item name="wbb.thread.status.ignoring.description"><![CDATA[تاپیک مخفی است و هیچ اعلانی دریافت نخواهید کرد.]]></item>
+        <item name="wbb.thread.status.ignoring.description"><![CDATA[موضوع مخفی است و هیچ اعلانی دریافت نخواهید کرد.]]></item>
         <item name="wbb.thread.status.normal"><![CDATA[مشترک نیست]]></item>
         <item name="wbb.thread.status.normal.description"><![CDATA[دریافت اطلاعیه برای اشاره، نقل قول و واکنش.]]></item>
         <item name="wbb.thread.status.watching"><![CDATA[مشترک شد]]></item>
@@ -1846,9 +1846,9 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
     </category>
     <category name="wbb.thread.log">
         <item name="wbb.thread.log"><![CDATA[ورود به سیستم]]></item>
-        <item name="wbb.thread.log.post.close"><![CDATA[ویرایش ممنوع  <a href="$post->getLink()}" class="wbbPostLink" data-object-id="{@$post->postID}">post{if $post->subject} “{$post->subject}”{/if}</a> by <a href="{link controller='User' id=$post->userID title=$post->username}{/link}" class="userLink" data-object-id="{@$post->userID}">{$post->username}</a>.]]></item>
+        <item name="wbb.thread.log.post.close"><![CDATA[ویرایش ممنوع  <a href="$post->getLink()}" class="wbbPostLink" data-object-id="{@$post->postID}">پست{if $post->subject} “{$post->subject}”{/if}</a> توسط <a href="{link controller='User' id=$post->userID title=$post->username}{/link}" class="userLink" data-object-id="{@$post->userID}">{$post->username}</a>.]]></item>
         <item name="wbb.thread.log.post.delete"><![CDATA[ پست را حذف کرد.]]></item>
-        <item name="wbb.thread.log.post.disable"><![CDATA[Disabled the <a href="$post->getLink()}" class="wbbPostLink" data-object-id="{@$post->postID}">Post{if $post->subject} “{$post->subject}”{/if}</a> by <a href="{link controller='User' id=$post->userID title=$post->username}{/link}" class="userLink" data-object-id="{@$post->userID}">{$post->username}</a>.]]></item>
+        <item name="wbb.thread.log.post.disable"><![CDATA[را غیرفعال کرد <a href="$post->getLink()}" class="wbbPostLink" data-object-id="{@$post->postID}">Post{if $post->subject} “{$post->subject}”{/if}</a> by <a href="{link controller='User' id=$post->userID title=$post->username}{/link}" class="userLink" data-object-id="{@$post->userID}">{$post->username}</a>.]]></item>
         <item name="wbb.thread.log.post.edit"><![CDATA[Edited the <a href="$post->getLink()}" class="wbbPostLink" data-object-id="{@$post->postID}">Post{if $post->subject} “{$post->subject}”{/if}</a> by <a href="{link controller='User' id=$post->userID title=$post->username}{/link}" class="userLink" data-object-id="{@$post->userID}">{$post->username}</a>.]]></item>
         <item name="wbb.thread.log.post.enable"><![CDATA[Approved the <a href="$post->getLink()}" class="wbbPostLink" data-object-id="{@$post->postID}">Post{if $post->subject} “{$post->subject}”{/if}</a> by <a href="{link controller='User' id=$post->userID title=$post->username}{/link}" class="userLink" data-object-id="{@$post->userID}">{$post->username}</a>.]]></item>
         <item name="wbb.thread.log.post.merge"><![CDATA[Merged {if $additionalData[mergedPostCount] == 1}a post{else}{#$additionalData[mergedPostCount]} posts{/if} created by {implode from=$additionalData[mergedPostAuthors] item='username'}{$username}{/implode} into the <a href="$post->getLink()}" class="wbbPostLink" data-object-id="{@$post->postID}">post{if $post->subject} “{$post->subject}”{/if}</a> by <a href="{link controller='User' id=$post->userID title=$post->username}{/link}" class="userLink" data-object-id="{@$post->userID}">{$post->username}</a>.]]></item>
@@ -1863,13 +1863,13 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wbb.thread.log.thread.done"><![CDATA[موضوع را به عنوان حل شده علامت گذاری کرد.]]></item>
         <item name="wbb.thread.log.thread.enable"><![CDATA[موضوع را تایید کرد.]]></item>
         <item name="wbb.thread.log.thread.markAsBestAnswer"><![CDATA[انتخاب شد <a href="{link application='wbb' controller='Thread' postID=$additionalData[postID]}#post{$additionalData[postID]}{/link}">پست</a> به عنوان بهترین پاسخ.]]></item>
-        <item name="wbb.thread.log.thread.merge"><![CDATA[Merged the thread{if $additionalData[mergedThreads]|count > 1}s{/if} {implode from=$additionalData[mergedThreads] item='mergedThread'}“{$mergedThread}”{/implode} into the thread]]></item>
+        <item name="wbb.thread.log.thread.merge"><![CDATA[موضوع را ترکیب کرد{if $additionalData[mergedThreads]|count > 1}ها{/if} {implode from=$additionalData[mergedThreads] item='mergedThread'}“{$mergedThread}”{/implode}به موضوع]]></item>
         <item name="wbb.thread.log.thread.move"><![CDATA[موضوع را از انجمن منتقل کرد <a href="{link application='wbb' controller='Board' id=$additionalData[oldBoard][boardID] title=$additionalData[oldBoard][title]|phrase}{/link}">{$additionalData[oldBoard][title]|phrase}</a> به انجمن <a href="{link application='wbb' controller='Board' id=$additionalData[newBoard][boardID] title=$additionalData[newBoard][title]|phrase}{/link}">{$additionalData[newBoard][title]|phrase}</a>.]]></item>
         <item name="wbb.thread.log.thread.open"><![CDATA[موضوع را باز کرد.]]></item>
-        <item name="wbb.thread.log.thread.restore"><![CDATA[تاپیک را بازیابی کرد.]]></item>
+        <item name="wbb.thread.log.thread.restore"><![CDATA[موضوع را بازیابی کرد.]]></item>
         <item name="wbb.thread.log.thread.scrape"><![CDATA[باعث شد موضوع دیگر سنجاق نشود.]]></item>
         <item name="wbb.thread.log.thread.setAsAnnouncement"><![CDATA[وضعیت موضوع به اعلان تغییر کرد]]></item>
-        <item name="wbb.thread.log.thread.setLabel"><![CDATA[{if $additionalData[label]|empty}برچسب را حذف کرد <span class="badge label{if $additionalData[oldLabel]->cssClassName} {$additionalData[oldLabel]->cssClassName}{/if}">{$additionalData[oldLabel]->getTitle()}</span>{elseif $additionalData[oldLabel]|empty}برچسب را اضافه کرد <span class="badge label{if $additionalData[label]->cssClassName} {$additionalData[label]->cssClassName}{/if}">{$additionalData[label]->getTitle()}</span>{else}برچسب را از <span class="badge label{if $additionalData[oldLabel]->cssClassName} {$additionalData[oldLabel]->cssClassName}{/if}">{$additionalData[oldLabel]->label|phrase}</span> to <span class="badge label{if $additionalData[label]->cssClassName} {$additionalData[label]->cssClassName}{/if}">{$additionalData[label]->getTitle()}</span>{/if}]]></item>
+        <item name="wbb.thread.log.thread.setLabel"><![CDATA[{if $additionalData[label]|empty}برچسب را حذف کرد <span class="badge label{if $additionalData[oldLabel]->cssClassName} {$additionalData[oldLabel]->cssClassName}{/if}">{$additionalData[oldLabel]->getTitle()}</span>{elseif $additionalData[oldLabel]|empty}برچسب را اضافه کرد <span class="badge label{if $additionalData[label]->cssClassName} {$additionalData[label]->cssClassName}{/if}">{$additionalData[label]->getTitle()}</span>{else}برچسب را از <span class="badge label{if $additionalData[oldLabel]->cssClassName} {$additionalData[oldLabel]->cssClassName}{/if}">{$additionalData[oldLabel]->label|phrase}</span> به <span class="badge label{if $additionalData[label]->cssClassName} {$additionalData[label]->cssClassName}{/if}">{$additionalData[label]->getTitle()}</span>{/if}]]></item>
         <item name="wbb.thread.log.thread.sticky"><![CDATA[موضوع را سنجاق کرد.]]></item>
         <item name="wbb.thread.log.thread.trash"><![CDATA[موضوع را به سطل آشغال منتقل کرد{if $additionalData[reason]}: {$additionalData[reason]} {/if}.]]></item>
         <item name="wbb.thread.log.thread.trash.summary"><![CDATA[موضوع حذف شد توسط {if $userID}<a href="{link controller='User' id=$userID title=$username}{/link}" class="userLink" data-object-id="{@$userID}">{$username}</a>{else}{$username}{/if}{if $additionalData[reason]}: {$additionalData[reason]}{/if} ({@$time|time}).]]></item>
@@ -1959,7 +1959,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
     </category>
     <category name="wcf.acp.ad">
         <item name="wcf.acp.ad.ad"><![CDATA[تبلیغات]]></item>
-        <item name="wcf.acp.ad.ad.description"><![CDATA[کد اچ تی ام ال را در اینجا وارد کنید. عبارات زیر به طور خودکار در کد اچ تی ام ال جایگزین میشوند:
+        <item name="wcf.acp.ad.ad.description"><![CDATA[کد html را در اینجا وارد کنید. عبارات زیر به طور خودکار در کد html جایگزین میشوند:
 <ul class="nativeList">
 	<li class="jsDefaultItem"><kbd>{literal}{$username}{/literal}</kbd> "با نام کاربر فعال یا "مهمان </li>
 </ul>]]></item>
