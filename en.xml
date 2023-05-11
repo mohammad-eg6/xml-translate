@@ -1087,18 +1087,18 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="gallery.image.log.trash.summary"><![CDATA[{if $additionalData[این فیلم]|empty}تصویر {else}فیلم{/if} حذف شد توسط  {if $userID}<a href="{link controller='User' id=$userID title=$username}{/link}" class="userLink" data-object-id="{@$userID}">{$username}</a>{else}{$username}{/if}{if $additionalData[دلیل]} به این دلیل : {$additionalData[علت ]}{/if} ({@$time|time}).]]></item>
         <item name="gallery.image.map"><![CDATA[محل]]></item>
         <item name="gallery.image.markedUsers"><![CDATA[نشانه دار کردن کاربران ]]></item>
-        <item name="gallery.image.markedUsers.description"><![CDATA[Markers are highlighted on the image while hovering over a username.]]></item>
+        <item name="gallery.image.markedUsers.description"><![CDATA[در حالی که نشانگرها روی یک نام کاربری قرار دارند، روی تصویر برجسته می شوند.]]></item>
         <item name="gallery.image.marker"><![CDATA[نشانگر ]]></item>
         <item name="gallery.image.marker.add"><![CDATA[اضافه کردن نشان گر ]]></item>
         <item name="gallery.image.marker.delete.confirmMessage"><![CDATA[ایا واقعا میخواهید نشان را حذف کنید ?]]></item>
-        <item name="gallery.image.marker.description"><![CDATA[Click on the image to add a marker at that position.]]></item>
+        <item name="gallery.image.marker.description"><![CDATA[برای افزودن یک نشانگر در آن موقعیت، روی تصویر کلیک کنید.]]></item>
         <item name="gallery.image.marker.edit"><![CDATA[ویرایش نشانگر ]]></item>
-        <item name="gallery.image.marker.notification.mail.html"><![CDATA[<p><strong>{$author}</strong> marked you on the image <a href="{$image->getLink()}">{$image->getTitle()}</a>:</p>]]></item>
-        <item name="gallery.image.marker.notification.mail.plaintext"><![CDATA[{@$author} marked you on the image “{@$image->getTitle()}” [URL:{@$image->getLink()}]:]]></item>
-        <item name="gallery.image.marker.notification.message"><![CDATA[<strong>{$author}</strong> marked you on the image <strong>{$image->getTitle()}</strong>.]]></item>
+        <item name="gallery.image.marker.notification.mail.html"><![CDATA[<p><strong>{$author}</strong> شما را روی تصویر مشخص کرده است <a href="{$image->getLink()}">{$image->getTitle()}</a>:</p>]]></item>
+        <item name="gallery.image.marker.notification.mail.plaintext"><![CDATA[{@$author} شما را روی تصویر مشخص کرده است “{@$image->getTitle()}” [URL:{@$image->getLink()}]:]]></item>
+        <item name="gallery.image.marker.notification.message"><![CDATA[<strong>{$author}</strong> شما را روی تصویر مشخص کرده است <strong>{$image->getTitle()}</strong>.]]></item>
         <item name="gallery.image.marker.notification.title"><![CDATA[شما نشان شده اید]]></item>
         <item name="gallery.image.marker.text"><![CDATA[متن ]]></item>
-        <item name="gallery.image.marker.text.description"><![CDATA[Automatically detects links and smilies.]]></item>
+        <item name="gallery.image.marker.text.description"><![CDATA[به طور خودکار لینک ها و شکلک ها را شناسایی می کند.]]></item>
         <item name="gallery.image.marker.type"><![CDATA[نوع نشانگر ]]></item>
         <item name="gallery.image.marker.type.text"><![CDATA[متن ]]></item>
         <item name="gallery.image.marker.type.user"><![CDATA[کاربر ]]></item>
@@ -1108,47 +1108,47 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="gallery.image.mention.notification.mail.plaintext"><![CDATA[{@$author}شما را در توضیحات ذکر کرده است {if $image->isImage()}تصویر{else}ویدئو{/if} “{@$image->getTitle()}” [URL:{@$image->getLink()}]:]]></item>
         <item name="gallery.image.mention.notification.message"><![CDATA[<strong>{$author}</strong> شما را در توضیحات ذکر کرده است{if $image->isImage()}تصویر{else}ویدئو{/if} <strong>{$image->getTitle()}</strong>.]]></item>
         <item name="gallery.image.mention.notification.title"><![CDATA[به شما اشاره شد]]></item> 
-        <item name="gallery.image.moderation.info"><![CDATA[اخیرا{if !$__wcf->session->getPermission('user.gallery.canAddImageWithoutModeration')}تصاویر آپلود شده{if GALLERY_VIDEO_UPLOAD && $__wcf->session->getPermission('user.gallery.canUploadVideo') && !$__wcf->session->getPermission('user.gallery.canUploadVideoWithoutModeration')}و فیلم ها{/if}{elseif $__gallery->canUploadVideo() && !$__wcf->session->getPermission('user.gallery.canUploadVideoWithoutModeration')}ویدیوهای آپلود شده{/if}{if $__gallery->canLinkVideo() && !$__wcf->session->getPermission('user.gallery.canLinkVideoWithoutModeration')}{if !$__wcf->session->getPermission('user.gallery.canAddImageWithoutModeration') || (GALLERY_VIDEO_UPLOAD && $__wcf->session->getPermission('user.gallery.canUploadVideo') && !$__wcf->session->getPermission('user.gallery.canUploadVideoWithoutModeration'))} و {/if}لینک های ویدئویی اضافه شد{/if}تا زمانی که توسط تعدیل کننده تایید نشود، غیرقابل دسترسی خواهد بود. تا زمان تایید آنها، شما نه می توانید مشاهده کنید و نه ویرایش کنید {if !$__wcf->session->getPermission('user.gallery.canAddImageWithoutModeration')}تصهاویر/if}{if (GALLERY_VIDEO_UPLOAD && $__wcf->session->getPermission('user.gallery.canUploadVideo') && !$__wcf->session->getPermission('user.gallery.canUploadVideoWithoutModeration')) || (GALLERY_VIDEO_LINKS && $__wcf->session->getPermission('user.gallery.canLinkVideo') && !$__wcf->session->getPermission('user.gallery.canLinkVideoWithoutModeration'))}{if !$__wcf->session->getPermission('user.gallery.canAddImageWithoutModeration')} و {/if}videos{/if}.]]></item>
+        <item name="gallery.image.moderation.info"><![CDATA[اخیرا{if !$__wcf->session->getPermission('user.gallery.canAddImageWithoutModeration')}تصاویر آپلود شده{if GALLERY_VIDEO_UPLOAD && $__wcf->session->getPermission('user.gallery.canUploadVideo') && !$__wcf->session->getPermission('user.gallery.canUploadVideoWithoutModeration')}و فیلم ها{/if}{elseif $__gallery->canUploadVideo() && !$__wcf->session->getPermission('user.gallery.canUploadVideoWithoutModeration')}ویدیوهای آپلود شده{/if}{if $__gallery->canLinkVideo() && !$__wcf->session->getPermission('user.gallery.canLinkVideoWithoutModeration')}{if !$__wcf->session->getPermission('user.gallery.canAddImageWithoutModeration') || (GALLERY_VIDEO_UPLOAD && $__wcf->session->getPermission('user.gallery.canUploadVideo') && !$__wcf->session->getPermission('user.gallery.canUploadVideoWithoutModeration'))} و {/if}لینک های ویدئویی اضافه شد{/if}تا زمانی که توسط تعدیل کننده تایید نشود، غیرقابل دسترسی خواهد بود. تا زمان تایید آنها، شما نه می توانید مشاهده کنید و نه ویرایش کنید {if !$__wcf->session->getPermission('user.gallery.canAddImageWithoutModeration')}تصاویر/if}{if (GALLERY_VIDEO_UPLOAD && $__wcf->session->getPermission('user.gallery.canUploadVideo') && !$__wcf->session->getPermission('user.gallery.canUploadVideoWithoutModeration')) || (GALLERY_VIDEO_LINKS && $__wcf->session->getPermission('user.gallery.canLinkVideo') && !$__wcf->session->getPermission('user.gallery.canLinkVideoWithoutModeration'))}{if !$__wcf->session->getPermission('user.gallery.canAddImageWithoutModeration')} و {/if}ویدیوها{/if}.]]></item>
         <item name="gallery.image.moreImages"><![CDATA[تصاویر بیشتر]]></item>
         <item name="gallery.image.moveToAlbum"><![CDATA[انتقال تصاویر{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/Videos{/if}به آلبوم]]></item>
-        <item name="gallery.image.nextImage"><![CDATA[بعد{if $nextImage->isImage()}تصویر{else}ویدئو{/if}]]></item>
+        <item name="gallery.image.nextImage"><![CDATA[بعد{if $nextImage->isImage()}تصویر{else}ویدیو{/if}]]></item>
         <item name="gallery.image.noImages"><![CDATA[هیچ تصویری وجود ندارد{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}یا ویدیوها{/if}{if $category|isset}در این دسته{/if} درحال حاضر.{if $hasActiveFilter} <a href="{link application='gallery' controller=$controllerName object=$controllerObject}{/link}">فیلترهای اعمال شده را بازنشانی کنید.</a>{/if}]]></item>
         <item name="gallery.image.notification.mail.html"><![CDATA[<p><strong>{$author}</strong> {if $image->isVideoLink}اضافه{else}آپلود شد{/if} را {if $image->isImage()}تصویر{else}ویدئو{/if} <a href="{$image->getLink()}">{$image->getTitle()}</a>:</p>]]></item>
-        <item name="gallery.image.notification.mail.plaintext"><![CDATA[{@$author} {if $image->isVideoLink}اضافه{else}آپلود شده{/if} را {if $image->isImage()}تصویر{else}ویدئو{/if} “{@$image->getTitle()}” [URL:{@$image->getLink()}]:]]></item>
-        <item name="gallery.image.notification.message"><![CDATA[<strong>{$author}</strong> {if $image->isVideoLink}اضافه شده{else}آپلود شده{/if} را {if $image->isImage()}تصویر{else}ویدئو{/if} <strong>{$image->getTitle()}</strong>.]]></item>
-        <item name="gallery.image.notification.title"><![CDATA[جدید {if $image->isImage()}تصویر{else}ویدئو{/if}]]></item>
-        <item name="gallery.image.overwriteData.confirmMessage"><![CDATA[آیا واقعاً می خواهید جزئیات تصویر فعلی را اعمال کنید؟{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/video{/if}به تمام تصاویر دیگر{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}و فیلم ها{/if}?]]></item>
-        <item name="gallery.image.pendingImages"><![CDATA[{if $pendingImageList|count > 1}وجود دارد {#$pendingImageList|count}تصاویر برجسته{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/videos{/if} که دارند{else}یک تصویر برجسته وجود دارد{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/video{/if} which has{/if} been uploaded, but not saved yet.]]></item>
-        <item name="gallery.image.pendingImages.delete"><![CDATA[Delete outstanding images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/videos{/if}]]></item>
-        <item name="gallery.image.pendingImages.delete.confirmMessage"><![CDATA[Do you really want to delete the outstanding images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and videos{/if}?]]></item>
-        <item name="gallery.image.pendingImages.load"><![CDATA[Load outstanding images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/videos{/if}]]></item>
-        <item name="gallery.image.previousImage"><![CDATA[Previous {if $previousImage->isImage()}Image{else}Video{/if}]]></item>
-        <item name="gallery.image.recentActivity.image"><![CDATA[{if $image->isVideoLink}Added{else}Uploaded{/if} the {if $image->isImage()}image{else}video{/if} <a href="{$image->getLink()}" class="galleryImageLink" data-image-id="{@$image->imageID}">{$image->title}</a>.]]></item>
-        <item name="gallery.image.recentActivity.imageComment"><![CDATA[Commented on the {if $image->isImage()}image{else}video{/if} <a href="{$comment->getLink()}" class="galleryImageLink" data-image-id="{@$image->imageID}">{$image->title}</a>.]]></item>
-        <item name="gallery.image.recentActivity.imageCommentResponse"><![CDATA[Replied to a comment by {user object=$commentAuthor} on the {if $image->isImage()}image{else}video{/if} <a href="{$response->getLink()}" class="galleryImageLink" data-image-id="{@$image->imageID}">{$image->title}</a>.]]></item>
-        <item name="gallery.image.recentActivity.images"><![CDATA[Added {if $images}{#$images} image{if $images > 1}s{/if}{/if}{if $videos}{if $images} and {/if}{#$videos} video{if $videos > 1}s{/if}{/if}.]]></item>
-        <item name="gallery.image.recentActivity.likedImage"><![CDATA[Reacted with <span title="{$reactionType->getTitle()}" class="jsTooltip">{@$reactionType->renderIcon()}</span> to the {if $image->isImage()}image{else}video{/if} <a href="{$image->getLink()}" class="galleryImageLink" data-image-id="{@$image->imageID}">{$image->title}</a>.]]></item>
-        <item name="gallery.image.restore"><![CDATA[Restore]]></item>
-        <item name="gallery.image.rotate"><![CDATA[Rotate Image]]></item>
-        <item name="gallery.image.rotate.180"><![CDATA[Rotate by 180°]]></item>
-        <item name="gallery.image.rotate.270"><![CDATA[Rotate by 270°]]></item>
-        <item name="gallery.image.rotate.90"><![CDATA[Rotate by 90°]]></item>
-        <item name="gallery.image.rotate.confirmMessage"><![CDATA[Do you really want to rotate the image? The selected thumbnail area will be reset during the rotation.]]></item>
-        <item name="gallery.image.share.largeImage"><![CDATA[Large Version]]></item>
-        <item name="gallery.image.share.smallImage"><![CDATA[Small Version]]></item>
-        <item name="gallery.image.size"><![CDATA[Dimensions]]></item>
-        <item name="gallery.image.sortField.comments"><![CDATA[Comments]]></item>
-        <item name="gallery.image.sortField.creationTime"><![CDATA[Time of Creation]]></item>
-        <item name="gallery.image.sortField.cumulativeLikes"><![CDATA[Reactions]]></item>
-        <item name="gallery.image.sortField.favorites"><![CDATA[Favorites]]></item>
-        <item name="gallery.image.sortField.random"><![CDATA[Random]]></item>
-        <item name="gallery.image.sortField.showOrder"><![CDATA[Default Order]]></item>
-        <item name="gallery.image.sortField.title"><![CDATA[Title]]></item>
-        <item name="gallery.image.sortField.uploadTime"><![CDATA[Time of Upload]]></item>
-        <item name="gallery.image.sortField.views"><![CDATA[Views]]></item>
-        <item name="gallery.image.tags.overwrite.confirmMessage"><![CDATA[Do you really want to assign the selected tags to all the other uploaded images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and videos{/if}?]]></item>
+        <item name="gallery.image.notification.mail.plaintext"><![CDATA[{@$author} {if $image->isVideoLink}اضافه{else}آپلود شده{/if} را {if $image->isImage()}تصویر{else}ویدیو{/if} “{@$image->getTitle()}” [URL:{@$image->getLink()}]:]]></item>
+        <item name="gallery.image.notification.message"><![CDATA[<strong>{$author}</strong> {if $image->isVideoLink}اضافه شده{else}آپلود شده{/if} را {if $image->isImage()}تصویر{else}ویدیو{/if} <strong>{$image->getTitle()}</strong>.]]></item>
+        <item name="gallery.image.notification.title"><![CDATA[جدید {if $image->isImage()}تصویر{else}ویدیو{/if}]]></item>
+        <item name="gallery.image.overwriteData.confirmMessage"><![CDATA[آیا واقعاً می خواهید جزئیات تصویر فعلی را اعمال کنید؟{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/video{/if}به تمام تصاویر دیگر{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}و ویدیو ها{/if}?]]></item>
+        <item name="gallery.image.pendingImages"><![CDATA[{if $pendingImageList|count > 1}وجود دارد {#$pendingImageList|count}تصاویر برجسته{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/videos{/if} که دارند{else}یک تصویر برجسته وجود دارد{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/video{/if} که دارای{/if} آپلود شده است، اما هنوز ذخیره نشده است.]]></item>
+        <item name="gallery.image.pendingImages.delete"><![CDATA[حذف تصاویر برجسته{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/videos{/if}]]></item>
+        <item name="gallery.image.pendingImages.delete.confirmMessage"><![CDATA[آیا واقعاً می خواهید تصاویر برجسته را حذف کنید؟{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیوها {/if}?]]></item>
+        <item name="gallery.image.pendingImages.load"><![CDATA[بارگذاری تصاویر برجسته{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/videos{/if}]]></item>
+        <item name="gallery.image.previousImage"><![CDATA[قبلی {if $previousImage->isImage()}تصویر{else}ویدیو{/if}]]></item>
+        <item name="gallery.image.recentActivity.image"><![CDATA[{if $image->isVideoLink} اضافه شد{else}آپلود شد{/if} را {if $image->isImage()}تصویر{else}ویدیو{/if} <a href="{$image->getLink()}" class="galleryImageLink" data-image-id="{@$image->imageID}">{$image->title}</a>.]]></item>
+        <item name="gallery.image.recentActivity.imageComment"><![CDATA[نظر در مورد {if $image->isImage()}تصویر{else}ویدیو{/if} <a href="{$comment->getLink()}" class="galleryImageLink" data-image-id="{@$image->imageID}">{$image->title}</a>.]]></item>
+        <item name="gallery.image.recentActivity.imageCommentResponse"><![CDATA[پاسخ داد به نظرات توسط {user object=$commentAuthor} بر روی {if $image->isImage()}تصویر{else}ویدیو{/if} <a href="{$response->getLink()}" class="galleryImageLink" data-image-id="{@$image->imageID}">{$image->title}</a>.]]></item>
+        <item name="gallery.image.recentActivity.images"><![CDATA[اضافه شد {if $images}{#$images} تصویر{if $images > 1}ها{/if}{/if}{if $videos}{if $images} و {/if}{#$videos} ویدیو{if $videos > 1}ها{/if}{/if}.]]></item>
+        <item name="gallery.image.recentActivity.likedImage"><![CDATA[واکنش نشان داد با <span title="{$reactionType->getTitle()}" class="jsTooltip">{@$reactionType->renderIcon()}</span> به {if $image->isImage()}تصویر{else}ویدیو{/if} <a href="{$image->getLink()}" class="galleryImageLink" data-image-id="{@$image->imageID}">{$image->title}</a>.]]></item>
+        <item name="gallery.image.restore"><![CDATA[بازگرداندن]]></item>
+        <item name="gallery.image.rotate"><![CDATA[چرخش تصویر]]></item>
+        <item name="gallery.image.rotate.180"><![CDATA[بچرخوانید 180°]]></item>
+        <item name="gallery.image.rotate.270"><![CDATA[بچرخوانید 270°]]></item>
+        <item name="gallery.image.rotate.90"><![CDATA[بچرخوانید 90°]]></item>
+        <item name="gallery.image.rotate.confirmMessage"><![CDATA[آیا واقعاً می خواهید تصویر را بچرخانید؟ منطقه تصویر کوچک انتخاب شده در طول چرخش بازنشانی می شود.]]></item>
+        <item name="gallery.image.share.largeImage"><![CDATA[نسخه بزرگ]]></item>
+        <item name="gallery.image.share.smallImage"><![CDATA[نسخه کوچک]]></item>
+        <item name="gallery.image.size"><![CDATA[ابعاد]]></item>
+        <item name="gallery.image.sortField.comments"><![CDATA[نظرات]]></item>
+        <item name="gallery.image.sortField.creationTime"><![CDATA[زمان خلقت]]></item>
+        <item name="gallery.image.sortField.cumulativeLikes"><![CDATA[واکنش ها]]></item>
+        <item name="gallery.image.sortField.favorites"><![CDATA[موارد دلخواه]]></item>
+        <item name="gallery.image.sortField.random"><![CDATA[تصادفی]]></item>
+        <item name="gallery.image.sortField.showOrder"><![CDATA[سفارش پیش فرض]]></item>
+        <item name="gallery.image.sortField.title"><![CDATA[عنوان]]></item>
+        <item name="gallery.image.sortField.uploadTime"><![CDATA[زمان آپلود]]></item>
+        <item name="gallery.image.sortField.views"><![CDATA[بازدیدها]]></item>
+        <item name="gallery.image.tags.overwrite.confirmMessage"><![CDATA[آیا واقعاً می خواهید برچسب های انتخاب شده را به همه تصاویر آپلود شده دیگر اختصاص دهید؟{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیوها {/if}?]]></item>
         <item name="gallery.image.thumbnail.chooseSelection"><![CDATA[Apply Selection]]></item>
-        <item name="gallery.image.title.overwrite.confirmMessage"><![CDATA[Do you really want to assign the title to all the other uploaded images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and videos{/if}?]]></item>
+        <item name="gallery.image.title.overwrite.confirmMessage"><![CDATA[آیا واقعاً می خواهید عنوان را به همه تصاویر آپلود شده دیگر اختصاص دهید؟{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیوها {/if}?]]></item>
         <item name="gallery.image.trash"><![CDATA[Move to Trash]]></item>
         <item name="gallery.image.trash.confirmMessage"><![CDATA[Do you really want to move this image{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/video{/if} to the trash?]]></item>
         <item name="gallery.image.trash.reason"><![CDATA[Reason (optional)]]></item>
@@ -4997,7 +4997,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.pip.box.identifier.description"><![CDATA[شناسه جعبه برای به روز رسانی جعبه ها استفاده می شود. شناسه شامل حداقل چهار بخش است که با نقطه از هم جدا شده اند. هر بخش نباید خالی باشد و ممکن است فقط شامل کاراکترهای زیر باشد: <kbd>[A-z0-9-_]</kbd>. به طور کلی، اولین قسمت از شناسه فهرست، شناسه بسته است. مثال: <kbd>com.foo.bar.package.Box</kbd>]]></item>
         <item name="wcf.acp.pip.box.identifier.error.notUnique"><![CDATA[.شناسه وارد شده قبلاً توسط کادر دیگری استفاده می شود]]></item>
         <item name="wcf.acp.pip.box.identifier.error.tooFewSegments"><![CDATA[شناسه فقط شامل {#$segmentCount} بخش{if $segmentCount > 1}ها{/if}.]]></item>
-        <item name="wcf.acp.pip.box.info"><![CDATA[The <kbd>جعبه</kbd> افزونه نصب بسته، بسته های از پیش پیکربندی شده جدیدی را نصب می کند. اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/box/" class="externalURL">مستندات توسعه دهنده</a>.]]></item>
+        <item name="wcf.acp.pip.box.info"><![CDATA[این <kbd>جعبه</kbd> افزونه نصب بسته، بسته های از پیش پیکربندی شده جدیدی را نصب می کند. اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/box/" class="externalURL">مستندات توسعه دهنده</a>.]]></item>
         <item name="wcf.acp.pip.box.name"><![CDATA[اسم]]></item>
         <item name="wcf.acp.pip.box.name.description"><![CDATA[نام جعبه در لیست جعبه در ACP نمایش داده می شود.]]></item>
         <item name="wcf.acp.pip.box.objectType"><![CDATA[کنترل کننده]]></item>
