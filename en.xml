@@ -9026,139 +9026,139 @@ Your account on the website: {@PAGE_TITLE|phrase} [URL:{link isEmail=true}{/link
     <category name="wcf.user.userGroups">
         <item name="wcf.user.userGroups.application.comments.description"><![CDATA[تمامی نظرات داخلی بوده و در معرض دید متقاضیان قرار نخواهد گرفت.]]></item>
         <item name="wcf.user.userGroups.application.edit"><![CDATA[ویرایش برنامه]]></item>
-        <item name="wcf.user.userGroups.application.log"><![CDATA[Log]]></item>
-        <item name="wcf.user.userGroups.application.log.action"><![CDATA[Action]]></item>
-        <item name="wcf.user.userGroups.application.log.changeStatus"><![CDATA[Changed status to “{'wcf.user.userGroups.application.status.status'|concat:$additionalData[newStatus]|language}”.]]></item>
-        <item name="wcf.user.userGroups.application.log.editReason"><![CDATA[Edited reason]]></item>
-        <item name="wcf.user.userGroups.application.log.editReply"><![CDATA[Edited reply]]></item>
-        <item name="wcf.user.userGroups.application.log.time"><![CDATA[Date]]></item>
-        <item name="wcf.user.userGroups.application.reply"><![CDATA[Reply]]></item>
-        <item name="wcf.user.userGroups.application.revoke"><![CDATA[Revoke Application]]></item>
-        <item name="wcf.user.userGroups.application.revoke.sure"><![CDATA[Do you really want to revoke your application for the user group <span class="confirmationObject">{$group->getTitle()}</span>?]]></item>
-        <item name="wcf.user.userGroups.application.status"><![CDATA[Status]]></item>
-        <item name="wcf.user.userGroups.application.status.status0"><![CDATA[Pending]]></item>
-        <item name="wcf.user.userGroups.application.status.status1"><![CDATA[In Progress]]></item>
-        <item name="wcf.user.userGroups.application.status.status2"><![CDATA[Accepted]]></item>
-        <item name="wcf.user.userGroups.application.status.status3"><![CDATA[Denied]]></item>
-        <item name="wcf.user.userGroups.application.status.status5"><![CDATA[Closed]]></item>
-        <item name="wcf.user.userGroups.application.time"><![CDATA[Last Change]]></item>
-        <item name="wcf.user.userGroups.apply"><![CDATA[Apply for Membership]]></item>
-        <item name="wcf.user.userGroups.apply.applicationInformation"><![CDATA[Application Details]]></item>
-        <item name="wcf.user.userGroups.apply.groupInformation"><![CDATA[User Group Details]]></item>
-        <item name="wcf.user.userGroups.apply.reason"><![CDATA[Reason]]></item>
-        <item name="wcf.user.userGroups.join"><![CDATA[Join User Group]]></item>
-        <item name="wcf.user.userGroups.leave"><![CDATA[Leave User Group]]></item>
-        <item name="wcf.user.userGroups.leave.sure"><![CDATA[Do you really want to leave the group <span class="confirmationObject">{$group->getTitle()}</span>?]]></item>
+        <item name="wcf.user.userGroups.application.log"><![CDATA[گزارش]]></item>
+        <item name="wcf.user.userGroups.application.log.action"><![CDATA[عمل]]></item>
+        <item name="wcf.user.userGroups.application.log.changeStatus"><![CDATA[تغییر وضعیت به “{'wcf.user.userGroups.application.status.status'|concat:$additionalData[newStatus]|language}”.]]></item>
+        <item name="wcf.user.userGroups.application.log.editReason"><![CDATA[دلیل ویرایش شده]]></item>
+        <item name="wcf.user.userGroups.application.log.editReply"><![CDATA[پاسخ ویرایش شده]]></item>
+        <item name="wcf.user.userGroups.application.log.time"><![CDATA[تاریخ]]></item>
+        <item name="wcf.user.userGroups.application.reply"><![CDATA[پاسخ]]></item>
+        <item name="wcf.user.userGroups.application.revoke"><![CDATA[لغو برنامه]]></item>
+        <item name="wcf.user.userGroups.application.revoke.sure"><![CDATA[آیا واقعاً می خواهید برنامه خود را برای گروه کاربری لغو کنید؟ <span class="confirmationObject">{$group->getTitle()}</span>?]]></item>
+        <item name="wcf.user.userGroups.application.status"><![CDATA[وضعیت]]></item>
+        <item name="wcf.user.userGroups.application.status.status0"><![CDATA[در انتظار]]></item>
+        <item name="wcf.user.userGroups.application.status.status1"><![CDATA[در حال پیش رفت]]></item>
+        <item name="wcf.user.userGroups.application.status.status2"><![CDATA[پذیرفته شده]]></item>
+        <item name="wcf.user.userGroups.application.status.status3"><![CDATA[رد شده]]></item>
+        <item name="wcf.user.userGroups.application.status.status5"><![CDATA[بسته شده]]></item>
+        <item name="wcf.user.userGroups.application.time"><![CDATA[آخرین تغییر]]></item>
+        <item name="wcf.user.userGroups.apply"><![CDATA[اقدام برای عضویت]]></item>
+        <item name="wcf.user.userGroups.apply.applicationInformation"><![CDATA[جزئیات برنامه]]></item>
+        <item name="wcf.user.userGroups.apply.groupInformation"><![CDATA[جزئیات گروه کاربری]]></item>
+        <item name="wcf.user.userGroups.apply.reason"><![CDATA[دلیل]]></item>
+        <item name="wcf.user.userGroups.join"><![CDATA[به گروه کاربری بپیوندید]]></item>
+        <item name="wcf.user.userGroups.leave"><![CDATA[گروه کاربری را ترک کنید]]></item>
+        <item name="wcf.user.userGroups.leave.sure"><![CDATA[آیا واقعاً می خواهید گروه را ترک کنید؟ <span class="confirmationObject">{$group->getTitle()}</span>?]]></item>
     </category>
     <category name="wcf.user.usersOnline">
-        <item name="wcf.user.usersOnline"><![CDATA[Users Online]]></item>
+        <item name="wcf.user.usersOnline"><![CDATA[کاربران آنلاین]]></item>
         <item name="wcf.user.usersOnline.detail"><![CDATA[{*
-*}{if $usersOnlineList->stats[members] > 0}{#$usersOnlineList->stats[members]} Member{if $usersOnlineList->stats[members] != 1}s{/if}{/if}{*
+*}{if $usersOnlineList->stats[members] > 0}{#$usersOnlineList->stats[members]} عضو{if $usersOnlineList->stats[members] != 1}{/if}{/if}{*
 *}{if $usersOnlineList->stats[invisible] > 0} ({#$usersOnlineList->stats[invisible]} invisible){/if}{*
-*}{if $usersOnlineList->stats[guests] > 0 && $usersOnlineList->stats[members] > 0} and {/if}{*
-*}{if $usersOnlineList->stats[guests] > 0}{#$usersOnlineList->stats[guests]} Guest{if $usersOnlineList->stats[guests] != 1}s{/if}{/if}]]></item>
-        <item name="wcf.user.usersOnline.guests"><![CDATA[Guests]]></item>
-        <item name="wcf.user.usersOnline.invisible"><![CDATA[ (invisible)]]></item>
-        <item name="wcf.user.usersOnline.ipAddress"><![CDATA[IP Address]]></item>
-        <item name="wcf.user.usersOnline.lastActivity"><![CDATA[Last Activity]]></item>
-        <item name="wcf.user.usersOnline.location"><![CDATA[Location]]></item>
-        <item name="wcf.user.usersOnline.location.unknown"><![CDATA[Unknown location]]></item>
-        <item name="wcf.user.usersOnline.marking.legend"><![CDATA[Legend]]></item>
-        <item name="wcf.user.usersOnline.record"><![CDATA[Record: {#USERS_ONLINE_RECORD} User{if USERS_ONLINE_RECORD != 1}s{/if} ({@USERS_ONLINE_RECORD_TIME|time})]]></item>
-        <item name="wcf.user.usersOnline.robots"><![CDATA[Search Engine Robots]]></item>
-        <item name="wcf.user.usersOnline.sortField.lastActivityTime"><![CDATA[Last Activity]]></item>
-        <item name="wcf.user.usersOnline.sortField.requestURI"><![CDATA[Location]]></item>
-        <item name="wcf.user.usersOnline.sortField.username"><![CDATA[Username]]></item>
-        <item name="wcf.user.usersOnline.userAgent"><![CDATA[Browser]]></item>
-        <item name="wcf.user.usersOnline.users"><![CDATA[Users]]></item>
+*}{if $usersOnlineList->stats[guests] > 0 && $usersOnlineList->stats[members] > 0} و {/if}{*
+*}{if $usersOnlineList->stats[guests] > 0}{#$usersOnlineList->stats[guests]} مهمان{if $usersOnlineList->stats[guests] != 1}{/if}{/if}]]></item>
+        <item name="wcf.user.usersOnline.guests"><![CDATA[مهمانان]]></item>
+        <item name="wcf.user.usersOnline.invisible"><![CDATA[ (نامرئی)]]></item>
+        <item name="wcf.user.usersOnline.ipAddress"><![CDATA[آدرس آی پی]]></item>
+        <item name="wcf.user.usersOnline.lastActivity"><![CDATA[آخرین فعالیت]]></item>
+        <item name="wcf.user.usersOnline.location"><![CDATA[موقعیت]]></item>
+        <item name="wcf.user.usersOnline.location.unknown"><![CDATA[موقعیت نا معلوم]]></item>
+        <item name="wcf.user.usersOnline.marking.legend"><![CDATA[افسانه]]></item>
+        <item name="wcf.user.usersOnline.record"><![CDATA[رکورد: {#USERS_ONLINE_RECORD} کاربر{if USERS_ONLINE_RECORD != 1}{/if} ({@USERS_ONLINE_RECORD_TIME|time})]]></item>
+        <item name="wcf.user.usersOnline.robots"><![CDATA[ربات های موتور جستجو]]></item>
+        <item name="wcf.user.usersOnline.sortField.lastActivityTime"><![CDATA[آخرین فعالیت]]></item>
+        <item name="wcf.user.usersOnline.sortField.requestURI"><![CDATA[موقعیت]]></item>
+        <item name="wcf.user.usersOnline.sortField.username"><![CDATA[نام کاربری]]></item>
+        <item name="wcf.user.usersOnline.userAgent"><![CDATA[مرورگر]]></item>
+        <item name="wcf.user.usersOnline.users"><![CDATA[کاربران]]></item>
     </category>
     <category name="shadow.invalid.page">
-        <item name="shadow.invalid.page.com.woltlab.blog.BlogAdd.title"><![CDATA[Create Blog]]></item>
-        <item name="shadow.invalid.page.com.woltlab.blog.BlogEdit.title"><![CDATA[Edit Blog]]></item>
-        <item name="shadow.invalid.page.com.woltlab.blog.BlogList.title"><![CDATA[Blog]]></item>
-        <item name="shadow.invalid.page.com.woltlab.blog.EntryAdd.title"><![CDATA[Create Article]]></item>
-        <item name="shadow.invalid.page.com.woltlab.blog.EntryEdit.title"><![CDATA[Edit Article]]></item>
-        <item name="shadow.invalid.page.com.woltlab.blog.EntryList.title"><![CDATA[Articles]]></item>
-        <item name="shadow.invalid.page.com.woltlab.blog.MyBlogList.title"><![CDATA[My Blogs]]></item>
-        <item name="shadow.invalid.page.com.woltlab.blog.MyEntryList.title"><![CDATA[My Articles]]></item>
-        <item name="shadow.invalid.page.com.woltlab.blog.UnreadEntryList.title"><![CDATA[Unread Articles]]></item>
-        <item name="shadow.invalid.page.com.woltlab.blog.WatchedEntryList.title"><![CDATA[Watched Articles]]></item>
-        <item name="shadow.invalid.page.com.woltlab.calendar.Calendar.title"><![CDATA[Calendar]]></item>
-        <item name="shadow.invalid.page.com.woltlab.calendar.Daily.title"><![CDATA[Day View]]></item>
-        <item name="shadow.invalid.page.com.woltlab.calendar.EventAdd.title"><![CDATA[Add Event]]></item>
-        <item name="shadow.invalid.page.com.woltlab.calendar.EventEdit.title"><![CDATA[Edit Event]]></item>
-        <item name="shadow.invalid.page.com.woltlab.calendar.EventImport.title"><![CDATA[Import Events]]></item>
-        <item name="shadow.invalid.page.com.woltlab.calendar.EventParticipationList.title"><![CDATA[Event Participation]]></item>
-        <item name="shadow.invalid.page.com.woltlab.calendar.Map.title"><![CDATA[Map]]></item>
-        <item name="shadow.invalid.page.com.woltlab.calendar.MyEventList.title"><![CDATA[My Events]]></item>
-        <item name="shadow.invalid.page.com.woltlab.calendar.UnreadEventList.title"><![CDATA[Unread Events]]></item>
-        <item name="shadow.invalid.page.com.woltlab.calendar.UpcomingEventList.title"><![CDATA[Upcoming Events]]></item>
-        <item name="shadow.invalid.page.com.woltlab.calendar.Weekly.title"><![CDATA[Week View]]></item>
-        <item name="shadow.invalid.page.com.woltlab.calendar.Yearly.title"><![CDATA[Year View]]></item>
-        <item name="shadow.invalid.page.com.woltlab.filebase.FileAdd.title"><![CDATA[Add File]]></item>
-        <item name="shadow.invalid.page.com.woltlab.filebase.FileEdit.title"><![CDATA[Edit File]]></item>
-        <item name="shadow.invalid.page.com.woltlab.filebase.FileLicense.title"><![CDATA[License Agreement]]></item>
-        <item name="shadow.invalid.page.com.woltlab.filebase.FileList.title"><![CDATA[Filebase]]></item>
-        <item name="shadow.invalid.page.com.woltlab.filebase.FileLog.title"><![CDATA[File Log]]></item>
-        <item name="shadow.invalid.page.com.woltlab.filebase.FileReviewAdd.title"><![CDATA[Add Review]]></item>
-        <item name="shadow.invalid.page.com.woltlab.filebase.FileReviewEdit.title"><![CDATA[Edit Review]]></item>
-        <item name="shadow.invalid.page.com.woltlab.filebase.FileReviewResponseAdd.title"><![CDATA[Reply to Review]]></item>
-        <item name="shadow.invalid.page.com.woltlab.filebase.FileReviewResponseEdit.title"><![CDATA[Edit Reply to Review]]></item>
-        <item name="shadow.invalid.page.com.woltlab.filebase.License.title"><![CDATA[License Agreement]]></item>
-        <item name="shadow.invalid.page.com.woltlab.filebase.MyFileList.title"><![CDATA[My Files]]></item>
-        <item name="shadow.invalid.page.com.woltlab.filebase.Purchase.title"><![CDATA[Purchase File]]></item>
-        <item name="shadow.invalid.page.com.woltlab.filebase.PurchasedFileList.title"><![CDATA[Purchased Files]]></item>
-        <item name="shadow.invalid.page.com.woltlab.filebase.UnreadFileList.title"><![CDATA[New Files]]></item>
-        <item name="shadow.invalid.page.com.woltlab.filebase.VersionAdd.title"><![CDATA[Add Version]]></item>
-        <item name="shadow.invalid.page.com.woltlab.filebase.VersionEdit.title"><![CDATA[Edit Version]]></item>
-        <item name="shadow.invalid.page.com.woltlab.filebase.WatchedFileList.title"><![CDATA[Watched Files]]></item>
-        <item name="shadow.invalid.page.com.woltlab.gallery.AlbumImageSort.title"><![CDATA[Sort Images]]></item>
-        <item name="shadow.invalid.page.com.woltlab.gallery.AlbumList.title"><![CDATA[Albums]]></item>
-        <item name="shadow.invalid.page.com.woltlab.gallery.ImageAdd.title"><![CDATA[Add Images]]></item>
-        <item name="shadow.invalid.page.com.woltlab.gallery.ImageEdit.title"><![CDATA[Edit Images]]></item>
-        <item name="shadow.invalid.page.com.woltlab.gallery.ImageList.title"><![CDATA[Gallery]]></item>
-        <item name="shadow.invalid.page.com.woltlab.gallery.Map.title"><![CDATA[Image Map]]></item>
-        <item name="shadow.invalid.page.com.woltlab.gallery.MyAlbumList.title"><![CDATA[My Albums]]></item>
-        <item name="shadow.invalid.page.com.woltlab.gallery.MyFavoriteList.title"><![CDATA[My Favorites]]></item>
-        <item name="shadow.invalid.page.com.woltlab.gallery.MyImageList.title"><![CDATA[My Images]]></item>
-        <item name="shadow.invalid.page.com.woltlab.gallery.MyVideoList.title"><![CDATA[My Videos]]></item>
-        <item name="shadow.invalid.page.com.woltlab.gallery.UnreadAlbumList.title"><![CDATA[New Albums]]></item>
-        <item name="shadow.invalid.page.com.woltlab.gallery.UnreadImageList.title"><![CDATA[New Items]]></item>
-        <item name="shadow.invalid.page.com.woltlab.gallery.VideoList.title"><![CDATA[Videos]]></item>
-        <item name="shadow.invalid.page.com.woltlab.gallery.WatchedImageList.title"><![CDATA[Watched Images]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wbb.BoardList.title"><![CDATA[Forum]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wbb.IgnoredThreadList.title"><![CDATA[Ignored Threads]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wbb.ThreadAdd.title"><![CDATA[Create Thread]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wbb.ThreadLog.title"><![CDATA[Thread Log]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wbb.UnreadThreadList.title"><![CDATA[Unread Posts]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wbb.UnresolvedThreadList.title"><![CDATA[Unresolved Threads]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wbb.WatchedBoardList.title"><![CDATA[Watched Boards]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wbb.WatchedThreadList.title"><![CDATA[Watched Threads]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wcf.AccountManagement.title"><![CDATA[Account Management]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wcf.AccountSecurity.title"><![CDATA[Account Security]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wcf.ArticleAdd.title"><![CDATA[Add Article]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wcf.ArticleEdit.title"><![CDATA[Edit Article]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wcf.ArticleList.title"><![CDATA[Articles]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wcf.AvatarEdit.title"><![CDATA[Avatar Management]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wcf.Contact.title"><![CDATA[Contact]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wcf.conversation.ConversationAdd.title"><![CDATA[New Conversation]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wcf.conversation.ConversationDraftEdit.title"><![CDATA[Edit Conversation Draft]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wcf.conversation.ConversationList.title"><![CDATA[Conversations]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wcf.CookiePolicy.title"><![CDATA[Cookie Policy]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wcf.CookiePolicy.content"><![CDATA[<p>This website uses cookies required to operate and use this site. Below you will find an explanation on our cookie usage.</p>
+        <item name="shadow.invalid.page.com.woltlab.blog.BlogAdd.title"><![CDATA[ایجاد وبلاگ]]></item>
+        <item name="shadow.invalid.page.com.woltlab.blog.BlogEdit.title"><![CDATA[ویرایش وبلاگ]]></item>
+        <item name="shadow.invalid.page.com.woltlab.blog.BlogList.title"><![CDATA[وبلاگ]]></item>
+        <item name="shadow.invalid.page.com.woltlab.blog.EntryAdd.title"><![CDATA[ایجاد مقاله]]></item>
+        <item name="shadow.invalid.page.com.woltlab.blog.EntryEdit.title"><![CDATA[ویرایش مقاله]]></item>
+        <item name="shadow.invalid.page.com.woltlab.blog.EntryList.title"><![CDATA[مقالات]]></item>
+        <item name="shadow.invalid.page.com.woltlab.blog.MyBlogList.title"><![CDATA[وبلاگ های من]]></item>
+        <item name="shadow.invalid.page.com.woltlab.blog.MyEntryList.title"><![CDATA[مقالات من]]></item>
+        <item name="shadow.invalid.page.com.woltlab.blog.UnreadEntryList.title"><![CDATA[مقالات خوانده نشده]]></item>
+        <item name="shadow.invalid.page.com.woltlab.blog.WatchedEntryList.title"><![CDATA[مقالات تماشا شده]]></item>
+        <item name="shadow.invalid.page.com.woltlab.calendar.Calendar.title"><![CDATA[تقویم]]></item>
+        <item name="shadow.invalid.page.com.woltlab.calendar.Daily.title"><![CDATA[نمای روز]]></item>
+        <item name="shadow.invalid.page.com.woltlab.calendar.EventAdd.title"><![CDATA[افزودن رویداد]]></item>
+        <item name="shadow.invalid.page.com.woltlab.calendar.EventEdit.title"><![CDATA[ویرایش رویداد]]></item>
+        <item name="shadow.invalid.page.com.woltlab.calendar.EventImport.title"><![CDATA[وارد کردن رویداد]]></item>
+        <item name="shadow.invalid.page.com.woltlab.calendar.EventParticipationList.title"><![CDATA[مشارکت در رویداد]]></item>
+        <item name="shadow.invalid.page.com.woltlab.calendar.Map.title"><![CDATA[نقشه]]></item>
+        <item name="shadow.invalid.page.com.woltlab.calendar.MyEventList.title"><![CDATA[رویداد های من]]></item>
+        <item name="shadow.invalid.page.com.woltlab.calendar.UnreadEventList.title"><![CDATA[رویدادهای خوانده نشده]]></item>
+        <item name="shadow.invalid.page.com.woltlab.calendar.UpcomingEventList.title"><![CDATA[رویدادهای آینده]]></item>
+        <item name="shadow.invalid.page.com.woltlab.calendar.Weekly.title"><![CDATA[نمای هفته]]></item>
+        <item name="shadow.invalid.page.com.woltlab.calendar.Yearly.title"><![CDATA[نمای سال]]></item>
+        <item name="shadow.invalid.page.com.woltlab.filebase.FileAdd.title"><![CDATA[افزودن فایل]]></item>
+        <item name="shadow.invalid.page.com.woltlab.filebase.FileEdit.title"><![CDATA[ویرایش فایل]]></item>
+        <item name="shadow.invalid.page.com.woltlab.filebase.FileLicense.title"><![CDATA[توافقنامه مجوز]]></item>
+        <item name="shadow.invalid.page.com.woltlab.filebase.FileList.title"><![CDATA[پایگاه فایل]]></item>
+        <item name="shadow.invalid.page.com.woltlab.filebase.FileLog.title"><![CDATA[گزارش فایل]]></item>
+        <item name="shadow.invalid.page.com.woltlab.filebase.FileReviewAdd.title"><![CDATA[افزودن بررسی]]></item>
+        <item name="shadow.invalid.page.com.woltlab.filebase.FileReviewEdit.title"><![CDATA[ویرایش بررسی]]></item>
+        <item name="shadow.invalid.page.com.woltlab.filebase.FileReviewResponseAdd.title"><![CDATA[پاسخ به بررسی]]></item>
+        <item name="shadow.invalid.page.com.woltlab.filebase.FileReviewResponseEdit.title"><![CDATA[ویرایش پاسخ به بررسی]]></item>
+        <item name="shadow.invalid.page.com.woltlab.filebase.License.title"><![CDATA[توافقنامه مجوز]]></item>
+        <item name="shadow.invalid.page.com.woltlab.filebase.MyFileList.title"><![CDATA[فایل های من]]></item>
+        <item name="shadow.invalid.page.com.woltlab.filebase.Purchase.title"><![CDATA[خرید فایل]]></item>
+        <item name="shadow.invalid.page.com.woltlab.filebase.PurchasedFileList.title"><![CDATA[فایل های خریداری شده]]></item>
+        <item name="shadow.invalid.page.com.woltlab.filebase.UnreadFileList.title"><![CDATA[فایل های جدید]]></item>
+        <item name="shadow.invalid.page.com.woltlab.filebase.VersionAdd.title"><![CDATA[افزودن نسخه]]></item>
+        <item name="shadow.invalid.page.com.woltlab.filebase.VersionEdit.title"><![CDATA[ویرایش نسخه]]></item>
+        <item name="shadow.invalid.page.com.woltlab.filebase.WatchedFileList.title"><![CDATA[فایل های تماشا شده]]></item>
+        <item name="shadow.invalid.page.com.woltlab.gallery.AlbumImageSort.title"><![CDATA[مرتب سازی تصاویر]]></item>
+        <item name="shadow.invalid.page.com.woltlab.gallery.AlbumList.title"><![CDATA[البوم ها]]></item>
+        <item name="shadow.invalid.page.com.woltlab.gallery.ImageAdd.title"><![CDATA[اضافه کردن تصاویر]]></item>
+        <item name="shadow.invalid.page.com.woltlab.gallery.ImageEdit.title"><![CDATA[ویرایش تصاویر]]></item>
+        <item name="shadow.invalid.page.com.woltlab.gallery.ImageList.title"><![CDATA[گالری]]></item>
+        <item name="shadow.invalid.page.com.woltlab.gallery.Map.title"><![CDATA[نقشه تصویر]]></item>
+        <item name="shadow.invalid.page.com.woltlab.gallery.MyAlbumList.title"><![CDATA[آلبوم های من]]></item>
+        <item name="shadow.invalid.page.com.woltlab.gallery.MyFavoriteList.title"><![CDATA[علایق من]]></item>
+        <item name="shadow.invalid.page.com.woltlab.gallery.MyImageList.title"><![CDATA[تصاویر من]]></item>
+        <item name="shadow.invalid.page.com.woltlab.gallery.MyVideoList.title"><![CDATA[ویدیو های من]]></item>
+        <item name="shadow.invalid.page.com.woltlab.gallery.UnreadAlbumList.title"><![CDATA[آلبوم های جدید]]></item>
+        <item name="shadow.invalid.page.com.woltlab.gallery.UnreadImageList.title"><![CDATA[آیتم های جدید]]></item>
+        <item name="shadow.invalid.page.com.woltlab.gallery.VideoList.title"><![CDATA[ویدیو ها]]></item>
+        <item name="shadow.invalid.page.com.woltlab.gallery.WatchedImageList.title"><![CDATA[تصاویر تماشا شده]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wbb.BoardList.title"><![CDATA[انجمن]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wbb.IgnoredThreadList.title"><![CDATA[موضوعات نادیده گرفته شده]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wbb.ThreadAdd.title"><![CDATA[ایجاد موضوع]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wbb.ThreadLog.title"><![CDATA[گزارش موضوع]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wbb.UnreadThreadList.title"><![CDATA[پست های خوانده نشده]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wbb.UnresolvedThreadList.title"><![CDATA[موضوعات حل نشده]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wbb.WatchedBoardList.title"><![CDATA[تابلوهای تماشا شده]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wbb.WatchedThreadList.title"><![CDATA[موضوعات تماشا شده]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wcf.AccountManagement.title"><![CDATA[مدیریت حساب]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wcf.AccountSecurity.title"><![CDATA[امنیت حساب]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wcf.ArticleAdd.title"><![CDATA[اضافه کردن مقاله]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wcf.ArticleEdit.title"><![CDATA[ویرایش مقاله]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wcf.ArticleList.title"><![CDATA[مقالات]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wcf.AvatarEdit.title"><![CDATA[مدیریت آواتار]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wcf.Contact.title"><![CDATA[تماس]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wcf.conversation.ConversationAdd.title"><![CDATA[مکالمه جدید]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wcf.conversation.ConversationDraftEdit.title"><![CDATA[ویرایش پیش‌نویس مکالمه]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wcf.conversation.ConversationList.title"><![CDATA[مکالمات]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wcf.CookiePolicy.title"><![CDATA[خط مشی کوکی]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wcf.CookiePolicy.content"><![CDATA[<p>این وب سایت از کوکی های مورد نیاز برای کار و استفاده از این سایت استفاده می کند. در زیر توضیحی در مورد استفاده از کوکی ما خواهید دید.</p>
 
-<h2>What are cookies</h2>
-<p>Cookies are small text files which a website may put on your computer or mobile device when you first visit a site or page. The cookie will help the website, or another website, to recognize your device the next time you visit. There are many functions cookies serve, for example they can help us to remember your username and preferences.</p>
+<h2>کوکی ها چه هستند؟</h2>
+<p>کوکی‌ها فایل‌های متنی کوچکی هستند که یک وب‌سایت ممکن است در اولین بازدید از یک سایت یا صفحه در رایانه یا دستگاه تلفن همراه شما قرار دهد. کوکی به وب‌سایت یا وب‌سایت دیگری کمک می‌کند دفعه بعد که بازدید می‌کنید دستگاه شما را تشخیص دهد. کوکی‌ها عملکردهای زیادی دارند، به عنوان مثال می‌توانند به ما کمک کنند نام کاربری و تنظیمات برگزیده شما را به خاطر بسپاریم.</p>
 
-<h2>What do we use cookies for</h2>
-<p>We’re using cookies for the following purposes:</p>
+<h2>برای چه کاری از کوکی ها استفاده می کنیم</h2>
+<p>ما از کوکی ها برای اهداف زیر استفاده می کنیم:</p>
 <ul>
-<li>Session: Upon first visit of our website, the system will create a new unique session for you which will be saved using a cookie on your computer. Sessions are required to recognize users between page accesses.</li>
-<li>Third-Party Services: Displayed ads or sharing content through social networks or comparable actions might cause a cookie created by them.</li>
+<li>جلسه: در اولین بازدید از وب سایت ما، سیستم یک جلسه منحصر به فرد جدید برای شما ایجاد می کند که با استفاده از یک کوکی در رایانه شما ذخیره می شود. جلسات برای شناسایی کاربران بین دسترسی به صفحه مورد نیاز است.</li>
+<li>خدمات شخص ثالث: تبلیغات نمایش داده شده یا اشتراک گذاری محتوا از طریق شبکه های اجتماعی یا اقدامات مشابه ممکن است باعث ایجاد کوکی توسط آنها شود.</li>
 </ul>
 
-<h2>How to disable or delete cookies</h2>
-<p>Your internet browser offers specialized options to manage and remove cookies. They offer settings to reject many or all cookies. Please refer to the instructions for your internet browser from the list below.</p>
+<h2>نحوه غیرفعال کردن یا حذف کوکی ها</h2>
+<p>مرورگر اینترنت شما گزینه های تخصصی برای مدیریت و حذف کوکی ها ارائه می دهد. آنها تنظیماتی را برای رد کردن بسیاری یا همه کوکی ها ارائه می دهند. لطفاً به دستورالعمل های مربوط به مرورگر اینترنت خود از لیست زیر مراجعه کنید.</p>
 <ul>
 <li><a href="https://support.google.com/chrome/answer/95647?hl=en" class="externalURL" rel="nofollow">Google Chrome</a></li>
 <li><a href="https://privacy.microsoft.com/en-us/windows-10-microsoft-edge-and-privacy" class="externalURL" rel="nofollow">Microsoft Edge</a></li>
@@ -9166,30 +9166,30 @@ Your account on the website: {@PAGE_TITLE|phrase} [URL:{link isEmail=true}{/link
 <li><a href="https://blogs.opera.com/news/2015/08/how-to-manage-cookies-in-opera/" class="externalURL" rel="nofollow">Opera</a></li>
 <li><a href="https://support.apple.com/kb/ph17191?locale=en_US" class="externalURL" rel="nofollow">Safari</a></li>
 </ul>]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wcf.DeletedContentList.title"><![CDATA[Deleted Content]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wcf.Disclaimer.title"><![CDATA[Disclaimer]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wcf.EditHistory.title"><![CDATA[Edit History]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wcf.EmailActivation.title"><![CDATA[New Email Address Verification]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wcf.EmailNewActivationCode.title"><![CDATA[New Email Activation Code Request]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wcf.Following.title"><![CDATA[Users I Follow]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wcf.IgnoredUsers.title"><![CDATA[Blocked Users]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wcf.LegalNotice.title"><![CDATA[Legal Notice]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wcf.Login.title"><![CDATA[Login]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wcf.LostPassword.title"><![CDATA[Lost Password]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wcf.MembersList.title"><![CDATA[Members]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wcf.moderatedUserGroup.ModeratedUserGroupList.title"><![CDATA[User Group Management]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wcf.moderatedUserGroup.UserGroupList.title"><![CDATA[User Groups]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wcf.ModerationActivation.title"><![CDATA[Content Approval]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wcf.ModerationList.title"><![CDATA[Moderation]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wcf.ModerationReport.title"><![CDATA[Content Report]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wcf.MultifactorDisable.title"><![CDATA[Disable Multi-Factor Authentication]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wcf.NewPassword.title"><![CDATA[New Password Request]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wcf.NotificationList.title"><![CDATA[Notifications]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wcf.NotificationSettings.title"><![CDATA[Notification Settings]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wcf.NotificationUnsubscribe.title"><![CDATA[Unsubscribe Email Notifications]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wcf.PaidSubscriptionList.title"><![CDATA[Paid Subscriptions]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wcf.PrivacyPolicy.title"><![CDATA[Privacy Policy]]></item>
-        <item name="shadow.invalid.page.com.woltlab.wcf.PrivacyPolicy.content"><![CDATA[<h2>1. An overview of data protection</h2>
+        <item name="shadow.invalid.page.com.woltlab.wcf.DeletedContentList.title"><![CDATA[مطالب حذف شده]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wcf.Disclaimer.title"><![CDATA[سلب مسئولیت]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wcf.EditHistory.title"><![CDATA[ویرایش تاریخچه]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wcf.EmailActivation.title"><![CDATA[احراز هویت آدرس ایمیل جدید]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wcf.EmailNewActivationCode.title"><![CDATA[درخواست کد فعال سازی ایمیل جدید]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wcf.Following.title"><![CDATA[کاربرانی که دنبال می کنم]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wcf.IgnoredUsers.title"><![CDATA[کاربران مسدود شده]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wcf.LegalNotice.title"><![CDATA[اطلاع قانونی]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wcf.Login.title"><![CDATA[ورود]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wcf.LostPassword.title"><![CDATA[رمز فراموش شده]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wcf.MembersList.title"><![CDATA[اعضا]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wcf.moderatedUserGroup.ModeratedUserGroupList.title"><![CDATA[مدیریت گروه کاربری]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wcf.moderatedUserGroup.UserGroupList.title"><![CDATA[گروه های کاربری]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wcf.ModerationActivation.title"><![CDATA[تاییدیه محتوا]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wcf.ModerationList.title"><![CDATA[تعدیل]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wcf.ModerationReport.title"><![CDATA[گزارش محتوا]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wcf.MultifactorDisable.title"><![CDATA[غیرفعال کردن احراز هویت چند عاملی]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wcf.NewPassword.title"><![CDATA[درخواست رمز جدید]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wcf.NotificationList.title"><![CDATA[اعلان ها]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wcf.NotificationSettings.title"><![CDATA[تنظیمات اعلان]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wcf.NotificationUnsubscribe.title"><![CDATA[لغو اشتراک اعلان‌های ایمیل]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wcf.PaidSubscriptionList.title"><![CDATA[اشتراک های پولی]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wcf.PrivacyPolicy.title"><![CDATA[سیاست حفظ حریم خصوصی]]></item>
+        <item name="shadow.invalid.page.com.woltlab.wcf.PrivacyPolicy.content"><![CDATA[<h2>1. مروری بر حفاظت از داده ها</h2>
 <h3>اطلاعات کلی</h3> <p>اطلاعات زیر به شما یک نمای کلی از اتفاقاتی که با داده های شخصی شما هنگام بازدید از وب سایت ما می افتد، برای شما ارائه می دهد. عبارت “personal data” شامل تمام داده هایی است که می توان از آنها برای شناسایی شخصی شما استفاده کرد. برای کسب اطلاعات دقیق در مورد موضوع حفاظت از داده ها، لطفاً به اعلامیه حفاظت از داده ما که در زیر این نسخه آورده ایم مراجعه کنید..</p>
 <h3>ثبت اطلاعات در وب سایت ما</h3> <p><strong>چه کسی مسئول ثبت داده ها در این وب سایت است (i.e. the “controller”)?</strong></p><p><br></p><p>داده های این وب سایت توسط اپراتور وب سایت پردازش می شود که اطلاعات تماس او در بخش موجود است “General information and mandatory information” در این وب سایت.</p><p><br></p><p><strong>چگونه داده های شما را ثبت کنیم?</strong></p><p><br></p><p>ما داده های شما را در نتیجه به اشتراک گذاری داده های شما با ما جمع آوری می کنیم. به عنوان مثال، این ممکن است اطلاعاتی باشد که شما در فرم تماس ما وارد می کنید.</p><p><br></p><p>هنگامی که از وب سایت ما بازدید می کنید، سیستم های فناوری اطلاعات ما به طور خودکار سایر داده ها را ضبط می کنند. این داده ها عمدتاً شامل اطلاعات فنی است (به عنوان مثال مرورگر وب، سیستم عامل یا زمان دسترسی به سایت). هنگامی که به وب سایت ما دسترسی پیدا می کنید، این اطلاعات به طور خودکار ثبت می شود.</p><p><br></p><p><strong>برای چه اهدافی از داده های شما استفاده می کنیم?</strong></p><p><br></p><p>بخشی از اطلاعات برای تضمین ارائه بدون خطا وب سایت تولید می شود. ممکن است از داده های دیگری برای تجزیه و تحلیل الگوهای کاربری شما استفاده شود.</p><p><br></p><p><strong>از نظر اطلاعات شما چه حقوقی دارید؟?</strong></p><p><br></p><p>شما حق دارید اطلاعات مربوط به منبع، گیرندگان و اهداف داده های شخصی بایگانی شده خود را در هر زمان بدون نیاز به پرداخت هزینه ای برای چنین افشاگری دریافت کنید. شما همچنین این حق را دارید که بخواهید داده های خود را اصلاح، مسدود یا ریشه کن کنید. لطفاً در هر زمان با آدرسی که در بخش فاش شده است با ما تماس بگیرید “General information and mandatory information” اگر در مورد این یا سایر مسائل مربوط به حفاظت از داده سؤالی دارید در این وب سایت. شما همچنین حق دارید شکایت خود را در سازمان نظارتی ذیصلاح ثبت کنید.</p><p><br></p><p>علاوه بر این، تحت شرایط خاص، شما این حق را دارید که محدودیت پردازش اطلاعات شخصی خود را مطالبه کنید. برای جزئیات، لطفاً به بیانیه حفاظت از داده در بخش مراجعه کنید “Right to demand processing restrictions”.</p>
 
