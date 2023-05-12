@@ -1345,7 +1345,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wbb.acp.board.threadForm.boards"><![CDATA[انجمن ها]]></item>
         <item name="wbb.acp.board.threadForm.boards.description"><![CDATA[انجمن هایی را انتخاب کنید که فرم موضوع باید در آنها فعال باشد.]]></item>
         <item name="wbb.acp.board.threadForm.boards.hasAlreadyFormWarning"><![CDATA[این انجمن قبلاً به فرم موضوع دیگری اختصاص داده شده است و بنابراین نمی توان آن را انتخاب کرد.]]></item>
-        <item name="wbb.acp.board.threadForm.boards.noBoard"><![CDATA[این گره یک دسته یا یک لینک خارجی است و نمی توان آن را به یک فرم رشته اختصاص داد.]]></item>
+        <item name="wbb.acp.board.threadForm.boards.noBoard"><![CDATA[این گره یک دسته یا یک لینک خارجی است و نمی توان آن را به یک فرم موصوع اختصاص داد.]]></item>
         <item name="wbb.acp.board.threadForm.option.add"><![CDATA[اضافه کردن گزینه]]></item>
         <item name="wbb.acp.board.threadForm.option.edit"><![CDATA[گزینه ویرایش]]></item>
         <item name="wbb.acp.board.threadForm.options"><![CDATA[گزینه ها]]></item>
@@ -1355,9 +1355,9 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wbb.acp.menu.link.board"><![CDATA[انجمن ها]]></item>
         <item name="wbb.acp.menu.link.board.add"><![CDATA[اضافه کردن انجمن]]></item>
         <item name="wbb.acp.menu.link.board.list"><![CDATA[انجمن ها]]></item>
-        <item name="wbb.acp.menu.link.rssFeed"><![CDATA[RSS تغذیه می کند]]></item>
-        <item name="wbb.acp.menu.link.rssFeed.add"><![CDATA[اضافه کردن RSS تغذیه]]></item>
-        <item name="wbb.acp.menu.link.rssFeed.list"><![CDATA[RSS تغذیه می کند]]></item>
+        <item name="wbb.acp.menu.link.rssFeed"><![CDATA[RSS Feeds]]></item>
+        <item name="wbb.acp.menu.link.rssFeed.add"><![CDATA[اضافه کردن RSS Feed]]></item>
+        <item name="wbb.acp.menu.link.rssFeed.list"><![CDATA[RSS Feeds]]></item>
         <item name="wbb.acp.menu.link.threadForm.add"><![CDATA[اضافه کردن فرم موضوع]]></item>
         <item name="wbb.acp.menu.link.threadForm.edit"><![CDATA[ویرایش فرم موضوع]]></item>
         <item name="wbb.acp.menu.link.threadForm.list"><![CDATA[فرم های موضوع]]></item>
