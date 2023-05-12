@@ -1108,7 +1108,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="gallery.image.mention.notification.mail.plaintext"><![CDATA[{@$author}شما را در توضیحات ذکر کرده است {if $image->isImage()}تصویر{else}ویدئو{/if} “{@$image->getTitle()}” [URL:{@$image->getLink()}]:]]></item>
         <item name="gallery.image.mention.notification.message"><![CDATA[<strong>{$author}</strong> شما را در توضیحات ذکر کرده است{if $image->isImage()}تصویر{else}ویدئو{/if} <strong>{$image->getTitle()}</strong>.]]></item>
         <item name="gallery.image.mention.notification.title"><![CDATA[به شما اشاره شد]]></item> 
-        <item name="gallery.image.moderation.info"><![CDATA[اخیرا{if !$__wcf->session->getPermission('user.gallery.canAddImageWithoutModeration')}تصاویر آپلود شده{if GALLERY_VIDEO_UPLOAD && $__wcf->session->getPermission('user.gallery.canUploadVideo') && !$__wcf->session->getPermission('user.gallery.canUploadVideoWithoutModeration')}و فیلم ها{/if}{elseif $__gallery->canUploadVideo() && !$__wcf->session->getPermission('user.gallery.canUploadVideoWithoutModeration')}ویدیوهای آپلود شده{/if}{if $__gallery->canLinkVideo() && !$__wcf->session->getPermission('user.gallery.canLinkVideoWithoutModeration')}{if !$__wcf->session->getPermission('user.gallery.canAddImageWithoutModeration') || (GALLERY_VIDEO_UPLOAD && $__wcf->session->getPermission('user.gallery.canUploadVideo') && !$__wcf->session->getPermission('user.gallery.canUploadVideoWithoutModeration'))} و {/if}لینک های ویدئویی اضافه شد{/if}تا زمانی که توسط تعدیل کننده تایید نشود، غیرقابل دسترسی خواهد بود. تا زمان تایید آنها، شما نه می توانید مشاهده کنید و نه ویرایش کنید {if !$__wcf->session->getPermission('user.gallery.canAddImageWithoutModeration')}Images/if}{if (GALLERY_VIDEO_UPLOAD && $__wcf->session->getPermission('user.gallery.canUploadVideo') && !$__wcf->session->getPermission('user.gallery.canUploadVideoWithoutModeration')) || (GALLERY_VIDEO_LINKS && $__wcf->session->getPermission('user.gallery.canLinkVideo') && !$__wcf->session->getPermission('user.gallery.canLinkVideoWithoutModeration'))}{if !$__wcf->session->getPermission('user.gallery.canAddImageWithoutModeration')} و {/if}ویدیوها{/if}.]]></item>
+        <item name="gallery.image.moderation.info"><![CDATA[اخیرا{if !$__wcf->session->getPermission('user.gallery.canAddImageWithoutModeration')}تصاویر آپلود شده{if GALLERY_VIDEO_UPLOAD && $__wcf->session->getPermission('user.gallery.canUploadVideo') && !$__wcf->session->getPermission('user.gallery.canUploadVideoWithoutModeration')}و فیلم ها{/if}{elseif $__gallery->canUploadVideo() && !$__wcf->session->getPermission('user.gallery.canUploadVideoWithoutModeration')}ویدیوهای آپلود شده{/if}{if $__gallery->canLinkVideo() && !$__wcf->session->getPermission('user.gallery.canLinkVideoWithoutModeration')}{if !$__wcf->session->getPermission('user.gallery.canAddImageWithoutModeration') || (GALLERY_VIDEO_UPLOAD && $__wcf->session->getPermission('user.gallery.canUploadVideo') && !$__wcf->session->getPermission('user.gallery.canUploadVideoWithoutModeration'))} و {/if}لینک های ویدئویی اضافه شد{/if}تا زمانی که توسط تعدیل کننده تایید نشود، غیرقابل دسترسی خواهد بود. تا زمان تایید آنها، شما نه می توانید مشاهده کنید و نه ویرایش کنید {if !$__wcf->session->getPermission('user.gallery.canAddImageWithoutModeration')Images/if}{if (GALLERY_VIDEO_UPLOAD && $__wcf->session->getPermission('user.gallery.canUploadVideo') && !$__wcf->session->getPermission('user.gallery.canUploadVideoWithoutModeration')) || (GALLERY_VIDEO_LINKS && $__wcf->session->getPermission('user.gallery.canLinkVideo') && !$__wcf->session->getPermission('user.gallery.canLinkVideoWithoutModeration'))}{if !$__wcf->session->getPermission('user.gallery.canAddImageWithoutModeration')} و {/if}ویدیوها{/if}.]]></item>
         <item name="gallery.image.moreImages"><![CDATA[تصاویر بیشتر]]></item>
         <item name="gallery.image.moveToAlbum"><![CDATA[انتقال تصاویر{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/Videos{/if}به آلبوم]]></item>
         <item name="gallery.image.nextImage"><![CDATA[بعد{if $nextImage->isImage()}تصویر{else}ویدیو{/if}]]></item>
@@ -1154,7 +1154,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="gallery.image.trash.reason"><![CDATA[دلیل (اختیاری)]]></item>
         <item name="gallery.image.unreadImages"><![CDATA[تصاویر جدید{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیوها {/if}]]></item>
         <item name="gallery.image.upload"><![CDATA[آپلود تصاویر{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیوها{/if}]]></item>
-        <item name="gallery.image.upload.abort"><![CDATA[سقط]]></item>
+        <item name="gallery.image.upload.abort"><![CDATA[بدون نتیجه]]></item>
         <item name="gallery.image.upload.albumLimitReached"><![CDATA[آلبوم ساخته شده است. متأسفانه شما به حد مجاز خود رسیده اید و نمی توانید آلبوم دیگری ایجاد کنید.]]></item>
         <item name="gallery.image.upload.archive.success"><![CDATA[آرشیو آپلود شده است و فایل های موجود در حال حاضر در حال پردازش هستند.]]></item>
         <item name="gallery.image.upload.currentImage"><![CDATA[تصویر فعلی]]></item>
@@ -1244,7 +1244,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="gallery.video.link.link.edit.overwriteData"><![CDATA[بازنویسی داده های ویدیویی موجود]]></item>
         <item name="gallery.video.link.link.edit.overwriteData.description"><![CDATA[اگر انتخاب شده باشد و بتوان داده‌های ویدیویی را به‌طور خودکار از ارائه‌دهنده ویدیو واکشی کرد، اطلاعات موجود توسط داده‌های ارائه‌دهنده ویدیو بازنویسی می‌شود.]]></item>
         <item name="gallery.video.link.provider.com.woltlab.gallery.video.dailymotion"><![CDATA[Dailymotion]]></item>
-        <item name="gallery.video.link.provider.com.woltlab.gallery.video.vimeo"><![CDATA[Vimeo]]></item>
+        <item name="gallery.video.link.provider.com.woltlab.gallery.video.vimeo"><![CDATA[فیلم]]></item>
         <item name="gallery.video.link.provider.com.woltlab.gallery.video.youTube"><![CDATA[یوتیوب]]></item>
         <item name="gallery.video.link.restriction.count"><![CDATA[ویدیوهای مرتبط]]></item>
         <item name="gallery.video.link.restriction.count.value"><![CDATA[{#$userVideoLinkCount}/{#$__wcf->session->getPermission('user.gallery.maxVideoLinks')}]]></item>
@@ -3575,7 +3575,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.menu.link.language.item.list"><![CDATA[عبارات]]></item>
         <item name="wcf.acp.menu.link.language.list"><![CDATA[زبان ها]]></item>
         <item name="wcf.acp.menu.link.language.multilingualism"><![CDATA[چند زبانه بودن]]></item>
-        <item name="wcf.acp.menu.link.log"><![CDATA[Logs]]></item>
+        <item name="wcf.acp.menu.link.log"><![CDATA[لاگ ها]]></item>
         <item name="wcf.acp.menu.link.log.authentication.failure"><![CDATA[تلاش های ورود ناموفق]]></item>
         <item name="wcf.acp.menu.link.log.cronjob"><![CDATA[Cronjabs]]></item>
         <item name="wcf.acp.menu.link.log.email"><![CDATA[ایمیل ها]]></item>
@@ -3792,7 +3792,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.option.available_payment_methods"><![CDATA[روش های پرداخت پشتیبانی شده]]></item>
         <item name="wcf.acp.option.avatar_default_type"><![CDATA[نوع آواتار پیش فرض]]></item>
         <item name="wcf.acp.option.avatar_default_type.initials"><![CDATA[حروف اول]]></item>
-        <item name="wcf.acp.option.avatar_default_type.silhouette"><![CDATA[Silhouette]]></item>
+        <item name="wcf.acp.option.avatar_default_type.silhouette"><![CDATA[سایه نما]]></item>
         <item name="wcf.acp.option.blacklist_sfs_action"><![CDATA[اقدام در مورد مسابقه]]></item>
         <item name="wcf.acp.option.blacklist_sfs_action.block"><![CDATA[مسدود کردن]]></item>
         <item name="wcf.acp.option.blacklist_sfs_action.description"><![CDATA[همیشه خطر تطابق مثبت کاذب وجود دارد، بنابراین توصیه می شود آن را روی آن تنظیم کنید <strong>غیرفعال کنید و نیاز به تایید دستی دارید</strong>.]]></item>
@@ -3948,7 +3948,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.option.category.message.general.likes"><![CDATA[سیستم واکنش]]></item>
         <item name="wcf.acp.option.category.message.general.poll"><![CDATA[نظرسنجی ها]]></item>
         <item name="wcf.acp.option.category.message.general.share"><![CDATA[اشتراک گذاری محتوا]]></item>
-        <item name="wcf.acp.option.category.message.general.unfurl"><![CDATA[Rich Embeds]]></item>
+        <item name="wcf.acp.option.category.message.general.unfurl"><![CDATA[بارگذاری غنی ]]></item>
         <item name="wcf.acp.option.category.message.search"><![CDATA[جستجو کردن]]></item>
         <item name="wcf.acp.option.category.message.sidebar"><![CDATA[نوار کناری]]></item>
         <item name="wcf.acp.option.category.module"><![CDATA[واحد]]></item>
@@ -4001,9 +4001,9 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.option.conversation_list_default_sort_order.description"><![CDATA[.ترتیب مرتب سازی پیش فرض مکالمات را انتخاب کنید]]></item>
         <item name="wcf.acp.option.conversation_messages_per_page"><![CDATA[پیام در هر صفحه]]></item>
         <item name="wcf.acp.option.conversations_per_page"><![CDATA[مکالمات در هر صفحه]]></item>
-        <item name="wcf.acp.option.cookie_domain"><![CDATA[دامنه Cookie]]></item>
+        <item name="wcf.acp.option.cookie_domain"><![CDATA[دامنه قوانین]]></item>
         <item name="wcf.acp.option.cookie_domain.description"><![CDATA[.به جز شرایط خاص باید خالی بماند]]></item>
-        <item name="wcf.acp.option.cookie_path"><![CDATA[مسیر Cookie]]></item>
+        <item name="wcf.acp.option.cookie_path"><![CDATA[مسیر قوانین]]></item>
         <item name="wcf.acp.option.cookie_path.description"><![CDATA[مقدار باید مطلق به ریشه سند باشد، به عنوان مثال. “/forum” برای “https://www.woltlab.com/forum”.]]></item>
         <item name="wcf.acp.option.cookie_prefix"><![CDATA[پیشوند Cookie]]></item>
         <item name="wcf.acp.option.desktop_notification_package_id"><![CDATA[دامنه اصلی برای اعلان‌های Desktop]]></item>
@@ -4193,11 +4193,11 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.option.gravatar_default_type.404"><![CDATA[بدون گراواتار پیش فرض]]></item>
         <item name="wcf.acp.option.gravatar_default_type.description"><![CDATA[را <a class="externalURL" href="https://de.gravatar.com/site/implement/images/#default-image">نوع پیش فرض گراواتار</a> اگر گراواتار مشابهی پیدا نشد استفاده می شود.]]></item>
         <item name="wcf.acp.option.gravatar_default_type.identicon"><![CDATA[یکسان]]></item>
-        <item name="wcf.acp.option.gravatar_default_type.monsterid"><![CDATA[شناسه هیولا]]></item>
-        <item name="wcf.acp.option.gravatar_default_type.retro"><![CDATA[Retro]]></item>
+        <item name="wcf.acp.option.gravatar_default_type.monsterid"><![CDATA[ Monester ID]]></item>
+        <item name="wcf.acp.option.gravatar_default_type.retro"><![CDATA[پس]]></item>
         <item name="wcf.acp.option.gravatar_default_type.wavatar"><![CDATA[و اواتار]]></item>
         <item name="wcf.acp.option.head_code"><![CDATA[head code]]></item>
-        <item name="wcf.acp.option.head_code.description"><![CDATA[کد وارد شده به تگ head سایت شما اضافه می شود. می توانید از آن برای اضافه کردن متا تگ های اضافی استفاده کنید.]]></item>
+        <item name="wcf.acp.option.head_code.description"><![CDATA[ وارد شده به تگ head code سایت شما اضافه می شود. می توانید از آن برای اضافه کردن متا تگ های اضافی استفاده کنید.]]></item>
         <item name="wcf.acp.option.http_send_x_frame_options"><![CDATA[جاسازی در یک قاب مجاز نیست (منسوخ شده)]]></item>
         <item name="wcf.acp.option.http_send_x_frame_options.description"><![CDATA[گزینه کنترل جاسازی در یک فریم منسوخ شده است، در نسخه بعدی حذف خواهد شد و در همه موارد از جاسازی جلوگیری خواهد شد. اجازه دادن به جاسازی با اجازه دادن، امنیت را کاهش می دهد <a href="https://en.wikipedia.org/wiki/Clickjacking" class="externalURL">Clickjacking حملات</a> اتفاق افتاد .علاوه بر این، برخی ویژگی‌های امنیتی برای کوکی‌ها در چارچوب‌ها در دسترس نیستند.]]></item>
         <item name="wcf.acp.option.image_adapter_type"><![CDATA[کتابخانه گرافیک]]></item>
@@ -4250,8 +4250,8 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.option.mail_from_name"><![CDATA[نام فرستنده]]></item>
         <item name="wcf.acp.option.mail_from_name.description"><![CDATA[.نام فرستنده برای همه ایمیل های تولید شده]]></item>
         <item name="wcf.acp.option.mail_send_method"><![CDATA[روش ارسال]]></item>
-        <item name="wcf.acp.option.mail_send_method.debug"><![CDATA[استفاده از Debug (mbox)]]></item>
-        <item name="wcf.acp.option.mail_send_method.debugFolder"><![CDATA[Use Debug (Folder with .eml files)]]></item>
+        <item name="wcf.acp.option.mail_send_method.debug"><![CDATA[استفاده از دیباگ  (mbox)]]></item>
+        <item name="wcf.acp.option.mail_send_method.debugFolder"><![CDATA[استفاده از دیباگ (Folder with .eml files)]]></item>
         <item name="wcf.acp.option.mail_send_method.php"><![CDATA[از PHP استفاده کنید]]></item>
         <item name="wcf.acp.option.mail_send_method.smtp"><![CDATA[استفاده از پروتکل ساده انتقال پست الکترونیکی (توصیه می شود)]]></item>
         <item name="wcf.acp.option.mail_signature"><![CDATA[امضای فرستنده (متن)]]></item>
@@ -4262,7 +4262,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.option.mail_smtp_host.description"><![CDATA[پورت پروتکل ساده انتقال پست الکترونیکی 465 نیاز به پیشوند میزبان دارد <kbd>ssl://</kbd>, مثلا, <kbd>ssl://mail.example.com</kbd> بجای <kbd>mail.example.com</kbd>.]]></item>
         <item name="wcf.acp.option.mail_smtp_password"><![CDATA[رمز عبور پروتکل ساده انتقال پست الکترونیکی]]></item>
         <item name="wcf.acp.option.mail_smtp_port"><![CDATA[پورت پروتکل ساده انتقال پست الکترونیکی]]></item>
-        <item name="wcf.acp.option.mail_smtp_starttls"><![CDATA[SMTP Encryption (STARTTLS)]]></item>
+        <item name="wcf.acp.option.mail_smtp_starttls"><![CDATA[SMTP رمزگذاری (STARTTLS)]]></item>
         <item name="wcf.acp.option.mail_smtp_starttls.description"><![CDATA[این گزینه استفاده از “STARTTLS”.اگر از لایه سوکت امن (پورت 465) استفاده می کنید، آن را غیرفعال کنید!]]></item>
         <item name="wcf.acp.option.mail_smtp_starttls.encrypt"><![CDATA[ضروری]]></item>
         <item name="wcf.acp.option.mail_smtp_starttls.none"><![CDATA[از کار افتاده]]></item>
@@ -4287,7 +4287,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.option.message_enable_user_consent"><![CDATA[قبل از نمایش محتوا از منابع خارجی از کاربران درخواست کنید]]></item>
         <item name="wcf.acp.option.message_force_secure_images"><![CDATA[فقط تصاویر امن مجاز است]]></item>
         <item name="wcf.acp.option.message_force_secure_images.description"><![CDATA[تصاویر ممکن است فقط با استفاده از رمزگذاری شده جاسازی شوند “https”-protocol. تصاویر موجود در پیام‌های موجود برای استفاده از پروتکل امن بازنویسی خواهند شد]]></item>
-        <item name="wcf.acp.option.message_max_quote_depth"><![CDATA[Maximum Quote Nesting]]></item>
+        <item name="wcf.acp.option.message_max_quote_depth"><![CDATA[حداکثر نقل قول تو در تو ]]></item>
         <item name="wcf.acp.option.message_max_quote_depth.description"><![CDATA[.ارزش “1” فقط برای نقل قول های مستقیم اجازه می دهد، نقل قول های موجود در نقل قول ها حذف خواهند شد. تنظیم این به “2” یا بیشتر اجازه می دهد تا نقل قول ها تا عمق پیکربندی شده تو در تو قرار گیرند. می توانید با تنظیم مقدار آن را غیرفعال کنید “0”، اجازه می دهد برای نقل قول بی نهایت تودرتو]]></item>
         <item name="wcf.acp.option.message_public_highlighters"><![CDATA[انتخاب نوشته های برجسته]]></item>
         <item name="wcf.acp.option.message_public_highlighters.description"><![CDATA[.متن های برجسته انتخاب شده می‌توانند به راحتی توسط کاربر با استفاده از ویرایشگر انتخاب شوند.هایلایترهای دیگر هنوز در دسترس هستند، اما نام آنها باید توسط کاربر شناخته شود]></item>
