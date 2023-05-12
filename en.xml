@@ -2010,11 +2010,11 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.ad.showOrder.description"><![CDATA[ترتیب نمایش تبلیغات را انتخاب کنید.]]></item>
     </category>
     <category name="wcf.acp.application">
-        <item name="wcf.acp.application.cookie"><![CDATA[تنظیمات کوکی]]></item>
+        <item name="wcf.acp.application.cookie"><![CDATA[تنظیمات قوانین]]></item>
         <item name="wcf.acp.application.cookie.warning"><![CDATA[تنظیمات زیر برای ایجاد یک ورود دائمی برای وب سایت شما استفاده می شود. به خاطر داشته باشید هر زمان که نام دامنه تغییر کرد، این مقدار را به روز کنید. اگر مطمئن نیستید که کدام مقدار را باید ارائه دهید، می‌توانید با خیال راحت مقدار «دامنه» را کپی کنید..]]></item>
-        <item name="wcf.acp.application.cookieDomain"><![CDATA[دامنه کوکی]]></item>
+        <item name="wcf.acp.application.cookieDomain"><![CDATA[دامنه قوانین]]></item>
         <item name="wcf.acp.application.cookieDomain.error.containsPath"><![CDATA[دامنه کوکی نمی تواند شامل اجزای مسیر باشد.]]></item>
-        <item name="wcf.acp.application.cookieDomain.error.invalid"><![CDATA[دامنه کوکی با دامنه وارد شده در بالا مطابقت ندارد (sub-domains like “www” can be omitted).]]></item>
+        <item name="wcf.acp.application.cookieDomain.error.invalid"><![CDATA[دامنه قوانین با دامنه وارد شده در بالا مطابقت ندارد (دامنه های فرعی مانند www را می توان حذف کرد).]]></item>
         <item name="wcf.acp.application.domain"><![CDATA[تنظیمات دامنه]]></item>
         <item name="wcf.acp.application.domainName"><![CDATA[دامنه]]></item>
         <item name="wcf.acp.application.domainName.description"><![CDATA[اگر از طریق به این برنامه دسترسی دارید “https://www.example.com/community/forum/”, لطفا وارد کنید “www.example.com”.]]></item>
@@ -2028,7 +2028,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.application.landingPage.default"><![CDATA[(پیش فرض)]]></item>
         <item name="wcf.acp.application.landingPage.description"><![CDATA[اختیاری: زمانی که کاربر به این برنامه پیمایش می کند، این صفحه نشان داده می شود.]]></item>
         <item name="wcf.acp.application.list"><![CDATA[برنامه های کاربردی نصب شده]]></item>
-        <item name="wcf.acp.application.management.cookieDomain"><![CDATA[دامنه کوکی]]></item>
+        <item name="wcf.acp.application.management.cookieDomain"><![CDATA[دامنه قوانین]]></item>
         <item name="wcf.acp.application.management.cookieDomain.description"><![CDATA[دامنه کوکی باید با دامنه ارائه شده مطابقت داشته باشد. هنگامی که شک دارید، به سادگی همان مقداری را که برای "دامنه" وارد کرده اید، ارائه دهید..]]></item>
         <item name="wcf.acp.application.management.cookieDomain.error.containsPath"><![CDATA[لطفاً دامنه را فقط بدون پروتکل یا مسیر ارائه دهید.]]></item>
         <item name="wcf.acp.application.management.domain"><![CDATA[پیکربندی دامنه]]></item>
@@ -2087,53 +2087,53 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
     </category>
     <category name="wcf.acp.attachment">
         <item name="wcf.acp.attachment.list"><![CDATA[پیوست ها]]></item>
-        <item name="wcf.acp.attachment.stats"><![CDATA[<ul class="inlineList dotSeparated"><li>{#$stats.count} پیوست {if $stats.count != 1}s{/if}</li><li>{@$stats.size|filesize}</li><li>{#$stats.downloads} دانلود{if $stats.downloads != 1}ها{/if}</li></ul>]]></item>
+        <item name="wcf.acp.attachment.stats"><![CDATA[<ul class="inlineList dotSeparated"><li>{#$stats.count} پیوست {if $stats.count != 1}ها{/if}</li><li>{@$stats.size|filesize}</li><li>{#$stats.downloads} دانلود{if $stats.downloads != 1}ها{/if}</li></ul>]]></item>
     </category>
     <category name="wcf.acp.bbcode">
-        <item name="wcf.acp.bbcode.add"><![CDATA[کد بی بی را اضافه کنید]]></item>
-        <item name="wcf.acp.bbcode.add.userGroupOptionInfo"><![CDATA[کد های بی بی تازه ایجاد شده برای همه قابل دسترسی خواهد بود. می توانید با ویرایش مجوزهای گروه کاربری خاص، استفاده را محدود کنید.]]></item>
+        <item name="wcf.acp.bbcode.add"><![CDATA[کد Bulletin Board  را اضافه کنید]]></item>
+        <item name="wcf.acp.bbcode.add.userGroupOptionInfo"><![CDATA[کد های Bulletin Board  تازه ایجاد شده برای همه قابل دسترسی خواهد بود. می توانید با ویرایش مجوزهای گروه کاربری خاص، استفاده را محدود کنید.]]></item>
         <item name="wcf.acp.bbcode.attribute"><![CDATA[نشان]]></item>
-        <item name="wcf.acp.bbcode.attribute.attributeHtml"><![CDATA[کد اچ تی ام ال را مشخص کنید]]></item>
+        <item name="wcf.acp.bbcode.attribute.attributeHtml"><![CDATA[کد html را مشخص کنید]]></item>
         <item name="wcf.acp.bbcode.attribute.required"><![CDATA[ضروری]]></item>
         <item name="wcf.acp.bbcode.attribute.useText"><![CDATA[از محتوا استفاده کنید]]></item>
-        <item name="wcf.acp.bbcode.attribute.useText.description"><![CDATA[Tمحتوای بین تگ‌های کد بی بی به عنوان مقدار مشخصه استفاده می‌شود مگر اینکه به وضوح مشخص شده باشد.]]></item>
+        <item name="wcf.acp.bbcode.attribute.useText.description"><![CDATA[Tمحتوای بین تگ‌های کدBulletin Board  به عنوان مقدار مشخصه استفاده می‌شود مگر اینکه به وضوح مشخص شده باشد.]]></item>
         <item name="wcf.acp.bbcode.attribute.validationPattern"><![CDATA[عبارت منظم برای اعتبارسنجی]]></item>
         <item name="wcf.acp.bbcode.attribute.validationPattern.error.invalid"><![CDATA[عبارت منظم تأیید نشد.]]></item>
         <item name="wcf.acp.bbcode.attributes"><![CDATA[نشان]]></item>
-        <item name="wcf.acp.bbcode.bbcodeTag"><![CDATA[کد بی بی ]]></item>
-        <item name="wcf.acp.bbcode.bbcodeTag.error.inUse"><![CDATA[کد بی بی  از قبل وجود دارد.]]></item>
-        <item name="wcf.acp.bbcode.bbcodeTag.error.invalid"><![CDATA[کد بی بی نامعتبر است.]]></item>
+        <item name="wcf.acp.bbcode.bbcodeTag"><![CDATA[کد Bulletin Board  ]]></item>
+        <item name="wcf.acp.bbcode.bbcodeTag.error.inUse"><![CDATA[کد Bulletin Board   از قبل وجود دارد.]]></item>
+        <item name="wcf.acp.bbcode.bbcodeTag.error.invalid"><![CDATA[کد Bulletin Board  نامعتبر است.]]></item>
         <item name="wcf.acp.bbcode.buttonLabel"><![CDATA[برچسب دکمه]]></item>
-        <item name="wcf.acp.bbcode.className"><![CDATA[نام کلاس پی اچ پی]]></item>
+        <item name="wcf.acp.bbcode.className"><![CDATA[نام کلاس PHP]]></item>
         <item name="wcf.acp.bbcode.className.error.notFound"><![CDATA[کلاس مشخص شده پیدا نشد.]]></item>
-        <item name="wcf.acp.bbcode.edit"><![CDATA[کد بی بی را ویرایش کنید]]></item>
-        <item name="wcf.acp.bbcode.htmlClose"><![CDATA[بستن تگ اچ تی ام ال]]></item>
+        <item name="wcf.acp.bbcode.edit"><![CDATA[کد Bulletin Board  را ویرایش کنید]]></item>
+        <item name="wcf.acp.bbcode.htmlClose"><![CDATA[بستن تگhtml]]></item>
         <item name="wcf.acp.bbcode.htmlOpen"><![CDATA[باز کردن تگ اچ تی ام ال]]></item>
-        <item name="wcf.acp.bbcode.isBlockElement"><![CDATA[کد بی بی یک عنصر بلوک را نشان می دهد]]></item>
+        <item name="wcf.acp.bbcode.isBlockElement"><![CDATA[کد Bulletin Board  یک عنصر بلوک را نشان می دهد]]></item>
         <item name="wcf.acp.bbcode.isBlockElement.description"><![CDATA[هنگام پردازش با عناصر بلوک متفاوت رفتار می شود. آنها می توانند شامل خطوط شکسته و پاراگراف باشند و به طور کلی کل عرض موجود را اشغال کنند. مثال های رایج برای عناصر بلوک شامل نقل قول ها و لیست ها است.<br><strong>توجه</strong>: شما نباید این گزینه را برای عناصر درون خطی مانند پررنگ یا پیوندها تنظیم کنید.]]></item>
         <item name="wcf.acp.bbcode.isSourceCode"><![CDATA[محتوا نشان دهنده کد منبع است]]></item>
-        <item name="wcf.acp.bbcode.isSourceCode.description"><![CDATA[تبدیل کدهای بی بی و شکلک ها را غیرفعال می کند.]]></item>
-        <item name="wcf.acp.bbcode.list"><![CDATA[کد های بی بی]]></item>
+        <item name="wcf.acp.bbcode.isSourceCode.description"><![CDATA[تبدیل کدهای Bulletin Board  و شکلک ها را غیرفعال می کند.]]></item>
+        <item name="wcf.acp.bbcode.list"><![CDATA[کد های Bulletin Board ]]></item>
         <item name="wcf.acp.bbcode.mediaProvider.add"><![CDATA[ارائه دهنده رسانه را اضافه کنید]]></item>
-        <item name="wcf.acp.bbcode.mediaProvider.className"><![CDATA[نام کلاس پی اچ پی]]></item>
+        <item name="wcf.acp.bbcode.mediaProvider.className"><![CDATA[نام کلاس PHP]]></item>
         <item name="wcf.acp.bbcode.mediaProvider.className.error.notFound"><![CDATA[کلاس مشخص شده پیدا نشد.]]></item>
         <item name="wcf.acp.bbcode.mediaProvider.edit"><![CDATA[ویرایش ارائه دهنده رسانه]]></item>
-        <item name="wcf.acp.bbcode.mediaProvider.html"><![CDATA[کد اچ تی ام ال]]></item>
-        <item name="wcf.acp.bbcode.mediaProvider.html.description"><![CDATA[{literal}کد اچ تی ام ال رسانه را در اینجا وارد کنید. متغیرها به عنوان شناسایی می شوند <kbd>{$variable}</kbd> و با گروه نام‌گذاری شده مطابق عبارت منظم جایگزین می‌شود.<br>
+        <item name="wcf.acp.bbcode.mediaProvider.html"><![CDATA[کد اhtml]]></item>
+        <item name="wcf.acp.bbcode.mediaProvider.html.description"><![CDATA[{literal}کد html رسانه را در اینجا وارد کنید. متغیرها به عنوان شناسایی می شوند <kbd>{$variable}</kbd> و با گروه نام‌گذاری شده مطابق عبارت منظم جایگزین می‌شود.<br>
 		مثال: <kbd>{$ID}</kbd> همانطور که در بالا نشان داده شده است با شناسه رسانه جایگزین می شود.{/literal}]]></item>
         <item name="wcf.acp.bbcode.mediaProvider.list"><![CDATA[ارائه دهندگان رسانه]]></item>
         <item name="wcf.acp.bbcode.mediaProvider.regex"><![CDATA[عبارت منظم]]></item>
-        <item name="wcf.acp.bbcode.mediaProvider.regex.description"><![CDATA[فرمت پیوند را ارائه دهید به صورت  <a href="https://en.wikipedia.org/wiki/Regular_expression">regular expression</a>. در هر خط یک عبارت وارد کنید. نمونه هایی برای تشخیص ای دی متوسط:
+        <item name="wcf.acp.bbcode.mediaProvider.regex.description"><![CDATA[فرمت پیوند را ارائه دهید به صورت  <a href="https://en.wikipedia.org/wiki/Regular_expression">عبارت منظم</a>. در هر خط یک عبارت وارد کنید. نمونه هایی برای تشخیص نام کاربری متوسط:
 <ul class="nativeList">
-	<li><kbd>(?&lt;ID&gt;[0-9]+)</kbd> ای دی عددی را تشخیص می دهد.</li>
-	<li><kbd>(?&lt;ID&gt;[0-9a-zA-Z]+)</kbd> ای دی الفبایی عددی را تشخیص می دهد.</li>
+	<li><kbd>(?&lt;ID&gt;[0-9]+)</kbd> نام کاربری عددی را تشخیص می دهد.</li>
+	<li><kbd>(?&lt;ID&gt;[0-9a-zA-Z]+)</kbd> نام کاربری الفبایی عددی را تشخیص می دهد.</li>
 </ul>]]></item>
         <item name="wcf.acp.bbcode.mediaProvider.regex.error.invalid"><![CDATA[عبارت منظم تأیید نشد.]]></item>
         <item name="wcf.acp.bbcode.mediaProvider.title"><![CDATA[ارائه دهندگان رسانه]]></item>
         <item name="wcf.acp.bbcode.numberedAttribute"><![CDATA[نشان {#$attributeNumber}]]></item>
         <item name="wcf.acp.bbcode.showButton"><![CDATA[دکمه نمایش در ویرایشگر WYSIWYG]]></item>
         <item name="wcf.acp.bbcode.wysiwygIcon"><![CDATA[تصویر دکمه]]></item>
-        <item name="wcf.acp.bbcode.wysiwygIcon.description"><![CDATA[تصویر باید در دایرکتوری wcf/icon/ قرار گیرد یا از a استفاده کنید<a href="https://fontawesome.com/v4/icons/">FontAwesome</a>-icon, e.g. “fa-caret-square-o-up”.]]></item>
+        <item name="wcf.acp.bbcode.wysiwygIcon.description"><![CDATA[تصویر باید در دایرکتوری wcf/آیکون/ قرار گیرد یا از a استفاده کنید<a href="https://fontawesome.com/v4/icons/">FontAwesome</a>-icon, e.g. “fa-caret-square-o-up”.]]></item>
     </category>
     <category name="wcf.acp.box">
         <item name="wcf.acp.box.add"><![CDATA[باکس را اضافه کنید]]></item>
@@ -2174,7 +2174,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.box.boxController.com.woltlab.wcf.statistics"><![CDATA[آمار]]></item>
         <item name="wcf.acp.box.boxController.com.woltlab.wcf.todaysBirthdays"><![CDATA[تولدهای امروز]]></item>
         <item name="wcf.acp.box.boxController.com.woltlab.wcf.todaysFollowingBirthdays"><![CDATA[تولدهای امروز کاربران که توسط کاربر فعال دنبال می شود]]></item>
-        <item name="wcf.acp.box.boxController.com.woltlab.wcf.trophyCategories"><![CDATA[دسته های جام]]></item>
+        <item name="wcf.acp.box.boxController.com.woltlab.wcf.trophyCategories"><![CDATA[دسته های جایزه]]></item>
         <item name="wcf.acp.box.boxController.com.woltlab.wcf.userList"><![CDATA[لیست اعضا]]></item>
         <item name="wcf.acp.box.boxController.com.woltlab.wcf.userOnlineList"><![CDATA[کاربران آنلاین]]></item>
         <item name="wcf.acp.box.boxController.com.woltlab.wcf.userTrophies"><![CDATA[جوایز اختصاص داده شده]]></item>
@@ -2191,7 +2191,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.box.controller.sortField.description"><![CDATA[ویژگی شئ انتخاب شده برای مرتب سازی استفاده می شود.]]></item>
         <item name="wcf.acp.box.copy"><![CDATA[جعبه کپی]]></item>
         <item name="wcf.acp.box.copy.description"><![CDATA[مقادیر وارد شده برای این کادر به عنوان یک پیش تنظیم برای ایجاد یک کادر جدید استفاده می شود. فقط مقادیر قابل ویرایش در این فرم گنجانده شده است.<br><br>برای ذخیره کادر جدید باید فرم را ارسال کنید. می توانید با ویرایش مقادیر موجود در آن فرم، تغییراتی در کادر جدید ایجاد کنید، لطفاً در نظر داشته باشید که کادرهای جدید به طور پیش فرض غیرفعال هستند..]]></item>
-        <item name="wcf.acp.box.cssClassName"><![CDATA[نام کلاس سی اس اس]]></item>
+        <item name="wcf.acp.box.cssClassName"><![CDATA[نام کلاس CSS]]></item>
         <item name="wcf.acp.box.edit"><![CDATA[جعبه ویرایش]]></item>
         <item name="wcf.acp.box.i18n"><![CDATA[چند زبانه بودن]]></item>
         <item name="wcf.acp.box.i18n.i18n"><![CDATA[جعبه چند زبانه]]></item>
@@ -2227,14 +2227,14 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.box.settings.limit"><![CDATA[حداکثر تعداد آیتم ها]]></item>
         <item name="wcf.acp.box.showHeader"><![CDATA[نمایش عنوان کادر]]></item>
         <item name="wcf.acp.box.type"><![CDATA[نوع جعبه]]></item>
-        <item name="wcf.acp.box.type.html"><![CDATA[اچ تی ام ال]]></item>
-        <item name="wcf.acp.box.type.html.description"><![CDATA[از اچ تی ام ال خام برای ایجاد محتوای جعبه برای حداکثر انعطاف استفاده کنید.]]></item>
+        <item name="wcf.acp.box.type.html"><![CDATA[html]]></item>
+        <item name="wcf.acp.box.type.html.description"><![CDATA[از html خام برای ایجاد محتوای جعبه برای حداکثر انعطاف استفاده کنید.]]></item>
         <item name="wcf.acp.box.type.system"><![CDATA[سیستم]]></item>
         <item name="wcf.acp.box.type.system.description"><![CDATA[جعبه های پویا با پیکربندی فردی.]]></item>
         <item name="wcf.acp.box.type.text"><![CDATA[متن]]></item>
         <item name="wcf.acp.box.type.text.description"><![CDATA[ایجاد محتوا با استفاده از ویرایشگر داخلی WYSIWYG (توصیه می شود).]]></item>
         <item name="wcf.acp.box.type.tpl"><![CDATA[قالب]]></item>
-        <item name="wcf.acp.box.type.tpl.description"><![CDATA[مشابه نوع "اچ تی ام ال" است، اما پشتیبانی اضافی برای اسکریپت نویسی قالب ارائه می دهد.]]></item>
+        <item name="wcf.acp.box.type.tpl.description"><![CDATA[مشابه نوع "html" است، اما پشتیبانی اضافی برای اسکریپت نویسی قالب ارائه می دهد.]]></item>
         <item name="wcf.acp.box.visibilityException.hidden"><![CDATA[جایی که جعبه به طور واضح باشد را انتخاب کنید <strong>پنهان شده است</strong>]]></item>
         <item name="wcf.acp.box.visibilityException.visible"><![CDATA[جایی که جعبه به طور واضح باشد را انتخاب کنید <strong>قابل رویت</strong>]]></item>
         <item name="wcf.acp.box.visibleEverywhere"><![CDATA[همه جا قابل مشاهده است]]></item>
@@ -2261,13 +2261,13 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.cache.type.template"><![CDATA[قالب ها]]></item>
     </category>
     <category name="wcf.acp.captcha">
-        <item name="wcf.acp.captcha.question.add"><![CDATA[اضافه کردن سوال کپچا]]></item>
+        <item name="wcf.acp.captcha.question.add"><![CDATA[اضافه کردن سوال تایید صلاحیت]]></item>
         <item name="wcf.acp.captcha.question.answers"><![CDATA[پاسخ ها]]></item>
         <item name="wcf.acp.captcha.question.answers.description"><![CDATA[پاسخ هایی که با "~" شروع و پایان می یابند به عنوان عبارات منظم تفسیر می شوند. در هر خط یک پاسخ وارد کنید.]]></item>
         <item name="wcf.acp.captcha.question.answers.error.invalidRegex"><![CDATA[عبارت منظم “{$invalidRegex}” نامعتبر است.]]></item>
-        <item name="wcf.acp.captcha.question.edit"><![CDATA[سوال کپچا را ویرایش کنید]]></item>
-        <item name="wcf.acp.captcha.question.isDisabled"><![CDATA[غیرفعال کردن سوال کپچا]]></item>
-        <item name="wcf.acp.captcha.question.list"><![CDATA[سوالات کپچا]]></item>
+        <item name="wcf.acp.captcha.question.edit"><![CDATA[سوال تایید صلاحیت را ویرایش کنید]]></item>
+        <item name="wcf.acp.captcha.question.isDisabled"><![CDATA[غیرفعال کردن سوال تایید صلاحیت]]></item>
+        <item name="wcf.acp.captcha.question.list"><![CDATA[سوالات تایید صلاحیت]]></item>
         <item name="wcf.acp.captcha.question.question"><![CDATA[سوال]]></item>
     </category>
     <category name="wcf.acp.contact">
@@ -2304,8 +2304,8 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.content.removeContent"><![CDATA[حذف محتوای کاربر]]></item>
     </category>
     <category name="wcf.acp.cronjob">
-        <item name="wcf.acp.cronjob.add"><![CDATA[کرنجاب را اضافه کنید]]></item>
-        <item name="wcf.acp.cronjob.className"><![CDATA[نام کلاس پی اچ پی]]></item>
+        <item name="wcf.acp.cronjob.add"><![CDATA[Cronjob را اضافه کنید]]></item>
+        <item name="wcf.acp.cronjob.className"><![CDATA[نام کلاس PHP]]></item>
         <item name="wcf.acp.cronjob.className.error.doesNotExist"><![CDATA[نمی توان کلاس مشخص شده را پیدا کرد.]]></item>
         <item name="wcf.acp.cronjob.description"><![CDATA[شرح]]></item>
         <item name="wcf.acp.cronjob.description.cronjob1"><![CDATA[اطلاعات بسته را به روز می کند]]></item>
@@ -2318,13 +2318,13 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.cronjob.description.cronjob16"><![CDATA[اعلان‌هایی در مورد انقضای اشتراک‌های پولی ارسال می‌کند]]></item>
         <item name="wcf.acp.cronjob.description.cronjob17"><![CDATA[نقشه سایت را بازسازی می کند]]></item>
         <item name="wcf.acp.cronjob.description.cronjob18"><![CDATA[جایزه ها را بر اساس قوانین اختصاص دهید]]></item>
-        <item name="wcf.acp.cronjob.description.cronjob19"><![CDATA[آدرس های ای پی را برش می دهد]]></item>
+        <item name="wcf.acp.cronjob.description.cronjob19"><![CDATA[آدرس های IP را برش می دهد]]></item>
         <item name="wcf.acp.cronjob.description.cronjob2"><![CDATA[لیست ربات های جستجوگر را تازه می کند]]></item>
         <item name="wcf.acp.cronjob.description.cronjob20"><![CDATA[اعلان های مربوط به خطاهای ثبت شده جدید را ارسال می کند.]]></item>
         <item name="wcf.acp.cronjob.description.cronjob21"><![CDATA[لیست سیاه را برای جلوگیری از هرزنامه تازه می کند]]></item>
         <item name="wcf.acp.cronjob.description.cronjob22"><![CDATA[تعلیق های منقضی شده را لغو می کند]]></item>
         <item name="wcf.acp.cronjob.description.cronjob23"><![CDATA[سطل های آشفال موضوع و پست را خالی می کند]]></item>
-        <item name="wcf.acp.cronjob.description.cronjob24"><![CDATA[فیدهای ار اس اس را می خواند]]></item>
+        <item name="wcf.acp.cronjob.description.cronjob24"><![CDATA[فیدهای RSS را می خواند]]></item>
         <item name="wcf.acp.cronjob.description.cronjob25"><![CDATA[پست های با تاخیر را منتشر می کند]]></item>
         <item name="wcf.acp.cronjob.description.cronjob26"><![CDATA[سطل آشغال مقاله وبلاگ را خالی می کند]]></item>
         <item name="wcf.acp.cronjob.description.cronjob27"><![CDATA[ورودی های تاخیری وبلاگ را منتشر می کند]]></item>
@@ -2342,13 +2342,13 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.cronjob.description.cronjob7"><![CDATA[اقلام صف گیر کرده است]]></item>
         <item name="wcf.acp.cronjob.description.cronjob8"><![CDATA[آخرین مهر زمان فعالیت را به روز می کند]]></item>
         <item name="wcf.acp.cronjob.description.cronjob9"><![CDATA[حساب های کاربری لغو شده را حذف می کند]]></item>
-        <item name="wcf.acp.cronjob.edit"><![CDATA[کرنجاب را ویرایش کنید]]></item>
-        <item name="wcf.acp.cronjob.execute"><![CDATA[کرنجاب را اجرا کنید]]></item>
-        <item name="wcf.acp.cronjob.intro"><![CDATA[پیکربندی کرنجاب ها نیاز به دانش متمایز از نحو کرونتاب در سیستم های مبتنی بر یونیکس دارد. اطلاعات بیشتر در مورد این موضوع را می توانید در صفحه وب زیر بدست آورید: <a href="http://www.unixgeeks.org/security/newbie/unix/cron-1.html" class="externalURL">Newbie: Intro to cron</a>.]]></item>
-        <item name="wcf.acp.cronjob.list"><![CDATA[کرنجاب]]></item>
-        <item name="wcf.acp.cronjob.log"><![CDATA[گزارش کرنجاب]]></item>
+        <item name="wcf.acp.cronjob.edit"><![CDATA[Cronjob را ویرایش کنید]]></item>
+        <item name="wcf.acp.cronjob.execute"><![CDATA[Cronjob را اجرا کنید]]></item>
+        <item name="wcf.acp.cronjob.intro"><![CDATA[پیکربندی کرنجاب ها نیاز به دانش متمایز از نحو Cronjob در سیستم های مبتنی بر یونیکس دارد. اطلاعات بیشتر در مورد این موضوع را می توانید در صفحه وب زیر بدست آورید: <a href="http://www.unixgeeks.org/security/newbie/unix/cron-1.html" class="externalURL">تازه کار: معرفی cron</a>.]]></item>
+        <item name="wcf.acp.cronjob.list"><![CDATA[Cronjob]]></item>
+        <item name="wcf.acp.cronjob.log"><![CDATA[گزارش Cronjob]]></item>
         <item name="wcf.acp.cronjob.log.clear"><![CDATA[پاک کردن پروتکل]]></item>
-        <item name="wcf.acp.cronjob.log.clear.confirm"><![CDATA[آیا واقعاً می خواهید گزارش کرنجاب را پاک کنید؟]]></item>
+        <item name="wcf.acp.cronjob.log.clear.confirm"><![CDATA[آیا واقعاً می خواهید گزارش Cronjob را پاک کنید؟]]></item>
         <item name="wcf.acp.cronjob.log.error"><![CDATA[خطا]]></item>
         <item name="wcf.acp.cronjob.log.error.details"><![CDATA[پیغام خطا]]></item>
         <item name="wcf.acp.cronjob.log.error.showDetails"><![CDATA[نمایش جزئیات]]></item>
@@ -2358,20 +2358,20 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.cronjob.log.success"><![CDATA[موفقیت]]></item>
         <item name="wcf.acp.cronjob.nextExec"><![CDATA[اجرای برنامه ریزی شده بعدی]]></item>
         <item name="wcf.acp.cronjob.startDom"><![CDATA[روز ماه]]></item>
-        <item name="wcf.acp.cronjob.startDom.description"><![CDATA[روز ماه (1 - 31)، کرنجاب  باید اجرا شود.]]></item>
-        <item name="wcf.acp.cronjob.startDomShort"><![CDATA[دی]]></item>
+        <item name="wcf.acp.cronjob.startDom.description"><![CDATA[روز ماه (1 - 31)، Cronjob  باید اجرا شود.]]></item>
+        <item name="wcf.acp.cronjob.startDomShort"><![CDATA[D]]></item>
         <item name="wcf.acp.cronjob.startDow"><![CDATA[روز هفته]]></item>
-        <item name="wcf.acp.cronjob.startDow.description"><![CDATA[روز هفته (0 - 6 با یکشنبه = 0، یا دوشنبه - خورشید)، کرنجاب باید اجرا شود.]]></item>
-        <item name="wcf.acp.cronjob.startDowShort"><![CDATA[داو]]></item>
+        <item name="wcf.acp.cronjob.startDow.description"><![CDATA[روز هفته (0 - 6 با یکشنبه = 0، یا دوشنبه - خورشید)، Cronjob باید اجرا شود.]]></item>
+        <item name="wcf.acp.cronjob.startDowShort"><![CDATA[Dow]]></item>
         <item name="wcf.acp.cronjob.startHour"><![CDATA[ساعت]]></item>
-        <item name="wcf.acp.cronjob.startHour.description"><![CDATA[ساعت (0 - 23)، کرنجاب باید اجرا شود.]]></item>
-        <item name="wcf.acp.cronjob.startHourShort"><![CDATA[اچ]]></item>
+        <item name="wcf.acp.cronjob.startHour.description"><![CDATA[ساعت (0 - 23)، Cronjob باید اجرا شود.]]></item>
+        <item name="wcf.acp.cronjob.startHourShort"><![CDATA[H]]></item>
         <item name="wcf.acp.cronjob.startMinute"><![CDATA[دقیقه]]></item>
-        <item name="wcf.acp.cronjob.startMinute.description"><![CDATA[در دقیقه (0 - 59)، کرنجاب باید اجرا شود.]]></item>
-        <item name="wcf.acp.cronjob.startMinuteShort"><![CDATA[ام]]></item>
+        <item name="wcf.acp.cronjob.startMinute.description"><![CDATA[در دقیقه (0 - 59)، Cronjob باید اجرا شود.]]></item>
+        <item name="wcf.acp.cronjob.startMinuteShort"><![CDATA[M]]></item>
         <item name="wcf.acp.cronjob.startMonth"><![CDATA[ماه]]></item>
-        <item name="wcf.acp.cronjob.startMonth.description"><![CDATA[ماه (1 - 12، یا ژانویه - دسامبر)، کرنجاب باید اجرا شود.]]></item>
-        <item name="wcf.acp.cronjob.startMonthShort"><![CDATA[ام]]></item>
+        <item name="wcf.acp.cronjob.startMonth.description"><![CDATA[ماه (1 - 12، یا ژانویه - دسامبر)، Cronjob باید اجرا شود.]]></item>
+        <item name="wcf.acp.cronjob.startMonthShort"><![CDATA[M]]></item>
         <item name="wcf.acp.cronjob.subtitle"><![CDATA[]]></item>
         <item name="wcf.acp.cronjob.timing"><![CDATA[برنامه]]></item>
         <item name="wcf.acp.cronjob.timing.error.invalid"><![CDATA[قالب زمان نامعتبر است.]]></item>
@@ -2401,7 +2401,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.customOption.optionType.textarea"><![CDATA[متن چند خطی]]></item>
         <item name="wcf.acp.customOption.required"><![CDATA[این فیلد ضروری است]]></item>
         <item name="wcf.acp.customOption.selectOptions"><![CDATA[گزینه ها]]></item>
-        <item name="wcf.acp.customOption.selectOptions.description"><![CDATA[می توانید از گزینه های انتخابی در ترکیب با انواع انتخاب استفاده کنید، اما لطفاً توجه داشته باشید که استفاده از دو نقطه باعث می شود سیستم از همه چیز در سمت چپ به عنوان شناسه داخلی استفاده کند و فقط قسمت بعد از کولون به کاربر نمایش داده شود. این به شما امکان می دهد مقدار نمایش داده شده به کاربر را بدون آسیب رساندن به انتخاب های موجود تغییر دهید، مگر اینکه خود شناسه تغییر کند. در هر خط یک گزینه انتخابی وارد کنید.]]></item>
+        <item name="wcf.acp.customOption.selectOptions.description"><![CDATA[می توانید از گزینه های انتخابی در ترکیب با انواع انتخاب استفاده کنید، اما لطفاً توجه داشته باشید که استفاده از دو نقطه باعث می شود سیستم از همه چیز در سمت چپ به عنوان شناسه داخلی استفاده کند و فقط قسمت بعد از دو نقطه به کاربر نمایش داده شود. این به شما امکان می دهد مقدار نمایش داده شده به کاربر را بدون آسیب رساندن به انتخاب های موجود تغییر دهید، مگر اینکه خود شناسه تغییر کند. در هر خط یک گزینه انتخابی وارد کنید.]]></item>
         <item name="wcf.acp.customOption.showOrder"><![CDATA[نمایش سفارش]]></item>
         <item name="wcf.acp.customOption.typeData"><![CDATA[خواص]]></item>
         <item name="wcf.acp.customOption.validationPattern"><![CDATA[عبارت منظم]]></item>
