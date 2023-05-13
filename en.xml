@@ -5296,7 +5296,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.pip.objectTypeDefinition.definitionName.error.notUnique"><![CDATA[نام وارد شده قبلاً وارد شده و با تعریف دیگری استفاده می شود.]]></item>
         <item name="wcf.acp.pip.objectTypeDefinition.definitionName.error.tooFewSegments"><![CDATA[نام وارد شده فقط شامل {#$segmentCount} بخش{if $segmentCount > 1}ها{/if}.]]></item>
         <item name="wcf.acp.pip.objectTypeDefinition.info"><![CDATA[ <kbd>تعریف نوع شی</kbd> پلاگین نصب بسته تعاریف جدید نوع شی را نصب می کند. اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/object-type-definition/" class="externalURL">developer documentation</a>.]]></item>
-        <item name="wcf.acp.pip.objectTypeDefinition.interfaceName"><![CDATA[رابط پی اچ پی]]></item>
+        <item name="wcf.acp.pip.objectTypeDefinition.interfaceName"><![CDATA[رابط PHP]]></item>
         <item name="wcf.acp.pip.objectTypeDefinition.interfaceName.description"><![CDATA[اگر یک رابط PHP وارد شود، هر نوع شی از این تعریف باید نام یک کلاس PHP را ارائه کند که این رابط را پیاده سازی می کند.]]></item>
         <item name="wcf.acp.pip.objectTypeDefinition.interfaceName.error.nonExistent"><![CDATA[رابط وارد شده وجود ندارد.]]></item>
         <item name="wcf.acp.pip.option.info"><![CDATA[ <kbd>گزینه</kbd> افزونه نصب بسته گزینه های جدیدی را نصب می کند. اطلاعات بیشتر را می توانید در <a href="https://docs.woltlab.com/latest/package/pip/option/" class="externalURL">developer documentation</a>.]]></item>
@@ -6181,9 +6181,11 @@ Your account on the website: {@PAGE_TITLE|phrase} [URL:{link isEmail=true}{/link
 
 یک مدیر رمز عبور شما را بازنشانی کرده است. اکنون باید یک رمز عبور جدید تنظیم کنید تا بتوانید از حساب کاربری خود استفاده کنید {@$mailbox->getUser()->username} در وب سایت {@PAGE_TITLE|phrase} [URL:{link isEmail=true}{/link}] دوباره :
 
+
     {link controller='NewPassword' object=$mailbox->getUser() isEmail=true}k={@$mailbox->getUser()->lostPasswordKey}{/link} {* this line ends with a space *}
 
 اگر این پیام را بعد از آن بخوانید {@$mailbox->getUser()->lastLostPasswordRequestTime+86400|plainTime} شما باید از فرم رمز عبور گم شده استفاده کنید [URL:{link controller='LostPassword' isEmail=true}{/link}] به دلایل امنیتی.]]></item>
+	    
         <item name="wcf.acp.user.sendNewPassword.mail.subject"><![CDATA[رمز عبور جدید برای حساب شما برای وب سایت: {@PAGE_TITLE|phrase}]]></item>
         <item name="wcf.acp.user.sendNewPassword.workerTitle"><![CDATA[ارسال رمزهای جدید]]></item>
         <item name="wcf.acp.user.unban"><![CDATA[ان بن]]></item>
@@ -8032,6 +8034,7 @@ Your account on the website: {@PAGE_TITLE|phrase} [URL:{link isEmail=true}{/link
 
 شما (یا شخص دیگری) ادعا کردید که رمز عبور حساب کاربری را گم کرده اید {@$mailbox->getUser()->username} در
 وب سایت {@PAGE_TITLE|phrase} [URL:{link isEmail=true}{/link}]. پس از کلیک روی لینک زیر می توانید رمز عبور خود را تغییر دهید :
+
 
     {link controller='NewPassword' object=$mailbox->getUser() isEmail=true}k={@$mailbox->getUser()->lostPasswordKey}{/link} {* this line ends with a space *}
 
