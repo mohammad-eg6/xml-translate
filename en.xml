@@ -2771,10 +2771,10 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
     <category name="wcf.acp.exceptionLog">
         <item name="wcf.acp.exceptionLog"><![CDATA[خطاهای ثبت شده]]></item>
         <item name="wcf.acp.exceptionLog.email.body"><![CDATA[مدیر محترم,
+
 خطاهای زیر در وب سایت شما ثبت شده است {@PAGE_TITLE|phrase} از آنجا که {$date|plainTime}:
 
 {foreach from=$files key=file item=data}
-
 ورود به سیستم/{$file}.txt{if !$data[verdict]|isset} ({#$data[count]} خطا{if $data[شمردن] > 1}s{/if}){/if} {* this line ends with a space *}
 ==================
 {if $data[نظر]|isset}
