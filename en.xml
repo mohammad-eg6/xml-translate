@@ -1909,6 +1909,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acl.option.com.woltlab.filebase.category.canUseCategoryWithoutModeration"><![CDATA[می توانید فایل ها را بدون تایید آپلود کنید]]></item>
         <item name="wcf.acl.option.com.woltlab.filebase.category.canViewCategory"><![CDATA[می توانید دسته را مشاهده کنید ]]></item>
         <item name="wcf.acl.option.com.woltlab.gallery.category.canUseCategory"><![CDATA[می توانید تصاویر را اضافه کنید{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and videos{/if}]]></item>
+        <item name="wcf.acl.option.com.woltlab.gallery.category.canViewCategory"><![CDATA[میتواند دسته ها را مشاهده کنید]]></item>
         <item name="wcf.acl.option.com.woltlab.wbb.board.canClosePost"><![CDATA[می توانید پست ها را ببندید]]></item>
         <item name="wcf.acl.option.com.woltlab.wbb.board.canCloseThread"><![CDATA[می توانید موضوع ها را ببندید]]></item>
         <item name="wcf.acl.option.com.woltlab.wbb.board.canCopyPost"><![CDATA[می توانید پست ها را کپی کنید]]></item>
