@@ -1507,11 +1507,11 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wbb.index.selectForumForNewThread"><![CDATA[انجمن را برای موضوع جدید انتخاب کنید]]></item>
         <item name="wbb.index.stats"><![CDATA[آمار]]></item>
         <item name="wbb.index.stats.detail"><![CDATA[<ul class="inlineList dotSeparated">
-<li>{#$stats[اعضا]} عضو{if $stats.members != 1}ها{/if}</li>
-<li>{#$stats[موضوعات]} موضوع{if $stats[موضوعات] != 1}ها{/if}</li>
-<li>{#$stats[پست ها]} پست{if $stats[پست ها] != 1}ها{/if} ({#$stats[پست در روز]} پست{if $stats[پست در روز] != 1}ها{/if} per Day)</li>
+<li>{#$stats[members]} عضو{if $stats.members != 1}ها{/if}</li>
+<li>{#$stats[threads]} موضوع{if $stats[threads] != 1}ها{/if}</li>
+<li>{#$stats[posts]} پست{if $stats[posts] != 1}ها{/if} ({#$stats[postsPerDay]} پست{if $stats[postsPerDay] != 1}ها{/if} per Day)</li>
 </ul>
-{if $stats[جدیدترین عضو]}<p>آخرین عضو: {user object=$stats[جدیدترین عضو]}.</p>{/if}]]></item>
+{if $stats[newestMember]}<p>آخرین عضو: {user object=$stats[newestMember]}.</p>{/if}]]></item>
     </category>
     <category name="wbb.post">
         <item name="wbb.post.add"><![CDATA[پاسخ به موضوع]]></item>
@@ -2564,15 +2564,15 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.devtools.notificationTest.titles"><![CDATA[عناوین]]></item>
         <item name="wcf.acp.devtools.pip.defaultFilename"><![CDATA[الگوی جستجو]]></item>
         <item name="wcf.acp.devtools.pip.error.className"><![CDATA[کلاس {$className} وجود ندارد.]]></item>
-        <item name="wcf.acp.devtools.pip.error.defaultFilename"><![CDATA[پی ای پی یک نام فایل پیش فرض ندارد و دستورالعمل نصب حاوی نام فایل نیست.]]></item>
-        <item name="wcf.acp.devtools.pip.error.noGuiSupport"><![CDATA[این پی ای پی از مدیریت ورودی ها از طریق رابط کاربری گرافیکی پشتیبانی نمی کند.]]></item>
-        <item name="wcf.acp.devtools.pip.error.notIdempotent"><![CDATA[این پی ای پی از واردات مکرر پشتیبانی نمی‌کند و فقط در به‌روزرسانی‌های منظم قابل پردازش است.]]></item>
-        <item name="wcf.acp.devtools.pip.notice"><![CDATA[هر دستورالعمل موجود در <kbd>package.xml</kbd> نادیده گرفته خواهد شد؛ این اجازه می دهد تا پی ای پی هایی را وارد کنید که هنوز دستورالعمل خاصی برای آنها ارائه نشده است. فقط مسیرهای پیش فرض پیشنهادی با پشتیبانی اضافی برای پسوندهای برنامه شناسایی می شوند <kbd>.tar</kbd>-archives (e. g. <kbd>files_wcf.tar</kbd>) پشتیبانی می شوند.]]></item>
-        <item name="wcf.acp.devtools.pip.pluginName"><![CDATA[شناسه پی ای پی]]></item>
+        <item name="wcf.acp.devtools.pip.error.defaultFilename"><![CDATA[PIP یک نام فایل پیش فرض ندارد و دستورالعمل نصب حاوی نام فایل نیست.]]></item>
+        <item name="wcf.acp.devtools.pip.error.noGuiSupport"><![CDATA[این PIP از مدیریت ورودی ها از طریق رابط کاربری گرافیکی پشتیبانی نمی کند.]]></item>
+        <item name="wcf.acp.devtools.pip.error.notIdempotent"><![CDATA[این PIP از واردات مکرر پشتیبانی نمی‌کند و فقط در به‌روزرسانی‌های منظم قابل پردازش است.]]></item>
+        <item name="wcf.acp.devtools.pip.notice"><![CDATA[هر دستورالعمل موجود در <kbd>package.xml</kbd> نادیده گرفته خواهد شد؛ این اجازه می دهد تا PIP هایی را وارد کنید که هنوز دستورالعمل خاصی برای آنها ارائه نشده است. فقط مسیرهای پیش فرض پیشنهادی با پشتیبانی اضافی برای پسوندهای برنامه شناسایی می شوند <kbd>.tar</kbd>-آرشیوها (e. g. <kbd>files_wcf.tar</kbd>) پشتیبانی می شوند.]]></item>
+        <item name="wcf.acp.devtools.pip.pluginName"><![CDATA[شناسه PIP]]></item>
         <item name="wcf.acp.devtools.pip.showGuiSupportingPipsOnly"><![CDATA[نمایش PIP هایی که فقط از رابط کاربری گرافیکی پشتیبانی می کنند]]></item>
-        <item name="wcf.acp.devtools.pip.showGuiSupportingPipsOnly.description"><![CDATA[فقط پی ای پی هایی را نشان دهید که از مدیریت ورودی ها از طریق رابط کاربری گرافیکی پشتیبانی می کنند.]]></item>
-        <item name="wcf.acp.devtools.pip.showOnlyMatches"><![CDATA[فقط پی ای پی های معتبر را نشان دهید]]></item>
-        <item name="wcf.acp.devtools.pip.showOnlyMatches.description"><![CDATA[فقط پی ای پی هایی را نشان می دهد که با مسیرهای پیش فرض مطابقت دارند و برای واردات مکرر واجد شرایط هستند.]]></item>
+        <item name="wcf.acp.devtools.pip.showGuiSupportingPipsOnly.description"><![CDATA[فقط PIP هایی را نشان دهید که از مدیریت ورودی ها از طریق رابط کاربری گرافیکی پشتیبانی می کنند.]]></item>
+        <item name="wcf.acp.devtools.pip.showOnlyMatches"><![CDATA[فقط PIP های معتبر را نشان دهید]]></item>
+        <item name="wcf.acp.devtools.pip.showOnlyMatches.description"><![CDATA[فقط PIP هایی را نشان می دهد که با مسیرهای پیش فرض مطابقت دارند و برای واردات مکرر واجد شرایط هستند.]]></item>
         <item name="wcf.acp.devtools.pip.target"><![CDATA[مسابقات]]></item>
         <item name="wcf.acp.devtools.pip.target.noMatches"><![CDATA[(هیچ مسابقه ای)]]></item>
         <item name="wcf.acp.devtools.project.add"><![CDATA[اضافه کردن پروژه]]></item>
@@ -2582,7 +2582,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.devtools.project.add.mode.import"><![CDATA[بسته موجود را وارد کنید]]></item>
         <item name="wcf.acp.devtools.project.add.mode.setup"><![CDATA[راه اندازی پروژه جدید]]></item>
         <item name="wcf.acp.devtools.project.applicationDirectory"><![CDATA[فهرست برنامه های پیشنهادی]]></item>
-        <item name="wcf.acp.devtools.project.applicationDirectory.description"><![CDATA[در حین نصب برنامه، نام دایرکتوری وارد شده برای برنامه پیشنهاد می شود. دایرکتوری ممکن است فقط شامل کاراکترهای زیر باشد: <kbd>A-z0-9_-</kbd>.]]></item>
+        <item name="wcf.acp.devtools.project.applicationDirectory.description"><![CDATA[در حین نصب برنامه، نام دایرکتوری وارد شده برای برنامه پیشنهاد می شود. دایرکتوری ممکن است فقط شامل کاراکترهای زیر باشد: <kbd>الف-ی0-9_-</kbd>.]]></item>
         <item name="wcf.acp.devtools.project.applicationDirectory.error.format"><![CDATA[فهرست برنامه وارد شده نامعتبر است.]]></item>
         <item name="wcf.acp.devtools.project.author"><![CDATA[توسعه دهنده]]></item>
         <item name="wcf.acp.devtools.project.authorInformation"><![CDATA[اطلاعات توسعه دهنده]]></item>
@@ -2603,7 +2603,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.devtools.project.excludedPackage.version"><![CDATA[نسخه متناقض]]></item>
         <item name="wcf.acp.devtools.project.excludedPackages"><![CDATA[بسته های متناقض]]></item>
         <item name="wcf.acp.devtools.project.excludedPackages.description"><![CDATA[اگر یکی از بسته های زیر قبلاً نصب شده باشد، این بسته قابل نصب نیست (در مشخص شده <strong>یا جدید</strong> نسخه).]]></item>
-        <item name="wcf.acp.devtools.project.excludedPackages.shortTitle"><![CDATA[Conflicts]]></item>
+        <item name="wcf.acp.devtools.project.excludedPackages.shortTitle"><![CDATA[درگیری ها]]></item>
         <item name="wcf.acp.devtools.project.installPackage.confirmMessage"><![CDATA[آیا واقعاً می خواهید بسته را نصب کنید؟ <span class="confirmationObject">{@$packageIdentifier}</span>?]]></item>
         <item name="wcf.acp.devtools.project.installPackage.error.openRequirements"><![CDATA[پروژه را نمی توان نصب کرد زیرا بسته های زیر وجود ندارد:]]></item>
         <item name="wcf.acp.devtools.project.installPackage.error.openRequirements.title"><![CDATA[بسته های گم شده]]></item>
@@ -2612,10 +2612,10 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.devtools.project.instruction.delete.confirmMessages"><![CDATA[آیا واقعاً می خواهید دستورالعمل را حذف کنید؟]]></item>
         <item name="wcf.acp.devtools.project.instruction.edit"><![CDATA[ویرایش دستورالعمل]]></item>
         <item name="wcf.acp.devtools.project.instruction.error.missingDirectory"><![CDATA[دایرکتوری مرتبط با فایل های زیپ نشده، <kbd>{$directory}</kbd>, وجود ندارد.]]></item>
-        <item name="wcf.acp.devtools.project.instruction.error.missingDirectoryForUpdatedFiles"><![CDATA[آرشیوهایی که نام فایل آنها به پایان می رسد <kbd>_update.tar</kbd> در نظر گرفته می شوند که فقط حاوی فایل هایی هستند که از آخرین نسخه به روز شده اند. برای چنین آرشیوهایی، نام دایرکتوری مرتبط با فایل های زیپ نشده، نام فایل بایگانی بدون فایل است <kbd>_update.tar</kbd> suffix. This directory, <kbd>{$directory}</kbd>, وجود ندارد.]]></item>
+        <item name="wcf.acp.devtools.project.instruction.error.missingDirectoryForUpdatedFiles"><![CDATA[آرشیوهایی که نام فایل آنها به پایان می رسد <kbd>_update.tar</kbd> در نظر گرفته می شوند که فقط حاوی فایل هایی هستند که از آخرین نسخه به روز شده اند. برای چنین آرشیوهایی، نام دایرکتوری مرتبط با فایل های زیپ نشده، نام فایل بایگانی بدون فایل است <kbd>_update.tar</kbd> پسوند. این دایرکتوری, <kbd>{$directory}</kbd>, وجود ندارد.]]></item>
         <item name="wcf.acp.devtools.project.instruction.error.missingFile"><![CDATA[فایل <kbd>{$file}</kbd> وجود ندارد.]]></item>
         <item name="wcf.acp.devtools.project.instruction.error.noArchive"><![CDATA[فایل وارد شده بایگانی نیست که به آن ختم می شود<kbd>.tar</kbd>.]]></item>
-        <item name="wcf.acp.devtools.project.instruction.error.noXmlFile"><![CDATA[فایل وارد شده بدون فایل ایکس ام ال است.]]></item>
+        <item name="wcf.acp.devtools.project.instruction.error.noXmlFile"><![CDATA[فایل وارد شده بدون فایل XML است.]]></item>
         <item name="wcf.acp.devtools.project.instruction.instruction"><![CDATA[<kbd>{$pip}</kbd>
 {if $value || $runStandalone || $application}
 	<dl class="plain inlineDataList small">
@@ -2628,17 +2628,17 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
 			<dd>{$application}</dd>
 		{/if}
 		{if $runStandalone}
-			<dt>در مرحله جداگانه اجرا کنید</dt>
+			<dt>Run in separate step</dt>
 			<dd><span class="icon icon16 fa-check"></span></dd>
 		{/if}
 	</dl>
 {/if}]]></item>
-        <item name="wcf.acp.devtools.project.instruction.language.error.missingFiles"><![CDATA[دایرکتوری <kbd>{$directory}<kdb> حاوی هیچ فایل ایکس ام ال نیست.]]></item>
+        <item name="wcf.acp.devtools.project.instruction.language.error.missingFiles"><![CDATA[دایرکتوری <kbd>{$directory}<kdb> حاوی هیچ فایل XML نیست.]]></item>
         <item name="wcf.acp.devtools.project.instruction.packageInstallationPlugin"><![CDATA[جزء بسته]]></item>
         <item name="wcf.acp.devtools.project.instruction.runStandalone"><![CDATA[در مرحله جداگانه اجرا کنید]]></item>
         <item name="wcf.acp.devtools.project.instruction.runStandalone.description"><![CDATA[برای قطعات وقت گیر توصیه می شود این قطعه را در مرحله ای جداگانه نصب کنید.]]></item>
         <item name="wcf.acp.devtools.project.instruction.script.error.missingFile"><![CDATA[فایل اسکریپت وارد شده در هیچ یک از مکان های زیر یافت نشد: {implode from=$checkedFileLocations item=checkedFileLocation}<kbd>{$checkedFileLocation}</kbd>{/implode}.]]></item>
-        <item name="wcf.acp.devtools.project.instruction.script.error.noPhpFile"><![CDATA[فایل وارد شده هیچ فایل پی اچ پی نیست که به آن ختم شود <kbd>.پی اچ پی</kbd>.]]></item>
+        <item name="wcf.acp.devtools.project.instruction.script.error.noPhpFile"><![CDATA[فایل وارد شده هیچ فایل PHP نیست که به آن ختم شود <kbd>.PHP</kbd>.]]></item>
         <item name="wcf.acp.devtools.project.instruction.value"><![CDATA[فایل(ها)]]></item>
         <item name="wcf.acp.devtools.project.instruction.value.description"><![CDATA[فایل وارد شده در حین نصب/به روز رسانی پردازش می شود.]]></item>
         <item name="wcf.acp.devtools.project.instruction.value.description.defaultFilename"><![CDATA[اگر هیچ فایلی مشخص نشده باشد، فایل زیر به صورت پیش فرض استفاده می شود: <kbd>{$defaultFilename}</kbd>.]]></item>
@@ -2655,7 +2655,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.devtools.project.instructions.type.install.title"><![CDATA[دستورالعمل نصب]]></item>
         <item name="wcf.acp.devtools.project.instructions.type.update"><![CDATA[به روزرسانی]]></item>
         <item name="wcf.acp.devtools.project.instructions.type.update.error.duplicate"><![CDATA[فقط یک مجموعه از دستورالعمل های نصب می تواند وجود داشته باشد.]]></item>
-        <item name="wcf.acp.devtools.project.instructions.type.update.error.updateForFutureVersion"><![CDATA[نسخه به روز شده مشخص شده برای به روز رسانی ها همیشه باید نسخه قدیمی تر باشد. نسخه به روز شده وارد شده<kbd>{$fromVersion}</kbd> is newer than the currently specified package version <kbd>{$version}</kbd>.]]></item>
+        <item name="wcf.acp.devtools.project.instructions.type.update.error.updateForFutureVersion"><![CDATA[نسخه به روز شده مشخص شده برای به روز رسانی ها همیشه باید نسخه قدیمی تر باشد. نسخه به روز شده وارد شده<kbd>{$fromVersion}</kbd> جدیدتر از نسخه بسته مشخص شده فعلی است <kbd>{$version}</kbd>.]]></item>
         <item name="wcf.acp.devtools.project.instructions.type.update.title"><![CDATA[دستورالعمل به روز رسانی از نسخه {$fromVersion}]]></item>
         <item name="wcf.acp.devtools.project.instructions.update.fromVersion"><![CDATA[به روزرسانی نسخه]]></item>
         <item name="wcf.acp.devtools.project.instructions.update.fromVersion.description"><![CDATA[نسخه به روز شده می تواند یک نسخه بتن مانند باشد <kbd>1.0.3</kbd> یا طیف کاملی از نسخه ها با استفاده از یک ستاره بیان شده است (مثال: <kbd>1.0.*</kbd>).]]></item>
