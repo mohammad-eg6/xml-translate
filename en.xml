@@ -4216,7 +4216,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.option.internal_hostnames"><![CDATA[دامنه های داخلی اضافی]]></item>
         <item name="wcf.acp.option.internal_hostnames.description"><![CDATA[دامنه های فهرست شده علاوه بر دامنه های مورد استفاده برنامه های نصب شده، به عنوان دامنه های داخلی در نظر گرفته می شوند. نام هاست فقط تطبیق دقیق دارند، می توان از یک علامت عام پیشرو برای حذف کل دامنه استفاده کرد: <kbd>*.example.com</kbd> مسابقات <kbd>example.com</kbd> و زیر دامنه هایی مانند <kbd>foo.example.com</kbd> یا <kbd>www.example.com</kbd>.]]></item>
         <item name="wcf.acp.option.ip_address_search_engine"><![CDATA[موتور جستجو برای آدرس های IP]]></item>
-        <item name="wcf.acp.option.ip_address_search_engine.description"><![CDATA[آدرس های IP به این موتور جستجو پیوند داده می شود. به طور پیش فرض آدرس های IP مرتبط هستند به www.google.com. <span class="inlineCode">%s</span> با آدرس IP جایگزین می شود.]]></item>
+        <item name="wcf.acp.option.ip_address_search_engine.description"><![CDATA[آدرس های IP به این موتور جستجو پیوند داده می شود. به طور پیش فرض آدرس های IP مرتبط هستند به www.google.com. <span class="inlineCode">%ها</span> با آدرس IP جایگزین می شود.]]></item>
         <item name="wcf.acp.option.language_use_informal_variant"><![CDATA[از نوع زبان غیر رسمی استفاده کنید]]></item>
         <item name="wcf.acp.option.legal_notice_additional_text"><![CDATA[اطلاعات تکمیلی]]></item>
         <item name="wcf.acp.option.legal_notice_additional_text.description"><![CDATA[.در اینجا می توانید اطلاعات تکمیلی را برای صفحه اعلامیه حقوقی خود وارد کنید]]></item>
@@ -4252,7 +4252,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.option.mail_from_name.description"><![CDATA[.نام فرستنده برای همه ایمیل های تولید شده]]></item>
         <item name="wcf.acp.option.mail_send_method"><![CDATA[روش ارسال]]></item>
         <item name="wcf.acp.option.mail_send_method.debug"><![CDATA[استفاده از دیباگ  (mbox)]]></item>
-        <item name="wcf.acp.option.mail_send_method.debugFolder"><![CDATA[استفاده از دیباگ (Folder with .eml files)]]></item>
+        <item name="wcf.acp.option.mail_send_method.debugFolder"><![CDATA[استفاده از دیباگ (فولدرهایی با .eml فایل)]]></item>
         <item name="wcf.acp.option.mail_send_method.php"><![CDATA[از PHP استفاده کنید]]></item>
         <item name="wcf.acp.option.mail_send_method.smtp"><![CDATA[استفاده از پروتکل ساده انتقال پست الکترونیکی (توصیه می شود)]]></item>
         <item name="wcf.acp.option.mail_signature"><![CDATA[امضای فرستنده (متن)]]></item>
@@ -4455,7 +4455,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
 <li>“GmbH=Gesellschaft mit beschränkter Haftung”</li>
 </ul>]]></item>
         <item name="wcf.acp.option.use_page_title_on_landing_page"><![CDATA[از عنوان صفحه در صفحه فرود استفاده کنید]]></item>
-        <item name="wcf.acp.option.user_authentication_failure_expiration"><![CDATA[هرس ورود به سیستم]]></item>
+        <item name="wcf.acp.option.user_authentication_failure_expiration"><![CDATA[فیلتر ورود به سیستم]]></item>
         <item name="wcf.acp.option.user_authentication_failure_expiration.description"><![CDATA[.گزارش های تلاش برای ورود ناموفق پس از روزهای بعد حذف خواهند شد.افزایش محدودیت تاریخچه طولانی تری را ارائه می دهد، اما به قیمت افزایش استفاده از ذخیره سازی پایگاه داده]]></item>
         <item name="wcf.acp.option.user_authentication_failure_ip_block"><![CDATA[مسدود کردن از ورود (IP)]]></item>
         <item name="wcf.acp.option.user_authentication_failure_ip_block.description"><![CDATA[تلاش برای ورود ناموفق از همان آدرس IP مجاز است تا زمانی که آدرس IP به طور موقت از ورود به سیستم مسدود شود.]]></item>
@@ -4974,7 +4974,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.pip.bbcode.htmlOpen.error.leadingBracket"><![CDATA[.برچسب ممکن است با یک براکت زاویه شروع نشود]]></item>
         <item name="wcf.acp.pip.bbcode.htmlOpen.error.trailingBracket"><![CDATA[.برچسب ممکن است با یک براکت زاویه ختم نشود]]></item>
         <item name="wcf.acp.pip.bbcode.iconPath"><![CDATA[مسیر فایل نمایه]]></item>
-        <item name="wcf.acp.pip.bbcode.iconPath.description"><![CDATA[مسیر وارد شده باید نسبت به <kbd>{'WCF_DIR'|constant}icon/</kbd>.]]></item>
+        <item name="wcf.acp.pip.bbcode.iconPath.description"><![CDATA[مسیر وارد شده باید نسبت به <kbd>{'WCF_DIR'|constant}نمایه/</kbd>.]]></item>
         <item name="wcf.acp.pip.bbcode.iconPath.error.fileDoesNotExist"><![CDATA[.فایل وارد شده وجود ندارد]]></item>
         <item name="wcf.acp.pip.bbcode.iconType"><![CDATA[نوع نمایه دکمه]]></item>
         <item name="wcf.acp.pip.bbcode.iconType.filePath"><![CDATA[تصویر]]></item>
@@ -5002,7 +5002,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.pip.box.name"><![CDATA[اسم]]></item>
         <item name="wcf.acp.pip.box.name.description"><![CDATA[نام جعبه در لیست جعبه در ACP نمایش داده می شود.]]></item>
         <item name="wcf.acp.pip.box.objectType"><![CDATA[کنترل کننده]]></item>
-        <item name="wcf.acp.pip.box.objectType.description"><![CDATA[کنترکننده جعبه محتوای جعبه را فراهم می کند.]]></item>
+        <item name="wcf.acp.pip.box.objectType.description"><![CDATA[کنترل کننده جعبه محتوای جعبه را فراهم می کند.]]></item>
         <item name="wcf.acp.pip.box.position"><![CDATA[جایگاه]]></item>
         <item name="wcf.acp.pip.box.showHeader"><![CDATA[نمایش سربرگ]]></item>
         <item name="wcf.acp.pip.box.visibilityExceptions.hiddenEverywhere"><![CDATA[صفحاتی که جعبه به صراحت در آنها خواهد بود <strong>Visible</strong>]]></item>
