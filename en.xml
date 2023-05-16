@@ -4049,7 +4049,7 @@
         <item name="wcf.acp.option.external_link_target_blank.description"><![CDATA[ویژگی را اضافه می کند “target="_blank"” به لینک های خارجی، باعث می شود مرورگر کاربر پیوند را در یک پنجره جدید باز کند.]]></item>
         <item name="wcf.acp.option.facebook_private_key"><![CDATA[راز برنامه فیسبوک]]></item>
         <item name="wcf.acp.option.facebook_public_key"><![CDATA[فیسبوک APP-ID]]></item>
-        <item name="wcf.acp.option.facebook_public_key.description"><![CDATA[می توانید APP-ID و راز برنامه خود را در این آدرس دریافت کنید در <a href="https://developers.facebook.com/apps" class="externalURL">فیسبوک</a>. تغییر مسیر OAuth به این آدرس زیر است: {link controller="FacebookAuth" forceFrontend=true}{/link}]]></item>
+        <item name="wcf.acp.option.facebook_public_key.description"><![CDATA[می توانید APP-ID و راز برنامه خود را در این آدرس دریافت کنید در <a href="https://developers.facebook.com/apps" class="externalURL">فیسبوک</a>. تغییر مسیر پروتوکل OAuth به این ادرس اینترنتی است : {link controller="FacebookAuth" forceFrontend=true}{/link}]]></item>
         <item name="wcf.acp.option.fb_share_app_id"><![CDATA[شناسه اپلیکیشن فیسبوک]]></item>
         <item name="wcf.acp.option.fb_share_app_id.description"><![CDATA[می توانید شناسه برنامه را از سایت خود دریافت کنید <a href="https://developers.facebook.com/apps/" class="externalURL">داشبورد برنامه</a>, و با برچسب های نمودار باز برای اشتراک گذاری استفاده می شود.]]></item>
         <item name="wcf.acp.option.filebase_available_currencies"><![CDATA[ارزهای پشتیبانی شده]]></item>
