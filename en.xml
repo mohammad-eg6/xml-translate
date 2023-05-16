@@ -858,7 +858,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="filebase.user.condition.filebaseCustomerFileID.description"><![CDATA[کاربر  فایل را با شناسه داده شده خریداری کرده است یا نویسنده ان است .]]></item>
     </category>
     <category name="gallery.acp.image">
-        <item name="gallery.acp.image.bulkProcessing"><![CDATA[پردازش انبوه تصاویر {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و فیلم ها {/if}]]></item>
+        <item name="gallery.acp.image.bulkProcessing"><![CDATA[پردازش انبوه تصاویر {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو ها {/if}]]></item>
         <item name="gallery.acp.image.bulkProcessing.action"><![CDATA[عمل]]></item>
         <item name="gallery.acp.image.bulkProcessing.conditions"><![CDATA[شرایط ]]></item>
         <item name="gallery.acp.image.bulkProcessing.delete"><![CDATA[حذف ]]></item>
