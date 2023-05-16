@@ -118,34 +118,34 @@
         <item name="blog.entry.featured"><![CDATA[امکانات]]></item>
         <item name="blog.entry.hasOldVersions"><![CDATA[نسخه های قدیمی]]></item>
         <item name="blog.entry.information"><![CDATA[اطلاعات]]></item>
-        <item name="blog.entry.label.readMore"><![CDATA[درج [readmore]]]></item>
+        <item name="blog.entry.label.readMore"><![CDATA[درج [ادامه مطلب]]]></item>
         <item name="blog.entry.like.notification.message"><![CDATA[<strong>{$author}</strong> به مقالات شما دسترسی دارد <strong>{$entry->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
         <item name="blog.entry.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} به مقالات وبلاگ شما دسترسی دارد <strong>{$entry->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
         <item name="blog.entry.like.notification.title"><![CDATA[واکنش دادن مثل کامنت لایک گذاشتن در وبلاگ شما.]]></item>
         <item name="blog.entry.like.notification.title.stacked"><![CDATA[{#$count} واکنش در وبلاگ شما دارد.]]></item>
         <item name="blog.entry.log.trash.summary"><![CDATA[این آیتم توسط {if $userID}<a href="{link controller='User' id=$userID title=$username}{/link}" class="userLink" data-user-id="{@$userID}">{$username}</a>{else}{$username}{/if}{if $additionalData[reason]} به دلیل: {$additionalData[reason]}{/if}. ({@$time|time}) حذف شد.]]></item>
         <item name="blog.entry.mention.notification.mail.html"><![CDATA[<p><strong>{$author}</strong> شما مرتبط کرده است در مقاله <a href="{$entry->getLink()}">{$entry->getTitle()}</a>:</p>]]></item>
-        <item name="blog.entry.mention.notification.mail.plaintext"><![CDATA[{@$author} mentioned you in the blog article “{@$entry->getTitle()}” [URL:{@$entry->getLink()}]:]]></item>
-        <item name="blog.entry.mention.notification.message"><![CDATA[<strong>{$author}</strong> mentioned you in the blog article <strong>{$entry->getTitle()}</strong>.]]></item>
+        <item name="blog.entry.mention.notification.mail.plaintext"><![CDATA[{@$author}در مقاله وبلاگ از شما نام برد “{@$entry->getTitle()}” [URL:{@$entry->getLink()}]:]]></item>
+        <item name="blog.entry.mention.notification.message"><![CDATA[<strong>{$author}</strong> در مقاله وبلاگ از شما نام برد <strong>{$entry->getTitle()}</strong>.]]></item>
         <item name="blog.entry.mention.notification.title"><![CDATA[شما انتخاب شدید.]]></item>
         <item name="blog.entry.message"><![CDATA[پیام]]></item>
-        <item name="blog.entry.moderation.info"><![CDATA[Newly created articles will remain inaccessible until approved by a moderator.]]></item>
-        <item name="blog.entry.moderation.redirect"><![CDATA[Your article has been created and will be displayed once approved.]]></item>
+        <item name="blog.entry.moderation.info"><![CDATA[مقالاتی که به تازگی ایجاد شده اند تا زمانی که توسط ناظر تایید نشود، غیرقابل دسترسی خواهند بود.]]></item>
+        <item name="blog.entry.moderation.redirect"><![CDATA[مقاله شما ایجاد شده است و پس از تایید نمایش داده خواهد شد.]]></item>
         <item name="blog.entry.moreEntries"><![CDATA[مقالات بیشتر]]></item>
         <item name="blog.entry.nextEntry"><![CDATA[مقاله بیشتر]]></item>
         <item name="blog.entry.noEntries"><![CDATA[هنوز هیچ مقاله ای ثبت نشده است.]]></item>
-        <item name="blog.entry.notification.mail.html"><![CDATA[<p><strong>{$author}</strong> wrote the blog article <a href="{$entry->getLink()}">{$entry->getTitle()}</a>:</p>]]></item>
-        <item name="blog.entry.notification.mail.plaintext"><![CDATA[{@$author} wrote the blog article “{@$entry->getTitle()}” [URL:{@$entry->getLink()}]:]]></item>
-        <item name="blog.entry.notification.message"><![CDATA[<strong>{$author}</strong> wrote the blog article <strong>{$entry->getTitle()}</strong>.]]></item>
+        <item name="blog.entry.notification.mail.html"><![CDATA[<p><strong>{$author}</strong> مقاله وبلاگ را نوشت <a href="{$entry->getLink()}">{$entry->getTitle()}</a>:</p>]]></item>
+        <item name="blog.entry.notification.mail.plaintext"><![CDATA[{@$author} مقاله وبلاگ را نوشت “{@$entry->getTitle()}” [URL:{@$entry->getLink()}]:]]></item>
+        <item name="blog.entry.notification.message"><![CDATA[<strong>{$author}</strong> مقاله وبلاگ را نوشت <strong>{$entry->getTitle()}</strong>.]]></item>
         <item name="blog.entry.notification.title"><![CDATA[مقاله جدید]]></item>
         <item name="blog.entry.previousEntry"><![CDATA[مقاله قبلی]]></item>
         <item name="blog.entry.publication"><![CDATA[انتشار]]></item>
         <item name="blog.entry.publicationDate"><![CDATA[تاریخ انتشار]]></item>
-        <item name="blog.entry.publicationDate.error.invalid"><![CDATA[The publication date is invalid.]]></item>
-        <item name="blog.entry.recentActivity.entry"><![CDATA[Wrote the blog article {anchor object=$entry class='blogEntryLink'}.]]></item>
-        <item name="blog.entry.recentActivity.entryComment"><![CDATA[Commented on blog article {anchor link=$comment content=$entry class='blogEntryLink'}.]]></item>
-        <item name="blog.entry.recentActivity.entryCommentResponse"><![CDATA[Replied to a comment by {user object=$commentAuthor} on blog article {anchor link=$response content=$entry class='blogEntryLink'}.]]></item>
-        <item name="blog.entry.recentActivity.likedEntry"><![CDATA[Reacted with <span title="{$reactionType->getTitle()}" class="jsTooltip">{@$reactionType->renderIcon()}</span> to the blog article {anchor object=$entry class='blogEntryLink'}.]]></item>
+        <item name="blog.entry.publicationDate.error.invalid"><![CDATA[تاریخ انتشار نامعتبر است.]]></item>
+        <item name="blog.entry.recentActivity.entry"><![CDATA[مقاله وبلاگ را نوشت {anchor object=$entry class='blogEntryLink'}.]]></item>
+        <item name="blog.entry.recentActivity.entryComment"><![CDATA[در مورد مقاله وبلاگ نظر داد {anchor link=$comment content=$entry class='blogEntryLink'}.]]></item>
+        <item name="blog.entry.recentActivity.entryCommentResponse"><![CDATA[به یک نظر توسط {user object=$commentAuthor} در مقاله وبلاگ {anchor link=$response content=$entry class='blogEntryLink'}.]]></item>
+        <item name="blog.entry.recentActivity.likedEntry"><![CDATA[واکنش نشان داد با <span title="{$reactionType->getTitle()}" class="jsTooltip">{@$reactionType->renderIcon()}</span> به مقاله وبلاگ {anchor object=$entry class='blogEntryLink'}.]]></item>
         <item name="blog.entry.restore"><![CDATA[بازیابی]]></item>
         <item name="blog.entry.setAsFeatured"><![CDATA[انتخاب به عنوان گزینه دار]]></item>
         <item name="blog.entry.sortField.comments"><![CDATA[نظرات]]></item>
@@ -173,7 +173,7 @@
 </ul>]]></item>
     </category>
     <category name="calendar.acp.event">
-        <item name="calendar.acp.event.option.add"><![CDATA[افزودن فیلد گزینه ها]]></item>
+        <item name="calendar.acp.event.option.add"><![CDATA[اضافه کردن فیلد گزینه ها]]></item>
         <item name="calendar.acp.event.option.availability"><![CDATA[دسترسی]]></item>
         <item name="calendar.acp.event.option.categoryIDs"><![CDATA[دسته بندی ها]]></item>
         <item name="calendar.acp.event.option.categoryIDs.description"><![CDATA[فیلد گزینه ها فقط برای رویداد های انتخاب شده در دسته بندی ها قابل دسترس است. اگر هیچ دسته بندی انتخاب نشده بود.فیلد گزینه ها در تمامی دسته بندی هادر دسترس است .بعد از دخیره کردن   نمیتوان دسته یندی های انتخاب شده را لغو کردن]]></item>
@@ -184,8 +184,8 @@
         <item name="calendar.acp.eventImport.add"><![CDATA[اضافه کردن رویداد ]]></item>
         <item name="calendar.acp.eventImport.category.description"><![CDATA[رویداد ها ایجاد میشوند در دسته بندی های انتخاب شده.]]></item>
         <item name="calendar.acp.eventImport.description"><![CDATA[تقویم های خارجی به صورت دوره ای رفت و آمد می شوند و محتوای جدید به عنوان رویداد پست می شود.]]></item>
-        <item name="calendar.acp.eventImport.edit"><![CDATA[Edit Event Import]]></item>
-        <item name="calendar.acp.eventImport.error.noCategories"><![CDATA[You must <a href="{link controller='CategoryAdd' application='calendar'}{/link}">create at least one category</a> before you are able to add event imports.]]></item>
+        <item name="calendar.acp.eventImport.edit"><![CDATA[ویرایش واردات رویداد]]></item>
+        <item name="calendar.acp.eventImport.error.noCategories"><![CDATA[شما باید <a href="{link controller='CategoryAdd' application='calendar'}{/link}">حداقل یک دسته ایجاد کنید</a> قبل از اینکه بتوانید واردهای رویداد را اضافه کنید.]]></item>
         <item name="calendar.acp.eventImport.errorMessage"><![CDATA[در آخرین اجرا خطایی رخ داد.]]></item>
         <item name="calendar.acp.eventImport.errorMessage.info"><![CDATA[خطای زیر در آخرین اجرا رخ داد:]]></item>
         <item name="calendar.acp.eventImport.language.description"><![CDATA[رویدادها با زبان انتخاب شده ایجاد خواهند شد.]]></item>
@@ -207,16 +207,16 @@
     <category name="calendar.category">
         <item name="calendar.category.button.export"><![CDATA[صادر کردن رویداد (iCal)]]></item>
         <item name="calendar.category.delete.sure"><![CDATA[آیا میخواهید واقعا میخواهید این دسته بندی حذف شود؟تمام دسته بندی های کودکان را از این دسته بندی به دسته بندی والدین منتقل خواهد شد.رویداد هایی که فقط در این دسته قرار میگیرند حذف خواهند شد.]]></item>
-        <item name="calendar.category.eventColor"><![CDATA[Color]]></item>
+        <item name="calendar.category.eventColor"><![CDATA[رنگ]]></item>
         <item name="calendar.category.eventColor.button.reset"><![CDATA[بازنشانی رنگ]]></item>
         <item name="calendar.category.export.download"><![CDATA[دانلود به صورت فایل]]></item>
         <item name="calendar.category.export.url"><![CDATA[وبلاگ]]></item>
         <item name="calendar.category.export.url.description"><![CDATA[شما میتوانید استفاده کنید از این وبلاگ همراه با برنامه تقوم مورد علاقه تان.]]></item>
-        <item name="calendar.category.export.url.participant"><![CDATA[وبلاگ (Participating Events Only)]]></item>
+        <item name="calendar.category.export.url.participant"><![CDATA[وبلاگ (فقط رویدادهای شرکت کننده)]]></item>
         <item name="calendar.category.export.url.participant.description"><![CDATA[لیست را به رویدادهایی که شما (ممکن است) در آن شرکت کنید محدود می کند.]]></item>
     </category>
     <category name="calendar.date">
-        <item name="calendar.date.birthday.count"><![CDATA[{#$day->getBirthdayCount()} تاریخ تولد{if $day->getBirthdayCount() != 1}s{/if}]]></item>
+        <item name="calendar.date.birthday.count"><![CDATA[{#$day->getBirthdayCount()} تاریخ تولد{if $day->getBirthdayCount() != 1}ها{/if}]]></item>
         <item name="calendar.date.birthday.title"><![CDATA[روز تولد  {@$day->getFormattedDate()}]]></item>
         <item name="calendar.date.birthdays"><![CDATA[تولد ها]]></item>
         <item name="calendar.date.dateFormat"><![CDATA[D, M jS Y]]></item>
@@ -254,14 +254,14 @@
         <item name="calendar.event.date"><![CDATA[ملاقات ]]></item>
         <item name="calendar.event.date.cancel"><![CDATA[روز دیدار]]></item>
         <item name="calendar.event.date.cancel.confirmMessage"><![CDATA[!آیا واقعاً می خواهید این ملاقات را لغو کنید؟ این عمل قابل لغو نیست]]></item>
-        <item name="calendar.event.date.cancel.reason"><![CDATA[دلیل (optional)]]></item>
+        <item name="calendar.event.date.cancel.reason"><![CDATA[دلیل (اختیاری)]]></item>
         <item name="calendar.event.date.canceled"><![CDATA[ملاقات لغو شده است]]></item>
-        <item name="calendar.event.date.canceled.detail"><![CDATA[این ملاقات لغو شده است {if $eventDate->canceledByUsername}همراه با {if $eventDate->canceledByUserID}<a href="{link controller='User' id=$eventDate->canceledByUserID title=$eventDate->canceledByUsername}{/link}" class="userLink" data-user-id="{@$eventDate->canceledByUserID}">{$eventDate->canceledByUsername}</a>{else}{$eventDate->canceledByUsername}{/if} {/if}on {@$eventDate->cancelTime|plainTime}{if $eventDate->cancelReason} به این دلیل: {$eventDate->cancelReason}{/if}.]]></item>
-        <item name="calendar.event.date.canceled.notification.mail.html"><![CDATA[<p>The event <a href="{$eventDate->getLink()}">{$eventDate->getTitle()}</a> by <strong>{$author}</strong> on {@$eventDate->getFormattedStartTime()} was canceled{if $eventDate->cancelReason} for the following reason: {$eventDate->cancelReason}{/if}.</p>]]></item>
-        <item name="calendar.event.date.canceled.notification.mail.plaintext"><![CDATA[رویداد “{@$eventDate->getTitle()}” [URL:{@$eventDate->getLink()}] by {@$author} on {@$eventDate->getFormattedStartTime()}کنسل شده است{if $eventDate->cancelReason} به این دلیل: {@$eventDate->cancelReason}{/if}.]]></item>
-        <item name="calendar.event.date.canceled.notification.message"><![CDATA[رویداد <strong>{$eventDate->getTitle()}</strong> on {@$eventDate->getFormattedStartTime()}کنسل شده است{if $eventDate->cancelReason} به این دلیل: {$eventDate->cancelReason}{/if}.]]></item>
+        <item name="calendar.event.date.canceled.detail"><![CDATA[این ملاقات لغو شده است {if $eventDate->canceledByUsername}همراه با {if $eventDate->canceledByUserID}<a href="{link controller='User' id=$eventDate->canceledByUserID title=$eventDate->canceledByUsername}{/link}" class="userLink" data-user-id="{@$eventDate->canceledByUserID}">{$eventDate->canceledByUsername}</a>{else}{$eventDate->canceledByUsername}{/if} {/if}روی {@$eventDate->cancelTime|plainTime}{if $eventDate->cancelReason} به این دلیل: {$eventDate->cancelReason}{/if}.]]></item>
+        <item name="calendar.event.date.canceled.notification.mail.html"><![CDATA[<p>رویداد <a href="{$eventDate->getLink()}">{$eventDate->getTitle()}</a> توسط <strong>{$author}</strong> روی {@$eventDate->getFormattedStartTime()} کنسل شده است{if $eventDate->cancelReason} به دلیل زیر: {$eventDate->cancelReason}{/if}.</p>]]></item>
+        <item name="calendar.event.date.canceled.notification.mail.plaintext"><![CDATA[رویداد “{@$eventDate->getTitle()}” [URL:{@$eventDate->getLink()}] توسط {@$author} روی {@$eventDate->getFormattedStartTime()}کنسل شده است{if $eventDate->cancelReason} به این دلیل: {@$eventDate->cancelReason}{/if}.]]></item>
+        <item name="calendar.event.date.canceled.notification.message"><![CDATA[رویداد <strong>{$eventDate->getTitle()}</strong> روی {@$eventDate->getFormattedStartTime()}کنسل شده است{if $eventDate->cancelReason} به این دلیل: {$eventDate->cancelReason}{/if}.]]></item>
         <item name="calendar.event.date.canceled.notification.title"><![CDATA[رویداد کنسل شده است]]></item>
-        <item name="calendar.event.date.change.notification.mail.html"><![CDATA[<p>رویداد <a href="{$eventDate->getLink()}">{$eventDate->getTitle()}</a> by <strong>{$author}</strong> موکول شده به: {@$eventDate->getFormattedTimeFrame()}</p>]]></item>
+        <item name="calendar.event.date.change.notification.mail.html"><![CDATA[<p>رویداد <a href="{$eventDate->getLink()}">{$eventDate->getTitle()}</a> توسط <strong>{$author}</strong> موکول شده به: {@$eventDate->getFormattedTimeFrame()}</p>]]></item>
         <item name="calendar.event.date.change.notification.mail.plaintext"><![CDATA[رویداد “{@$eventDate->getTitle()}” [URL:{@$eventDate->getLink()}] by {@$author} موکول شده به: {@$eventDate->getFormattedTimeFrame()}]]></item>
         <item name="calendar.event.date.change.notification.message"><![CDATA[رویدا <strong>{$eventDate->getTitle()}</strong> موکول شده به: {@$eventDate->getFormattedTimeFrame()}]]></item>
         <item name="calendar.event.date.change.notification.title"><![CDATA[رویداد موکول شده به]]></item>
@@ -269,35 +269,35 @@
         <item name="calendar.event.date.changeTime.info"><![CDATA[شما در حال ویرایش زمان یک رویداد جداگانه از یک مجموعه رویداد هستید. زمان همه رویدادهای دیگر بدون تغییر است]]></item>
         <item name="calendar.event.date.comment.like.notification.message"><![CDATA[<strong>{$author}</strong> به نظر شما در این رویداد واکنش نشان داد <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}) ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
         <item name="calendar.event.date.comment.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} به نظر شما در این رویداد واکنش نشان داد <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}) ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
-        <item name="calendar.event.date.comment.like.notification.title"><![CDATA[واکنش به یک نظر (Event)]]></item>
+        <item name="calendar.event.date.comment.like.notification.title"><![CDATA[واکنش به یک نظر (رویداد)]]></item>
         <item name="calendar.event.date.comment.like.notification.title.stacked"><![CDATA[{#$count} کاربران به نظر شما واکنش نشان دادند (Event)]]></item>
         <item name="calendar.event.date.comment.notification.mail.html"><![CDATA[<p>{@$authorList} در مورد رویداد شما نظر داد <a href="{$eventDate->getLink()}#comment{@$commentID}">{$eventDate->getTitle()}</a> ({@$eventDate->getFormattedTimeFrame()}):</p>]]></item>
         <item name="calendar.event.date.comment.notification.mail.plaintext"><![CDATA[{@$authorList} در مورد رویداد شما نظر داد “{@$eventDate->getTitle()}” [URL:{@$eventDate->getLink()}#comment{@$commentID}] ({@$eventDate->getFormattedTimeFrame()}){if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
-        <item name="calendar.event.date.comment.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A guest{/if} در مورد رویداد شما نظر داد <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}).]]></item>
+        <item name="calendar.event.date.comment.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}مهمان{/if} در مورد رویداد شما نظر داد <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}).]]></item>
         <item name="calendar.event.date.comment.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} در مورد رویداد شما نظر داد <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}).]]></item>
-        <item name="calendar.event.date.comment.notification.title"><![CDATA[نظر جدید (Event)]]></item>
-        <item name="calendar.event.date.comment.notification.title.stacked"><![CDATA[{#$timesTriggered} نظرات جدید (Event)]]></item>
+        <item name="calendar.event.date.comment.notification.title"><![CDATA[نظر جدید (رویداد)]]></item>
+        <item name="calendar.event.date.comment.notification.title.stacked"><![CDATA[{#$timesTriggered} نظرات جدید (رویداد)]]></item>
         <item name="calendar.event.date.commentResponse.like.notification.message"><![CDATA[<strong>{$author}</strong> به پاسخ شما به نظری در مورد این رویداد واکنش نشان داد <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}) ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
         <item name="calendar.event.date.commentResponse.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} به پاسخ شما به نظری در مورد این رویداد واکنش نشان داد <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}) ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
-        <item name="calendar.event.date.commentResponse.like.notification.title"><![CDATA[به پاسخ شما به نظری در مورد این رویداد واکنش نشان داد (Event)]]></item>
-        <item name="calendar.event.date.commentResponse.like.notification.title.stacked"><![CDATA[{#$count} کاربران به پاسخ شما به یک نظر واکنش نشان دادند (Event)]]></item>
+        <item name="calendar.event.date.commentResponse.like.notification.title"><![CDATA[به پاسخ شما به نظری در مورد این رویداد واکنش نشان داد (رویداد)]]></item>
+        <item name="calendar.event.date.commentResponse.like.notification.title.stacked"><![CDATA[{#$count} کاربران به پاسخ شما به یک نظر واکنش نشان دادند (رویداد)]]></item>
         <item name="calendar.event.date.commentResponse.notification.mail.html"><![CDATA[<p>{@$authorList} به نظر شما در مورد این رویداد پاسخ داد <a href="{$eventDate->getLink()}#comment{@$commentID}/response{@$responseID}">{$eventDate->getTitle()}</a> ({@$eventDate->getFormattedTimeFrame()}):</p>]]></item>
         <item name="calendar.event.date.commentResponse.notification.mail.plaintext"><![CDATA[{@$authorList} به نظر شما در مورد این رویداد پاسخ داد “{@$eventDate->getTitle()}” [URL:{@$eventDate->getLink()}#comment{@$commentID}/response{@$responseID}] ({@$eventDate->getFormattedTimeFrame()}){if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
-        <item name="calendar.event.date.commentResponse.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A guest{/if} به نظر شما در مورد این رویداد پاسخ داد <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}).]]></item>
+        <item name="calendar.event.date.commentResponse.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}مهمان{/if} به نظر شما در مورد این رویداد پاسخ داد <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}).]]></item>
         <item name="calendar.event.date.commentResponse.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} به نظر شما در مورد این رویداد پاسخ داد <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}).]]></item>
-        <item name="calendar.event.date.commentResponse.notification.title"><![CDATA[پاسخ جدید (Event)]]></item>
-        <item name="calendar.event.date.commentResponse.notification.title.stacked"><![CDATA[{#$timesTriggered} پاسخ های جدید (Event)]]></item>
+        <item name="calendar.event.date.commentResponse.notification.title"><![CDATA[پاسخ جدید (رویداد)]]></item>
+        <item name="calendar.event.date.commentResponse.notification.title.stacked"><![CDATA[{#$timesTriggered} پاسخ های جدید (رویداد)]]></item>
         <item name="calendar.event.date.commentResponseOwner.notification.mail.html"><![CDATA[<p>{@$authorList} پاسخ داد به {$commentAuthor}’s در مورد رویداد خود نظر دهید<a href="{$eventDate->getLink()}#comment{@$commentID}/response{@$responseID}">{$eventDate->getTitle()}</a> ({@$eventDate->getFormattedTimeFrame()}):</p>]]></item>
-        <item name="calendar.event.date.commentResponseOwner.notification.mail.plaintext"><![CDATA[{@$authorList} replied to {@$commentAuthor}’s در مورد رویداد خود نظر دهید “{@$eventDate->getTitle()}” [URL:{@$eventDate->getLink()}#comment{@$commentID}/response{@$responseID}] ({@$eventDate->getFormattedTimeFrame()}){if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
-        <item name="calendar.event.date.commentResponseOwner.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A guest{/if} پاسخ دادن به نظر با <strong>{$commentAuthor}</strong> on your event <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}).]]></item>
-        <item name="calendar.event.date.commentResponseOwner.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} پاسخ دادن به نظر با <strong>{$author}</strong> on your event <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}).]]></item>
-        <item name="calendar.event.date.commentResponseOwner.notification.title"><![CDATA[پاسخ جدید (Event)]]></item>
-        <item name="calendar.event.date.commentResponseOwner.notification.title.stacked"><![CDATA[{#$timesTriggered} پاسخ های جدید (Event)]]></item>
+        <item name="calendar.event.date.commentResponseOwner.notification.mail.plaintext"><![CDATA[{@$authorList} پاسخ داد به {@$commentAuthor}’s در مورد رویداد خود نظر دهید “{@$eventDate->getTitle()}” [URL:{@$eventDate->getLink()}#comment{@$commentID}/response{@$responseID}] ({@$eventDate->getFormattedTimeFrame()}){if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+        <item name="calendar.event.date.commentResponseOwner.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}مهمان{/if} پاسخ دادن به نظر با <strong>{$commentAuthor}</strong> در رویداد شما <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}).]]></item>
+        <item name="calendar.event.date.commentResponseOwner.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} پاسخ دادن به نظر با <strong>{$author}</strong> در رویداد شما <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}).]]></item>
+        <item name="calendar.event.date.commentResponseOwner.notification.title"><![CDATA[پاسخ جدید (رویداد)]]></item>
+        <item name="calendar.event.date.commentResponseOwner.notification.title.stacked"><![CDATA[{#$timesTriggered} پاسخ های جدید (رویداد)]]></item>
         <item name="calendar.event.date.end"><![CDATA[پایان]]></item>
         <item name="calendar.event.date.end.error.endsAfterNextEventDate"><![CDATA[این تکرار رویداد نمی تواند پس از شروع تکرار بعدی به پایان برسد.]]></item>
         <item name="calendar.event.date.end.error.invalid"><![CDATA[تاریخ پایان وارد شده نامعتبر است. باید بعد از تاریخ شروع باشد.]]></item>
         <item name="calendar.event.date.end.error.tooLong"><![CDATA[رویداد شما از حداکثر دوره زمانی فراتر رفته است، یک رویداد فقط تا حداکثر می تواند برگزار شود{#CALENDAR_MAX_EVENT_LENGTH} روزهای متوالی.]]></item>
-        <item name="calendar.event.date.end.local"><![CDATA[پایان(Local Time)]]></item>
+        <item name="calendar.event.date.end.local"><![CDATA[پایان(زمان محلی)]]></item>
         <item name="calendar.event.date.invite.notification.mail.html"><![CDATA[<p><strong>{$author}</strong> شما را به این رویداد دعوت شده اید <a href="{$eventDate->getLink()}">{$eventDate->getTitle()}</a> ({@$eventDate->getFormattedTimeFrame()}):</p>]]></item>
         <item name="calendar.event.date.invite.notification.mail.plaintext"><![CDATA[{@$author} شما را به این رویداد دعوت شده اید “{@$eventDate->getTitle()}” [URL:{@$eventDate->getLink()}] ({@$eventDate->getFormattedTimeFrame()}):]]></item>
         <item name="calendar.event.date.invite.notification.message"><![CDATA[<strong>{$author}</strong> شما را به این رویداد دعوت شده اید <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}).]]></item>
@@ -320,7 +320,7 @@
         <item name="calendar.event.date.participation.decision"><![CDATA[مشارکت]]></item>
         <item name="calendar.event.date.participation.decision.maybe"><![CDATA[شاید]]></item>
         <item name="calendar.event.date.participation.decision.no"><![CDATA[خیر]]></item>
-        <item name="calendar.event.date.participation.decision.yes"><![CDATA[بله{if !$canParticipate} (not possible){/if}]]></item>
+        <item name="calendar.event.date.participation.decision.yes"><![CDATA[بله{if !$canParticipate} (ممکن نیست){/if}]]></item>
         <item name="calendar.event.date.participation.invite"><![CDATA[دعوت]]></item>
         <item name="calendar.event.date.participation.invite.description"><![CDATA[می توانید کاربران بیشتری را به این رویداد دعوت کنید. هر کاربر را با کاما جدا کنید.]]></item>
         <item name="calendar.event.date.participation.invite.errors"><![CDATA[{if $errors[unknown]|count}کاربران زیر ناشناخته هستند: {implode from=$errors[unknown] item=user}{$user}{/implode}.{/if}{if $errors[unknown]|count && $errors[participant]|count}<br />{/if}{if $errors[participant]|count}کاربران زیر قبلاً شرکت کرده اند: {implode from=$errors[participant] item=user}{$user}{/implode}.{/if}]]></item>
@@ -361,10 +361,10 @@
         <item name="calendar.event.date.repeat.end.type.date"><![CDATA[تاریخ]]></item>
         <item name="calendar.event.date.repeat.end.type.unlimited"><![CDATA[هیچوقت]]></item>
         <item name="calendar.event.date.repeat.interval"><![CDATA[فاصله]]></item>
-        <item name="calendar.event.date.repeat.interval.daily.description"><![CDATA[تکرار هر روز (s)]]></item>
-        <item name="calendar.event.date.repeat.interval.monthly.description"><![CDATA[تکرار هر ماه (s)]]></item>
-        <item name="calendar.event.date.repeat.interval.weekly.description"><![CDATA[تکرار هر هفته(s)]]></item>
-        <item name="calendar.event.date.repeat.interval.yearly.description"><![CDATA[تکرار هر سال(s)]]></item>
+        <item name="calendar.event.date.repeat.interval.daily.description"><![CDATA[تکرار هر روز (ها)]]></item>
+        <item name="calendar.event.date.repeat.interval.monthly.description"><![CDATA[تکرار هر ماه (ها)]]></item>
+        <item name="calendar.event.date.repeat.interval.weekly.description"><![CDATA[تکرار هر هفته(ها)]]></item>
+        <item name="calendar.event.date.repeat.interval.yearly.description"><![CDATA[تکرار هر سال(ها)]]></item>
         <item name="calendar.event.date.repeat.type"><![CDATA[مدل]]></item>
         <item name="calendar.event.date.repeat.type.daily"><![CDATA[روزانه]]></item>
         <item name="calendar.event.date.repeat.type.monthlyByDayOfMonth"><![CDATA[ماهانه (روز از ماه)]]></item>
@@ -378,7 +378,7 @@
         <item name="calendar.event.date.start.error.startsBeforePreviousEventDate"><![CDATA[تکرار این رویداد نمیتواند قبل از پایان تکرار رویداد قبلی باشد .]]></item>
         <item name="calendar.event.date.start.local"><![CDATA[شروع (زمان محلی)]]></item>
         <item name="calendar.event.date.timezone"><![CDATA[محدوده زمانی ]]></item>
-        <item name="calendar.event.day.count"><![CDATA[{#$eventCount} رویدا {if $eventCount != 1}s{/if}]]></item>
+        <item name="calendar.event.day.count"><![CDATA[{#$eventCount} رویدا {if $eventCount != 1}ها{/if}]]></item>
         <item name="calendar.event.delete"><![CDATA[حذف]]></item>
         <item name="calendar.event.delete.confirmMessage"><![CDATA[ایا واقعا میخواهید این رویداد و تکرار های ان حذف شوند ?]]></item>
         <item name="calendar.event.disable"><![CDATA[غیر فعال کردن]]></item>
@@ -386,7 +386,7 @@
         <item name="calendar.event.enable"><![CDATA[تایید]]></item>
         <item name="calendar.event.enableComments"><![CDATA[فعال کردن نظرات ]]></item>
         <item name="calendar.event.enableComments.description"><![CDATA[به کاربران اجازه دهید در مورد رویداد نظر بدهند.]]></item>
-        <item name="calendar.event.eventComments"><![CDATA[{@$eventDate->comments|shortUnit} نظر{if $eventDate->comments != 1}s{/if}]]></item>
+        <item name="calendar.event.eventComments"><![CDATA[{@$eventDate->comments|shortUnit} نظر{if $eventDate->comments != 1}ها{/if}]]></item>
         <item name="calendar.event.eventParticipations"><![CDATA[مشارکت در رویداد]]></item>
         <item name="calendar.event.eventParticipations.decision.invited"><![CDATA[دعوت کردن]]></item>
         <item name="calendar.event.eventParticipations.decision.maybe"><![CDATA[قطعی نیست]]></item>
@@ -398,7 +398,7 @@
         <item name="calendar.event.eventThread.message"><![CDATA[<p>{@$event->username} شروع یک رویداد جدید:<br>[event]{@$event->getFirstEventDate()->eventDateID}[/event]</p>
 <woltlab-quote>{@$event->message}</woltlab-quote>]]></item>
         <item name="calendar.event.eventThread.subject"><![CDATA[{@$event->subject} ({@$event->getFirstEventDate()->چهارچوب زمانی را دریافت کنید($__language, true)})]]></item>
-        <item name="calendar.event.eventViews"><![CDATA[{@$event->views|shortUnit} دیدن{if $event->views != 1}s{/if}]]></item>
+        <item name="calendar.event.eventViews"><![CDATA[{@$event->views|shortUnit} دیدن{if $event->views != 1}ها{/if}]]></item>
         <item name="calendar.event.events"><![CDATA[رویداد ها]]></item>
         <item name="calendar.event.eventsInfoWindow"><![CDATA[رویداد های جندگانه]]></item>
         <item name="calendar.event.featured"><![CDATA[دراینده]]></item>
@@ -407,7 +407,7 @@
         <item name="calendar.event.import.description"><![CDATA[از ورود رویداد ها با فرمت vcalender و icalender پشتسبانی میکند.]]></item>
         <item name="calendar.event.import.importURL"><![CDATA[nhkg,n thdg (,fgh')]]></item>
         <item name="calendar.event.import.importURL.error.downloadFailed"><![CDATA[در حین دانلود خطایی ناشناخته رخ داده است .]]></item>
-        <item name="calendar.event.import.success"><![CDATA[{#$success} رویداد{if $success != 1}s{/if} {if $success == 1}در حال{else}have{/if} وارد شدن است.]]></item>
+        <item name="calendar.event.import.success"><![CDATA[{#$success} رویداد{if $success != 1}ها{/if} {if $success == 1}در حال{else}دارند{/if} وارد شدن است.]]></item>
         <item name="calendar.event.import.upload"><![CDATA[اپلود فایل]]></item>
         <item name="calendar.event.import.upload.error.uploadFailed"><![CDATA[در حین اپلود خطایی ناشناخته رخ داده است.]]></item>
         <item name="calendar.event.information"><![CDATA[جزئیات]]></item>
@@ -427,13 +427,13 @@
         <item name="calendar.event.noParticipants.description"><![CDATA[این کاربران اصلا شرکت نمیکنند:]]></item>
         <item name="calendar.event.notification.mail.html"><![CDATA[<p><strong>{$author}</strong> رویداد ایجاد شد <a href="{$eventDate->getLink()}">{$eventDate->getTitle()}</a> ({$eventDate->چهار چوب زمانی را دریافت کنید ()}):</p>]]></item>
         <item name="calendar.event.notification.mail.plaintext"><![CDATA[{@$author} رویداد ایجاد شد “{@$eventDate->getTitle()}” ({$eventDate->چهارچوب زمانی را دریافت کنید()}) [وبلاگ:{@$eventDate->getLink()}]:]]></item>
-        <item name="calendar.event.notification.message"><![CDATA[<strong>{$author}</strong> رویداد ایجاد شده است  <strong>{$event->subject}</strong> ({$event->getFirstEventDate()->چهارچوب زمانی را دریافت کنید..()}).]]></item>
+        <item name="calendar.event.notification.message"><![CDATA[<strong>{$author}</strong> رویداد ایجاد شده است  <strong>{$event->subject}</strong> ({$event->getFirstEventDate()->چهارچوب زمانی را دریافت کنید.()}).]]></item>
         <item name="calendar.event.notification.title"><![CDATA[رویداد جدید ]]></item>
         <item name="calendar.event.options"><![CDATA[اطلاعات اضافی]]></item>
         <item name="calendar.event.participant.count"><![CDATA[{#$participants} مردم]]></item>
         <item name="calendar.event.participants"><![CDATA[شرکت کنندگان]]></item>
         <item name="calendar.event.participants.description"><![CDATA[این کاربر مشارکت را پذیرفته است:]]></item>
-        <item name="calendar.event.participants.summary"><![CDATA[{#$calendarEventDateParticipation[بله]} شرکت کننده{if $calendarEventDateParticipation[بله] != 1}s{/if}, {#$calendarEventDateParticipation[شاید]} تصمیم نگرفته و {#$calendarEventDateParticipation[خیر]} انجام داد{if $calendarEventDateParticipation[خیر] == 1}es{/if} شرکت نکرده است]]></item>
+        <item name="calendar.event.participants.summary"><![CDATA[{#$calendarEventDateParticipation[بله]} شرکت کننده{if $calendarEventDateParticipation[بله] != 1}ها{/if}, {#$calendarEventDateParticipation[شاید]} تصمیم نگرفته و {#$calendarEventDateParticipation[خیر]} انجام داد{if $calendarEventDateParticipation[خیر] == 1}ها{/if} شرکت نکرده است]]></item>
         <item name="calendar.event.participation"><![CDATA[مشارکت]]></item>
         <item name="calendar.event.participation.description"><![CDATA[به کاربران اجازه دهبد تا مشارکت کنند .]]></item>
         <item name="calendar.event.participation.enable"><![CDATA[فعال کردن مشارکت]]></item>
@@ -448,15 +448,15 @@
         <item name="calendar.event.participation.isPublic"><![CDATA[لیست عمومی شرکت کنندگان]]></item>
         <item name="calendar.event.participation.isPublic.description"><![CDATA[لیست شرکت کنندگان برای همه قابل نمایش است .]]></item>
         <item name="calendar.event.participation.maxCompanions"><![CDATA[حداکثر همراهان]]></item>
-        <item name="calendar.event.participation.maxCompanions.description"><![CDATA[هر شرکت کننده تنها میتواند یک همراه داشته باشد .]]></item>
+        <item name="calendar.event.participation.maxCompanions.description"><![CDATA[هر شرکت کننده تنها میتواند یک همراه داشته باشد.]]></item>
         <item name="calendar.event.participation.maxParticipants"><![CDATA[حداکثر شرکت کنندگان ]]></item>
         <item name="calendar.event.participation.maxParticipants.description"><![CDATA[حداکثر تعداد شرکت کنندگان. از صفر استفاده کنید برای تعداد بینهایت .]]></item>
-        <item name="calendar.event.participation.maxParticipants.info"><![CDATA[فقط {$eventDate->getEvent()->maxParticipants - $eventDate->participants} بنشینید {if $eventDate->getEvent()->maxParticipants - $eventDate->participants > 1}s{/if} سمت چپ]]></item>
+        <item name="calendar.event.participation.maxParticipants.info"><![CDATA[فقط {$eventDate->getEvent()->maxParticipants - $eventDate->participants} بنشینید {if $eventDate->getEvent()->maxParticipants - $eventDate->participants > 1}ها{/if} سمت چپ]]></item>
         <item name="calendar.event.pastEvents"><![CDATA[رویداد های گذشته]]></item>
-        <item name="calendar.event.preset"><![CDATA[رویداد <a href="{link application='calendar' controller='Event' object=$presetEvent->getFirstEventDate()}{/link}">{$presetEvent->getTitle()}</a> از پیش تایینشده میباشد.فیلد زیر از قبل پر شده است .]]></item>
+        <item name="calendar.event.preset"><![CDATA[رویداد <a href="{link application='calendar' controller='Event' object=$presetEvent->getFirstEventDate()}{/link}">{$presetEvent->getTitle()}</a> از پیش تایین شده میباشد.فیلد زیر از قبل پر شده است .]]></item>
         <item name="calendar.event.recentActivity.event"><![CDATA[ایجاد رویداد {if $event->hasLabels()}<ul class="labelList">{foreach from=$event->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}{anchor object=$event->getFirstEventDate() class='calendarEventLink'} ({$event->getFirstEventDate()->getFormattedTimeFrame()}).]]></item>
         <item name="calendar.event.recentActivity.eventDateComment"><![CDATA[نظری به رویداد شما داده شد  {if $eventDate->getEvent()->hasLabels()}<ul class="labelList">{foreach from=$eventDate->getEvent()->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}<a href="{$eventDate->getLink()}#comment{@$commentID}" class="calendarEventLink" data-object-id="{@$eventDate->eventDateID}">{$eventDate->getTitle()}</a>.]]></item>
-        <item name="calendar.event.recentActivity.eventDateCommentResponse"><![CDATA[پاسخ داده شد به نظر توسط  {user object=$commentAuthor} on the event {if $eventDate->getEvent()->hasLabels()}<ul class="labelList">{foreach from=$eventDate->getEvent()->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}<a href="{$eventDate->getLink()}#comment{@$commentID}/response{@$responseID}" class="calendarEventLink" data-object-id="{@$eventDate->eventDateID}">{$eventDate->getTitle()}</a>.]]></item>
+        <item name="calendar.event.recentActivity.eventDateCommentResponse"><![CDATA[پاسخ داده شد به نظر توسط  {user object=$commentAuthor} در رویداد {if $eventDate->getEvent()->hasLabels()}<ul class="labelList">{foreach from=$eventDate->getEvent()->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}<a href="{$eventDate->getLink()}#comment{@$commentID}/response{@$responseID}" class="calendarEventLink" data-object-id="{@$eventDate->eventDateID}">{$eventDate->getTitle()}</a>.]]></item>
         <item name="calendar.event.recentActivity.likedEvent"><![CDATA[واکنش نشان داد با  <span title="{$reactionType->getTitle()}" class="jsTooltip">{@$reactionType->renderIcon()}</span> در این رویداد {if $event->hasLabels()}<ul class="labelList">{foreach from=$event->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}{anchor object=$event->getFirstEventDate() class='calendarEventLink'}.]]></item>
         <item name="calendar.event.restore"><![CDATA[بازگردانی]]></item>
         <item name="calendar.event.searchEvents"><![CDATA[جست و جوی رویداد ]]></item>
@@ -467,7 +467,7 @@
         <item name="calendar.event.sortField.subject"><![CDATA[عنوان]]></item>
         <item name="calendar.event.sortField.views"><![CDATA[بازدید]]></item>
         <item name="calendar.event.trash"><![CDATA[انتقال به سطل اشغال]]></item>
-        <item name="calendar.event.trash.confirmMessage"><![CDATA[ایا واقغا میخواهید رویداد و تمام پاسخ های ان را به سطل اشغال انتقال دهید ?]]></item>
+        <item name="calendar.event.trash.confirmMessage"><![CDATA[ایا واقعا میخواهید رویداد و تمام پاسخ های ان را به سطل اشغال انتقال دهید ?]]></item>
         <item name="calendar.event.trash.reason"><![CDATA[دلیل (اختیاری )]]></item>
         <item name="calendar.event.undecidedParticipants"><![CDATA[شرکت کنندگانی که تصمیم نگرفته اند]]></item>
         <item name="calendar.event.undecidedParticipants.description"><![CDATA[این کاربر هنوز تصمیم قطعی نگرفته است:]]></item>
@@ -481,18 +481,18 @@
     <category name="calendar.index">
         <item name="calendar.index.stats"><![CDATA[امار]]></item>
         <item name="calendar.index.stats.detail"><![CDATA[<ul class="inlineList dotSeparated">
-<li>{#$stats[نویسندگان]} نویسنده{if $stats[نویسندگان] != 1}s{/if}</li>
-<li>{#$stats[events]} رویداد{if $stats[رویداد ها] != 1}s{/if} ({#$stats[eventsPerDay]} رویداد{if $stats[eventsPerDay] != 1}s{/if} per Day)</li>
-<li>{#$stats[نظرات]} Comment{if $stats[نظرات] != 1}s{/if}</li>
+<li>{#$stats[نویسندگان]} نویسنده{if $stats[نویسندگان] != 1}ها{/if}</li>
+<li>{#$stats[events]} رویداد{if $stats[رویداد ها] != 1}ها{/if} ({#$stats[eventsPerDay]} رویداد{if $stats[eventsPerDay] != 1}ها{/if} هر روز)</li>
+<li>{#$stats[نظرات]} اظهار نظر{if $stats[نظرات] != 1}ها{/if}</li>
 </ul>]]></item>
     </category>
     <category name="filebase.acp.file">
-        <item name="filebase.acp.file.option.add"><![CDATA[اضافه کردن فیلد گذینه]]></item>
+        <item name="filebase.acp.file.option.add"><![CDATA[اضافه کردن فیلد گزینه]]></item>
         <item name="filebase.acp.file.option.categoryIDs"><![CDATA[دسته بندی ها ]]></item>
-        <item name="filebase.acp.file.option.categoryIDs.description"><![CDATA[فیلد گذینه فقط برای فایل های انتخاب شده از ذسته بندی ها در دسترس است . اگر دسته بندی انتخاب نشده بود , فیلد گذینه برای تمامی دسته بندی ها در دسترس است .]]></item>
+        <item name="filebase.acp.file.option.categoryIDs.description"><![CDATA[فیلد گزینه فقط برای فایل های انتخاب شده از ذسته بندی ها در دسترس است . اگر دسته بندی انتخاب نشده بود , فیلد گزینه برای تمامی دسته بندی ها در دسترس است .]]></item>
         <item name="filebase.acp.file.option.defaultValue"><![CDATA[مقدار پیش فرض]]></item>
-        <item name="filebase.acp.file.option.defaultValue.description"><![CDATA[مقدار گزینه پیش فرض در اولینویرایش پیشنهاد شده است.]]></item>
-        <item name="filebase.acp.file.option.edit"><![CDATA[ویرایش فیل گزینه]]></item>
+        <item name="filebase.acp.file.option.defaultValue.description"><![CDATA[مقدار گزینه پیش فرض در اولین ویرایش پیشنهاد شده است.]]></item>
+        <item name="filebase.acp.file.option.edit"><![CDATA[ویرایش فیلد گزینه]]></item>
         <item name="filebase.acp.file.option.list"><![CDATA[فیلد های گزینه]]></item>
         <item name="filebase.acp.file.option.optionType"><![CDATA[نوع گزینه]]></item>
         <item name="filebase.acp.file.option.optionType.URL"><![CDATA[لینک]]></item>
@@ -503,15 +503,15 @@
         <item name="filebase.acp.file.option.optionType.date"><![CDATA[تاریخ]]></item>
         <item name="filebase.acp.file.option.optionType.float"><![CDATA[اعشاری]]></item>
         <item name="filebase.acp.file.option.optionType.integer"><![CDATA[عدد صحیح]]></item>
-        <item name="filebase.acp.file.option.optionType.message"><![CDATA[متن چند خطی (bbcode support)]]></item>
+        <item name="filebase.acp.file.option.optionType.message"><![CDATA[متن چند خطی (کد Bulletin Board پشتیبانی از)]]></item>
         <item name="filebase.acp.file.option.optionType.multiSelect"><![CDATA[انتخاب چندگانه]]></item>
         <item name="filebase.acp.file.option.optionType.radioButton"><![CDATA[انتخاب رادیویی]]></item>
         <item name="filebase.acp.file.option.optionType.select"><![CDATA[انتخاب تک گانه]]></item>
         <item name="filebase.acp.file.option.optionType.text"><![CDATA[متن کوتاه]]></item>
         <item name="filebase.acp.file.option.optionType.textarea"><![CDATA[متن چند خطی]]></item>
         <item name="filebase.acp.file.option.required"><![CDATA[این فیلد ضروریست]]></item>
-        <item name="filebase.acp.file.option.selectOptions"><![CDATA[گذینه ها]]></item>
-        <item name="filebase.acp.file.option.selectOptions.description"><![CDATA[میتوانید از گذینه select در در انتخاب استفاده کنید, but please be aware that using the colon will cause the system to use everything to the left as an internal identifier and only the part after the colon will be displayed to the user. This allows you to change the value displayed to the user without harming existing selections unless the identifier itself is being changed. Enter one select option per line.]]></item>
+        <item name="filebase.acp.file.option.selectOptions"><![CDATA[گزینه ها]]></item>
+        <item name="filebase.acp.file.option.selectOptions.description"><![CDATA[میتوانید از گزینه select در در انتخاب استفاده کنید, اما لطفا توجه داشته باشید که استفاده از کولون باعث می شود سیستم از همه چیز در سمت چپ به عنوان شناسه داخلی استفاده کند و فقط قسمت بعد از کولون به کاربر نمایش داده شود. این به شما امکان می دهد مقدار نمایش داده شده به کاربر را بدون آسیب رساندن به انتخاب های موجود تغییر دهید، مگر اینکه خود شناسه تغییر کند. در هر خط یک گزینه انتخابی وارد کنید.]]></item>
         <item name="filebase.acp.file.option.showOrder"><![CDATA[نمایش سفارشی]]></item>
         <item name="filebase.acp.file.option.typeData"><![CDATA[خواص]]></item>
         <item name="filebase.acp.file.option.validationPattern"><![CDATA[Rعبارت منظم]]></item>
@@ -578,7 +578,7 @@
         <item name="filebase.file.commentResponse.like.notification.title.stacked"><![CDATA[{#$count} کاربران به پاسخ شما به یک نظر واکنش نشان دادند (فایل)]]></item>
         <item name="filebase.file.commentResponse.notification.mail.html"><![CDATA[<p>{@$authorList} به نظر شما در مورد فایل پاسخ داد <a href="{$file->getLink()}#comments/comment{@$commentID}/response{@$responseID}">{$file->getSubject()}</a>:</p>]]></item>
         <item name="filebase.file.commentResponse.notification.mail.plaintext"><![CDATA[{@$authorList} به نظر شما در مورد فایل پاسخ داد “{@$file->getSubject()}” [URL:{@$file->getLink()}#comments/comment{@$commentID}/response{@$responseID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
-        <item name="filebase.file.commentResponse.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A guest{/if} به نظر شما در مورد فایل پاسخ داد <strong>{$file->getTitle()}</strong>.]]></item>
+        <item name="filebase.file.commentResponse.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}مهمان{/if} به نظر شما در مورد فایل پاسخ داد <strong>{$file->getTitle()}</strong>.]]></item>
         <item name="filebase.file.commentResponse.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} به نظر شما در مورد فایل پاسخ داد <strong>{$file->getSubject()}</strong>.]]></item>
         <item name="filebase.file.commentResponse.notification.title"><![CDATA[پاسخ جدید (فایل)]]></item>
         <item name="filebase.file.commentResponse.notification.title.stacked"><![CDATA[{#$timesTriggered} پاسخ های جدید (فایل)]]></item>
@@ -619,10 +619,10 @@
         <item name="filebase.file.featured"><![CDATA[ویژه]]></item>
         <item name="filebase.file.featuredFiles"><![CDATA[فایل های ویژه]]></item>
         <item name="filebase.file.file"><![CDATA[فایل]]></item>
-        <item name="filebase.file.fileComments"><![CDATA[{@$file->comments|shortUnit} نظر{if $file->comments != 1}s{/if}]]></item>
-        <item name="filebase.file.fileDownloads"><![CDATA[{@$file->downloads|shortUnit} دانلود{if $file->downloads != 1}s{/if}]]></item>
+        <item name="filebase.file.fileComments"><![CDATA[{@$file->comments|shortUnit} نظر{if $file->comments != 1}ها{/if}]]></item>
+        <item name="filebase.file.fileDownloads"><![CDATA[{@$file->downloads|shortUnit} دانلود{if $file->downloads != 1}ها{/if}]]></item>
         <item name="filebase.file.fileID.error.invalidCommerical"><![CDATA[هیچ فایل پولی با شناسه داده شده وجود ندارد.]]></item>
-        <item name="filebase.file.filePurchases"><![CDATA[{@$file->purchases|shortUnit} خرید{if $file->purchases != 1}s{/if}]]></item>
+        <item name="filebase.file.filePurchases"><![CDATA[{@$file->purchases|shortUnit} خرید{if $file->purchases != 1}ها{/if}]]></item>
         <item name="filebase.file.files"><![CDATA[فایل ها]]></item>
         <item name="filebase.file.filterByPrice"><![CDATA[فیلتر بر اساس قیمت]]></item>
         <item name="filebase.file.filterByPrice.all"><![CDATA[هر دو]]></item>
@@ -632,7 +632,7 @@
         <item name="filebase.file.icon"><![CDATA[ایکون]]></item>
         <item name="filebase.file.icon.delete"><![CDATA[حذف ایکون]]></item>
         <item name="filebase.file.icon.delete.confirmMessage"><![CDATA[ایا واقعا میخواهید این ایکون حذف شود ?]]></item>
-        <item name="filebase.file.icon.description"><![CDATA[The icon will be displayed next to the file. The icon’s dimensions must be at least 144×144 pixels.<br>Allowed file extensions: jpg, jpeg, png, webp]]></item>
+        <item name="filebase.file.icon.description"><![CDATA[آیکون در کنار فایل نمایش داده می شود. ابعاد نماد باید حداقل 144×144 پیکسل باشد.<br>پسوندهای مجاز فایل: jpg, jpeg, png, webp]]></item>
         <item name="filebase.file.icon.error.invalidExtension"><![CDATA[پسوند فایل نامعتبر است .]]></item>
         <item name="filebase.file.icon.error.noImage"><![CDATA[فایل اپلود شده تصویر نمیباشد .]]></item>
         <item name="filebase.file.icon.error.tooLarge"><![CDATA[ایکون خیلی بزرگ است .]]></item>
@@ -649,10 +649,10 @@
         <item name="filebase.file.isDisabled"><![CDATA[غیر فعال کردن ]]></item>
         <item name="filebase.file.isPurchasable"><![CDATA[برای فروش]]></item>
         <item name="filebase.file.isPurchasable.description"><![CDATA[برای غیر فغعال کردن موقت فروش این فایل این گزینه را غیر فعال کنید . مشتریان موجود همچنان دسترسی خواهند داشت.]]></item>
-        <item name="filebase.file.labeledFiles"><![CDATA[اختصاص دادنم فایل با لیبل  “{$label->getTitle()}”]]></item>
+        <item name="filebase.file.labeledFiles"><![CDATA[اختصاص دادن فایل با لیبل  “{$label->getTitle()}”]]></item>
         <item name="filebase.file.lastChangeTime"><![CDATA[اخرین تغییرات]]></item>
-        <item name="filebase.file.latestFileDownloads"><![CDATA[{@$file->getDownloads()|shortUnit} دانلود{if $file->getDownloads() != 1}s{/if}]]></item>
-        <item name="filebase.file.latestFilePurchases"><![CDATA[{@$file->getPurchases()|shortUnit} خرید{if $file->getPurchases() != 1}s{/if}]]></item>
+        <item name="filebase.file.latestFileDownloads"><![CDATA[{@$file->getDownloads()|shortUnit} دانلود{if $file->getDownloads() != 1}ها{/if}]]></item>
+        <item name="filebase.file.latestFilePurchases"><![CDATA[{@$file->getPurchases()|shortUnit} خرید{if $file->getPurchases() != 1}ها{/if}]]></item>
         <item name="filebase.file.latestUpdates"><![CDATA[اخرین بروزرسانی ]]></item>
         <item name="filebase.file.like.notification.message"><![CDATA[<strong>{$author}</strong> واکنش نشان داده شد به فابل  <strong>{$file->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
         <item name="filebase.file.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|languageواکنش نشان داده شد به فایل  reacted to your file <strong>{$file->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
@@ -679,15 +679,15 @@
         <item name="filebase.file.notification.moderation.trash.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}تعدیل کننده{/if} فایل شما به سظل اشغال انتقال داده شد  <strong>{$file->getTitle()}</strong>{if !$userNotificationObject->getDecoratedObject()->reason|empty}به این دلیل  “{$userNotificationObject->getDecoratedObject()->__get('reason')|truncate:255:'…'}”{/if}]]></item>
         <item name="filebase.file.notification.moderation.trash.notification.title"><![CDATA[فایل شما به سطل اشغال انتقال داده شد ]]></item>
         <item name="filebase.file.notification.title"><![CDATA[فایل جدید ]]></item>
-        <item name="filebase.file.option.error.validationFailed"><![CDATA[مقدار وارد  شده نامعتبر  است .]]></item>
+        <item name="filebase.file.option.error.validationFailed"><![CDATA[مقدار وارد شده نامعتبر است .]]></item>
         <item name="filebase.file.options"><![CDATA[اطلاعات بیشتر]]></item>
         <item name="filebase.file.overview"><![CDATA[بررسی کلی ]]></item>
         <item name="filebase.file.price"><![CDATA[قیمت]]></item>
         <item name="filebase.file.price.error.invalid"><![CDATA[قیمت وارد شده اشتباه است .]]></item>
         <item name="filebase.file.purchase"><![CDATA[خرید]]></item>
         <item name="filebase.file.purchase.returnMessage"><![CDATA[ممنون بابت پرداخت شما, تراکنش انجام شد . دسترسی به فایل خرید به محض پردازش پرداخت توسط ما امکان پذیر است .]]></item>
-        <item name="filebase.file.purchaseInfo"><![CDATA[{if $customerList->getObjects()|count > 1}شما این فایل را خریداری کردید  {#$customerList->getObjects()|count}×, اخرین بار  {@$customerList->current()->purchaseDate|date}.{else}You have purchased this file on {@$customerList->current()->purchaseDate|date}.{/if}]]></item>
-        <item name="filebase.file.purchased"><![CDATA[Purchased{if $file->getNumberOfPurchases() > 1} ({#$file->getNumberOfPurchases()}×){/if}]]></item>
+        <item name="filebase.file.purchaseInfo"><![CDATA[{if $customerList->getObjects()|count > 1}شما این فایل را خریداری کردید  {#$customerList->getObjects()|count}×, اخرین بار  {@$customerList->current()->purchaseDate|date}.{else}شما این فایل را خریداری کرده اید {@$customerList->current()->purchaseDate|date}.{/if}]]></item>
+        <item name="filebase.file.purchased"><![CDATA[خریداری شده است{if $file->getNumberOfPurchases() > 1} ({#$file->getNumberOfPurchases()}×){/if}]]></item>
         <item name="filebase.file.purchasedFiles"><![CDATA[فایل های خریداری شده ]]></item>
         <item name="filebase.file.purchases"><![CDATA[خرید ها]]></item>
         <item name="filebase.file.random"><![CDATA[تصادفی]]></item>
@@ -702,35 +702,35 @@
         <item name="filebase.file.subscribed"><![CDATA[فایل های دیده شده ]]></item>
         <item name="filebase.file.supportThread.boardID"><![CDATA[انجمن ]]></item>
         <item name="filebase.file.supportThread.boardID.description"><![CDATA[پیشنهادات پشتیبانی و بحث در انحمن انتخاب شده ایجاد خواهد شد .]]></item>
-        <item name="filebase.file.supportThread.info"><![CDATA[{#$supportThread->replies} {if $supportThread->replies == 1}پاسخ{else}replies{/if}{if $supportThread->replies > 0}, last: {@$supportThread->lastPostTime|time}{/if}]]></item>
-        <item name="filebase.file.supportThread.message"><![CDATA[<p>{@$file->username}افزودن فایل جدید:<br>[file]{@$file->fileID}[/file]</p>
+        <item name="filebase.file.supportThread.info"><![CDATA[{#$supportThread->replies} {if $supportThread->replies == 1}پاسخ{else}پاسخ می دهد{/if}{if $supportThread->replies > 0}, آخرین: {@$supportThread->lastPostTime|time}{/if}]]></item>
+        <item name="filebase.file.supportThread.message"><![CDATA[<p>{@$file->username}اضافه کردن فایل جدید:<br>[file]{@$file->fileID}[/file]</p>
 <woltlab-quote>{@$fileContent->getMessage()}</woltlab-quote>]]></item>
         <item name="filebase.file.supportThread.subject"><![CDATA[{@$fileContent->getSubject()}]]></item>
         <item name="filebase.file.supportThread.versionMessage"><![CDATA[<p>{@$version->getFile()->username} اضافه کردن یک نقطه جدید :<br>[fileversion]{@$version->versionID}[/fileversion]</p>
 <woltlab-quote>{@$versionContent->getDescription()}</woltlab-quote>]]></item>
         <item name="filebase.file.teaser"><![CDATA[تیزر]]></item>
-        <item name="filebase.file.teaser.description"><![CDATA[توضیحات کوتاه فایل را وارد کنید , نباید تجاوز کنید  {#FILEBASE_MAX_TEASER_LENGTH} characters.]]></item>
+        <item name="filebase.file.teaser.description"><![CDATA[توضیحات کوتاه فایل را وارد کنید , نباید تجاوز کنید  {#FILEBASE_MAX_TEASER_LENGTH} شخصیت ها.]]></item>
         <item name="filebase.file.time"><![CDATA[اپلود شد]]></item>
         <item name="filebase.file.topFiles"><![CDATA[بیشترین واکنش ها ]]></item>
-        <item name="filebase.file.topGrossingFiles"><![CDATA[پر فروشترین]]></item>
+        <item name="filebase.file.topGrossingFiles"><![CDATA[پر فروش ترین]]></item>
         <item name="filebase.file.totalRevenue"><![CDATA[درامد]]></item>
         <item name="filebase.file.unreadFiles"><![CDATA[فایل جدید ]]></item>
         <item name="filebase.file.upload"><![CDATA[اپلود فایل ]]></item>
         <item name="filebase.file.upload.confirmOverwrite"><![CDATA[شما قبلا فایل را اپلود کردید , در ادامه مورد را بازنویسی کنید .]]></item>
         <item name="filebase.file.upload.error.invalidExtension"><![CDATA[پسوند فایل نا معتبر است .]]></item>
-        <item name="filebase.file.upload.error.quotaExceeded"><![CDATA[You have exceeded your storage limit and cannot upload new files.]]></item>
+        <item name="filebase.file.upload.error.quotaExceeded"><![CDATA[شما از حد مجاز فضای ذخیره‌سازی خود فراتر رفته‌اید و نمی‌توانید فایل‌های جدیدی را آپلود کنید.]]></item>
         <item name="filebase.file.upload.error.tooLarge"><![CDATA[این فایل خیلی بزرگ است ]]></item>
         <item name="filebase.file.upload.error.uploadFailed"><![CDATA[خطایی ناشناخته در حین اپلود رخ داده است .]]></item>
         <item name="filebase.file.upload.limits"><![CDATA[حداکثر اندازه فایل : {@$__wcf->session->getPermission('user.filebase.maxFileSize')|filesize}<br>
-Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
-        <item name="filebase.file.userFileCounter"><![CDATA[{#$activeAuthor->filebaseFiles} فایل{if $activeAuthor->filebaseFiles != 1}s{/if}]]></item>
-        <item name="filebase.file.userFiles"><![CDATA[Files by {$user->username}]]></item>
-        <item name="filebase.file.version"><![CDATA[Version]]></item>
-        <item name="filebase.file.version.add"><![CDATA[Add Version]]></item>
-        <item name="filebase.file.version.confirmDelete"><![CDATA[Do you really want to delete this version?]]></item>
+پسوندهای مجاز فایل: {', '|implode:$allowedFileExtensions}]]></item>
+        <item name="filebase.file.userFileCounter"><![CDATA[{#$activeAuthor->filebaseFiles} فایل{if $activeAuthor->filebaseFiles != 1}ها{/if}]]></item>
+        <item name="filebase.file.userFiles"><![CDATA[فایل ها توسط {$user->username}]]></item>
+        <item name="filebase.file.version"><![CDATA[نسخه]]></item>
+        <item name="filebase.file.version.add"><![CDATA[اضافه کردن نسخه]]></item>
+        <item name="filebase.file.version.confirmDelete"><![CDATA[آیا واقعاً می خواهید این نسخه را حذف کنید؟]]></item>
         <item name="filebase.file.version.confirmTrash"><![CDATA[آیا واقعاً می خواهید این نسخه را حذف کنید؟]]></item>
         <item name="filebase.file.version.confirmTrash.reason"><![CDATA[دلیل (اختیاری)]]></item>
-        <item name="filebase.file.version.deleted"><![CDATA[این نسخه حذف شد {if $version->userID == $version->getLogEntry()->userID}توسط خود نویسنده{else}by <a href="{link controller='User' id=$version->getLogEntry()->userID title=$version->getLogEntry()->username}{/link}" class="userLink" data-object-id="{@$version->getLogEntry()->userID}">{$version->getLogEntry()->username}</a>{/if}{if $version->getLogEntry()->reason}: {$version->getLogEntry()->reason}{/if} ({@$version->getLogEntry()->time|time}).]]></item>
+        <item name="filebase.file.version.deleted"><![CDATA[این نسخه حذف شد {if $version->userID == $version->getLogEntry()->userID}توسط خود نویسنده{else}توسط <a href="{link controller='User' id=$version->getLogEntry()->userID title=$version->getLogEntry()->username}{/link}" class="userLink" data-object-id="{@$version->getLogEntry()->userID}">{$version->getLogEntry()->username}</a>{/if}{if $version->getLogEntry()->reason}: {$version->getLogEntry()->reason}{/if} ({@$version->getLogEntry()->time|time}).]]></item>
         <item name="filebase.file.version.description"><![CDATA[شرح]]></item>
         <item name="filebase.file.version.edit"><![CDATA[ویرایش نسخه]]></item>
         <item name="filebase.file.version.edit.delete"><![CDATA[حذف]]></item>
@@ -742,7 +742,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="filebase.file.version.isDeleted"><![CDATA[حذف شده]]></item>
         <item name="filebase.file.version.isDisabled"><![CDATA[غیر فعال کردن]]></item>
         <item name="filebase.file.version.like.notification.message"><![CDATA[<strong>{$author}</strong> واکنش نشان داد {if $version->versionNumber}نسخه {$version->versionNumber}{else} یک نسخه{/if}از فایل شما <strong>{$file->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
-        <item name="filebase.file.version.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} reacted to {if $version->versionNumber}version {$version->versionNumber}{else} یک نسخه{/if} از فایل شما <strong>{$file->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+        <item name="filebase.file.version.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} واکنش نشان داد{if $version->versionNumber}نسخه {$version->versionNumber}{else} یک نسخه{/if} از فایل شما <strong>{$file->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
         <item name="filebase.file.version.like.notification.title"><![CDATA[واکنش به نسخه فایل شما]]></item>
         <item name="filebase.file.version.like.notification.title.stacked"><![CDATA[{#$count} کاربران به نسخه ای از فایل شما واکنش نشان دادند]]></item>
         <item name="filebase.file.version.moderation.disabledVersion"><![CDATA[این نسخه تا زمانی که توسط ناظم تایید نشود، برای دیگران غیرقابل دسترسی خواهد بود.]]></item>
@@ -756,14 +756,14 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="filebase.file.version.notification.moderation.trash.notification.title"><![CDATA[نسخه ای از فایل شما حذف شده است]]></item>
         <item name="filebase.file.version.notification.title"><![CDATA[نسخه جدید فایل]]></item>
         <item name="filebase.file.version.upload"><![CDATA[آپلود نسخه]]></item>
-        <item name="filebase.file.version.versionDownloads"><![CDATA[{@$version->downloads|shortUnit} دانلود{if $version->downloads != 1}s{/if}]]></item>
+        <item name="filebase.file.version.versionDownloads"><![CDATA[{@$version->downloads|shortUnit} دانلود{if $version->downloads != 1}ها{/if}]]></item>
         <item name="filebase.file.versionNumber"><![CDATA[شماره نسخه]]></item>
         <item name="filebase.file.versionNumber.error.notUnique"><![CDATA[این شماره نسخه در حال حاضر در حال استفاده است.]]></item>
         <item name="filebase.file.versions"><![CDATA[نسخه ها]]></item>
         <item name="filebase.file.watchedFiles"><![CDATA[فایل های تماشا شده]]></item>
         <item name="filebase.file.watchedFiles.stopWatchingAll"><![CDATA[تماشای فایل ها را متوقف کنید]]></item>
         <item name="filebase.file.watchedFiles.stopWatchingAll.confirmMessage"><![CDATA[آیا واقعاً می‌خواهید تماشای همه فایل‌ها را متوقف کنید؟]]></item>
-        <item name="filebase.file.watchedFiles.stopWatchingMarked"><![CDATA[{literal}تماشای فایل علامت‌گذاری شده را متوقف کنید{if $count > 1}s{/if}{if $count > 1} ({#$count}){/if}{/literal}]]></item>
+        <item name="filebase.file.watchedFiles.stopWatchingMarked"><![CDATA[{literal}تماشای فایل علامت‌گذاری شده را متوقف کنید{if $count > 1}ها{/if}{if $count > 1} ({#$count}){/if}{/literal}]]></item>
         <item name="filebase.file.watchedFiles.stopWatchingMarked.confirmMessage"><![CDATA[آیا واقعاً می خواهید تماشای همه فایل های علامت گذاری شده را متوقف کنید؟]]></item>
         <item name="filebase.file.website"><![CDATA[وب سایت]]></item>
         <item name="filebase.file.website.description"><![CDATA[اختیاری: وب سایت (وبلاگ) با جزئیات بیشتر در مورد این فایل.]]></item>
@@ -809,18 +809,18 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="filebase.file.review.noReviewVersion"><![CDATA[ هنوز هیچ مروری برای این نسخه نوشته نشده است .]]></item>
         <item name="filebase.file.review.notification.mail.html"><![CDATA[<p>{if $event->getAuthor()->userID}<a href="{link controller='User' object=$event->getAuthor() isHtmlEmail=true}{/link}">{$event->getAuthor()->username}</a>{else}میهمان{/if} مرور هارا اضافه میکند  <a href="{link application='filebase' controller='File' object=$event->getUserNotificationObject()->getViewableFile() isHtmlEmail=true}#reviews{/link}">{$event->getUserNotificationObject()->getTitle()}</a> برای فایل شما  <a href="{link application='filebase' controller='File' object=$event->getUserNotificationObject()->getViewableFile() isHtmlEmail=true}{/link}">{$event->getUserNotificationObject()->getViewableFile()->getTitle()}</a>.]]></item>
         <item name="filebase.file.review.notification.mail.plaintext"><![CDATA[{if $event->getAuthor()->userID}{@$event->getAuthor()->username} [وبلاگ:{link controller='User' object=$event->getAuthor() isEmail=true}{/link}]{else}مهمان{/if} مرور را اضافه کرد  “{@$event->getUserNotificationObject()->getTitle()}” [وبلاگ:{link application='filebase' controller='File' object=$event->getUserNotificationObject()->getViewableFile() isEmail=true}#reviews{/link}] به فایل شما  “{@$event->getUserNotificationObject()->getViewableFile()->getTitle()}”:]]></item>
-        <item name="filebase.file.review.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}مهمان {/if} added the review <strong>{$review->getTitle()}</strong> to your file <strong>{$review->getViewableFile()->getTitle()}</strong>.]]></item>
-        <item name="filebase.file.review.notification.title"><![CDATA[New Review]]></item>
+        <item name="filebase.file.review.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}مهمان {/if} بررسی را اضافه کرد <strong>{$review->getTitle()}</strong>به فایل شما <strong>{$review->getViewableFile()->getTitle()}</strong>.]]></item>
+        <item name="filebase.file.review.notification.title"><![CDATA[بررسی جدید]]></item>
         <item name="filebase.file.review.rating"><![CDATA[{plural value=$rating one='# Star' other='# Stars'}{if !$numberOfRatings|empty}; {plural value=$numberOfRatings one='# Review' other='# Reviews'}{/if}]]></item>
-        <item name="filebase.file.review.recentActivity.title"><![CDATA[مرور اضافه شد  <a href="{$review->getLink()}">{$review->getTitle()}</a> to the file {if $review->getViewableFile()->hasLabels()}<ul class="labelList">{foreach from=$review->getViewableFile()->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}{anchor object=$review->getViewableFile() class='filebaseFileLink'}.]]></item>
+        <item name="filebase.file.review.recentActivity.title"><![CDATA[مرور اضافه شد  <a href="{$review->getLink()}">{$review->getTitle()}</a> به فایل {if $review->getViewableFile()->hasLabels()}<ul class="labelList">{foreach from=$review->getViewableFile()->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}{anchor object=$review->getViewableFile() class='filebaseFileLink'}.]]></item>
         <item name="filebase.file.review.response.add"><![CDATA[پاسخ]]></item>
         <item name="filebase.file.review.response.delete"><![CDATA[حذف پاسخ]]></item>
         <item name="filebase.file.review.response.delete.confirmMessage"><![CDATA[ایا واقعا میخواهید این پاسخ را حذف کنید ?]]></item>
         <item name="filebase.file.review.response.edit"><![CDATA[ویرایش پاسخ ]]></item>
         <item name="filebase.file.review.response.headline"><![CDATA[پاسخ از طرف  {user object=$response->getUserProfile()} ({@$response->time|time}):]]></item>
-        <item name="filebase.file.review.response.notification.mail.html"><![CDATA[<p>{if $event->getAuthor()->userID}<a href="{link controller='User' object=$event->getAuthor() isHtmlEmail=true}{/link}">{$event->getAuthor()->username}</a>{else}A guest{/if} replied to your review <a href="{link application='filebase' controller='File' object=$event->getUserNotificationObject()->getReview()->getViewableFile() isHtmlEmail=true}#reviews{/link}">{$event->getUserNotificationObject()->getReview()->getTitle()}</a>.]]></item>
-        <item name="filebase.file.review.response.notification.mail.plaintext"><![CDATA[{if $event->getAuthor()->userID}{@$event->getAuthor()->username} [URL:{link controller='User' object=$event->getAuthor() isEmail=true}{/link}]{else}A guest{/if} replied to your review “{@$event->getUserNotificationObject()->getReview()->getTitle()}” [URL:{link application='filebase' controller='File' object=$event->getUserNotificationObject()->getReview()->getViewableFile() isEmail=true}#reviews{/link}]:]]></item>
-        <item name="filebase.file.review.response.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A guest{/if} replied to your review <strong>{$response->getReview()->getTitle()}</strong>.]]></item>
+        <item name="filebase.file.review.response.notification.mail.html"><![CDATA[<p>{if $event->getAuthor()->userID}<a href="{link controller='User' object=$event->getAuthor() isHtmlEmail=true}{/link}">{$event->getAuthor()->username}</a>{else}مهمان{/if} به نقد شما پاسخ داد <a href="{link application='filebase' controller='File' object=$event->getUserNotificationObject()->getReview()->getViewableFile() isHtmlEmail=true}#reviews{/link}">{$event->getUserNotificationObject()->getReview()->getTitle()}</a>.]]></item>
+        <item name="filebase.file.review.response.notification.mail.plaintext"><![CDATA[{if $event->getAuthor()->userID}{@$event->getAuthor()->username} [URL:{link controller='User' object=$event->getAuthor() isEmail=true}{/link}]{else}مهمان{/if} به نقد شما پاسخ داد “{@$event->getUserNotificationObject()->getReview()->getTitle()}” [URL:{link application='filebase' controller='File' object=$event->getUserNotificationObject()->getReview()->getViewableFile() isEmail=true}#reviews{/link}]:]]></item>
+        <item name="filebase.file.review.response.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}مهمان{/if} به نقد شما پاسخ داد <strong>{$response->getReview()->getTitle()}</strong>.]]></item>
         <item name="filebase.file.review.response.notification.title"><![CDATA[پاسخ جدید به مرور شما ]]></item>
         <item name="filebase.file.review.reviewBy"><![CDATA[مرور توسط  {$review->username}]]></item>
         <item name="filebase.file.review.reviews"><![CDATA[مرور ها ]]></item>
@@ -831,8 +831,8 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="filebase.index.stats.detail"><![CDATA[<ul class="inlineList dotSeparated">
 <li>{plural value=$stats[authors] 1='1 Author' other='# Authors'}</li>
 <li>{plural value=$stats[files] 1='1 File' other='# Files'}</li>
-<li>{$stats[size]|filesize} Total File Size</li>
-<li>{plural value=$stats[downloads] 1='1 Download' other='# Downloads'}{if $stats[downloads] > 0} ({plural value=$stats[دانلود در هر روز ] 1='1 Download' other='# Downloads'} per Day){/if}</li>
+<li>{$stats[size]|filesize} حجم کل فایل</li>
+<li>{plural value=$stats[downloads] 1='1 Download' other='# Downloads'}{if $stats[downloads] > 0} ({plural value=$stats[دانلود در هر روز ] 1='1 Download' other='# Downloads'} هر روز){/if}</li>
 <li>{plural value=$stats[comments] 1='1 Comment' other='# Comments'}</li>
 </ul>]]></item>
     </category>
@@ -843,7 +843,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="filebase.license.licenseAgreement.confirm.missingConfirmation"><![CDATA[شما ملزم به پذیرش قرارداد مجوز هستید .]]></item>
         <item name="filebase.license.licenseAgreement.description"><![CDATA[لطفا توافق نامه مجوز را با دقط مطالعه کنید .]]></item>
         <item name="filebase.license.licenseAgreement.fileLicense"><![CDATA[توافق نامه مجوز  “{$license->licenseName}”]]></item>
-        <item name="filebase.license.licenseAgreement.inputDescription"><![CDATA[Provide the license agreement for this product.{if FILEBASE_ENABLE_LICENSE_CONFIRMATION} Users must accept this agreement in order to download or purchase the product.{/if}]]></item>
+        <item name="filebase.license.licenseAgreement.inputDescription"><![CDATA[قرارداد مجوز این محصول را ارائه دهید.{if FILEBASE_ENABLE_LICENSE_CONFIRMATION} کاربران برای دانلود یا خرید محصول باید این توافق نامه را بپذیرند.{/if}]]></item>
         <item name="filebase.license.licenseName"><![CDATA[ اسم مجوز ]]></item>
         <item name="filebase.license.licenseText"><![CDATA[متن مجوز ]]></item>
         <item name="filebase.license.licenseType"><![CDATA[نوع مجوز ]]></item>
@@ -855,7 +855,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
     </category>
     <category name="filebase.user.condition">
         <item name="filebase.user.condition.filebaseCustomerFileID"><![CDATA[فایل خریداری شده ]]></item>
-        <item name="filebase.user.condition.filebaseCustomerFileID.description"><![CDATA[کاربر  فایل را با شناسه داده شده خریداری کرده است یا نویسنده ان است .]]></item>
+        <item name="filebase.user.condition.filebaseCustomerFileID.description"><![CDATA[کاربر فایل را با شناسه داده شده خریداری کرده است یا نویسنده ان است .]]></item>
     </category>
     <category name="gallery.acp.image">
         <item name="gallery.acp.image.bulkProcessing"><![CDATA[پردازش انبوه تصاویر {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو ها {/if}]]></item>
@@ -869,13 +869,13 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="gallery.acp.image.bulkProcessing.restore"><![CDATA[بازگردانی ]]></item>
         <item name="gallery.acp.image.bulkProcessing.setCategories"><![CDATA[تنظیم دسته بندی ها ]]></item>
         <item name="gallery.acp.image.bulkProcessing.setCategories.categories"><![CDATA[دسته بندی ها ]]></item>
-        <item name="gallery.acp.image.bulkProcessing.setCategories.categories.description"><![CDATA[دسته های موجود با دسته های انتخابی بازنویسی میشوند s.]]></item>
-        <item name="gallery.acp.image.bulkProcessing.success"><![CDATA[عمل انتخاب شده اجرا شده و تحت تاثیر قرار گرفته است  {#$affectedObjectCount} تصویر {if $affectedObjectCount != 1}s{/if}{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/ویدیو{if $affectedObjectCount != 1}ها{/if}{/if}.{if $affectedObjectCount > 0}<br>لطفا مطمئن شوید  <a href="{link controller='RebuildData'}{/link}">“Verify Integrity”</a> afterwards.{/if}]]></item>
+        <item name="gallery.acp.image.bulkProcessing.setCategories.categories.description"><![CDATA[دسته های موجود با دسته های انتخابی بازنویسی میشوند .]]></item>
+        <item name="gallery.acp.image.bulkProcessing.success"><![CDATA[عمل انتخاب شده اجرا شده و تحت تاثیر قرار گرفته است  {#$affectedObjectCount} تصویر {if $affectedObjectCount != 1}ها{/if}{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/ویدیو{if $affectedObjectCount != 1}ها{/if}{/if}.{if $affectedObjectCount > 0}<br>لطفا مطمئن شوید  <a href="{link controller='RebuildData'}{/link}">“Verify Integrity”</a> afterwards.{/if}]]></item>
         <item name="gallery.acp.image.bulkProcessing.trash"><![CDATA[انتقال به سظل اشغال ]]></item>
     </category>
     <category name="gallery.acp.menu">
         <item name="gallery.acp.menu.link.gallery"><![CDATA[البوم عکس]]></item>
-        <item name="gallery.acp.menu.link.gallery.category.add"><![CDATA[افزودن دسته بندی ]]></item>
+        <item name="gallery.acp.menu.link.gallery.category.add"><![CDATA[اضافه کردن دسته بندی ]]></item>
         <item name="gallery.acp.menu.link.gallery.category.list"><![CDATA[دسته بندی ها ]]></item>
         <item name="gallery.acp.menu.link.gallery.imageBulkProcessing"><![CDATA[پردازش انبوه تصاویر ]]></item>
     </category>
@@ -889,13 +889,13 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="gallery.album.accessLevel.registered"><![CDATA[کاربران ثبت نام شده ]]></item>
         <item name="gallery.album.add"><![CDATA[ایجاد البوم ]]></item>
         <item name="gallery.album.albums"><![CDATA[البوم ها ]]></item>
-        <item name="gallery.album.button.add"><![CDATA[ایجاد البقوم جدید ]]></item>
+        <item name="gallery.album.button.add"><![CDATA[ایجاد البوم جدید ]]></item>
         <item name="gallery.album.delete"><![CDATA[حذف ]]></item>
         <item name="gallery.album.delete.confirmMessage"><![CDATA[ایا واقعا میخواهید این البوم را حذف کنید ?]]></item>
         <item name="gallery.album.delete.success"><![CDATA[البوم حذف شد .]]></item>
-        <item name="gallery.album.displayOptions"><![CDATA[گذینه هاب نمایش ]]></item>
+        <item name="gallery.album.displayOptions"><![CDATA[گزینه هاب نمایش ]]></item>
         <item name="gallery.album.edit"><![CDATA[ویرایش البوم ]]></item>
-        <item name="gallery.album.info"><![CDATA[<li>اخرین به روزرسانی : {@$album->lastUpdateTime|time}</li>{if $album->images}<li>{#$album->images} image{if $album->images != 1}s{/if}</li>{/if}{if $album->videos}<li>{#$album->videos} video{if $album->videos != 1}s{/if}</li>{/if}{if $album->hasRegisteredAccessLevel()}<li>Access only for registered users</li>{elseif $album->hasFollowingAccessLevel()}<li>Access only for Followed Users</li>{elseif $album->hasOwnerAccessLevel()}<li>Private album</li>{/if}]]></item>
+        <item name="gallery.album.info"><![CDATA[<li>اخرین به روزرسانی : {@$album->lastUpdateTime|time}</li>{if $album->images}<li>{#$album->images} تصویر{if $album->images != 1}ها{/if}</li>{/if}{if $album->videos}<li>{#$album->videos} ویدیو{if $album->videos != 1}ها{/if}</li>{/if}{if $album->hasRegisteredAccessLevel()}<li>دسترسی فقط برای کاربران ثبت نام شده</li>{elseif $album->hasFollowingAccessLevel()}<li>دسترسی فقط برای کاربران ثبت نام شده</li>{elseif $album->hasOwnerAccessLevel()}<li>آلبوم خصوصی</li>{/if}]]></item>
         <item name="gallery.album.lastUpdateTime"><![CDATA[اخرین به روز رسانی ]]></item>
         <item name="gallery.album.map"><![CDATA[نقشه]]></item>
         <item name="gallery.album.moreAlbums"><![CDATA[البوم های بیشتر ]]></item>
@@ -924,13 +924,13 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="gallery.image.add.button.previousImage"><![CDATA[تصویر قبلی {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/ویدیو {/if}]]></item>
         <item name="gallery.image.albumID"><![CDATA[البوم ]]></item>
         <item name="gallery.image.albumID.error.cannotAddToPrivateAlbumDueToModeration"><![CDATA[از انجایی که تصویر جدید باید توسط نعدیل کنندگان تایید شود شما مجاز به اپلود تصویر جدی در البوم خصوصی نیستید .]]></item>
-        <item name="gallery.image.albumID.overwrite.confirmMessage"><![CDATA[Do you really want to assign all the other uploaded images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and videos{/if} to this album?]]></item>
-        <item name="gallery.image.albumImage"><![CDATA[{if $image->isImage()}تصویر {else}Video{/if} {#$albumImage} of {if $albumImageCount|isset}{#$albumImageCount}{else}{#($image->getAlbum()->images + $image->getAlbum()->videos)}{/if}]]></item>
+        <item name="gallery.image.albumID.overwrite.confirmMessage"><![CDATA[آیا واقعاً می خواهید همه تصاویر آپلود شده دیگر را اختصاص دهید؟{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیوها{/if} به این آلبوم؟]]></item>
+        <item name="gallery.image.albumImage"><![CDATA[{if $image->isImage()}تصویر {else}ویدیو{/if} {#$albumImage} از {if $albumImageCount|isset}{#$albumImageCount}{else}{#($image->getAlbum()->images + $image->getAlbum()->videos)}{/if}]]></item>
         <item name="gallery.image.boxList.description.comments"><![CDATA[{#$image->comments} نظر {if $image->comments != 1}ها{/if}]]></item>
         <item name="gallery.image.boxList.description.cumulativeLikes"><![CDATA[{include file='__topReaction' cachedReactions=$image->cachedReactions render='full'}]]></item>
         <item name="gallery.image.boxList.description.favorites"><![CDATA[مورد علاقه ها : {#$image->favorites}]]></item>
-        <item name="gallery.image.boxList.description.views"><![CDATA[{#$image->views} بازدید {if $image->views != 1}s{/if}]]></item>
-        <item name="gallery.image.browser"><![CDATA[Gallery]]></item>
+        <item name="gallery.image.boxList.description.views"><![CDATA[{#$image->views} بازدید {if $image->views != 1}ها{/if}]]></item>
+        <item name="gallery.image.browser"><![CDATA[آلبوم عکس]]></item>
         <item name="gallery.image.browser.image.list"><![CDATA[همه]]></item>
         <item name="gallery.image.browser.image.search"><![CDATA[جست و جو ]]></item>
         <item name="gallery.image.browser.image.search.description"><![CDATA[برای شروع جست و جو حداقل 3 کاراکتر را تایپ کنید .]]></item>
@@ -943,7 +943,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="gallery.image.browser.insert.tiny"><![CDATA[خیلی کوچک ({$dimensions[عرض ]} × {$dimensions[بلندی ]})]]></item>
         <item name="gallery.image.browser.noAlbums"><![CDATA[شما در حال حاضر هیچ البومی با تصویر قابل مشاهده ندارید {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} یا ویدیو ها {/if}.]]></item>
         <item name="gallery.image.browser.noImages"><![CDATA[شما در حال حاضر هیچ تصویر قابل مشاهده ای ندارید {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} یا ویدیو ها {/if}.]]></item>
-        <item name="gallery.image.button.markAll"><![CDATA[Mark All]]></item>
+        <item name="gallery.image.button.markAll"><![CDATA[علامت گذاری همه]]></item>
         <item name="gallery.image.button.overwrite"><![CDATA[اعمال شود برای سایر تصاویر {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو ها {/if}]]></item>
         <item name="gallery.image.button.overwriteAll"><![CDATA[اعمال برای همه ]]></item>
         <item name="gallery.image.button.selectThumbnailArea"><![CDATA[ناحیه تصویر کوچک را مشخص کنید ]]></item>
@@ -955,41 +955,41 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="gallery.image.categoryIDs.error.tooMany"><![CDATA[شما دسته بندی های زیادی را انتخاب کرده اید . شما حداکثر میتوانید  {@GALLERY_IMAGE_MAX_CATEGORIES} {if GALLERY_IMAGE_MAX_CATEGORIES == 1}دسته بندی را {else}  دسته بندی هارا انتخاب کنید  {/if}.]]></item>
         <item name="gallery.image.categoryIDs.overwrite.confirmMessage"><![CDATA[ایا واقعا میخواهید همه تصاویر اپلود شده را اختضاض دهید به {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو ها {/if}برای دسته بندی های انتخاب شده?]]></item>
         <item name="gallery.image.comment"><![CDATA[نظرات گالری ]]></item>
-        <item name="gallery.image.comment.like.notification.message"><![CDATA[<strong>{$author}</strong> واکنش نشان داده شد به نظر شما در  {if $image->isImage()}image{else}video{/if} <strong>{$image->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
-        <item name="gallery.image.comment.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language}واکنش نشان داده شد به نظر شما در  {if $image->isImage()}image{else}video{/if} <strong>{$image->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+        <item name="gallery.image.comment.like.notification.message"><![CDATA[<strong>{$author}</strong> واکنش نشان داده شد به نظر شما در  {if $image->isImage()}image{else}ویدیو{/if} <strong>{$image->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+        <item name="gallery.image.comment.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language}واکنش نشان داده شد به نظر شما در  {if $image->isImage()}تصویر{else}ویدیو{/if} <strong>{$image->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
         <item name="gallery.image.comment.like.notification.title"><![CDATA[واکنش به نظر  ({if $image->isImage()}تصویر {else}ویدیو {/if})]]></item>
-        <item name="gallery.image.comment.like.notification.title.stacked"><![CDATA[{#$count} کاربران واکنش نشان دادند به نظر شما  ({if $image->isImage()}image{else}video{/if})]]></item>
-        <item name="gallery.image.comment.notification.mail.html"><![CDATA[<p>{@$authorList} نظر داده شد درمورد  شما  {if $image->isImage()}image{else}video{/if} <a href="{$image->getLink()}#comment{@$commentID}">{$image->getTitle()}</a>:</p>]]></item>
-        <item name="gallery.image.comment.notification.mail.plaintext"><![CDATA[{@$authorList} نظر داده شد در مورد شما  {if $image->isImage()}image{else}video{/if} “{@$image->getTitle()}” [وبلاگ:{@$image->getLink()}#comment{@$commentID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
-        <item name="gallery.image.comment.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}مهمان {/if} نظر داد در مورد شما  {if $image->isImage()}image{else}video{/if} <strong>{$image->getTitle()}</strong>.]]></item>
-        <item name="gallery.image.comment.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} نظر داده شد در مورد شما  {if $image->isImage()}image{else}video{/if} <strong>{$image->getTitle()}</strong>.]]></item>
-        <item name="gallery.image.comment.notification.title"><![CDATA[نظر جدید  ({if $image->isImage()}Image{else}Video{/if})]]></item>
-        <item name="gallery.image.comment.notification.title.stacked"><![CDATA[{#$timesTriggered} نظرات جدید  ({if $image->isImage()}Image{else}Video{/if})]]></item>
+        <item name="gallery.image.comment.like.notification.title.stacked"><![CDATA[{#$count} کاربران واکنش نشان دادند به نظر شما  ({if $image->isImage()}تصویر{else}ویدیو{/if})]]></item>
+        <item name="gallery.image.comment.notification.mail.html"><![CDATA[<p>{@$authorList} نظر داده شد درمورد  شما  {if $image->isImage()}image{else}ویدیو{/if} <a href="{$image->getLink()}#comment{@$commentID}">{$image->getTitle()}</a>:</p>]]></item>
+        <item name="gallery.image.comment.notification.mail.plaintext"><![CDATA[{@$authorList} نظر داده شد در مورد شما  {if $image->isImage()}تصویر{else}ویدیو{/if} “{@$image->getTitle()}” [وبلاگ:{@$image->getLink()}#comment{@$commentID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+        <item name="gallery.image.comment.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}مهمان {/if} نظر داد در مورد شما  {if $image->isImage()}تصویر{else}ویدیو{/if} <strong>{$image->getTitle()}</strong>.]]></item>
+        <item name="gallery.image.comment.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} نظر داده شد در مورد شما  {if $image->isImage()}تصویر{else}ویدیو{/if} <strong>{$image->getTitle()}</strong>.]]></item>
+        <item name="gallery.image.comment.notification.title"><![CDATA[نظر جدید  ({if $image->isImage()}تصویر{else}ویدیو{/if})]]></item>
+        <item name="gallery.image.comment.notification.title.stacked"><![CDATA[{#$timesTriggered} نظرات جدید  ({if $image->isImage()}تصویر{else}ویدیو{/if})]]></item>
         <item name="gallery.image.commentResponse"><![CDATA[پاسخ به نظر گالری]]></item>
-        <item name="gallery.image.commentResponse.like.notification.message"><![CDATA[<strong>{$author}</strong> واکنش نشان داده شد به پاسخ شما در مورد نظر  {if $image->isImage()}image{else}video{/if} <strong>{$image->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
-        <item name="gallery.image.commentResponse.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} واکنش نشان داده شد به پاسخ شما درمورد نظر  {if $image->isImage()}image{else}video{/if} <strong>{$image->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
-        <item name="gallery.image.commentResponse.like.notification.title"><![CDATA[واکنش نشان داده شد به پاسخ شما در مورد نظر  ({if $image->isImage()}Image{else}Video{/if})]]></item>
-        <item name="gallery.image.commentResponse.like.notification.title.stacked"><![CDATA[{#$count} کاربران واکنش نشان دادند به پاسخ شما درمورد نظر  ({if $image->isImage()}Image{else}Video{/if})]]></item>
-        <item name="gallery.image.commentResponse.notification.mail.html"><![CDATA[<p>{@$authorList} به نظرات شما پاسخ داد  {if $image->isImage()}image{else}video{/if} <a href="{$image->getLink()}#comment{@$commentID}/response{@$responseID}">{$image->getTitle()}</a>:</p>]]></item>
-        <item name="gallery.image.commentResponse.notification.mail.plaintext"><![CDATA[{@$authorList}  به نظرات شما پاسخ داد {if $image->isImage()}image{else}video{/if} “{@$image->getTitle()}” [URL:{@$image->getLink()}#comment{@$commentID}/response{@$responseID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
-        <item name="gallery.image.commentResponse.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A guest{/if}  به نظرات شما پاسخ داد {if $image->isImage()}image{else}video{/if} <strong>{$image->getTitle()}</strong>.]]></item>
-        <item name="gallery.image.commentResponse.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language}  به نظرات شما پاسخ داد {if $image->isImage()}image{else}video{/if} <strong>{$image->getTitle()}</strong>.]]></item>
-        <item name="gallery.image.commentResponse.notification.title"><![CDATA[پاسخ جدید  ({if $image->isImage()}Image{else}Video{/if})]]></item>
-        <item name="gallery.image.commentResponse.notification.title.stacked"><![CDATA[{#$timesTriggered} پاسخ های جدید  ({if $image->isImage()}Image{else}Video{/if})]]></item>
-        <item name="gallery.image.commentResponseOwner.notification.mail.html"><![CDATA[<p>{@$authorList} پاسخ به  <strong>{$commentAuthor}</strong>’s نظر درمورد  شما{if $image->isImage()}image{else}video{/if} <a href="{$image->getLink()}#comment{@$commentID}/response{@$responseID}">{$image->getTitle()}</a>:</p>]]></item>
-        <item name="gallery.image.commentResponseOwner.notification.mail.plaintext"><![CDATA[{@$authorList} پاسخ به  {@$commentAuthor}’s نظر در مور شما {if $image->isImage()}image{else}video{/if} “{@$image->getTitle()}” [URL:{@$image->getLink()}#comment{@$commentID}/response{@$responseID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+        <item name="gallery.image.commentResponse.like.notification.message"><![CDATA[<strong>{$author}</strong> واکنش نشان داده شد به پاسخ شما در مورد نظر  {if $image->isImage()}تصویر{else}ویدیو{/if} <strong>{$image->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+        <item name="gallery.image.commentResponse.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} واکنش نشان داده شد به پاسخ شما درمورد نظر  {if $image->isImage()}تصویر{else}ویدیو{/if} <strong>{$image->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+        <item name="gallery.image.commentResponse.like.notification.title"><![CDATA[واکنش نشان داده شد به پاسخ شما در مورد نظر  ({if $image->isImage()}تصویر{else}ویدیو{/if})]]></item>
+        <item name="gallery.image.commentResponse.like.notification.title.stacked"><![CDATA[{#$count} کاربران واکنش نشان دادند به پاسخ شما درمورد نظر  ({if $image->isImage()}تصویر{else}ویدیو{/if})]]></item>
+        <item name="gallery.image.commentResponse.notification.mail.html"><![CDATA[<p>{@$authorList} به نظرات شما پاسخ داد  {if $image->isImage()}تصویر{else}ویدیو{/if} <a href="{$image->getLink()}#comment{@$commentID}/response{@$responseID}">{$image->getTitle()}</a>:</p>]]></item>
+        <item name="gallery.image.commentResponse.notification.mail.plaintext"><![CDATA[{@$authorList}  به نظرات شما پاسخ داد {if $image->isImage()}تصویر{else}ویدیو{/if} “{@$image->getTitle()}” [URL:{@$image->getLink()}#comment{@$commentID}/response{@$responseID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+        <item name="gallery.image.commentResponse.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}مهمان{/if}  به نظرات شما پاسخ داد {if $image->isImage()}image{else}ویدیو{/if} <strong>{$image->getTitle()}</strong>.]]></item>
+        <item name="gallery.image.commentResponse.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language}  به نظرات شما پاسخ داد {if $image->isImage()}تصویر{else}ویدیو{/if} <strong>{$image->getTitle()}</strong>.]]></item>
+        <item name="gallery.image.commentResponse.notification.title"><![CDATA[پاسخ جدید  ({if $image->isImage()}تصویر{else}ویدیو{/if})]]></item>
+        <item name="gallery.image.commentResponse.notification.title.stacked"><![CDATA[{#$timesTriggered} پاسخ های جدید  ({if $image->isImage()}تصویر{else}ویدیو{/if})]]></item>
+        <item name="gallery.image.commentResponseOwner.notification.mail.html"><![CDATA[<p>{@$authorList} پاسخ به  <strong>{$commentAuthor}</strong>’s نظر درمورد  شما{if $image->isImage()}تصویر{else}ویدیو{/if} <a href="{$image->getLink()}#comment{@$commentID}/response{@$responseID}">{$image->getTitle()}</a>:</p>]]></item>
+        <item name="gallery.image.commentResponseOwner.notification.mail.plaintext"><![CDATA[{@$authorList} پاسخ به  {@$commentAuthor}’s نظر در مور شما {if $image->isImage()}تصویر{else}ویدیو{/if} “{@$image->getTitle()}” [URL:{@$image->getLink()}#comment{@$commentID}/response{@$responseID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
         <item name="gallery.image.commentResponseOwner.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}مهمان {/if} پاسخ داده شد به نظر توسط  <strong>{$commentAuthor}</strong> به {if $image->isImage()}image{else}video{/if} <strong>{$image->getTitle()}</strong>.]]></item>
         <item name="gallery.image.commentResponseOwner.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} پاسخ داده شد به نظر توسط  <strong>{$author}</strong> به {if $image->isImage()}image{else}video{/if} <strong>{$image->getTitle()}</strong>.]]></item>
-        <item name="gallery.image.commentResponseOwner.notification.title"><![CDATA[پاسخ جدید  ({if $image->isImage()}Image{else}Video{/if})]]></item>
-        <item name="gallery.image.commentResponseOwner.notification.title.stacked"><![CDATA[{#$timesTriggered} پاسخ های جدید  ({if $image->isImage()}Image{else}Video{/if})]]></item>
+        <item name="gallery.image.commentResponseOwner.notification.title"><![CDATA[پاسخ جدید  ({if $image->isImage()}تصویر{else}ویدیو{/if})]]></item>
+        <item name="gallery.image.commentResponseOwner.notification.title.stacked"><![CDATA[{#$timesTriggered} پاسخ های جدید  ({if $image->isImage()}تصویر{else}ویدیو{/if})]]></item>
         <item name="gallery.image.comments"><![CDATA[نظرات ]]></item>
         <item name="gallery.image.comments.count"><![CDATA[{#$image->comments} نظر {if $image->comments != 1}ها {/if}]]></item>
         <item name="gallery.image.comments.label"><![CDATA[{#$comments} نظر {if $comments != 1}ها {/if}]]></item>
         <item name="gallery.image.condition.category"><![CDATA[دسته بندی ]]></item>
-        <item name="gallery.image.condition.category.description"><![CDATA[تصاویر {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/Videos{/if} have to be in any of the selected categories. Multiple categories can be selected by holding the “Ctrl/Shift” key (Windows) or “Command” (Mac OS) key and clicking on the desired categories.]]></item>
+        <item name="gallery.image.condition.category.description"><![CDATA[تصاویر {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/Videos{/if} باید در هر یک از دسته بندی های انتخاب شده باشد. چند دسته را می توان با نگه داشتن دکمه انتخاب کرد “Ctrl/Shift” کلید (Windows) یا “Command” (سیستم عامل مک) را کلید و روی دسته بندی های مورد نظر کلیک کنید.]]></item>
         <item name="gallery.image.condition.comments"><![CDATA[نظرات ]]></item>
         <item name="gallery.image.condition.displayMode"><![CDATA[حالت نمایش ]]></item>
-        <item name="gallery.image.condition.displayMode.description"><![CDATA[This option is not applicable for boxes placed in the sidebars. For the “Images in Motion” option, at least two images larger than {#1200}&times;{#900} pixels have to be available.]]></item>
+        <item name="gallery.image.condition.displayMode.description"><![CDATA[این گزینه برای جعبه هایی که در ستون های کناری قرار گرفته اند قابل استفاده نیست. برای “Images in Motion” گزینه، حداقل دو تصویر بزرگتر از {#1200}&times;{#900} پیکسل ها باید در دسترس باشند.]]></item>
         <item name="gallery.image.condition.displayMode.grid"><![CDATA[توری]]></item>
         <item name="gallery.image.condition.displayMode.masonry"><![CDATA[سنگ تراشی]]></item>
         <item name="gallery.image.condition.displayMode.motion"><![CDATA[تصویر در حرکت]]></item>
@@ -997,7 +997,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="gallery.image.condition.state.enableComments.error.conflict"><![CDATA[“فعال کردن نظرات ” و “غیر فعال کردن نظرات ” نمیتوان به صورت همزمان انتخاب شوند .]]></item>
         <item name="gallery.image.condition.state.hasDisabledComments"><![CDATA[غیر فعال کردن نظرات ]]></item>
         <item name="gallery.image.condition.state.hasEnabledComments"><![CDATA[فعال کردن نظرات ]]></item>
-        <item name="gallery.image.condition.state.isDeleted"><![CDATA[در سطل زباله ]]></item>
+        <item name="gallery.image.condition.state.isDeleted"><![CDATA[در سطل آشغال ]]></item>
         <item name="gallery.image.condition.state.isDeleted.error.conflict"><![CDATA[“در سطل زباله ” و “به سطل زباله نرود ” نمیتوان به صورت همزمان انتخاب شوند .]]></item>
         <item name="gallery.image.condition.state.isDisabled"><![CDATA[در انتظار تایید ]]></item>
         <item name="gallery.image.condition.state.isDisabled.error.conflict"><![CDATA[“در انتظار تایید ” و  “تایید شد” نمیتوان به صورت همزمان انتخاب شوند .]]></item>
@@ -1026,7 +1026,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="gallery.image.delete"><![CDATA[حذف ]]></item>
         <item name="gallery.image.delete.confirmMessage"><![CDATA[ایا واقعا میخواهید این تصویر حذف شود {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/ویدیو
  {/if}?]]></item>
-        <item name="gallery.image.delete.success"><![CDATA[تصویر {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/video{/if} has been deleted.]]></item>
+        <item name="gallery.image.delete.success"><![CDATA[تصویر {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/video{/if} حذف شده است.]]></item>
         <item name="gallery.image.description"><![CDATA[شرح ]]></item>
         <item name="gallery.image.description.error.tooLong"><![CDATA[توضیح خیلی طولانی است .]]></item>
         <item name="gallery.image.description.overwrite.confirmMessage"><![CDATA[ایا واقعا میخواهید سایر تصاویر اپلود شده را اختصاص دهید{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو ها {/if}?]]></item>
@@ -1044,9 +1044,9 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="gallery.image.exif.flash.1"><![CDATA[فلاش روشن شد .]]></item>
         <item name="gallery.image.exif.flash.13"><![CDATA[فلاش روشن شد , حالت فلاش اجبار ی, چراغ پشت شناسایی شد ]]></item>
         <item name="gallery.image.exif.flash.15"><![CDATA[فلاش روشن شد , حالت فلاش اجبار ی, چراغ پشت شناسایی شد]]></item>
-        <item name="gallery.image.exif.flash.16"><![CDATA[فلاش روشن شد , حالت فلاش اجبار ی]]></item>
-        <item name="gallery.image.exif.flash.17"><![CDATA[فلاش روشن شد , حالت فلاش اجبار ی]]></item>
-        <item name="gallery.image.exif.flash.24"><![CDATA[فلاش روشن نشد , حالت خودکاد ]]></item>
+        <item name="gallery.image.exif.flash.16"><![CDATA[فلاش روشن شد , حالت فلاش اجباری]]></item>
+        <item name="gallery.image.exif.flash.17"><![CDATA[فلاش روشن شد , حالت فلاش اجباری]]></item>
+        <item name="gallery.image.exif.flash.24"><![CDATA[فلاش روشن نشد , حالت خودکار ]]></item>
         <item name="gallery.image.exif.flash.25"><![CDATA[فلاش روشن شد , حالت خودکار ]]></item>
         <item name="gallery.image.exif.flash.29"><![CDATA[فلاش روشن شد , حالت خودکار , چراغ  پشت شناسایی نشد ]]></item>
         <item name="gallery.image.exif.flash.31"><![CDATA[فلاش روشن شد , حالت خودکار , چراغ پشت شناسایی شد ]]></item>
@@ -1057,8 +1057,8 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="gallery.image.exif.flash.7"><![CDATA[چراغ بارق شناسایی شد ]]></item>
         <item name="gallery.image.exif.flash.71"><![CDATA[فلاش روشن شد , حالت کاهش قرمزی چشم, چراغ پشت شناسایی شد]]></item>
         <item name="gallery.image.exif.flash.73"><![CDATA[فلاش روشن شد , حالت فلاش اجباری , حالت کاهش قرمزی چشم]]></item>
-        <item name="gallery.image.exif.flash.77"><![CDATA[فلاش روشن شد , حالت فلاش اجباری, حالت کاهش قرمزی چشم, return light not detected]]></item>
-        <item name="gallery.image.exif.flash.79"><![CDATA[فلاش روشن شد , حالت فلاش اجباری, حالت کاهش قرمزی چشم, return light detected]]></item>
+        <item name="gallery.image.exif.flash.77"><![CDATA[فلاش روشن شد , حالت فلاش اجباری, حالت کاهش قرمزی چشم, چراغ برگشت شناسایی نشد]]></item>
+        <item name="gallery.image.exif.flash.79"><![CDATA[فلاش روشن شد , حالت فلاش اجباری, حالت کاهش قرمزی چشم, چراغ برگشت شناسایی شد]]></item>
         <item name="gallery.image.exif.flash.80"><![CDATA[فلاش روشن نشد ,حالت کاهش قرمزی چشم]]></item>
         <item name="gallery.image.exif.flash.88"><![CDATA[فلاش روشن نشد , حالت خودکار ,حالت کاهش قرمزی چشم]]></item>
         <item name="gallery.image.exif.flash.89"><![CDATA[فلاش روشن شد , حالت خودکار , حالت کاهش قرمزی چشم]]></item>
@@ -1075,7 +1075,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="gallery.image.image"><![CDATA[تصویر ]]></item>
         <item name="gallery.image.images"><![CDATA[تصاویر ]]></item>
         <item name="gallery.image.imagesAndVideos"><![CDATA[تصاویر {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو ها {/if}]]></item>
-        <item name="gallery.image.imagesInfoWindow"><![CDATA[Multiple Images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/ویدیو ها {/if}]]></item>
+        <item name="gallery.image.imagesInfoWindow"><![CDATA[تصاویر متعدد{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/ویدیو ها {/if}]]></item>
         <item name="gallery.image.information"><![CDATA[جزئیات ]]></item>
         <item name="gallery.image.isDeleted"><![CDATA[حذف شد ]]></item>
         <item name="gallery.image.isDisabled"><![CDATA[غیر فعال شد ]]></item>
@@ -1092,7 +1092,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="gallery.image.marker"><![CDATA[نشانگر ]]></item>
         <item name="gallery.image.marker.add"><![CDATA[اضافه کردن نشان گر ]]></item>
         <item name="gallery.image.marker.delete.confirmMessage"><![CDATA[ایا واقعا میخواهید نشان را حذف کنید ?]]></item>
-        <item name="gallery.image.marker.description"><![CDATA[برای افزودن یک نشانگر در آن موقعیت، روی تصویر کلیک کنید.]]></item>
+        <item name="gallery.image.marker.description"><![CDATA[برای اضافه کردن یک نشانگر در آن موقعیت، روی تصویر کلیک کنید.]]></item>
         <item name="gallery.image.marker.edit"><![CDATA[ویرایش نشانگر ]]></item>
         <item name="gallery.image.marker.notification.mail.html"><![CDATA[<p><strong>{$author}</strong> شما را روی تصویر مشخص کرده است <a href="{$image->getLink()}">{$image->getTitle()}</a>:</p>]]></item>
         <item name="gallery.image.marker.notification.mail.plaintext"><![CDATA[{@$author} شما را روی تصویر مشخص کرده است “{@$image->getTitle()}” [URL:{@$image->getLink()}]:]]></item>
