@@ -634,7 +634,7 @@
         <item name="filebase.file.icon.delete.confirmMessage"><![CDATA[ایا واقعا میخواهید این ایکون حذف شود ?]]></item>
         <item name="filebase.file.icon.description"><![CDATA[The icon will be displayed next to the file. The icon’s dimensions must be at least 144×144 pixels.<br>Allowed file extensions: jpg, jpeg, png, webp]]></item>
         <item name="filebase.file.icon.error.invalidExtension"><![CDATA[پسوند فایل نامعتبر است .]]></item>
-        <item name="filebase.file.icon.error.noImage"><![CDATA[فایل اپلود شده عکس نمیباشد .]]></item>
+        <item name="filebase.file.icon.error.noImage"><![CDATA[فایل اپلود شده تصویر نمیباشد .]]></item>
         <item name="filebase.file.icon.error.tooLarge"><![CDATA[ایکون خیلی بزرگ است .]]></item>
         <item name="filebase.file.icon.error.tooSmall"><![CDATA[ایکون خیلی کوچک است .]]></item>
         <item name="filebase.file.icon.error.uploadFailed"><![CDATA[خطایی ناشناخته در حین اپلود رخ داده است .]]></item>
@@ -900,7 +900,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="gallery.album.map"><![CDATA[نقشه]]></item>
         <item name="gallery.album.moreAlbums"><![CDATA[البوم های بیشتر ]]></item>
         <item name="gallery.album.moreAlbums.images"><![CDATA[{if $albumItem->images}{#$albumItem->images} تصویر {if $albumItem->images != 1}ها{/if}{/if}{if $albumItem->videos}{if $albumItem->images} و {/if}{#$albumItem->videos} ویدیو{if $albumItem->videos != 1}ها{/if}{/if}]]></item>
-        <item name="gallery.album.ownerImageModerationWarning"><![CDATA[از عکس های جدید {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو های {/if} اپلود شده توسط شما نیاز به تایید دارد ,شما نمیتوانید تصاویر بیشتری را اپلود کنید {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} یا ویدیو ها {/if} در این البوم خصوصی .]]></item>
+        <item name="gallery.album.ownerImageModerationWarning"><![CDATA[از تصویر های جدید {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو های {/if} اپلود شده توسط شما نیاز به تایید دارد ,شما نمیتوانید تصاویر بیشتری را اپلود کنید {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} یا ویدیو ها {/if} در این البوم خصوصی .]]></item>
         <item name="gallery.album.search"><![CDATA[جست و جوی البوم ]]></item>
         <item name="gallery.album.search.results"><![CDATA[نتایج جست و جو ]]></item>
         <item name="gallery.album.showAll"><![CDATA[نمایش همه البوم ها ]]></item>
@@ -1164,7 +1164,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="gallery.image.upload.error.containsNoValidImages"><![CDATA[آرشیو “{$file->getFilename()}” شامل تصاویر معتبر نیست.]]></item>
         <item name="gallery.image.upload.error.fileExtension"><![CDATA[پرونده “{if $file|isset}{$file->getFilename()}{else}{$filename}{/if}” دارای پسوند نامعتبر است.]]></item>
         <item name="gallery.image.upload.error.invalidArchive"><![CDATA[بایگانی باز نمی شود “{$file->getFilename()}”.]]></item>
-        <item name="gallery.image.upload.error.markedImages"><![CDATA[یک یا چند فیلد اشتباه است، لطفاً فیلدهای ورودی تصاویر برجسته شده را بررسی کنید{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیوها {/if} با کلیک بر روی ریز عکسها.]]></item>
+        <item name="gallery.image.upload.error.markedImages"><![CDATA[یک یا چند فیلد اشتباه است، لطفاً فیلدهای ورودی تصاویر برجسته شده را بررسی کنید{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیوها {/if} با کلیک بر روی ریز تصویرها.]]></item>
         <item name="gallery.image.upload.error.maxHeight"><![CDATA[تصویر “{if $file|isset}{$file->getFilename()}{else}{$filename}{/if}” خیلی بلند است.]]></item>
         <item name="gallery.image.upload.error.maxParallelFileUpload"><![CDATA[شما نمی توانید بیشتر از آن آپلود کنید {if GALLERY_MAX_PARALLEL_IMAGE_UPLOADS != 1}{#GALLERY_MAX_PARALLEL_IMAGE_UPLOADS} تصاویر{else}یک تصویر{/if} به موازات.]]></item>
         <item name="gallery.image.upload.error.maxSize"><![CDATA[تصویر “{if $file|isset}{$file->getFilename()}{else}{$filename}{/if}” خیلی بزرگ است.]]></item>
@@ -2156,9 +2156,9 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.box.boxController.com.woltlab.filebase.tagCloud"><![CDATA[تگ های پایگاه فایل]]></item>
         <item name="wcf.acp.box.boxController.com.woltlab.gallery.albumList"><![CDATA[آلبوم ها]]></item>
         <item name="wcf.acp.box.boxController.com.woltlab.gallery.categories"><![CDATA[دسته بندی گالری ها]]></item>
-        <item name="wcf.acp.box.boxController.com.woltlab.gallery.commentList"><![CDATA[عکس{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو{/if} نظرات]]></item>
-        <item name="wcf.acp.box.boxController.com.woltlab.gallery.imageList"><![CDATA[عکس{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو{/if}]]></item>
-        <item name="wcf.acp.box.boxController.com.woltlab.gallery.tagCloud"><![CDATA[عکس{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو{/if} برچسب ها]]></item>
+        <item name="wcf.acp.box.boxController.com.woltlab.gallery.commentList"><![CDATA[تصویر{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو{/if} نظرات]]></item>
+        <item name="wcf.acp.box.boxController.com.woltlab.gallery.imageList"><![CDATA[تصویر{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو{/if}]]></item>
+        <item name="wcf.acp.box.boxController.com.woltlab.gallery.tagCloud"><![CDATA[تصویر{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو{/if} برچسب ها]]></item>
         <item name="wcf.acp.box.boxController.com.woltlab.wbb.boardTagCloud"><![CDATA[برچسب های موضوع]]></item>
         <item name="wcf.acp.box.boxController.com.woltlab.wbb.threadList"><![CDATA[موضوع ها ]]></item>
         <item name="wcf.acp.box.boxController.com.woltlab.wcf.articleCategories"><![CDATA[دسته بندی مقاله]]></item>
@@ -2926,7 +2926,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.group.option.admin.user.canDeleteGroup"><![CDATA[می توانید گروه های کاربری را حذف کنید]]></item>
         <item name="wcf.acp.group.option.admin.user.canDeleteUser"><![CDATA[می توانید کاربران را حذف کنید]]></item>
         <item name="wcf.acp.group.option.admin.user.canDisableAvatar"><![CDATA[می توانید آواتارها را مسدود کنید]]></item>
-        <item name="wcf.acp.group.option.admin.user.canDisableCoverPhoto"><![CDATA[می توانید عکس های روی جلد را مسدود کنید]]></item>
+        <item name="wcf.acp.group.option.admin.user.canDisableCoverPhoto"><![CDATA[می توانید تصویر های روی جلد را مسدود کنید]]></item>
         <item name="wcf.acp.group.option.admin.user.canDisableSignature"><![CDATA[می توانید امضاها را مسدود کنید]]></item>
         <item name="wcf.acp.group.option.admin.user.canEditActivityPoints"><![CDATA[می توانید نقاط فعالیت را مدیریت کنید]]></item>
         <item name="wcf.acp.group.option.admin.user.canEditGroup"><![CDATA[می توانید گروه های کاربری را ویرایش کنید]]></item>
@@ -3017,7 +3017,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.group.option.category.user.page"><![CDATA[صفحات]]></item>
         <item name="wcf.acp.group.option.category.user.profile"><![CDATA[پروفایل های کاربر]]></item>
         <item name="wcf.acp.group.option.category.user.profile.avatar"><![CDATA[آواتارها]]></item>
-        <item name="wcf.acp.group.option.category.user.profile.coverPhoto"><![CDATA[عکس های روی جلد]]></item>
+        <item name="wcf.acp.group.option.category.user.profile.coverPhoto"><![CDATA[تصویر های روی جلد]]></item>
         <item name="wcf.acp.group.option.category.user.profile.payment"><![CDATA[پرداخت]]></item>
         <item name="wcf.acp.group.option.category.user.profile.trophy"><![CDATA[جایزه ها]]></item>
         <item name="wcf.acp.group.option.category.user.profileComment"><![CDATA[دیوار نمایه کاربر]]></item>
@@ -3139,7 +3139,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.group.option.user.blog.canUploadAttachment"><![CDATA[می تواند پیوست ها را آپلود کند]]></item>
         <item name="wcf.acp.group.option.user.blog.canViewAttachmentPreview"><![CDATA[می تواند پیش نمایش های پیوست را مشاهده کند]]></item>
         <item name="wcf.acp.group.option.user.blog.canVotePoll"><![CDATA[می تواند در نظرسنجی شرکت کند]]></item>
-        <item name="wcf.acp.group.option.user.blog.coverPhoto.maxSize"><![CDATA[حداکثر اندازه فایل عکس جلد]]></item>
+        <item name="wcf.acp.group.option.user.blog.coverPhoto.maxSize"><![CDATA[حداکثر اندازه فایل تصویر جلد]]></item>
         <item name="wcf.acp.group.option.user.blog.editTimeout"><![CDATA[دوره زمانی ویرایش مقاله وبلاگ]]></item>
         <item name="wcf.acp.group.option.user.blog.editTimeout.description"><![CDATA[دقایقی برای کاربران در نظر گرفته شده است تا مقالات وبلاگ خود را ویرایش کنند. از -1 برای بی نهایت استفاده کنید.]]></item>
         <item name="wcf.acp.group.option.user.blog.maxBlogs"><![CDATA[حداکثر وبلاگ]]></item>
@@ -3192,7 +3192,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.group.option.user.calendar.canReadEvent"><![CDATA[می تواند رویدادها را مشاهده کند]]></item>
         <item name="wcf.acp.group.option.user.calendar.canUploadAttachment"><![CDATA[می تواند پیوست ها را آپلود کند]]></item>
         <item name="wcf.acp.group.option.user.calendar.canViewAttachmentPreview"><![CDATA[می تواند پیش نمایش های پیوست را مشاهده کند]]></item>
-        <item name="wcf.acp.group.option.user.calendar.coverPhoto.maxSize"><![CDATA[حداکثر اندازه فایل عکس جلد]]></item>
+        <item name="wcf.acp.group.option.user.calendar.coverPhoto.maxSize"><![CDATA[حداکثر اندازه فایل تصویر جلد]]></item>
         <item name="wcf.acp.group.option.user.calendar.maxEventMessageLength"><![CDATA[حداکثر طول شرح رویداد]]></item>
         <item name="wcf.acp.group.option.user.comment.disallowedBBCodes"><![CDATA[کدهای bulletin board غیر مجاز]]></item>
         <item name="wcf.acp.group.option.user.comment.disallowedBBCodes.description"><![CDATA[کدهای bulletin board  منتخب<em>نمی تواند</em>توسط کاربران این گروه کاربری استفاده شود.]]></item>
@@ -3291,7 +3291,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.group.option.user.gallery.maxWidth"><![CDATA[حداکثر عرض تصویر]]></item>
         <item name="wcf.acp.group.option.user.gallery.maxWidth.description"><![CDATA[حداکثر عرض بر حسب پیکسل برای تصاویر آپلود شده، سیستم تلاش می کند تا تصاویری را که از این عرض بیشتر است، کوچک کند..]]></item>
         <item name="wcf.acp.group.option.user.gallery.quota"><![CDATA[حداکثر سهمیه سیستم فایل]]></item>
-        <item name="wcf.acp.group.option.user.gallery.quota.description"><![CDATA[حداکثر فضای دیسک مجاز برای تصاویر، ریز عکسها از این سهمیه مستثنی هستند.]]></item>
+        <item name="wcf.acp.group.option.user.gallery.quota.description"><![CDATA[حداکثر فضای دیسک مجاز برای تصاویر، ریز تصویرها از این سهمیه مستثنی هستند.]]></item>
         <item name="wcf.acp.group.option.user.gallery.videoQuota"><![CDATA[حداکثر سهمیه سیستم فایل]]></item>
         <item name="wcf.acp.group.option.user.gallery.videoQuota.description"><![CDATA[حداکثر فضای دیسک مجاز برای ویدیوها. تصاویر کوچک ویدیو از این سهمیه مستثنی هستند.]]></item>
         <item name="wcf.acp.group.option.user.like.canLike"><![CDATA[می تواند به محتوا واکنش نشان دهد]]></item>
@@ -3320,8 +3320,8 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.group.option.user.profile.canViewUserProfile"><![CDATA[می تواند نمایه های کاربران را مشاهده کند]]></item>
         <item name="wcf.acp.group.option.user.profile.canViewUsersOnlineList"><![CDATA[می تواند لیست کاربران را به صورت آنلاین مشاهده کند]]></item>
         <item name="wcf.acp.group.option.user.profile.cannotBeIgnored"><![CDATA[نمی توان مسدود کرد]]></item>
-        <item name="wcf.acp.group.option.user.profile.coverPhoto.canSeeCoverPhotos"><![CDATA[می تواند عکس های جلد کاربران را مشاهده کند]]></item>
-        <item name="wcf.acp.group.option.user.profile.coverPhoto.canUploadCoverPhoto"><![CDATA[می تواند عکس روی جلد خود را آپلود کند]]></item>
+        <item name="wcf.acp.group.option.user.profile.coverPhoto.canSeeCoverPhotos"><![CDATA[می تواند تصویر های جلد کاربران را مشاهده کند]]></item>
+        <item name="wcf.acp.group.option.user.profile.coverPhoto.canUploadCoverPhoto"><![CDATA[می تواند تصویر روی جلد خود را آپلود کند]]></item>
         <item name="wcf.acp.group.option.user.profile.coverPhoto.maxSize"><![CDATA[حداکثر اندازه فایل تصویر]]></item>
         <item name="wcf.acp.group.option.user.profile.payment.canBuyPaidSubscription"><![CDATA[می تواند اشتراک پولی بخرد]]></item>
         <item name="wcf.acp.group.option.user.profile.renamePeriod"><![CDATA[تغییر نام کاربری]]></item>
@@ -3884,7 +3884,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.option.category.cms"><![CDATA[CMS]]></item>
         <item name="wcf.acp.option.category.cms.article"><![CDATA[مقالات]]></item>
         <item name="wcf.acp.option.category.cms.media"><![CDATA[رسانه ها]]></item>
-        <item name="wcf.acp.option.category.cms.media.thumbnail"><![CDATA[ریز عکسها]]></item>
+        <item name="wcf.acp.option.category.cms.media.thumbnail"><![CDATA[ریز تصویرها]]></item>
         <item name="wcf.acp.option.category.dashboard"><![CDATA[داشبورد]]></item>
         <item name="wcf.acp.option.category.dashboard.content"><![CDATA[منطقه محتوا]]></item>
         <item name="wcf.acp.option.category.dashboard.sidebar"><![CDATA[نوار کناری]]></item>
@@ -3898,7 +3898,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.option.category.filebase.stats"><![CDATA[آمار]]></item>
         <item name="wcf.acp.option.category.filebase.supportThread"><![CDATA[موضوع پشتیبانی]]></item>
         <item name="wcf.acp.option.category.filebase.supportThread.description"><![CDATA[موضوعات پشتیبانی و بحث به طور خودکار برای هر فایل جدید در انجمن انتخاب شده ایجاد می شود.]]></item>
-        <item name="wcf.acp.option.category.gallery"><![CDATA[آلبوم عکس]]></item>
+        <item name="wcf.acp.option.category.gallery"><![CDATA[آلبوم تصویر]]></item>
         <item name="wcf.acp.option.category.gallery.image"><![CDATA[تصاویر]]></item>
         <item name="wcf.acp.option.category.gallery.index"><![CDATA[فهرست گالری]]></item>
         <item name="wcf.acp.option.category.gallery.video"><![CDATA[ویدیو ها]]></item>
@@ -5491,8 +5491,8 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.rebuildData.com.woltlab.gallery.album.description"><![CDATA[شمارنده و جلد آلبوم را بازسازی می کند.]]></item>
         <item name="wcf.acp.rebuildData.com.woltlab.gallery.image"><![CDATA[بازسازی تصاویر گالری{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو ها{/if}]]></item>
         <item name="wcf.acp.rebuildData.com.woltlab.gallery.image.description"><![CDATA[شمارنده های تصاویر گالری را بازسازی می کند{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو ها{/if}.]]></item>
-        <item name="wcf.acp.rebuildData.com.woltlab.gallery.thumbnail"><![CDATA[بازسازی ریز عکسهای گالری{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو ها{/if}]]></item>
-        <item name="wcf.acp.rebuildData.com.woltlab.gallery.thumbnail.description"><![CDATA[ریز عکس های تصاویر گالری را بازسازی می کند{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو ها{/if}.]]></item>
+        <item name="wcf.acp.rebuildData.com.woltlab.gallery.thumbnail"><![CDATA[بازسازی ریز تصویرهای گالری{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو ها{/if}]]></item>
+        <item name="wcf.acp.rebuildData.com.woltlab.gallery.thumbnail.description"><![CDATA[ریز تصویر های تصاویر گالری را بازسازی می کند{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو ها{/if}.]]></item>
         <item name="wcf.acp.rebuildData.com.woltlab.wbb.articleThreads"><![CDATA[بازسازی موضوعات بحث برای مقالات]]></item>
         <item name="wcf.acp.rebuildData.com.woltlab.wbb.articleThreads.description"><![CDATA[موضوعات بحث را برای مقالات ایجاد و به روز می کند.]]></item>
         <item name="wcf.acp.rebuildData.com.woltlab.wbb.board"><![CDATA[بازسازی انجمن ها]]></item>
@@ -5669,7 +5669,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.stat.com.woltlab.filebase.file.diskUsage"><![CDATA[حجم کل فایل (MB)]]></item>
         <item name="wcf.acp.stat.com.woltlab.filebase.fileComment"><![CDATA[نظرات فایل]]></item>
         <item name="wcf.acp.stat.com.woltlab.filebase.version"><![CDATA[نسخه های فایل]]></item>
-        <item name="wcf.acp.stat.com.woltlab.gallery.image"><![CDATA[عکس ها]]></item>
+        <item name="wcf.acp.stat.com.woltlab.gallery.image"><![CDATA[تصویر ها]]></item>
         <item name="wcf.acp.stat.com.woltlab.gallery.image.diskUsage"><![CDATA[حجم کل فایل تصویر (MB)]]></item>
         <item name="wcf.acp.stat.com.woltlab.gallery.imageComment"><![CDATA[نظرات تصویر]]></item>
         <item name="wcf.acp.stat.com.woltlab.gallery.video"><![CDATA[ویدیو ها]]></item>
@@ -5751,8 +5751,8 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.style.copyStyle"><![CDATA[Duplicate Style]]></item>
         <item name="wcf.acp.style.copyStyle.confirmMessage"><![CDATA[آیا واقعاً می خواهید سبک را تکرار کنید؟ <span class="confirmationObject">{$style->styleName}</span>?]]></item>
         <item name="wcf.acp.style.copyright"><![CDATA[کپی رایت]]></item>
-        <item name="wcf.acp.style.coverPhoto"><![CDATA[عکس روی جلد پیش‌فرض]]></item>
-        <item name="wcf.acp.style.coverPhoto.delete.confirmMessage"><![CDATA[آیا واقعاً می خواهید عکس روی جلد پیش فرض را حذف کنید؟ پس از حذف، به جای آن از عکس پیش فرض جهانی استفاده می شود.]]></item>
+        <item name="wcf.acp.style.coverPhoto"><![CDATA[تصویر روی جلد پیش‌فرض]]></item>
+        <item name="wcf.acp.style.coverPhoto.delete.confirmMessage"><![CDATA[آیا واقعاً می خواهید تصویر روی جلد پیش فرض را حذف کنید؟ پس از حذف، به جای آن از تصویر پیش فرض جهانی استفاده می شود.]]></item>
         <item name="wcf.acp.style.coverPhoto.description"><![CDATA[تصویر باید حداقل باشد {$coverPhotoMinWidth}×{$coverPhotoMinHeight} پیکسل های بزرگ و انواع قابل قبول تصویر GIF، JPG، JPEG، PNG و WEBP هستند.]]></item>
         <item name="wcf.acp.style.customAssets"><![CDATA[تصاویر اضافی]]></item>
         <item name="wcf.acp.style.customAssets.description"><![CDATA[{literal}تصاویر آپلود شده با همان نام فایل در داخل ذخیره می شوند <kbd>custom/</kbd> پوشه در پوشه تصویر سبک با استفاده از آن می توانید مسیر پوشه را در CSS بازیابی کنید <kbd>#{$style_image_path}custom/</kbd>.{/literal}]]></item>
@@ -5770,8 +5770,8 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.style.favicon.description"><![CDATA[یک تصویر 256×256 پیکسل بارگذاری کنید، انواع تصاویر قابل قبول JPG و PNG هستند. تصویر آپلود شده برای استخراج تمام اندازه های فاویکون مورد نیاز استفاده خواهد شد.]]></item>
         <item name="wcf.acp.style.favicon.error.dimensions"><![CDATA[اندازه تصویر باید دقیقاً ۲۵۶×۲۵۶ پیکسل باشد.]]></item>
         <item name="wcf.acp.style.general"><![CDATA[داده]]></item>
-        <item name="wcf.acp.style.general.coverPhoto"><![CDATA[عکس روی جلد]]></item>
-        <item name="wcf.acp.style.general.coverPhoto.description"><![CDATA[عکس‌های روی جلد برای اهداف تصویری در نمایه‌های کاربر، مقالات و سایر اجزا استفاده می‌شوند.]]></item>
+        <item name="wcf.acp.style.general.coverPhoto"><![CDATA[تصویر روی جلد]]></item>
+        <item name="wcf.acp.style.general.coverPhoto.description"><![CDATA[تصویر‌های روی جلد برای اهداف تصویری در نمایه‌های کاربر، مقالات و سایر اجزا استفاده می‌شوند.]]></item>
         <item name="wcf.acp.style.general.favicon"><![CDATA[Favicon]]></item>
         <item name="wcf.acp.style.general.files"><![CDATA[فایل ها]]></item>
         <item name="wcf.acp.style.globalValues"><![CDATA[جهانی CSS و SCSS]]></item>
@@ -5935,7 +5935,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.trophy.trophyUseHtml"><![CDATA[کد HTML را در توضیحات فعال کنید]]></item>
         <item name="wcf.acp.trophy.type"><![CDATA[نوع جایزه]]></item>
         <item name="wcf.acp.trophy.type.badge"><![CDATA[نشان]]></item>
-        <item name="wcf.acp.trophy.type.imageUpload"><![CDATA[عکس]]></item>
+        <item name="wcf.acp.trophy.type.imageUpload"><![CDATA[تصویر]]></item>
         <item name="wcf.acp.trophy.type.imageUpload.description"><![CDATA[یک تصویر مربعی با حداقل 64×64 پیکسل بارگذاری کنید.]]></item>
         <item name="wcf.acp.trophy.userTrophy.delete.confirmMessage"><![CDATA[آیا واقعاً می خواهید جایزه را حذف کنید؟ <span class="confirmationObject">{$userTrophy->getTrophy()->getTitle()}</span> from <span class="confirmationObject">{$userTrophy->getUserProfile()->username}</span>?]]></item>
         <item name="wcf.acp.trophy.userTrophy.description"><![CDATA[جایزه ای که باید به کاربران اهدا شود را انتخاب کنید. شما نمی توانید جوایز اهدایی خودکار را انتخاب کنید.]]></item>
@@ -6015,18 +6015,18 @@ Your account on the website: {@PAGE_TITLE|phrase} [URL:{link isEmail=true}{/link
         <item name="wcf.acp.user.bulkProcessing.sendMail"><![CDATA[ارسال ایمیل به کاربران]]></item>
         <item name="wcf.acp.user.bulkProcessing.success"><![CDATA[عمل انتخاب شده اجرا شده و تحت تأثیر قرار گرفته است {#$affectedObjectCount}کاربر{if $affectedObjectCount != 1}ها{/if}.]]></item>
         <item name="wcf.acp.user.bulkProcessing.warning"><![CDATA[<strong>Attention</strong>: پردازش انبوه همه اقدامات زیر را بر روی همه کاربرانی که با شرایط انتخابی مطابقت دارند بدون هیچ درخواست تأیید دیگری اجرا می‌کند.!]]></item>
-        <item name="wcf.acp.user.coverPhoto.description"><![CDATA[می توانید یک عکس روی جلد را در صفحه نمایه کاربری آنها آپلود کنید.]]></item>
+        <item name="wcf.acp.user.coverPhoto.description"><![CDATA[می توانید یک تصویر روی جلد را در صفحه نمایه کاربری آنها آپلود کنید.]]></item>
         <item name="wcf.acp.user.delete"><![CDATA[حذف کاربر(ها)]]></item>
-        <item name="wcf.acp.user.deleteCoverPhoto"><![CDATA[حذف عکس روی جلد]]></item>
+        <item name="wcf.acp.user.deleteCoverPhoto"><![CDATA[حذف تصویر روی جلد]]></item>
         <item name="wcf.acp.user.disable"><![CDATA[غیر فعال کردن]]></item>
         <item name="wcf.acp.user.disableAvatar"><![CDATA[آواتار را مسدود کنید]]></item>
         <item name="wcf.acp.user.disableAvatar.expires"><![CDATA[رفع انسداد]]></item>
         <item name="wcf.acp.user.disableAvatar.expires.description"><![CDATA[آواتار کاربر به طور خودکار در زمان تعیین شده رفع انسداد می شود.]]></item>
         <item name="wcf.acp.user.disableAvatar.neverExpires"><![CDATA[مسدود کردن دائمی]]></item>
         <item name="wcf.acp.user.disableAvatarReason"><![CDATA[دلیل]]></item>
-        <item name="wcf.acp.user.disableCoverPhoto"><![CDATA[عکس جلد مسدود کردن]]></item>
+        <item name="wcf.acp.user.disableCoverPhoto"><![CDATA[تصویر جلد مسدود کردن]]></item>
         <item name="wcf.acp.user.disableCoverPhoto.expires"><![CDATA[رفع انسداد]]></item>
-        <item name="wcf.acp.user.disableCoverPhoto.expires.description"><![CDATA[عکس روی جلد کاربر به طور خودکار در زمان تعیین شده رفع انسداد می شود.]]></item>
+        <item name="wcf.acp.user.disableCoverPhoto.expires.description"><![CDATA[تصویر روی جلد کاربر به طور خودکار در زمان تعیین شده رفع انسداد می شود.]]></item>
         <item name="wcf.acp.user.disableCoverPhoto.neverExpires"><![CDATA[مسدود کردن دائمی]]></item>
         <item name="wcf.acp.user.disableCoverPhoto.reason"><![CDATA[دلیل]]></item>
         <item name="wcf.acp.user.disableSignature"><![CDATA[ امضای مسدود سازی]]></item>
@@ -7143,10 +7143,10 @@ Your account on the website: {@PAGE_TITLE|phrase} [URL:{link isEmail=true}{/link
         <item name="wcf.global.form.required"><![CDATA[فیلدهای مورد نیاز]]></item>
     </category>
     <category name="wcf.image">
-        <item name="wcf.image.coverPhoto"><![CDATA[عکس روی جلد]]></item>
-        <item name="wcf.image.coverPhoto.delete"><![CDATA[حذف عکس روی جلد]]></item>
-        <item name="wcf.image.coverPhoto.delete.confirmMessage"><![CDATA[آیا واقعاً می خواهید این عکس روی جلد را حذف کنید؟ این عکس فعلی را با تصویر پیش فرض جایگزین می کند.]]></item>
-        <item name="wcf.image.coverPhoto.edit"><![CDATA[ویرایش عکس روی جلد]]></item>
+        <item name="wcf.image.coverPhoto"><![CDATA[تصویر روی جلد]]></item>
+        <item name="wcf.image.coverPhoto.delete"><![CDATA[حذف تصویر روی جلد]]></item>
+        <item name="wcf.image.coverPhoto.delete.confirmMessage"><![CDATA[آیا واقعاً می خواهید این تصویر روی جلد را حذف کنید؟ این تصویر فعلی را با تصویر پیش فرض جایگزین می کند.]]></item>
+        <item name="wcf.image.coverPhoto.edit"><![CDATA[ویرایش تصویر روی جلد]]></item>
         <item name="wcf.image.coverPhoto.upload"><![CDATA[آپلود عکس جلد]]></item>
         <item name="wcf.image.coverPhoto.upload.error.badImage"><![CDATA[فایل آپلود شده یک تصویر نیست.]]></item>
         <item name="wcf.image.coverPhoto.upload.error.fileExtension"><![CDATA[پسوند فایل نامعتبر است.]]></item>
