@@ -870,7 +870,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="gallery.acp.image.bulkProcessing.setCategories"><![CDATA[تنظیم دسته بندی ها ]]></item>
         <item name="gallery.acp.image.bulkProcessing.setCategories.categories"><![CDATA[دسته بندی ها ]]></item>
         <item name="gallery.acp.image.bulkProcessing.setCategories.categories.description"><![CDATA[دسته های موجود با دسته های انتخابی بازنویسی میشوند s.]]></item>
-        <item name="gallery.acp.image.bulkProcessing.success"><![CDATA[عمل انتخاب شده اجرا شده و تحت تاثیر قرار گرفته است  {#$affectedObjectCount} تصویر {if $affectedObjectCount != 1}s{/if}{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/فیلم{if $affectedObjectCount != 1}ها{/if}{/if}.{if $affectedObjectCount > 0}<br>لطفا مطمئن شوید  <a href="{link controller='RebuildData'}{/link}">“Verify Integrity”</a> afterwards.{/if}]]></item>
+        <item name="gallery.acp.image.bulkProcessing.success"><![CDATA[عمل انتخاب شده اجرا شده و تحت تاثیر قرار گرفته است  {#$affectedObjectCount} تصویر {if $affectedObjectCount != 1}s{/if}{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/ویدیو{if $affectedObjectCount != 1}ها{/if}{/if}.{if $affectedObjectCount > 0}<br>لطفا مطمئن شوید  <a href="{link controller='RebuildData'}{/link}">“Verify Integrity”</a> afterwards.{/if}]]></item>
         <item name="gallery.acp.image.bulkProcessing.trash"><![CDATA[انتقال به سظل اشغال ]]></item>
     </category>
     <category name="gallery.acp.menu">
@@ -881,7 +881,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
     </category>
     <category name="gallery.album">
         <item name="gallery.album.accessLevel"><![CDATA[می توانید البوم را مشاهده کنید ]]></item>
-        <item name="gallery.album.accessLevel.description"><![CDATA[این البوم و تصاویر {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و فیلم ها {/if} باید فقط برای کاربران انتخاب شده قابل دسترسی باشد .{if $album|isset} لطفا توجه داشته باشید که تغییرات فورا در همه موارد اعمال میشود{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو ها {/if}.{/if}]]></item>
+        <item name="gallery.album.accessLevel.description"><![CDATA[این البوم و تصاویر {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو ها {/if} باید فقط برای کاربران انتخاب شده قابل دسترسی باشد .{if $album|isset} لطفا توجه داشته باشید که تغییرات فورا در همه موارد اعمال میشود{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو ها {/if}.{/if}]]></item>
         <item name="gallery.album.accessLevel.everyone"><![CDATA[هر کس]]></item>
         <item name="gallery.album.accessLevel.following"><![CDATA[کاربران دنبال شده]]></item>
         <item name="gallery.album.accessLevel.info"><![CDATA[{if $album->hasRegisteredAccessLevel()}دسترسی فقط برای کاربران ثبت نام شده {elseif $album->hasFollowingAccessLevel()}دسترسی فقط برای کاربران دنبال شده{elseif $album->hasOwnerAccessLevel()}البوم خصوصی {/if}]]></item>
@@ -899,8 +899,8 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="gallery.album.lastUpdateTime"><![CDATA[اخرین به روز رسانی ]]></item>
         <item name="gallery.album.map"><![CDATA[نقشه]]></item>
         <item name="gallery.album.moreAlbums"><![CDATA[البوم های بیشتر ]]></item>
-        <item name="gallery.album.moreAlbums.images"><![CDATA[{if $albumItem->images}{#$albumItem->images} تصویر {if $albumItem->images != 1}ها{/if}{/if}{if $albumItem->videos}{if $albumItem->images} و {/if}{#$albumItem->videos} فیلم{if $albumItem->videos != 1}ها{/if}{/if}]]></item>
-        <item name="gallery.album.ownerImageModerationWarning"><![CDATA[از عکس های جدید {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو های {/if} اپلود شده توسط شما نیاز به تایید دارد ,شما نمیتوانید تصاویر بیشتری را اپلود کنید {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} یا فیلم ها {/if} در این البوم خصوصی .]]></item>
+        <item name="gallery.album.moreAlbums.images"><![CDATA[{if $albumItem->images}{#$albumItem->images} تصویر {if $albumItem->images != 1}ها{/if}{/if}{if $albumItem->videos}{if $albumItem->images} و {/if}{#$albumItem->videos} ویدیو{if $albumItem->videos != 1}ها{/if}{/if}]]></item>
+        <item name="gallery.album.ownerImageModerationWarning"><![CDATA[از عکس های جدید {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو های {/if} اپلود شده توسط شما نیاز به تایید دارد ,شما نمیتوانید تصاویر بیشتری را اپلود کنید {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} یا ویدیو ها {/if} در این البوم خصوصی .]]></item>
         <item name="gallery.album.search"><![CDATA[جست و جوی البوم ]]></item>
         <item name="gallery.album.search.results"><![CDATA[نتایج جست و جو ]]></item>
         <item name="gallery.album.showAll"><![CDATA[نمایش همه البوم ها ]]></item>
@@ -908,7 +908,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="gallery.album.sortField.images"><![CDATA[تعداد تصاویر ]]></item>
         <item name="gallery.album.sortField.lastUpdateTime"><![CDATA[زمان اخرین بروزرسانی ]]></item>
         <item name="gallery.album.sortField.time"><![CDATA[زمان ایجاد ]]></item>
-        <item name="gallery.album.sortField.videos"><![CDATA[تعداد فیلم ها ]]></item>
+        <item name="gallery.album.sortField.videos"><![CDATA[تعداد ویدیو ها ]]></item>
         <item name="gallery.album.sortImages"><![CDATA[مرتب کردن تصاویر ]]></item>
         <item name="gallery.album.sortImages.loadMoreImages"><![CDATA[تصاویر بیشتر ]]></item>
         <item name="gallery.album.sortImagesAutomatically"><![CDATA[مرتب سازی خودکار ]]></item>
@@ -917,11 +917,11 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="gallery.album.userAlbums"><![CDATA[البوم از  {$user->username}]]></item>
     </category>   
     <category name="gallery.category">
-        <item name="gallery.category.delete.sure"><![CDATA[ایا واقعا میخواهید این دسته بندی را حذف کنید ? همه دسته های فرزند این دسته به دسته بندی والدین منتقل میشود . تصاویر {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و فیلم ها {/if} که فقط در این دسته هستند حذف خواهند شد .]]></item>
+        <item name="gallery.category.delete.sure"><![CDATA[ایا واقعا میخواهید این دسته بندی را حذف کنید ? همه دسته های فرزند این دسته به دسته بندی والدین منتقل میشود . تصاویر {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو ها {/if} که فقط در این دسته هستند حذف خواهند شد .]]></item>
     </category>
     <category name="gallery.image">
-        <item name="gallery.image.add.button.nextImage"><![CDATA[تصویر بعدی {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/فیلم{/if}]]></item>
-        <item name="gallery.image.add.button.previousImage"><![CDATA[تصویر قبلی {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/فیلم {/if}]]></item>
+        <item name="gallery.image.add.button.nextImage"><![CDATA[تصویر بعدی {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/ویدیو{/if}]]></item>
+        <item name="gallery.image.add.button.previousImage"><![CDATA[تصویر قبلی {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/ویدیو {/if}]]></item>
         <item name="gallery.image.albumID"><![CDATA[البوم ]]></item>
         <item name="gallery.image.albumID.error.cannotAddToPrivateAlbumDueToModeration"><![CDATA[از انجایی که تصویر جدید باید توسط نعدیل کنندگان تایید شود شما مجاز به اپلود تصویر جدی در البوم خصوصی نیستید .]]></item>
         <item name="gallery.image.albumID.overwrite.confirmMessage"><![CDATA[Do you really want to assign all the other uploaded images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} and videos{/if} to this album?]]></item>
@@ -934,30 +934,30 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="gallery.image.browser.image.list"><![CDATA[همه]]></item>
         <item name="gallery.image.browser.image.search"><![CDATA[جست و جو ]]></item>
         <item name="gallery.image.browser.image.search.description"><![CDATA[برای شروع جست و جو حداقل 3 کاراکتر را تایپ کنید .]]></item>
-        <item name="gallery.image.browser.imagesAndVideos"><![CDATA[تصاویر {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و فیلم ها {/if}]]></item>
+        <item name="gallery.image.browser.imagesAndVideos"><![CDATA[تصاویر {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو ها {/if}]]></item>
         <item name="gallery.image.browser.insert"><![CDATA[درج در تصویر ]]></item>
         <item name="gallery.image.browser.insert.large"><![CDATA[بزرگ  ({$dimensions[عرض ]} × {$dimensions[بلندی ]})]]></item>
         <item name="gallery.image.browser.insert.medium"><![CDATA[متوسط  ({$dimensions[عرض ]} × {$dimensions[بلندی ]})]]></item>
         <item name="gallery.image.browser.insert.original"><![CDATA[اصلی  ({$dimensions[عرض ]} × {$dimensions[بلندی ]})]]></item>
         <item name="gallery.image.browser.insert.small"><![CDATA[کوچک ({$dimensions[عرض ]} × {$dimensions[بلندی ]})]]></item>
         <item name="gallery.image.browser.insert.tiny"><![CDATA[خیلی کوچک ({$dimensions[عرض ]} × {$dimensions[بلندی ]})]]></item>
-        <item name="gallery.image.browser.noAlbums"><![CDATA[شما در حال حاضر هیچ البومی با تصویر قابل مشاهده ندارید {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} یا فیلم ها {/if}.]]></item>
-        <item name="gallery.image.browser.noImages"><![CDATA[شما در حال حاضر هیچ تصویر قابل مشاهده ای ندارید {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} یا فیلم ها {/if}.]]></item>
+        <item name="gallery.image.browser.noAlbums"><![CDATA[شما در حال حاضر هیچ البومی با تصویر قابل مشاهده ندارید {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} یا ویدیو ها {/if}.]]></item>
+        <item name="gallery.image.browser.noImages"><![CDATA[شما در حال حاضر هیچ تصویر قابل مشاهده ای ندارید {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} یا ویدیو ها {/if}.]]></item>
         <item name="gallery.image.button.markAll"><![CDATA[Mark All]]></item>
-        <item name="gallery.image.button.overwrite"><![CDATA[اعمال شود برای سایر تصاویر {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و فیلم ها {/if}]]></item>
+        <item name="gallery.image.button.overwrite"><![CDATA[اعمال شود برای سایر تصاویر {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو ها {/if}]]></item>
         <item name="gallery.image.button.overwriteAll"><![CDATA[اعمال برای همه ]]></item>
         <item name="gallery.image.button.selectThumbnailArea"><![CDATA[ناحیه تصویر کوچک را مشخص کنید ]]></item>
         <item name="gallery.image.button.sort"><![CDATA[مرتب سازی ]]></item>
         <item name="gallery.image.button.upload"><![CDATA[اپلود ]]></item>
         <item name="gallery.image.camera"><![CDATA[دوربین ]]></item>
         <item name="gallery.image.categories"><![CDATA[Categories]]></item>
-        <item name="gallery.image.categorizedImages"><![CDATA[تصاویر {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و فیلم ها {/if} در دسته بندی ها  “{$category->getTitle()}”]]></item>
+        <item name="gallery.image.categorizedImages"><![CDATA[تصاویر {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو ها {/if} در دسته بندی ها  “{$category->getTitle()}”]]></item>
         <item name="gallery.image.categoryIDs.error.tooMany"><![CDATA[شما دسته بندی های زیادی را انتخاب کرده اید . شما حداکثر میتوانید  {@GALLERY_IMAGE_MAX_CATEGORIES} {if GALLERY_IMAGE_MAX_CATEGORIES == 1}دسته بندی را {else}  دسته بندی هارا انتخاب کنید  {/if}.]]></item>
-        <item name="gallery.image.categoryIDs.overwrite.confirmMessage"><![CDATA[ایا واقعا میخواهید همه تصاویر اپلود شده را اختضاض دهید به {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و فیلم ها {/if}برای دسته بندی های انتخاب شده?]]></item>
+        <item name="gallery.image.categoryIDs.overwrite.confirmMessage"><![CDATA[ایا واقعا میخواهید همه تصاویر اپلود شده را اختضاض دهید به {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو ها {/if}برای دسته بندی های انتخاب شده?]]></item>
         <item name="gallery.image.comment"><![CDATA[نظرات گالری ]]></item>
         <item name="gallery.image.comment.like.notification.message"><![CDATA[<strong>{$author}</strong> واکنش نشان داده شد به نظر شما در  {if $image->isImage()}image{else}video{/if} <strong>{$image->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
         <item name="gallery.image.comment.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language}واکنش نشان داده شد به نظر شما در  {if $image->isImage()}image{else}video{/if} <strong>{$image->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
-        <item name="gallery.image.comment.like.notification.title"><![CDATA[واکنش به نظر  ({if $image->isImage()}تصویر {else}فیلم {/if})]]></item>
+        <item name="gallery.image.comment.like.notification.title"><![CDATA[واکنش به نظر  ({if $image->isImage()}تصویر {else}ویدیو {/if})]]></item>
         <item name="gallery.image.comment.like.notification.title.stacked"><![CDATA[{#$count} کاربران واکنش نشان دادند به نظر شما  ({if $image->isImage()}image{else}video{/if})]]></item>
         <item name="gallery.image.comment.notification.mail.html"><![CDATA[<p>{@$authorList} نظر داده شد درمورد  شما  {if $image->isImage()}image{else}video{/if} <a href="{$image->getLink()}#comment{@$commentID}">{$image->getTitle()}</a>:</p>]]></item>
         <item name="gallery.image.comment.notification.mail.plaintext"><![CDATA[{@$authorList} نظر داده شد در مورد شما  {if $image->isImage()}image{else}video{/if} “{@$image->getTitle()}” [وبلاگ:{@$image->getLink()}#comment{@$commentID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
@@ -1007,35 +1007,36 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="gallery.image.condition.timeFrame.description"><![CDATA[این گزینه حداقل و حداکثر سن را در روز تصویر نشان داده شده در کادر تعیین میکند .]]></item>
         <item name="gallery.image.condition.type"><![CDATA[نوع]]></item>
         <item name="gallery.image.condition.type.image"><![CDATA[تصاویر ]]></item>
-        <item name="gallery.image.condition.type.video"><![CDATA[فیلم ها ]]></item>
-        <item name="gallery.image.condition.type.videoLink"><![CDATA[لینک فیلم ها ]]></item>
+        <item name="gallery.image.condition.type.video"><![CDATA[ویدیو ها ]]></item>
+        <item name="gallery.image.condition.type.videoLink"><![CDATA[لینک ویدیو ها ]]></item>
         <item name="gallery.image.condition.uploadTime"><![CDATA[تاریخ اپلود ]]></item>
         <item name="gallery.image.condition.username"><![CDATA[اپلود شده توسط ]]></item>
         <item name="gallery.image.condition.username.description"><![CDATA[هر کاربر را با کاما جدا کنید .]]></item>
         <item name="gallery.image.condition.views"><![CDATA[بازدید ها ]]></item>
-        <item name="gallery.image.conditions"><![CDATA[تصویر {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/فیلم {/if}]]></item>
+        <item name="gallery.image.conditions"><![CDATA[تصویر {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/ویدیو {/if}]]></item>
         <item name="gallery.image.coordinates"><![CDATA[مختصات ]]></item>
-        <item name="gallery.image.coordinates.description"><![CDATA[شما میتوانید یک محل برای این تصویر مشخص کنید {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/فیلم {/if}.]]></item>
+        <item name="gallery.image.coordinates.description"><![CDATA[شما میتوانید یک محل برای این تصویر مشخص کنید {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/ویدیو {/if}.]]></item>
         <item name="gallery.image.coordinates.location"><![CDATA[محل ]]></item>
         <item name="gallery.image.coordinates.location.description"><![CDATA[محل را تایپ کنید و یک نتیجه را از پیشنهاد انتخاب کنید .]]></item>
         <item name="gallery.image.coordinates.locationSearch"><![CDATA[جست و جوی محل ]]></item>
-        <item name="gallery.image.coordinates.overwrite.confirmMessage"><![CDATA[ایا واقعا میخواهید سایر تصاویر اپلود شده را اختصاص دهید {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و فیلم ها {/if} به این مکان ?]]></item>
+        <item name="gallery.image.coordinates.overwrite.confirmMessage"><![CDATA[ایا واقعا میخواهید سایر تصاویر اپلود شده را اختصاص دهید {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو ها {/if} به این مکان ?]]></item>
         <item name="gallery.image.coordinates.useCoordinates"><![CDATA[مکان را مشخص کنید ]]></item>
         <item name="gallery.image.coordinates.value"><![CDATA[{@$latDegrees}° {@$latMinutes}' {@$latSeconds}" {if $latitudeRef == 'S'}S{else}N{/if}, {@$longDegrees}° {@$longMinutes}' {@$longSeconds}" {if $longitudeRef == 'E'}E{else}W{/if}]]></item>
         <item name="gallery.image.creationTime"><![CDATA[تاریخ ایجاد ]]></item>
         <item name="gallery.image.delete"><![CDATA[حذف ]]></item>
-        <item name="gallery.image.delete.confirmMessage"><![CDATA[ایا واقعا میخواهید این تصویر حذف شود {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/فیلم {/if}?]]></item>
+        <item name="gallery.image.delete.confirmMessage"><![CDATA[ایا واقعا میخواهید این تصویر حذف شود {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/ویدیو
+ {/if}?]]></item>
         <item name="gallery.image.delete.success"><![CDATA[تصویر {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/video{/if} has been deleted.]]></item>
         <item name="gallery.image.description"><![CDATA[شرح ]]></item>
         <item name="gallery.image.description.error.tooLong"><![CDATA[توضیح خیلی طولانی است .]]></item>
-        <item name="gallery.image.description.overwrite.confirmMessage"><![CDATA[ایا واقعا میخواهید سایر تصاویر اپلود شده را اختصاص دهید{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و فیلم ها {/if}?]]></item>
+        <item name="gallery.image.description.overwrite.confirmMessage"><![CDATA[ایا واقعا میخواهید سایر تصاویر اپلود شده را اختصاص دهید{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو ها {/if}?]]></item>
         <item name="gallery.image.disable"><![CDATA[غیر فعال کردن ]]></item>
-        <item name="gallery.image.edit"><![CDATA[ویرایش  {if $image->isImage()}تصویر {else}فیلم {/if}]]></item>
-        <item name="gallery.image.edit.multiple"><![CDATA[ویرایش تصاویر {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/فیلم ها {/if}]]></item>
+        <item name="gallery.image.edit"><![CDATA[ویرایش  {if $image->isImage()}تصویر {else}ویدیو {/if}]]></item>
+        <item name="gallery.image.edit.multiple"><![CDATA[ویرایش تصاویر {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/ویدیو ها {/if}]]></item>
         <item name="gallery.image.enable"><![CDATA[تایید ]]></item>
         <item name="gallery.image.enableComments"><![CDATA[فعال کردن نظرات ]]></item>
         <item name="gallery.image.enableComments.description"><![CDATA[به کاربر اجازه می دهد نظر بنویسد.]]></item>
-        <item name="gallery.image.enableComments.overwrite.confirmMessage"><![CDATA[ایا واقعا میخواهید تنظیمات را برای ان اعمال کنید  “فعال کردن نظرات ” برای اپلود تمام تصاویر {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و فیلم ها {/if}?]]></item>
+        <item name="gallery.image.enableComments.overwrite.confirmMessage"><![CDATA[ایا واقعا میخواهید تنظیمات را برای ان اعمال کنید  “فعال کردن نظرات ” برای اپلود تمام تصاویر {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو ها {/if}?]]></item>
         <item name="gallery.image.exif.aperture"><![CDATA[دیافراگم ]]></item>
         <item name="gallery.image.exif.exposureTime"><![CDATA[زمان ارائه ]]></item>
         <item name="gallery.image.exif.flash"><![CDATA[فلاش ]]></item>
@@ -1073,18 +1074,18 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="gallery.image.filesize"><![CDATA[اندازه فایل ]]></item>
         <item name="gallery.image.image"><![CDATA[تصویر ]]></item>
         <item name="gallery.image.images"><![CDATA[تصاویر ]]></item>
-        <item name="gallery.image.imagesAndVideos"><![CDATA[تصاویر {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و فیلم ها {/if}]]></item>
-        <item name="gallery.image.imagesInfoWindow"><![CDATA[Multiple Images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/فیلم ها {/if}]]></item>
+        <item name="gallery.image.imagesAndVideos"><![CDATA[تصاویر {if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو ها {/if}]]></item>
+        <item name="gallery.image.imagesInfoWindow"><![CDATA[Multiple Images{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/ویدیو ها {/if}]]></item>
         <item name="gallery.image.information"><![CDATA[جزئیات ]]></item>
         <item name="gallery.image.isDeleted"><![CDATA[حذف شد ]]></item>
         <item name="gallery.image.isDisabled"><![CDATA[غیر فعال شد ]]></item>
-        <item name="gallery.image.like.notification.message"><![CDATA[<strong>{$author}</strong> واکنش نشان داد به  {if $image->isImage()}تصویر {else}فیلم {/if} <strong>{$image->getTitle()شما}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
-        <item name="gallery.image.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} واکنش نشان داد به  {if $image->isImage()}تصویر {else}فیلم{/if} <strong>{$image->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)})شما.]]></item>
-        <item name="gallery.image.like.notification.title"><![CDATA[واکنش نشان داده شد به  {if $image->isImage()}تصویر{else}فیلم{/if}شما ]]></item>
-        <item name="gallery.image.like.notification.title.stacked"><![CDATA[{#$count} کارب ان واکنش نشان دادند به  {if $image->isImage()}تصویر {else}فیلم {/if}شما ]]></item>
+        <item name="gallery.image.like.notification.message"><![CDATA[<strong>{$author}</strong> واکنش نشان داد به  {if $image->isImage()}تصویر {else}ویدیو {/if} <strong>{$image->getTitle()شما}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+        <item name="gallery.image.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} واکنش نشان داد به  {if $image->isImage()}تصویر {else}ویدیو{/if} <strong>{$image->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)})شما.]]></item>
+        <item name="gallery.image.like.notification.title"><![CDATA[واکنش نشان داده شد به  {if $image->isImage()}تصویر{else}ویدیو{/if}شما ]]></item>
+        <item name="gallery.image.like.notification.title.stacked"><![CDATA[{#$count} کارب ان واکنش نشان دادند به  {if $image->isImage()}تصویر {else}ویدیو {/if}شما ]]></item>
         <item name="gallery.image.list.displayMode.grid"><![CDATA[توری ]]></item>
         <item name="gallery.image.list.displayMode.masonry"><![CDATA[عمارت ]]></item>
-        <item name="gallery.image.log.trash.summary"><![CDATA[{if $additionalData[این فیلم]|empty}تصویر {else}فیلم{/if} حذف شد توسط  {if $userID}<a href="{link controller='User' id=$userID title=$username}{/link}" class="userLink" data-object-id="{@$userID}">{$username}</a>{else}{$username}{/if}{if $additionalData[دلیل]} به این دلیل : {$additionalData[علت ]}{/if} ({@$time|time}).]]></item>
+        <item name="gallery.image.log.trash.summary"><![CDATA[{if $additionalData[این ویدیو]|empty}تصویر {else}ویدیو{/if} حذف شد توسط  {if $userID}<a href="{link controller='User' id=$userID title=$username}{/link}" class="userLink" data-object-id="{@$userID}">{$username}</a>{else}{$username}{/if}{if $additionalData[دلیل]} به این دلیل : {$additionalData[علت ]}{/if} ({@$time|time}).]]></item>
         <item name="gallery.image.map"><![CDATA[محل]]></item>
         <item name="gallery.image.markedUsers"><![CDATA[نشانه دار کردن کاربران ]]></item>
         <item name="gallery.image.markedUsers.description"><![CDATA[در حالی که نشانگرها روی یک نام کاربری قرار دارند، روی تصویر برجسته می شوند.]]></item>
@@ -1108,7 +1109,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="gallery.image.mention.notification.mail.plaintext"><![CDATA[{@$author}شما را در توضیحات ذکر کرده است {if $image->isImage()}تصویر{else}ویدئو{/if} “{@$image->getTitle()}” [URL:{@$image->getLink()}]:]]></item>
         <item name="gallery.image.mention.notification.message"><![CDATA[<strong>{$author}</strong> شما را در توضیحات ذکر کرده است{if $image->isImage()}تصویر{else}ویدئو{/if} <strong>{$image->getTitle()}</strong>.]]></item>
         <item name="gallery.image.mention.notification.title"><![CDATA[به شما اشاره شد]]></item> 
-        <item name="gallery.image.moderation.info"><![CDATA[اخیرا{if !$__wcf->session->getPermission('user.gallery.canAddImageWithoutModeration')}تصاویر آپلود شده{if GALLERY_VIDEO_UPLOAD && $__wcf->session->getPermission('user.gallery.canUploadVideo') && !$__wcf->session->getPermission('user.gallery.canUploadVideoWithoutModeration')}و فیلم ها{/if}{elseif $__gallery->canUploadVideo() && !$__wcf->session->getPermission('user.gallery.canUploadVideoWithoutModeration')}ویدیوهای آپلود شده{/if}{if $__gallery->canLinkVideo() && !$__wcf->session->getPermission('user.gallery.canLinkVideoWithoutModeration')}{if !$__wcf->session->getPermission('user.gallery.canAddImageWithoutModeration') || (GALLERY_VIDEO_UPLOAD && $__wcf->session->getPermission('user.gallery.canUploadVideo') && !$__wcf->session->getPermission('user.gallery.canUploadVideoWithoutModeration'))} و {/if}لینک های ویدئویی اضافه شد{/if}تا زمانی که توسط تعدیل کننده تایید نشود، غیرقابل دسترسی خواهد بود. تا زمان تایید آنها، شما نه می توانید مشاهده کنید و نه ویرایش کنید {if !$__wcf->session->getPermission('user.gallery.canAddImageWithoutModeration')Images/if}{if (GALLERY_VIDEO_UPLOAD && $__wcf->session->getPermission('user.gallery.canUploadVideo') && !$__wcf->session->getPermission('user.gallery.canUploadVideoWithoutModeration')) || (GALLERY_VIDEO_LINKS && $__wcf->session->getPermission('user.gallery.canLinkVideo') && !$__wcf->session->getPermission('user.gallery.canLinkVideoWithoutModeration'))}{if !$__wcf->session->getPermission('user.gallery.canAddImageWithoutModeration')} و {/if}ویدیوها{/if}.]]></item>
+        <item name="gallery.image.moderation.info"><![CDATA[اخیرا{if !$__wcf->session->getPermission('user.gallery.canAddImageWithoutModeration')}تصاویر آپلود شده{if GALLERY_VIDEO_UPLOAD && $__wcf->session->getPermission('user.gallery.canUploadVideo') && !$__wcf->session->getPermission('user.gallery.canUploadVideoWithoutModeration')}و ویدیو ها{/if}{elseif $__gallery->canUploadVideo() && !$__wcf->session->getPermission('user.gallery.canUploadVideoWithoutModeration')}ویدیوهای آپلود شده{/if}{if $__gallery->canLinkVideo() && !$__wcf->session->getPermission('user.gallery.canLinkVideoWithoutModeration')}{if !$__wcf->session->getPermission('user.gallery.canAddImageWithoutModeration') || (GALLERY_VIDEO_UPLOAD && $__wcf->session->getPermission('user.gallery.canUploadVideo') && !$__wcf->session->getPermission('user.gallery.canUploadVideoWithoutModeration'))} و {/if}لینک های ویدئویی اضافه شد{/if}تا زمانی که توسط تعدیل کننده تایید نشود، غیرقابل دسترسی خواهد بود. تا زمان تایید آنها، شما نه می توانید مشاهده کنید و نه ویرایش کنید {if !$__wcf->session->getPermission('user.gallery.canAddImageWithoutModeration')Images/if}{if (GALLERY_VIDEO_UPLOAD && $__wcf->session->getPermission('user.gallery.canUploadVideo') && !$__wcf->session->getPermission('user.gallery.canUploadVideoWithoutModeration')) || (GALLERY_VIDEO_LINKS && $__wcf->session->getPermission('user.gallery.canLinkVideo') && !$__wcf->session->getPermission('user.gallery.canLinkVideoWithoutModeration'))}{if !$__wcf->session->getPermission('user.gallery.canAddImageWithoutModeration')} و {/if}ویدیوها{/if}.]]></item>
         <item name="gallery.image.moreImages"><![CDATA[تصاویر بیشتر]]></item>
         <item name="gallery.image.moveToAlbum"><![CDATA[انتقال تصاویر{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS}/Videos{/if}به آلبوم]]></item>
         <item name="gallery.image.nextImage"><![CDATA[بعد{if $nextImage->isImage()}تصویر{else}ویدیو{/if}]]></item>
@@ -1244,7 +1245,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="gallery.video.link.link.edit.overwriteData"><![CDATA[بازنویسی داده های ویدیویی موجود]]></item>
         <item name="gallery.video.link.link.edit.overwriteData.description"><![CDATA[اگر انتخاب شده باشد و بتوان داده‌های ویدیویی را به‌طور خودکار از ارائه‌دهنده ویدیو واکشی کرد، اطلاعات موجود توسط داده‌های ارائه‌دهنده ویدیو بازنویسی می‌شود.]]></item>
         <item name="gallery.video.link.provider.com.woltlab.gallery.video.dailymotion"><![CDATA[Dailymotion]]></item>
-        <item name="gallery.video.link.provider.com.woltlab.gallery.video.vimeo"><![CDATA[فیلم]]></item>
+        <item name="gallery.video.link.provider.com.woltlab.gallery.video.vimeo"><![CDATA[ویدیو]]></item>
         <item name="gallery.video.link.provider.com.woltlab.gallery.video.youTube"><![CDATA[یوتیوب]]></item>
         <item name="gallery.video.link.restriction.count"><![CDATA[ویدیوهای مرتبط]]></item>
         <item name="gallery.video.link.restriction.count.value"><![CDATA[{#$userVideoLinkCount}/{#$__wcf->session->getPermission('user.gallery.maxVideoLinks')}]]></item>
@@ -2155,9 +2156,9 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.box.boxController.com.woltlab.filebase.tagCloud"><![CDATA[تگ های پایگاه فایل]]></item>
         <item name="wcf.acp.box.boxController.com.woltlab.gallery.albumList"><![CDATA[آلبوم ها]]></item>
         <item name="wcf.acp.box.boxController.com.woltlab.gallery.categories"><![CDATA[دسته بندی گالری ها]]></item>
-        <item name="wcf.acp.box.boxController.com.woltlab.gallery.commentList"><![CDATA[عکس{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و فیلم{/if} نظرات]]></item>
-        <item name="wcf.acp.box.boxController.com.woltlab.gallery.imageList"><![CDATA[عکس{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و فیلم{/if}]]></item>
-        <item name="wcf.acp.box.boxController.com.woltlab.gallery.tagCloud"><![CDATA[عکس{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و فیلم{/if} برچسب ها]]></item>
+        <item name="wcf.acp.box.boxController.com.woltlab.gallery.commentList"><![CDATA[عکس{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو{/if} نظرات]]></item>
+        <item name="wcf.acp.box.boxController.com.woltlab.gallery.imageList"><![CDATA[عکس{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو{/if}]]></item>
+        <item name="wcf.acp.box.boxController.com.woltlab.gallery.tagCloud"><![CDATA[عکس{if GALLERY_VIDEO_UPLOAD || GALLERY_VIDEO_LINKS} و ویدیو{/if} برچسب ها]]></item>
         <item name="wcf.acp.box.boxController.com.woltlab.wbb.boardTagCloud"><![CDATA[برچسب های موضوع]]></item>
         <item name="wcf.acp.box.boxController.com.woltlab.wbb.threadList"><![CDATA[موضوع ها ]]></item>
         <item name="wcf.acp.box.boxController.com.woltlab.wcf.articleCategories"><![CDATA[دسته بندی مقاله]]></item>
@@ -2900,7 +2901,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.group.option.admin.filebase.canManageFileOption"><![CDATA[می توانید فیلدهای گزینه را مدیریت کنید]]></item>
         <item name="wcf.acp.group.option.admin.filebase.canManageLicense"><![CDATA[می توانید مجوزها را مدیریت کنید]]></item>
         <item name="wcf.acp.group.option.admin.gallery.canManageCategory"><![CDATA[می توانید دسته ها را مدیریت کنید]]></item>
-        <item name="wcf.acp.group.option.admin.gallery.canProcessImagesInBulk"><![CDATA[می توانید تصاویر و فیلم ها را به صورت انبوه پردازش کنید]]></item>
+        <item name="wcf.acp.group.option.admin.gallery.canProcessImagesInBulk"><![CDATA[می توانید تصاویر و ویدیو ها را به صورت انبوه پردازش کنید]]></item>
         <item name="wcf.acp.group.option.admin.general.canUseAcp"><![CDATA[می توانید به کنترل پنل مدیریت دسترسی داشته باشید]]></item>
         <item name="wcf.acp.group.option.admin.general.canUseAcp.description"><![CDATA[کاربران این گروه کاربری می توانند بر اساس مجوزهای اعطایی خود به کنترل پنل مدیریت دسترسی داشته باشند. اگر می‌خواهید به هر گزینه مدیریتی دسترسی داشته باشید، این گزینه باید فعال شود.]]></item>
         <item name="wcf.acp.group.option.admin.general.canViewPageDuringOfflineMode"><![CDATA[می توانید در طول حالت تعمیر و نگهداری به صفحه دسترسی داشته باشید]]></item>
@@ -2987,7 +2988,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.group.option.category.mod.gallery"><![CDATA[گالری]]></item>
         <item name="wcf.acp.group.option.category.mod.gallery.album"><![CDATA[آلبوم ها]]></item>
         <item name="wcf.acp.group.option.category.mod.gallery.comment"><![CDATA[نظرات]]></item>
-        <item name="wcf.acp.group.option.category.mod.gallery.image"><![CDATA[تصاویر و فیلم ها]]></item>
+        <item name="wcf.acp.group.option.category.mod.gallery.image"><![CDATA[تصاویر و ویدیو ها]]></item>
         <item name="wcf.acp.group.option.category.mod.general"><![CDATA[عمومی]]></item>
         <item name="wcf.acp.group.option.category.mod.infraction"><![CDATA[تخلفات]]></item>
         <item name="wcf.acp.group.option.category.mod.page"><![CDATA[صفحات]]></item>
@@ -3007,7 +3008,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.group.option.category.user.gallery.album"><![CDATA[آلبوم ها]]></item>
         <item name="wcf.acp.group.option.category.user.gallery.comment"><![CDATA[نظرات]]></item>
         <item name="wcf.acp.group.option.category.user.gallery.image"><![CDATA[تصاویر]]></item>
-        <item name="wcf.acp.group.option.category.user.gallery.video"><![CDATA[فیلم ها]]></item>
+        <item name="wcf.acp.group.option.category.user.gallery.video"><![CDATA[ویدیو ها]]></item>
         <item name="wcf.acp.group.option.category.user.like"><![CDATA[سیستم را دوست دارد]]></item>
         <item name="wcf.acp.group.option.category.user.message"><![CDATA[پیام ها]]></item>
         <item name="wcf.acp.group.option.category.user.message.attachment"><![CDATA[پیوست ها]]></item>
@@ -3095,11 +3096,11 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.group.option.mod.gallery.canDeleteImageCompletely"><![CDATA[می توانید تصاویر و ویدیو ها را حذف کنید]]></item>
         <item name="wcf.acp.group.option.mod.gallery.canEditAlbum"><![CDATA[می توانید آلبوم ها را ویرایش کنید]]></item>
         <item name="wcf.acp.group.option.mod.gallery.canEditComment"><![CDATA[می توانید نظرات را ویرایش کنید]]></item>
-        <item name="wcf.acp.group.option.mod.gallery.canEditImage"><![CDATA[می توانید تصاویر و فیلم ها را ویرایش کنید]]></item>
+        <item name="wcf.acp.group.option.mod.gallery.canEditImage"><![CDATA[می توانید تصاویر و ویدیو ها را ویرایش کنید]]></item>
         <item name="wcf.acp.group.option.mod.gallery.canModerateComment"><![CDATA[می توانید نظرات را تعدیل کنید]]></item>
-        <item name="wcf.acp.group.option.mod.gallery.canModerateImage"><![CDATA[می توانید تصاویر و فیلم ها را تعدیل کنید]]></item>
-        <item name="wcf.acp.group.option.mod.gallery.canRestoreImage"><![CDATA[می توانید تصاویر و فیلم ها را بازیابی کنید]]></item>
-        <item name="wcf.acp.group.option.mod.gallery.canViewDeletedImage"><![CDATA[می توانید تصاویر و فیلم های حذف شده را مشاهده کنید]]></item>
+        <item name="wcf.acp.group.option.mod.gallery.canModerateImage"><![CDATA[می توانید تصاویر و ویدیو ها را تعدیل کنید]]></item>
+        <item name="wcf.acp.group.option.mod.gallery.canRestoreImage"><![CDATA[می توانید تصاویر و ویدیو ها را بازیابی کنید]]></item>
+        <item name="wcf.acp.group.option.mod.gallery.canViewDeletedImage"><![CDATA[می توانید تصاویر و ویدیو های حذف شده را مشاهده کنید]]></item>
         <item name="wcf.acp.group.option.mod.general.canUseModeration"><![CDATA[می توانید به اعتدال دسترسی داشته باشید]]></item>
         <item name="wcf.acp.group.option.mod.infraction.warning.canRevoke"><![CDATA[می توانید هشدارها را لغو کنید]]></item>
         <item name="wcf.acp.group.option.mod.infraction.warning.canUseCustomWarning"><![CDATA[می توانید از هشدارهای فردی استفاده کنید]]></item>
@@ -3271,7 +3272,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.group.option.user.gallery.canLinkVideo"><![CDATA[می تواند به ویدیوها لینک اضافه کند]]></item>
         <item name="wcf.acp.group.option.user.gallery.canLinkVideoWithoutModeration"><![CDATA[می تواند بدون تایید به ویدیوها پیوند اضافه کند]]></item>
         <item name="wcf.acp.group.option.user.gallery.canRestrictAlbumAccess"><![CDATA[می تواند بدون تایید به ویدیوها پیوند اضافه کند]]></item>
-        <item name="wcf.acp.group.option.user.gallery.canSetTags"><![CDATA[می تواند برچسب ها را به تصاویر و فیلم ها اختصاص دهد]]></item>
+        <item name="wcf.acp.group.option.user.gallery.canSetTags"><![CDATA[می تواند برچسب ها را به تصاویر و ویدیو ها اختصاص دهد]]></item>
         <item name="wcf.acp.group.option.user.gallery.canUploadVideo"><![CDATA[می تواند ویدیوها را آپلود کند]]></item>
         <item name="wcf.acp.group.option.user.gallery.canUploadVideoWithoutModeration"><![CDATA[می تواند ویدئوها را بدون تایید آپلود کند]]></item>
         <item name="wcf.acp.group.option.user.gallery.canViewImage"><![CDATA[می تواند ویدئوها را بدون تایید آپلود کند]]></item>
@@ -5671,7 +5672,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.stat.com.woltlab.gallery.image"><![CDATA[عکس ها]]></item>
         <item name="wcf.acp.stat.com.woltlab.gallery.image.diskUsage"><![CDATA[حجم کل فایل تصویر (MB)]]></item>
         <item name="wcf.acp.stat.com.woltlab.gallery.imageComment"><![CDATA[نظرات تصویر]]></item>
-        <item name="wcf.acp.stat.com.woltlab.gallery.video"><![CDATA[فیلم ها]]></item>
+        <item name="wcf.acp.stat.com.woltlab.gallery.video"><![CDATA[ویدیو ها]]></item>
         <item name="wcf.acp.stat.com.woltlab.gallery.video.diskUsage"><![CDATA[حجم کل فایل ویدیویی (MB)]]></item>
         <item name="wcf.acp.stat.com.woltlab.gallery.videoLink"><![CDATA[لینک های ویدیویی]]></item>
         <item name="wcf.acp.stat.com.woltlab.wbb.post"><![CDATA[نوشته ها]]></item>
