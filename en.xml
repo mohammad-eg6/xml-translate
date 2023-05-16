@@ -2582,7 +2582,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.devtools.project.add.mode.import"><![CDATA[بسته موجود را وارد کنید]]></item>
         <item name="wcf.acp.devtools.project.add.mode.setup"><![CDATA[راه اندازی پروژه جدید]]></item>
         <item name="wcf.acp.devtools.project.applicationDirectory"><![CDATA[فهرست برنامه های پیشنهادی]]></item>
-        <item name="wcf.acp.devtools.project.applicationDirectory.description"><![CDATA[در حین نصب برنامه، نام دایرکتوری وارد شده برای برنامه پیشنهاد می شود. دایرکتوری ممکن است فقط شامل کاراکترهای زیر باشد: <kbd>الف-ی0-9_-</kbd>.]]></item>
+        <item name="wcf.acp.devtools.project.applicationDirectory.description"><![CDATA[در حین نصب برنامه، نام دایرکتوری وارد شده برای برنامه پیشنهاد می شود. دایرکتوری ممکن است فقط شامل کاراکترهای زیر باشد: <kbd>A-z0-9_-</kbd>.]]></item>
         <item name="wcf.acp.devtools.project.applicationDirectory.error.format"><![CDATA[فهرست برنامه وارد شده نامعتبر است.]]></item>
         <item name="wcf.acp.devtools.project.author"><![CDATA[توسعه دهنده]]></item>
         <item name="wcf.acp.devtools.project.authorInformation"><![CDATA[اطلاعات توسعه دهنده]]></item>
@@ -2596,7 +2596,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.devtools.project.excludedPackage.excludedPackage"><![CDATA[<kbd>{$packageIdentifier}</kbd>
 {if $version}
 	<dl class="plain inlineDataList small">
-		<dt>Version</dt>
+		<dt>نسخه</dt>
 		<dd><kbd>{$version}</kbd></dd>
 	</dl>
 {/if}]]></item>
@@ -2620,15 +2620,15 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
 {if $value || $runStandalone || $application}
 	<dl class="plain inlineDataList small">
 		{if $value}
-			<dt>Value</dt>
+			<dt>ارزش</dt>
 			<dd><kbd>{$value}</kbd></dd>
 		{/if}
 		{if $application}
-			<dt>App</dt>
+			<dt>برنامه</dt>
 			<dd>{$application}</dd>
 		{/if}
 		{if $runStandalone}
-			<dt>Run in separate step</dt>
+			<dt>در مرحله جداگانه اجرا کنید</dt>
 			<dd><span class="icon icon16 fa-check"></span></dd>
 		{/if}
 	</dl>
@@ -2678,7 +2678,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.devtools.project.packageDate"><![CDATA[تاریخ ایجاد]]></item>
         <item name="wcf.acp.devtools.project.packageDate.description"><![CDATA[تاریخ ایجاد بسته به زمانی اشاره دارد که این نسخه از بسته منتشر شده است.]]></item>
         <item name="wcf.acp.devtools.project.packageIdentifier"><![CDATA[شناسه بسته]]></item>
-        <item name="wcf.acp.devtools.project.packageIdentifier.description"><![CDATA[شناسه بسته به طور منحصر به فرد بسته را شناسایی می کند. شناسه شامل حداقل سه بخش است که با نقطه از هم جدا می شوند. هر بخش نباید خالی باشد و فقط ممکن است شامل کاراکترهای زیر باشد: <kbd>[الف-ی0-9-_]</kbd>.]]></item>
+        <item name="wcf.acp.devtools.project.packageIdentifier.description"><![CDATA[شناسه بسته به طور منحصر به فرد بسته را شناسایی می کند. شناسه شامل حداقل سه بخش است که با نقطه از هم جدا می شوند. هر بخش نباید خالی باشد و فقط ممکن است شامل کاراکترهای زیر باشد: <kbd>[A-z0-9-_]</kbd>.]]></item>
         <item name="wcf.acp.devtools.project.packageIdentifier.error.duplicate"><![CDATA[بسته وارد شده قبلاً اضافه شده است.]]></item>
         <item name="wcf.acp.devtools.project.packageIdentifier.error.format"><![CDATA[شناسه بسته وارد شده نامعتبر است.]]></item>
         <item name="wcf.acp.devtools.project.packageIdentifier.error.maximumLength"><![CDATA[شناسه بسته نباید بیشتر از 191 کاراکتر باشد.]]></item>
@@ -2688,19 +2688,19 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.devtools.project.packageUrl"><![CDATA[سایت اینترنتی بسته]]></item>
         <item name="wcf.acp.devtools.project.packageUrl.description"><![CDATA[سایت اینترنتی بسته اطلاعات دقیقی در مورد بسته ارائه می دهد.]]></item>
         <item name="wcf.acp.devtools.project.packageVersion"><![CDATA[نسخه بسته]]></item>
-        <item name="wcf.acp.devtools.project.packageVersion.description"><![CDATA[نسخه بسته شامل سه عدد جدا شده با نقطه و یک پسوند اختیاری جدا شده با فضای خالی است. <kbd>Dev</kbd>, <kbd>آلفا</kbd>, <kbd>بتا</kbd>, <kbd>ار سی</kbd>, یا <kbd>پی ال</kbd> که به دنبال آن عدد دیگری می آید. مثال ها: <kbd>1.0.0</kbd>, <kbd>2.1.0 بتا3  </kbd>.]]></item>
+        <item name="wcf.acp.devtools.project.packageVersion.description"><![CDATA[نسخه بسته شامل سه عدد جدا شده با نقطه و یک پسوند اختیاری جدا شده با فضای خالی است. <kbd>Dev</kbd>, <kbd>Alpha</kbd>, <kbd>Beta</kbd>, <kbd>RC</kbd>, یا <kbd>pl</kbd> که به دنبال آن عدد دیگری می آید. مثال ها: <kbd>1.0.0</kbd>, <kbd>2.1.0 Beta 3</kbd>.]]></item>
         <item name="wcf.acp.devtools.project.packageVersion.error.format"><![CDATA[نسخه وارد شده نامعتبر است.]]></item>
         <item name="wcf.acp.devtools.project.packageVersion.error.maximumLength"><![CDATA[نسخه نباید بیشتر از 255 کاراکتر باشد.]]></item>
         <item name="wcf.acp.devtools.project.path"><![CDATA[مسیر]]></item>
         <item name="wcf.acp.devtools.project.path.description"><![CDATA[مسیر مطلق به بسته در سیستم فایل. مکان نگهدار مسیر مطلق WoltLab دنباله هسته این نصب را نشان می دهد.]]></item>
         <item name="wcf.acp.devtools.project.path.error.cannotMakeDirectory"><![CDATA[دایرکتوری بسته وارد شده ایجاد نمی شود.]]></item>
         <item name="wcf.acp.devtools.project.path.error.notFound"><![CDATA[مسیر نامعتبر است.]]></item>
-        <item name="wcf.acp.devtools.project.path.error.notInstalled"><![CDATA[بسته هنوز نصب نشده است. <a href="#" {if $project->getPackageArchive()->getOpenRequirements()|empty}کلاس="jsDevtoolsInstallPackage"{else}class="jsStaticDialog" data-dialog-id="openPackageRequirements"{/if}>آیا می خواهید بسته را نصب کنید؟</a>]]></item>
+        <item name="wcf.acp.devtools.project.path.error.notInstalled"><![CDATA[بسته هنوز نصب نشده است. <a href="#" {if $project->getPackageArchive()->getOpenRequirements()|empty}class="jsDevtoolsInstallPackage"{else}class="jsStaticDialog" data-dialog-id="openPackageRequirements"{/if}>آیا می خواهید بسته را نصب کنید؟</a>]]></item>
         <item name="wcf.acp.devtools.project.path.error.notUnique"><![CDATA[مسیر قبلاً توسط پروژه دیگری استفاده شده است.]]></item>
-        <item name="wcf.acp.devtools.project.path.error.packageXml"><![CDATA[مسیر حاوی یک معتبر نیست<kbd>بسته.xml</kbd>.]]></item>
+        <item name="wcf.acp.devtools.project.path.error.packageXml"><![CDATA[مسیر حاوی یک معتبر نیست<kbd>package.xml</kbd>.]]></item>
         <item name="wcf.acp.devtools.project.path.error.parentDoesNotExist"><![CDATA[پوشه والد وجود ندارد.]]></item>
         <item name="wcf.acp.devtools.project.path.error.pathExists"><![CDATA[مسیر وارد شده از قبل وجود دارد.]]></item>
-        <item name="wcf.acp.devtools.project.path.error.versionMismatch"><![CDATA[نسخه نشان داده شده در <kbd>بسته.xml</kbd> با نسخه نصب شده مطابقت ندارد، ممکن است مسیر را اشتباه انتخاب کرده باشید.]]></item>
+        <item name="wcf.acp.devtools.project.path.error.versionMismatch"><![CDATA[نسخه نشان داده شده در <kbd>package.xml</kbd> با نسخه نصب شده مطابقت ندارد، ممکن است مسیر را اشتباه انتخاب کرده باشید.]]></item>
         <item name="wcf.acp.devtools.project.pip.entry.add"><![CDATA[اضافه کردن {$pip} ورود]]></item>
         <item name="wcf.acp.devtools.project.pip.entry.add.pageTitle"><![CDATA[اضافه کردن {$pip}{if $entryType !== null} ({$entryType}){/if} ورود - {$project->name}]]></item>
         <item name="wcf.acp.devtools.project.pip.entry.button.add"><![CDATA[اضافه کردن ورود]]></item>
@@ -2718,12 +2718,12 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.devtools.project.quickSetup.path"><![CDATA[مسیر]]></item>
         <item name="wcf.acp.devtools.project.quickSetup.path.description"><![CDATA[تمام پوشه‌هایی که مستقیماً در مسیر قرار دارند بررسی می‌شوند که آیا حاوی بسته هستند یا خیر.]]></item>
         <item name="wcf.acp.devtools.project.quickSetup.path.error.noPackages"><![CDATA[مسیر حاوی بسته های جدیدی نیست.]]></item>
-        <item name="wcf.acp.devtools.project.quickSetup.success"><![CDATA[{#$count} جدید project{if $count > 1}ها have{else} دارد{/if} اضافه شده است.]]></item>
+        <item name="wcf.acp.devtools.project.quickSetup.success"><![CDATA[{#$count}پروژه جدید{if $count > 1}داشتن ها{else} دارد{/if} اضافه شده است.]]></item>
         <item name="wcf.acp.devtools.project.requiredPackage.error.missingFiles"><![CDATA[فایل های بسته زیر وجود ندارد: {implode from=$missingFiles item=missingFile}<kbd>{$missingFile}</kbd>{/implode}.]]></item>
         <item name="wcf.acp.devtools.project.requiredPackage.error.missingWcfRequirement"><![CDATA[بسته باید نیاز داشته باشد<kbd>com.woltlab.wcf</kbd> در نسخه {$minVersion} یا بالاتر.]]></item>
         <item name="wcf.acp.devtools.project.requiredPackage.error.selfRequirement"><![CDATA[یک بسته نمی تواند به خود نیاز داشته باشد.]]></item>
         <item name="wcf.acp.devtools.project.requiredPackage.file"><![CDATA[فایل بسته موجود در بسته]]></item>
-        <item name="wcf.acp.devtools.project.requiredPackage.file.description"><![CDATA[مسیر فایل بسته باید باشد <kbd>الزامات/{literal}{$packageIdentifier}{/literal}.برانگیخته</kbd>.]]></item>
+        <item name="wcf.acp.devtools.project.requiredPackage.file.description"><![CDATA[مسیر فایل بسته باید باشد <kbd>الزامات/{literal}{$packageIdentifier}{/literal}.tar</kbd>.]]></item>
         <item name="wcf.acp.devtools.project.requiredPackage.minVersion"><![CDATA[حداقل نسخه]]></item>
         <item name="wcf.acp.devtools.project.requiredPackage.requiredPackage"><![CDATA[<kbd>{$packageIdentifier}</kbd>
 <dl class="plain inlineDataList small">
@@ -2777,8 +2777,8 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
 {foreach from=$files key=file item=data}
 ورود به سیستم/{$file}.txt{if !$data[verdict]|isset} ({#$data[count]} خطا{if $data[شمردن] > 1}s{/if}){/if} {* this line ends with a space *}
 ==================
-{if $data[نظر]|isset}
-{if $data[نظر] == 'corrupt'}
+{if $data[verdict]|isset}
+{if $data[verdict] == 'corrupt'}
 این فایل پروتکل خراب است. لطفاً پروتکل را به صورت دستی بررسی کنید: {'WCF_DIR'|constant}log/{$file}.txt
 {elseif $data[verdict] == 'huge'}
 این فایل پروتکل بسیار بزرگ است. لطفاً پروتکل را به صورت دستی بررسی کنید: {'WCF_DIR'|constant}log/{$file}.txt
@@ -2863,16 +2863,16 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.group.members"><![CDATA[اعضا]]></item>
         <item name="wcf.acp.group.moderatedUserGroup"><![CDATA[گروه کاربر تعدیل شده]]></item>
         <item name="wcf.acp.group.option.admin.ad.canManageAd"><![CDATA[می تواند تبلیغات را مدیریت کند]]></item>
-        <item name="wcf.acp.group.option.admin.attachment.canManageAttachment"><![CDATA[می تواند پیوست ها را مدیریت کند]]></item>
-        <item name="wcf.acp.group.option.admin.blog.canManageCategory"><![CDATA[می تواند دسته ها را مدیریت کند]]></item>
-        <item name="wcf.acp.group.option.admin.board.canAddBoard"><![CDATA[می تواند انجمن ایجاد کند]]></item>
-        <item name="wcf.acp.group.option.admin.board.canDeleteBoard"><![CDATA[می تواند انجمن ها را حذف کند]]></item>
-        <item name="wcf.acp.group.option.admin.board.canEditBoard"><![CDATA[می تواند انجمن ها را ویرایش کند]]></item>
-        <item name="wcf.acp.group.option.admin.board.canManageRssFeed"><![CDATA[می تواند فیدهای سندیکای واقعا ساده را مدیریت کند]]></item>
+        <item name="wcf.acp.group.option.admin.attachment.canManageAttachment"><![CDATA[می توانید پیوست ها را مدیریت کنید]]></item>
+        <item name="wcf.acp.group.option.admin.blog.canManageCategory"><![CDATA[می توانید دسته ها را مدیریت کنید]]></item>
+        <item name="wcf.acp.group.option.admin.board.canAddBoard"><![CDATA[می توانید انجمن ایجاد کنید]]></item>
+        <item name="wcf.acp.group.option.admin.board.canDeleteBoard"><![CDATA[می توانید انجمن ها را حذف کنید]]></item>
+        <item name="wcf.acp.group.option.admin.board.canEditBoard"><![CDATA[می توانید انجمن ها را ویرایش کنید]]></item>
+        <item name="wcf.acp.group.option.admin.board.canManageRssFeed"><![CDATA[می توانید فیدهای سندیکای واقعا ساده را مدیریت کنید]]></item>
         <item name="wcf.acp.group.option.admin.calendar.canManageCategory"><![CDATA[می توانید دسته ها را مدیریت کنید]]></item>
         <item name="wcf.acp.group.option.admin.calendar.canManageEventImport"><![CDATA[می توانید واردات رویداد را مدیریت کنید]]></item>
         <item name="wcf.acp.group.option.admin.calendar.canManageEventOption"><![CDATA[می توانید فیلدهای گزینه را مدیریت کنید]]></item>
-        <item name="wcf.acp.group.option.admin.captcha.canManageCaptchaQuestion"><![CDATA[می توانید سوالات کپچا را مدیریت کنید]]></item>
+        <item name="wcf.acp.group.option.admin.captcha.canManageCaptchaQuestion"><![CDATA[می توانید سوالات تایید صلاحیت را مدیریت کنید]]></item>
         <item name="wcf.acp.group.option.admin.configuration.canEditOption"><![CDATA[می توانید گزینه های سیستم را ویرایش کنید]]></item>
         <item name="wcf.acp.group.option.admin.configuration.canManageApplication"><![CDATA[می توانید برنامه ها را مدیریت کنید]]></item>
         <item name="wcf.acp.group.option.admin.configuration.package.canEditServer"><![CDATA[می توانید سرورهای بسته را ویرایش کنید]]></item>
@@ -2884,7 +2884,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.group.option.admin.content.article.canManageArticle"><![CDATA[می توانید مقالات را مدیریت کنید]]></item>
         <item name="wcf.acp.group.option.admin.content.article.canManageCategory"><![CDATA[می توانید دسته بندی مقالات را مدیریت کنید]]></item>
         <item name="wcf.acp.group.option.admin.content.article.canManageOwnArticles"><![CDATA[می توانید مقالات خود را مدیریت کنید]]></item>
-        <item name="wcf.acp.group.option.admin.content.bbcode.canManageBBCode"><![CDATA[می توانید کدهای بی بی را مدیریت کنید]]></item>
+        <item name="wcf.acp.group.option.admin.content.bbcode.canManageBBCode"><![CDATA[می توانید کدهای Bulletin Board را مدیریت کنید]]></item>
         <item name="wcf.acp.group.option.admin.content.canBulkRevertContentChanges"><![CDATA[می توانید تغییرات محتوا را به صورت انبوه بازگردانید]]></item>
         <item name="wcf.acp.group.option.admin.content.cms.canManageBox"><![CDATA[می توانید جعبه ها را مدیریت کنید]]></item>
         <item name="wcf.acp.group.option.admin.content.cms.canManageMedia"><![CDATA[می توانید رسانه ها را مدیریت کنید]]></item>
@@ -4460,7 +4460,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.option.user_authentication_failure_ip_block"><![CDATA[مسدود کردن از ورود (IP)]]></item>
         <item name="wcf.acp.option.user_authentication_failure_ip_block.description"><![CDATA[تلاش برای ورود ناموفق از همان آدرس IP مجاز است تا زمانی که آدرس IP به طور موقت از ورود به سیستم مسدود شود.]]></item>
         <item name="wcf.acp.option.user_authentication_failure_ip_captcha"><![CDATA[Captcha پس از تلاش های ناموفق (IP)]]></item>
-        <item name="wcf.acp.option.user_authentication_failure_ip_captcha.description"><![CDATA[تلاش‌های ناموفق برای ورود از همان آدرس IP مجاز است تا زمانی که کاربر مجبور به حل یک کپچا شود.]]></item>
+        <item name="wcf.acp.option.user_authentication_failure_ip_captcha.description"><![CDATA[تلاش‌های ناموفق برای ورود از همان آدرس IP مجاز است تا زمانی که کاربر مجبور به حل یک تایید صلاحیت شود.]]></item>
         <item name="wcf.acp.option.user_authentication_failure_timeout"><![CDATA[مهلت]]></item>
         <item name="wcf.acp.option.user_authentication_failure_timeout.description"><![CDATA[.تلاش های ناموفق برای ورود پس از ثانیه های پیش رو در نظر گرفته نمی شوند]]></item>
         <item name="wcf.acp.option.user_authentication_failure_user_captcha"><![CDATA[تایید صلاحیت پس از تلاش های ناموفق (کاربر)]]></item>
@@ -5239,7 +5239,7 @@ Allowed file extensions: {', '|implode:$allowedFileExtensions}]]></item>
         <item name="wcf.acp.pip.objectType.definitionName.com.woltlab.wcf.bulkProcessableObject.description"><![CDATA[این تعریف نوع شیء برای ثبت انواع اشیاء استفاده می شود که از API پردازش انبوه پشتیبانی می کنند که با آن می توان یک عمل خاص را بر روی اشیایی که شرایط خاصی را برآورده می کنند، اجرا کرد.]]></item>
         <item name="wcf.acp.pip.objectType.definitionName.com.woltlab.wcf.bulkProcessing.user.action.description"><![CDATA[این تعریف نوع شیء برای ثبت اقداماتی استفاده می شود که می توانند هنگام پردازش کاربران به صورت انبوه اجرا شوند.]]></item>
         <item name="wcf.acp.pip.objectType.definitionName.com.woltlab.wcf.bulkProcessing.user.condition.description"><![CDATA[این تعریف نوع شیء برای ثبت شرایط برای کاربرانی که به صورت انبوه پردازش می شوند استفاده می شود.]]></item>
-        <item name="wcf.acp.pip.objectType.definitionName.com.woltlab.wcf.captcha.description"><![CDATA[این تعریف نوع شی برای ثبت انواع کپچا استفاده می شود که مدیران می توانند برای محافظت از سایت های خود انتخاب کنند.]]></item>
+        <item name="wcf.acp.pip.objectType.definitionName.com.woltlab.wcf.captcha.description"><![CDATA[این تعریف نوع شی برای ثبت انواع تایید صلاحیت استفاده می شود که مدیران می توانند برای محافظت از سایت های خود انتخاب کنند.]]></item>
         <item name="wcf.acp.pip.objectType.definitionName.com.woltlab.wcf.category.description"><![CDATA[این تعریف نوع شیء برای ثبت انواع اشیایی که می توانند/باید دسته بندی شوند استفاده می شود.]]></item>
         <item name="wcf.acp.pip.objectType.definitionName.com.woltlab.wcf.clipboardItem.description"><![CDATA[این تعریف نوع شیء برای ثبت انواع اشیایی استفاده می شود که کاربران می توانند انتخاب کنند و سپس اقداماتی را بر روی اشیاء انتخاب شده اجرا کنند.]]></item>
         <item name="wcf.acp.pip.objectType.definitionName.com.woltlab.wcf.collapsibleContent.description"><![CDATA[این تعریف نوع شیء برای ثبت محتوایی که کاربران قادر به گسترش و جمع کردن دائمی آن هستند استفاده می شود.]]></item>
@@ -7779,7 +7779,7 @@ Your account on the website: {@PAGE_TITLE|phrase} [URL:{link isEmail=true}{/link
     </category>
     <category name="wcf.recaptcha">
         <item name="wcf.recaptcha.audio"><![CDATA[نسخه صوتی]]></item>
-        <item name="wcf.recaptcha.description"><![CDATA[لطفا حروفی که در تصویر زیر نمایش داده شده را وارد کنید (حروف به بزرگی و کوچکی کوچک و بزرگ حساس نیستند). اگر نمی توانید کپچا را حتی پس از بارگیری مجدد آن شناسایی کنید، لطفاً با سرپرست تماس بگیرید.]]></item>
+        <item name="wcf.recaptcha.description"><![CDATA[لطفا حروفی که در تصویر زیر نمایش داده شده را وارد کنید (حروف به بزرگی و کوچکی کوچک و بزرگ حساس نیستند). اگر نمی توانید تایید صلاحیت را حتی پس از بارگیری مجدد آن شناسایی کنید، لطفاً با سرپرست تماس بگیرید.]]></item>
         <item name="wcf.recaptcha.error.recaptchaString.false"><![CDATA[کد امنیتی وارد شده نادرست است. لطفا دوباره تلاش کنید.]]></item>
         <item name="wcf.recaptcha.help"><![CDATA[کمک]]></item>
         <item name="wcf.recaptcha.image"><![CDATA[نسخه تصویر]]></item>
